@@ -5,18 +5,18 @@
 
 #(set-global-staff-size 25)
 
-global = { \key e \major \time 2/2 \tempo "Moderato" 4 = 100 s1*39 \bar "|." }
+global = { \key e \major \time 2/2 \tempo "Moderato" 4 = 90 s1*39 \bar "|." }
 
 \markup {
 	\fill-line {
 		\center-column { \fontsize #5 "Pan divino y gracioso" 
 			" "
-			\fontsize #3 \smallCaps "tenor"
+			\fontsize #3 \caps "tenor"
 		}
 	}
 }
 
-\markup { \hspace #75 \center-column { \fontsize #2 "Francisco Geurrero" \fontsize #2 "(Siglo XVI)" } }
+\markup { \fill-line { " " \center-column { \fontsize #2 "Francisco Guerrero" \fontsize #2 "(Siglo XVI)" } } }
 
 \header {
  	copyright = "Creative Commons Attribution 3.0" 
@@ -68,10 +68,10 @@ tenor = \relative c' {
 	e1\!\fermata | %39
 }
 tenorletra = \lyricmode {
-	Pan di vi no~y gra cio so, pan di vi no~y gra cio so, sa cro san to man jar que da sus ten to~al al ma mí  a.
-	Di cho __ so fue~a quel dï a, pun to~y ho __ - __ - ra que~en ta les dos es pe cíes, 
-	que~en ta les dos es pe cíes, Cris to mo ra. Que si~el al ma~es tá du ra, a quí se~a blan da rá
-	con tal dul zu ra, con tal dul zu __ - __ ra, a quí se~a blan da __ - __ rá con tal dul zu __ __ - - - - ra.
+	Pan di vi no~y gra cio __ so, pan di vi no~y gra cio __ so, sa cro san to man jar que da sus ten to~al al ma mí  a.
+	Di cho __ so fue~a quel dï a, pun to~y ho __ - - ra que~en ta les dos es pe cíes, 
+	que~en ta les dos es pe __ cíes, Cris __ to mo ra. Que si~el al ma~es tá du ra, a quí se~a blan da rá
+	con tal dul zu ra, con tal __ dul zu __ - ra, a quí __ se~a blan da __ - rá con tal dul zu __ __ - - - - ra.
 }
 
 \score {
