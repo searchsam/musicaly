@@ -7,14 +7,7 @@
 
 global = { \key e \major \time 2/2 \tempo "Moderato" 4 = 90 s1*39 \bar "|." }
 
-\markup {
-	\fill-line {
-		\center-column { \fontsize #5 "Pan divino y gracioso" 
-			" "
-			\fontsize #3 \caps "tenor"
-		}
-	}
-}
+\markup { \fill-line { \center-column { \fontsize #5 "Pan divino y gracioso" " " \fontsize #3 \caps "tenor" } } }
 
 \markup { \fill-line { " " \center-column { \fontsize #2 "Francisco Guerrero" \fontsize #2 "(Siglo XVI)" } } }
 
