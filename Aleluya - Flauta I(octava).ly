@@ -4,7 +4,7 @@
 \version "2.14.2"
 %#(set-global-staff-size 17)
 
-\markup { \fill-line { \center-column { \fontsize #5 "Aleluya" "Coro del Mesias" \fontsize #3 \caps "FLAUTA I" } } }
+\markup { \fill-line { \center-column { \fontsize #5 "Aleluya" "Coro del Mesias" \fontsize #2 "Flauta I trasnsportada a una octava hacia abajo" \fontsize #3 \caps "FLAUTA I" } } }
 
 \markup { \fill-line { " " \center-column { \fontsize #2 "GEORGE FREDERIC HANDEL" } } }
 
