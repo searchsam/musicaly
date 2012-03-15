@@ -1,20 +1,21 @@
 % Created on Tue Feb 01 15:41:25 CST 2011
 % by search.sam@ 
 
-\version "2.12.3"
-#(set-global-staff-size 17)
+\version "2.14.2"
+%#(set-global-staff-size 17)
+
+\markup { \fill-line { \center-column { \fontsize #5 "Aleluya" "Coro del Mesias" \fontsize #3 \caps "FLAUTA I" } } }
+
+\markup { \fill-line { " " \center-column { \fontsize #2 "GEORGE FREDERIC HANDEL" } } }
+
 
 \header {
-	title = \markup \center-column { \caps "Aleluya" }
-	subtitle = "Coro del Mesias" 
- 	composer = "GEORGE FREDERIC HANDEL" 
- 	instrument = "FLAUTA I" 
  	copyright = "Creative Commons Attribution 3.0"
  	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  	breakbefore = ##t
 }
 
-staffFlauta = \new Staff {
+Flauta = \new Staff {
 	\time 4/4
 	\tempo "Allegro Moderatto" 4 = 100 
 	\set Staff.midiInstrument = "flute"
@@ -114,7 +115,7 @@ staffFlauta = \new Staff {
 
 \score {
 	<<
-		\staffFlauta
+		\Flauta
 	>>
 	\midi {
 	}
