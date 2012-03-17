@@ -3,8 +3,6 @@
 
 \version "2.14.2"
 
-#(set-global-staff-size 25)
-
 \header {
 	title = \markup { \center-align { " " \caps "Aleluya" } }
         subtitle = "Coro del Mesias"
