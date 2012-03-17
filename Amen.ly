@@ -4,56 +4,51 @@
 \version "2.14.2"
 
 \header {
-	title = "AMEN DEL MESIAS"
-	subtitle = "SOPRANO - ALTO - TENOR - BAJO"
-	composer = "G. F. HÄNDEL"
-	%arranger = "Arrglo S. Gutierrez"
-	%piece = "FLAUTA"
-	copyright = "@Centro Cultural de Batahola"
-	}
+	title = \markup { \center-align { " " \caps "Amen" } }
+        subtitle = "Final del Mesias"
+	instrument = \markup { \smallCaps "CORO" }
+	composer =  \markup { \center-column { "G. F. Händel" } }
+	copyright = "Creative Commons Attribution 3.0" 
+ 	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+ 	breakbefore = ##t
+}
 	
 soprano = \relative c'' {
-		\set Staff.instrumentName = #"Soprano"
 		\key d \major
 		\set Score.skipBars = ##t
 		\dynamicUp
 				
 		R1*15
 		\bar "|."
-	}
+}
 textos = \lyricmode {
 	A men, a men
-	}
+}
 
-contralto = \relative c' {
-		\set Staff.instrumentName = #"Alto"
+alto = \relative c' {
 		\key d \major
 		\set Score.skipBars = ##t
 		\dynamicUp
 				
 		R1*10 
 		\bar "|."
-	}
+}
 textoc = \lyricmode {
 	A le lu ya, a le lu ya, a le lu ya, a le lu ya, a le lu ya, a le lu ya,
-	}
+}
 
 tenor = \relative c' {
-		\set Staff.instrumentName = #"Tenor"
-		\clef "G_8"
 		\key d \major
 		\set Score.skipBars = ##t
 		\dynamicUp
 				
 		R1*5
-	}
+}
 textot = \lyricmode {
 	A le lu ya, a le lu ya, a le lu ya, a le lu ya, a le lu ya, a le lu ya,
-	}
+}
 
 bajo = \relative c {
-		\set Staff.instrumentName = #"Bajo"
-		\clef bass
 		\key d \major
 		\set Score.skipBars = ##t
 		\dynamicUp
@@ -64,39 +59,52 @@ bajo = \relative c {
 		d,4. e8 fis g a e | fis8 d b'2 a4 | d,4 g2 fis4 | b4. b8 cis a d4( | d4) cis d2 | R1*2 | a,4. b8 cis d e b | cis8 a fis'2 e4 | % cuarto sistema
 		a,4 d2 cis4 | fis4. fis8 gis e a4( | a4) gis a r | r4 e e8 fis g a | b4. a16 g fis8 g a4( | a8) b cis4 d r | r4 a,( a8) b cis d | e4. d16 cis b8 cis d e | % quinto sistema
 		fis8 e d e16 fis g8 fis e fis16 g | a8 g fis e d4 e | a,8 a' b a g e a g | fis e d4 r2 |
-	}
+}
 textob = \lyricmode {
 	A - - - - - - men, a - - - - - men, a - - - - - - - - - - - men, a men, a men, a - - men,
 	a men, a men, a men, a - - men, a men, a men, a men.
 	A - - - - - - men, a - - - - - men, a - - - men. A - - - - - - men, a 
 	- - - - - men, a - - - men, a - - - - - - - - - - - - men, a
 	 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - men.
-	}
+}
 
 \score{
-	\new StaffGroup <<
-		\new Staff <<
-			\new Voice = "S" { \soprano }
-			\addlyrics { \textos }
+	<<
+		\new ChoirStaff = "ChoirStaff_choir" <<
+
+			\new Staff = "soprano" << \set Staff.instrumentName = "S" \set Staff.midiInstrument = "choir aahs" 
+				\new Voice = "soprano" << \soprano >>
 			>>
-		\new Staff <<
-			\new Voice = "A" { \contralto }
-			\addlyrics { \textoc }
+			\new Lyrics \lyricsto "soprano" \textos
+
+			\new Staff = "alto" << \set Staff.instrumentName = "C" \set Staff.midiInstrument = "choir aahs" 
+				\new Voice = "alto" << \alto >>
 			>>
-		\new Staff <<
-			\new Voice = "T" { \tenor }
-			\addlyrics { \textot }
+			\new Lyrics \lyricsto "alto" \textoc
+
+			\new Staff = "tenor" << \set Staff.instrumentName = "T" \set Staff.midiInstrument = "choir aahs" 
+				\new Voice = "tenor" << \clef "G_8" \tenor >>
 			>>
-		\new Staff <<
-			\new Voice = "T" { \bajo }
-			\addlyrics { \textob }
+			\new Lyrics \lyricsto "tenor" \textot
+
+			\new Staff = "bajo" << \set Staff.instrumentName = "B" \set Staff.midiInstrument = "choir aahs" 
+				\new Voice = "bajo" << \clef bass \bajo >>
 			>>
+			\new Lyrics \lyricsto "bajo" \textob
+
 		>>
-	\layout { }
+	>>
+
+	\midi {
 	}
-	
+
+	\layout {
+	}
+}
+
 \paper {
-	#(set-paper-size "letter" )
-	}
-	
-%{'landscape%}
+	#( set-default-paper-size "letter" )
+	%system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
+	%ragged-last-bottom = ##f
+	%ragged-bottom = ##f
+}
