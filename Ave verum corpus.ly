@@ -10,7 +10,7 @@ global = { \key d \major \time 4/4 \tempo "Adagio" 4 = 85 s1*46 \bar "|." }
 \header {
 	title = \markup { \center-align { " " \caps "Ave verum corpus" } }
 	instrument = \markup { \smallCaps "CORO" }
-	composer =  \markup { \center-column { "W. A. Motzar" } }
+	composer =  \markup { \center-column { "W. A. Mozart" } }
 	copyright = "Creative Commons Attribution 3.0" 
  	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  	breakbefore = ##t
