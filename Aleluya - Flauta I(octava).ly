@@ -2,11 +2,12 @@
 % by search.sam@ 
 
 \version "2.14.2"
+
 #(set-global-staff-size 16)
 
 \markup { \fill-line { \center-column { \fontsize #5 "Aleluya" \fontsize #2 "Coro del Mesías" \fontsize #3 \caps "FLAUTA I" } } }
 
-\markup { \fill-line { " " \center-column { \fontsize #2 "GEORGE FREDERIC HANDEL" } } }
+\markup { \fill-line { " " \center-column { \fontsize #2 "G. F. Händel" } } }
 
 
 \header {
@@ -15,7 +16,7 @@
  	breakbefore = ##t
 }
 
-Flauta = \new Staff {
+flauta = \new Staff {
 	\time 4/4
 	\tempo "Allegro Moderatto" 4 = 100 
 	\set Staff.midiInstrument = "flute"
@@ -115,7 +116,7 @@ Flauta = \new Staff {
 
 \score {
 	<<
-		\Flauta
+		\flauta
 	>>
 	\midi {
 	}
