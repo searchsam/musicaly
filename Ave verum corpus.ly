@@ -1,26 +1,17 @@
 % Created on Mon Aug 29 16:03:40 CST 2011
 % by serach.sam@
 
-\version "2.12.3"
+\version "2.14.2"
 
-#( set-default-paper-size "letter" )
 #(set-global-staff-size 14)
 
 global = { \key d \major \time 4/4 \tempo "Adagio" 4 = 85 s1*46 \bar "|." }
 
-\markup {
-	\fill-line {
-		\center-column { \fontsize #5 "Ave verum corpus" 
-			" "
-			\fontsize #3 \smallCaps "coro misto"
-		}
-	}
-}
-
-\markup { \hspace #130 \line { \fontsize #2 "W. A. Mozart, KV 618" } }
-
 \header {
- 	copyright = "Creative Commons Attribution 3.0" 
+	title = \markup { \center-align { " " \caps "Ave verum corpus" } }
+	instrument = \markup { \smallCaps "CORO" }
+	composer =  \markup { \center-column { "W. A. Motzar" } }
+	copyright = "Creative Commons Attribution 3.0" 
  	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  	breakbefore = ##t
 }
@@ -249,4 +240,8 @@ bajo = \relative c' {
 }
 
 \paper {
+	#( set-default-paper-size "letter" )
+	%system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
+	%ragged-last-bottom = ##f
+	%ragged-bottom = ##f
 }
