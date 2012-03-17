@@ -1,13 +1,7 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                         %
-%     Partitura generada por LilyPond     %
-%                  "Amen"                 %
-%      @Centro Cultural de Batahola       %
-%	  Editado por "sgutierrez"        %
-% 					  %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Created on Mon Aug 29 16:03:40 CST 2011
+% by serach.sam@
 
-\version "2.8.1"
+\version "2.14.2"
 
 \header {
 	title = "AMEN DEL MESIAS"
