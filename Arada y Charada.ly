@@ -1,15 +1,16 @@
 % Created on Mon Aug 29 16:03:40 CST 2011
 % by serach.sam@
 
-\version "2.12.3"
+\version "2.14.2"
 
 #(set-global-staff-size 14)
 
 global = { \key d \minor \time 6/8 \tempo "Tranquillo" 4 = 100 s4*57 \bar "||" s4*15 \mark \markup { \musicglyph #"scripts.segno" } \bar "|:"  s4*18 \bar ":|" s4*21 \mark "Fine" \bar "||" s4*27 \bar "|." }
 
 \header {
-	title = "Arada y Charada"
-	composer = "Bernal"
+	title = \markup { \caps "Arada y Charada" }
+	instrument = \markup { \smallCaps "CORO" }
+	composer = \markup { \center-column { "Bernal" } }
  	copyright = "Creative Commons Attribution 3.0" 
  	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  	breakbefore = ##t
