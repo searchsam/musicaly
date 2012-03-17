@@ -1,20 +1,22 @@
 % Created on Tue Feb 01 13:21:32 CST 2011
 % by search.sam@ 
 
-\version "2.12.3"
+\version "2.14.2"
+
 #(set-global-staff-size 16)
 
+\markup { \fill-line { \center-column { \fontsize #5 "Aleluya" "Coro del Mesias" \fontsize #3 \caps "OBOE II" } } }
+
+\markup { \fill-line { " " \center-column { \fontsize #2 "G. F. Händel" } } }
+
+
 \header {
-	title = \markup \center-column { \smallCaps "Aleluya" }
-	subtitle = "Coro del Mesias" 
- 	composer = "GEORGE FREDERIC HANDEL" 
- 	instrument = "OBOE II"
  	copyright = "Creative Commons Attribution 3.0"
  	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  	breakbefore = ##t
 }
 
-staffOboe = \new Staff {
+oboe = \new Staff {
 	\time 4/4
 	\tempo "Allegro Moderatto" 4 = 100 
 	\set Staff.midiInstrument = "oboe"
@@ -119,7 +121,7 @@ staffOboe = \new Staff {
 
 \score {
 	<<
-		\staffOboe
+		\oboe
 	>>
 	\midi {
 	}
