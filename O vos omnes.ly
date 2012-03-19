@@ -1,16 +1,9 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                         %
-%     Partitura generada por LilyPond     %
-%              "O Vos Omnes"              %
-%      @Centro Cultural de Batahola       %
-%         Editado por "sgutierrez"        %
-%                                         %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Created on Mon Aug 29 16:03:40 CST 2011
+% by serach.sam@
 
-\version "2.12.3"
+\version "2.14.2"
 
-#(set-default-paper-size "letter" )
-#(set-global-staff-size 11)
+#(set-global-staff-size 14)
 #(ly:set-option 'point-and-click #f)
 
 italicas=\override LyricText #'font-shape = #'italic
@@ -20,10 +13,12 @@ htitle="O vos omnes"
 hcomposer="T. L. de Victoria"
 
 \header {
-        title=\markup{\fontsize #4 "O VOS OMNES"}
-        %subtitle="in Communione"
-        composer="Tomás Luis de Victoria (c.1548-1611)"
-        copyright=\markup{ \fill-line {"(c) Centro Cultural Batahola" } }
+        title = \markup { \caps "O vos omnes" }
+	instrument = \markup { \smallCaps "CORO" }
+	composer = \markup { \center-column { "Tomás Luis de Victoria" \small "(c.1548-1611)" } }
+ 	copyright = "Creative Commons Attribution 3.0" 
+ 	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+ 	breakbefore = ##t
 }
 
 global={ \key f \major \time 4/4 \skip 1*68 \bar "|." }
