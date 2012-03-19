@@ -1,24 +1,20 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                         %
-%     Partitura generada por LilyPond     %
-%          "El Rey de la Gloria"          %
-%      @Centro Cultural de Batahola       %
-%	  Editado por "sgutierrez"        %
-% 					  %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Created on Tue Feb 01 15:41:25 CST 2011
+% by search.sam@ 
 
-\version "2.12.3"
+\version "2.14.2"
+
 #(set-global-staff-size 18)
 
+\markup { \fill-line { \center-column { \fontsize #5 "El Rey de la Gloria" \fontsize #2 "Del Mesías" \fontsize #3 \caps "oboe i" } } }
+
+\markup { \fill-line { " " \center-column { \fontsize #2 "G. F. Händel" } } }
+
 \header {
-	title = \markup \center-column { \caps "El Rey de la Gloria" }
-	subtitle = "Nº 33 del Mesias" 
- 	composer = "GEORGE FREDERIC HANDEL" 
- 	instrument = "OBOE I" 
  	copyright = "Creative Commons Attribution 3.0"
  	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  	breakbefore = ##t
 }
+
 	
 letra =  #(define-music-function (parser location markp) (string?)
 		#{
@@ -102,10 +98,16 @@ oboe = \new Staff {
 	}
 }
 
-\score{
-	\oboe
+\score {
+	<<
+		\oboe
+	>>
+	\midi {
 	}
-	
+	\layout {
+	}
+}
+
 \paper {
 	#(set-paper-size "letter")
 	system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
