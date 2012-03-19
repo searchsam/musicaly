@@ -1,21 +1,21 @@
 % Created on Thu Feb 10 16:33:41 CST 2011
 % by search.sam@
 
-\version "2.12.3"
+\version "2.14.2"
+
 #(set-global-staff-size 21)
 
+\markup { \fill-line { \center-column { \fontsize #5 "El Rey de la Gloria" \fontsize #2 "Del Mesías" "Oboe II transportado para Clarinete" \fontsize #3 \caps "CLARINETE" } } }
+
+\markup { \fill-line { " " \center-column { \fontsize #2 "G. F. Händel" } } }
+
 \header {
-	title = \markup \center-column { \caps "El Rey de la Gloria" }
-	subtitle = "Nº 33 del Mesias" 
-	subsubtitle = "Oboe II transportado a Clarinete" 
- 	composer = "GEORGE FREDERIC HANDEL" 
- 	instrument = "CLARINETE"
  	copyright = "Creative Commons Attribution 3.0"
  	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  	breakbefore = ##t
 }
 
-staffClarineteEnSiB = \new Staff {
+clarinete = \new Staff {
 	\time 4/4
 	\tempo "Marcato" 4 = 110 
 	\set Staff.midiInstrument = "clarinet"
@@ -96,7 +96,7 @@ staffClarineteEnSiB = \new Staff {
 
 \score {
 	<<
-		\staffClarineteEnSiB
+		\clarinete
 	>>
 	
 	\midi {
@@ -112,5 +112,3 @@ staffClarineteEnSiB = \new Staff {
 	ragged-last-bottom = ##f
 	ragged-bottom = ##f
 }
-
-
