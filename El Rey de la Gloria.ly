@@ -1,19 +1,23 @@
 % Created on Tue Jan 25 13:49:28 CST 2011
 % by search.sam@ 
-\version "2.12.3"
-#(set-global-staff-size 16)
+
+\version "2.14.2"
+
+#(set-global-staff-size 18)
+
+\markup { \fill-line { \center-column { \fontsize #5 "El Rey de la Gloria" \fontsize #2 "Del Mesías" \fontsize #3 \caps "FLAUTA I" } } }
+
+\markup { \fill-line { " " \center-column { \fontsize #2 "G. F. Händel" } } }
 
 \header {
-	title = \markup \center-column { \smallCaps "El Rey de la Gloria" }
-	subtitle = "Nº 33 del Mesias" 
- 	composer = "GEORGE FREDERIC HANDEL" 
- 	instrument = \markup \bold \italic "FLAUTA I" 
+ 	copyright = "Creative Commons Attribution 3.0"
+ 	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+ 	breakbefore = ##t
 }
 
-staffFlauta = \new Staff {
+flauta = \new Staff {
 	\time 4/4
 	\tempo 4 = 110
-	%\set Staff.instrumentName = "Flauta"
 	\set Staff.midiInstrument = "flute"
 	\set Score.skipBars = ##t
 	\key f \major
@@ -92,7 +96,7 @@ staffFlauta = \new Staff {
 
 \score {
 	<<
-		\staffFlauta
+		\flauta
 	>>
 	\midi {
 	}
@@ -102,6 +106,7 @@ staffFlauta = \new Staff {
 
 \paper {
 	#(set-paper-size "letter")
+	system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
+	ragged-last-bottom = ##f
+	ragged-bottom = ##f
 }
-
-
