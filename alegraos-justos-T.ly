@@ -1,24 +1,21 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                         %
-%     Partitura generada por LilyPond     %
-%            "Alegraos Justos"            %
-%      @Centro Cultural de Batahola       %
-%	  Editado por "sgutierrez"        %
-% 					  %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Created on Mon Aug 29 16:03:40 CST 2011
+% by serach.sam@
 
-\version "2.8.1"
+\version "2.14.2"
+
+#(set-global-staff-size 18)
+
+\markup { \fill-line { \center-column { \fontsize #5 "Alegraos justos" \fontsize #3 \caps "tenor" } } }
+
+\markup { \fill-line { " " \center-column { \fontsize #2 "Thomas Grossi" \small "(Siglo XVI)" } } }
 
 \header {
-	title = "ALEGRAOS JUSTOS"
-	subtitle = "TENOR"
-	composer = "THOMAS GROSSI - SIGLO VXI"
-	%arranger = "Arrglo S. Gutierrez"
-	copyright = "@Centro Cultural de Batahola"
-	}
+ 	copyright = "Creative Commons Attribution 3.0" 
+ 	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+ 	breakbefore = ##t
+}
 	
 tenor = \relative c' {
-		\set Staff.instrumentName = #"Tenor"
 		\clef "G_8"
 		\key a \major
 		\time 3/2
@@ -36,16 +33,23 @@ textot = \lyricmode { A le gra os jus tos en el Se ñor, de los san tos es la-a 
 Con fe sad to dos al Se ñor, con fe sad to dos al Se ñor con ci ta ras, con fe sad to dos al Se ñor con ci ta ras, con los dul ces so ni dos del ar pa, con los dul ces so ni dos del ar pa. 
 Glo ri fi cad le, glo ri fi cad le, glo ri fi cad le, can tad le jus tos, can tad le jus tos can ti cos nue vos, a la bad le con ar te, can tad le con voz so no ra, a la bad le con ar te, a la bad le con ar te, can tad le con voz so no ra, can tad le con voz so no ra, can tad le con voz so no ra. 
 A le gra os jus tos en el Se ñor, de los san tos es la-a do ra cion, la a do ra cion. }
-
-\score{
+	
+\score {
+	<<
 		\new Staff <<
 			\new Voice = "T" { \tenor }
 			\addlyrics { \textot }
-			>>
-		
-	\layout { }
+		>>
+	>>
+	\midi {
 	}
-	
+	\layout {
+	}
+}
+
 \paper {
-	#(set-paper-size "letter")
-	}
+	#( set-default-paper-size "letter" )
+	%system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
+	%ragged-last-bottom = ##f
+	%ragged-bottom = ##f
+}
