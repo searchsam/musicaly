@@ -1,20 +1,15 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                         %
-%     Partitura generada por LilyPond     %
-%          "Digno es el Cordero"          %
-%      @Centro Cultural de Batahola       %
-%	  Editado por "sgutierrez"        %
-% 					  %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Created on Tue Feb 01 15:41:25 CST 2011
+% by search.sam@ 
 
-\version "2.12.2"
+\version "2.14.2"
+
 #(set-global-staff-size 20)
 
+\markup { \fill-line { \center-column { \fontsize #5 "Digno es el Cordero" \fontsize #2 "Del Mesias" \fontsize #3 \caps "OBOE I - FLAUTA I" } } }
+
+\markup { \fill-line { " " \center-column { \fontsize #2 "G. F. Händel" } } }
+
 \header {
-	title = \markup \center-column { \caps "Digno es el Cordero" }
-	subtitle = "Nº 53 del Mesias" 
- 	composer = "GEORGE FREDERIC HANDEL" 
- 	instrument = "OBOE I - FLAUTA I" 
  	copyright = "Creative Commons Attribution 3.0"
  	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  	breakbefore = ##t
@@ -24,30 +19,30 @@ oboe = \new Staff {\relative c'' {
 		\set Score.skipBars = ##t
 		\key d \major
 		
-		r4_\markup{ Oboe I }\tempo "Largo" 4=60 fis2 e4 |%1
+		r4_\markup{ Oboe I }\tempo "Largo" 4 = 60 fis2 e4 |%1
 		d4. d8 d2 |%2
 		g4 fis e2 |%3
 		r4 e e4. e8 |%4
 		d2 d4. e8 |%5
 		fis2. e4 |%6
-		fis2 r8\tempo "Andante" fis fis fis |%7
+		fis2 r8\tempo "Andante" 4 = 90 fis fis fis |%7
 		d8 d r fis a a r a |%8
 		a8 a r fis g4 r8 g |%9
 		a8 a r a b b r b |%10
 		e,4 a r2\mark \default |%11
-		r4\tempo "Largo" e2 e4 |%12
+		r4\tempo "Largo" 4 = 60 e2 e4 |%12
 		a4. a8 e2 |%13
 		d4 cis b2 |%14
 		r4 gis' gis4. gis8 |%15
 		fis4. fis8 fis4 fis |%16
 		fis2 r4 fis |%17
 		fis2 eis4. eis8 |%18
-		fis2 r8\tempo "Andante" fis fis fis |%19
+		fis2 r8\tempo "Andante" 4 = 90 fis fis fis |%19
 		g8 g r g a a r a |%20
 		b8 b r b e,4 r8 a |%21
 		a8 g r g e e r a |%22
 		fis4 d\mark \default r2 |%23
-		\tempo "Larghetto" R1*4 |%24
+		\tempo "Larghetto" 4 = 100 R1*4 |%24
 		r4 a8 b16 cis d8 d d d |%28
 		d8 d d d d cis16 b a8 g |%29
 		fis4 r8 a b16 a g fis e8 a |%30
@@ -88,19 +83,21 @@ oboe = \new Staff {\relative c'' {
 		cis8 cis r d d e r a, |%65
 		e'8 e r a, b16 a g fis e d cis b |%66
 		a8 a' r a a4 b8 d |%67
-		d4 cis d r8\tempo "Agagio" a |%68
+		d4 cis d r8\tempo "Agagio" 4 = 50 a |%68
 		a2 a4 cis |%69
 		d1 |%70
 		cis1 \fermata \bar "|." %71
 	}
 }
 
-\score{
+\score {
 	<<
 		\oboe
 	>>
+
 	\midi {
 	}
+
 	\layout {
 	}
 }
