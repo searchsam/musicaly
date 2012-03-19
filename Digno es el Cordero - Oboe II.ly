@@ -1,20 +1,21 @@
 % Created on Wed Feb 02 12:04:32 CST 2011
 % by search.sam@
 
-\version "2.12.3"
+\version "2.14.2"
+
 #(set-global-staff-size 19)
 
+\markup { \fill-line { \center-column { \fontsize #5 "Digno es el Cordero" \fontsize #2 "Del Mesías" \fontsize #3 \caps "OBOE II" } } }
+
+\markup { \fill-line { " " \center-column { \fontsize #2 "G. F. Händel" } } }
+
 \header {
-	title = \markup \center-column { \caps "Digno es el Cordero" }
-	subtitle = "Nº 53 del Mesias" 
- 	composer = "GEORGE FREDERIC HANDEL" 
- 	instrument = "OBOE II"
  	copyright = "Creative Commons Attribution 3.0"
  	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  	breakbefore = ##t
 }
 
-staffOboe = \new Staff {
+oboe = \new Staff {
 	\time 4/4
 	\tempo "Largo" 4 = 90 
 	\set Staff.midiInstrument = "oboe"
@@ -96,7 +97,7 @@ staffOboe = \new Staff {
 }
          
 \score {<<
-		\staffOboe
+		\oboe
 	>>
 	\midi {
 	}
@@ -110,5 +111,3 @@ staffOboe = \new Staff {
 	ragged-last-bottom = ##f
 	ragged-bottom = ##f
 }
-
-
