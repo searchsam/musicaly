@@ -1,21 +1,21 @@
 % Created on Wed Jan 26 21:22:44 CST 2011
 % by search.sam@
 
-\version "2.12.3"
-#(set-global-staff-size 19)
+\version "2.14.2"
+
+%#(set-global-staff-size 19)
+
+\markup { \fill-line { \center-column { \fontsize #5 "El Rey de la Gloria" \fontsize #2 "Del Mesías" "(Transportado una octava)" \fontsize #3 \caps "FLAUTA I" } } }
+
+\markup { \fill-line { " " \center-column { \fontsize #2 "G. F. Händel" } } }
 
 \header {
-	title = "El Rey de la Gloria" 
-	subtitle = "Nº 33 del Mesias" 
-	subsubtitle = "(Transportado una octava)" 
- 	composer = "GEORGE FREDERIC HANDEL" 
- 	instrument = "FLAUTA I"
  	copyright = "Creative Commons Attribution 3.0"
  	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  	breakbefore = ##t
 }
 
-staffFlauta = \new Staff {
+flauta = \new Staff {
 	\time 4/4
 	\tempo "Marcato" 4 = 110
 	\set Staff.midiInstrument = "flute"
@@ -96,7 +96,7 @@ staffFlauta = \new Staff {
 
 \score {
 	<<
-		\staffFlauta
+		\flauta
 	>>
 	\midi {
 	}
@@ -110,5 +110,3 @@ staffFlauta = \new Staff {
 	ragged-last-bottom = ##f
 	ragged-bottom = ##f
 }
-
-
