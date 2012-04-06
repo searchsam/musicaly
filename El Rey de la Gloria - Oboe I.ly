@@ -3,11 +3,11 @@
 
 \version "2.14.2"
 
-#(set-global-staff-size 18)
+#(set-global-staff-size 17)
 
 \markup { \fill-line { \center-column { \fontsize #5 "El Rey de la Gloria" \fontsize #2 "Del Mesías" \fontsize #3 \caps "oboe i" } } }
 
-\markup { \fill-line { " " \center-column { \fontsize #2 "G. F. Händel" } } }
+\markup { \fill-line { " " \center-column { \fontsize #2 "Georg Friedrich Händel" } } }
 
 \header {
  	copyright = "Creative Commons Attribution 3.0"
@@ -15,15 +15,6 @@
  	breakbefore = ##t
 }
 
-	
-letra =  #(define-music-function (parser location markp) (string?)
-		#{
-			\once \override Score . RehearsalMark #'self-alignment-X = #left
-			\once \override Score . RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
-			\mark \markup { \bold $markp }
-		#})
-
-	
 oboe = \new Staff {
 	\relative c'' {
 		\tempo "Marcato" 4 = 110
@@ -36,12 +27,14 @@ oboe = \new Staff {
 		f4 f8. e16 e4 r8 e |
 		f8. e16 f8. g16 c,8 f f f |
 		f1( |
-		f2.) r4 \letra "A" |
+		f2.) r4 |
+		\mark A
 		R1*4 | 
 		r2 r4 r8 c\mf |
 		f4 f8. e16 d8 d r8 d |
 		g4 g8. f16 e4. r16 f |
-		d4 e8. f16 e8 e r4 \letra "B" |
+		d4 e8. f16 e8 e r4 |
+		\mark B
 		R1*7 |
 		r2 r4 r8 f\mf |
 		f4.. bes16 a8 a r f |
@@ -49,7 +42,8 @@ oboe = \new Staff {
 		f4.. bes16 a8 a r4 |
 		r1 |
 		r2 r4 r8 c, |
-		d8.( e16) f8( g) e4 r8 c \letra "C" |
+		d8.( e16) f8( g) e4 r8 c |
+		\mark C
 		d8.( e16) f8( g) e4 r8 c\f |
 		c f d( d16 e) f8 c r d |
 		d f d d16( e f8) c r4 |
@@ -58,7 +52,8 @@ oboe = \new Staff {
 		e c r c c d16( e f8) f |
 		e g, g g a a d4 |
 		r8 g, c4 r8 c8 bes4( |
-		bes) a g2 \letra "D" |
+		bes) a g2 |
+		\mark D
 		f8 c' c c f4 r8 f |
 		e e e e d( e16 f g8) g, |
 		c( d16 e) f2 e4( |
@@ -70,7 +65,8 @@ oboe = \new Staff {
 		f4. e16 d) e8 f16 g a4( |
 		a8) g16( f bes8) a g4 a8 f( |
 		f4) e f r8 c |
-		c f d( d16 e) f8 c r8 d \letra "E" |
+		c f d( d16 e) f8 c r8 d |
+		\mark E 
 		c f d( d16 e) f8 c r4 |
 		r8 f, f f c'4 r |
 		r8 a a a d4 r |
@@ -81,7 +77,8 @@ oboe = \new Staff {
 		e8) f16 e d8 c b4 c( |
 		c) b c8 g c c |
 		c4 c8 c c bes r8 a |
-		g c c c c g r4 \letra "F" |
+		g c c c c g r4 |
+		\mark F
 		r8 g g g a4 r |
 		r8 a a a bes2( |
 		bes8) bes a g a f' f f |
@@ -94,7 +91,8 @@ oboe = \new Staff {
 		a( bes16 c) d8 d c16( f) g( a) bes8 bes |
 		a8 f r4 c2 |
 		d1 |
-		c \fermata \bar "|."
+		c \fermata |
+		\bar "|."
 	}
 }
 
@@ -110,7 +108,4 @@ oboe = \new Staff {
 
 \paper {
 	#(set-paper-size "letter")
-	system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
-	ragged-last-bottom = ##f
-	ragged-bottom = ##f
 }
