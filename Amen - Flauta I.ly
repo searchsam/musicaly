@@ -1,4 +1,4 @@
-﻿% Created on Tue Feb 01 15:41:25 CST 2011
+% Created on Tue Feb 01 15:41:25 CST 2011
 % by search.sam@ 
 
 \version "2.14.2"
