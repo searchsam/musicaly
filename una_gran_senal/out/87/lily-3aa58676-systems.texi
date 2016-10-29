@@ -1,0 +1,3 @@
+@image{./87/lily-3aa58676-1}
+@image{./87/lily-3aa58676-2}
+@c eof

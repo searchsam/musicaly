@@ -1,0 +1,484 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Creator: LilyPond 2.19.35
+%%BoundingBox: -9 -32 348 1
+%%Orientation: Portrait
+%%DocumentSuppliedResources: font Emmentaler-16
+%%DocumentSuppliedResources: font TeXGyreSchola-Regular
+%%EndComments
+%%BeginProlog
+/lilypond-datadir where {pop} {userdict /lilypond-datadir (/usr/share/lilypond/2.19.35) put } ifelse
+%%BeginFont: Emmentaler-16
+lilypond-datadir (/fonts/otf/emmentaler-16.otf) concatstrings (r) file .loadfont
+%%EndFont
+
+%%BeginFont: TeXGyreSchola-Regular
+(/usr/share/fonts/lilypond/texgyreschola-regular.otf) (r) file .loadfont
+%%EndFont
+
+/magfontemmentaler-16mPBBo { /Emmentaler-16 5.6234 output-scale div selectfont } bind def
+/lily-output-units 2.83464566929134 def %% millimeter
+/staff-line-thickness 0.116428571428571 def
+/line-width 87.1547244094488 def
+/paper-size (a4) def
+/staff-height 4.0 def
+/output-scale 1.40583921405839 def
+/page-height 211.261712598425 def
+/page-width 149.376968503937 def
+%%BeginResource: procset (music-drawing-routines.ps) 1 0
+%!PS-Adobe-2.0
+%
+% Functions for direct and embedded PostScript
+
+% Careful with double % as comment prefix.
+% Any %%X comment is interpreted as DSC comments.
+
+% TODO: use dicts or prefixes to prevent namespace pollution.
+
+/pdfmark where
+{pop} {userdict /pdfmark /cleartomark load put} ifelse
+
+
+% llx lly urx ury URI
+/mark_URI
+{
+    /uri exch def
+    /ury exch def
+    /urx exch def
+    /lly exch def
+    /llx exch def
+    [
+	/Rect [ llx lly urx ury ]
+	
+	/Border [ 0 0 0 ]
+
+        /Action
+	    <<
+		/Subtype /URI
+		/URI uri
+	    >>
+        /Subtype /Link
+    /ANN
+    pdfmark
+}
+bind def
+
+% llx lly urx ury page
+/mark_page_link
+{
+    /page exch def
+    /ury exch def
+    /urx exch def
+    /lly exch def
+    /llx exch def
+    [
+        /Rect [ llx lly urx ury ]
+        /Border [ 0 0 0 ]
+        /Page page
+        /Subtype /Link
+    /ANN
+    pdfmark
+}
+bind def
+
+% from adobe tech note 5002.
+/BeginEPSF { %def
+    /b4_Inc_state save def % Save state for cleanup
+    /dict_count countdictstack def % Count objects on dict stack
+    /op_count count 1 sub def % Count objects on operand stack
+    userdict begin % Push userdict on dict stack
+    /showpage { } def % Redefine showpage, { } = null proc
+    0 setgray 0 setlinecap % Prepare graphics state
+    1 setlinewidth 0 setlinejoin
+    10 setmiterlimit [ ] 0 setdash newpath
+    false setoverprint
+} bind def
+
+/EndEPSF { %def
+  count op_count sub {pop} repeat % Clean up stacks
+  countdictstack dict_count sub {end} repeat
+  b4_Inc_state restore
+} bind def
+
+/stroke_and_fill? {
+    {
+	gsave
+	    false setstrokeadjust
+	    stroke
+	grestore
+	fill
+    }
+    {
+	stroke
+    }
+    ifelse
+} bind def
+
+/vector_add { % x1 y1 x2 y2 vector_add x1+x2 y1+y2
+	exch
+	4 1 roll
+	add
+	3 1 roll
+	add
+	exch
+} bind def
+
+/draw_round_box % width height x y blot
+{
+    0 max setlinewidth
+    matrix currentmatrix 5 1 roll
+    currentpoint translate newpath translate
+    2 copy 0 min exch 0 min exch translate
+    abs exch abs exch
+    currentlinewidth 0 eq
+    { % straight corners
+	2 copy 2 mul gt
+	{ % horizontal
+	    0 1 index 2 div moveto
+	    setlinewidth
+	    0 rlineto
+	    0 setlinecap
+	    stroke
+	}
+	{
+	    2 copy exch 2 mul gt
+	    { % vertical
+		1 index 2 div 0 moveto
+		exch setlinewidth
+		0 exch rlineto
+		0 setlinecap
+		stroke
+	    }
+	    {
+		0 0 4 2 roll rectfill
+	    }
+	    ifelse
+	}
+	ifelse
+    }
+    { % rounded corners
+	2 copy 0 eq exch 0 eq or
+	{ % line shape
+	    0 0 moveto
+	    rlineto
+	    1 setlinecap
+	    stroke
+	    0 setlinecap
+	}
+	{ % full shape
+	    currentstrokeadjust {
+		currentlinewidth 2 div
+		0 0 2 index 180 270 arc
+		2 index 0 2 index 270 360 arc
+		3 copy 0 90 arc
+		0 2 index 3 -1 roll 90 180 arc
+		closepath
+		2 copy 2 mul gt
+		{ % horizontal
+		    2 copy add currentlinewidth add 10 add % large enough
+		    0 1 index neg moveto
+		    2 index 1 index neg lineto
+		    2 index 1 index lineto
+		    0 exch lineto closepath
+		    gsave clip newpath
+		    0 1 index 2 div moveto
+		    currentlinewidth add setlinewidth
+		    0 rlineto
+		    2 setlinecap
+		    stroke
+		    grestore
+		}
+		{
+		    2 copy exch 2 mul gt
+		    { % vertical
+			2 copy add currentlinewidth add 10 add % large enough
+			dup neg 0 moveto
+			dup 0 lineto
+			dup 2 index lineto
+			neg 1 index lineto closepath
+			gsave clip newpath
+			1 index 2 div 0 moveto
+			exch currentlinewidth add setlinewidth
+			0 exch rlineto
+			2 setlinecap
+			stroke
+			grestore
+		    }
+		    {
+			pop pop
+			fill
+		    }
+		    ifelse
+		}
+		ifelse
+		newpath
+	    }
+	    {
+		1 setlinejoin
+		0 0 4 2 roll 4 copy rectstroke rectfill
+	    }
+	    ifelse
+	}
+	ifelse
+    }
+    ifelse
+    setmatrix
+} bind def
+
+/draw_polygon % fill? x(n) y(n) x(n-1) y(n-1) ... x(0) y(0) n blot
+{
+	setlinewidth %set to blot
+
+	0 setlinecap
+	1 setlinejoin
+
+	3 1 roll
+	/polygon_x
+	currentpoint
+	/polygon_y exch def
+	def
+	rmoveto % x(0) y(0)
+	{ polygon_x polygon_y vector_add lineto } repeat % n times
+	closepath
+	stroke_and_fill?
+} bind def
+
+/draw_circle % filled? radius thickness draw_circle
+{
+	setlinewidth	% f? r
+	currentpoint	% f? r x0 y0
+	3 2 roll	% f? x0 y0 r
+	dup 0 rmoveto
+	0 360 arc closepath
+	stroke_and_fill?
+} bind def
+
+/draw_ellipse % filled? x-radius y-radius thickness draw_ellipse
+{
+  setlinewidth % f? x-r y-r
+  /savematrix matrix currentmatrix def
+  scale % f?
+  currentpoint
+  1 0 rmoveto
+  1 0 360  arc closepath
+  savematrix setmatrix
+  stroke_and_fill?
+} bind def
+
+/draw_partial_ellipse % filled connect x-radius y-radius startangle endangle thickness draw_partial_ellipse
+% Note that filled is not boolean to permit for different graylevels (ie for trill keys)
+{
+  gsave
+  currentpoint translate
+  /thickness exch def
+  /endangle exch def
+  /startangle exch def
+  /y_radius exch def
+  /x_radius exch def
+  /endrad x_radius y_radius mul
+    x_radius x_radius mul
+    endangle cos endangle cos mul mul
+    y_radius y_radius mul
+    endangle sin endangle sin mul mul add sqrt div def
+  /endangle endangle sin endrad mul y_radius div
+    endangle cos endrad mul x_radius div atan def
+  /startrad x_radius y_radius mul
+    x_radius x_radius mul
+      startangle cos startangle cos mul mul
+    y_radius y_radius mul
+      startangle sin startangle sin mul mul add sqrt div def
+  /startangle startangle sin startrad mul y_radius div
+    startangle cos startrad mul x_radius div atan def
+  /connect exch def
+  /filled exch def
+  /savematrix matrix currentmatrix def
+  thickness setlinewidth
+  x_radius y_radius scale
+  startangle cos startangle sin moveto
+  0 0 1 startangle
+    startangle endangle eq { endangle 360 add } { endangle } ifelse
+    arc
+  connect {
+    startangle cos startangle sin moveto endangle cos endangle sin lineto }
+    if
+  savematrix setmatrix filled stroke_and_fill?
+  grestore
+} bind def
+
+/draw_line % dx dy x1 y1 thickness draw_line
+{
+	setlinewidth % dx dy x1 y1
+	1 setlinecap
+	rmoveto % dx dy
+	rlineto
+	stroke
+} bind def
+
+/draw_dashed_line % dx dy thickness dashpattern offset draw_dashed_line
+{
+	1 setlinecap
+	setdash % dx dy thickness
+	setlinewidth %dx dy
+	rlineto
+	stroke
+	[] 0 setdash % reset dash pattern
+} bind def
+
+/print_glyphs % w dx dy glyph print_glyphs
+{
+	{
+		currentpoint %w dx dy glyph x0 y0
+		5 2 roll %w x0 y0 dx dy glyph
+		3 1 roll %w x0 y0 glyph dx dy
+		rmoveto %w x0 y0 glyph
+		glyphshow %w x0 y0
+		moveto %w
+		0 rmoveto
+	}repeat
+}bind def
+%end music-drawing-routines.ps
+
+%%EndResource
+%%BeginResource: procset (lilyponddefs.ps) 1 0
+%!PS-Adobe-2.0: lilyponddefs.ps
+%
+% Functions for direct PostScript output
+
+% /setgray { 1 add } bind def
+
+/set-ps-scale-to-lily-scale {
+	lily-output-units output-scale mul dup scale
+} bind def
+
+
+/init-paper {
+	gsave
+	clippath pathbbox newpath
+	/paper-height exch def
+	/paper-width exch def pop pop pop
+	% FIXME
+	/top-margin 2 def
+	paper-width line-width sub 2 div /left-margin exch def
+	grestore
+} bind def
+
+/init-lilypond-parameters {
+	staff-line-thickness setlinewidth
+	staff-height init-paper
+} bind def
+
+
+% end lilyponddefs.ps
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+init-lilypond-parameters
+%%EndSetup
+
+/mark_page_link { pop pop pop pop pop } bind def
+gsave set-ps-scale-to-lily-scale
+/helpEmmentaler-Brace where {pop helpEmmentaler-Brace} if
+/helpEmmentaler-11 where {pop helpEmmentaler-11} if
+/helpEmmentaler-13 where {pop helpEmmentaler-13} if
+/helpEmmentaler-14 where {pop helpEmmentaler-14} if
+/helpEmmentaler-16 where {pop helpEmmentaler-16} if
+/helpEmmentaler-18 where {pop helpEmmentaler-18} if
+/helpEmmentaler-20 where {pop helpEmmentaler-20} if
+/helpEmmentaler-23 where {pop helpEmmentaler-23} if
+/helpEmmentaler-26 where {pop helpEmmentaler-26} if
+0.0000 -5.7600 moveto 87.0383 0.0000 0.0582 0.0000 0.1164 draw_line
+0.0000 -4.7600 moveto 87.0383 0.0000 0.0582 0.0000 0.1164 draw_line
+0.0000 -3.7600 moveto 87.0383 0.0000 0.0582 0.0000 0.1164 draw_line
+0.0000 -2.7600 moveto 87.0383 0.0000 0.0582 0.0000 0.1164 draw_line
+0.0000 -1.7600 moveto 87.0383 0.0000 0.0582 0.0000 0.1164 draw_line
+24.4125 -3.7600 moveto 0.2212 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+63.5665 -3.7600 moveto 0.2212 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+71.4327 -3.7600 moveto 0.2212 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+15.2973 -3.7600 moveto 0.2212 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+35.4988 -3.7600 moveto 0.2212 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+79.1741 -3.7600 moveto 0.2212 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+52.4802 -3.7600 moveto 0.2212 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+86.9335 -3.7600 moveto 0.2212 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+43.3650 -3.7600 moveto 0.2212 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+64.4538 -5.7600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+62.5485 -3.7600 moveto 0.0514 3.2269 -0.0257 -1.7769 0.1000 draw_round_box
+61.3096 -5.7600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+58.2467 -5.2600 moveto magfontemmentaler-16mPBBo /accidentals.natural glyphshow
+65.6927 -3.7600 moveto 0.0514 3.2269 -0.0257 -1.7769 0.1000 draw_round_box
+60.5292 -3.7600 moveto 0.0514 3.2269 -0.0257 -1.2769 0.1000 draw_round_box
+59.2903 -5.2600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+55.0820 -5.2600 moveto magfontemmentaler-16mPBBo /accidentals.sharp glyphshow
+66.4731 -3.7600 moveto magfontemmentaler-16mPBBo /rests.1 glyphshow
+22.1912 -3.7600 moveto gsave currentpoint translate
+1 setlinecap 1 setlinejoin 0.09314286 setlinewidth
+0.65730813 -2.20855325 moveto  1.45905324 -2.97613399 2.96402052 -2.97613399 3.76576564 -2.20855325 curveto  3.76576564 -2.20855325 lineto  2.96402052 -2.83641970 1.45905324 -2.83641970 0.65730813 -2.20855325 curveto   closepath  gsave stroke grestore fill grestore
+54.6064 -3.7600 moveto 0.0514 3.2269 -0.0257 -0.7769 0.1000 draw_round_box
+53.3674 -4.7600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+49.2154 -4.7600 moveto magfontemmentaler-16mPBBo /accidentals.natural glyphshow
+51.4979 -3.7600 moveto 0.0514 3.2269 -0.0257 -0.7769 0.1000 draw_round_box
+50.2590 -4.7600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+46.0508 -4.7600 moveto magfontemmentaler-16mPBBo /accidentals.sharp glyphshow
+48.7397 -3.7600 moveto 0.0514 3.2269 -0.0257 -0.7769 0.1000 draw_round_box
+57.7710 -3.7600 moveto 0.0514 3.2269 -0.0257 -1.2769 0.1000 draw_round_box
+56.5320 -5.2600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+47.5008 -4.7600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+84.1000 -5.7600 moveto magfontemmentaler-16mPBBo /noteheads.s1 glyphshow
+83.3196 -3.7600 moveto 0.0514 3.2269 -0.0257 -2.2769 0.1000 draw_round_box
+82.0807 -6.2600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+85.4228 -3.7600 moveto 0.0514 3.1518 -0.0257 -1.7018 0.1000 draw_round_box
+33.2418 -3.7600 moveto gsave currentpoint translate
+1 setlinecap 1 setlinejoin 0.09314286 setlinewidth
+0.65730813 -3.05855325 moveto  1.46640155 -3.83261895 2.99238650 -3.83261895 3.80147992 -3.05855325 curveto  3.80147992 -3.05855325 lineto  2.99238650 -3.69290466 1.46640155 -3.69290466 0.65730813 -3.05855325 curveto   closepath  gsave stroke grestore fill grestore
+50.2590 -3.7600 moveto gsave currentpoint translate
+1 setlinecap 1 setlinejoin 0.09314286 setlinewidth
+0.65730813 -2.20855325 moveto  1.45905324 -2.97613399 2.96402052 -2.97613399 3.76576564 -2.20855325 curveto  3.76576564 -2.20855325 lineto  2.96402052 -2.83641970 1.45905324 -2.83641970 0.65730813 -2.20855325 curveto   closepath  gsave stroke grestore fill grestore
+61.3096 -3.7600 moveto gsave currentpoint translate
+1 setlinecap 1 setlinejoin 0.09314286 setlinewidth
+0.65730813 -3.05855325 moveto  1.46640155 -3.83261895 2.99238650 -3.83261895 3.80147992 -3.05855325 curveto  3.80147992 -3.05855325 lineto  2.99238650 -3.69290466 1.46640155 -3.69290466 0.65730813 -3.05855325 curveto   closepath  gsave stroke grestore fill grestore
+76.9405 -3.7600 moveto gsave currentpoint translate
+1 setlinecap 1 setlinejoin 0.09314286 setlinewidth
+0.65730813 -3.55855325 moveto  1.46160178 -4.32838431 2.97383979 -4.32838431 3.77813345 -3.55855325 curveto  3.77813345 -3.55855325 lineto  2.97383979 -4.18867003 1.46160178 -4.18867003 0.65730813 -3.55855325 curveto   closepath  gsave stroke grestore fill grestore
+81.3003 -3.7600 moveto 0.0514 3.2269 -0.0257 -2.2769 0.1000 draw_round_box
+72.3200 -5.2600 moveto magfontemmentaler-16mPBBo /noteheads.s1 glyphshow
+73.6428 -3.7600 moveto 0.0514 3.1518 -0.0257 -1.2018 0.1000 draw_round_box
+70.4147 -3.7600 moveto 0.0514 3.2269 -0.0257 -1.7769 0.1000 draw_round_box
+69.1758 -5.7600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+80.0614 -6.2600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+78.1795 -3.7600 moveto 0.0514 3.2269 -0.0257 -2.2769 0.1000 draw_round_box
+76.9405 -6.2600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+76.1601 -3.7600 moveto 0.0514 3.2269 -0.0257 -1.7769 0.1000 draw_round_box
+74.9212 -5.7600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+19.4330 -4.7600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+23.4302 -3.7600 moveto 0.0514 3.2269 -0.0257 -0.7769 0.1000 draw_round_box
+22.1912 -4.7600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+17.9830 -4.7600 moveto magfontemmentaler-16mPBBo /accidentals.sharp glyphshow
+20.6720 -3.7600 moveto 0.0514 3.2269 -0.0257 -0.7769 0.1000 draw_round_box
+26.5386 -3.7600 moveto 0.0514 3.2269 -0.0257 -0.7769 0.1000 draw_round_box
+25.2997 -4.7600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+21.1476 -4.7600 moveto magfontemmentaler-16mPBBo /accidentals.natural glyphshow
+5.0000 -3.7600 moveto magfontemmentaler-16mPBBo /timesig.C22 glyphshow
+0.8000 -4.7600 moveto magfontemmentaler-16mPBBo /clefs.G glyphshow
+8.6829 -3.7600 moveto magfontemmentaler-16mPBBo /rests.1 glyphshow
+17.5073 -3.7600 moveto 0.0514 3.1518 -0.0257 -0.2018 0.1000 draw_round_box
+16.1845 -4.2600 moveto magfontemmentaler-16mPBBo /noteheads.s1 glyphshow
+14.2793 -3.7600 moveto 0.0514 3.2269 -0.0257 -1.7769 0.1000 draw_round_box
+13.0403 -5.7600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+11.3856 -3.7600 moveto magfontemmentaler-16mPBBo /rests.2 glyphshow
+42.3470 -3.7600 moveto 0.0514 3.2269 -0.0257 -1.7769 0.1000 draw_round_box
+36.3860 -5.7600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+37.6250 -3.7600 moveto 0.0514 3.2269 -0.0257 -1.7769 0.1000 draw_round_box
+41.1081 -5.7600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+38.4053 -3.7600 moveto magfontemmentaler-16mPBBo /rests.1 glyphshow
+27.0143 -5.2600 moveto magfontemmentaler-16mPBBo /accidentals.sharp glyphshow
+31.2225 -5.2600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+32.4615 -3.7600 moveto 0.0514 3.2269 -0.0257 -1.2769 0.1000 draw_round_box
+29.7032 -3.7600 moveto 0.0514 3.2269 -0.0257 -1.2769 0.1000 draw_round_box
+30.1789 -5.2600 moveto magfontemmentaler-16mPBBo /accidentals.natural glyphshow
+45.5751 -3.7600 moveto 0.0514 3.1518 -0.0257 -0.2018 0.1000 draw_round_box
+28.4643 -5.2600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+34.4808 -3.7600 moveto 0.0514 3.2269 -0.0257 -1.7769 0.1000 draw_round_box
+33.2418 -5.7600 moveto magfontemmentaler-16mPBBo /noteheads.s2 glyphshow
+44.2522 -4.2600 moveto magfontemmentaler-16mPBBo /noteheads.s1 glyphshow
+stroke grestore
+%%Trailer
+%%EOF

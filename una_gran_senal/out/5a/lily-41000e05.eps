@@ -1,0 +1,2191 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Creator: LilyPond 2.19.35
+%%BoundingBox: -9 -731 556 13
+%%Orientation: Portrait
+%%DocumentSuppliedResources: font Emmentaler-13
+%%DocumentSuppliedResources: font Emmentaler-16
+%%DocumentSuppliedResources: font Emmentaler-18
+%%DocumentSuppliedResources: font TeXGyreHeros-Regular
+%%DocumentSuppliedResources: font TeXGyreSchola-Bold
+%%DocumentSuppliedResources: font TeXGyreSchola-Regular
+%%EndComments
+%%BeginProlog
+/lilypond-datadir where {pop} {userdict /lilypond-datadir (/usr/share/lilypond/2.19.35) put } ifelse
+%%BeginFont: Emmentaler-13
+lilypond-datadir (/fonts/otf/emmentaler-13.otf) concatstrings (r) file .loadfont
+%%EndFont
+
+%%BeginFont: Emmentaler-16
+lilypond-datadir (/fonts/otf/emmentaler-16.otf) concatstrings (r) file .loadfont
+%%EndFont
+
+%%BeginFont: Emmentaler-18
+lilypond-datadir (/fonts/otf/emmentaler-18.otf) concatstrings (r) file .loadfont
+%%EndFont
+
+%%BeginFont: TeXGyreHeros-Regular
+(/usr/share/fonts/lilypond/texgyreheros-regular.otf) (r) file .loadfont
+%%EndFont
+
+%%BeginFont: TeXGyreSchola-Bold
+(/usr/share/fonts/lilypond/texgyreschola-bold.otf) (r) file .loadfont
+%%EndFont
+
+%%BeginFont: TeXGyreSchola-Regular
+(/usr/share/fonts/lilypond/texgyreschola-regular.otf) (r) file .loadfont
+%%EndFont
+
+/magfontemmentaler-16mPYo { /Emmentaler-16 5.6361 output-scale div selectfont } bind def
+/magfontemmentaler-18mPYo { /Emmentaler-18 6.3263 output-scale div selectfont } bind def
+/magfontemmentaler-13mPYo { /Emmentaler-13 4.4734 output-scale div selectfont } bind def
+/lily-output-units 2.83464566929134 def %% millimeter
+/staff-line-thickness 0.107301587301587 def
+/line-width 123.864330708661 def
+/paper-size (letter) def
+/staff-height 4.0 def
+/output-scale 1.58156911581569 def
+/page-height 176.66 def
+/page-width 136.51 def
+%%BeginResource: procset (music-drawing-routines.ps) 1 0
+%!PS-Adobe-2.0
+%
+% Functions for direct and embedded PostScript
+
+% Careful with double % as comment prefix.
+% Any %%X comment is interpreted as DSC comments.
+
+% TODO: use dicts or prefixes to prevent namespace pollution.
+
+/pdfmark where
+{pop} {userdict /pdfmark /cleartomark load put} ifelse
+
+
+% llx lly urx ury URI
+/mark_URI
+{
+    /uri exch def
+    /ury exch def
+    /urx exch def
+    /lly exch def
+    /llx exch def
+    [
+	/Rect [ llx lly urx ury ]
+	
+	/Border [ 0 0 0 ]
+
+        /Action
+	    <<
+		/Subtype /URI
+		/URI uri
+	    >>
+        /Subtype /Link
+    /ANN
+    pdfmark
+}
+bind def
+
+% llx lly urx ury page
+/mark_page_link
+{
+    /page exch def
+    /ury exch def
+    /urx exch def
+    /lly exch def
+    /llx exch def
+    [
+        /Rect [ llx lly urx ury ]
+        /Border [ 0 0 0 ]
+        /Page page
+        /Subtype /Link
+    /ANN
+    pdfmark
+}
+bind def
+
+% from adobe tech note 5002.
+/BeginEPSF { %def
+    /b4_Inc_state save def % Save state for cleanup
+    /dict_count countdictstack def % Count objects on dict stack
+    /op_count count 1 sub def % Count objects on operand stack
+    userdict begin % Push userdict on dict stack
+    /showpage { } def % Redefine showpage, { } = null proc
+    0 setgray 0 setlinecap % Prepare graphics state
+    1 setlinewidth 0 setlinejoin
+    10 setmiterlimit [ ] 0 setdash newpath
+    false setoverprint
+} bind def
+
+/EndEPSF { %def
+  count op_count sub {pop} repeat % Clean up stacks
+  countdictstack dict_count sub {end} repeat
+  b4_Inc_state restore
+} bind def
+
+/stroke_and_fill? {
+    {
+	gsave
+	    false setstrokeadjust
+	    stroke
+	grestore
+	fill
+    }
+    {
+	stroke
+    }
+    ifelse
+} bind def
+
+/vector_add { % x1 y1 x2 y2 vector_add x1+x2 y1+y2
+	exch
+	4 1 roll
+	add
+	3 1 roll
+	add
+	exch
+} bind def
+
+/draw_round_box % width height x y blot
+{
+    0 max setlinewidth
+    matrix currentmatrix 5 1 roll
+    currentpoint translate newpath translate
+    2 copy 0 min exch 0 min exch translate
+    abs exch abs exch
+    currentlinewidth 0 eq
+    { % straight corners
+	2 copy 2 mul gt
+	{ % horizontal
+	    0 1 index 2 div moveto
+	    setlinewidth
+	    0 rlineto
+	    0 setlinecap
+	    stroke
+	}
+	{
+	    2 copy exch 2 mul gt
+	    { % vertical
+		1 index 2 div 0 moveto
+		exch setlinewidth
+		0 exch rlineto
+		0 setlinecap
+		stroke
+	    }
+	    {
+		0 0 4 2 roll rectfill
+	    }
+	    ifelse
+	}
+	ifelse
+    }
+    { % rounded corners
+	2 copy 0 eq exch 0 eq or
+	{ % line shape
+	    0 0 moveto
+	    rlineto
+	    1 setlinecap
+	    stroke
+	    0 setlinecap
+	}
+	{ % full shape
+	    currentstrokeadjust {
+		currentlinewidth 2 div
+		0 0 2 index 180 270 arc
+		2 index 0 2 index 270 360 arc
+		3 copy 0 90 arc
+		0 2 index 3 -1 roll 90 180 arc
+		closepath
+		2 copy 2 mul gt
+		{ % horizontal
+		    2 copy add currentlinewidth add 10 add % large enough
+		    0 1 index neg moveto
+		    2 index 1 index neg lineto
+		    2 index 1 index lineto
+		    0 exch lineto closepath
+		    gsave clip newpath
+		    0 1 index 2 div moveto
+		    currentlinewidth add setlinewidth
+		    0 rlineto
+		    2 setlinecap
+		    stroke
+		    grestore
+		}
+		{
+		    2 copy exch 2 mul gt
+		    { % vertical
+			2 copy add currentlinewidth add 10 add % large enough
+			dup neg 0 moveto
+			dup 0 lineto
+			dup 2 index lineto
+			neg 1 index lineto closepath
+			gsave clip newpath
+			1 index 2 div 0 moveto
+			exch currentlinewidth add setlinewidth
+			0 exch rlineto
+			2 setlinecap
+			stroke
+			grestore
+		    }
+		    {
+			pop pop
+			fill
+		    }
+		    ifelse
+		}
+		ifelse
+		newpath
+	    }
+	    {
+		1 setlinejoin
+		0 0 4 2 roll 4 copy rectstroke rectfill
+	    }
+	    ifelse
+	}
+	ifelse
+    }
+    ifelse
+    setmatrix
+} bind def
+
+/draw_polygon % fill? x(n) y(n) x(n-1) y(n-1) ... x(0) y(0) n blot
+{
+	setlinewidth %set to blot
+
+	0 setlinecap
+	1 setlinejoin
+
+	3 1 roll
+	/polygon_x
+	currentpoint
+	/polygon_y exch def
+	def
+	rmoveto % x(0) y(0)
+	{ polygon_x polygon_y vector_add lineto } repeat % n times
+	closepath
+	stroke_and_fill?
+} bind def
+
+/draw_circle % filled? radius thickness draw_circle
+{
+	setlinewidth	% f? r
+	currentpoint	% f? r x0 y0
+	3 2 roll	% f? x0 y0 r
+	dup 0 rmoveto
+	0 360 arc closepath
+	stroke_and_fill?
+} bind def
+
+/draw_ellipse % filled? x-radius y-radius thickness draw_ellipse
+{
+  setlinewidth % f? x-r y-r
+  /savematrix matrix currentmatrix def
+  scale % f?
+  currentpoint
+  1 0 rmoveto
+  1 0 360  arc closepath
+  savematrix setmatrix
+  stroke_and_fill?
+} bind def
+
+/draw_partial_ellipse % filled connect x-radius y-radius startangle endangle thickness draw_partial_ellipse
+% Note that filled is not boolean to permit for different graylevels (ie for trill keys)
+{
+  gsave
+  currentpoint translate
+  /thickness exch def
+  /endangle exch def
+  /startangle exch def
+  /y_radius exch def
+  /x_radius exch def
+  /endrad x_radius y_radius mul
+    x_radius x_radius mul
+    endangle cos endangle cos mul mul
+    y_radius y_radius mul
+    endangle sin endangle sin mul mul add sqrt div def
+  /endangle endangle sin endrad mul y_radius div
+    endangle cos endrad mul x_radius div atan def
+  /startrad x_radius y_radius mul
+    x_radius x_radius mul
+      startangle cos startangle cos mul mul
+    y_radius y_radius mul
+      startangle sin startangle sin mul mul add sqrt div def
+  /startangle startangle sin startrad mul y_radius div
+    startangle cos startrad mul x_radius div atan def
+  /connect exch def
+  /filled exch def
+  /savematrix matrix currentmatrix def
+  thickness setlinewidth
+  x_radius y_radius scale
+  startangle cos startangle sin moveto
+  0 0 1 startangle
+    startangle endangle eq { endangle 360 add } { endangle } ifelse
+    arc
+  connect {
+    startangle cos startangle sin moveto endangle cos endangle sin lineto }
+    if
+  savematrix setmatrix filled stroke_and_fill?
+  grestore
+} bind def
+
+/draw_line % dx dy x1 y1 thickness draw_line
+{
+	setlinewidth % dx dy x1 y1
+	1 setlinecap
+	rmoveto % dx dy
+	rlineto
+	stroke
+} bind def
+
+/draw_dashed_line % dx dy thickness dashpattern offset draw_dashed_line
+{
+	1 setlinecap
+	setdash % dx dy thickness
+	setlinewidth %dx dy
+	rlineto
+	stroke
+	[] 0 setdash % reset dash pattern
+} bind def
+
+/print_glyphs % w dx dy glyph print_glyphs
+{
+	{
+		currentpoint %w dx dy glyph x0 y0
+		5 2 roll %w x0 y0 dx dy glyph
+		3 1 roll %w x0 y0 glyph dx dy
+		rmoveto %w x0 y0 glyph
+		glyphshow %w x0 y0
+		moveto %w
+		0 rmoveto
+	}repeat
+}bind def
+%end music-drawing-routines.ps
+
+%%EndResource
+%%BeginResource: procset (lilyponddefs.ps) 1 0
+%!PS-Adobe-2.0: lilyponddefs.ps
+%
+% Functions for direct PostScript output
+
+% /setgray { 1 add } bind def
+
+/set-ps-scale-to-lily-scale {
+	lily-output-units output-scale mul dup scale
+} bind def
+
+
+/init-paper {
+	gsave
+	clippath pathbbox newpath
+	/paper-height exch def
+	/paper-width exch def pop pop pop
+	% FIXME
+	/top-margin 2 def
+	paper-width line-width sub 2 div /left-margin exch def
+	grestore
+} bind def
+
+/init-lilypond-parameters {
+	staff-line-thickness setlinewidth
+	staff-height init-paper
+} bind def
+
+
+% end lilyponddefs.ps
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+init-lilypond-parameters
+%%EndSetup
+
+/mark_page_link { pop pop pop pop pop } bind def
+gsave set-ps-scale-to-lily-scale
+/helpEmmentaler-Brace where {pop helpEmmentaler-Brace} if
+/helpEmmentaler-11 where {pop helpEmmentaler-11} if
+/helpEmmentaler-13 where {pop helpEmmentaler-13} if
+/helpEmmentaler-14 where {pop helpEmmentaler-14} if
+/helpEmmentaler-16 where {pop helpEmmentaler-16} if
+/helpEmmentaler-18 where {pop helpEmmentaler-18} if
+/helpEmmentaler-20 where {pop helpEmmentaler-20} if
+/helpEmmentaler-23 where {pop helpEmmentaler-23} if
+/helpEmmentaler-26 where {pop helpEmmentaler-26} if
+47.9903 0.0000 moveto /TeXGyreSchola-Regular 6.20019531 output-scale div selectfont
+1.2519 0.0000 0.0000 /l
+2.1624 0.0000 0.0000 /a
+2.3900 0.0000 0.0000 /ntilde
+1.9727 0.0000 0.0000 /e
+1.8210 0.0000 0.0000 /s
+1.1002 0.0000 0.0000 /space
+2.3900 0.0000 0.0000 /n
+2.1624 0.0000 0.0000 /a
+1.7072 0.0000 0.0000 /r
+2.2383 0.0000 0.0000 /g
+1.1002 0.0000 0.0000 /space
+2.1624 0.0000 0.0000 /a
+2.3900 0.0000 0.0000 /n
+3.0350 0.0000 0.0000 /U
+14 print_glyphs
+16.9578 -3.0000 moveto /TeXGyreSchola-Regular 3.47851562 output-scale div selectfont
+1.2140 0.0000 0.0000 /zero
+1.2140 0.0000 0.0000 /one
+1.2140 0.0000 0.0000 /zero
+1.2140 0.0000 0.0000 /two
+0.6070 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /r
+1.1002 0.0000 0.0000 /o
+1.2519 0.0000 0.0000 /d
+1.2140 0.0000 0.0000 /a
+1.1381 0.0000 0.0000 /v
+0.6449 0.0000 0.0000 /l
+1.2140 0.0000 0.0000 /a
+1.4037 0.0000 0.0000 /S
+0.6070 0.0000 0.0000 /space
+1.3278 0.0000 0.0000 /n
+1.2140 0.0000 0.0000 /a
+1.4037 0.0000 0.0000 /S
+0.6070 0.0000 0.0000 /space
+0.6070 0.0000 0.0000 /comma
+0.6829 0.0000 0.0000 /l
+1.2140 0.0000 0.0000 /a
+1.3278 0.0000 0.0000 /n
+1.1002 0.0000 0.0000 /e
+1.9727 0.0000 0.0000 /m
+1.3278 0.0000 0.0000 /u
+0.9864 0.0000 0.0000 /c
+1.1002 0.0000 0.0000 /e
+0.8726 0.0000 0.0000 /t
+1.2140 0.0000 0.0000 /a
+0.9864 0.0000 0.0000 /c
+1.1002 0.0000 0.0000 /o
+1.1002 0.0000 0.0000 /e
+1.7072 0.0000 0.0000 /N
+0.6070 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /o
+1.3278 0.0000 0.0000 /n
+0.6829 0.0000 0.0000 /i
+1.9727 0.0000 0.0000 /m
+1.2140 0.0000 0.0000 /a
+1.5934 0.0000 0.0000 /C
+0.6070 0.0000 0.0000 /space
+0.6829 0.0000 0.0000 /l
+1.1002 0.0000 0.0000 /e
+1.2519 0.0000 0.0000 /d
+0.6070 0.0000 0.0000 /space
+1.0243 0.0000 0.0000 /s
+1.1002 0.0000 0.0000 /e
+1.3278 0.0000 0.0000 /n
+1.1002 0.0000 0.0000 /e
+1.1381 0.0000 0.0000 /v
+1.0622 0.0000 0.0000 /o
+1.2140 0.0000 0.0000 /J
+0.6070 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /e
+1.2519 0.0000 0.0000 /d
+0.6070 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /o
+1.3278 0.0000 0.0000 /n
+1.2140 0.0000 0.0000 /a
+0.9864 0.0000 0.0000 /c
+0.6829 0.0000 0.0000 /i
+0.9864 0.0000 0.0000 /r
+1.1002 0.0000 0.0000 /e
+1.9727 0.0000 0.0000 /m
+1.2140 0.0000 0.0000 /a
+1.1002 0.0000 0.0000 /o
+0.9864 0.0000 0.0000 /r
+0.8726 0.0000 0.0000 /t
+1.3278 0.0000 0.0000 /n
+1.1002 0.0000 0.0000 /e
+1.5934 0.0000 0.0000 /C
+0.6070 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /o
+0.9864 0.0000 0.0000 /r
+0.8726 0.0000 0.0000 /t
+1.3278 0.0000 0.0000 /n
+1.1002 0.0000 0.0000 /e
+1.3278 0.0000 0.0000 /u
+0.9864 0.0000 0.0000 /c
+1.3278 0.0000 0.0000 /n
+1.5934 0.0000 0.0000 /E
+81 print_glyphs
+51.5943 -6.0000 moveto /TeXGyreSchola-Regular 4.91992188 output-scale div selectfont
+1.7451 0.0000 0.0000 /two
+1.7451 0.0000 0.0000 /one
+0.8726 0.0000 0.0000 /space
+1.4416 0.0000 0.0000 /s
+0.9864 0.0000 0.0000 /iacute
+1.4416 0.0000 0.0000 /s
+1.7830 0.0000 0.0000 /p
+0.9864 0.0000 0.0000 /i
+0.9864 0.0000 0.0000 /l
+1.7451 0.0000 0.0000 /a
+1.3657 0.0000 0.0000 /c
+1.5554 0.0000 0.0000 /o
+1.7830 0.0000 0.0000 /p
+2.2383 0.0000 0.0000 /A
+14 print_glyphs
+0.0000 -10.6556 moveto /TeXGyreSchola-Regular 3.47851562 output-scale div selectfont
+0.6070 0.0000 0.0000 /space
+1 print_glyphs
+106.1477 -10.6556 moveto /TeXGyreSchola-Regular 4.38378906 output-scale div selectfont
+1.4037 0.0000 0.0000 /o
+0.8726 0.0000 0.0000 /l
+0.8726 0.0000 0.0000 /l
+1.4037 0.0000 0.0000 /e
+1.7072 0.0000 0.0000 /udieresis
+1.4795 0.0000 0.0000 /g
+1.2140 0.0000 0.0000 /r
+2.0107 0.0000 0.0000 /A
+0.7587 0.0000 0.0000 /space
+1.4037 0.0000 0.0000 /o
+1.5554 0.0000 0.0000 /k
+0.8726 0.0000 0.0000 /i
+2.1624 0.0000 0.0000 /K
+13 print_glyphs
+55.1860 -21.6090 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+95.7891 -21.6090 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+43.2362 -21.6090 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+105.2532 -21.6090 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+86.2793 -21.6090 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+33.6027 -21.6090 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+114.6340 -21.6090 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+24.5762 -21.6090 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+74.3295 -21.6090 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+123.6605 -21.6090 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+64.6959 -21.6090 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+9.4843 -23.6090 moveto 114.2728 0.0000 0.0537 0.0000 0.1073 draw_line
+9.4843 -22.6090 moveto 114.2728 0.0000 0.0537 0.0000 0.1073 draw_line
+9.4843 -21.6090 moveto 114.2728 0.0000 0.0537 0.0000 0.1073 draw_line
+9.4843 -20.6090 moveto 114.2728 0.0000 0.0537 0.0000 0.1073 draw_line
+9.4843 -19.6090 moveto 114.2728 0.0000 0.0537 0.0000 0.1073 draw_line
+87.4528 -21.6090 moveto 0.0506 3.2300 -0.0253 -2.9556 0.0889 draw_round_box
+87.3831 -21.1090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+84.0011 -21.6090 moveto 0.0506 3.2300 -0.0253 -2.9556 0.0889 draw_round_box
+69.3611 -21.6090 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+96.9870 -21.6090 moveto 0.0506 3.1557 -0.0253 -2.4556 0.0889 draw_round_box
+96.9173 -20.6090 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+93.5109 -21.6090 moveto 0.0506 3.2300 -0.0253 -2.9556 0.0889 draw_round_box
+93.4412 -21.1090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+89.8967 -21.6090 moveto magfontemmentaler-18mPYo /rests.1 glyphshow
+83.9313 -21.1090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+67.8413 -20.1090 moveto magfontemmentaler-18mPYo /accidentals.sharp glyphshow
+75.5602 -21.6090 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+75.4905 -20.1090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+71.0070 -20.1090 moveto magfontemmentaler-18mPYo /accidentals.natural glyphshow
+72.1227 -21.6090 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+77.2061 -20.6090 moveto magfontemmentaler-18mPYo /accidentals.sharp glyphshow
+80.3717 -20.6090 moveto magfontemmentaler-18mPYo /accidentals.natural glyphshow
+81.4875 -21.6090 moveto 0.0506 3.2300 -0.0253 -2.4556 0.0889 draw_round_box
+81.4177 -20.6090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+78.7258 -21.6090 moveto 0.0506 3.2300 -0.0253 -2.4556 0.0889 draw_round_box
+78.6561 -20.6090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+119.1646 -21.6090 moveto magfontemmentaler-18mPYo /rests.2 glyphshow
+115.6201 -21.6090 moveto magfontemmentaler-18mPYo /rests.1 glyphshow
+40.9597 -21.6090 moveto gsave currentpoint translate
+1 setlinecap 1 setlinejoin 0.08584127 setlinewidth
+0.65781818 2.55402245 moveto  1.52601091 3.37434670 3.22712622 3.37434670 4.09531895 2.55402245 curveto  4.09531895 2.55402245 lineto  3.22712622 3.24558480 1.52601091 3.24558480 0.65781818 2.55402245 curveto   closepath  gsave stroke grestore fill grestore
+52.8381 -21.6090 moveto gsave currentpoint translate
+1 setlinecap 1 setlinejoin 0.08584127 setlinewidth
+0.65781818 1.61221483 moveto  1.52883332 2.66775908 3.23858953 2.66775908 4.10960466 1.61221483 curveto  4.10960466 1.61221483 lineto  3.23858953 2.53899717 1.52883332 2.53899717 0.65781818 1.61221483 curveto   closepath  gsave stroke grestore fill grestore
+72.0530 -21.6090 moveto gsave currentpoint translate
+1 setlinecap 1 setlinejoin 0.08584127 setlinewidth
+0.65781818 2.55402245 moveto  1.52601091 3.37434670 3.22712622 3.37434670 4.09531895 2.55402245 curveto  4.09531895 2.55402245 lineto  3.22712622 3.24558480 1.52601091 3.24558480 0.65781818 2.55402245 curveto   closepath  gsave stroke grestore fill grestore
+83.9313 -21.6090 moveto gsave currentpoint translate
+1 setlinecap 1 setlinejoin 0.08584127 setlinewidth
+0.65781818 1.61221483 moveto  1.52883332 2.66775908 3.23858953 2.66775908 4.10960466 1.61221483 curveto  4.10960466 1.61221483 lineto  3.23858953 2.53899717 1.52883332 2.53899717 0.65781818 1.61221483 curveto   closepath  gsave stroke grestore fill grestore
+102.8696 -21.6090 moveto gsave currentpoint translate
+1 setlinecap 1 setlinejoin 0.08584127 setlinewidth
+0.65781818 1.19669190 moveto  1.53024261 1.99136725 3.24432309 1.99136725 4.11674752 1.19669190 curveto  4.11674752 1.19669190 lineto  3.24432309 1.86260535 1.53024261 1.86260535 0.65781818 1.19669190 curveto   closepath  gsave stroke grestore fill grestore
+121.3823 -21.6090 moveto 0.0506 3.2300 -0.0253 -2.9556 0.0889 draw_round_box
+121.3125 -21.1090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+100.4257 -21.6090 moveto 0.0506 3.2300 -0.0253 -2.9556 0.0889 draw_round_box
+106.3285 -21.6090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+102.9393 -21.6090 moveto 0.0506 3.0633 -0.0253 -3.2889 0.0889 draw_round_box
+102.8696 -21.6090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+106.3982 -21.6090 moveto 0.0506 3.0633 -0.0253 -3.2889 0.0889 draw_round_box
+100.3560 -21.1090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+72.0530 -20.1090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+111.4254 -21.6090 moveto 0.0506 3.1557 -0.0253 -2.9556 0.0889 draw_round_box
+111.3556 -21.1090 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+108.9118 -21.6090 moveto 0.0506 3.0633 -0.0253 -3.2889 0.0889 draw_round_box
+108.8421 -21.6090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+38.2678 -21.6090 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+38.1981 -20.1090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+34.8292 -21.6090 moveto 0.0506 3.1557 -0.0253 -1.4556 0.0889 draw_round_box
+34.7594 -19.6090 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+69.2913 -20.1090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+44.4670 -21.6090 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+39.9137 -20.1090 moveto magfontemmentaler-18mPYo /accidentals.natural glyphshow
+41.0295 -21.6090 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+40.9597 -20.1090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+36.7481 -20.1090 moveto magfontemmentaler-18mPYo /accidentals.sharp glyphshow
+14.4843 -16.3950 moveto /TeXGyreSchola-Bold 3.47851562 output-scale div selectfont
+1.3278 0.0000 0.0000 /o
+1.2899 0.0000 0.0000 /v
+0.7967 0.0000 0.0000 /i
+1.6692 0.0000 0.0000 /V
+4 print_glyphs
+20.1678 -16.3950 moveto /TeXGyreSchola-Regular 3.47851562 output-scale div selectfont
+0.7208 0.0000 0.0000 /parenleft
+1 print_glyphs
+20.8886 -15.8973 moveto 0.0772 2.4798 1.0747 0.1736 0.0386 draw_round_box
+20.8886 -15.8973 moveto magfontemmentaler-16mPYo /noteheads.s2 glyphshow
+22.0598 -16.3950 moveto /TeXGyreSchola-Regular 3.47851562 output-scale div selectfont
+1.2140 0.0000 0.0000 /zero
+1.2140 0.0000 0.0000 /six
+1.2140 0.0000 0.0000 /one
+0.6070 0.0000 0.0000 /space
+1.3278 0.0000 0.0000 /equal
+0.6070 0.0000 0.0000 /space
+6 print_glyphs
+28.2435 -16.3950 moveto /TeXGyreSchola-Regular 3.47851562 output-scale div selectfont
+0.7208 0.0000 0.0000 /parenright
+1 print_glyphs
+25.5623 -21.6090 moveto magfontemmentaler-18mPYo /rests.1 glyphshow
+14.4843 -21.6090 moveto magfontemmentaler-18mPYo /timesig.C22 glyphshow
+10.2843 -20.6090 moveto magfontemmentaler-18mPYo /clefs.F glyphshow
+18.1762 -19.0174 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+1.4416 0.0000 0.0000 /a
+1.4416 0.0000 0.0000 /L
+2 print_glyphs
+21.6594 -19.0174 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+2.1624 0.0000 0.0000 /m
+1 print_glyphs
+19.6262 -20.6090 moveto magfontemmentaler-18mPYo /rests.0 glyphshow
+31.3245 -21.6090 moveto 0.0506 3.2300 -0.0253 -2.9556 0.0889 draw_round_box
+31.2547 -21.1090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+29.1068 -18.1110 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+1.2140 0.0000 0.0000 /n
+0.9864 0.0000 0.0000 /oacute
+0.6070 0.0000 0.0000 /i
+0.8726 0.0000 0.0000 /c
+0.8726 0.0000 0.0000 /c
+1.2140 0.0000 0.0000 /u
+1.1381 0.0000 0.0000 /d
+0.9864 0.0000 0.0000 /o
+0.8726 0.0000 0.0000 /r
+0.7587 0.0000 0.0000 /t
+1.2140 0.0000 0.0000 /n
+0.7967 0.0000 0.0000 /I
+12 print_glyphs
+29.1068 -21.6090 moveto magfontemmentaler-18mPYo /rests.2 glyphshow
+44.3972 -20.1090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+65.9224 -21.6090 moveto 0.0506 3.1557 -0.0253 -1.4556 0.0889 draw_round_box
+56.3596 -21.6090 moveto 0.0506 3.2300 -0.0253 -2.9556 0.0889 draw_round_box
+65.8526 -19.6090 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+56.2899 -21.1090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+62.3480 -21.1090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+62.4177 -21.6090 moveto 0.0506 3.2300 -0.0253 -2.9556 0.0889 draw_round_box
+58.8034 -21.6090 moveto magfontemmentaler-18mPYo /rests.1 glyphshow
+47.6326 -21.6090 moveto 0.0506 3.2300 -0.0253 -2.4556 0.0889 draw_round_box
+50.3245 -20.6090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+46.1129 -20.6090 moveto magfontemmentaler-18mPYo /accidentals.sharp glyphshow
+47.5629 -20.6090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+52.8381 -21.1090 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+49.2785 -20.6090 moveto magfontemmentaler-18mPYo /accidentals.natural glyphshow
+52.9078 -21.6090 moveto 0.0506 3.2300 -0.0253 -2.9556 0.0889 draw_round_box
+50.3943 -21.6090 moveto 0.0506 3.2300 -0.0253 -2.4556 0.0889 draw_round_box
+75.7280 -31.3468 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+75.2022 -31.3468 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+22.6833 -31.3468 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+67.5617 -31.3468 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+30.5872 -31.3468 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+13.6713 -31.3468 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+52.9385 -31.3468 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+123.6605 -31.3468 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+45.2104 -31.3468 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+0.0000 -33.3468 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -32.3468 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -31.3468 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -30.3468 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -29.3468 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+57.2396 -29.8468 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+57.3093 -31.3468 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+11.4912 -31.3468 moveto gsave currentpoint translate
+1 setlinecap 1 setlinejoin 0.08584127 setlinewidth
+0.65781818 3.05402245 moveto  1.50169935 3.85315983 3.12944162 3.85315983 3.97332279 3.05402245 curveto  3.97332279 3.05402245 lineto  3.12944162 3.72439792 1.50169935 3.72439792 0.65781818 3.05402245 curveto   closepath  gsave stroke grestore fill grestore
+55.7896 -29.8468 moveto magfontemmentaler-18mPYo /accidentals.sharp glyphshow
+60.0012 -29.8468 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+60.0709 -31.3468 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+58.9552 -29.8468 moveto magfontemmentaler-18mPYo /accidentals.natural glyphshow
+63.1668 -30.3468 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+63.2366 -31.3468 moveto 0.0506 2.7300 -0.0253 -1.9556 0.0889 draw_round_box
+61.7168 -30.3468 moveto magfontemmentaler-18mPYo /accidentals.sharp glyphshow
+49.5586 -31.3468 moveto magfontemmentaler-18mPYo /rests.1 glyphshow
+54.0739 -29.3468 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+54.1437 -31.3468 moveto 0.0506 3.2300 -0.0253 -1.4556 0.0889 draw_round_box
+46.3542 -31.3468 moveto 0.0506 3.1557 -0.0253 -2.9556 0.0889 draw_round_box
+46.2845 -30.8468 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+111.0377 -32.8468 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+112.2836 -31.3468 moveto 0.0506 3.2300 -0.0253 -1.2744 0.0889 draw_round_box
+63.1668 -33.3468 moveto true 2.8567 0.1956 2.8567 -0.1956 0.0444 -0.1956 0.0444 0.1956 3 0.0889 draw_polygon
+40.8156 -33.3468 moveto true 2.8567 0.1956 2.8567 -0.1956 0.0444 -0.1956 0.0444 0.1956 3 0.0889 draw_polygon
+25.9872 -30.3468 moveto magfontemmentaler-18mPYo /rests.0 glyphshow
+65.9982 -31.3468 moveto 0.0506 2.7300 -0.0253 -1.9556 0.0889 draw_round_box
+64.8825 -30.3468 moveto magfontemmentaler-18mPYo /accidentals.natural glyphshow
+68.6358 -30.8468 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+68.7055 -31.3468 moveto 0.0506 3.1557 -0.0253 -2.9556 0.0889 draw_round_box
+65.9285 -30.3468 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+72.1599 -29.3468 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+72.2296 -31.3468 moveto 0.0506 3.1557 -0.0253 -1.4556 0.0889 draw_round_box
+76.6738 -35.4253 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /colon
+0.9864 0.0000 0.0000 /o
+0.6070 0.0000 0.0000 /l
+0.9864 0.0000 0.0000 /e
+0.6070 0.0000 0.0000 /i
+0.8726 0.0000 0.0000 /c
+0.5311 0.0000 0.0000 /space
+0.6070 0.0000 0.0000 /l
+0.9864 0.0000 0.0000 /e
+0.5311 0.0000 0.0000 /space
+1.2140 0.0000 0.0000 /n
+0.9864 0.0000 0.0000 /e
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /oacute
+0.6070 0.0000 0.0000 /i
+0.8726 0.0000 0.0000 /c
+0.9864 0.0000 0.0000 /e
+0.8726 0.0000 0.0000 /r
+1.1002 0.0000 0.0000 /a
+1.1381 0.0000 0.0000 /p
+1.1002 0.0000 0.0000 /a
+0.5311 0.0000 0.0000 /space
+0.6070 0.0000 0.0000 /l
+1.1002 0.0000 0.0000 /a
+1.2140 0.0000 0.0000 /ntilde
+0.9864 0.0000 0.0000 /e
+0.9105 0.0000 0.0000 /s
+0.5311 0.0000 0.0000 /space
+1.2140 0.0000 0.0000 /n
+1.1002 0.0000 0.0000 /a
+0.8726 0.0000 0.0000 /r
+1.1002 0.0000 0.0000 /g
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+1.2140 0.0000 0.0000 /n
+1.5175 0.0000 0.0000 /U
+39 print_glyphs
+76.6738 -28.4158 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.9864 0.0000 0.0000 /o
+0.7587 0.0000 0.0000 /t
+1.2140 0.0000 0.0000 /n
+0.9864 0.0000 0.0000 /e
+0.6070 0.0000 0.0000 /i
+1.7451 0.0000 0.0000 /m
+1.1002 0.0000 0.0000 /a
+1.2140 0.0000 0.0000 /ntilde
+1.1002 0.0000 0.0000 /a
+1.1381 0.0000 0.0000 /p
+1.6692 0.0000 0.0000 /m
+0.9864 0.0000 0.0000 /o
+0.8726 0.0000 0.0000 /c
+1.4037 0.0000 0.0000 /A
+14 print_glyphs
+5.8000 -29.3468 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+17.2239 -29.8468 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+17.2936 -31.3468 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+19.6410 -29.3468 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+19.7108 -31.3468 moveto 0.0506 3.1557 -0.0253 -1.4556 0.0889 draw_round_box
+14.8067 -29.3468 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+9.0741 -28.8468 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+9.1438 -31.3468 moveto 0.0506 3.2300 -0.0253 -0.9556 0.0889 draw_round_box
+11.4912 -29.3468 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+11.5610 -31.3468 moveto 0.0506 3.2300 -0.0253 -1.4556 0.0889 draw_round_box
+14.8765 -31.3468 moveto 0.0506 3.2300 -0.0253 -1.4556 0.0889 draw_round_box
+5.8697 -31.3468 moveto 0.0506 3.1557 -0.0253 -1.4556 0.0889 draw_round_box
+37.6499 -29.8468 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+31.7227 -29.3468 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+-1.9727 -28.2968 moveto /TeXGyreSchola-Regular 2.76074219 output-scale div selectfont
+0.9864 0.0000 0.0000 /two
+0.9864 0.0000 0.0000 /one
+2 print_glyphs
+36.6039 -29.8468 moveto magfontemmentaler-18mPYo /accidentals.natural glyphshow
+40.8156 -30.3468 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+40.8853 -31.3468 moveto 0.0506 2.7300 -0.0253 -1.9556 0.0889 draw_round_box
+37.7197 -31.3468 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+39.3656 -30.3468 moveto magfontemmentaler-18mPYo /accidentals.sharp glyphshow
+43.5772 -30.3468 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+43.6469 -31.3468 moveto 0.0506 2.7300 -0.0253 -1.9556 0.0889 draw_round_box
+42.5312 -30.3468 moveto magfontemmentaler-18mPYo /accidentals.natural glyphshow
+31.7924 -31.3468 moveto 0.0506 3.2300 -0.0253 -1.4556 0.0889 draw_round_box
+33.4383 -29.8468 moveto magfontemmentaler-18mPYo /accidentals.sharp glyphshow
+34.9580 -31.3468 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+34.8883 -29.8468 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+0.8000 -30.3468 moveto magfontemmentaler-18mPYo /clefs.F glyphshow
+0.0000 -39.4070 moveto 1.7662 0.0000 95.1008 0.0000 0.2073 draw_round_box
+0.0000 -39.4070 moveto 1.7662 0.0000 101.9148 0.0000 0.2073 draw_round_box
+0.0000 -39.4070 moveto 1.7662 0.0000 108.7289 0.0000 0.2073 draw_round_box
+93.9815 -42.4070 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+113.1159 -42.4070 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+14.1572 -42.4070 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+51.2191 -42.4070 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+38.7959 -42.4070 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+123.6605 -42.4070 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+22.7354 -42.4070 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+62.8266 -42.4070 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+0.0000 -44.4070 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -43.4070 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -42.4070 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -41.4070 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -40.4070 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+97.5141 -39.9070 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+97.5838 -42.4070 moveto 0.0506 2.7300 -0.0253 -0.4556 0.0889 draw_round_box
+99.7021 -40.4070 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+102.2098 -42.4070 moveto 0.0506 2.9260 -0.0253 -0.1516 0.0889 draw_round_box
+99.7718 -42.4070 moveto 0.0506 2.5339 -0.0253 -0.7595 0.0889 draw_round_box
+102.1401 -39.4070 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+95.3261 -42.5933 moveto true 4.4711 -0.4317 4.4711 -0.8229 0.0444 -0.1956 0.0444 0.1956 3 0.0889 draw_polygon
+63.9712 -39.8154 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+1.4416 0.0000 0.0000 /a
+1.4416 0.0000 0.0000 /L
+2 print_glyphs
+67.4544 -39.8154 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+2.1624 0.0000 0.0000 /m
+1 print_glyphs
+63.9712 -46.4855 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /comma
+0.6070 0.0000 0.0000 /l
+0.9864 0.0000 0.0000 /o
+0.9105 0.0000 0.0000 /s
+0.5311 0.0000 0.0000 /space
+0.6070 0.0000 0.0000 /l
+0.9864 0.0000 0.0000 /e
+1.1381 0.0000 0.0000 /d
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+1.1381 0.0000 0.0000 /d
+0.6070 0.0000 0.0000 /i
+0.7587 0.0000 0.0000 /t
+0.8726 0.0000 0.0000 /s
+0.9864 0.0000 0.0000 /e
+1.0243 0.0000 0.0000 /v
+0.5311 0.0000 0.0000 /space
+0.8726 0.0000 0.0000 /r
+0.9864 0.0000 0.0000 /e
+0.5691 0.0000 0.0000 /j
+1.2140 0.0000 0.0000 /u
+1.7451 0.0000 0.0000 /m
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+1.2140 0.0000 0.0000 /n
+1.2140 0.0000 0.0000 /u
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+32 print_glyphs
+91.0513 -40.4070 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+91.1210 -42.4070 moveto 0.0506 3.2300 -0.0253 -1.4556 0.0889 draw_round_box
+95.3261 -39.4070 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+95.3958 -42.4070 moveto 0.0506 2.9260 -0.0253 -0.1516 0.0889 draw_round_box
+119.0002 -42.4070 moveto magfontemmentaler-18mPYo /rests.1 glyphshow
+108.9541 -42.4070 moveto true 2.2831 0.0092 2.2831 -0.3819 0.0444 -0.1956 0.0444 0.1956 3 0.0889 draw_polygon
+102.1401 -42.5933 moveto true 4.4711 -0.4317 4.4711 -0.8229 0.0444 -0.1956 0.0444 0.1956 3 0.0889 draw_polygon
+104.3281 -39.9070 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+104.3979 -42.4070 moveto 0.0506 2.7300 -0.0253 -0.4556 0.0889 draw_round_box
+106.5161 -40.4070 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+106.5859 -42.4070 moveto 0.0506 2.5339 -0.0253 -0.7595 0.0889 draw_round_box
+108.9541 -39.4070 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+109.0239 -42.4070 moveto 0.0506 2.7356 -0.0253 0.0389 0.0889 draw_round_box
+111.1421 -39.9070 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+111.2119 -42.4070 moveto 0.0506 2.4107 -0.0253 -0.1363 0.0889 draw_round_box
+114.4458 -40.4070 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+114.5156 -42.4070 moveto 0.0506 3.1557 -0.0253 -1.4556 0.0889 draw_round_box
+16.3018 -41.9070 moveto magfontemmentaler-18mPYo /noteheads.s0 glyphshow
+24.8800 -39.8154 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+0.5691 0.0000 0.0000 /l
+1.4416 0.0000 0.0000 /o
+1.7451 0.0000 0.0000 /S
+3 print_glyphs
+24.8800 -46.3843 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /comma
+0.7208 0.0000 0.0000 /r
+0.9864 0.0000 0.0000 /e
+0.5691 0.0000 0.0000 /j
+1.2140 0.0000 0.0000 /u
+1.7451 0.0000 0.0000 /m
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+1.2140 0.0000 0.0000 /n
+1.5175 0.0000 0.0000 /U
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+16 print_glyphs
+60.0250 -42.4070 moveto magfontemmentaler-18mPYo /rests.2 glyphshow
+40.0444 -42.4070 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+-1.9727 -39.3190 moveto /TeXGyreSchola-Regular 2.76074219 output-scale div selectfont
+0.9864 0.0000 0.0000 /zero
+0.9864 0.0000 0.0000 /two
+2 print_glyphs
+0.8000 -41.4070 moveto magfontemmentaler-18mPYo /clefs.F glyphshow
+5.8000 -39.8154 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+1.4416 0.0000 0.0000 /a
+1.4416 0.0000 0.0000 /L
+2 print_glyphs
+9.2832 -39.8154 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+2.1624 0.0000 0.0000 /m
+1 print_glyphs
+5.8000 -41.9070 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+7.6402 -41.9070 moveto magfontemmentaler-18mPYo /dots.dot glyphshow
+5.8697 -42.4070 moveto 0.0506 3.1557 -0.0253 -2.9556 0.0889 draw_round_box
+11.1198 -42.4070 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+11.1896 -42.4070 moveto 0.0506 3.0633 -0.0253 -3.2889 0.0889 draw_round_box
+43.4617 -40.9070 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+46.8790 -39.9070 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+46.9487 -42.4070 moveto 0.0506 3.1557 -0.0253 -0.9556 0.0889 draw_round_box
+43.5314 -42.4070 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+52.5533 -40.9070 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+52.6230 -42.4070 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+55.5403 -42.4070 moveto 0.0506 2.9890 -0.0253 -3.2889 0.0889 draw_round_box
+55.4706 -42.4070 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+40.1141 -42.4070 moveto 0.0506 3.0633 -0.0253 -3.2889 0.0889 draw_round_box
+59.4035 -53.4671 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+48.6467 -53.4671 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+93.1685 -53.4671 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+36.2632 -53.4671 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+108.8223 -53.4671 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+123.6605 -53.4671 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+0.0000 -55.4671 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -54.4671 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -53.4671 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -52.4671 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -51.4671 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+98.8632 -51.9671 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+98.9330 -53.4671 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+103.0939 -50.9671 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+103.1637 -53.4671 moveto 0.0506 3.1557 -0.0253 -0.9556 0.0889 draw_round_box
+94.6325 -53.4671 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+94.7023 -53.4671 moveto 0.0506 3.0633 -0.0253 -3.2889 0.0889 draw_round_box
+114.1028 -53.4671 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+114.1725 -53.4671 moveto 0.0506 2.9890 -0.0253 -3.2889 0.0889 draw_round_box
+120.0454 -53.4671 moveto magfontemmentaler-18mPYo /rests.2 glyphshow
+110.3721 -51.9671 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+110.4418 -53.4671 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+33.2913 -53.4671 moveto 0.0506 3.2300 -0.0253 -1.2744 0.0889 draw_round_box
+37.7516 -52.9671 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+39.5917 -52.9671 moveto magfontemmentaler-18mPYo /dots.dot glyphshow
+37.8213 -53.4671 moveto 0.0506 3.1557 -0.0253 -2.9556 0.0889 draw_round_box
+32.0454 -54.9671 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+-1.9727 -50.3792 moveto /TeXGyreSchola-Regular 2.76074219 output-scale div selectfont
+0.9864 0.0000 0.0000 /eight
+0.9864 0.0000 0.0000 /two
+2 print_glyphs
+0.8000 -52.4671 moveto magfontemmentaler-18mPYo /clefs.F glyphshow
+61.7636 -57.5457 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /semicolon
+0.9105 0.0000 0.0000 /s
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.6070 0.0000 0.0000 /l
+0.9864 0.0000 0.0000 /e
+0.8726 0.0000 0.0000 /r
+0.7587 0.0000 0.0000 /t
+0.8726 0.0000 0.0000 /s
+0.9864 0.0000 0.0000 /e
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /e
+0.8726 0.0000 0.0000 /c
+0.9864 0.0000 0.0000 /o
+1.1381 0.0000 0.0000 /d
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /e
+1.1381 0.0000 0.0000 /d
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+1.2140 0.0000 0.0000 /n
+0.9864 0.0000 0.0000 /o
+0.8726 0.0000 0.0000 /r
+0.9864 0.0000 0.0000 /o
+0.8726 0.0000 0.0000 /c
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+1.2140 0.0000 0.0000 /n
+1.2140 0.0000 0.0000 /u
+0.5311 0.0000 0.0000 /space
+1.0622 0.0000 0.0000 /y
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+37 print_glyphs
+5.8000 -50.8755 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+1.4416 0.0000 0.0000 /a
+1.4416 0.0000 0.0000 /L
+2 print_glyphs
+9.2832 -50.8755 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+2.1624 0.0000 0.0000 /m
+1 print_glyphs
+5.8000 -57.5457 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /comma
+0.9105 0.0000 0.0000 /s
+0.9864 0.0000 0.0000 /e
+0.6070 0.0000 0.0000 /i
+1.1381 0.0000 0.0000 /p
+0.5311 0.0000 0.0000 /space
+0.9105 0.0000 0.0000 /s
+1.2140 0.0000 0.0000 /u
+0.9105 0.0000 0.0000 /s
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /o
+0.5691 0.0000 0.0000 /j
+1.0243 0.0000 0.0000 /a
+1.1002 0.0000 0.0000 /b
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+1.2140 0.0000 0.0000 /n
+1.2140 0.0000 0.0000 /u
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.2140 0.0000 0.0000 /n
+0.9864 0.0000 0.0000 /o
+0.8726 0.0000 0.0000 /c
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+32 print_glyphs
+51.0068 -52.9671 moveto magfontemmentaler-18mPYo /noteheads.s0 glyphshow
+61.7636 -50.8755 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+0.5691 0.0000 0.0000 /l
+1.4416 0.0000 0.0000 /o
+1.7451 0.0000 0.0000 /S
+3 print_glyphs
+44.7959 -53.4671 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+44.8657 -53.4671 moveto 0.0506 3.0633 -0.0253 -3.2889 0.0889 draw_round_box
+0.0000 -65.3961 moveto 1.7662 0.0000 31.7761 0.0000 0.2073 draw_round_box
+0.0000 -65.3961 moveto 1.7662 0.0000 38.6392 0.0000 0.2073 draw_round_box
+0.0000 -65.3961 moveto 1.7662 0.0000 45.5022 0.0000 0.2073 draw_round_box
+0.0000 -65.3961 moveto 1.8840 0.0000 91.5698 0.0000 0.2073 draw_round_box
+0.0000 -65.3961 moveto 1.7662 0.0000 120.3761 0.0000 0.2073 draw_round_box
+0.0000 -64.3961 moveto 1.7662 0.0000 120.3761 0.0000 0.2073 draw_round_box
+49.9219 -68.3961 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+60.5941 -68.3961 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+82.4302 -68.3961 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+96.2497 -68.3961 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+111.8262 -68.3961 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+30.6476 -68.3961 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+123.6605 -68.3961 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+0.0000 -70.3961 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -69.3961 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -68.3961 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -67.3961 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -66.3961 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+85.4107 -66.3961 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+85.4804 -68.3961 moveto 0.0506 3.2300 -0.0253 -1.4556 0.0889 draw_round_box
+88.6127 -65.8961 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+88.6824 -68.3961 moveto 0.0506 3.2300 -0.0253 -0.9556 0.0889 draw_round_box
+91.8147 -65.3961 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+91.8844 -68.3961 moveto 0.0506 3.1557 -0.0253 -0.4556 0.0889 draw_round_box
+55.8747 -68.3961 moveto magfontemmentaler-18mPYo /rests.1 glyphshow
+62.7479 -62.4420 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+1.4416 0.0000 0.0000 /a
+1.5175 0.0000 0.0000 /F
+2 print_glyphs
+32.0014 -68.5824 moveto true 4.5038 -0.4317 4.5038 -0.8229 0.0444 -0.1956 0.0444 0.1956 3 0.0889 draw_polygon
+62.7479 -72.4746 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.9105 0.0000 0.0000 /s
+0.9864 0.0000 0.0000 /o
+0.7587 0.0000 0.0000 /t
+1.2140 0.0000 0.0000 /n
+0.9864 0.0000 0.0000 /e
+1.7451 0.0000 0.0000 /m
+0.9105 0.0000 0.0000 /r
+0.9864 0.0000 0.0000 /o
+0.7587 0.0000 0.0000 /t
+0.5311 0.0000 0.0000 /space
+0.9105 0.0000 0.0000 /s
+0.9864 0.0000 0.0000 /o
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.2140 0.0000 0.0000 /n
+0.9864 0.0000 0.0000 /o
+0.8726 0.0000 0.0000 /c
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+23 print_glyphs
+83.3532 -67.3961 moveto magfontemmentaler-13mPYo /noteheads.s2 glyphshow
+84.2101 -68.3961 moveto 0.0506 2.3034 -0.0253 1.1521 0.0889 draw_round_box
+84.2798 -64.9405 moveto magfontemmentaler-13mPYo /flags.u3 glyphshow
+120.6711 -68.3961 moveto 0.0506 3.7300 -0.0253 0.0444 0.0889 draw_round_box
+117.7650 -68.3961 moveto magfontemmentaler-18mPYo /rests.2 glyphshow
+120.6013 -64.3961 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+98.4035 -62.4420 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+0.5691 0.0000 0.0000 /i
+2.1624 0.0000 0.0000 /M
+2 print_glyphs
+98.4035 -72.4746 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.9484 0.0000 0.0000 /z
+1.2140 0.0000 0.0000 /u
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.5311 0.0000 0.0000 /space
+0.8726 0.0000 0.0000 /r
+1.1002 0.0000 0.0000 /a
+1.1381 0.0000 0.0000 /d
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /e
+1.1381 0.0000 0.0000 /d
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+16 print_glyphs
+38.8644 -68.5824 moveto true 4.5038 -0.4317 4.5038 -0.8229 0.0444 -0.1956 0.0444 0.1956 3 0.0889 draw_polygon
+113.1514 -62.4420 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+0.5691 0.0000 0.0000 /i
+2.1624 0.0000 0.0000 /M
+2 print_glyphs
+116.0828 -61.2528 moveto /TeXGyreHeros-Regular 2.92480469 output-scale div selectfont
+1.0243 0.0000 0.0000 /seven
+1 print_glyphs
+113.1514 -65.8961 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+113.8485 -65.1020 moveto magfontemmentaler-18mPYo /scripts.trill glyphshow
+113.2211 -68.3961 moveto 0.0506 3.1557 -0.0253 -0.9556 0.0889 draw_round_box
+45.7275 -68.3961 moveto true 2.2994 0.0092 2.2994 -0.3819 0.0444 -0.1956 0.0444 0.1956 3 0.0889 draw_polygon
+34.2057 -65.8961 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+34.2755 -68.3961 moveto 0.0506 2.7300 -0.0253 -0.4556 0.0889 draw_round_box
+36.4101 -66.3961 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+36.4798 -68.3961 moveto 0.0506 2.5340 -0.0253 -0.7596 0.0889 draw_round_box
+38.8644 -65.3961 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+38.9342 -68.3961 moveto 0.0506 2.9260 -0.0253 -0.1515 0.0889 draw_round_box
+-1.9727 -65.3081 moveto /TeXGyreSchola-Regular 2.76074219 output-scale div selectfont
+0.9864 0.0000 0.0000 /four
+0.9864 0.0000 0.0000 /three
+2 print_glyphs
+0.8000 -67.3961 moveto magfontemmentaler-18mPYo /clefs.F glyphshow
+5.8000 -62.4420 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+1.4416 0.0000 0.0000 /a
+1.4416 0.0000 0.0000 /L
+2 print_glyphs
+9.2832 -62.4420 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+2.1624 0.0000 0.0000 /m
+1 print_glyphs
+5.8000 -72.3292 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+1.1002 0.0000 0.0000 /a
+0.7587 0.0000 0.0000 /t
+0.6070 0.0000 0.0000 /i
+0.8726 0.0000 0.0000 /r
+1.1002 0.0000 0.0000 /g
+0.5311 0.0000 0.0000 /space
+1.0622 0.0000 0.0000 /y
+0.5311 0.0000 0.0000 /space
+0.5311 0.0000 0.0000 /comma
+1.1002 0.0000 0.0000 /a
+0.7587 0.0000 0.0000 /t
+1.2140 0.0000 0.0000 /n
+0.6070 0.0000 0.0000 /i
+0.8726 0.0000 0.0000 /c
+1.2140 0.0000 0.0000 /n
+0.9864 0.0000 0.0000 /e
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /aacute
+0.7587 0.0000 0.0000 /t
+0.8726 0.0000 0.0000 /s
+0.9864 0.0000 0.0000 /e
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+27 print_glyphs
+27.6827 -66.3961 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+27.7524 -68.3961 moveto 0.0506 3.2300 -0.0253 -1.4556 0.0889 draw_round_box
+32.0014 -65.3961 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+32.0711 -68.3961 moveto 0.0506 2.9260 -0.0253 -0.1515 0.0889 draw_round_box
+51.2611 -66.3961 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+45.7275 -65.3961 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+45.7972 -68.3961 moveto 0.0506 2.7355 -0.0253 0.0389 0.0889 draw_round_box
+47.9318 -65.8961 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+48.0016 -68.3961 moveto 0.0506 2.4108 -0.0253 -0.1364 0.0889 draw_round_box
+51.3308 -68.3961 moveto 0.0506 3.1557 -0.0253 -1.4556 0.0889 draw_round_box
+41.0688 -65.8961 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+41.1385 -68.3961 moveto 0.0506 2.7300 -0.0253 -0.4556 0.0889 draw_round_box
+43.2731 -66.3961 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+43.3429 -68.3961 moveto 0.0506 2.5340 -0.0253 -0.7596 0.0889 draw_round_box
+0.0000 -76.3108 moveto 1.8840 0.0000 5.5551 0.0000 0.2073 draw_round_box
+0.0000 -76.3108 moveto 1.7662 0.0000 9.7812 0.0000 0.2073 draw_round_box
+102.6935 -79.3108 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+15.7190 -79.3108 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+26.5169 -79.3108 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+113.8658 -79.3108 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+73.4346 -79.3108 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+59.8689 -79.3108 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+123.6605 -79.3108 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+0.0000 -81.3108 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -80.3108 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -79.3108 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -78.3108 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -77.3108 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+12.9699 -79.3108 moveto gsave currentpoint translate
+1 setlinecap 1 setlinejoin 0.08584127 setlinewidth
+0.65781818 3.55402245 moveto  1.63547895 4.46781187 3.69128673 4.46781187 4.66894750 3.55402245 curveto  4.66894750 3.55402245 lineto  3.69128673 4.33904997 1.63547895 4.33904997 0.65781818 3.55402245 curveto   closepath  gsave stroke grestore fill grestore
+99.8600 -79.3108 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+99.9298 -79.3108 moveto 0.0506 3.0633 -0.0253 -3.2889 0.0889 draw_round_box
+103.9695 -77.8108 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+104.0393 -79.3108 moveto 0.0506 3.1557 -0.0253 -1.9556 0.0889 draw_round_box
+69.5296 -79.3108 moveto 0.0506 3.1557 -0.0253 -1.4556 0.0889 draw_round_box
+67.3679 -77.3108 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+67.4376 -79.3108 moveto 0.0506 2.9272 -0.0253 -1.1528 0.0889 draw_round_box
+65.3457 -79.3108 moveto 0.0506 2.7533 -0.0253 -1.4789 0.0889 draw_round_box
+69.4598 -77.3108 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+74.5251 -76.7192 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+0.5691 0.0000 0.0000 /l
+1.4416 0.0000 0.0000 /o
+1.7451 0.0000 0.0000 /S
+3 print_glyphs
+74.5251 -83.2829 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /comma
+0.9864 0.0000 0.0000 /o
+0.5691 0.0000 0.0000 /j
+0.9864 0.0000 0.0000 /o
+0.8726 0.0000 0.0000 /r
+0.5311 0.0000 0.0000 /space
+1.2140 0.0000 0.0000 /n
+0.9864 0.0000 0.0000 /oacute
+1.0622 0.0000 0.0000 /g
+1.1002 0.0000 0.0000 /a
+0.8726 0.0000 0.0000 /r
+1.5175 0.0000 0.0000 /D
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /e
+1.7451 0.0000 0.0000 /m
+0.9105 0.0000 0.0000 /r
+0.9864 0.0000 0.0000 /o
+1.2140 0.0000 0.0000 /n
+0.9864 0.0000 0.0000 /e
+0.5311 0.0000 0.0000 /space
+1.2140 0.0000 0.0000 /n
+1.2140 0.0000 0.0000 /u
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+28 print_glyphs
+65.2759 -77.8108 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+119.3482 -79.3108 moveto magfontemmentaler-18mPYo /rests.1 glyphshow
+111.1394 -79.3108 moveto gsave currentpoint translate
+1 setlinecap 1 setlinejoin 0.08584127 setlinewidth
+0.65781818 2.55402245 moveto  1.64107927 3.47249891 3.71615228 3.47249891 4.69941337 2.55402245 curveto  4.69941337 2.55402245 lineto  3.71615228 3.34373701 1.64107927 3.34373701 0.65781818 2.55402245 curveto   closepath  gsave stroke grestore fill grestore
+61.0920 -81.4972 moveto true 6.3709 1.1956 6.3709 0.8044 0.0444 -0.1956 0.0444 0.1956 3 0.0889 draw_polygon
+67.3679 -79.3108 moveto gsave currentpoint translate
+1 setlinecap 1 setlinejoin 0.08584127 setlinewidth
+0.65781818 3.05402245 moveto  1.24448013 3.62301791 2.20238613 3.62301791 2.78904808 3.05402245 curveto  2.78904808 3.05402245 lineto  2.20238613 3.49425600 1.24448013 3.49425600 0.65781818 3.05402245 curveto   closepath  gsave stroke grestore fill grestore
+108.1760 -78.3108 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+108.2457 -79.3108 moveto 0.0506 3.2300 -0.0253 -2.4556 0.0889 draw_round_box
+111.1394 -77.8108 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+111.2091 -79.3108 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+115.1417 -77.8108 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+115.2115 -79.3108 moveto 0.0506 3.1557 -0.0253 -1.9556 0.0889 draw_round_box
+12.9699 -76.8108 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+13.0396 -79.3108 moveto 0.0506 3.2300 -0.0253 -0.9556 0.0889 draw_round_box
+16.9810 -76.8108 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+17.0508 -79.3108 moveto 0.0506 3.2300 -0.0253 -0.9556 0.0889 draw_round_box
+19.9444 -79.3108 moveto magfontemmentaler-18mPYo /rests.2 glyphshow
+-1.9727 -76.2608 moveto /TeXGyreSchola-Regular 2.76074219 output-scale div selectfont
+0.9864 0.0000 0.0000 /one
+0.9864 0.0000 0.0000 /four
+2 print_glyphs
+0.8000 -78.3108 moveto magfontemmentaler-18mPYo /clefs.F glyphshow
+5.8000 -75.8108 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+5.8697 -79.3108 moveto 0.0506 3.1557 -0.0253 0.0444 0.0889 draw_round_box
+10.0065 -76.3108 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+10.0762 -79.3108 moveto 0.0506 3.2300 -0.0253 -0.4556 0.0889 draw_round_box
+61.0920 -78.8108 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+61.1617 -79.3108 moveto 0.0506 2.4055 -0.0253 -2.1310 0.0889 draw_round_box
+22.5422 -77.3108 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+63.1840 -78.3108 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+63.2537 -79.3108 moveto 0.0506 2.5794 -0.0253 -1.8049 0.0889 draw_round_box
+28.5779 -83.3894 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /colon
+0.9864 0.0000 0.0000 /o
+0.6070 0.0000 0.0000 /l
+0.9864 0.0000 0.0000 /e
+0.6070 0.0000 0.0000 /i
+0.8726 0.0000 0.0000 /c
+0.5311 0.0000 0.0000 /space
+0.6070 0.0000 0.0000 /l
+0.9864 0.0000 0.0000 /e
+0.5311 0.0000 0.0000 /space
+1.2140 0.0000 0.0000 /n
+0.9864 0.0000 0.0000 /e
+0.5311 0.0000 0.0000 /space
+0.6070 0.0000 0.0000 /l
+1.1002 0.0000 0.0000 /a
+1.2140 0.0000 0.0000 /ntilde
+0.9864 0.0000 0.0000 /e
+0.9105 0.0000 0.0000 /s
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.8726 0.0000 0.0000 /r
+0.7587 0.0000 0.0000 /t
+0.9484 0.0000 0.0000 /o
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /oacute
+0.6070 0.0000 0.0000 /i
+0.8726 0.0000 0.0000 /c
+0.9864 0.0000 0.0000 /e
+0.8726 0.0000 0.0000 /r
+1.1002 0.0000 0.0000 /a
+1.1381 0.0000 0.0000 /p
+1.1002 0.0000 0.0000 /a
+0.5311 0.0000 0.0000 /space
+1.3657 0.0000 0.0000 /Y
+37 print_glyphs
+28.5779 -76.7192 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+1.4416 0.0000 0.0000 /a
+1.4416 0.0000 0.0000 /L
+2 print_glyphs
+32.0611 -76.7192 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+2.1624 0.0000 0.0000 /m
+1 print_glyphs
+22.6120 -79.3108 moveto 0.0506 3.1557 -0.0253 -1.4556 0.0889 draw_round_box
+63.0722 -91.6057 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+49.4785 -91.6057 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+29.3163 -91.6057 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+76.0834 -91.6057 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+123.6605 -91.6057 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+0.0000 -93.6057 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -92.6057 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -91.6057 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -90.6057 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -89.6057 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+69.2582 -91.6057 moveto 0.0506 2.4102 -0.0253 -2.1358 0.0889 draw_round_box
+71.1728 -90.6057 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+71.2425 -91.6057 moveto 0.0506 2.7361 -0.0253 -1.9617 0.0889 draw_round_box
+69.1884 -91.1057 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+74.4071 -90.1057 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+74.4768 -91.6057 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+69.1884 -93.7921 moveto true 2.0794 0.3819 2.0794 -0.0092 0.0444 -0.1956 0.0444 0.1956 3 0.0889 draw_polygon
+66.8190 -91.6057 moveto magfontemmentaler-18mPYo /rests.2 glyphshow
+80.8940 -91.1057 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+80.9638 -91.6057 moveto 0.0506 3.1557 -0.0253 -2.9556 0.0889 draw_round_box
+84.5165 -95.6843 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /comma
+0.7208 0.0000 0.0000 /r
+0.9864 0.0000 0.0000 /e
+0.5691 0.0000 0.0000 /j
+1.2140 0.0000 0.0000 /u
+1.8589 0.0000 0.0000 /M
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /e
+1.1381 0.0000 0.0000 /d
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /e
+0.7587 0.0000 0.0000 /t
+1.2140 0.0000 0.0000 /n
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.9864 0.0000 0.0000 /e
+1.1381 0.0000 0.0000 /d
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /o
+1.0243 0.0000 0.0000 /v
+1.2140 0.0000 0.0000 /u
+0.7587 0.0000 0.0000 /t
+0.9484 0.0000 0.0000 /e
+1.1381 0.0000 0.0000 /d
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /e
+0.9105 0.0000 0.0000 /s
+0.5311 0.0000 0.0000 /space
+1.2140 0.0000 0.0000 /n
+0.9864 0.0000 0.0000 /oacute
+1.0622 0.0000 0.0000 /g
+1.1002 0.0000 0.0000 /a
+0.8726 0.0000 0.0000 /r
+1.5175 0.0000 0.0000 /D
+0.5311 0.0000 0.0000 /space
+0.6070 0.0000 0.0000 /l
+1.4037 0.0000 0.0000 /E
+43 print_glyphs
+87.3048 -98.6843 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /comma
+1.2140 0.0000 0.0000 /n
+0.9864 0.0000 0.0000 /oacute
+0.8726 0.0000 0.0000 /r
+1.1002 0.0000 0.0000 /a
+1.0243 0.0000 0.0000 /v
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /o
+0.5691 0.0000 0.0000 /j
+0.6070 0.0000 0.0000 /i
+1.6313 0.0000 0.0000 /H
+0.5311 0.0000 0.0000 /space
+1.2140 0.0000 0.0000 /n
+1.2140 0.0000 0.0000 /u
+0.5311 0.0000 0.0000 /space
+0.9484 0.0000 0.0000 /z
+1.2140 0.0000 0.0000 /u
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /o
+0.6070 0.0000 0.0000 /i
+1.1381 0.0000 0.0000 /d
+0.5311 0.0000 0.0000 /space
+0.8726 0.0000 0.0000 /r
+0.9864 0.0000 0.0000 /e
+0.5691 0.0000 0.0000 /j
+1.2140 0.0000 0.0000 /u
+1.8589 0.0000 0.0000 /M
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.3657 0.0000 0.0000 /Y
+38 print_glyphs
+72.9571 -90.1057 moveto magfontemmentaler-18mPYo /accidentals.sharp glyphshow
+78.1590 -91.6057 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+78.2288 -91.6057 moveto 0.0506 3.0633 -0.0253 -3.2889 0.0889 draw_round_box
+64.1022 -88.2857 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+0.5691 0.0000 0.0000 /i
+2.1624 0.0000 0.0000 /M
+2 print_glyphs
+67.0337 -87.0965 moveto /TeXGyreHeros-Regular 2.92480469 output-scale div selectfont
+1.0243 0.0000 0.0000 /seven
+1 print_glyphs
+26.9355 -89.6057 moveto magfontemmentaler-18mPYo /noteheads.s0 glyphshow
+25.0907 -94.0613 moveto magfontemmentaler-18mPYo /flags.d3 glyphshow
+25.0209 -91.6057 moveto 0.0506 3.2300 -0.0253 -2.4556 0.0889 draw_round_box
+24.9512 -90.6057 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+5.8000 -95.5859 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.9105 0.0000 0.0000 /s
+1.1002 0.0000 0.0000 /a
+0.9484 0.0000 0.0000 /z
+0.9864 0.0000 0.0000 /e
+1.1002 0.0000 0.0000 /b
+1.1002 0.0000 0.0000 /a
+0.8726 0.0000 0.0000 /c
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /e
+0.7587 0.0000 0.0000 /t
+0.9484 0.0000 0.0000 /e
+0.6070 0.0000 0.0000 /i
+0.9105 0.0000 0.0000 /s
+0.5311 0.0000 0.0000 /space
+1.2140 0.0000 0.0000 /n
+0.9864 0.0000 0.0000 /o
+0.8726 0.0000 0.0000 /c
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+23 print_glyphs
+5.8000 -88.2857 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+1.4416 0.0000 0.0000 /a
+1.5175 0.0000 0.0000 /F
+2 print_glyphs
+59.8469 -90.1057 moveto magfontemmentaler-18mPYo /accidentals.sharp glyphshow
+61.3667 -91.6057 moveto 0.0506 3.1557 -0.0253 -1.9556 0.0889 draw_round_box
+61.2969 -90.1057 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+0.8000 -90.6057 moveto magfontemmentaler-18mPYo /clefs.F glyphshow
+33.8554 -95.5888 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.9105 0.0000 0.0000 /s
+0.9864 0.0000 0.0000 /o
+1.2140 0.0000 0.0000 /n
+0.9105 0.0000 0.0000 /r
+0.9864 0.0000 0.0000 /e
+1.2140 0.0000 0.0000 /u
+0.8726 0.0000 0.0000 /c
+0.5311 0.0000 0.0000 /space
+0.9484 0.0000 0.0000 /z
+0.9864 0.0000 0.0000 /e
+0.6070 0.0000 0.0000 /i
+1.1381 0.0000 0.0000 /d
+0.5311 0.0000 0.0000 /space
+1.0622 0.0000 0.0000 /y
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+18 print_glyphs
+-1.9727 -88.5178 moveto /TeXGyreSchola-Regular 2.76074219 output-scale div selectfont
+0.9864 0.0000 0.0000 /eight
+0.9864 0.0000 0.0000 /four
+2 print_glyphs
+57.2496 -88.2857 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+0.5691 0.0000 0.0000 /i
+2.1624 0.0000 0.0000 /M
+2 print_glyphs
+0.0000 -107.5900 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -106.5900 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -105.5900 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -104.5900 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -103.5900 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+123.6605 -105.5900 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+53.2500 -105.5900 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+22.5808 -105.5900 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+49.5969 -105.0900 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+49.6666 -105.5900 moveto 0.0506 3.2300 -0.0253 -2.9556 0.0889 draw_round_box
+42.9779 -105.5900 moveto 0.0506 3.2300 -0.0253 -2.4556 0.0889 draw_round_box
+42.9081 -104.5900 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+36.2892 -105.5900 moveto 0.0506 3.2300 -0.0253 -2.9556 0.0889 draw_round_box
+36.2194 -105.0900 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+25.8347 -103.4037 moveto true 7.7892 0.8229 7.7892 0.4317 0.0444 -0.1956 0.0444 0.1956 3 0.0889 draw_polygon
+84.7630 -109.6686 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /comma
+0.9484 0.0000 0.0000 /z
+1.2140 0.0000 0.0000 /u
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.5311 0.0000 0.0000 /space
+0.8726 0.0000 0.0000 /r
+1.1002 0.0000 0.0000 /a
+1.1381 0.0000 0.0000 /d
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+1.1002 0.0000 0.0000 /b
+0.6070 0.0000 0.0000 /i
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /e
+1.2140 0.0000 0.0000 /u
+1.0622 0.0000 0.0000 /q
+0.5311 0.0000 0.0000 /space
+0.8726 0.0000 0.0000 /r
+0.9864 0.0000 0.0000 /e
+0.5691 0.0000 0.0000 /j
+1.2140 0.0000 0.0000 /u
+1.8589 0.0000 0.0000 /M
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /e
+1.1381 0.0000 0.0000 /d
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+38 print_glyphs
+77.9154 -112.6686 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /comma
+1.1002 0.0000 0.0000 /a
+0.8726 0.0000 0.0000 /r
+0.9105 0.0000 0.0000 /r
+0.9864 0.0000 0.0000 /e
+0.6070 0.0000 0.0000 /i
+0.7587 0.0000 0.0000 /t
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /e
+1.1381 0.0000 0.0000 /d
+0.5311 0.0000 0.0000 /space
+0.9105 0.0000 0.0000 /s
+0.9864 0.0000 0.0000 /e
+1.2140 0.0000 0.0000 /n
+0.9864 0.0000 0.0000 /o
+0.6070 0.0000 0.0000 /i
+0.8726 0.0000 0.0000 /c
+1.1002 0.0000 0.0000 /a
+1.2140 0.0000 0.0000 /n
+0.5311 0.0000 0.0000 /space
+0.9105 0.0000 0.0000 /s
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+0.8726 0.0000 0.0000 /r
+0.6070 0.0000 0.0000 /i
+1.0622 0.0000 0.0000 /g
+0.9864 0.0000 0.0000 /e
+0.8726 0.0000 0.0000 /r
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /e
+1.1381 0.0000 0.0000 /d
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+1.2140 0.0000 0.0000 /h
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /e
+1.2140 0.0000 0.0000 /u
+1.0622 0.0000 0.0000 /q
+0.5311 0.0000 0.0000 /space
+0.6070 0.0000 0.0000 /l
+0.9864 0.0000 0.0000 /e
+1.2140 0.0000 0.0000 /u
+1.0622 0.0000 0.0000 /q
+1.1002 0.0000 0.0000 /a
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+54 print_glyphs
+67.6150 -105.5900 moveto 0.0506 3.1557 -0.0253 -2.9556 0.0889 draw_round_box
+67.5452 -105.0900 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+60.9263 -105.5900 moveto 0.0506 3.2300 -0.0253 -2.4556 0.0889 draw_round_box
+60.8565 -104.5900 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+25.9045 -105.5900 moveto 0.0506 2.9219 -0.0253 -0.7744 0.0889 draw_round_box
+24.6586 -106.5900 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+19.5120 -103.6345 moveto magfontemmentaler-18mPYo /flags.u3 glyphshow
+19.4423 -105.5900 moveto 0.0506 3.2300 -0.0253 -1.2744 0.0889 draw_round_box
+18.1964 -107.0900 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+5.8000 -102.9985 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+1.4416 0.0000 0.0000 /a
+1.4416 0.0000 0.0000 /L
+2 print_glyphs
+9.2832 -102.9985 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+2.1624 0.0000 0.0000 /m
+1 print_glyphs
+32.3527 -105.5900 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+0.8000 -104.5900 moveto magfontemmentaler-18mPYo /clefs.F glyphshow
+-1.9727 -102.5021 moveto /TeXGyreSchola-Regular 2.76074219 output-scale div selectfont
+0.9864 0.0000 0.0000 /three
+0.9864 0.0000 0.0000 /five
+2 print_glyphs
+33.5986 -105.5900 moveto 0.0506 2.5380 -0.0253 0.2256 0.0889 draw_round_box
+29.7515 -105.5900 moveto 0.0506 2.7300 -0.0253 -0.2744 0.0889 draw_round_box
+28.5057 -106.0900 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+26.2663 -119.6502 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+61.6516 -119.6502 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+82.9631 -119.6502 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+14.3258 -119.6502 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+123.6605 -119.6502 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+0.0000 -121.6502 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -120.6502 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -119.6502 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -118.6502 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -117.6502 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+74.1774 -117.0586 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+1.4416 0.0000 0.0000 /a
+1.5175 0.0000 0.0000 /F
+2 print_glyphs
+36.7150 -123.6333 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.9864 0.0000 0.0000 /o
+0.5691 0.0000 0.0000 /j
+0.6070 0.0000 0.0000 /i
+1.6313 0.0000 0.0000 /H
+0.5311 0.0000 0.0000 /space
+1.2140 0.0000 0.0000 /u
+0.9105 0.0000 0.0000 /s
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.5311 0.0000 0.0000 /space
+0.8726 0.0000 0.0000 /r
+1.1002 0.0000 0.0000 /a
+0.8726 0.0000 0.0000 /r
+0.9864 0.0000 0.0000 /o
+1.0243 0.0000 0.0000 /v
+0.9484 0.0000 0.0000 /e
+1.1381 0.0000 0.0000 /d
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.8726 0.0000 0.0000 /r
+1.1002 0.0000 0.0000 /a
+1.1381 0.0000 0.0000 /p
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+28 print_glyphs
+35.8615 -126.6333 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.9864 0.0000 0.0000 /o
+1.1381 0.0000 0.0000 /d
+1.1002 0.0000 0.0000 /a
+0.7587 0.0000 0.0000 /t
+1.1002 0.0000 0.0000 /a
+1.1002 0.0000 0.0000 /b
+0.9864 0.0000 0.0000 /e
+0.8726 0.0000 0.0000 /r
+0.9105 0.0000 0.0000 /r
+1.1002 0.0000 0.0000 /a
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /e
+1.2140 0.0000 0.0000 /u
+0.6449 0.0000 0.0000 /f
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /o
+0.5691 0.0000 0.0000 /j
+0.6070 0.0000 0.0000 /i
+1.6313 0.0000 0.0000 /H
+0.5311 0.0000 0.0000 /space
+1.2140 0.0000 0.0000 /u
+0.9105 0.0000 0.0000 /s
+0.5311 0.0000 0.0000 /space
+1.0622 0.0000 0.0000 /y
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+30 print_glyphs
+80.7006 -118.6502 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+80.7703 -119.6502 moveto 0.0506 3.2300 -0.0253 -2.4556 0.0889 draw_round_box
+31.8002 -119.6502 moveto 0.0506 3.1557 -0.0253 -1.9556 0.0889 draw_round_box
+31.7305 -118.1502 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+28.7673 -119.6502 moveto 0.0506 3.2300 -0.0253 -1.4556 0.0889 draw_round_box
+21.4081 -119.6502 moveto gsave currentpoint translate
+1 setlinecap 1 setlinejoin 0.08584127 setlinewidth
+0.65781818 2.55402245 moveto  1.44391998 3.30228683 2.90468808 3.30228683 3.69078987 2.55402245 curveto  3.69078987 2.55402245 lineto  2.90468808 3.17352492 1.44391998 3.17352492 0.65781818 2.55402245 curveto   closepath  gsave stroke grestore fill grestore
+28.6975 -117.6502 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+100.4690 -123.5731 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+1.1002 0.0000 0.0000 /a
+0.8726 0.0000 0.0000 /r
+0.9864 0.0000 0.0000 /e
+0.6070 0.0000 0.0000 /i
+0.8726 0.0000 0.0000 /c
+1.1002 0.0000 0.0000 /a
+1.2140 0.0000 0.0000 /n
+0.5311 0.0000 0.0000 /space
+0.9864 0.0000 0.0000 /o
+0.7587 0.0000 0.0000 /t
+1.2140 0.0000 0.0000 /n
+1.1002 0.0000 0.0000 /a
+1.2140 0.0000 0.0000 /u
+0.8726 0.0000 0.0000 /c
+0.5311 0.0000 0.0000 /space
+1.2140 0.0000 0.0000 /n
+0.9864 0.0000 0.0000 /e
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+21 print_glyphs
+96.1631 -126.5731 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.9864 0.0000 0.0000 /o
+1.2140 0.0000 0.0000 /n
+0.9864 0.0000 0.0000 /o
+0.8726 0.0000 0.0000 /r
+0.7587 0.0000 0.0000 /t
+0.5311 0.0000 0.0000 /space
+1.2140 0.0000 0.0000 /u
+0.9105 0.0000 0.0000 /s
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.7587 0.0000 0.0000 /t
+0.8726 0.0000 0.0000 /s
+1.1002 0.0000 0.0000 /a
+1.2140 0.0000 0.0000 /h
+0.5311 0.0000 0.0000 /space
+1.0622 0.0000 0.0000 /y
+0.5311 0.0000 0.0000 /space
+0.9105 0.0000 0.0000 /s
+0.9864 0.0000 0.0000 /o
+0.6070 0.0000 0.0000 /i
+1.5175 0.0000 0.0000 /D
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.7587 0.0000 0.0000 /t
+0.8726 0.0000 0.0000 /s
+1.1002 0.0000 0.0000 /a
+1.2140 0.0000 0.0000 /h
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+31 print_glyphs
+90.6094 -119.6502 moveto 0.0506 3.1557 -0.0253 -1.4556 0.0889 draw_round_box
+90.5397 -117.6502 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+86.7020 -119.6502 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+86.6323 -118.1502 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+9.2101 -119.6502 moveto 0.0506 3.0633 -0.0253 -3.2889 0.0889 draw_round_box
+12.4233 -118.1502 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+12.4931 -119.6502 moveto 0.0506 3.1557 -0.0253 -1.9556 0.0889 draw_round_box
+9.1404 -119.6502 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+-1.9727 -116.5623 moveto /TeXGyreSchola-Regular 2.76074219 output-scale div selectfont
+0.9864 0.0000 0.0000 /six
+0.9864 0.0000 0.0000 /five
+2 print_glyphs
+0.8000 -118.6502 moveto magfontemmentaler-18mPYo /clefs.F glyphshow
+5.8000 -117.0586 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+0.5691 0.0000 0.0000 /l
+1.4416 0.0000 0.0000 /o
+1.7451 0.0000 0.0000 /S
+3 print_glyphs
+24.5108 -119.6502 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+24.4411 -118.1502 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+21.4778 -119.6502 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+21.4081 -118.1502 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+18.4449 -119.6502 moveto 0.0506 3.2300 -0.0253 -2.4556 0.0889 draw_round_box
+18.3751 -118.6502 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+54.9565 -135.6798 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+10.6804 -135.6798 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+33.7826 -135.6798 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+86.3943 -135.6798 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+98.1581 -135.6798 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+21.8517 -135.6798 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+43.2124 -135.6798 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+18.1798 -135.6798 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+17.6540 -135.6798 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+123.6605 -135.6798 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+76.5475 -135.6798 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+64.8033 -135.6798 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+0.0000 -137.6798 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -136.6798 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -135.6798 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -134.6798 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -133.6798 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+70.2030 -136.1798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+66.2652 -135.6798 moveto 0.0506 3.1050 -0.0253 -3.3306 0.0889 draw_round_box
+67.9279 -135.6798 moveto 0.0506 3.0633 -0.0253 -3.2889 0.0889 draw_round_box
+67.8582 -135.6798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+66.1955 -135.6798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+66.3350 -139.0104 moveto magfontemmentaler-18mPYo /flags.d4 glyphshow
+51.0659 -135.6798 moveto 0.0506 3.0633 -0.0253 -3.2889 0.0889 draw_round_box
+77.4793 -131.0233 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+1.4416 0.0000 0.0000 /a
+1.5175 0.0000 0.0000 /F
+2 print_glyphs
+71.4488 -135.6798 moveto 0.0506 3.2300 -0.0253 -0.2744 0.0889 draw_round_box
+76.1777 -135.6798 moveto 0.0506 3.2300 -0.0253 -0.7744 0.0889 draw_round_box
+74.9319 -136.6798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+73.8133 -135.6798 moveto 0.0506 3.2300 -0.0253 -0.2744 0.0889 draw_round_box
+72.5674 -136.1798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+57.0128 -135.6798 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+57.0825 -135.6798 moveto 0.0506 2.9890 -0.0253 -3.2889 0.0889 draw_round_box
+55.8883 -131.0233 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+0.5691 0.0000 0.0000 /l
+1.4416 0.0000 0.0000 /o
+1.7451 0.0000 0.0000 /S
+3 print_glyphs
+54.5868 -135.6798 moveto 0.0506 3.2300 -0.0253 -0.2744 0.0889 draw_round_box
+53.3409 -136.1798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+62.2655 -135.6798 moveto 0.0506 3.1050 -0.0253 -3.3306 0.0889 draw_round_box
+62.3352 -139.0104 moveto magfontemmentaler-18mPYo /flags.d3 glyphshow
+63.9574 -135.1798 moveto magfontemmentaler-18mPYo /dots.dot glyphshow
+62.1958 -135.6798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+60.1969 -135.6798 moveto magfontemmentaler-18mPYo /rests.2 glyphshow
+99.0900 -131.0233 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+0.5691 0.0000 0.0000 /i
+2.1624 0.0000 0.0000 /M
+2 print_glyphs
+96.6123 -135.6798 moveto 0.0506 3.2300 -0.0253 -2.9556 0.0889 draw_round_box
+96.5425 -135.1798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+94.2478 -135.6798 moveto 0.0506 3.2300 -0.0253 -2.4556 0.0889 draw_round_box
+94.1781 -134.6798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+105.6474 -139.7584 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+1.2899 0.0000 0.0000 /L
+23 print_glyphs
+103.3986 -135.6798 moveto magfontemmentaler-18mPYo /rests.2 glyphshow
+100.2841 -135.6798 moveto 0.0506 3.1557 -0.0253 -2.9556 0.0889 draw_round_box
+100.2144 -135.1798 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+83.9262 -138.1354 moveto magfontemmentaler-18mPYo /flags.d3 glyphshow
+83.8565 -135.6798 moveto 0.0506 3.2300 -0.0253 -2.4556 0.0889 draw_round_box
+85.5483 -134.1798 moveto magfontemmentaler-18mPYo /dots.dot glyphshow
+83.7867 -134.6798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+81.7879 -135.6798 moveto magfontemmentaler-18mPYo /rests.2 glyphshow
+79.9282 -135.6798 moveto 0.0506 3.1557 -0.0253 -0.2001 0.0889 draw_round_box
+78.6037 -136.1798 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+87.9259 -138.1354 moveto magfontemmentaler-18mPYo /flags.d4 glyphshow
+91.8833 -135.6798 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+91.8136 -134.1798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+89.5189 -135.6798 moveto 0.0506 3.2300 -0.0253 -2.4556 0.0889 draw_round_box
+89.4491 -134.6798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+87.8562 -135.6798 moveto 0.0506 3.2300 -0.0253 -2.4556 0.0889 draw_round_box
+87.7864 -134.6798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+22.7835 -131.0233 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+1.4416 0.0000 0.0000 /a
+1.4416 0.0000 0.0000 /L
+2 print_glyphs
+26.2667 -131.0233 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+2.1624 0.0000 0.0000 /m
+1 print_glyphs
+19.3836 -138.6354 moveto magfontemmentaler-18mPYo /flags.d3 glyphshow
+19.3138 -135.6798 moveto 0.0506 3.2300 -0.0253 -2.9556 0.0889 draw_round_box
+21.0057 -135.1798 moveto magfontemmentaler-18mPYo /dots.dot glyphshow
+19.2441 -133.1262 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.6070 0.0000 0.0000 /l
+1.1002 0.0000 0.0000 /a
+1.2140 0.0000 0.0000 /n
+0.6070 0.0000 0.0000 /i
+1.2899 0.0000 0.0000 /F
+5 print_glyphs
+50.9961 -135.6798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+27.5275 -135.6798 moveto 0.0506 3.0633 -0.0253 -3.2889 0.0889 draw_round_box
+27.4577 -135.6798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+25.1630 -135.6798 moveto 0.0506 3.2300 -0.0253 -2.9556 0.0889 draw_round_box
+25.0933 -135.1798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+19.2441 -135.1798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+23.5701 -138.6354 moveto magfontemmentaler-18mPYo /flags.d4 glyphshow
+23.5003 -135.6798 moveto 0.0506 3.2300 -0.0253 -2.9556 0.0889 draw_round_box
+23.4306 -135.1798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+9.1345 -135.6798 moveto 0.0506 3.2300 -0.0253 -1.9556 0.0889 draw_round_box
+9.0648 -134.1798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+5.8000 -131.0233 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+0.5691 0.0000 0.0000 /i
+2.1624 0.0000 0.0000 /M
+2 print_glyphs
+7.6148 -134.1798 moveto magfontemmentaler-18mPYo /accidentals.sharp glyphshow
+0.8000 -134.6798 moveto magfontemmentaler-18mPYo /clefs.F glyphshow
+-1.9727 -132.5919 moveto /TeXGyreSchola-Regular 2.76074219 output-scale div selectfont
+0.9864 0.0000 0.0000 /one
+0.9864 0.0000 0.0000 /six
+2 print_glyphs
+14.7538 -135.6798 moveto 0.0506 3.1557 -0.0253 -0.9556 0.0889 draw_round_box
+14.6841 -133.1798 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+12.3894 -135.6798 moveto 0.0506 3.2300 -0.0253 -1.4556 0.0889 draw_round_box
+12.3196 -133.6798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+44.7440 -138.6354 moveto magfontemmentaler-18mPYo /flags.d4 glyphshow
+42.3664 -135.1798 moveto magfontemmentaler-18mPYo /dots.dot glyphshow
+40.6048 -135.1798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+40.6745 -135.6798 moveto 0.0506 3.2300 -0.0253 -2.9556 0.0889 draw_round_box
+38.6060 -135.6798 moveto magfontemmentaler-18mPYo /rests.2 glyphshow
+35.4218 -136.1798 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+46.2672 -135.1798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+36.7462 -135.6798 moveto 0.0506 3.1557 -0.0253 -0.2001 0.0889 draw_round_box
+44.6045 -135.1798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+44.6743 -135.6798 moveto 0.0506 3.2300 -0.0253 -2.9556 0.0889 draw_round_box
+40.7443 -138.6354 moveto magfontemmentaler-18mPYo /flags.d3 glyphshow
+32.1670 -136.1798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+48.7014 -135.6798 moveto 0.0506 3.0633 -0.0253 -3.2889 0.0889 draw_round_box
+33.4128 -135.6798 moveto 0.0506 3.2300 -0.0253 -0.2744 0.0889 draw_round_box
+48.6317 -135.6798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+46.3370 -135.6798 moveto 0.0506 3.2300 -0.0253 -2.9556 0.0889 draw_round_box
+29.8222 -135.6798 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+29.8919 -135.6798 moveto 0.0506 3.0633 -0.0253 -3.2889 0.0889 draw_round_box
+20.1073 -146.3606 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+83.4820 -146.3606 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+123.6605 -146.3606 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+60.2858 -146.3606 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+0.0000 -148.3606 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -147.3606 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -146.3606 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -145.3606 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -144.3606 moveto 123.7570 0.0000 0.0537 0.0000 0.1073 draw_line
+81.4082 -146.3606 moveto 0.0506 3.2300 -0.0253 -0.7744 0.0889 draw_round_box
+69.1747 -143.7691 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+0.5691 0.0000 0.0000 /l
+1.4416 0.0000 0.0000 /o
+1.7451 0.0000 0.0000 /S
+3 print_glyphs
+80.1623 -147.3606 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+105.6474 -150.4392 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+1.2899 0.0000 0.0000 /L
+23 print_glyphs
+96.4854 -146.3606 moveto 0.0506 3.1557 -0.0253 -1.9556 0.0889 draw_round_box
+96.4157 -144.8606 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+90.2138 -146.3606 moveto 0.0506 3.0633 -0.0253 -3.2889 0.0889 draw_round_box
+90.1441 -146.3606 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+18.0336 -146.3606 moveto 0.0506 3.2300 -0.0253 -0.2744 0.0889 draw_round_box
+16.7877 -146.8606 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+0.8000 -145.3606 moveto magfontemmentaler-18mPYo /clefs.F glyphshow
+5.8000 -143.7691 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+1.4416 0.0000 0.0000 /a
+1.4416 0.0000 0.0000 /L
+2 print_glyphs
+9.2832 -143.7691 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+2.1624 0.0000 0.0000 /m
+1 print_glyphs
+42.2727 -150.4392 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+1.2899 0.0000 0.0000 /L
+23 print_glyphs
+33.1108 -146.3606 moveto 0.0506 3.1557 -0.0253 -1.4556 0.0889 draw_round_box
+33.0410 -144.3606 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+26.8392 -146.3606 moveto 0.0506 3.2300 -0.0253 -2.9556 0.0889 draw_round_box
+26.7694 -145.8606 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+-1.9727 -143.2727 moveto /TeXGyreSchola-Regular 2.76074219 output-scale div selectfont
+0.9864 0.0000 0.0000 /one
+0.9864 0.0000 0.0000 /seven
+2 print_glyphs
+83.4572 -158.7599 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+15.6095 -158.7599 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+115.3932 -158.7599 moveto 0.6438 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+114.8674 -158.7599 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+48.5906 -158.7599 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+100.6787 -158.7599 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+71.4012 -158.7599 moveto 0.2039 4.0000 0.0000 -2.0000 0.0000 draw_round_box
+0.0000 -160.7599 moveto 115.9297 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -159.7599 moveto 115.9297 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -158.7599 moveto 115.9297 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -157.7599 moveto 115.9297 0.0000 0.0537 0.0000 0.1073 draw_line
+0.0000 -156.7599 moveto 115.9297 0.0000 0.0537 0.0000 0.1073 draw_line
+95.1666 -158.7599 moveto 0.0506 3.2300 -0.0253 -0.7744 0.0889 draw_round_box
+89.6212 -159.2599 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+90.8671 -158.7599 moveto 0.0506 3.2300 -0.0253 -0.2744 0.0889 draw_round_box
+93.9207 -159.7599 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+64.1473 -157.2599 moveto true 3.5539 0.7859 3.5539 0.4908 0.0444 -0.1476 0.0444 0.1476 3 0.0889 draw_polygon
+81.0145 -158.7599 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+81.0842 -158.7599 moveto 0.0506 2.9890 -0.0253 -3.2889 0.0889 draw_round_box
+84.9019 -154.9562 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+0.5691 0.0000 0.0000 /i
+2.1624 0.0000 0.0000 /M
+2 print_glyphs
+87.8333 -153.7670 moveto /TeXGyreHeros-Regular 2.92480469 output-scale div selectfont
+1.0243 0.0000 0.0000 /seven
+1 print_glyphs
+108.8461 -156.4263 moveto magfontemmentaler-18mPYo /scripts.ufermata glyphshow
+109.4734 -158.7599 moveto 0.0506 3.1557 -0.0253 -1.2001 0.0889 draw_round_box
+108.1490 -160.2599 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+93.9207 -158.7599 moveto gsave currentpoint translate
+1 setlinecap 1 setlinejoin 0.08584127 setlinewidth
+0.65781818 -2.20402245 moveto  1.68766201 -3.16109112 3.92743293 -3.16109112 4.95727675 -2.20402245 curveto  4.95727675 -2.20402245 lineto  3.92743293 -3.03232921 1.68766201 -3.03232921 0.65781818 -2.20402245 curveto   closepath  gsave stroke grestore fill grestore
+99.4660 -158.7599 moveto 0.0506 3.2300 -0.0253 -0.7744 0.0889 draw_round_box
+102.1233 -154.9562 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+1.4416 0.0000 0.0000 /a
+1.4416 0.0000 0.0000 /L
+2 print_glyphs
+105.6065 -154.9562 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+2.1624 0.0000 0.0000 /m
+1 print_glyphs
+98.2201 -159.7599 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+104.2152 -158.7599 moveto magfontemmentaler-18mPYo /rests.2 glyphshow
+19.8336 -159.2599 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+21.0795 -158.7599 moveto 0.0506 3.2300 -0.0253 -0.2744 0.0889 draw_round_box
+24.2850 -157.7599 moveto magfontemmentaler-18mPYo /noteheads.s1 glyphshow
+30.5775 -162.8385 moveto /TeXGyreSchola-Regular 3.09960938 output-scale div selectfont
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+0.5311 0.0000 0.0000 /period
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+0.6070 0.0000 0.0000 /l
+0.5311 0.0000 0.0000 /space
+1.1002 0.0000 0.0000 /a
+1.2899 0.0000 0.0000 /L
+23 print_glyphs
+-1.9727 -155.6720 moveto /TeXGyreSchola-Regular 2.76074219 output-scale div selectfont
+0.9864 0.0000 0.0000 /five
+0.9864 0.0000 0.0000 /seven
+2 print_glyphs
+0.8000 -157.7599 moveto magfontemmentaler-18mPYo /clefs.F glyphshow
+24.3547 -158.7599 moveto 0.0506 3.1557 -0.0253 -2.4556 0.0889 draw_round_box
+5.8000 -154.9562 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+1.4416 0.0000 0.0000 /a
+1.5175 0.0000 0.0000 /F
+2 print_glyphs
+13.1510 -160.2599 moveto magfontemmentaler-18mPYo /noteheads.s2 glyphshow
+14.3969 -158.7599 moveto 0.0506 3.2300 -0.0253 -1.2744 0.0889 draw_round_box
+66.8191 -158.7599 moveto magfontemmentaler-13mPYo /noteheads.s2 glyphshow
+63.3602 -159.7599 moveto magfontemmentaler-13mPYo /noteheads.s2 glyphshow
+64.2170 -158.7599 moveto 0.0506 2.3158 -0.0253 -0.8479 0.0889 draw_round_box
+67.6759 -158.7599 moveto 0.0506 1.9294 -0.0253 0.1521 0.0889 draw_round_box
+69.5309 -156.4563 moveto magfontemmentaler-18mPYo /scripts.trill glyphshow
+65.0896 -159.2599 moveto magfontemmentaler-13mPYo /noteheads.s2 glyphshow
+65.9465 -158.7599 moveto 0.0506 2.1226 -0.0253 -0.3479 0.0889 draw_round_box
+68.5485 -158.2599 moveto magfontemmentaler-18mPYo /noteheads.s0 glyphshow
+57.4794 -154.9562 moveto /TeXGyreHeros-Regular 4.13769531 output-scale div selectfont
+0.5691 0.0000 0.0000 /i
+2.1624 0.0000 0.0000 /M
+2 print_glyphs
+stroke grestore
+%%Trailer
+%%EOF

@@ -1,0 +1,10 @@
+@image{./e7/lily-04fbc383-1}
+@image{./e7/lily-04fbc383-2}
+@image{./e7/lily-04fbc383-3}
+@image{./e7/lily-04fbc383-4}
+@image{./e7/lily-04fbc383-5}
+@image{./e7/lily-04fbc383-6}
+@image{./e7/lily-04fbc383-7}
+@image{./e7/lily-04fbc383-8}
+@image{./e7/lily-04fbc383-9}
+@c eof

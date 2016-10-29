@@ -1,0 +1,359 @@
+\documentclass[letterpaper]{report}
+
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{pifont}
+\usepackage{pdflscape}
+\usepackage{lscape}
+\usepackage{geometry}
+\geometry{
+    letterpaper,
+    left=1.5cm,
+    right=1.5cm,
+    bottom=1.5cm,
+    top=1.5cm
+}
+
+%% Portada del Libro
+\title{ \textbf{ \Huge Noche de paz  } \\ { \Huge Partitura Coral } }
+\author{ \textit{ \huge Pbro. Joseph Mohr y  Franz Xaver Gruber } } 
+\date{ \LARGE Arreglo Pbro. Angel Torrellas }
+	
+\begin{document}
+    \pagenumbering{gobble} % borra los numeros de paguinas
+    
+    %% - Portada
+    \maketitle
+     
+    %% - Paginas horizontales
+    \begin{landscape}
+        %% - Musica
+        \begin{lilypond}[staffsize=17]
+            \language "espanol"
+            \version "2.19.28"
+
+            % --- Includes
+            \include "global.ily"
+            \include "soprano.ily"
+            \include "alto.ily"
+            \include "tenor.ily"
+            \include "bajo.ily"
+            
+            % --- Tamaño de Paginas
+            #(set-default-paper-size "letter" 'landscape)
+
+            % --- Cabecera
+            \markup { \fill-line { \center-column { \fontsize #5 "Noche de paz" \fontsize #3 \caps "Coro" } } }
+            \markup { \fill-line { " " \center-column { \fontsize #2 "Pbro. Joseph Mohr y  Franz Xaver Gruber" \small "Arreglo Pbro. Angel Torrellas" } } }
+            \header {
+                copyright = "Creative Commons Attribution 3.0" 
+                tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+                breakbefore = ##t
+            }
+            
+            todoacordes = \new ChordNames {
+                \set chordChanges = ##t
+                \italianChords
+                \chordmode { 
+                    R4.*2
+                    do4. sol4.:7 do2.
+                    do2. R2. sol2.:7 do2.
+                    fa2. do2. fa2. do2.
+                    sol2.:7 do2. R4. sol4. do2.
+                }
+            }
+
+            % --- Musica
+            \score {
+                \new ChoirStaff <<
+                    \todoacordes
+                    %% Soprano
+                    \new Staff = "sopranos" <<
+                        \set Staff.instrumentName = #"Soprano"
+                        \set Staff.shortInstrumentName = #"Sop."
+                        \new Voice = "sopranos" <<
+                            \dynamicUp
+                            \global
+                            \clef "treble"
+                            \musicaSoprano
+                        >>
+                    >>
+                    \new Lyrics \lyricsto "sopranos" {
+                        \letraSopranouno
+                    }
+                    \new Lyrics \lyricsto "sopranos" {
+                        \letraSopranodos
+                    }
+                    \new Lyrics \lyricsto "sopranos" {
+                        \letraSopranotres
+                    }
+                    %% Contralto
+                    \new Staff = "altos" <<
+                        \set Staff.instrumentName = #"Contralto"
+                        \set Staff.shortInstrumentName = #"Cont."
+                        \new Voice = "altos" <<
+                            \dynamicUp
+                            \global
+                            \clef "treble"
+                            \musicaAlto
+                        >>
+                    >>
+                    \new Lyrics \lyricsto "altos" {
+                        \letraAltouno
+                    }
+                    \new Lyrics \lyricsto "altos" {
+                        \letraAltodos
+                    }
+                    \new Lyrics \lyricsto "altos" {
+                        \letraAltotres
+                    }
+                    %% Tenor
+                    \new Staff = "tenors" <<
+                        \set Staff.instrumentName = #"Tenor"
+                        \set Staff.shortInstrumentName = #"Ten."
+                        \new Voice = "tenors" <<
+                            \dynamicUp
+                            \global
+                            \clef "G_8"
+                            \musicaTenor
+                        >>
+                    >>
+                    \new Lyrics \lyricsto "tenors" {
+                        \letraTenoruno
+                    }
+                    \new Lyrics \lyricsto "tenors" {
+                        \letraTenordos
+                    }
+                    \new Lyrics \lyricsto "tenors" {
+                        \letraTenortres
+                    }
+                    %% Bajo
+                    \new Staff = "bajos" <<
+                        \set Staff.instrumentName = #"Bajo"
+                        \set Staff.shortInstrumentName = #"Baj."
+                        \new Voice = "bajos" <<
+                            \dynamicUp
+                            \global
+                            \clef bass
+                            \musicaBajo
+                        >>
+                    >>
+                    \new Lyrics \lyricsto "bajos" {
+                        \letraBajouno
+                    }
+                    \new Lyrics \lyricsto "bajos" {
+                        \letraBajodos
+                    }
+                    \new Lyrics \lyricsto "bajos" {
+                        \letraBajotres
+                    }
+                >>  % fin del ChoirStaff
+                
+                \midi {}
+                \layout {}
+            }
+
+            \paper {
+                %top-margin = 1.5\cm
+                %bottom-margin = 1.5\cm
+                right-margin = 3\cm % margenes
+                %left-margin = 1.5\cm
+                %indent = 3.0\cm  % space for instrumentName
+                %short-indent = 1.5\cm  % space for shortInstrumentName
+            }
+        \end{lilypond}    
+    \end{landscape}
+    
+     %% - Musica - Soprano
+    \begin{lilypond}[staffsize=19]
+        \language "espanol"
+        \version "2.19.28"
+        
+        \include "global.ily"
+        \include "soprano.ily"
+
+        \markup { \fill-line { \center-column { \fontsize #5 "Noche de paz" \fontsize #3 \caps "Soprano" } } }
+        \markup { \fill-line { " " \center-column { \fontsize #2 "Pbro. Joseph Mohr y  Franz Xaver Gruber" \small "Arreglo Pbro Angel Torrellas" } } }
+        \header {
+            copyright = "Creative Commons Attribution 3.0" 
+            tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+            breakbefore = ##t
+        }
+
+        \score {
+            <<
+                \acordes
+                %% Soprano
+                \new Staff = "sopranos" <<
+                    \new Voice = "sopranos" <<
+                        \dynamicUp
+                        \global
+                        \clef "treble"
+                        \musicaSoprano
+                    >>
+                >>
+                \new Lyrics \lyricsto "sopranos" {
+                    \letraSopranouno
+                }
+                \new Lyrics \lyricsto "sopranos" {
+                    \letraSopranodos
+                }
+                \new Lyrics \lyricsto "sopranos" {
+                    \letraSopranotres
+                }
+            >>
+            \midi {}
+            \layout {}
+        }
+
+        \paper {
+            #( set-default-paper-size "letter" )
+        }
+    \end{lilypond}
+    \clearpage
+    
+    %% - Musica - Contralto
+    \begin{lilypond}[staffsize=20]
+        \language "espanol"
+        \version "2.19.28"
+        
+        \include "global.ily"
+        \include "alto.ily"
+
+        \markup { \fill-line { \center-column { \fontsize #5 "Noche de paz" \fontsize #3 \caps "Contralto" } } }
+        \markup { \fill-line { " " \center-column { \fontsize #2 "Pbro. Joseph Mohr y  Franz Xaver Gruber" \small "Arreglo Pbro Angel Torrellas" } } }
+        \header {
+            copyright = "Creative Commons Attribution 3.0" 
+            tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+            breakbefore = ##t
+        }
+
+        \score {
+            <<
+                \acordes
+                %% Contralto
+                \new Staff = "altos" <<
+                    \new Voice = "altos" <<
+                        \dynamicUp
+                        \global
+                        \clef "treble"
+                        \musicaAlto
+                    >>
+                >>
+                \new Lyrics \lyricsto "altos" {
+                    \letraAltouno
+                }
+                \new Lyrics \lyricsto "altos" {
+                    \letraAltodos
+                }
+                \new Lyrics \lyricsto "altos" {
+                    \letraAltotres
+                }
+            >>
+            \midi {}
+            \layout {}
+        }
+
+        \paper {
+            #( set-default-paper-size "letter" )
+        }
+    \end{lilypond}
+    \clearpage
+    
+    %% - Musica - Tenor
+    \begin{lilypond}[staffsize=20]
+        \language "espanol"
+        \version "2.19.28"
+        
+        \include "global.ily"
+        \include "tenor.ily"
+
+        \markup { \fill-line { \center-column { \fontsize #5 "Noche de paz" \fontsize #3 \caps "Tenor" } } }
+        \markup { \fill-line { " " \center-column { \fontsize #2 "Pbro. Joseph Mohr y  Franz Xaver Gruber" \small "Arreglo Pbro Angel Torrellas" } } }
+        \header {
+            copyright = "Creative Commons Attribution 3.0" 
+            tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+            breakbefore = ##t
+        }
+
+        \score {
+            <<
+                \acordes
+                %% Tenor
+                \new Staff = "tenors" <<
+                    \new Voice = "tenors" <<
+                        \dynamicUp
+                        \global
+                        \clef "G_8"
+                        \musicaTenor
+                    >>
+                >>
+                \new Lyrics \lyricsto "tenors" {
+                    \letraTenoruno
+                }
+                \new Lyrics \lyricsto "tenors" {
+                    \letraTenordos
+                }
+                \new Lyrics \lyricsto "tenors" {
+                    \letraTenortres
+                }
+            >>
+            \midi {}
+            \layout {}
+        }
+
+        \paper {
+            #( set-default-paper-size "letter" )
+        }
+    \end{lilypond}
+    \clearpage
+    
+    %% - Musica - Bajo
+    \begin{lilypond}[staffsize=20]
+        \language "espanol"
+        \version "2.19.28"
+        
+        \include "global.ily"
+        \include "bajo.ily"
+
+        \markup { \fill-line { \center-column { \fontsize #5 "Noche de paz" \fontsize #3 \caps "Bajo" } } }
+        \markup { \fill-line { " " \center-column { \fontsize #2 "Pbro. Joseph Mohr y  Franz Xaver Gruber" \small "Arreglo Pbro Angel Torrellas" } } }
+        \header {
+            copyright = "Creative Commons Attribution 3.0" 
+            tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+            breakbefore = ##t
+        }
+
+        \score {
+            <<
+                \acordes
+                %% Bajo
+                \new Staff = "bajos" <<
+                    \new Voice = "bajos" <<
+                        \dynamicUp
+                        \global
+                        \clef bass
+                        \musicaBajo
+                    >>
+                >>
+                \new Lyrics \lyricsto "bajos" {
+                    \letraBajouno
+                }
+                \new Lyrics \lyricsto "bajos" {
+                    \letraBajodos
+                }
+                \new Lyrics \lyricsto "bajos" {
+                    \letraBajotres
+                }
+            >>
+            \midi {}
+            \layout {}
+        }
+
+        \paper {
+            #( set-default-paper-size "letter" )
+        }
+    \end{lilypond}
+    \clearpage
+    
+\end{document}

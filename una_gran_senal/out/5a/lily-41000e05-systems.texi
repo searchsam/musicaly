@@ -1,0 +1,15 @@
+@image{./5a/lily-41000e05-1}
+@image{./5a/lily-41000e05-2}
+@image{./5a/lily-41000e05-3}
+@image{./5a/lily-41000e05-4}
+@image{./5a/lily-41000e05-5}
+@image{./5a/lily-41000e05-6}
+@image{./5a/lily-41000e05-7}
+@image{./5a/lily-41000e05-8}
+@image{./5a/lily-41000e05-9}
+@image{./5a/lily-41000e05-10}
+@image{./5a/lily-41000e05-11}
+@image{./5a/lily-41000e05-12}
+@image{./5a/lily-41000e05-13}
+@image{./5a/lily-41000e05-14}
+@c eof

@@ -1,0 +1,116 @@
+\documentclass[letterpaper]{report}
+
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{pifont}
+\usepackage{pdflscape}
+\usepackage{lscape}
+\usepackage{geometry}
+\geometry{
+    letterpaper,
+    left=1.5cm,
+    right=1.5cm,
+    bottom=1.5cm,
+    top=1.5cm
+}
+
+%% Portada del Libro
+\title{ \textbf{ \Huge Noche de paz  } \\ { \Huge Partitura Coral } }
+\author{ \textit{ \huge Pbro. Joseph Mohr y  Franz Xaver Gruber } } 
+\date{ \LARGE Arreglo Pbro. Angel Torrellas }
+	
+\usepackage{graphics}
+\begin{document}
+    \pagenumbering{gobble} % borra los numeros de paguinas
+    
+    %% - Portada
+    \maketitle
+     
+    %% - Paginas horizontales
+    \begin{landscape}
+        %% - Musica
+        {%
+\parindent 0pt
+\noindent
+\ifx\preLilyPondExample \undefined
+\else
+  \expandafter\preLilyPondExample
+\fi
+\def\lilypondbook{}%
+\input{73/lily-5d070bf2-systems.tex}
+\ifx\postLilyPondExample \undefined
+\else
+  \expandafter\postLilyPondExample
+\fi
+}    
+    \end{landscape}
+    
+     %% - Musica - Soprano
+    {%
+\parindent 0pt
+\noindent
+\ifx\preLilyPondExample \undefined
+\else
+  \expandafter\preLilyPondExample
+\fi
+\def\lilypondbook{}%
+\input{e6/lily-cc02110b-systems.tex}
+\ifx\postLilyPondExample \undefined
+\else
+  \expandafter\postLilyPondExample
+\fi
+}
+    \clearpage
+    
+    %% - Musica - Contralto
+    {%
+\parindent 0pt
+\noindent
+\ifx\preLilyPondExample \undefined
+\else
+  \expandafter\preLilyPondExample
+\fi
+\def\lilypondbook{}%
+\input{d2/lily-b3a49c76-systems.tex}
+\ifx\postLilyPondExample \undefined
+\else
+  \expandafter\postLilyPondExample
+\fi
+}
+    \clearpage
+    
+    %% - Musica - Tenor
+    {%
+\parindent 0pt
+\noindent
+\ifx\preLilyPondExample \undefined
+\else
+  \expandafter\preLilyPondExample
+\fi
+\def\lilypondbook{}%
+\input{f6/lily-4424cd6a-systems.tex}
+\ifx\postLilyPondExample \undefined
+\else
+  \expandafter\postLilyPondExample
+\fi
+}
+    \clearpage
+    
+    %% - Musica - Bajo
+    {%
+\parindent 0pt
+\noindent
+\ifx\preLilyPondExample \undefined
+\else
+  \expandafter\preLilyPondExample
+\fi
+\def\lilypondbook{}%
+\input{83/lily-7bb8d2ed-systems.tex}
+\ifx\postLilyPondExample \undefined
+\else
+  \expandafter\postLilyPondExample
+\fi
+}
+    \clearpage
+    
+\end{document}

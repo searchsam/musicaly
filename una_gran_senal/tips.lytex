@@ -1,0 +1,174 @@
+\documentclass[11pt,letterpaper,oneside]{article}
+
+\title { Transcribiendo partituras a Clave de Fa }
+\author{ Samuel Jos\'e Guti\'errez Avil\'es \\ \texttt{samaviles@gmail.com} }
+\date{ Febrero 8, 2016 }
+
+\begin{document}
+
+	\maketitle
+  
+	Lo primero que hay que hacer o pensar es que las claves son equivalentes,
+	es decir con solo bajar una octava las notas tienen un lugar correspondientes
+	en clave de Fa (Solo valido para trancibir partituras de clave de sol a clave de fa).\\
+  
+	Por ejemplo la nota do en la primera linea auxiliar en clave de sol:
+	
+	\begin{lilypond}[staffsize=26]
+		\language "espanol"
+		\version "2.19.22"
+		\relative do' {
+			\easyHeadsOn
+				do1
+			\easyHeadsOff
+		}
+	\end{lilypond}
+  
+	Es quivalente en clave de fa a:
+  
+	\begin{lilypond}[staffsize=26]
+		\language "espanol"
+		\version "2.19.22"
+		\relative do {
+			\clef bass
+			\easyHeadsOn
+				do1
+			\easyHeadsOff
+		}
+	\end{lilypond}\\
+  
+	Por tanto que:
+  
+	\begin{lilypond}[staffsize=16]
+		\language "espanol"
+		\version "2.19.22"
+		\relative do' {
+			\time 2/2
+			\key la \minor
+	  
+			r2 r4 mi4 			|
+			la2 sols4 sol4( 	|
+			sol4) fas4 fa4 mi4( |
+			mi4) r2 mi4 		|
+			la2 sols4 sol4(		|
+			sol4) fas4 fa4 mi4( |
+			mi4) r2 mi'4 		|
+			fa2 mi4 re4( 		|
+			re4) re4 mi2 		|
+		}
+	\end{lilypond} ...
+  
+	Realizando la transposici\'on (bajando cada nota una octava), equivale en clave de fa a:
+	
+	\begin{lilypond}[staffsize=16]
+		\language "espanol"
+		\version "2.19.22"
+		\relative do {
+			\clef bass
+			\time 2/2
+			\key la \minor
+	  
+			r2 r4 mi4 			|
+			la2 sols4 sol4( 	|
+			sol4) fas4 fa4 mi4( |
+			mi4) r2 mi4 		|
+			la2 sols4 sol4(		|
+			sol4) fas4 fa4 mi4( |
+			mi4) r2 mi'4 		|
+			fa2 mi4 re4( 		|
+			re4) re4 mi2 		|
+		}
+	\end{lilypond} ...\\
+	
+	Lo siguiente a tener en cuenta es la tesitura del instrumento que interpretara
+	la cancion pues hay situaciones en que las notas transportadas sobre pasan 
+	el pentrama co clave de fa hacia abajo y son imposibles de tocar(En este 
+	caso con fagot hay problema por amplia tesita del este instrumento).\\
+  
+	Tesitura del Fagot:
+	
+	\begin{lilypond}[staffsize=26]
+		\language "espanol"
+		\version "2.19.22"
+		\relative do {
+			\clef bass
+			la,1 sib1
+			\clef treble
+			mi'''1 lab1
+		}
+	\end{lilypond}\\
+  
+	Por tanto con la simple transposici\'on seria suficiente para que las
+	notas puedan ser ejecutadas (por el fagot) suponiendo que el interprete
+	tenga dominio total del instrumento, por tanto lo otro que hay que tener
+	en cuenta es que se busca que todas las notas no deben sobrepasar de
+	la primera linea auxiliar inferior ni de la primera linea auxiliar superior
+	mejorando la lectura de las mismas (las notas) y volviendose adecuadas
+	para los instrumetos de tesitura grave.\\
+	
+	Rango de alturas para la escritura en clave de fa:
+	
+	\begin{lilypond}[staffsize=26]
+		\language "espanol"
+		\version "2.19.22"
+		\relative do {
+			\clef bass
+			mi,1 do''1
+		}
+	\end{lilypond} ...
+	
+	Esto provee de casi dos octavas (las octavas de basicas de casi todos)
+	los instrumentos) para la colocacion de las notas.
+	
+	Por tanto:
+	
+	\begin{lilypond}[staffsize=16]
+		\language "espanol"
+		\version "2.19.22"
+		\relative do {
+			\clef bass
+			\time 2/2
+			\key la \minor
+	  
+			r2 r4 mi4 			|
+			la2 sols4 sol4( 	|
+			sol4) fas4 fa4 mi4( |
+			mi4) r2 mi4 		|
+			la2 sols4 sol4(		|
+			sol4) fas4 fa4 mi4( |
+			mi4) r2 mi'4 		|
+			fa2 mi4 re4( 		|
+			re4) re4 mi2 		|
+		}
+	\end{lilypond} ...
+	
+	Pasaria a ser:
+	
+	\begin{lilypond}[staffsize=16]
+		\language "espanol"
+		\version "2.19.22"
+		\relative do {
+			\clef bass
+			\time 2/2
+			\key la \minor
+	  
+			r2 r4 mi4 			|
+			la2 sols4 sol4( 	|
+			sol4) fas4 fa4 mi4( |
+			mi4) r2 mi4 		|
+			la2 sols4 sol4(		|
+			sol4) fas4 fa4 mi4( |
+			mi4) r2 mi4 		|
+			fa2 mi4 re4( 		|
+			re4) re4 mi2 		|
+		}
+	\end{lilypond} ...\\
+	
+	Todas las indicaciones anteriores validas en soniridad y tesituras de
+	varios de los instrumentos graves (que se leen clave de fa). Tambi\'en
+	lo que se busca en facilitar la lectura e interpretaci\'on, claro que 
+	a medida que se va mejorando en la interpretaci\'on del instrumento
+	vastara con una simple transposici\'on para mantener la integridad
+	de la melodia.\\
+
+\end{document} 

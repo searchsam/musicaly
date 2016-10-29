@@ -1,0 +1,65 @@
+\documentclass[letterpaper]{report}
+
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{pifont}
+\usepackage{pdflscape}
+\usepackage{lscape}
+\usepackage{geometry}
+\geometry{
+    letterpaper,
+    left=1.5cm,
+    right=1.5cm,
+    bottom=1.5cm,
+    top=1.5cm
+}
+
+%% Portada del Libro
+\title{ \textbf{ \Huge Salve Azucena Divina  } \\ { \Huge Orquesta } }
+\author{ \textit{ \huge Alejandro Vega Matus } } 
+\date{ \LARGE Arreglo Edwin Torres }
+	
+\usepackage{graphics}
+\begin{document}
+    \pagenumbering{gobble} % borra los numeros de paguinas
+    
+    %% - Portada
+    \maketitle
+     
+    %% - Paginas horizontales
+    \begin{landscape}
+        %% - Musica
+        {%
+\parindent 0pt
+\noindent
+\ifx\preLilyPondExample \undefined
+\else
+  \expandafter\preLilyPondExample
+\fi
+\def\lilypondbook{}%
+\input{7e/lily-de089d78-systems.tex}
+\ifx\postLilyPondExample \undefined
+\else
+  \expandafter\postLilyPondExample
+\fi
+}    
+    \end{landscape}
+    
+     %% - Musica - Flauta
+    {%
+\parindent 0pt
+\noindent
+\ifx\preLilyPondExample \undefined
+\else
+  \expandafter\preLilyPondExample
+\fi
+\def\lilypondbook{}%
+\input{b4/lily-6e250105-systems.tex}
+\ifx\postLilyPondExample \undefined
+\else
+  \expandafter\postLilyPondExample
+\fi
+}
+    \clearpage
+    
+\end{document}
