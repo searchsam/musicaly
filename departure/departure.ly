@@ -1,7 +1,7 @@
 %% Departure
 
 \language "espanol"
-\version "2.19.32"
+\version "2.19.49"
 
 %#(set-global-staff-size 20)
 
@@ -42,3 +42,8 @@ global = { \key la \minor \tempo "Adagio" 4=69 \time 4/4 s1*8 \bar "||" \tempo "
 \paper {
   #( set-default-paper-size "letter" )
 }
+
+%{
+convert-ly (GNU LilyPond) 2.19.49  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.40, 2.19.46, 2.19.49
+%}

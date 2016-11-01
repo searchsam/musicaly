@@ -1,11 +1,11 @@
 % Created on Mon Aug 29 16:03:40 CST 2011
 % by serach.sam@
 
-\version "2.14.2"
+\version "2.19.49"
 
 #(set-global-staff-size 14)
 
-global = { \key d \minor \time 6/8 \tempo "Tranquillo" 4 = 100 s4*57 \bar "||" s4*15 \mark \markup { \musicglyph #"scripts.segno" } \bar "|:"  s4*18 \bar ":|" s4*21 \mark "Fine" \bar "||" s4*27 \bar "|." }
+global = { \key d \minor \time 6/8 \tempo "Tranquillo" 4 = 100 s4*57 \bar "||" s4*15 \mark \markup { \musicglyph #"scripts.segno" } \bar ".|:"  s4*18 \bar ":|." s4*21 \mark "Fine" \bar "||" s4*27 \bar "|." }
 
 \header {
 	title = \markup { \caps "Arada y Charada" }
@@ -263,22 +263,30 @@ bajoletra = \lyricmode {
 \score {
 	<<
 		\new ChoirStaff = "ChoirStaff_choir" <<
-			\new Staff = "soprano" << \set Staff.instrumentName = "S" \set Staff.midiInstrument = "choir aahs" 
+			\new Staff = "soprano" << 
+			  \set Staff.instrumentName = "Soprano" 
+			  %\set Staff.midiInstrument = "choir aahs" 
 				\new Voice = "soprano" << \global \soprano >>
 			>>
 			\new Lyrics \lyricsto "soprano" \sopranoletra
 			
-			\new Staff = "contralto" << \set Staff.instrumentName = "C" \set Staff.midiInstrument = "choir aahs" 
+			\new Staff = "contralto" << 
+			  \set Staff.instrumentName = "Contralto" 
+			  %\set Staff.midiInstrument = "choir aahs" 
 				\new Voice = "contralto" << \global \contralto >>
 			>>
 			\new Lyrics \lyricsto "contralto" \contraltoletra
 			
-			\new Staff = "tenor" << \set Staff.instrumentName = "T" \set Staff.midiInstrument = "choir aahs" 
+			\new Staff = "tenor" << 
+			  \set Staff.instrumentName = "Tenor" 
+			  %\set Staff.midiInstrument = "choir aahs" 
 				\new Voice = "tenor" << \clef "G_8" \global \tenor >>
 			>>
 			\new Lyrics \lyricsto "tenor" \tenorletra
 			
-			\new Staff = "bajo" << \set Staff.instrumentName = "B" \set Staff.midiInstrument = "choir aahs" 
+			\new Staff = "bajo" << 
+			  \set Staff.instrumentName = "Bajo" 
+			  %\set Staff.midiInstrument = "choir aahs" 
 				\new Voice = "bajo" << \clef bass \global \bajo >>
 			>>
 			\new Lyrics \lyricsto "bajo" \bajoletra
@@ -299,3 +307,14 @@ bajoletra = \lyricmode {
 	 ragged-bottom = ##f
 }
 
+
+
+%{
+convert-ly (GNU LilyPond) 2.19.49  convert-ly: Procesando «»...
+Aplicando la conversión: 2.15.7, 2.15.9, 2.15.10, 2.15.16, 2.15.17,
+2.15.18, 2.15.19, 2.15.20, 2.15.25, 2.15.32, 2.15.39, 2.15.40,
+2.15.42, 2.15.43, 2.16.0, 2.17.0, 2.17.4, 2.17.5, 2.17.6, 2.17.11,
+2.17.14, 2.17.15, 2.17.18, 2.17.19, 2.17.20, 2.17.25, 2.17.27,
+2.17.29, 2.17.97, 2.18.0, 2.19.2, 2.19.7, 2.19.11, 2.19.16, 2.19.22,
+2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40, 2.19.46, 2.19.49
+%}

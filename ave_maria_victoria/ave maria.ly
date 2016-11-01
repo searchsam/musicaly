@@ -1,7 +1,7 @@
 %% Ave Maria - Tomas Luis de Victoria
 
 \language "espanol"
-\version "2.19.32"
+\version "2.19.49"
 
 #(set-global-staff-size 18)
 
@@ -14,7 +14,30 @@
 }
 
 % --- Parametro globales
-global = { \key la \major \time 4/4 s1*13 \tempo "Calmo" s1*3 \tempo "Piu Largo" s1*2 \time 2/4 \bar "||" s2*2 \bar "||" \time 3/2 \tempo "Marcato" s1.*12 \time 4/4 \tempo "Legato" \bar "||" s1*10 \bar "|." }
+global = { 
+  \tempo "Solemne"
+  \key la \major 
+  \time 4/4 
+  s1
+  \tempo "Allegro Moderatto" 4 = 100
+  s1*12
+  \tempo "Calmo" 
+  s1*3 
+  \tempo "Piu Largo" 
+  s1*2 
+  \time 2/4 
+  \bar "||" 
+  s2*2 
+  \bar "||" 
+  \time 3/2 
+  \tempo "Marcato" 4 = 130
+  s1.*12 
+  \time 4/4 
+  \tempo "Legato" 4 = 100
+  \bar "||" 
+  s1*10 
+  \bar "|." 
+}
 
 % --- Includes
 \include "soprano.ily"
@@ -56,3 +79,9 @@ global = { \key la \major \time 4/4 s1*13 \tempo "Calmo" s1*3 \tempo "Piu Largo"
   \layout {}
   \midi {}
 }
+
+
+%{
+convert-ly (GNU LilyPond) 2.19.49  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.40, 2.19.46, 2.19.49
+%}

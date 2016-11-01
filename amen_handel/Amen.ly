@@ -1,7 +1,7 @@
 % Created on Mon Aug 29 16:03:40 CST 2011
 % by serach.sam@
 
-\version "2.14.2"
+\version "2.19.49"
 
 \header {
 	title = \markup { \center-align { " " \caps "Amen" } }
@@ -49,6 +49,7 @@ textot = \lyricmode {
 }
 
 bajo = \relative c {
+  \tempo "Allegro Moderatto" 4 = 100
 		\key d \major
 		\set Score.skipBars = ##t
 		\dynamicUp
@@ -87,8 +88,10 @@ textob = \lyricmode {
 			>>
 			\new Lyrics \lyricsto "tenor" \textot
 
-			\new Staff = "bajo" << \set Staff.instrumentName = "B" \set Staff.midiInstrument = "choir aahs" 
-				\new Voice = "bajo" << \clef bass \bajo >>
+			\new Staff = "bajo" << 
+			  \set Staff.instrumentName = "Bajo" 
+			  %\set Staff.midiInstrument = "choir aahs" 
+			  \new Voice = "bajo" << \clef bass \bajo >>
 			>>
 			\new Lyrics \lyricsto "bajo" \textob
 
@@ -108,3 +111,13 @@ textob = \lyricmode {
 	%ragged-last-bottom = ##f
 	%ragged-bottom = ##f
 }
+
+%{
+convert-ly (GNU LilyPond) 2.19.49  convert-ly: Procesando «»...
+Aplicando la conversión: 2.15.7, 2.15.9, 2.15.10, 2.15.16, 2.15.17,
+2.15.18, 2.15.19, 2.15.20, 2.15.25, 2.15.32, 2.15.39, 2.15.40,
+2.15.42, 2.15.43, 2.16.0, 2.17.0, 2.17.4, 2.17.5, 2.17.6, 2.17.11,
+2.17.14, 2.17.15, 2.17.18, 2.17.19, 2.17.20, 2.17.25, 2.17.27,
+2.17.29, 2.17.97, 2.18.0, 2.19.2, 2.19.7, 2.19.11, 2.19.16, 2.19.22,
+2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40, 2.19.46, 2.19.49
+%}

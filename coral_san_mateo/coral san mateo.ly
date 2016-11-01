@@ -1,7 +1,7 @@
 %% Coral de la Pasion segun San Mateo
 
 \language "espanol"
-\version "2.19.32"
+\version "2.19.49"
 
 %#(set-global-staff-size 20)
 
@@ -56,3 +56,9 @@ global = { \key fa \major \time 4/4 s1*16 \bar "|." }
   \layout {}
   \midi {}
 }
+
+
+%{
+convert-ly (GNU LilyPond) 2.19.49  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.40, 2.19.46, 2.19.49
+%}

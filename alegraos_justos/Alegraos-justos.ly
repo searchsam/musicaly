@@ -1,7 +1,7 @@
 % Created on Mon Aug 29 16:03:40 CST 2011
 % by serach.sam@
 
-\version "2.14.2"
+\version "2.19.49"
 
 #(set-global-staff-size 12)
 
@@ -25,8 +25,8 @@ soprano = \relative c'' {
 		e2 \breathe e4\f e | fis fis8 fis e4\> b | b2 \breathe cis\p | d8( cis d e fis e d cis | b4 cis b4.) b8 | %15
 		cis2 \breathe e4\f e | fis fis8 fis e4 dis\> | e1 | r4\! fis\p fis8( e d cis | b4 a2\>) gis4 | %20
 		a \breathe e'2-^\pp e4 | d-^ d8 d cis4-^ cis8 cis | b4 b \breathe e e | d-^ d8 d cis4 cis8 cis | %24
-		b2-^ a2 | r cis\f^\markup{\italic menos}( | cis4) b8 a b4 e, | r1 | e'1( | e2) d4\> cis | %30
-		b2 e, | r4\! e'\f^\markup{\itlic "a tempo"} e e | d2 cis | r2 r4 e | e e d2 | cis2 r2 | %36
+		b2-^ a2 | r cis\f^\markup{ \italic menos }( | cis4) b8 a b4 e, | r1 | e'1( | e2) d4\> cis | %30
+		b2 e, | r4\! e'\f^\markup{ \italic "a tempo" } e e | d2 cis | r2 r4 e | e e d2 | cis2 r2 | %36
 		r2 r4 b4\p\<( | b8) b b4 cis8\!( d e cis | d e fis b, cis d e cis | dis4 e2\> dis4) | %40
 		| e1 | r2\! e4\mf e | d d8 d cis2 | b4 \breathe b a a | gis cis2 a4 | gis2\<( fis) | gis\p r | %47
 		r1 | r2 e'4 e | d4 d8 d cis2 | b r | cis2.\f cis4 | b b8\> b a2 | gis r4 e'\p | %54
@@ -35,13 +35,13 @@ soprano = \relative c'' {
 		a1\f a2 | a1 b2 |  cis cis e | d1 d2 | cis\mf \breathe e-^\< d | cis1 a2\! | %69
 		b1 cis2 | b1\> b2 | cis1 \breathe | d\p\< | cis | a2.^\markup{\italic rall.}\!\> a4 | a1\fermata\! |
 }
-textos = \lyricmode { A le gra os jus tos en el Se �or, de los san tos es la-a do ra cion. 
-Con fe sad to dos al Se �or, con fe sad to dos al Se �or con ci ta ras, con fe sad to dos al Se �or con ci ta ras, 
+textos = \lyricmode { A le gra os jus tos en el Se ñor, de los san tos es la-a do ra cion. 
+Con fe sad to dos al Se ñor, con fe sad to dos al Se ñor con ci ta ras, con fe sad to dos al Se ñor con ci ta ras, 
 con los dul ces so ni dos del ar pa, con los dul ces so ni dos del ar pa. 
 Glo ri fi cad le, glo ri fi cad le, can tad le jus tos, can tad le jus tos can ti cos nue vos, 
 a la bad le con ar te, can tad le con voz so no ra, a la bad le con ar te, a la bad le con ar te can tad le con voz so no ra, 
 can tad le con voz so no ra, can tad le con voz - so no - - - ra. 
-A le gra os jus tos en el Se �or, de los san tos es la-a do ra cion, la a do ra cion. }
+A le gra os jus tos en el Se ñor, de los san tos es la-a do ra cion, la a do ra cion. }
 
 contralto = \relative c' {
 		\dynamicUp
@@ -52,10 +52,10 @@ contralto = \relative c' {
 		e4 e8 e e4 fis4( | fis8) e e2( dis4) | e2 \breathe gis4 gis | a a8 fis gis4( a4) | b2 r | r2 a4 a | gis4 gis8\> gis fis2 | e4 \breathe a2\f a4 | gis gis8 gis fis2 | e r2 | e1\mf | e2 e4 gis | e2 e | e e | r4 cis\< cis cis8 b\! | % cuarto sistema
 		a4 a' fis2 | e4 \breathe e e e8 e | e4 e\> e2 | e1 \breathe | e1\f e2 | fis1 gis2 |  a a gis | b1 fis2 | a\mf \breathe a-^\< fis | a2( gis) fis\! | fis1 a2 | gis1\> gis2 | a1 \breathe | a\p\<( | a2) gis | fis2.^\markup{\italic rall.}\!\> fis4 | e1\fermata\! | % quinto sistema
 }
-textoc = \lyricmode { A le gra os jus tos en el Se Ã±or, de los san tos es la-a do ra cion. 
-Con fe sad to dos al Se Ã±or, con fe sad to dos al Se Ã±or con ci ta ras, con fe sad to dos al Se Ã±or con ci - - - - - - - ta ras, con los dul ces so ni dos del ar pa, con los dul ces so ni dos del ar pa. 
+textoc = \lyricmode { A le gra os jus tos en el Se ÃÂ±or, de los san tos es la-a do ra cion. 
+Con fe sad to dos al Se ÃÂ±or, con fe sad to dos al Se ÃÂ±or con ci ta ras, con fe sad to dos al Se ÃÂ±or con ci - - - - - - - ta ras, con los dul ces so ni dos del ar pa, con los dul ces so ni dos del ar pa. 
 Glo ri fi cad le, glo ri fi cad - - - - le, can tad le jus tos, can tad le jus tos can ti cos nue - - vos, a la bad le con ar te, a la bad le con ar te can tad le con voz so no ra, a la bad le con ar te, a la bad le con ar te, a la bad le con ar te, can tad le con voz so no ra, can tad le con voz so no ra, can tad le con voz so no ra. 
-A le gra os jus tos en el Se Ã±or, de los san tos es la-a do ra cion, la a do ra cion. }
+A le gra os jus tos en el Se ÃÂ±or, de los san tos es la-a do ra cion, la a do ra cion. }
 
 tenor = \relative c' {
 		\dynamicUp
@@ -67,10 +67,10 @@ tenor = \relative c' {
 		e2 \breathe d | cis2 cis4 cis | b4 cis\> b2 | a1 \breathe | cis1\f cis2 | cis1 e2 |  e2 e e | fis1 d2 | e2\mf \breathe cis-^\< d | e1 fis2\! | d1 e2 | e1\> e2 \bar "||" \time 2/2 e1 \breathe | fis1\p\<( | fis2) e2 | d2.^\markup{\italic rall.}\!\> d4 | cis1\fermata\! | % quinto sistema
 		\bar "|."
 	}
-textot = \lyricmode { A le gra os jus tos en el Se Ã±or, de los san tos es la-a do ra cion. 
-Con fe sad to dos al Se Ã±or, con fe sad to dos al Se Ã±or con ci ta ras, con fe sad to dos al Se Ã±or con ci ta ras, con los dul ces so ni dos del ar pa, con los dul ces so ni dos del ar pa. 
+textot = \lyricmode { A le gra os jus tos en el Se ÃÂ±or, de los san tos es la-a do ra cion. 
+Con fe sad to dos al Se ÃÂ±or, con fe sad to dos al Se ÃÂ±or con ci ta ras, con fe sad to dos al Se ÃÂ±or con ci ta ras, con los dul ces so ni dos del ar pa, con los dul ces so ni dos del ar pa. 
 Glo ri fi cad le, glo ri fi cad le, glo ri fi cad le, can tad le jus tos, can tad le jus tos can ti cos nue vos, a la bad le con ar te, can tad le con voz so no ra, a la bad le con ar te, a la bad le con ar te, can tad le con voz so no ra, can tad le con voz so no ra, can tad le con voz so no ra. 
-A le gra os jus tos en el Se Ã±or, de los san tos es la-a do ra cion, la a do ra cion. }
+A le gra os jus tos en el Se ÃÂ±or, de los san tos es la-a do ra cion, la a do ra cion. }
 
 bajo = \relative c' {
 		\dynamicUp
@@ -82,30 +82,38 @@ bajo = \relative c' {
 		cis4 cis8 b\! a2( | a2\f) b | cis2.( d4 | e1\<) | a,1 \breathe | a'1\f a2 | fis1 e2 |  a2 a cis | b1 b2 | a2\mf \breathe a-^\< b | cis1 d2\! | b1 a2 | e1\> e2 | a,1 \breathe | d2.\p\<( e4 | fis2) cis2 | d2.^\markup{\italic rall.}\!\> d4 | a1\fermata\! | % quinto sistema
 		\bar "|."
 	}
-textob = \lyricmode { A le gra os jus tos en el Se Ã±or, de los san tos es la_a do ra cion. 
-Con fe sad to dos al Se Ã±or, con fe sad to dos al Se Ã±or, con fe sad to dos al Se Ã±or con ci ta ras, con los dul ces so ni dos del ar pa, con los dul ces so ni dos del ar pa. 
+textob = \lyricmode { A le gra os jus tos en el Se ÃÂ±or, de los san tos es la_a do ra cion. 
+Con fe sad to dos al Se ÃÂ±or, con fe sad to dos al Se ÃÂ±or, con fe sad to dos al Se ÃÂ±or con ci ta ras, con los dul ces so ni dos del ar pa, con los dul ces so ni dos del ar pa. 
 Glo ri fi cad le, glo ri fi cad le, can tad le jus tos, can tad le jus tos can ti cos nue vos, a la bad le con ar te, a la bad le con ar te, a la bad le con ar te, can tad le con voz so no ra, can tad le con voz so no ra, can tad le con voz so no ra. 
-A le gra os jus tos en el Se Ã±or, de los san tos es la-a do ra cion, la a do ra cion. }
+A le gra os jus tos en el Se ÃÂ±or, de los san tos es la-a do ra cion, la a do ra cion. }
 	
 \score {
 	<<
 		\new ChoirStaff = "ChoirStaff_choir" <<
-			\new Staff = "soprano" << \set Staff.instrumentName = "S" \set Staff.midiInstrument = "choir aahs" 
+			\new Staff = "soprano" << 
+			  \set Staff.instrumentName = "Soprano" 
+			  %\set Staff.midiInstrument = "choir aahs" 
 				\new Voice = "soprano" << \global \soprano >>
 			>>
 			\new Lyrics \lyricsto "soprano" \textos
 
-			\new Staff = "contralto" << \set Staff.instrumentName = "C" \set Staff.midiInstrument = "choir aahs" 
+			\new Staff = "contralto" << 
+			  \set Staff.instrumentName = "Contralto" 
+			  %\set Staff.midiInstrument = "choir aahs" 
 				\new Voice = "contralto" << \global \contralto >>
 			>>
 			\new Lyrics \lyricsto "contralto" \textoc
 
-			\new Staff = "tenor" << \set Staff.instrumentName = "T" \set Staff.midiInstrument = "choir aahs" 
+			\new Staff = "tenor" << 
+			  \set Staff.instrumentName = "Tenor" 
+			  %\set Staff.midiInstrument = "choir aahs" 
 				\new Voice = "tenor" << \clef "G_8" \global \tenor >>
 			>>
 			\new Lyrics \lyricsto "tenor" \textot
 
-			\new Staff = "bajo" << \set Staff.instrumentName = "B" \set Staff.midiInstrument = "choir aahs" 
+			\new Staff = "bajo" << 
+			  \set Staff.instrumentName = "Bajo" 
+			  %\set Staff.midiInstrument = "choir aahs" 
 				\new Voice = "bajo" << \clef bass \global \bajo >>
 			>>
 			\new Lyrics \lyricsto "bajo" \textob
@@ -125,3 +133,13 @@ A le gra os jus tos en el Se Ã±or, de los san tos es la-a do ra cion, la a do 
 	 ragged-last-bottom = ##f
 	 ragged-bottom = ##f
 }
+
+%{
+convert-ly (GNU LilyPond) 2.19.49  convert-ly: Procesando «»...
+Aplicando la conversión: 2.15.7, 2.15.9, 2.15.10, 2.15.16, 2.15.17,
+2.15.18, 2.15.19, 2.15.20, 2.15.25, 2.15.32, 2.15.39, 2.15.40,
+2.15.42, 2.15.43, 2.16.0, 2.17.0, 2.17.4, 2.17.5, 2.17.6, 2.17.11,
+2.17.14, 2.17.15, 2.17.18, 2.17.19, 2.17.20, 2.17.25, 2.17.27,
+2.17.29, 2.17.97, 2.18.0, 2.19.2, 2.19.7, 2.19.11, 2.19.16, 2.19.22,
+2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40, 2.19.46, 2.19.49
+%}

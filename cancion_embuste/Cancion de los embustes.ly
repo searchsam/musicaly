@@ -1,7 +1,7 @@
 % Created on Mon Aug 29 16:03:40 CST 2011
 % by serach.sam@
 
-\version "2.12.3"
+\version "2.19.49"
 
 #( set-default-paper-size "letter" )
 #(set-global-staff-size 14)
@@ -202,17 +202,20 @@ bajoletra = \lyricmode {
 }
 
 \score {
-	<<
-		\new ChoirStaff = "ChoirStaff_choir" <<
-			\new Staff = "soprano" << \set Staff.instrumentName = "S" \set Staff.midiInstrument = "choir aahs" 
-				\new Voice = "soprano" << \global \soprano >>
-			>>
-			\new Lyrics \lyricsto "soprano" \sopranoletra
-			
-			\new Staff = "contralto" << \set Staff.instrumentName = "C" \set Staff.midiInstrument = "choir aahs" 
-				\new Voice = "contralto" << \global \contralto >>
-			>>
-			\new Lyrics \lyricsto "contralto" \contraltoletra
+  <<
+    \new ChoirStaff = "ChoirStaff_choir" <<
+      \new Staff = "soprano" << 
+        \set Staff.instrumentName = "S" 
+        \set Staff.midiInstrument = "choir aahs" 
+        \new Voice = "soprano" << \global \soprano >>
+      >>
+      \new Lyrics \lyricsto "soprano" \sopranoletra		
+      \new Staff = "contralto" << 
+        \set Staff.instrumentName = "C" 
+        \set Staff.midiInstrument = "choir aahs" 
+        \new Voice = "contralto" << \global \contralto >>
+      >>
+      \new Lyrics \lyricsto "contralto" \contraltoletra
 			
 			\new Staff = "tenor" << \set Staff.instrumentName = "T" \set Staff.midiInstrument = "choir aahs" 
 				\new Voice = "tenor" << \clef "G_8" \global \tenor >>
@@ -233,5 +236,4 @@ bajoletra = \lyricmode {
 	}
 }
 
-\paper {
-}
+\paper {}

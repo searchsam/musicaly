@@ -1,7 +1,7 @@
 %% Acuerdate de Jesucristo
 
 \language "espanol"
-\version "2.19.32"
+\version "2.19.49"
 
 %#(set-global-staff-size 20)
 
@@ -82,3 +82,8 @@ global = { \key re \major s1*11 }
 \paper {
   #( set-default-paper-size "letter" )
 }
+
+%{
+convert-ly (GNU LilyPond) 2.19.49  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.40, 2.19.46, 2.19.49
+%}

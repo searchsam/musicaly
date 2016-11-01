@@ -1,7 +1,7 @@
 % Created on Mon Aug 29 16:03:40 CST 2011
 % by serach.sam@
 
-\version "2.16.1"
+\version "2.19.49"
 %#(set-global-staff-size 18)
 
 \markup { \fill-line { \center-column { \fontsize #5 "El Sembrador" \fontsize #3 "Marcos 4, 3ss" } } }
@@ -18,7 +18,7 @@ global = {
   \time 6/8
   \tempo "Allegro Moderato" 4=110
   s2.*3
-  \bar "|:"
+  \bar ".|:"
   s2.*3
   \time 3/8
   s4.
@@ -28,22 +28,22 @@ global = {
   s4.
   \time 6/8
   s2.*12
-  \bar "|:"
+  \bar ".|:"
   s2.
-  \bar ":|"
+  \bar ":|."
   s2.*2
-  \bar "|:"
+  \bar ".|:"
   s2.
-  \bar ":|"
+  \bar ":|."
   s2.*2
-  \bar "|:"
+  \bar ".|:"
   s2.
-  \bar ":|"
+  \bar ":|."
   s2.
   \time 3/8
   s4.
   \time 6/8
-  \bar ":|"
+  \bar ":|."
   s2.
   \bar "||"
   s2.*4
@@ -51,12 +51,12 @@ global = {
 }
 
 flute = \relative c'' {
-  \set Staff.midiInstrument = "flute"
+  \set Staff.midiInstrument = "oboe"
   \compressFullBarRests
   \dynamicUp
   % Music follows here.
   a8.^\markup { \small Introducción } a16 bes8 a4 g8 |
-  f8. f16 g8 f4 \times 2/3 { e16 f16 e16 } |
+  f8. f16 g8 f4 \tuplet 3/2 { e16 f16 e16 } |
   d2.^\markup { \small Acompañamiento } |
   \repeat volta 4 {
     \textLengthOn
@@ -115,7 +115,7 @@ flute = \relative c'' {
   \alternative {
     { 
       a,8. a16 bes8 a4 g8 |
-      f8. f16 g8 f4 \times 2/3 { e16 f16 e16 } |
+      f8. f16 g8 f4 \tuplet 3/2 { e16 f16 e16 } |
       d2. | 
     }
     { 
@@ -144,7 +144,7 @@ flute = \relative c'' {
   s2._\markup \center-column { \small "la buena tierra... ...pueda creser." } |
   \textLengthOn
   a8. a16 bes8 a4 g8 |
-  f8. f16 g8 f4 \times 2/3 { e16 f16 e16 } |
+  f8. f16 g8 f4 \tuplet 3/2 { e16 f16 e16 } |
   d2. |
 }
 
@@ -174,7 +174,7 @@ armonias = \chordmode {
   \midi {
     \context {
       \Score
-      tempoWholesPerMinute = #(ly:make-moment 100 4)
+      tempoWholesPerMinute = #(ly:make-moment 100/4)
     }
   }
 }
@@ -182,3 +182,11 @@ armonias = \chordmode {
 \paper {
   #( set-default-paper-size "letter" )
 }
+
+%{
+convert-ly (GNU LilyPond) 2.19.49  convert-ly: Procesando «»...
+Aplicando la conversión: 2.17.0, 2.17.4, 2.17.5, 2.17.6, 2.17.11,
+2.17.14, 2.17.15, 2.17.18, 2.17.19, 2.17.20, 2.17.25, 2.17.27,
+2.17.29, 2.17.97, 2.18.0, 2.19.2, 2.19.7, 2.19.11, 2.19.16, 2.19.22,
+2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40, 2.19.46, 2.19.49
+%}

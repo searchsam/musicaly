@@ -7,7 +7,7 @@
 % 					  			%
 %%%%%%%%%%%%%%%%%%%%%%
 
-\version "2.18.0"
+\version "2.19.49"
 
 #(set-global-staff-size 23)
 
@@ -143,4 +143,11 @@ izquierda = \relative c' {
 %{
 convert-ly (GNU LilyPond) 2.18.2  convert-ly: Procesando «»...
 Aplicando la conversión:     The document has not been changed.
+%}
+
+
+%{
+convert-ly (GNU LilyPond) 2.19.49  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.2, 2.19.7, 2.19.11, 2.19.16, 2.19.22,
+2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40, 2.19.46, 2.19.49
 %}

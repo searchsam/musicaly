@@ -1,7 +1,7 @@
 %% Adoracion de la cruz - Tomas Luis de Victoria
 
 \language "espanol"
-\version "2.19.32"
+\version "2.19.49"
 
 #(set-global-staff-size 16)
 
@@ -14,7 +14,7 @@
 }
 
 % --- Parametro globales
-global = { \key re \major \time 2/2 s1*2 \bar "||" s1*4 \bar "||" s1*2 \bar "||" s1*3 \bar "||" s1*5 \bar "||" s1*7 \bar "||" s1*10 \bar "||" s1*12 s4 \bar "|." }
+global = { \key re \major \tempo "Allegro Moderato" 4 = 100 \time 2/2 s1*2 \bar "||" s1*4 \bar "||" s1*2 \bar "||" s1*3 \bar "||" s1*5 \bar "||" s1*7 \bar "||" s1*10 \bar "||" s1*12 s4 \bar "|." }
 
 % --- Includes
 \include "soprano.ily"
@@ -60,3 +60,9 @@ global = { \key re \major \time 2/2 s1*2 \bar "||" s1*4 \bar "||" s1*2 \bar "||"
   \layout {}
   \midi {}
 }
+
+
+%{
+convert-ly (GNU LilyPond) 2.19.49  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.40, 2.19.46, 2.19.49
+%}
