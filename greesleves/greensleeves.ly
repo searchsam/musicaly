@@ -28,49 +28,49 @@ global = {
 
 % --- Musica
 mandolina = \relative do'' {
-  \partial 8 la8			| % 1
-  do4 re8 mi8. fa16 mi8			| % 2
-  re4 si8 sol8. la16 si8		| % 3
-  do4 la8 la8. sols16 la8		| % 4
-  si4 sols8 mi4 \breathe la8		| % 5
-  do4 re8 mi8. fa16 mi8			| % 6
-  re4 si8 sol8. la16 si8		| % 7
-  do8. si16 la8 sols8. fas16 sols8	| % 8
-  la4 mi8 la4. \breathe			| % 9
-  sol'4. sol8. fas16 mi8		| % 10
-  re4 si8 sol8. la16 si8		| % 11
-  do4 la8 la8. sols16 la8		| % 12
+  \partial 8 la8\f			| % 1
+  do4 re8 mi8.( fa16) mi8		| % 2
+  re4 si8 sol8.( la16) si8		| % 3
+  do4 la8 la8.( sols16) la8		| % 4
+  si4( sols8) mi4 \breathe la8		| % 5
+  do4 re8 mi8.( fa16) mi8		| % 6
+  re4 si8 sol8.( la16) si8		| % 7
+  do8.( si16) la8 sols8.( fas16) sols8	| % 8
+  la4( mi8) la4. \breathe		| % 9
+  sol'4. sol8.( fas16) mi8		| % 10
+  re4 si8 sol8.( la16) si8		| % 11
+  do4( la8) la8.( sols16) la8		| % 12
   si4 sols8 mi4 r8			| % 13
-  sol'4. sol8. fas16 mi8		| % 14
-  re4 si8 sol8. la16 si8		| % 15
-  do8. si16 la8 sols8. fas16 sols8	| % 16
-  \partial 8*5 la4 mi8 la4		| % 17
+  sol'4. sol8.( fas16) mi8		| % 14
+  re4 si8 sol8.( la16) si8		| % 15
+  do8.( si16) la8 sols8.( fas16) sols8	| % 16
+  \partial 8*5 la4( mi8) la4		| % 17
 }
 
-flauta = \relative do'' {
-  \partial 8 r8				| % 1
-  la4 si8 do4.				| % 2
-  sol4. mi4.				| % 3
-  la4. mi4 mi8				| % 4
-  la4 mi8 mi4 \breathe mi8		| % 5
-  la4 si8 do4.				| % 6
-  sol4. mi4 re8				| % 7
-  la'4 mi8 si4.				| % 8
-  do4. do4. \breathe			| % 9
-  mi'4. do8. re16 do8			| % 10
-  sol4. re4.				| % 11
-  la'4. mi4 mi8				| % 12
-  la4 mi8 mi4 r8			| % 13
-  mi'4. do8. re16 do8			| % 14
-  si4 re,8 fa8. mi16 re8		| % 15
-  la'8. mi16 mi8 si4 si8		| % 16
-  \partial 8*5 do4. do4			| % 17
+flauta = \relative do' {
+  \partial 8 r8\p			| % 1
+  mi4.(~ mi4 fa8			| % 2
+  sol2.)				| % 3
+  mi4.(~ mi4 fa8			| % 4
+  sols4.~ sols4 fas8)			| % 5
+  mi4.(~ mi4 fa8			| % 6
+  sol4 la8 si8. la16 sol8)		| % 7
+  do4( re8 si4.				| % 8
+  do4 si8 la4.)				| % 9
+  sol4.(~ sol4 la8			| % 10
+  si4. re8. do16 si8)			| % 11
+  do4.(~ do4 re8			| % 12
+  mi4. si8. la16 sols8)			| % 13
+  sol4.(~ sol4 la8			| % 14
+  si4. re8. do16 si8)			| % 15
+  do4( re8 mi4 re8			| % 16
+  \partial 8*5 do4 si8 la4)		| % 17
   
 }
 
 guitar = \relative do {
   \clef "G_8"
-  \partial 8 r8 			| % 1
+  \partial 8 r8\p 			| % 1
   <do' mi la>4\arpeggio si8 la4 do8	| % 2
   <si re sol>4\arpeggio re8 si4 sol8	| % 3
   <la do mi>4\arpeggio si8 do4 re8	| % 4
@@ -111,8 +111,8 @@ acordes = \new ChordNames {
       \new Voice = "mandolina" << \global \mandolina >>
     >>
     \new Staff <<
-      \set Staff.instrumentName = #"Oboe"
-      \set Staff.midiInstrument = #"oboe"
+      \set Staff.instrumentName = #"Flauta"
+      \set Staff.midiInstrument = #"flute"
       \new Voice = "oboe" << \global \flauta >>
     >>
     \new Staff <<
