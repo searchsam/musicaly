@@ -16,7 +16,8 @@ global = {
   \bar "|."
 }
 
-\markup { \fill-line { \center-column { \fontsize #5 "Virgine Madre" \fontsize #2 " " } } }
+\markup { \fill-line { \center-column { \fontsize #5 "El canto del mar" \fontsize #2 "Exodo 15" \small "Para la Gloria del Señor" } } }
+\markup { \fill-line { \center-column { \fontsize #5 "Virgine Madre" \fontsize #2 " " \small "Para la Gloria de nuestra Santísima Madre" } } }
 \markup { \fill-line { " " \fontsize #2 "Marco Frisina - Dante Alighieri"  } }
 %\markup { \fill-line { " " \fontsize #2 "Versión Sinfonica Coral: Francisco Jarquín Vega"  } }
 \header {

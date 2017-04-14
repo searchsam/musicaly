@@ -42,10 +42,10 @@ tenor = {
 	 \relative c' {
 	 	  \dynamicUp
 	 	  
-  d1\p\<( | f1) | e2\! d4.( c8 | d8 e f2\> e8 d | e2) f\!( | f2) \breathe e2\<( | e4) e\! e2 | g4\> g,8\( a bes  c d4( | d4)\) cis8( bes cis2) | d1\! | r2 e\mf\< | f2. f4 |  f1\! \breathe | g2 e4 f\>\(( | f8) e d c d2\) | e2\! r2 | % primer sistema
-  f1->\< | e2 d | e1\! |  g4.( f8 e4) d | cis4 \breathe f4\>\( e f( | f4)\) e d2\!\(( | d4) cis8 bes cis4\) \breathe a4\<( | a4) a a a | d2.\!( c4 | bes2) a4 \breathe e'( | e) e e e | f4.\( e8\> f4 g( | g8) f \breathe f2 e4\) | f2\! r4 d( | d4) cis d d\> | e4( d2 cis8 bes) | cis2\! r | % segundo sistema
-  r2 d\f | a'2. gis4 | gis1 \breathe | a4. a8 a4 g | f4.( e8 d4) d | e2 r | d1-> | cis2 d4.\>( c8 | d8 e f2 e4) | f2\! \breathe e2\mf\< | f2. e4 | d2.\!\> cis8( bes | c4\!) \breathe a\< a'2( | a4) g f2\! | e4 \breathe e a2 | d,2 g\>( | f4 e8 d e2) | d2\! r | % tercer sistema
-  f1->\< | e2 d | e1\! | g4.( f8 e4) d | cis4 \breathe f4\>\( e f( | f4)\) e d2\!\(( | d4) cis8 bes cis4\) \breathe a4\<( | a4) a a a | d2.\!( c4 | bes2) a4 \breathe e'( | e) e e e | f4.\( e8 f4\> g( | g8) f \breathe f2 e4\) | f2\! r4 d( | d4) cis d d | e4\>( d2 cis8 bes | cis2) d\! | % cuarto sistema
+  re1\p\<( | fa1) | mi2\! re4.( do8 | re8 mi fa2\> mi8 re | mi2) fa\!( | fa2) \breathe mi2\<( | mi4) mi\! mi2 | sol4\> sol,8\( la sib  do re4( | re4)\) dos8( sib dos2) | re1\! | r2 mi\mf\< | fa2. fa4 |  fa1\! \breathe | sol2 mi4 fa\>\(( | fa8) mi re do re2\) | mi2\! r2 | % primer sistema
+  fa1->\< | mi2 re | mi1\! |  sol4.( fa8 mi4) re | dos4 \breathe fa4\>\( mi fa( | fa4)\) mi re2\!\(( | re4) dos8 sib dos4\) \breathe la4\<( | la4) la la la | re2.\!( do4 | sib2) la4 \breathe mi'( | mi) mi mi mi | fa4.\( mi8\> fa4 sol( | sol8) fa \breathe fa2 mi4\) | fa2\! r4 re( | re4) dos re re\> | mi4( re2 dos8 sib) | dos2\! r | % segundo sistema
+  r2 re\f | la'2. sols4 | sols1 \breathe | la4. la8 la4 sol | fa4.( mi8 re4) re | mi2 r | re1-> | dos2 re4.\>( do8 | re8 mi fa2 mi4) | fa2\! \breathe mi2\mf\< | fa2. mi4 | re2.\!\> dos8( sib | do4\!) \breathe la\< la'2( | la4) sol fa2\! | mi4 \breathe mi la2 | re,2 sol\>( | fa4 mi8 re mi2) | re2\! r | % tercer sistema
+  fa1->\< | mi2 re | mi1\! | sol4.( fa8 mi4) re | dos4 \breathe fa4\>\( mi fa( | fa4)\) mi re2\!\(( | re4) dos8 sib dos4\) \breathe la4\<( | la4) la la la | re2.\!( do4 | sib2) la4 \breathe mi'( | mi) mi mi mi | fa4.\( mi8 fa4\> sol( | sol8) fa \breathe fa2 mi4\) | fa2\! r4 re( | re4) dos re re | mi4\>( re2 dos8 sib | dos2) re\! | % cuarto sistema
   	 }
 }
 
