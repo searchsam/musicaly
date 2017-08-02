@@ -9,23 +9,25 @@
 
 % --- Parametro globales
 global = {
-  \tempo "Recitativo como " 4=70
-  \key mi \minor
-  \time 4/4
-  s1*40
+  \tempo "Recitativo como meditado" 4=60
+  \key do \minor
+  \time 6/8
+  s2.*12
   \bar "||"
   \tempo "Allegro non troppo" 4=100
-  \time 6/8
-  s2.*23
+  s2.*56
   \bar "||"
-  \key la \minor
-  s2.*8
+  \key re \minor
+  s2.*30
+  \bar "||"
+  \tempo "Grandioso" 4=80
+  s2.*9
   \bar "|."
 }
 
-\markup { \fill-line { \center-column { \fontsize #5 "Ave María" \fontsize #2 "Texto Liturgico original" \small "Para la Gloria de nuestra Santísima Madre" } } }
-\markup { \fill-line { " " \fontsize #2 "Música: Luz Marina Zepeda Wilson"  } }
-\markup { \fill-line { " " \fontsize #2 "Versión Sinfonica Coral: Francisco Jarquín Vega"  } }
+\markup { \fill-line { \center-column { \fontsize #5 "El angel del Señor" \fontsize #2 "Salmo 34 (33)" \small "Para la Gloria del Señor" } } }
+\markup { \fill-line { \fontsize #2 \smallCaps "Tenor" \fontsize #2 "Música: Luz Marina Zepeda Wilson"  } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Versión Sinfonica Coral: Francisco Jarquín Vega" \small "(04 Junio, 2011)" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -33,99 +35,113 @@ global = {
 }
 
 % --- Musica
-soprano = \relative do' {
+tenor = \relative do' {
   \compressFullBarRests
   \dynamicUp
   \clef	"G_8"
-  R1*10				| %10
-  sol2--\p la--			| %11
-  sol2-- si--			| %12
-  sol2-- fas--			| %13
-  sol2-- si4-- mi--		| %14
-  sol4.\mf sol8 fas4 mi8 re	| %15
-  si2 si				| %16
-  do4. do8 re4 si8 la		| %17
-  si2 si4 r			| %18
-  do2--\mp si~			| %19
-  si2.-- mi4--			| %20
-  do2-- si--			| %21
-  sol2-- r4 mi8\mf mi		| %22
-  la4. la8 sol4. la8		| %23	
-  si4.( la8) sol2		| %24
-  fas4 sol8( la) sol4 sol8 fas	| %25
-  mi2. sol4--\mp			| %26
-  do2-- sol--(			| %27
-  sol4--) si4-- mi-- sol--	| %28
-  mi4\mf mi fas fas8 fas		| %29
-  sol,4\<( si2.\!)		| %30
-  si2 la~			| %31
-  la2 sol~			| %32
-  sol2 fas~			| %33
-  fas2 mi8~( mi->\< sols si\!)	| %34
-  mi8( re do si) do( si la do)	| %35
-  re8( do si la) si( la) sol( si)| %36
-  do8( si la sol) la( sol fas) la| %37
-  si8( do si sol) mi2\>~		| %38
-  mi1\!				| %39
-  r1				| %40
-  R2.*4				| %44
-  r8 si'8-. sol-. r la-. fas-.	| %45
-  r8 si-.( sol-.) r mi-. si'-.	| %46
-  r8 sol-. mi-. r la-. fas-.	| %47
-  r8 si-. sol-. r mi-. si'-.	| %48
-  sol'4. fas8 mi re		| %49
-  si4. si			| %50
-  do4. re4 re8			| %51
-  si4. si			| %52
-  mi,8-. do'-. r la-. fas'-. r	| %53
-  si,8-.( sol'-.) r mi,-.( si'-.) r | %54
-  mi,8-. do'-. r la-. fas'-. r	| %55
-  mi,8( sol) si r si si		| %56
-  do4 do8 la4 la8		| %57
-  si4. do			| %58
-  mi8 mi mi res4 res8		| %59
-  mi4. r8 si si			| %60
-  do4 do8 la4 la8		| %61
-  si4. do			| %62
-  do8 do do si4 si8		| %63
-  re8 re re do4 do8		| %64
-  mi8 mi mi re4 re8~		| %65
-  re2.~				| %66
-  re4.~ re4 re8			| %67
-  si2.~				| %68
-  si4.~ si4 mi,8			| %69
-  mi2.~				| %70
-  mi4. r				| %71
+  R2.*13				| %13
+  r4. r4 sol8			| %14
+  do4 do8 re4 re8		| %15
+  mib4.~ mib8 do do		| %16
+  mib8 mib mib re do sib		| %17
+  do4.~ do4 sol8			| %18
+  do4 do8 re4 re8		| %19
+  mib4.~ mib8 do do		| %20
+  mib8 mib mib re do sib		| %21
+  do2.				| %22
+  R2.*16				| %23
+  r4. r4 sol8			| %24
+  do4 do8 re4 re8		| %25
+  mib4.~ mib8 do do		| %26
+  mib8 mib mib re do sib		| %27
+  do4.~ do4 sol8			| %28
+  do4 do8 re4 re8		| %29
+  mib4.~ mib8 do do		| %30
+  mib8 mib mib re do sib		| %31
+  do2.				| %32
+  r4. r8 fa, fa			| %33
+  sol8 sol4~ sol sol8		| %34
+  sib4. sib8 do sib		| %35
+  sol8 sol4~ sol4.~		| %36
+  sol4.~ sol8 sol sol		| %37
+  lab8 lab4~ lab lab8		| %38
+  sib4 sib8 sib do sib		| %39
+  sol2.~				| %40
+  sol4. sol8 sol sol		| %41
+  do8 do4~ do do8		| %42
+  re8 re4~ re8 do re		| %43
+  mib2.~				| %44
+  mib4. <sol, do>8 <sol do> <sol do> | %45
+  <do mib>8 <do mib>4~ <do mib>8 <do mib> <do mib> | %46
+  <sib re>8 <sib re>4 <sib re>8 <lab do> <sol sib> | %47
+  <sol do>8 <sol do>4~ <sol do>4.~ | %48
+  <sol do>4.~ <sol do>4 sol8 	| %49
+  do4 do8 re4 re8		| %50
+  mib4.~ mib8 do do		| %51
+  mib8 mib mib re do sib		| %52
+  do4.~ do4 r8			| %53
+  r4. r4 la8			| %54
+  re4 re8 mi4 mi8		| %55
+  fa4.~ fa8 re re		| %56
+  fa8 fa fa mi re do		| %57
+  re2.				| %58
+  R2.*4				| %62
+  r4. r4 la8			| %63
+  sib8 sib4~ sib8 sib sib	| %64
+  do8 do4 do8 re do		| %65
+  la8 la4~ la4.~			| %66
+  la4. la8 la la			| %67
+  fa'4.~ fa4 fa8			| %68
+  sol8 sol4 sol8 fa sol		| %69
+  la4.( sol			| %70
+  fa4.) re8 re re		| %71
+  fa8 fa4~ fa4.			| %72
+  mi4. mi8 re do			| %73
+  re2.~				| %74
+  re4.~ re4 la8			| %75
+  re4 re8 mi4 mi8		| %76
+  fa4.~ fa8 re re		| %77
+  fa8 fa fa mi re do		| %78
+  re4.~ re4 la8			| %79
+  re4 re8 mi4 mi8		| %80
+  fa4.~ fa8 re re		| %81
+  fa8 fa fa mi re do		| %82
+  re2.				| %83
+  R2.				| %84
+  r4. r4 la8			| %85
+  re4 re8 mi4 mi8		| %86
+  fa4.~ fa8 re re		| %87
+  fa8 fa fa mi re do		| %88
+  re2.~				| %89
+  re2.~				| %90
+  re4 r8 r4 r8			| %91
+  R2.				| %92
 }
 
 % --- Letra
 letra = \lyricmode {
-  (BC) __ _ _ _ _ _ _ _  _
-  El Se -- ñor es con -- ti -- go;
-  y ben -- di -- ta tú e -- res.
-  (BC) __ _ _ _ _ _
-  Y ben -- di -- to es el fru -- to 
-  de tu vien -- tre, Je -- sús.
-  (BC) __ _ _ _ _ _
-  De tu vien -- tre, Je -- sús.
-  A ve __ Ma __ rí __ a.
-  A __ ve Ma -- rí -- a.
-  A __ ve Ma -- rí -- a. __
-  San -- ta, san -- ta Ma -- rí -- a, 
-  Ma -- dre, ma -- dre de Dios, de Dios,
-  rue -- ga por no -- so -- tros, los pe -- ca -- do -- res,
-  ho -- ra, en la ho -- ra nues -- tra muer -- te. A -- mén.
-  Rue -- ga~ah -- o -- ra y~en la ho -- ra
-  de nues -- tra muer -- te~a -- mén. 
-  Rue -- ga~ah -- o -- ra y~en la ho -- ra de nues -- tra muer -- te,
-  de nues -- tra muer -- te, de nues -- tra muer -- te. __ 
-  A -- mén, a -- mén. __
+  El an -- gel del Se -- ñor li -- bra -- rá~a los que te -- men a Dios.
+  El an -- gel del Se -- ñor li -- bra -- rá~a los que te -- men a Dios.
+  El an -- gel del Se -- ñor li -- bra -- rá~a los que te -- men a Dios.
+  El an -- gel del Se -- ñor li -- bra -- rá~a los que te -- men a Dios.
+  Con -- tem -- plad -- lo y que -- da -- reis ra -- dian -- tes, __
+  vues -- tro ros -- tro no se a -- ver -- gon -- za -- rá.
+  Si~el a -- fli -- ji -- do in -- vo -- ca al Se -- ñor,
+  El lo es -- cu -- cha y lo -- sal -- va de sus an -- gus -- tias. __
+  El an -- gel del Se -- ñor li -- bra -- rá~a los que te -- men a Dios.
+  El an -- gel del Se -- ñor li -- bra -- rá~a los que te -- men a Dios.
+  En tor -- no a sus fie -- les y los pro -- te -- ge, __ 
+  gus -- tad y ved que bue -- no es el Se -- ñor, __ 
+  di -- cho -- so~el hom -- bre que se~a -- co -- ge~a el. __
+  El an -- gel del Se -- ñor li -- bra -- rá~a los que te -- men a Dios.
+  El an -- gel del Se -- ñor li -- bra -- rá~a los que te -- men a Dios.
+  El an -- gel del Se -- ñor li -- bra -- rá~a los que te -- men a Dios.
 }
 
 \score {
   <<
     \new Staff <<
-        \new Voice = "voz" << \global \soprano >>
+        \new Voice = "voz" << \global \tenor >>
         \new Lyrics \lyricsto "voz" \letra
     >>
   >>

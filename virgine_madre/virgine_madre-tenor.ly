@@ -16,10 +16,9 @@ global = {
   \bar "|."
 }
 
-\markup { \fill-line { \center-column { \fontsize #5 "El canto del mar" \fontsize #2 "Exodo 15" \small "Para la Gloria del Señor" } } }
-\markup { \fill-line { \center-column { \fontsize #5 "Virgine Madre" \fontsize #2 " " \small "Para la Gloria de nuestra Santísima Madre" } } }
-\markup { \fill-line { " " \fontsize #2 "Marco Frisina - Dante Alighieri"  } }
-%\markup { \fill-line { " " \fontsize #2 "Versión Sinfonica Coral: Francisco Jarquín Vega"  } }
+\markup { \fill-line { \center-column { \fontsize #5 "Virgine Madre" \fontsize #2 "Himno" \small "Para la Gloria de nuestra Santísima Madre" } } }
+\markup { \fill-line { \fontsize #2 \smallCaps "Tenor" \fontsize #2 "Musica: Mons. Marco Frisina"  } }
+\markup { \fill-line { " " \fontsize #2 "Letra: Dante Alighieri"  } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -44,8 +43,8 @@ tenor = \relative do {
   la4 la8 sol la4 la		| %17
   la4 sib8 do sol4 sol		| %18
   la8 la si si re4 dos		| %19
-  re4 re8 sib la4 la8 fa		| %20
-  sol4 sol8 sol sol2		| %21
+  re4 re8 sib la4 fa		| %20
+  sol8 sol sol sol sol2		| %21
   fa1				| %22
   R1*7				| %29
   fa4 sol8 la re4 re		| %30

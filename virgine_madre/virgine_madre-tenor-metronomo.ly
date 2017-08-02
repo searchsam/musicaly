@@ -43,8 +43,8 @@ soprano = \relative do {
   la4 la8 sol la4 la		| %17
   la4 sib8 do sol4 sol		| %18
   la8 la si si re4 dos		| %19
-  re4 re8 sib la4 la8 fa		| %20
-  sol4 sol8 sol sol2		| %21
+  re4 re8 sib la4 fa		| %20
+  sol8 sol sol sol sol2		| %21
   fa1				| %22
   R1*7				| %29
   fa4 sol8 la re4 re		| %30

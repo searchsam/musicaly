@@ -1,0 +1,36 @@
+% !TEX program = LuaLaTeX+se
+
+\documentclass[letterpaper]{report}
+
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{a4paper}
+\usepackage{gregoriotex}
+
+%% Portada del Libro
+\title{ \textbf{ \Huge Misa Cristo Rey  } \\ { \LARGE Solemnidad Cristo Rey del Universo } }
+\author{ \textit{ \large Carmelitas descazas, Managua, Nicaragua } } 
+\date{ \LARGE Samuel José Gutiérrez Avilés }
+
+\begin{document}
+
+	 %% - Portada
+	 \maketitle
+
+	\begin{center}
+		\begin{huge}
+			\textsc{Señor ten piedad}
+		\end{huge}
+	\end{center}
+
+	\grechangedim{beforeinitialshift}{2.2mm}{scalable}
+	\grechangedim{afterinitialshift}{2.2mm}{scalable}
+	\grechangestyle{initial}{ \fontsize{43}{43} \selectfont}
+	\gresetlinecolor{gregoriocolor}
+	\grechangestyle{annotation}{ \small \bfseries}
+
+	\gresetheadercapture{commentary}{grecommentary}{string}
+	\gregorioscore[a]{kyrie}
+
+\end{document}

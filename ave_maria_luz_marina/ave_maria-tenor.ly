@@ -9,7 +9,7 @@
 
 % --- Parametro globales
 global = {
-  \tempo "Andante Spirituale" 4=70
+  \tempo "Andante Spiritual" 4=70
   \key mi \minor
   \time 4/4
   s1*40
@@ -24,8 +24,8 @@ global = {
 }
 
 \markup { \fill-line { \center-column { \fontsize #5 "Ave María" \fontsize #2 "Texto Liturgico original" \small "Para la Gloria de nuestra Santísima Madre" } } }
-\markup { \fill-line { " " \fontsize #2 "Música: Luz Marina Zepeda Wilson"  } }
-\markup { \fill-line { " " \fontsize #2 "Versión Sinfonica Coral: Francisco Jarquín Vega"  } }
+\markup { \fill-line { \fontsize #2 \smallCaps "Tenor" \fontsize #2 "Música: Luz Marina Zepeda Wilson"  } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Versión Sinfonica Coral: Francisco Jarquín Vega" \small "(05 Mayo, 2011)"  } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -33,7 +33,7 @@ global = {
 }
 
 % --- Musica
-soprano = \relative do' {
+tenor = \relative do' {
   \compressFullBarRests
   \dynamicUp
   \clef	"G_8"
@@ -108,9 +108,9 @@ letra = \lyricmode {
   de tu vien -- tre, Je -- sús.
   (BC) __ _ _ _ _ _
   De tu vien -- tre, Je -- sús.
-  A ve __ Ma __ rí __ a.
-  A __ ve Ma -- rí -- a.
-  A __ ve Ma -- rí -- a. __
+  A -- ve __ Ma -- rí -- a. __
+  A -- ve __ Ma -- rí -- a.
+  A -- ve Ma -- rí -- a. __
   San -- ta, san -- ta Ma -- rí -- a, 
   Ma -- dre, ma -- dre de Dios, de Dios,
   rue -- ga por no -- so -- tros, los pe -- ca -- do -- res,
@@ -119,13 +119,13 @@ letra = \lyricmode {
   de nues -- tra muer -- te~a -- mén. 
   Rue -- ga~ah -- o -- ra y~en la ho -- ra de nues -- tra muer -- te,
   de nues -- tra muer -- te, de nues -- tra muer -- te. __ 
-  A -- mén, a -- mén. __
+  A -- mén, __ a -- mén. __
 }
 
 \score {
   <<
     \new Staff <<
-        \new Voice = "voz" << \global \soprano >>
+        \new Voice = "voz" << \global \tenor >>
         \new Lyrics \lyricsto "voz" \letra
     >>
   >>
