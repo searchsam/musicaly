@@ -1,5 +1,5 @@
 % ****************************************************************
-%	La flor se enjendra en otra flor - Solista
+%	Santa Maria - Solista
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
@@ -477,4 +477,4 @@ podamos llegar a ser capaces
 de un verdadero amor
 y ser fuentes de agua viva
 en medio de un mundo sediento.
-%}
+%}  

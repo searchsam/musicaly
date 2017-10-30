@@ -263,8 +263,8 @@ armonias = \chordmode {
   e2.:m d2. c2. g2. e2. b2.:7 a4.:m b4.:7 e2.:m 
   R2.*2 a4.:m e4.:m b2.:7 e2.:m
   e2.:m a4.:m e4.:m b2.:7 e2.:m
-  e4.:m c4. d4.:7 g4. R4. b4.:m e2.:m
-  e4.:m c4. d4.:7 g4. R4. b4.:m e2.:m
+  e4.:m c4. d4.:7 g4. g4. b4.:m e2.:m
+  e4.:m c4. d4.:7 g4. g4. b4.:m e2.:m
 }
 
 

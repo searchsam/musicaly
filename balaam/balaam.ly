@@ -1,74 +1,76 @@
-% Created on Wed Mar 02 15:19:18 CST 2011
-% by search.sam@
+% ****************************************************************
+%	Balaam - Flauta
+%	by serach.sam@
+% ****************************************************************
+\language "espanol"
 \version "2.19.49"
 
-#(set-global-staff-size 25)
+%#(set-global-staff-size 17)
 
+\markup { \fill-line { \center-column { \fontsize #5 "Balaam" \fontsize #3 "Números 23, 7 - 24" } } }
+\markup { \fill-line { \fontsize #2 \smallCaps "Flauta" \fontsize #2 "Kiko Argüello"  } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 \header {
-	title = \markup { \smallCaps "Balaam" }
-	subtitle = "Numeros 23,7-24" 
-	opus = "(Febrero 27, 2011)"
-	copyright = \markup { "Camino Neocatecumenal" \char ##x00A9 }
-	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  copyright = "Creative Commons Attribution 3.0"
+  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  breakbefore = ##t
 }
 
-balaam = \new Staff {
-	\time 4/4
-	\tempo "Moderatto" 4 = 100 
-	\set Staff.midiInstrument = "clarinet"
-	\key e \minor
-	\clef treble
-	\relative c' { 	
- % Type notes here 
-	d2.^\markup { \small \italic "Introduccion" } b8 d8 |%1
- 	fis2. d8 fis8 |%2
- 	g2 b2 |%3
- 	fis8 d8 e2. |%4
-	\bar "|."
-	}
+% --- Parametro globales
+global = {
+  \tempo "Andante" 4 = 60 
+  \key mi \minor
+  \time 4/4
+  s1*10
+  \bar "|."
 }
 
-Abalaam = \new ChordNames {
-      \set chordChanges = ##t
-      \italianChords
-      \chordmode { 
-      	      g1 
-      	      d1 
-      	      g2
-      	      b2.:m
-      	      e2.:m
-      }
+melodia = \relative do' { 	
+  % Type notes here
+  mi16 re mi8 sol16 fas sol8 si16 la si8~ si4 	| % 1
+  re,16 do re8 fas16 mi fas8 la16 sol la8~ la4	| % 2
+  si16^\markup{ \bold \italic "rit." } la sol fas mi2 r4 | % 3
+  \textLengthOn
+  s1_\markup { \small "De Aram me ha hecho venir..." }	| %4
+  \textLengthOff
+  re'4 do si la 					| % 5
+  sol4 fas2.					| % 6
+  \textLengthOn
+  s4_\markup { \small "...Balaq,..." } mi2 s4_\markup { \small "...el rey de Moab,..." } | %7
+  \textLengthOff
+  re2
+  \textLengthOn
+  s2_\markup { \small "...desde los montes de Oriente..." } | %8
+  \textLengthOff
+  si'4 la16 si la8 sol4 fas16 sol fas8 mi4		| % 9
+  \textLengthOn
+  s4_\markup { \small "...“Ven y maldice a Jacob;..." } mi2 s4_\markup { \small "...el rey de Moab,..." } | %7
+  \textLengthOff
+}
+
+armonia = \new ChordNames {
+  \set chordChanges = ##t
+  \italianChords
+  \chordmode { 
+    mi1:m re1
+    re2 mi2:m
+    
+  }
 }
 
 \score {
-	<<
-		\Abalaam
-		\balaam
-	>>
-	
-	\midi {
-	}
-
-	\layout {
- 	}
+  <<
+    \armonia
+    \new Staff { <<
+      \set Staff.midiInstrument = "recorder"
+      \global 
+      \melodia
+    >> }
+  >>
+  \midi {}
+  \layout {}
 }
 
 \paper {
-	#(set-paper-size "letter")
+  #(set-paper-size "letter")
 }
-
-
-
-
-%{
-convert-ly (GNU LilyPond) 2.19.49  convert-ly: Procesando «»...
-Aplicando la conversión: 2.13.0, 2.13.1, 2.13.4, 2.13.10, 2.13.16,
-2.13.18, 2.13.20, 2.13.27, 2.13.29, 2.13.31, 2.13.36, 2.13.39,
-2.13.40, 2.13.42, 2.13.44, 2.13.46, 2.13.48, 2.13.51, 2.14.0, 2.15.7,
-2.15.9, 2.15.10, 2.15.16, 2.15.17, 2.15.18, 2.15.19, 2.15.20, 2.15.25,
-2.15.32, 2.15.39, 2.15.40, 2.15.42, 2.15.43, 2.16.0, 2.17.0, 2.17.4,
-2.17.5, 2.17.6, 2.17.11, 2.17.14, 2.17.15, 2.17.18, 2.17.19, 2.17.20,
-2.17.25, 2.17.27, 2.17.29, 2.17.97, 2.18.0, 2.19.2, 2.19.7, 2.19.11,
-2.19.16, 2.19.22, 2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40,
-2.19.46, 2.19.49
-%}

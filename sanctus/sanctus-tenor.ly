@@ -17,7 +17,7 @@ global = {
 }
 
 \markup { \fill-line { \center-column { \fontsize #5 "Sanctus" \fontsize #2 "Himno Liturgico" \small "Para la Gloria del Señor" } } }
-\markup { \fill-line { " " \fontsize #2 "Musica: Craig Courtney"  } }
+\markup { \fill-line { \fontsize #2 \smallCaps "Tenor" \fontsize #2 "Musica: Craig Courtney"  } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Versión Orquestal: Francisco Jarquín Vega" \small "(Enero, 2010)" } } }
 
 \header {
