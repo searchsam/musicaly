@@ -13,7 +13,7 @@
 #(set-global-staff-size 16)
 
 \markup { \fill-line { \center-column { \fontsize #5 "Digno es el Cordero" \fontsize #3 \caps "del Mesías" } } }
-\markup { \fill-line { \fontsize #2 \smallCaps "Tenor" \fontsize #2 "Georg Friedrich Händel"  } }
+\markup { \fill-line { \fontsize #2 \smallCaps "Coro" \fontsize #2 "Georg Friedrich Händel"  } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Traducción y adaptación: Pbro. Angel Torrellas"  } } }
 
 \header {
@@ -25,21 +25,21 @@
 global = { 
   \key re \major 
   \time 4/4 
-  \tempo "Largo" 4 = 80 %1
+  \tempo "Largo" 4 = 60 %1
   s1*6 s2 
   \tempo "Andante" 4 = 100 s2 %7
   s1*4
-  \bar "||" \mark A \tempo "Largo" 4 = 80 %12
+  \bar "||" \mark A \tempo "Largo" 4 = 60 %12
   s1*7 s2
   \tempo "Andante" 4 = 100 s2 %19
   s1*4
-  \bar "||" \mark B \tempo "Larghetto" 4 = 100 %24
+  \bar "||" \mark B \tempo "Larghetto" 4 = 80 %24
   s1*18
   \mark C %42
   s1*11
   \mark D %53
   s1*16
-  \mark E \tempo "Adagio" 4 = 80 %69
+  \mark E \tempo "Adagio" 4 = 50 %69
   s1*3
   \bar "|." 
 }

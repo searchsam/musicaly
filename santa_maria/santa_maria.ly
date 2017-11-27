@@ -35,7 +35,7 @@ guitarra = \relative do' {
   <re sol si>4 \arpeggio r
   <do mi la>4 \arpeggio <re fa la>4 \arpeggio
   <re sol si>4 \arpeggio <do mi la>4 \arpeggio
-  <do mi la>4 \arpeggio r
+  <do mi la>4\p \arpeggio r
   <re sol si>4 \arpeggio r
   <re sol si>4 \arpeggio r
   <do mi la>4 \arpeggio r
@@ -43,7 +43,7 @@ guitarra = \relative do' {
   <re sol si>4 \arpeggio r
   <re sol si>4 \arpeggio r
   <do mi la>4 \arpeggio r
-  <do mi la>4 \arpeggio r
+  <do mi la>4\ppp \arpeggio r
   <do mi la>4 \arpeggio r
   <re sol si>4 \arpeggio r
   <re sol si>4 \arpeggio r
@@ -109,7 +109,7 @@ flauta = \relative do'' {
   \dynamicUp
   R2*6
   
-  mi4 re8 do
+  mi4\f re8 do
   si4 si8 la8 
   sol4 si4 
   do2
@@ -118,7 +118,7 @@ flauta = \relative do'' {
   sol4 si4 
   la2
   
-  mi'4 re 
+  mi'4\p re 
   do4. si8
   re do si do
   re4 re4
@@ -292,6 +292,7 @@ pandereta = \drummode {
   tamb4 tamb8 tamb8
   tamb4 tamb4
   tamb4 tamb4
+  tamb4\pp tamb8 tamb8
   tamb4 tamb8 tamb8
   tamb4 tamb8 tamb8
   tamb4 tamb8 tamb8
@@ -299,8 +300,7 @@ pandereta = \drummode {
   tamb4 tamb8 tamb8
   tamb4 tamb8 tamb8
   tamb4 tamb8 tamb8
-  tamb4 tamb8 tamb8
-  tamb4 tamb8 tamb8
+  tamb4\ppp tamb8 tamb8
   tamb4 tamb8 tamb8
   tamb4 tamb8 tamb8
   tamb4 tamb8 tamb8
@@ -369,9 +369,9 @@ timbales = \drummode {
   
   tomfh2 tomfh tomfl4 tomfl tomfh2
   tomfl4 tomfl tomfl tomfl
+  tomfh2\p tomfh tomfl4 tomfl tomfh2
   tomfh2 tomfh tomfl4 tomfl tomfh2
-  tomfh2 tomfh tomfl4 tomfl tomfh2
-  tomfh2 tomfh tomfl4 tomfl tomfh2
+  tomfh2\pp tomfh tomfl4 tomfl tomfh2
   tomfh2 tomfh tomfl4 tomfl tomfh2
   tomfh2 tomfh tomfl4 tomfl tomfh2
   tomfh2 tomfh tomfl4 tomfl tomfh2

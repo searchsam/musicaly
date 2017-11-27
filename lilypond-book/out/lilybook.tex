@@ -1,0 +1,72 @@
+\documentclass[letter]{book}
+
+\usepackage{graphics}
+\begin{document}
+
+Los documentos para \verb+lilypond-book+ pueden mezclar libremente
+música y texto. Por ejemplo:
+
+{%
+\parindent 0pt
+\noindent
+\ifx\preLilyPondExample \undefined
+\else
+  \expandafter\preLilyPondExample
+\fi
+\def\lilypondbook{}%
+\input{27/lily-bb6444e8-systems.tex}
+\ifx\postLilyPondExample \undefined
+\else
+  \expandafter\postLilyPondExample
+\fi
+}
+
+Las opciones se escriben entre corchetes.
+
+\begin{quote}
+\noindent
+\begin{verbatim}
+    \language "espanol"
+    do'4 fa16
+\end{verbatim}
+{%
+\parindent 0pt
+\noindent
+\ifx\preLilyPondExample \undefined
+\else
+  \expandafter\preLilyPondExample
+\fi
+\def\lilypondbook{}%
+\input{fa/lily-e5cf3146-systems.tex}
+\ifx\postLilyPondExample \undefined
+\else
+  \expandafter\postLilyPondExample
+\fi
+}
+\end{quote}
+
+Los ejemplos grandes se pueden grabar en archivos separados e
+introducirse con \verb+\lilypondfile+.
+
+\begin{quote}
+{%
+\parindent 0pt
+\noindent
+\ifx\preLilyPondExample \undefined
+\else
+  \expandafter\preLilyPondExample
+\fi
+\def\lilypondbook{}%
+\input{6d/lily-dc72f8f6-systems.tex}
+\ifx\postLilyPondExample \undefined
+\else
+  \expandafter\postLilyPondExample
+\fi
+}
+\end{quote}
+
+(Si es necesario, sustituya @file{screech-and-boink.ly}
+por cualquier archivo @file{.ly}
+situado en el mismo directorio que este archivo.)
+
+\end{document}

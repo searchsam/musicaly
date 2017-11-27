@@ -13,7 +13,7 @@
 #(set-global-staff-size 16)
 
 \markup { \fill-line { \center-column { \fontsize #5 "La Gloria de Dios" \fontsize #3 \caps "del Mesías" } } }
-\markup { \fill-line { \fontsize #2 \smallCaps "Tenor" \fontsize #2 "Georg Friedrich Händel"  } }
+\markup { \fill-line { \fontsize #2 \smallCaps "Coro" \fontsize #2 "Georg Friedrich Händel"  } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Traducción y adaptación: Pbro. Angel Torrellas"  } } }
 
 \header {
