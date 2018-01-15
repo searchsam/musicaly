@@ -1,0 +1,90 @@
+\documentclass[letterpaper]{report}
+
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{pifont}
+\usepackage{pdflscape}
+\usepackage{lscape}
+\usepackage{geometry}
+\geometry{letterpaper, margin=15mm}
+
+%% Portada del Libro
+\title{ \textbf{ \Huge Misa Italiana  } \\ { \Huge Piesas Corales } }
+\author{ \textit{ \huge Pbro. Jes\'us Mar\'ia S\'anchez } } 
+\date{ \LARGE Arreglo Samuel Guti\'errez \& Isabel Mart\'inez }
+	
+\usepackage{graphics}
+\begin{document}
+    
+    %% - Portada
+    \maketitle
+     
+    %% - Musica - Kyrie, eleison
+    {%
+\parindent 0pt
+\noindent
+\ifx\preLilyPondExample \undefined
+\else
+  \expandafter\preLilyPondExample
+\fi
+\def\lilypondbook{}%
+\input{28/lily-3819d3bc-systems.tex}
+\ifx\postLilyPondExample \undefined
+\else
+  \expandafter\postLilyPondExample
+\fi
+}
+    \clearpage
+    
+    %% - Musica - Gloria in excelsis Deo
+    {%
+\parindent 0pt
+\noindent
+\ifx\preLilyPondExample \undefined
+\else
+  \expandafter\preLilyPondExample
+\fi
+\def\lilypondbook{}%
+\input{13/lily-bc5e548d-systems.tex}
+\ifx\postLilyPondExample \undefined
+\else
+  \expandafter\postLilyPondExample
+\fi
+}
+    \clearpage
+    
+    %% - Musica - Alleluia
+    {%
+\parindent 0pt
+\noindent
+\ifx\preLilyPondExample \undefined
+\else
+  \expandafter\preLilyPondExample
+\fi
+\def\lilypondbook{}%
+\input{d3/lily-96a30f41-systems.tex}
+\ifx\postLilyPondExample \undefined
+\else
+  \expandafter\postLilyPondExample
+\fi
+}
+    \clearpage
+    
+    %% - Musica - Alleluia
+    {%
+\parindent 0pt
+\noindent
+\ifx\preLilyPondExample \undefined
+\else
+  \expandafter\preLilyPondExample
+\fi
+\def\lilypondbook{}%
+\input{d9/lily-846380f6-systems.tex}
+\ifx\postLilyPondExample \undefined
+\else
+  \expandafter\postLilyPondExample
+\fi
+}
+    \clearpage
+    
+\end{document}

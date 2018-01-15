@@ -1,0 +1,8 @@
+@image{./28/lily-3819d3bc-1}
+@image{./28/lily-3819d3bc-2}
+@image{./28/lily-3819d3bc-3}
+@image{./28/lily-3819d3bc-4}
+@image{./28/lily-3819d3bc-5}
+@image{./28/lily-3819d3bc-6}
+@image{./28/lily-3819d3bc-7}
+@c eof

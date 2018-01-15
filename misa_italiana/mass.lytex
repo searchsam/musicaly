@@ -1,0 +1,400 @@
+\documentclass[letterpaper]{report}
+
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{pifont}
+\usepackage{pdflscape}
+\usepackage{lscape}
+\usepackage{geometry}
+\geometry{letterpaper, margin=15mm}
+
+%% Portada del Libro
+\title{ \textbf{ \Huge Misa Italiana  } \\ { \Huge Piesas Corales } }
+\author{ \textit{ \huge Pbro. Jes\'us Mar\'ia S\'anchez } } 
+\date{ \LARGE Arreglo Samuel Guti\'errez \& Isabel Mart\'inez }
+	
+\begin{document}
+    
+    %% - Portada
+    \maketitle
+     
+    %% - Musica - Kyrie, eleison
+    \begin{lilypond}
+        \language "espanol"
+        \version "2.18.0"
+
+        \markup { \fill-line { \center-column { \fontsize #5 "Misa Italiana" \fontsize #3 \caps "Señor ten piedad" } } }
+        \markup { \fill-line { " " \center-column { \fontsize #2 "Pbro. Jesús María Sánchez" \small "Arreglo Samuel Gutiérrez & Isabel Martinez" } } }
+        \header {
+            copyright = "Creative Commons Attribution 3.0" 
+            tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+            breakbefore = ##t
+        }
+
+        instrumento = \relative do'' {
+            \tempo "Moderatto" 4 = 100
+            \key mi \minor 
+            \time 3/4
+            \override DynamicLineSpanner.staff-padding = #15
+            \newSpacingSection	
+            \override Score.SpacingSpanner.spacing-increment = #5
+            si4 mi,4 si'4			| %2
+            \mark \markup { \small "Instrumento" }
+            la4 mi4 la4			        | %3
+            sol4 mi4 sol4			| %4
+            fas4 mi4 re4			| %5
+            si4 do8 re8. mi16 fas8		| %6
+            mi2.				| %7
+            \bar "||"
+            \mark \markup { \musicglyph #"scripts.segno" }
+            \time 6/8
+            r2 r8 sol8			| %8
+            \mark \markup { \small "Voz" }
+            sol4. la4 la8			| %9
+            fas4. r4 fas8			| %10
+            sol4 sol8 la8. sol16 la8 	| %11
+            si4. r4.			| %12
+            \repeat volta 1 {
+                <sol, do sol'>4 <sol do mi>8 <la re fas>8. <la re sol>16 <la re fas>8 | %13
+                <si mi>4. <si mi>4.		| %14
+            }
+            r2.				| %15
+            \repeat volta 1 {
+                sol'4. <re la'>4.		| %16
+                <sol si>4. <fa si>4.		| %17
+                <mi do'>4 <re si'>8 <do la'>8. <re si'>16 <mi do'>8 | %18
+                <res fas si>4. <res fas si>4. 
+            } \mark \markup { \center-column { "D.S." }  }
+        }
+
+        letra = \lyricmode { 
+            _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+            Se ñor nues tro Dios, Se ñor nues tro Sal va dor,
+            ten pie dad de no so tros,
+            Cris to, Cris to, ten pie dad de no so tros.
+        }
+
+        acordes = \new ChordNames {
+            \set chordChanges = ##t
+            \italianChords
+            \chordmode { 
+                la2.:m re2.:m la2.:m sol2. la2.:m
+                R2.*2
+                la4.:m re4.:m mi2.:7 la4.:m sol4.:7 do2.
+                fa4. sol4. la4.:m la4.:m7
+                fa4. sol4. do4. sol4. do4. do4.:7 fa4. re4.:m mi2.:7
+            }
+        }
+
+        \score {
+            <<
+                \acordes
+                \new Staff { <<
+                \set Staff.midiInstrument = #"oboe"
+                \transposition la
+                \transpose do fa
+                \new Voice = "voz"
+                \instrumento
+                >>}
+                \new Lyrics \lyricsto "voz" { 
+                \letra 
+                }
+            >>
+            \midi {}
+            \layout {}
+        }
+
+        \paper {
+            #( set-default-paper-size "letter" )
+        }
+    \end{lilypond}
+    \clearpage
+    
+    %% - Musica - Gloria in excelsis Deo
+    \begin{lilypond}
+        \language "espanol"
+        \version "2.18.0"
+        \markup { \fill-line { \center-column { \fontsize #5 "Misa Italiana" \fontsize #3 \caps "Gloria a Dios" } } }
+        \markup { \fill-line { " " \center-column { \fontsize #2 "Pbro. Jesús María Sánchez" \small "Arreglo Samuel Gutiérrez e Isabel Martinez" } } }
+        \header {
+            copyright = "Creative Commons Attribution 3.0" 
+            tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+            breakbefore = ##t
+        }
+
+        instrumento = \relative do' {
+            \tempo "Allegreto" 4 = 130
+            \key re \major
+            \time 2/2
+            \newSpacingSection
+            \override Score.SpacingSpanner.spacing-increment = #5
+            \repeat volta 1 {
+                re2 re2			| %1
+                la'2 la2			| %2
+                si4 la4 sol4 si4		| %3
+                la2 fas4 mi4			| %4
+                re4 r4 mi4 re4		| %5
+                dos4.( fas8) fas4 la8 la8	| %6
+                si4 si8 la8 sol8 fas8 mi8 fas8 | %7
+                fas1				| %8
+                r4 re4 mi4 re4		| %9
+                <dos fas>2 <dos fas la>2	| %10
+                r4 re4 mi4 re4	 	| %11
+                <dos fas>2 <dos fas la>2 	| %12
+                r4 <re sol si>4 <re sol si>4 <re sol si>4 | %13
+                <sol si re>2 <sol si re>2	| %14
+                <mi sols si>2 <mi sol si>4 <mi sol si>4 | %15
+                <mi la dos>1			| %16
+                r1^\markup { \center-column { "Da Capo al Fine" } } | %17
+            } \break
+            re2^\markup { \center-column { "Fine" } } re2	| %18
+            <re fas la>2 <re fas la>2	| %19
+            \bar "|." \break
+        }
+        letra_uno = \lyricmode { 
+            Glo ria, glo ria a Dios en el cie lo y paz,
+            en la tie __ rra, a los hom bres de bue na vo lun tad.
+            Te a la ba mos, te ben de ci mos, te a do ra mos, Pa dre de~a mor.
+            A men, a men.
+        }
+
+        letra_dos = \lyricmode { 
+            _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+            So lo te~e res San to, solo tú Se ñor,
+            so lo tú Al tí~si mo, Je __ su cri~to.
+        }
+
+        letra_tres = \lyricmode { 
+            _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+            Glo ria al Pa dre, glo ria al Hi jo,
+            glo ria~al Es pí~ri tu, San~ti fi ca dor.
+        }
+
+        acordes = \new ChordNames {
+            \set chordChanges = ##t
+            \italianChords
+            \chordmode { 
+                fa1 R1 sib1 fa1 re1:m la1:m sib2 do2:7 fa1
+                re1:m la1:m re1:m la1:m sib1 R1 sol1:7 do1 do1:7
+                re1
+            }
+        }
+
+        \score {
+            <<
+                \acordes
+                \new Staff { <<
+                \set Staff.midiInstrument = #"oboe"
+                \transposition fa
+                \transpose do mib
+                \new Voice = "voz"
+                \instrumento
+                >>}
+                \new Lyrics \lyricsto "voz" { 
+                \letra_uno
+                }
+                \new Lyrics \lyricsto "voz" { 
+                \letra_dos
+                }
+                \new Lyrics \lyricsto "voz" { 
+                \letra_tres
+                }
+            >>
+            \midi {}
+            \layout {}
+        }
+
+        \paper {
+            #( set-default-paper-size "letter" )
+        }
+    \end{lilypond}
+    \clearpage
+    
+    %% - Musica - Alleluia
+    \begin{lilypond}
+        \language "espanol"
+        \version "2.18.0"
+
+        \markup { \fill-line { \center-column { \fontsize #5 "Misa Italiana" \fontsize #3 \caps "Aleluya Interleccional" } } }
+        \markup { \fill-line { " " \center-column { \fontsize #2 "Pbro. Jesús María Sánchez" \small "Arreglo Samuel Gutiérrez e Isabel Martinez" } } }
+        \header {
+            copyright = "Creative Commons Attribution 3.0" 
+            tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+            breakbefore = ##t
+        }
+
+        instrumento = \relative do' {
+            \tempo "Moderatto" 4 = 100
+            \time 6/8
+            \override DynamicLineSpanner.staff-padding = #15
+            \newSpacingSection	
+            \override Score.SpacingSpanner.spacing-increment = #5
+            mi8 mi8 fa8 sol4 mi8		| %1
+            \mark \markup { \small "Instrumento" }
+            do8 do8 re8 mi4 do8 		| %2
+            fa8 sol8 la8 si8 la8 si8	| %3
+            sol2.				| %4
+            \mark \markup { \small "Voz" }
+            \repeat volta 1 {
+                r8^\markup { \small "Primera Voz" } fa8 la8 si8( la8 si8) 	| %5
+                sol4. r4.			| %6
+                r8^\markup { \small "Segunda Voz" } fa8 mi8 re8( mi8 fa8) 	| %7
+                sol4. r4. 	 		| %9
+                fa8^\markup { \small "Tercera Voz" }( sol8) la8 si8( la8 sol8) | %10
+                mi2.			| %11			
+            }
+            fa8^\markup { \small "Solo" } fa8 fa8 sol4.		| %12
+            sol8 la8 la8 sol8 la8 la8	| %13
+            la4. r4.			| %14
+            sol4 sol8 do4 sol8		| %15
+            mi4 mi8 mi4.			| %16
+            fa8 fa8 fa8 fa8 sol4		| %17
+            sol4. r4.			| %18
+            \repeat volta 2 {
+                r8^\markup { \small "Primera Voz" } fa8 la8 si8( la8 si8) 	| %19
+                sol4. r4.			| %20
+                r8^\markup { \small "Segunda Voz" } fa8 mi8 re8( mi8 fa8) 	| %21
+                sol4. r4. 	 		| %22
+                fa8^\markup { \small "Tercera Voz" }( sol8) la8 si8( la8 sol8) | %23						
+            }
+            \alternative {
+                { mi2. }			 %24
+                { sol2. }			 %25
+            }
+            \bar "|."
+        }
+
+        letra = \lyricmode { 
+            _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+            A le lu ya, a le lu ya, a le lu ya.
+            Yo soy la vid, vo so tros sar mi en tos,
+            el que per ma ne ce~en mi, da fru to~a bun dan te.
+            A le lu ya, a le lu ya, a le lu ya.
+        }
+
+        acordes = \new ChordNames {
+            \set chordChanges = ##t
+            \italianChords
+            \chordmode { 
+                do4. sol4. la4.:m mi4.:m fa4. re4.:m sol2.
+                fa4. re4.:m sol2.
+                fa4. sol4.:7 do2.
+                fa4. sol4. la2.:m
+                fa4. sol4. do4. la4.:m la2.:m 
+                sol4. la4.:m mi2.:m fa4. sol4. sol2.   
+                fa4. re4.:m sol2.
+                fa4. sol4.:7 do2.
+                fa4. sol4. la2.:m
+            }
+        }
+
+        \score {
+            <<
+                \acordes
+                \new Staff { <<
+                \set Staff.midiInstrument = #"oboe"
+                \new Voice = "voz"
+                \instrumento
+                >>}
+                \new Lyrics \lyricsto "voz" { 
+                \letra 
+                }
+            >>
+            \midi {}
+            \layout {}
+        }
+
+        \paper {
+            #( set-default-paper-size "letter" )
+        } 
+    \end{lilypond}
+    \clearpage
+    
+    %% - Musica - Alleluia
+    \begin{lilypond}
+        \language "espanol"
+        \version "2.18.0"
+
+        \markup { \fill-line { \center-column { \fontsize #5 "Misa Italiana" \fontsize #3 \caps "Cordero de Dios" } } }
+        \markup { \fill-line { " " \center-column { \fontsize #2 "Pbro. Jesús María Sánchez" \small "Arreglo Samuel Gutiérrez e Isabel Martinez" } } }
+        \header {
+            copyright = "Creative Commons Attribution 3.0" 
+            tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+            breakbefore = ##t
+        }
+
+        instrumento = \relative do' {
+            %\compressFullBarRests
+            \tempo "Moderatto" 4 = 90
+            \key re \minor 
+            \time 6/8
+            %Escribir la musica aqui...
+            \override DynamicLineSpanner.staff-padding = #15
+            \newSpacingSection	
+            \override Score.SpacingSpanner.spacing-increment = #5
+            fa4 mi8 mi8 fa4		| %1
+            \mark \markup { \small "Instrumento" }
+            fa4 sol8 sol8 la4~		| %2
+            la4 r2			| %3
+            \mark \markup { \small "Voz" }
+            re,8 re8 re8 re8 mi4		| %4
+            mi8 fa4 fa4.			| %5
+            sib4 sib8 sol8 sol8 sol8 	| %6
+            la4. la4.			| %7
+            \repeat volta 1 {
+                <fa re'>4 <fa re'>8 <mi mi'>8 <mi mi'>8 <mi mi'>8 | %8
+                <fa fa'>4. <fa fa'>4.	| %9
+                <fa re'>4 <fa re'>8 <sol do>8 <sol do>8 <sol do>8 | %10
+                <la re>4. <la re>4.		| %11
+            }
+        }
+
+        letra_uno = \lyricmode { 
+            _ _ _ _ _ _ _ _
+            Cor de ro de Dios que qui tas el pe ca do del mun do. Ten pie dad de no so tros, ten pie dad de no so tros.
+        }
+
+        letra_dos = \lyricmode { 
+            _ _ _ _ _ _ _ _
+            Cor de ro de Dios que qui tas el pe ca do del mun do. Da - nos - la paz, - da - nos - la paz.
+        }
+
+        % --- Acordes
+        acordes = \new ChordNames {
+            \set chordChanges = ##t
+            \italianChords
+            \chordmode { 
+                re4:m la4:m re4:m sib4 do4 re2:m R2
+                re4.:m do4. re2.:m sib4. sol4.:m la2.
+                re4.:m la4.:m re2.:m sib4. do4. re2.:m
+            }
+        }
+
+        % --- Partitura
+        \score {
+        <<
+            \acordes
+            \new Staff { <<
+            \set Staff.midiInstrument = #"oboe"
+            \new Voice = "voz"
+            \instrumento
+            >>}
+            \new Lyrics \lyricsto "voz" { 
+            \letra_uno
+            }
+            \new Lyrics \lyricsto "voz" { 
+            \letra_dos
+            }
+        >>
+        \midi {}
+        \layout {}
+        }
+
+        % --- Pagina
+        \paper {
+        #( set-default-paper-size "letter")
+        } 
+    \end{lilypond}
+    \clearpage
+    
+\end{document}

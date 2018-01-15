@@ -1,0 +1,1144 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.10.14)  28 OCT 2015 17:40
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**mass.tex
+(./mass.tex
+LaTeX2e <2011/06/27>
+Babel <3.9k> and hyphenation patterns for 59 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2014/03/24 3.9k The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2014/01/29 v5.0m Spanish support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2014/03/24 3.9k Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\es@datefmt=\count89
+\es@quottoks=\toks14
+\es@quotdepth=\count90
+Package babel Info: Making " an active character on input line 496.
+Package babel Info: Making . an active character on input line 599.
+Package babel Info: Making < an active character on input line 644.
+Package babel Info: Making > an active character on input line 644.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count91
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count92
+\Gm@cntv=\count93
+\c@Gm@tempcnt=\count94
+\Gm@bindingoffset=\dimen104
+\Gm@wd@mp=\dimen105
+\Gm@odd@mp=\dimen106
+\Gm@even@mp=\dimen107
+\Gm@layoutwidth=\dimen108
+\Gm@layoutheight=\dimen109
+\Gm@layouthoffset=\dimen110
+\Gm@layoutvoffset=\dimen111
+\Gm@dimlist=\toks16
+)
+No file mass.aux.
+\openout1 = `mass.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Info: Redefining \. on input line 17.
+LaTeX Info: Redefining \% on input line 17.
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count95
+\scratchdimen=\dimen112
+\scratchbox=\box26
+\nofMPsegments=\count96
+\nofMParguments=\count97
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count98
+\MPscratchDim=\dimen113
+\MPnumerator=\count99
+\makeMPintoPDFobject=\count100
+\everyMPtoPDFconversion=\toks18
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(42.67912pt, 528.93675pt, 42.67912pt)
+* v-part:(T,H,B)=(42.67912pt, 709.61174pt, 42.67912pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=528.93675pt
+* \textheight=709.61174pt
+* \oddsidemargin=-29.59087pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-66.59087pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 20.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 20.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 20.
+[1
+
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
+(./28/lily-3819d3bc-systems.tex
+Package epstopdf Info: Source file: <./28/lily-3819d3bc-1.eps>
+(epstopdf)                    date: 2015-10-28 17:40:47
+(epstopdf)                    size: 475897 bytes
+(epstopdf)             Output file: <./28/lily-3819d3bc-1-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./28/lily-3819d3bc-1-eps-c
+onverted-to.pdf ./28/lily-3819d3bc-1.eps>
+(epstopdf)             \includegraphics on input line 1.
+runsystem(repstopdf --outfile=./28/lily-3819d3bc-1-eps-converted-to.pdf ./28/li
+ly-3819d3bc-1.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./28/lily-3819d3bc-1-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:48
+(epstopdf)                    size: 18390 bytes.
+
+<./28/lily-3819d3bc-1-eps-converted-to.pdf, id=10, 527.9725pt x 31.11626pt>
+File: ./28/lily-3819d3bc-1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./28/lily-3819d3bc-1-eps-converted-to.pdf>
+Package pdftex.def Info: ./28/lily-3819d3bc-1-eps-converted-to.pdf used on inpu
+t line 1.
+(pdftex.def)             Requested size: 527.9712pt x 31.11617pt.
+Package epstopdf Info: Source file: <./28/lily-3819d3bc-2.eps>
+(epstopdf)                    date: 2015-10-28 17:40:47
+(epstopdf)                    size: 476284 bytes
+(epstopdf)             Output file: <./28/lily-3819d3bc-2-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./28/lily-3819d3bc-2-eps-c
+onverted-to.pdf ./28/lily-3819d3bc-2.eps>
+(epstopdf)             \includegraphics on input line 7.
+runsystem(repstopdf --outfile=./28/lily-3819d3bc-2-eps-converted-to.pdf ./28/li
+ly-3819d3bc-2.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./28/lily-3819d3bc-2-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:48
+(epstopdf)                    size: 19042 bytes.
+
+<./28/lily-3819d3bc-2-eps-converted-to.pdf, id=11, 527.9725pt x 28.105pt>
+File: ./28/lily-3819d3bc-2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./28/lily-3819d3bc-2-eps-converted-to.pdf>
+Package pdftex.def Info: ./28/lily-3819d3bc-2-eps-converted-to.pdf used on inpu
+t line 7.
+(pdftex.def)             Requested size: 527.9712pt x 28.10492pt.
+Package epstopdf Info: Source file: <./28/lily-3819d3bc-3.eps>
+(epstopdf)                    date: 2015-10-28 17:40:47
+(epstopdf)                    size: 478636 bytes
+(epstopdf)             Output file: <./28/lily-3819d3bc-3-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./28/lily-3819d3bc-3-eps-c
+onverted-to.pdf ./28/lily-3819d3bc-3.eps>
+(epstopdf)             \includegraphics on input line 13.
+runsystem(repstopdf --outfile=./28/lily-3819d3bc-3-eps-converted-to.pdf ./28/li
+ly-3819d3bc-3.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./28/lily-3819d3bc-3-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:48
+(epstopdf)                    size: 59645 bytes.
+
+<./28/lily-3819d3bc-3-eps-converted-to.pdf, id=12, 527.9725pt x 59.22125pt>
+File: ./28/lily-3819d3bc-3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./28/lily-3819d3bc-3-eps-converted-to.pdf>
+Package pdftex.def Info: ./28/lily-3819d3bc-3-eps-converted-to.pdf used on inpu
+t line 13.
+(pdftex.def)             Requested size: 527.9712pt x 59.22108pt.
+Package epstopdf Info: Source file: <./28/lily-3819d3bc-4.eps>
+(epstopdf)                    date: 2015-10-28 17:40:47
+(epstopdf)                    size: 478212 bytes
+(epstopdf)             Output file: <./28/lily-3819d3bc-4-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./28/lily-3819d3bc-4-eps-c
+onverted-to.pdf ./28/lily-3819d3bc-4.eps>
+(epstopdf)             \includegraphics on input line 19.
+runsystem(repstopdf --outfile=./28/lily-3819d3bc-4-eps-converted-to.pdf ./28/li
+ly-3819d3bc-4.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./28/lily-3819d3bc-4-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:49
+(epstopdf)                    size: 43850 bytes.
+
+<./28/lily-3819d3bc-4-eps-converted-to.pdf, id=13, 527.9725pt x 62.2325pt>
+File: ./28/lily-3819d3bc-4-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./28/lily-3819d3bc-4-eps-converted-to.pdf>
+Package pdftex.def Info: ./28/lily-3819d3bc-4-eps-converted-to.pdf used on inpu
+t line 19.
+(pdftex.def)             Requested size: 527.9712pt x 62.23235pt.
+Package epstopdf Info: Source file: <./28/lily-3819d3bc-5.eps>
+(epstopdf)                    date: 2015-10-28 17:40:47
+(epstopdf)                    size: 481294 bytes
+(epstopdf)             Output file: <./28/lily-3819d3bc-5-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./28/lily-3819d3bc-5-eps-c
+onverted-to.pdf ./28/lily-3819d3bc-5.eps>
+(epstopdf)             \includegraphics on input line 25.
+runsystem(repstopdf --outfile=./28/lily-3819d3bc-5-eps-converted-to.pdf ./28/li
+ly-3819d3bc-5.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./28/lily-3819d3bc-5-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:49
+(epstopdf)                    size: 37741 bytes.
+
+<./28/lily-3819d3bc-5-eps-converted-to.pdf, id=14, 527.9725pt x 62.2325pt>
+File: ./28/lily-3819d3bc-5-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./28/lily-3819d3bc-5-eps-converted-to.pdf>
+Package pdftex.def Info: ./28/lily-3819d3bc-5-eps-converted-to.pdf used on inpu
+t line 25.
+(pdftex.def)             Requested size: 527.9712pt x 62.23235pt.
+Package epstopdf Info: Source file: <./28/lily-3819d3bc-6.eps>
+(epstopdf)                    date: 2015-10-28 17:40:47
+(epstopdf)                    size: 480963 bytes
+(epstopdf)             Output file: <./28/lily-3819d3bc-6-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./28/lily-3819d3bc-6-eps-c
+onverted-to.pdf ./28/lily-3819d3bc-6.eps>
+(epstopdf)             \includegraphics on input line 31.
+runsystem(repstopdf --outfile=./28/lily-3819d3bc-6-eps-converted-to.pdf ./28/li
+ly-3819d3bc-6.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./28/lily-3819d3bc-6-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:49
+(epstopdf)                    size: 36999 bytes.
+
+<./28/lily-3819d3bc-6-eps-converted-to.pdf, id=15, 527.9725pt x 66.2475pt>
+File: ./28/lily-3819d3bc-6-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./28/lily-3819d3bc-6-eps-converted-to.pdf>
+Package pdftex.def Info: ./28/lily-3819d3bc-6-eps-converted-to.pdf used on inpu
+t line 31.
+(pdftex.def)             Requested size: 527.9712pt x 66.24733pt.
+Package epstopdf Info: Source file: <./28/lily-3819d3bc-7.eps>
+(epstopdf)                    date: 2015-10-28 17:40:47
+(epstopdf)                    size: 483124 bytes
+(epstopdf)             Output file: <./28/lily-3819d3bc-7-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./28/lily-3819d3bc-7-eps-c
+onverted-to.pdf ./28/lily-3819d3bc-7.eps>
+(epstopdf)             \includegraphics on input line 37.
+runsystem(repstopdf --outfile=./28/lily-3819d3bc-7-eps-converted-to.pdf ./28/li
+ly-3819d3bc-7.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./28/lily-3819d3bc-7-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:50
+(epstopdf)                    size: 37693 bytes.
+
+<./28/lily-3819d3bc-7-eps-converted-to.pdf, id=16, 539.01375pt x 66.2475pt>
+File: ./28/lily-3819d3bc-7-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./28/lily-3819d3bc-7-eps-converted-to.pdf>
+Package pdftex.def Info: ./28/lily-3819d3bc-7-eps-converted-to.pdf used on inpu
+t line 37.
+(pdftex.def)             Requested size: 539.01242pt x 66.24733pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 25--37
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--37
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--37
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--37
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--37
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--37
+[]
+ []
+
+
+Overfull \hbox (10.07567pt too wide) in paragraph at lines 25--37
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--37
+
+ []
+
+[1 <./28/lily-3819d3bc-1-eps-converted-to.pdf> <./28/lily-3819d3bc-2-eps-conver
+ted-to.pdf> <./28/lily-3819d3bc-3-eps-converted-to.pdf> <./28/lily-3819d3bc-4-e
+ps-converted-to.pdf> <./28/lily-3819d3bc-5-eps-converted-to.pdf> <./28/lily-381
+9d3bc-6-eps-converted-to.pdf> <./28/lily-3819d3bc-7-eps-converted-to.pdf>]
+(./13/lily-bc5e548d-systems.tex
+Package epstopdf Info: Source file: <./13/lily-bc5e548d-1.eps>
+(epstopdf)                    date: 2015-10-28 17:40:46
+(epstopdf)                    size: 475230 bytes
+(epstopdf)             Output file: <./13/lily-bc5e548d-1-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./13/lily-bc5e548d-1-eps-c
+onverted-to.pdf ./13/lily-bc5e548d-1.eps>
+(epstopdf)             \includegraphics on input line 1.
+runsystem(repstopdf --outfile=./13/lily-bc5e548d-1-eps-converted-to.pdf ./13/li
+ly-bc5e548d-1.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./13/lily-bc5e548d-1-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:50
+(epstopdf)                    size: 18063 bytes.
+
+<./13/lily-bc5e548d-1-eps-converted-to.pdf, id=97, 527.9725pt x 31.11626pt>
+File: ./13/lily-bc5e548d-1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./13/lily-bc5e548d-1-eps-converted-to.pdf>
+Package pdftex.def Info: ./13/lily-bc5e548d-1-eps-converted-to.pdf used on inpu
+t line 1.
+(pdftex.def)             Requested size: 527.9712pt x 31.11617pt.
+Package epstopdf Info: Source file: <./13/lily-bc5e548d-2.eps>
+(epstopdf)                    date: 2015-10-28 17:40:46
+(epstopdf)                    size: 475886 bytes
+(epstopdf)             Output file: <./13/lily-bc5e548d-2-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./13/lily-bc5e548d-2-eps-c
+onverted-to.pdf ./13/lily-bc5e548d-2.eps>
+(epstopdf)             \includegraphics on input line 7.
+runsystem(repstopdf --outfile=./13/lily-bc5e548d-2-eps-converted-to.pdf ./13/li
+ly-bc5e548d-2.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./13/lily-bc5e548d-2-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:51
+(epstopdf)                    size: 18823 bytes.
+
+<./13/lily-bc5e548d-2-eps-converted-to.pdf, id=98, 527.9725pt x 28.105pt>
+File: ./13/lily-bc5e548d-2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./13/lily-bc5e548d-2-eps-converted-to.pdf>
+Package pdftex.def Info: ./13/lily-bc5e548d-2-eps-converted-to.pdf used on inpu
+t line 7.
+(pdftex.def)             Requested size: 527.9712pt x 28.10492pt.
+Package epstopdf Info: Source file: <./13/lily-bc5e548d-3.eps>
+(epstopdf)                    date: 2015-10-28 17:40:46
+(epstopdf)                    size: 478545 bytes
+(epstopdf)             Output file: <./13/lily-bc5e548d-3-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./13/lily-bc5e548d-3-eps-c
+onverted-to.pdf ./13/lily-bc5e548d-3.eps>
+(epstopdf)             \includegraphics on input line 13.
+runsystem(repstopdf --outfile=./13/lily-bc5e548d-3-eps-converted-to.pdf ./13/li
+ly-bc5e548d-3.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./13/lily-bc5e548d-3-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:51
+(epstopdf)                    size: 59665 bytes.
+
+<./13/lily-bc5e548d-3-eps-converted-to.pdf, id=99, 527.9725pt x 73.27374pt>
+File: ./13/lily-bc5e548d-3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./13/lily-bc5e548d-3-eps-converted-to.pdf>
+Package pdftex.def Info: ./13/lily-bc5e548d-3-eps-converted-to.pdf used on inpu
+t line 13.
+(pdftex.def)             Requested size: 527.9712pt x 73.27354pt.
+Package epstopdf Info: Source file: <./13/lily-bc5e548d-4.eps>
+(epstopdf)                    date: 2015-10-28 17:40:46
+(epstopdf)                    size: 479387 bytes
+(epstopdf)             Output file: <./13/lily-bc5e548d-4-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./13/lily-bc5e548d-4-eps-c
+onverted-to.pdf ./13/lily-bc5e548d-4.eps>
+(epstopdf)             \includegraphics on input line 19.
+runsystem(repstopdf --outfile=./13/lily-bc5e548d-4-eps-converted-to.pdf ./13/li
+ly-bc5e548d-4.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./13/lily-bc5e548d-4-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:51
+(epstopdf)                    size: 37329 bytes.
+
+<./13/lily-bc5e548d-4-eps-converted-to.pdf, id=100, 527.9725pt x 54.2025pt>
+File: ./13/lily-bc5e548d-4-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./13/lily-bc5e548d-4-eps-converted-to.pdf>
+Package pdftex.def Info: ./13/lily-bc5e548d-4-eps-converted-to.pdf used on inpu
+t line 19.
+(pdftex.def)             Requested size: 527.9712pt x 54.20236pt.
+Package epstopdf Info: Source file: <./13/lily-bc5e548d-5.eps>
+(epstopdf)                    date: 2015-10-28 17:40:46
+(epstopdf)                    size: 482278 bytes
+(epstopdf)             Output file: <./13/lily-bc5e548d-5-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./13/lily-bc5e548d-5-eps-c
+onverted-to.pdf ./13/lily-bc5e548d-5.eps>
+(epstopdf)             \includegraphics on input line 25.
+runsystem(repstopdf --outfile=./13/lily-bc5e548d-5-eps-converted-to.pdf ./13/li
+ly-bc5e548d-5.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./13/lily-bc5e548d-5-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:52
+(epstopdf)                    size: 44447 bytes.
+
+<./13/lily-bc5e548d-5-eps-converted-to.pdf, id=101, 527.9725pt x 94.3525pt>
+File: ./13/lily-bc5e548d-5-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./13/lily-bc5e548d-5-eps-converted-to.pdf>
+Package pdftex.def Info: ./13/lily-bc5e548d-5-eps-converted-to.pdf used on inpu
+t line 25.
+(pdftex.def)             Requested size: 527.9712pt x 94.35225pt.
+Package epstopdf Info: Source file: <./13/lily-bc5e548d-6.eps>
+(epstopdf)                    date: 2015-10-28 17:40:46
+(epstopdf)                    size: 481582 bytes
+(epstopdf)             Output file: <./13/lily-bc5e548d-6-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./13/lily-bc5e548d-6-eps-c
+onverted-to.pdf ./13/lily-bc5e548d-6.eps>
+(epstopdf)             \includegraphics on input line 31.
+runsystem(repstopdf --outfile=./13/lily-bc5e548d-6-eps-converted-to.pdf ./13/li
+ly-bc5e548d-6.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./13/lily-bc5e548d-6-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:52
+(epstopdf)                    size: 44198 bytes.
+
+<./13/lily-bc5e548d-6-eps-converted-to.pdf, id=102, 527.9725pt x 92.345pt>
+File: ./13/lily-bc5e548d-6-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./13/lily-bc5e548d-6-eps-converted-to.pdf>
+Package pdftex.def Info: ./13/lily-bc5e548d-6-eps-converted-to.pdf used on inpu
+t line 31.
+(pdftex.def)             Requested size: 527.9712pt x 92.34476pt.
+Package epstopdf Info: Source file: <./13/lily-bc5e548d-7.eps>
+(epstopdf)                    date: 2015-10-28 17:40:46
+(epstopdf)                    size: 482279 bytes
+(epstopdf)             Output file: <./13/lily-bc5e548d-7-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./13/lily-bc5e548d-7-eps-c
+onverted-to.pdf ./13/lily-bc5e548d-7.eps>
+(epstopdf)             \includegraphics on input line 37.
+runsystem(repstopdf --outfile=./13/lily-bc5e548d-7-eps-converted-to.pdf ./13/li
+ly-bc5e548d-7.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./13/lily-bc5e548d-7-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:53
+(epstopdf)                    size: 45090 bytes.
+
+<./13/lily-bc5e548d-7-eps-converted-to.pdf, id=103, 527.9725pt x 102.3825pt>
+File: ./13/lily-bc5e548d-7-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./13/lily-bc5e548d-7-eps-converted-to.pdf>
+Package pdftex.def Info: ./13/lily-bc5e548d-7-eps-converted-to.pdf used on inpu
+t line 37.
+(pdftex.def)             Requested size: 527.9712pt x 102.38225pt.
+Package epstopdf Info: Source file: <./13/lily-bc5e548d-8.eps>
+(epstopdf)                    date: 2015-10-28 17:40:47
+(epstopdf)                    size: 476617 bytes
+(epstopdf)             Output file: <./13/lily-bc5e548d-8-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./13/lily-bc5e548d-8-eps-c
+onverted-to.pdf ./13/lily-bc5e548d-8.eps>
+(epstopdf)             \includegraphics on input line 43.
+runsystem(repstopdf --outfile=./13/lily-bc5e548d-8-eps-converted-to.pdf ./13/li
+ly-bc5e548d-8.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./13/lily-bc5e548d-8-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:53
+(epstopdf)                    size: 36205 bytes.
+
+<./13/lily-bc5e548d-8-eps-converted-to.pdf, id=104, 527.9725pt x 64.24pt>
+File: ./13/lily-bc5e548d-8-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./13/lily-bc5e548d-8-eps-converted-to.pdf>
+Package pdftex.def Info: ./13/lily-bc5e548d-8-eps-converted-to.pdf used on inpu
+t line 43.
+(pdftex.def)             Requested size: 527.9712pt x 64.23984pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 42--54
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--54
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--54
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--54
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--54
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--54
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--54
+[]
+ []
+
+
+Overfull \hbox (1.25613pt too wide) in paragraph at lines 42--54
+[]  
+ []
+
+[2
+
+ <./13/lily-bc5e548d-1-eps-converted-to.pdf> <./13/lily-bc5e548d-2-eps-converte
+d-to.pdf> <./13/lily-bc5e548d-3-eps-converted-to.pdf> <./13/lily-bc5e548d-4-eps
+-converted-to.pdf> <./13/lily-bc5e548d-5-eps-converted-to.pdf> <./13/lily-bc5e5
+48d-6-eps-converted-to.pdf> <./13/lily-bc5e548d-7-eps-converted-to.pdf> <./13/l
+ily-bc5e548d-8-eps-converted-to.pdf>] (./d3/lily-96a30f41-systems.tex
+Package epstopdf Info: Source file: <./d3/lily-96a30f41-1.eps>
+(epstopdf)                    date: 2015-10-28 17:40:46
+(epstopdf)                    size: 542209 bytes
+(epstopdf)             Output file: <./d3/lily-96a30f41-1-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./d3/lily-96a30f41-1-eps-c
+onverted-to.pdf ./d3/lily-96a30f41-1.eps>
+(epstopdf)             \includegraphics on input line 1.
+runsystem(repstopdf --outfile=./d3/lily-96a30f41-1-eps-converted-to.pdf ./d3/li
+ly-96a30f41-1.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./d3/lily-96a30f41-1-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:53
+(epstopdf)                    size: 18146 bytes.
+
+<./d3/lily-96a30f41-1-eps-converted-to.pdf, id=196, 527.9725pt x 31.11626pt>
+File: ./d3/lily-96a30f41-1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./d3/lily-96a30f41-1-eps-converted-to.pdf>
+Package pdftex.def Info: ./d3/lily-96a30f41-1-eps-converted-to.pdf used on inpu
+t line 1.
+(pdftex.def)             Requested size: 527.9712pt x 31.11617pt.
+Package epstopdf Info: Source file: <./d3/lily-96a30f41-2.eps>
+(epstopdf)                    date: 2015-10-28 17:40:46
+(epstopdf)                    size: 542852 bytes
+(epstopdf)             Output file: <./d3/lily-96a30f41-2-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./d3/lily-96a30f41-2-eps-c
+onverted-to.pdf ./d3/lily-96a30f41-2.eps>
+(epstopdf)             \includegraphics on input line 7.
+runsystem(repstopdf --outfile=./d3/lily-96a30f41-2-eps-converted-to.pdf ./d3/li
+ly-96a30f41-2.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./d3/lily-96a30f41-2-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:54
+(epstopdf)                    size: 18823 bytes.
+
+<./d3/lily-96a30f41-2-eps-converted-to.pdf, id=197, 527.9725pt x 28.105pt>
+File: ./d3/lily-96a30f41-2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./d3/lily-96a30f41-2-eps-converted-to.pdf>
+Package pdftex.def Info: ./d3/lily-96a30f41-2-eps-converted-to.pdf used on inpu
+t line 7.
+(pdftex.def)             Requested size: 527.9712pt x 28.10492pt.
+Package epstopdf Info: Source file: <./d3/lily-96a30f41-3.eps>
+(epstopdf)                    date: 2015-10-28 17:40:46
+(epstopdf)                    size: 547489 bytes
+(epstopdf)             Output file: <./d3/lily-96a30f41-3-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./d3/lily-96a30f41-3-eps-c
+onverted-to.pdf ./d3/lily-96a30f41-3.eps>
+(epstopdf)             \includegraphics on input line 13.
+runsystem(repstopdf --outfile=./d3/lily-96a30f41-3-eps-converted-to.pdf ./d3/li
+ly-96a30f41-3.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./d3/lily-96a30f41-3-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:54
+(epstopdf)                    size: 60355 bytes.
+
+<./d3/lily-96a30f41-3-eps-converted-to.pdf, id=198, 527.9725pt x 66.2475pt>
+File: ./d3/lily-96a30f41-3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./d3/lily-96a30f41-3-eps-converted-to.pdf>
+Package pdftex.def Info: ./d3/lily-96a30f41-3-eps-converted-to.pdf used on inpu
+t line 13.
+(pdftex.def)             Requested size: 527.9712pt x 66.24733pt.
+Package epstopdf Info: Source file: <./d3/lily-96a30f41-4.eps>
+(epstopdf)                    date: 2015-10-28 17:40:46
+(epstopdf)                    size: 548357 bytes
+(epstopdf)             Output file: <./d3/lily-96a30f41-4-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./d3/lily-96a30f41-4-eps-c
+onverted-to.pdf ./d3/lily-96a30f41-4.eps>
+(epstopdf)             \includegraphics on input line 19.
+runsystem(repstopdf --outfile=./d3/lily-96a30f41-4-eps-converted-to.pdf ./d3/li
+ly-96a30f41-4.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./d3/lily-96a30f41-4-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:54
+(epstopdf)                    size: 37845 bytes.
+
+<./d3/lily-96a30f41-4-eps-converted-to.pdf, id=199, 527.9725pt x 74.2775pt>
+File: ./d3/lily-96a30f41-4-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./d3/lily-96a30f41-4-eps-converted-to.pdf>
+Package pdftex.def Info: ./d3/lily-96a30f41-4-eps-converted-to.pdf used on inpu
+t line 19.
+(pdftex.def)             Requested size: 527.9712pt x 74.27731pt.
+Package epstopdf Info: Source file: <./d3/lily-96a30f41-5.eps>
+(epstopdf)                    date: 2015-10-28 17:40:46
+(epstopdf)                    size: 548119 bytes
+(epstopdf)             Output file: <./d3/lily-96a30f41-5-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./d3/lily-96a30f41-5-eps-c
+onverted-to.pdf ./d3/lily-96a30f41-5.eps>
+(epstopdf)             \includegraphics on input line 25.
+runsystem(repstopdf --outfile=./d3/lily-96a30f41-5-eps-converted-to.pdf ./d3/li
+ly-96a30f41-5.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./d3/lily-96a30f41-5-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:55
+(epstopdf)                    size: 37695 bytes.
+
+<./d3/lily-96a30f41-5-eps-converted-to.pdf, id=200, 527.9725pt x 68.255pt>
+File: ./d3/lily-96a30f41-5-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./d3/lily-96a30f41-5-eps-converted-to.pdf>
+Package pdftex.def Info: ./d3/lily-96a30f41-5-eps-converted-to.pdf used on inpu
+t line 25.
+(pdftex.def)             Requested size: 527.9712pt x 68.25482pt.
+Package epstopdf Info: Source file: <./d3/lily-96a30f41-6.eps>
+(epstopdf)                    date: 2015-10-28 17:40:46
+(epstopdf)                    size: 546463 bytes
+(epstopdf)             Output file: <./d3/lily-96a30f41-6-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./d3/lily-96a30f41-6-eps-c
+onverted-to.pdf ./d3/lily-96a30f41-6.eps>
+(epstopdf)             \includegraphics on input line 31.
+runsystem(repstopdf --outfile=./d3/lily-96a30f41-6-eps-converted-to.pdf ./d3/li
+ly-96a30f41-6.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./d3/lily-96a30f41-6-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:55
+(epstopdf)                    size: 37196 bytes.
+
+<./d3/lily-96a30f41-6-eps-converted-to.pdf, id=201, 527.9725pt x 56.21pt>
+File: ./d3/lily-96a30f41-6-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./d3/lily-96a30f41-6-eps-converted-to.pdf>
+Package pdftex.def Info: ./d3/lily-96a30f41-6-eps-converted-to.pdf used on inpu
+t line 31.
+(pdftex.def)             Requested size: 527.9712pt x 56.20985pt.
+Package epstopdf Info: Source file: <./d3/lily-96a30f41-7.eps>
+(epstopdf)                    date: 2015-10-28 17:40:46
+(epstopdf)                    size: 545952 bytes
+(epstopdf)             Output file: <./d3/lily-96a30f41-7-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./d3/lily-96a30f41-7-eps-c
+onverted-to.pdf ./d3/lily-96a30f41-7.eps>
+(epstopdf)             \includegraphics on input line 37.
+runsystem(repstopdf --outfile=./d3/lily-96a30f41-7-eps-converted-to.pdf ./d3/li
+ly-96a30f41-7.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./d3/lily-96a30f41-7-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:56
+(epstopdf)                    size: 43487 bytes.
+
+<./d3/lily-96a30f41-7-eps-converted-to.pdf, id=202, 527.9725pt x 54.2025pt>
+File: ./d3/lily-96a30f41-7-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./d3/lily-96a30f41-7-eps-converted-to.pdf>
+Package pdftex.def Info: ./d3/lily-96a30f41-7-eps-converted-to.pdf used on inpu
+t line 37.
+(pdftex.def)             Requested size: 527.9712pt x 54.20236pt.
+Package epstopdf Info: Source file: <./d3/lily-96a30f41-8.eps>
+(epstopdf)                    date: 2015-10-28 17:40:46
+(epstopdf)                    size: 547833 bytes
+(epstopdf)             Output file: <./d3/lily-96a30f41-8-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./d3/lily-96a30f41-8-eps-c
+onverted-to.pdf ./d3/lily-96a30f41-8.eps>
+(epstopdf)             \includegraphics on input line 43.
+runsystem(repstopdf --outfile=./d3/lily-96a30f41-8-eps-converted-to.pdf ./d3/li
+ly-96a30f41-8.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./d3/lily-96a30f41-8-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:56
+(epstopdf)                    size: 37671 bytes.
+
+<./d3/lily-96a30f41-8-eps-converted-to.pdf, id=203, 527.9725pt x 73.27374pt>
+File: ./d3/lily-96a30f41-8-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./d3/lily-96a30f41-8-eps-converted-to.pdf>
+Package pdftex.def Info: ./d3/lily-96a30f41-8-eps-converted-to.pdf used on inpu
+t line 43.
+(pdftex.def)             Requested size: 527.9712pt x 73.27354pt.
+Package epstopdf Info: Source file: <./d3/lily-96a30f41-9.eps>
+(epstopdf)                    date: 2015-10-28 17:40:46
+(epstopdf)                    size: 547195 bytes
+(epstopdf)             Output file: <./d3/lily-96a30f41-9-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./d3/lily-96a30f41-9-eps-c
+onverted-to.pdf ./d3/lily-96a30f41-9.eps>
+(epstopdf)             \includegraphics on input line 49.
+runsystem(repstopdf --outfile=./d3/lily-96a30f41-9-eps-converted-to.pdf ./d3/li
+ly-96a30f41-9.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./d3/lily-96a30f41-9-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:56
+(epstopdf)                    size: 44243 bytes.
+
+<./d3/lily-96a30f41-9-eps-converted-to.pdf, id=204, 527.9725pt x 79.29625pt>
+File: ./d3/lily-96a30f41-9-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./d3/lily-96a30f41-9-eps-converted-to.pdf>
+Package pdftex.def Info: ./d3/lily-96a30f41-9-eps-converted-to.pdf used on inpu
+t line 49.
+(pdftex.def)             Requested size: 527.9712pt x 79.29604pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 59--71
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--71
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--71
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--71
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--71
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--71
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--71
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--71
+[]
+ []
+
+
+Overfull \hbox (1.25613pt too wide) in paragraph at lines 59--71
+[]  
+ []
+
+[3
+
+ <./d3/lily-96a30f41-1-eps-converted-to.pdf> <./d3/lily-96a30f41-2-eps-converte
+d-to.pdf> <./d3/lily-96a30f41-3-eps-converted-to.pdf> <./d3/lily-96a30f41-4-eps
+-converted-to.pdf> <./d3/lily-96a30f41-5-eps-converted-to.pdf> <./d3/lily-96a30
+f41-6-eps-converted-to.pdf> <./d3/lily-96a30f41-7-eps-converted-to.pdf> <./d3/l
+ily-96a30f41-8-eps-converted-to.pdf> <./d3/lily-96a30f41-9-eps-converted-to.pdf
+>] (./d9/lily-846380f6-systems.tex
+Package epstopdf Info: Source file: <./d9/lily-846380f6-1.eps>
+(epstopdf)                    date: 2015-10-28 17:40:45
+(epstopdf)                    size: 475007 bytes
+(epstopdf)             Output file: <./d9/lily-846380f6-1-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./d9/lily-846380f6-1-eps-c
+onverted-to.pdf ./d9/lily-846380f6-1.eps>
+(epstopdf)             \includegraphics on input line 1.
+runsystem(repstopdf --outfile=./d9/lily-846380f6-1-eps-converted-to.pdf ./d9/li
+ly-846380f6-1.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./d9/lily-846380f6-1-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:57
+(epstopdf)                    size: 18054 bytes.
+
+<./d9/lily-846380f6-1-eps-converted-to.pdf, id=301, 527.9725pt x 31.11626pt>
+File: ./d9/lily-846380f6-1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./d9/lily-846380f6-1-eps-converted-to.pdf>
+Package pdftex.def Info: ./d9/lily-846380f6-1-eps-converted-to.pdf used on inpu
+t line 1.
+(pdftex.def)             Requested size: 527.9712pt x 31.11617pt.
+Package epstopdf Info: Source file: <./d9/lily-846380f6-2.eps>
+(epstopdf)                    date: 2015-10-28 17:40:45
+(epstopdf)                    size: 475615 bytes
+(epstopdf)             Output file: <./d9/lily-846380f6-2-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./d9/lily-846380f6-2-eps-c
+onverted-to.pdf ./d9/lily-846380f6-2.eps>
+(epstopdf)             \includegraphics on input line 7.
+runsystem(repstopdf --outfile=./d9/lily-846380f6-2-eps-converted-to.pdf ./d9/li
+ly-846380f6-2.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./d9/lily-846380f6-2-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:57
+(epstopdf)                    size: 18823 bytes.
+
+<./d9/lily-846380f6-2-eps-converted-to.pdf, id=302, 527.9725pt x 28.105pt>
+File: ./d9/lily-846380f6-2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./d9/lily-846380f6-2-eps-converted-to.pdf>
+Package pdftex.def Info: ./d9/lily-846380f6-2-eps-converted-to.pdf used on inpu
+t line 7.
+(pdftex.def)             Requested size: 527.9712pt x 28.10492pt.
+Package epstopdf Info: Source file: <./d9/lily-846380f6-3.eps>
+(epstopdf)                    date: 2015-10-28 17:40:45
+(epstopdf)                    size: 479369 bytes
+(epstopdf)             Output file: <./d9/lily-846380f6-3-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./d9/lily-846380f6-3-eps-c
+onverted-to.pdf ./d9/lily-846380f6-3.eps>
+(epstopdf)             \includegraphics on input line 13.
+runsystem(repstopdf --outfile=./d9/lily-846380f6-3-eps-converted-to.pdf ./d9/li
+ly-846380f6-3.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./d9/lily-846380f6-3-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:58
+(epstopdf)                    size: 60184 bytes.
+
+<./d9/lily-846380f6-3-eps-converted-to.pdf, id=303, 527.9725pt x 65.24374pt>
+File: ./d9/lily-846380f6-3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./d9/lily-846380f6-3-eps-converted-to.pdf>
+Package pdftex.def Info: ./d9/lily-846380f6-3-eps-converted-to.pdf used on inpu
+t line 13.
+(pdftex.def)             Requested size: 527.9712pt x 65.24358pt.
+Package epstopdf Info: Source file: <./d9/lily-846380f6-4.eps>
+(epstopdf)                    date: 2015-10-28 17:40:45
+(epstopdf)                    size: 482425 bytes
+(epstopdf)             Output file: <./d9/lily-846380f6-4-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./d9/lily-846380f6-4-eps-c
+onverted-to.pdf ./d9/lily-846380f6-4.eps>
+(epstopdf)             \includegraphics on input line 19.
+runsystem(repstopdf --outfile=./d9/lily-846380f6-4-eps-converted-to.pdf ./d9/li
+ly-846380f6-4.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./d9/lily-846380f6-4-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:58
+(epstopdf)                    size: 37505 bytes.
+
+<./d9/lily-846380f6-4-eps-converted-to.pdf, id=304, 527.9725pt x 73.27374pt>
+File: ./d9/lily-846380f6-4-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./d9/lily-846380f6-4-eps-converted-to.pdf>
+Package pdftex.def Info: ./d9/lily-846380f6-4-eps-converted-to.pdf used on inpu
+t line 19.
+(pdftex.def)             Requested size: 527.9712pt x 73.27354pt.
+Package epstopdf Info: Source file: <./d9/lily-846380f6-5.eps>
+(epstopdf)                    date: 2015-10-28 17:40:45
+(epstopdf)                    size: 480965 bytes
+(epstopdf)             Output file: <./d9/lily-846380f6-5-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./d9/lily-846380f6-5-eps-c
+onverted-to.pdf ./d9/lily-846380f6-5.eps>
+(epstopdf)             \includegraphics on input line 25.
+runsystem(repstopdf --outfile=./d9/lily-846380f6-5-eps-converted-to.pdf ./d9/li
+ly-846380f6-5.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./d9/lily-846380f6-5-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:58
+(epstopdf)                    size: 37102 bytes.
+
+<./d9/lily-846380f6-5-eps-converted-to.pdf, id=305, 527.9725pt x 84.315pt>
+File: ./d9/lily-846380f6-5-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./d9/lily-846380f6-5-eps-converted-to.pdf>
+Package pdftex.def Info: ./d9/lily-846380f6-5-eps-converted-to.pdf used on inpu
+t line 25.
+(pdftex.def)             Requested size: 527.9712pt x 84.31477pt.
+Package epstopdf Info: Source file: <./d9/lily-846380f6-6.eps>
+(epstopdf)                    date: 2015-10-28 17:40:45
+(epstopdf)                    size: 479351 bytes
+(epstopdf)             Output file: <./d9/lily-846380f6-6-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./d9/lily-846380f6-6-eps-c
+onverted-to.pdf ./d9/lily-846380f6-6.eps>
+(epstopdf)             \includegraphics on input line 31.
+runsystem(repstopdf --outfile=./d9/lily-846380f6-6-eps-converted-to.pdf ./d9/li
+ly-846380f6-6.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./d9/lily-846380f6-6-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-10-28 17:40:59
+(epstopdf)                    size: 36951 bytes.
+
+<./d9/lily-846380f6-6-eps-converted-to.pdf, id=306, 527.9725pt x 82.3075pt>
+File: ./d9/lily-846380f6-6-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./d9/lily-846380f6-6-eps-converted-to.pdf>
+Package pdftex.def Info: ./d9/lily-846380f6-6-eps-converted-to.pdf used on inpu
+t line 31.
+(pdftex.def)             Requested size: 527.9712pt x 82.30728pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 76--88
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--88
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--88
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--88
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--88
+[]
+ []
+
+
+Overfull \hbox (1.25613pt too wide) in paragraph at lines 76--88
+[]  
+ []
+
+[4
+
+ <./d9/lily-846380f6-1-eps-converted-to.pdf> <./d9/lily-846380f6-2-eps-converte
+d-to.pdf> <./d9/lily-846380f6-3-eps-converted-to.pdf> <./d9/lily-846380f6-4-eps
+-converted-to.pdf> <./d9/lily-846380f6-5-eps-converted-to.pdf> <./d9/lily-84638
+0f6-6-eps-converted-to.pdf>] (./mass.aux
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+) ) 
+Here is how much of TeX's memory you used:
+ 3117 strings out of 493408
+ 45857 string characters out of 6144156
+ 109803 words of memory out of 5000000
+ 6448 multiletter control sequences out of 15000+600000
+ 13061 words of font info for 33 fonts, out of 8000000 for 9000
+ 953 hyphenation exceptions out of 8191
+ 38i,7n,29p,275b,248s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</us
+r/share/texlive/texmf-dist/fonts/type1/public/tex-gyre/qcsb.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/tex-gyre/qcsr.pfb
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-dist/fonts/type1/public
+/tex-gyre/qcsr.pfb): glyph `f_i' undefined
+></usr/share/texlive/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/cm-super/sfrm2488.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/cm-super/sfti2074.pfb>
+Output written on mass.pdf (5 pages, 396635 bytes).
+PDF statistics:
+ 387 PDF objects out of 1000 (max. 8388607)
+ 301 compressed objects within 4 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+
