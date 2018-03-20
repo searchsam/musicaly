@@ -9,16 +9,17 @@
 
 % --- Parametro globales
 global = {
-  \tempo "Solemne" 4 = 80 
+  \tempo "Moderatto" 4 = 100
   \key fa \major
   \time 4/4
   \dynamicUp
+  s1*2
   s1*25
   \bar "|."
 }
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Gloria a Dios en lo alto del cielo" \fontsize #2 "Misa de Cristo Rey" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Gloria a Dios en el cielo" \fontsize #2 "Misa de Cristo Rey" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Samuel José Gutiérrez Avilés" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
@@ -28,8 +29,15 @@ global = {
 
 % --- Musica
 soprano_music = \relative do'' {
-  do4\f la fa la sib sol fa fa sol la do re do2 r4 do\mf \bar "||"
-  re( mi) fa sol fa mi( fa8 mi re4 mi2 re4) do re mi fa mi re mi( fa8 mi re4 do4) re2 \fermata \breathe
+  fa,4\ppp( sol la do4~ 
+  do4 sib4) do2
+  r2 do8 do do do
+  do do do do sol4 sol
+  la4 r2. 
+  r1
+  re2 fa 
+  mib do4 la la
+  mi'( fa8 mi re4) sib4 re do2 re4 mi fa mi re mi( fa8 mi re4 do4) re2 \fermata \breathe
   mi4( fa8 sol2 fa8 mi4) fa sol fa mi( re) mi( fa8 mi re4 do2) re4 mi fa re2 \fermata \breathe
   do4( re) mi re4 mi( re8 do sib4) sol( la) do( re) mi re4( mi2 re8 do sib4 do la2) \fermata r4
   \bar "||"
@@ -42,8 +50,9 @@ soprano_music = \relative do'' {
 }
 
 soprano_letra = \lyricmode {
+  Glo -- ria.
   % Coro
-  Glo -- ria~a Dios en el cie -- lo, y paz en la tie -- rra.
+  a Dios en el cie -- lo y~en la tie -- rra paz, a los hom -- bres que a -- ma el Se -- ñor.
   % Estrofa #1
   Te~a -- la -- ba -- mos, te glo -- ri -- fi -- ca -- mos, te~a -- do -- ra -- mos,
   te~a -- do -- ra -- mos, te da -- mos gra -- ci -- as
@@ -54,8 +63,16 @@ soprano_letra = \lyricmode {
 }
 
 mezzo_music = \relative do'' {
-  la2\p do fa, la sib4 do la2 la( sol)  \bar "||"
-  r1 la2 re do la re1 re1 r 
+  fa,4\ppp( sol la do4~ 
+  do4 sib4) do2
+  r2 sol8 sol sol sol 
+  sol sol sol sol re4 re
+  fa4 sib8 sib sib sib sib sib 
+  sib sib fa4 fa la4 
+  r2 la8 la la fa~ fa4
+  fa4 fa mi mi
+  fa4 r2
+  la2 re do la re1 re1 r 
   r1 sol,2 do mi( re) do re r1 
   r1 sol,2 la do sol do1 r
   r1 r r r4 \fermata \breathe
@@ -63,8 +80,10 @@ mezzo_music = \relative do'' {
 }
 
 mezzo_letra = \lyricmode {
+  Glo -- ria.
   % Coro
-  Glo ria~a Dios; paz en la tie rra.
+  a Dios en el cie -- lo y~en la tie -- rra paz,
+  a Dios en el cie -- lo y~en la tie -- rra paz, a los hom -- bres que~a -- ma el Se -- ñor.
   % Estrofa #1
   Te glo -- ri -- fi -- ca -- mos.
   Te a -- do -- ra -- mos.
@@ -75,6 +94,14 @@ mezzo_letra = \lyricmode {
 }
 
 alto_music = \relative do' {
+  fa4\ppp( sol la do4~ 
+  do4 sib4) do2
+  r1*2
+  r4 fa,8 fa fa fa fa fa 
+  fa fa re4 re mi 
+  r2 fa8 fa fa re~ re4
+  re4 re dos dos
+  re4 r2
   fa1\mf do fa fa2( mi) \bar "||"
   re1\p fa sol2( fa) re4 mi( re8 mi fa4 mi2 fa sol2) fa4 r4
   do1 mi sol2 fa mi2( re4 do re2) mi4 r
@@ -85,8 +112,10 @@ alto_music = \relative do' {
 }
 
 alto_letra = \lyricmode {
+  Glo -- ria.
   % Coro
-  Glo ria y paz.
+  a Dios en el cie -- lo y~en la tie -- rra paz, a los hom -- bres que~a -- ma el Se -- ñor.
+  a Dios en lo al -- to del cie -- lo, y paz en la tie -- rra a los hom -- bres que a -- ma el Se -- ñor.
   % Estrofa #1
   Oh, te a -- do -- ra -- mos,
   te da -- mos gra -- ci -- as,

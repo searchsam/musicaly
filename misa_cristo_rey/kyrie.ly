@@ -9,14 +9,14 @@
 
 % --- Parametro globales
 global = {
-  \tempo "Solemne" 4 = 60 
+  \tempo "Adagio Solemne" 4 = 60 
   \key re \minor 
   \time 4/4
   \dynamicUp
-  s1*11
+  s1*15
   \bar "||"
   \mark \markup { \fermata }
-  s1*4
+  s1*15
   \bar "|."
 }
 
@@ -33,16 +33,13 @@ global = {
 soprano_music = \relative do'' {
   R1*22
   r1
-  re1(
-  dos1
-  re1
-  la1)
-  sib1(
-  dos1
-  re1
-  do2 sol
-  re'2 la
-  do1)
+  r1
+  la4( sol la sib)
+  re2( do4 sib
+  do2) r2
+  re2( mi)
+  re4( do re2)
+  do1
 }
 
 soprano_letra_uno = \lyricmode {
@@ -60,34 +57,30 @@ soprano_letra_tres = \lyricmode {
 
 mezzo_music = \relative do' {
   r1 
-  r2 re2\ppp( 
+  r2 fa2( 
   fa1) 
-  fa4( la2) sib4
+  sol2 la4 sib
   la4.( sol8 fa2)
-  fa4( mi2 re4)
-  fa1
-  sol4( sib do2)
-  la2 re,2(
-  mi8 fa sol2) sib4~
-  sib4 fa2
-  mi4~
-  mi4 sol2( la4
-  fa4 mi)
-  la2( 
-  sol4 la sol2) 
-  fa1
+  mi4( fa2) r4
+  r4 la2.
+  sib4( do re2)
+  la2 fa2(
+  sol4 fa la2) 
+  sib2 sol2
+  la2 sol2( la4
+  sib4 do2)
+  si2( 
+  sol4 fa
+  sol1)
   R1*7
   r1
-  r1
-  la4( sols la sib)
-  la2( sol4 fa~
-  fa2) r4 mi(
-  re2 fa
-  mi8 fa sol la~ la2)
-  sol2( sib
-  la4 sib do sib~
-  sib1)
-  la1
+  la1(
+  fa1
+  sib1
+  la1)
+  sol1(
+  si1
+  sol1)
 }
 
 mezzo_letra_uno = \lyricmode {
@@ -102,21 +95,21 @@ mezzo_letra_tres = \lyricmode {
   Tú _  que nos re -- _ su -- ci -- ta -- rás y glo -- ri -- fi -- ca -- rás con -- ti -- go. Se -- _ ñor, ten pie -- dad. Se -- _ ñor, ten pie -- dad.
 }
 alto_music = \relative do' {
-  la1\ppp
-  la1
-  sib2( do
-  do4 re do2)
+  do1
+  do1
+  re2( do
+  re1)
   re2( do
   sib2 la)
   sib8( la sib do re2)
-  re4( fa sol mi
-  fa2) re(~
-  re2 mi4 fa
+  fa4( mi fa sol
+  fa2) fa(~
+  fa2 mi4 fa
   do1)
+  mi1
+  sol2( fa)
+  re1
   do1
-  re4( do sib la)
-  sol1
-  la1
   r2 do2(
   mi1)
   re1
@@ -126,20 +119,17 @@ alto_music = \relative do' {
   la1
   r1 
   r1 
-  fa'2 mi2 
-  dos2 fa2 
-  re2 do
-  la2 sib
-  dos2 mi
+  fa'2 re2 
+  sol1
+  do,2 fa
+  si,2 sol'
   re2 fa
   mi1
-  re1
-  fa1
 }
 
 alto_letra = \lyricmode {
   Se ñor, tú nos li -- bras -- te de la muer -- te. Se -- ñor, ten pie -- dad. 
-  Se -- ñor, Se -- ñor, pie -- dad. Se -- ñor, Se -- ñor, pie -- dad, ten pie -- dad.
+  Se -- ñor, Se -- ñor, pie -- dad. Se -- ñor, pie -- dad.
   %Ah. Se -- ñor, ten pie -- dad. Ah. Cris -- to, ten pie -- dad.
 }
 
