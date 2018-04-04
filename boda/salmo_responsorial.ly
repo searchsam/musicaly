@@ -5,7 +5,7 @@
 \language "espanol"
 \version "2.19.80"
 
-#(set-global-staff-size 22)
+%#(set-global-staff-size 22)
 
 \include "gregorian.ly"
 
@@ -37,7 +37,7 @@ antifona = \relative do' {
     \dynamicUp
     \clef "G_8"
     \newSpacingSection
-    \override Score.SpacingSpanner.spacing-increment = #3.7
+    \override Score.SpacingSpanner.spacing-increment = #4.1
     la4 la la la la4 la la re2( do sib) \divisioMaior la4 la la la la4 sol la2( sol fa la) \finalis
 }
 
@@ -45,6 +45,13 @@ antifona = \relative do' {
 letra_antifona = \lyricmode {
     Di -- cho -- so~el pue -- blo que~el Se -- ñor,
     se~es -- co -- gió co -- mo~he -- re -- dad.
+}
+
+armonia_antifona = \new ChordNames {
+    \italianChords
+    \chordmode { 
+        re4:m R4*6 sib2 R4*4 re4:m R4*4 la4:7 R4*4 sib2 re2:m
+    }
 }
 
 % --- Musica
@@ -57,7 +64,7 @@ estrofaUno = \relative do' {
     re4 fa fa fa mi do2 do \divisioMinima do4 do sib2 la \divisioMaior \break
     la4 la la la re2( mi fa) mi \divisioMinima re4 re re2( do) re \divisioMaior \break
     \newSpacingSection
-    \override Score.SpacingSpanner.spacing-increment = #7.8
+    \override Score.SpacingSpanner.spacing-increment = #8.1
     re4 re re re re do2( mi) re \divisioMinima do4 do do sib2 la \finalis
 }
 
@@ -67,6 +74,17 @@ letra_estrofaUno = \lyricmode {
     y to -- das su ac -- cio -- nes son lea -- les;
     él a -- ma la jus -- ti -- cia y~el de -- re -- cho,
     y su mi -- se -- ri -- cor -- dia lle -- na la tie -- rra.
+}
+
+armonia_estrofaUno = \new ChordNames {
+    \set chordChanges = ##t
+    \italianChords
+    \chordmode { 
+        re4:m R4*5 sib2 R4*4 do2 re4:m R4*3 do2 re2:m
+        R4 sib4 R4*2 do4 R4*6 sib2 re2:m
+        R4*4 sib2 R4*4 do2 re4:m R4*3 do2 re2:m
+        R4*5 do2 R2 re2:m do4 R4*2 sib2 re2:m
+    }
 }
 
 % --- Musica
@@ -79,7 +97,7 @@ estrofaDos = \relative do' {
     re4 fa fa fa fa mi do2 do \divisioMinima do4 do do sib2 la \divisioMaior \break
     la4 la la la re2( mi fa) mi \divisioMinima re4 re re2( do re) \divisioMaior \break
     \newSpacingSection
-    \override Score.SpacingSpanner.spacing-increment = #12.6
+    \override Score.SpacingSpanner.spacing-increment = #13
     re4 re re do2( mi re) \divisioMinima do4 sib2 la \finalis
 }
 
@@ -89,6 +107,17 @@ letra_estrofaDos = \lyricmode {
     el a -- lien -- to de su vo -- ca, sus e -- jér -- ci -- tos,
     por -- que él lo di -- jo, y~ex -- xis -- tió,
     él lo man -- dó, y sur -- gió.
+}
+
+armonia_estrofaDos = \new ChordNames {
+    \set chordChanges = ##t
+    \italianChords
+    \chordmode { 
+        re4:m R4*5 sib2 R4*4 do2 re4:m R4*3 do2 re2:m
+        R4 sib4 R4*3 do4 R4*7 sib2 re2:m
+        R4*4 sib2 R4*4 do2 re4:m R4*3 do2 re2:m
+        R4*3 do2 R4*2 re2:m do4 sib2 re2:m
+    }
 }
 
 % --- Musica
@@ -101,7 +130,7 @@ estrofaTres = \relative do' {
     re4 fa fa mi do2 \divisioMinima do4 do do do do sib2 la \divisioMaior \break
     la4 la la la la re2( mi fa) mi \divisioMinima re4 re re2( do) re \divisioMaior \break
     \newSpacingSection
-    \override Score.SpacingSpanner.spacing-increment = #8.6
+    \override Score.SpacingSpanner.spacing-increment = #9
     re4 re re do2( mi) re \divisioMinima do4 do do do sib2 la \finalis
 }
 
@@ -111,6 +140,17 @@ letra_estrofaTres = \lyricmode {
     en los que~es -- pe -- ran en su mi -- se -- ri -- cor -- dia,
     pa -- ra li -- brar sus vi -- das de la muer -- te
     y rea -- ni -- mar -- los en tiem -- pos de ham -- bre.
+}
+
+armonia_estrofaTres = \new ChordNames {
+    \set chordChanges = ##t
+    \italianChords
+    \chordmode { 
+        re4:m R4*4 sib2 R4*4 do2 re4:m R4*7 do2 re2:m
+        R4 sib4 R4 do4 R4*7 sib2 re2:m
+        R4*5 sib2 R4*4 do2 re4:m R4*3 do2 re2:m
+        R4*3 do2 R4*2 re2:m do4 R4*3 sib2 re2:m
+    }
 }
 
 % --- Musica
@@ -135,6 +175,17 @@ letra_estrofaCuatro = \lyricmode {
     co -- mo lo~es -- pe -- ra -- mos de ti.
 }
 
+armonia_estrofaCuatro = \new ChordNames {
+    \set chordChanges = ##t
+    \italianChords
+    \chordmode { 
+        re4:m R4*4 sib2 R4*4 do2 re4:m R4*3 do2 re2:m
+        R4 sib4 R4 do4 R4*6 sib2 re2:m
+        R4*8 sib2 R4*4 do2 re4:m R4*6 do2 re2:m
+        R4*4 do2 R4*2 re2:m sib2 re2:m
+    }
+}
+
 \book {
     \markup { \fill-line { \center-column { \fontsize #5 "Melodia de la Trinidad" \fontsize #2 "Solemnidad de la Santisima Trinidad" \small "Salmo Responsorial ciclo A" } } }
     \markup { \fill-line { " " \fontsize #2 "Musica: Samuel Gutierrez"  } }
@@ -149,6 +200,7 @@ letra_estrofaCuatro = \lyricmode {
     \markup { \italic "Primera vez repetir 2 veces."}
     \score {
         <<
+            \armonia_antifona
             \new Staff <<
                 \new Voice = "voz" \antifona
                 \new Lyrics \lyricsto "voz" \letra_antifona
@@ -159,6 +211,7 @@ letra_estrofaCuatro = \lyricmode {
     
     \score {
         <<
+            \armonia_estrofaUno
             \new Staff <<
                 \new Voice = "voz" \estrofaUno
                 \new Lyrics \lyricsto "voz" \letra_estrofaUno
@@ -169,6 +222,7 @@ letra_estrofaCuatro = \lyricmode {
     
     \score {
         <<
+            \armonia_estrofaDos
             \new Staff <<
                 \new Voice = "voz" \estrofaDos
                 \new Lyrics \lyricsto "voz" \letra_estrofaDos
@@ -179,6 +233,7 @@ letra_estrofaCuatro = \lyricmode {
     
     \score {
         <<
+            \armonia_estrofaTres
             \new Staff <<
                 \new Voice = "voz" \estrofaTres
                 \new Lyrics \lyricsto "voz" \letra_estrofaTres
@@ -189,6 +244,7 @@ letra_estrofaCuatro = \lyricmode {
     
     \score {
         <<
+            \armonia_estrofaCuatro
             \new Staff <<
                 \new Voice = "voz" \estrofaCuatro
                 \new Lyrics \lyricsto "voz" \letra_estrofaCuatro
