@@ -44,16 +44,26 @@ harmony_antifona = \new ChordNames {
     }
 }
 
+%organ
+organ_antifona = \relative do' {
+  \key la \major
+  \set Score.timing = ##f
+    <fas la>1
+}
+
 % --- Antifona
 \score {
 <<
-    \new ChoirStaff <<
-        \new Voice = "antifona" <<
-            \set Staff.midiInstrument = #"choir aahs"
-            \melody_antifona
-        >>
-        \new Lyrics = "antifona" \lyricsto antifona \letter_antifona
-    >>
+   \new Voice = "antifona" {<<
+     \set Staff.midiInstrument = #"choir aahs"
+     \melody_antifona
+   >>}
+   \new Lyrics = "antifona" \lyricsto antifona \letter_antifona
+   \new Staff <<
+     \set Staff.midiInstrument = #"church organ"
+     \set Staff.midiMaximumVolume = #0.6
+     \organ_antifona
+   >>
 >>
     \midi { }
     \layout {

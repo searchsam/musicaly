@@ -13,10 +13,10 @@
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Salmo Responsorial" \fontsize #2 "Salmo 40 (39) 7-11" } } }
-\markup { \fill-line { " " \fontsize #2 "Música: Samuel Gutiérrez"  } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" \small "(Febrero, 2019)" } } }
+%\markup { \fill-line { " " \fontsize #2 "Música: Samuel Gutiérrez"  } }
+%\markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" \small "(Febrero, 2019)" } } }
 \header {
-    dedication = "Consagración Itxia del Niño Jesús - Carmelitas Descalzas Managua"
+    %dedication = "Consagración Itxia del Niño Jesús - Carmelitas Descalzas Managua"
     copyright = "Creative Commons Attribution 3.0"
     tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
     breakbefore = ##t
