@@ -24,7 +24,7 @@ global = {
   \bar "|."
 }
 
-\markup { \fill-line { \center-column { \fontsize #5 "Gloria" \fontsize #2 "Himno Liturgico" \small "Para la Gloria del Señor" } } }
+\markup { \fill-line { \center-column { \fontsize #5 "Gloria" \fontsize #2 "Himno Liturgico - Misa Melodica" \small "Para la Gloria del Señor" } } }
 \markup { \fill-line { \fontsize #2 \smallCaps "Tenor" \fontsize #2 "Musica: Alejandro Mejia"  } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Armonización de la partitura original: Francisco Jarquín Vega" \small "(30 Junio, 2012)" } } }
 
