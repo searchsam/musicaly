@@ -47,13 +47,11 @@ harmony_antifona = \new ChordNames {
 % --- Antifona
 \score {
 <<
-    \new ChoirStaff <<
-        \new Voice = "antifona" <<
-            \set Staff.midiInstrument = #"choir aahs"
-            \melody_antifona
-        >>
-        \new Lyrics = "antifona" \lyricsto antifona \letter_antifona
+    \new Voice = "antifona" <<
+        \set Staff.midiInstrument = #"choir aahs"
+        \melody_antifona
     >>
+    \new Lyrics = "antifona" \lyricsto antifona \letter_antifona
 >>
     \midi { }
     \layout {
@@ -89,18 +87,18 @@ melody_stanza = \relative do' {
   \key la \major
   \set Score.timing = ##f
   fas\breve sols4 la4 sols4 fas4( mi4) fas2 \divisioMaior \break
-  mi\breve fas4 sols4( la4) sols2 \divisioMinima sols\breve si4( las4 sols4 fas4) sols2 \divisioMaior \break
+  mi\breve fas4 sols4( la4) sols\breve si4( las4 sols4 fas4) sols2 \divisioMaior \break
   sols4 la4 si4 la4 sols4 fas4 sols\breve fas4 sols4 sols2 \divisioMaior \break
-  sols4 la4 sols4 fas4 mi\breve re4 mi4 fas4 fas2 \finalis \break
+  sols4 la4 sols4 fas4 mi\breve re4 mi4 mi4 fas2 \finalis \break
   s32-"R."
 }
 letter_stanza_uno = \lyricmode {
   \once \override LyricText.self-alignment-X = #LEFT
   "Sacrificios, Señor" tú no qui -- sis -- te,
   \once \override LyricText.self-alignment-X = #LEFT
-  "abriste," en cam -- bio,
+  "abriste," en cam
   \once \override LyricText.self-alignment-X = #LEFT
-  "mis oídos a" tu voz.
+  "bio, mis oídos a" tu voz.
   No~ex -- xi -- gis -- te ho -- lo 
   \once \override LyricText.self-alignment-X = #LEFT
   "caustos por" la cul -- pa,
@@ -111,7 +109,7 @@ letter_stanza_dos = \lyricmode {
   \once \override LyricText.self-alignment-X = #LEFT
   "En tus libros" se me or -- de -- na
   \once \override LyricText.self-alignment-X = #LEFT
-  "ha" cer tu _
+  "ha" cer tu
   \once \override LyricText.self-alignment-X = #LEFT
   "vo" lun tad;
   es -- to es, Se _ -- ñor,
@@ -126,12 +124,12 @@ letter_stanza_tres = \lyricmode {
   \once \override LyricText.self-alignment-X = #LEFT
   "He aunucia" do tu jus -- ti -- cia
   \once \override LyricText.self-alignment-X = #LEFT
-  "en" la gran _
+  "en" la gran
   \once \override LyricText.self-alignment-X = #LEFT
   "asam" ble a;
-  no he _ _ _ _
+  no he ce -- ra _ do
   \once \override LyricText.self-alignment-X = #LEFT
-  "cerrado" mis la -- bios,
+  _ mis la -- bios,
   tú lo sa -- bes,
   \once \override LyricText.self-alignment-X = #LEFT
   "Se" _ -- ñor. _
@@ -141,15 +139,15 @@ letter_stanza_cuatro = \lyricmode {
   \once \override LyricText.self-alignment-X = #LEFT
   "No ca" llé tu jus -- ti -- cia,
   \once \override LyricText.self-alignment-X = #LEFT
-  "antes bien," pro -- cla -- mé
+  "antes bien," pro -- cla
   \once \override LyricText.self-alignment-X = #LEFT
-  "tu lealtad y tu aux" xi -- lio.
-  Ta a -- mor y tu le 
+  "mé tu lealtad y tu aux" xi -- lio.
+  Tu a -- mor y tu le 
   \once \override LyricText.self-alignment-X = #LEFT
   "altad no los he o" cul ta -- do
   a la gran _
   \once \override LyricText.self-alignment-X = #LEFT
-  "a" sam ble a. _
+  "a" sam ble _ a.
 }
 
 % --- acordes
@@ -162,16 +160,14 @@ harmony_stanza = \new ChordNames {
 % --- Estrofa
 \score {
 <<
-    \new ChoirStaff <<
-        \new Voice = "stanza" <<
-            \set Staff.midiInstrument = #"choir aahs"
-            \melody_stanza
-        >>
-        \new Lyrics = "primera" \lyricsto stanza \letter_stanza_uno
-        \new Lyrics = "segunda" \lyricsto stanza \letter_stanza_dos
-        \new Lyrics = "tercera" \lyricsto stanza \letter_stanza_tres
-        \new Lyrics = "cuarta" \lyricsto stanza \letter_stanza_cuatro
+    \new Voice = "stanza" <<
+        \set Staff.midiInstrument = #"choir aahs"
+        \melody_stanza
     >>
+    \new Lyrics = "primera" \lyricsto stanza \letter_stanza_uno
+    \new Lyrics = "segunda" \lyricsto stanza \letter_stanza_dos
+    \new Lyrics = "tercera" \lyricsto stanza \letter_stanza_tres
+    \new Lyrics = "cuarta" \lyricsto stanza \letter_stanza_cuatro
 >>
     \midi { }
     \layout {

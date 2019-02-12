@@ -30,7 +30,7 @@ melody_antifona = \relative do' {
   \key la \major
   \set Score.timing = ##f
   fas4 mi4 fas4 sols4( fas4) mi4 fas2 r4 \divisioMaior
-  mi4 mi4 la2 \divisioMinima la4 la4 sols4 mi4( fas2) r2 \finalis \break
+  mi8 mi8 la2 \divisioMinima la4 la4 sols4 mi4( fas2) r2 \finalis \break
   s32
 }
 letter_antifona = \lyricmode {
@@ -98,22 +98,16 @@ melody_stanza = \relative do' {
   \tempo 4 = 80
   \key la \major
   \set Score.timing = ##f
-  fas\breve sols4 la4 sols4 fas4( mi4) fas2 r2 \divisioMaxima \break
-  mi\breve fas4 sols4( la4) sols\breve si4( las4 sols4 fas4) sols2 r2\divisioMaxima \break
-  sols4 la4 si4 la4 sols4 fas4 sols\breve fas4 sols4 sols2 r2\divisioMaxima \break
-  sols4 la4 sols4 fas4 mi\breve re4 mi4 fas4 fas2 r2\finalis \break
+  fas4 fas4 fas4 fas4 fas4 fas4 sols4 la4 sols4 fas4( mi4) fas2 r2 \divisioMaxima \break
+  mi4 mi4 mi4 fas4 sols4( la4) sols4 r8 sols4 sols4 sols4 sols4 sols4 si4( las4 sols4 fas4) sols2 r2\divisioMaxima \break
+  sols4 la4 si4 la4 sols4 fas4 sols4 sols4 sols4 fas4 sols4 sols2 r2\divisioMaxima \break
+  sols4 la4 sols4 fas4 mi4 re4 mi4 mi4 fas2 r2\finalis \break
   s32-"R."
 }
 letter_stanza_uno = \lyricmode {
-  \once \override LyricText.self-alignment-X = #LEFT
-  "Sacrificios, Señor" tú no qui -- sis -- te,
-  \once \override LyricText.self-alignment-X = #LEFT
-  "abriste," en cam
-  \once \override LyricText.self-alignment-X = #LEFT
-  "bio, mis oídos a" tu voz.
-  No~ex -- xi -- gis -- te ho -- lo 
-  \once \override LyricText.self-alignment-X = #LEFT
-  "caustos por" la cul -- pa,
+  Sa -- cri -- fi -- cios, Se -- ñor tú no qui -- sis -- te,
+  a -- bris -- te, en cam -- bio, mis o -- í -- dos a tu voz.
+  No~ex -- xi -- gis -- te ho -- lo -- caus -- tos por la cul -- pa,
   a -- sí que di -- je: A -- quí es -- toy.
 }
 
@@ -178,9 +172,9 @@ harmony_stanza = \new ChordNames {
             \melody_stanza
         >>
         \new Lyrics = "primera" \lyricsto stanza \letter_stanza_uno
-        \new Lyrics = "segunda" \lyricsto stanza \letter_stanza_dos
-        \new Lyrics = "tercera" \lyricsto stanza \letter_stanza_tres
-        \new Lyrics = "cuarta" \lyricsto stanza \letter_stanza_cuatro
+        %\new Lyrics = "segunda" \lyricsto stanza \letter_stanza_dos
+        %\new Lyrics = "tercera" \lyricsto stanza \letter_stanza_tres
+        %\new Lyrics = "cuarta" \lyricsto stanza \letter_stanza_cuatro
     >>
 >>
     \midi { }
