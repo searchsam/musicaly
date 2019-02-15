@@ -44,16 +44,22 @@ harmony_antifona = \new ChordNames {
     }
 }
 
-%organ
+% --- organ
 organ_antifona = \relative do' {
   \key la \major
   \set Score.timing = ##f
-    <fas la>1
+  <<
+    {fas4 mi fas sols fas mi fas2 r4 mi8 mi la2 la4 la sols mi fas1}
+    \\
+    {re1~ re la~ la re}
+  >>
+   \finalis
 }
 
 % --- Antifona
 \score {
 <<
+  \new ChoirStaff <<
    \new Voice = "antifona" {<<
      \set Staff.midiInstrument = #"choir aahs"
      \melody_antifona
@@ -64,6 +70,7 @@ organ_antifona = \relative do' {
      \set Staff.midiMaximumVolume = #0.6
      \organ_antifona
    >>
+  >>
 >>
     \midi { }
     \layout {
@@ -104,6 +111,7 @@ melody_stanza = \relative do' {
   sols4 la4 sols4 fas4 mi4 re4 mi4 mi4 fas2 r2\finalis \break
   s32-"R."
 }
+
 letter_stanza_uno = \lyricmode {
   Sa -- cri -- fi -- cios, Se -- ñor tú no qui -- sis -- te,
   a -- bris -- te, en cam -- bio, mis o -- í -- dos a tu voz.
@@ -156,6 +164,28 @@ letter_stanza_cuatro = \lyricmode {
   "a" sam ble a. _
 }
 
+% --- organ
+organ_stanza = \relative do' {
+  \key la \major
+  \set Score.timing = ##f
+  <<
+    {
+        fas4 fas4 fas4 fas4 fas4 fas4 sols4 la4 sols4 fas4( mi4) fas2 r2
+        mi4 mi4 mi4 fas4 sols4( la4) sols4 r8 sols4 sols4 sols4 sols4 sols4 si4( las4 sols4 fas4) sols2 r2
+        sols4 la4 si4 la4 sols4 fas4 sols4 sols4 sols4 fas4 sols4 sols2 r2
+        sols4 la4 sols4 fas4 mi4 re4 mi4 mi4 fas2 r2
+    }
+    \\
+    {
+      re1~ re~ re~ re2 mi4
+      la,1~ la2 mi'1~ mi~ mi~ mi4. sols4
+      mi1~ mi~ mi~ mi2 sols4
+      mi1~ mi4 re4 mi2 re2~ re4 fas4
+    }
+  >>
+   \finalis
+}
+
 % --- acordes
 harmony_stanza = \new ChordNames { 
   \chordmode { 
@@ -175,6 +205,11 @@ harmony_stanza = \new ChordNames {
         %\new Lyrics = "segunda" \lyricsto stanza \letter_stanza_dos
         %\new Lyrics = "tercera" \lyricsto stanza \letter_stanza_tres
         %\new Lyrics = "cuarta" \lyricsto stanza \letter_stanza_cuatro
+        \new Staff <<
+         \set Staff.midiInstrument = #"church organ"
+         \set Staff.midiMaximumVolume = #0.6
+         \organ_stanza
+       >>
     >>
 >>
     \midi { }
