@@ -57,31 +57,56 @@ cantus = \relative do'' {
     r2 la8 la la4 |
     la4 do4 do8 do sib4 |
     sib4 re re8 re do4 |
-    do4 la r2 |
+    do4 la2 r4 |
     
     do8 do do4 do4 mi4 |
-    mi8 mi re4 re4 fa4 |
-    fa8 fa mi4 mi4 do2
+    mi8 mi re4 re4 do4 |
+    do8 do sib4 sib4 sol4~ |
+    sol4 sol8 sol la4( sol)
+    la1 |
+    R1 |
+    la8^\markup{\italic "Solo"} la4. re,2 |
+    fa4 sol8 sol la2 |
+    sol2 re8 re4. |
+    fa8 fa mi mi re4 re4~ |
+    re4 r la'4^\markup{\italic "Tutti"} la |
+    mi sol la sib
+    la2 re2 |
+    dos4 si( la2 
+    sol4) la2.
 }
 
 altus = \relative do' {
     re8 re re4 re fa |
     fa8 fa mi4 mi sol |
-    sol8 sol fa4 fa fa |
-    
-    r2 fa8 fa fa4 |
+    sol8 sol fa4 fa fa~ |
+    fa4 r fa8 fa fa4 |
     fa4 la4 la8 la sol4 |
     sol4 sib4 sib8 sib la4 |
-    la4 fa2
+    la4 fa2 r4 |
+    re4 re mi2
+    fas1 |
+    R1*5 |
+    r2 re4 re |
+    mi4 mi fa2 |
+    fa fa2 |
+    la4 sol fas mi8( res |
+    mi4) fas2. |
 }
 
 textocantus = \lyricmode{
     Y~en la tie -- rra paz a los hom -- bres que a -- ma el Se -- ñor.
+    Te~a -- la -- ba -- mos, te glo -- ri -- fi -- ca -- mos, te da -- mos gra -- cias _ por tu glo -- _ ria.
+    
+    Se -- ñor Dios, Rey ce -- les -- tial, Dios Pa -- dre to -- do -- po -- de -- ro -- so. _
+    Se -- ñor, Hi -- jo ú -- ni -- co, Je -- su -- cris -- _ _ to.
 }
 
 textoaltus = \lyricmode{
-    Y~en la tie -- rra paz a los hom -- bres que a -- ma el Se -- ñor.
+    Y~en la tie -- rra paz a los hom -- bres que a -- ma el Se -- ñor. _
+    
     Te~a -- la -- ba -- mos, te glo -- ri -- fi -- ca -- mos, te da -- mos gra -- cias por tu glo -- ria.
+    Se -- ñor, Hi -- jo ú -- ni -- co, Je -- su -- cris -- _ _ _ to.
 }
 
 incipitcantus = \markup {
