@@ -49,7 +49,7 @@ global = {
     \tempo 4 = 100
     \key re \minor 
     \time 2/2  
-    \skip 1*5
+    \skip 1*25
     \bar "|."
 }
 
@@ -64,7 +64,7 @@ cantus = \relative do'' {
     do8 do sib4 sib4 sol4~ |
     sol4 sol8 sol la4( sol)
     la1 |
-    R1 |
+    r1 \fermata |
     la8^\markup{\italic "Solo"} la4. re,2 |
     fa4 sol8 sol la2 |
     sol2 re8 re4. |
@@ -72,8 +72,8 @@ cantus = \relative do'' {
     re4 r la'4^\markup{\italic "Tutti"} la |
     mi sol la sib
     la2 re2 |
-    dos4 si( la2 
-    sol4) la2.
+    dos4 si( la2 )
+    la1
 }
 
 altus = \relative do' {
@@ -90,8 +90,8 @@ altus = \relative do' {
     r2 re4 re |
     mi4 mi fa2 |
     fa fa2 |
-    la4 sol fas mi8( res |
-    mi4) fas2. |
+    la4 sol fas( mi4) |
+    fas1 |
 }
 
 textocantus = \lyricmode{
@@ -99,14 +99,14 @@ textocantus = \lyricmode{
     Te~a -- la -- ba -- mos, te glo -- ri -- fi -- ca -- mos, te da -- mos gra -- cias _ por tu glo -- _ ria.
     
     Se -- ñor Dios, Rey ce -- les -- tial, Dios Pa -- dre to -- do -- po -- de -- ro -- so. _
-    Se -- ñor, Hi -- jo ú -- ni -- co, Je -- su -- cris -- _ _ to.
+    Se -- ñor, Hi -- jo ú -- ni -- co, Je -- su -- cris -- _ to.
 }
 
 textoaltus = \lyricmode{
     Y~en la tie -- rra paz a los hom -- bres que a -- ma el Se -- ñor. _
     
     Te~a -- la -- ba -- mos, te glo -- ri -- fi -- ca -- mos, te da -- mos gra -- cias por tu glo -- ria.
-    Se -- ñor, Hi -- jo ú -- ni -- co, Je -- su -- cris -- _ _ _ to.
+    Se -- ñor, Hi -- jo ú -- ni -- co, Je -- su -- cris -- _ to.
 }
 
 incipitcantus = \markup {
@@ -147,6 +147,7 @@ incipitaltus=\markup{
         \new Staff <<
             \global
             \new Voice = "v1" {
+                \set Staff.midiInstrument = #"choir aahs"
                 \set Staff.instrumentName = \incipitcantus
                 \clef "treble"
                 \cantus
@@ -157,6 +158,7 @@ incipitaltus=\markup{
         \new Staff <<
             \global
             \new Voice = "v2" {
+                \set Staff.midiInstrument = #"choir aahs"
                 \set Staff.instrumentName = \incipitaltus
                 \clef "treble"
                 \altus 
