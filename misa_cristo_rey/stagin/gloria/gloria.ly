@@ -28,12 +28,12 @@
         \override NoteHead.style = #'neomensural        
         \key re \minor
         \relative do' {
-            \[re4 fa\] sol sol fa sol fa re
+            re4 fa sol sol sol sol fa sol fa re
         }
     }
     \new Lyrics \lyricsto "invocacion" {
         \lyricmode {
-            Glo _ -- ria~a Dios en el cie -- lo.
+            Glo -- ria~a Dios en lo al -- to del cie -- lo.
         }
     }
 >>
@@ -55,12 +55,24 @@ global = {
 
 cantus = \relative do'' {
     r2 la8 la la4 |
-    la4 do4 do8 do sib4 sib
+    la4 do4 do8 do sib4 |
+    sib4 re re8 re do4 |
+    do4 la r2 |
+    
+    do8 do do4 do4 mi4 |
+    mi8 mi re4 re4 fa4 |
+    fa8 fa mi4 mi4 do2
 }
 
 altus = \relative do' {
-    re8 re re4 re |
-    fa4 fa8 fa mi4 mi
+    re8 re re4 re fa |
+    fa8 fa mi4 mi sol |
+    sol8 sol fa4 fa fa |
+    
+    r2 fa8 fa fa4 |
+    fa4 la4 la8 la sol4 |
+    sol4 sib4 sib8 sib la4 |
+    la4 fa2
 }
 
 textocantus = \lyricmode{
@@ -69,6 +81,7 @@ textocantus = \lyricmode{
 
 textoaltus = \lyricmode{
     Y~en la tie -- rra paz a los hom -- bres que a -- ma el Se -- ñor.
+    Te~a -- la -- ba -- mos, te glo -- ri -- fi -- ca -- mos, te da -- mos gra -- cias por tu glo -- ria.
 }
 
 incipitcantus = \markup {
