@@ -58,12 +58,12 @@ cantus = \relative do'' {
     la4 do4 do8 do sib4 |
     sib4 re re8 re do4 |
     do4 la2 r4 |
-    
     do8 do do4 do4 mi4 |
     mi8 mi re4 re4 do4 |
     do8 do sib4 sib4 sol4~ |
     sol4 sol8 sol la4( sol)
     la1 |
+    
     r1 \fermata |
     la8^\markup{\italic "Solo"} la4. re,2 |
     fa4 sol8 sol la2 |
@@ -72,6 +72,17 @@ cantus = \relative do'' {
     re4 r la'4^\markup{\italic "Tutti"} la |
     mi sol la sib
     la2 re2 |
+    dos4 si( la2 )
+    la1
+    
+    r1 \fermata |
+    la8^\markup{\italic "Solo"} la4. re,2 |
+    fa8 fa sol8 sol la2 |
+    sol2 re2 |
+    fa4 mi re2 |
+    r2 la'8^\markup{\italic "Tutti"} la la la |
+    mi4 sol la sib
+    la8 la la4 re2 |
     dos4 si( la2 )
     la1
 }
@@ -100,6 +111,9 @@ textocantus = \lyricmode{
     
     Se -- ñor Dios, Rey ce -- les -- tial, Dios Pa -- dre to -- do -- po -- de -- ro -- so. _
     Se -- ñor, Hi -- jo ú -- ni -- co, Je -- su -- cris -- _ to.
+    
+    Se -- ñor Dios, Cor -- de -- ro de Dios, Hi -- jo del Pa -- dre,
+    Tù que qui -- tas el pe -- ca -- do del mun -- do, Ten pie -- dad de no -- so -- tros.
 }
 
 textoaltus = \lyricmode{
