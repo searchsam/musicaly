@@ -1,15 +1,15 @@
+ 
 % ****************************************************************
 %	Señor ten piedad v3 - Melodia a modo del renacimiento
-%   Texto y musica con acompañamiento
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
 \version "2.19.82"
 
-#(set-global-staff-size 16.4)
+%#(set-global-staff-size 16.4)
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Señor ten piedad" \fontsize #2 "Misa Cristo Rey" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Gloria a Dios en el cielo" \fontsize #2 "Misa Cristo Rey" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez Avilés" \small "(2018)" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
@@ -20,158 +20,267 @@
 % --- Musica
 
 % --- invocacion
-
-% --- Parametro globales
-global = {
-    \tempo "Moderatto" 4 = 100
-    \key re \minor
-    \time 4/4
-    s1*38
-    \bar "|."
-}
-sopMusic = \relative do' {
-    R1 |
-    r2 r4 re \bar "||" |
-    fa4 fa fa sol |
-    sol sol sol sol |
-    sol sol fa sol |
-    \tuplet 3/2 { la2( sol fa) } |
-    re2 r \bar "||" | \break
-    la'4 fa2 fa4 |
-    sol4 la2 sol4 |
-    la2 r |
-    la4 fa2 fa4 |
-    sol4 la2. \bar "||" | \break
-    r2 r4 re,
-    fa4 fa fa fa |
-    sol sol sol sol |
-    sol sol sol2 |
-    sol4 sol fa sol |
-    \tuplet 3/2 { la2( sol fa) } |
-    re2 r \bar "||" | \break
-    la'4 fa2 fa4 |
-    sol4 la2 sol4 |
-    la2 r |
-    la4 fa2 fa4 |
-    sol4 la2. \bar "||" |  \break
-    r2 r4 re,
-    fa4 fa sol sol |
-    sol sol sol2 |
-    sol4 sol sol sol |
-    sol fa2 sol4 |
-    \tuplet 3/2 { la2( sol fa) } |
-    re2 r \bar "||" | \break
-    la'4 fa2 fa4 |
-    sol4 la2 sol4 |
-    la2 r |
-    la4 fa2 fa4 |
-    sol4 la2. \bar "||" |
-    R1*2
-}
-sopWords = \lyricmode {
-    Tú que nos li -- bras -- te del pe -- ca -- do y de la muer -- te.
-    Se -- ñor, ten pie -- dad, pie -- dad. Se -- ñor, ten pie -- dad.
-    Tú que nos re -- con -- ci -- lias -- te con el Pa -- dre y nues -- tros her -- ma -- nos.
-    Se -- ñor, ten pie -- dad, pie -- dad. Se -- ñor, ten pie -- dad.
-    Tú que nos re -- su -- ci -- ta -- rás y glo -- ri -- fi -- ca -- rás con -- ti -- go.
-    Se -- ñor, ten pie -- dad, pie -- dad. Se -- ñor, ten pie -- dad.
-}
-
-altMusic = \relative do' {
-    R1*7 \bar "||" |
-    r2 r4 fa4 |
-    re4 re do2 |
-    re2 r |
-    la'4 fa2 fa4 |
-    sol4 la2. \bar "||" |
-    R1*7 \bar "||" |
-    r2 r4 fa4 |
-    re4 re do2 |
-    re2 r |
-    la'4 fa2 fa4 |
-    sol4 la2. \bar "||" |
-    R1*7 \bar "||" |
-    r2 r4 fa4 |
-    re4 re do2 |
-    re2 r |
-    la'4 fa2 fa4 |
-    sol4 la2. \bar "||" |
-    R1*2
-}
-altWords = \lyricmode {
-    Se -- ñor, ten pie -- dad. Se -- ñor, ten pie -- dad.
-    Se -- ñor, ten pie -- dad. Se -- ñor, ten pie -- dad.
-    Se -- ñor, ten pie -- dad. Se -- ñor, ten pie -- dad.
-}
-
-NotesSop = \relative do' { 
-    re1\p | do2 re  | fa2. sol4~ | sol1~ | sol1 | \tuplet 3/2 { la2 sol fa }  | re1 | la'1~ | la2 sol | la2 re, | la'4 fa2 fa4 | sol4 la2. |
-    do,2 re  | fa1 | sol1~ | sol1~ | sol1 | \tuplet 3/2 { la2 sol fa }  | re1 | la'1~ | la2 sol | la2 re, | la'4 fa2 fa4 | sol4 la2. |
-    do,2 re  | fa2 sol2~ | sol1~ | sol1~ | sol1 | \tuplet 3/2 { la2 sol fa }  | re1 | la'1~ | la2 sol | la2 re, | la'4 fa2 fa4 | sol4 la2. | re,1 | do2 re  |
-}
-NotesAlt = \relative do' { 
-    la1\p | sol2 la | re1~  | re1~ | re1  | \tuplet 3/2 { fa2 mi do }   | la1 | re1~  | re2 do  | re2 la  | re1~  | re1 |
-    sol,2 la | re1~ | re1~  | re1~ | re1  | \tuplet 3/2 { fa2 mi do }   | la1 | re1~  | re2 do  | re2 la  | re1~  | re1 |
-    sol,2 la | re1~ | re1~  | re1~ | re1  | \tuplet 3/2 { fa2 mi do }   | la1 | re1~  | re2 do  | re2 la  | re1~  | re1 | la1 | sol2 la |
-}
-NotesTer = \relative do { 
-    fa1\p  | mi2 fa  | la2. sib4~ | sib1~ | sib1 | \tuplet 3/2 { do2 dos la } | fa1 | fa1~  | fa2 mi  | fa1~    | fa1~  | fa1 |
-    mi2 fa  | la1 | sib1~ | sib1~ | sib1  | \tuplet 3/2 { do2 dos la } | fa1 | fa1~  | fa2 mi  | fa1~    | fa1~  | fa1 |
-    mi2 fa  | la2 sib2~ | sib1~ | sib1~ | sib1  | \tuplet 3/2 { do2 dos la } | fa1 | fa1~  | fa2 mi  | fa1~    | fa1~  | fa1 | fa1  | mi2 fa  |
-}
-NotesBas = \relative do { 
-    re1\p  | do2 re  | re2. sol4~ | sol1~ | sol1 | \tuplet 3/2 { fa2 la fa }  | re1 | re1~  | re2 do  | re1~    | re1~  | re1 |
-    do2 re  | re1 | sol1~ | sol1~ | sol1 | \tuplet 3/2 { fa2 la fa }  | re1 | re1~  | re2 do  | re1~    | re1~  | re1 |
-    do2 re  | re2 sol2~ | sol1~ | sol1~ | sol1 | \tuplet 3/2 { fa2 la fa }  | re1 | re1~  | re2 do  | re1~    | re1~  | re1 | re1  | do2 re  |
-}
-
-% --- acordes
-armonias = \new ChordNames { 
-    \chordmode { 
-        \italianChords
-        re1:m | do2 re2:m | R4*3 sol4:m | R1 | R1 | \tuplet 3/2 { fa2 la2:7 fa2 } | re1:m | R1 | R2 do2 | re1:m | R1*2
-        do2 re2:m | R1 | sol1:m | R1 | R1 | \tuplet 3/2 { fa2 la2:7 fa2 } | re1:m | R1 | R2 do2 | re1:m | R1*2
-        do2 re2:m | R1 | sol1:m | R1 | R1 | \tuplet 3/2 { fa2 la2:7 fa2 } | re1:m | R1 | R2 do2 | re1:m | | R1*3 | do2 re2:m |
+\score{
+<<
+    \new Voice = "invocacion" {
+        \override Staff.TimeSignature.stencil = #'()
+        \override Stem.transparent = ##t
+        \set Score.timing = ##f
+        \override NoteHead.style = #'neomensural        
+        \key re \minor
+        \relative do' {
+            re4 fa sol sol sol sol fa sol fa re
+        }
+    }
+    \new Lyrics \lyricsto "invocacion" {
+        \lyricmode {
+            Glo -- ria~a Dios en lo al -- to del cie -- lo.
+        }
+    }
+>>
+    \layout {
+        indent = 1.5 \cm
+        line-width = 17\cm
+        ragged-right = ##f
     }
 }
 
+% --- Parametro globales
+global = {
+    \tempo 4 = 100
+    \key re \minor 
+    \time 2/2  
+    \skip 1*51
+    \bar "|."
+}
+
+cantus = \relative do'' {
+    r2 la8 la la4 |
+    la4 do4 do8 do sib4 |
+    sib4 re re8 re do4 |
+    do4 la2 r4 |
+    do8 do do4 do4 mi4 |
+    mi8 mi re4 re4 do4 |
+    do8 do sib4 sib4 sol4~ |
+    sol4 sol8 sol la4( sol)
+    la1 \bar "||"
+    
+    r1 \fermata |
+    la8^\markup{\italic "Solo"} la4. re,2 |
+    fa4 sol8 sol la2 |
+    sol2 re8 re4. |
+    fa8 fa mi mi re4 re4 |
+    r2 la'4^\markup{\italic "Tutti"} la |
+    mi sol la sib 
+    la2 re2 |
+    dos4 si( la2 )
+    la1 |
+    
+    r1 \fermata |
+    la8^\markup{\italic "Solo"} la4. re,2 |
+    fa8 fa sol8 sol la2 |
+    sol2 re2 |
+    fa4 mi re2 |
+    r2 la'8^\markup{\italic "Tutti"} la la la |
+    mi4 sol la sib8 sib
+    la4 la4 re2 |
+    dos4 si la la
+    sol2 la2 |
+    
+    r1 \fermata |
+    la8^\markup{\italic "Solo"} la la la re,8 re re4 |
+    fa4 sol8 sol la2 |
+    sol4 sol re re |
+    fa4 mi8 mi re2 |
+    r2 la'8^\markup{\italic "Tutti"} la la la |
+    mi4 sol8 sol la la sib sib
+    la4 la re2 |
+    dos4 si la la
+    sol2 la2 |
+    
+    r2 la8 la la4 |
+    la4 do4 do8 do sib4 |
+    sib4 re re8 re do4 |
+    do4 la2 r4 |
+    do8 do do4 do4 mi4 |
+    mi8 mi re4 re4 do4 |
+    do8 do sib4 sib4 sol4(~ |
+    sol4 fa la4 sol)
+    la1 |
+    
+    la2( sib la) sol( la1)
+
+}
+
+altus = \relative do' {
+    re8 re re4 re fa |
+    fa8 fa mi4 mi sol |
+    sol8 sol fa4 fa fa~ |
+    fa4 r fa8 fa fa4 |
+    fa4 la4 la8 la sol4 |
+    sol4 sib4 sib8 sib la4 |
+    la4 fa2 r4 |
+    re4 re mi2
+    fas1 |
+    
+    R1*5 |
+    r2 re4 re |
+    mi4 mi fa2 |
+    fa fa2 |
+    la4 sol fa( mi4) |
+    fas1 |
+    
+    R1*5 |
+    r2 re8 re re re |
+    mi4 mi fa fa |
+    fa4 fa fa2 |
+    la4 sol fa mi4 |
+    re4 mi fas2 |
+    
+    R1*5 |
+    r2 re8 re re re |
+    mi4 mi fa fa8 fa |
+    fa4 fa fa fa |
+    la4 sol fa mi4 |
+    re4 mi fas2 |
+    
+    R1 |
+    fa8 fa mi4 mi sol |
+    sol8 sol fa4 fa2 |
+    r2 fa8 fa fa4 |
+    fa4 la4 la8 la sol4 |
+    sol4 sib4 sib2 |
+    la4 sol fa mi |
+    re4 re mi2
+    fas1 |
+    
+    R1
+    re2( do)
+    re1
+}
+
+textocantus = \lyricmode{
+    Y~en la tie -- rra paz a los hom -- bres que a -- ma el Se -- ñor.
+    Te~a -- la -- ba -- mos, te glo -- ri -- fi -- ca -- mos, te da -- mos gra -- cias _ por tu glo -- _ ria.
+    
+    Se -- ñor Dios, Rey ce -- les -- tial, Dios Pa -- dre to -- do -- po -- de -- ro -- so.
+    Se -- ñor, Hi -- jo ú -- ni -- co, Je -- su -- cris -- _ to.
+    
+    Se -- ñor Dios, Cor -- de -- ro de Dios, Hi -- jo del Pa -- dre,
+    Tù que qui -- tas el pe -- ca -- do del mun -- do, Ten pie -- dad de no -- so -- tros.
+    
+    Tú que qui -- tas el pe -- ca -- do del mun -- do, a -- tien -- de~a nues -- tra sú -- pli -- ca. 
+    Tú, que~es -- tás sen -- ta -- do~a la de -- re -- cha del Pa -- dre, Ten pie -- dad de no -- so -- tros.
+    
+    Por -- que só -- lo Tú e -- res San -- to, Se -- ñor al -- tí -- si -- mo Je -- su -- cris -- to.
+    Con el Es -- pí -- ri -- tu San -- to en la glo _ _ _ _ -- ria.
+    
+    A -- _ _ mén.
+}
+
+textoaltus = \lyricmode{
+    Y~en la tie -- rra paz a los hom -- bres que a -- ma el Se -- ñor. _
+    Te~a -- la -- ba -- mos, te glo -- ri -- fi -- ca -- mos, te da -- mos gra -- cias por tu glo -- ria.
+    
+    Se -- ñor, Hi -- jo ú -- ni -- co, Je -- su -- cris -- _ to.
+    
+    Tù que qui -- tas el pe -- ca -- do del mun -- do, Ten pie -- dad de no -- so -- tros.
+    
+    Tú, que~es -- tás sen -- ta -- do~a la de -- re -- cha del Pa -- dre, Ten pie -- dad de no -- so -- tros.
+    
+    Por -- que só -- lo Tú e -- res San -- to, so -- lo Tú al -- tí -- si -- mo Je -- su -- cris -- to.
+    En la glo -- ria de Dios Pa -- dre.
+    
+    A -- _ mén.
+}
+
+incipitcantus = \markup {
+    \score {
+        {
+            \set Staff.instrumentName = "Cantus "
+            \override NoteHead.style = #'neomensural
+            \override Staff.TimeSignature.style = #'neomensural
+            \cadenzaOn 
+            \clef "petrucci-c1"
+            \key do \major
+            \time 2/2
+            la'1
+        } 
+        \layout { line-width = 20 indent = 0 }
+    }
+}
+
+incipitaltus=\markup{
+	\score{
+		{ 
+            \set Staff.instrumentName = "Altus     "
+            \override NoteHead.style = #'neomensural 
+            \override Staff.TimeSignature.style = #'neomensural
+            \cadenzaOn
+            \clef "petrucci-c3"
+            \key do \major
+            \time 2/2
+            fa'1
+		} 
+        \layout { line-width = 20 indent = 0 }
+	}
+}
+
+
 \score {
-<<
-    \new ChoirStaff <<
-        \new Voice = "soprano" << \global \sopMusic >>
-        \new Lyrics = "soprano"
-        \context Lyrics = "soprano" \lyricsto "soprano" \sopWords
-        
-        \new Voice = "alto" << \global \altMusic >>
-        \new Lyrics = "alto"
-        \context Lyrics = "alto" \lyricsto "alto" \altWords
-    >>
-    %\armonias
-    \new PianoStaff <<
+    \new ChoirStaff<<
         \new Staff <<
-            \set Staff.midiInstrument = #"church organ"
-            \set Staff.midiMaximumVolume = #0.5
-            \set Staff.printPartCombineTexts = ##f
-            \partcombine
-            << \global \NotesSop >>
-            << \global \NotesAlt >>
+            \global
+            \new Voice = "v1" {
+                %\set Staff.midiInstrument = #"choir aahs"
+                \set Staff.instrumentName = \incipitcantus
+                \clef "treble"
+                \cantus
+            }
+            \new Lyrics \lyricsto "v1" { \textocantus }
         >>
+
         \new Staff <<
-            \set Staff.midiInstrument = #"church organ"
-            \set Staff.midiMaximumVolume = #0.5
-            \clef bass
-            \set Staff.printPartCombineTexts = ##f
-            \partcombine
-            << \global \NotesTer >>
-            << \global \NotesBas >>
+            \global
+            \new Voice = "v2" {
+                %\set Staff.midiInstrument = #"choir aahs"
+                \set Staff.instrumentName = \incipitaltus
+                \clef "treble"
+                \altus 
+            }
+            \new Lyrics \lyricsto "v2" { \textoaltus }
         >>
     >>
->>
+
+    \layout{ 
+        \context {
+            \Lyrics 
+                \override VerticalAxisGroup.staff-affinity = #UP
+                \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 0) (minimum-distance . 0) (padding . 1))
+                \override LyricText.font-size = #1.2
+                \override LyricHyphen.minimum-distance = #0.5
+        }
+        \context {
+            \Score 
+                tempoHideNote = ##t
+                \override BarNumber.padding = #2 
+        }
+        \context {
+            \Voice 
+                melismaBusyProperties = #'()
+        }
+        \context {
+            \Staff 
+                \override VerticalAxisGroup.staff-staff-spacing = #'((basic-distance . 11) (minimum-distance . 0) (padding . 1))
+                \consists Ambitus_engraver 
+                \override LigatureBracket.padding = #1
+        }
+    }
     \midi { }
-    \layout { }
 }
 
 % --- Musica
 \paper{
     #(set-default-paper-size "letter")
+	indent=3.5\cm
 }
