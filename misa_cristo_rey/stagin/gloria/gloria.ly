@@ -67,8 +67,8 @@ cantus = \relative do'' {
     r1 \fermata |
     la8^\markup{\italic "Solo"} la4. re,2 |
     fa4 sol8 sol la2 |
-    sol2 re8 re4. |
-    fa8 fa mi mi re4 re4~ |
+    fa2 sol8 sol4. |
+    sib8 sib sib sib la4 la4 |
     re4 r la'4^\markup{\italic "Tutti"} la |
     mi sol la sib
     la2 re2 |
@@ -84,7 +84,17 @@ cantus = \relative do'' {
     mi4 sol la sib
     la8 la la4 re2 |
     dos4 si( la2 )
-    la1
+    la1 |
+    
+    r2 la8 la la4 |
+    la4 do4 do8 do sib4 |
+    sib4 re re8 re do4 |
+    do4 la2 r4 |
+    do8 do do4 do4 mi4 |
+    mi8 mi re4 re4 do4 |
+    do8 do sib4 sib4 sol4~ |
+    sol4 sol8 sol la4( sol)
+    la1 |
 }
 
 altus = \relative do' {
@@ -97,10 +107,18 @@ altus = \relative do' {
     la4 fa2 r4 |
     re4 re mi2
     fas1 |
+    
     R1*5 |
     r2 re4 re |
     mi4 mi fa2 |
     fa fa2 |
+    la4 sol fas( mi4) |
+    fas1 |
+    
+    R1*5 |
+    r2 re8 re re re |
+    mi4 mi fa fa |
+    fa2 fa4 fa |
     la4 sol fas( mi4) |
     fas1 |
 }
@@ -121,6 +139,7 @@ textoaltus = \lyricmode{
     
     Te~a -- la -- ba -- mos, te glo -- ri -- fi -- ca -- mos, te da -- mos gra -- cias por tu glo -- ria.
     Se -- ñor, Hi -- jo ú -- ni -- co, Je -- su -- cris -- _ to.
+    Tù que qui -- tas el pe -- ca -- do del mun -- do, Ten pie -- dad de no -- so -- tros.
 }
 
 incipitcantus = \markup {
