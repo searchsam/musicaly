@@ -19,32 +19,6 @@
 
 % --- Musica
 
-% --- invocacion
-\score{
-<<
-    \new Voice = "invocacion" {
-        \override Staff.TimeSignature.stencil = #'()
-        \override Stem.transparent = ##t
-        \set Score.timing = ##f
-        \override NoteHead.style = #'neomensural        
-        \key re \minor
-        \relative do' {
-            re4 fa sol sol sol sol fa sol fa re
-        }
-    }
-    \new Lyrics \lyricsto "invocacion" {
-        \lyricmode {
-            Glo -- ria~a Dios en lo al -- to del cie -- lo.
-        }
-    }
->>
-    \layout {
-        indent = 1.5 \cm
-        line-width = 17\cm
-        ragged-right = ##f
-    }
-}
-
 % --- Parametro globales
 global = {
     \tempo 4 = 100
@@ -55,7 +29,11 @@ global = {
 }
 
 cantus = \relative do'' {
-    r2 la8 la la4 |
+    re,4 fa sol sol |
+    sol4 sol fa sol |
+    fa4 re r2 |
+    
+    r2 la'8 la la4 |
     la4 do4 do8 do sib4 |
     sib4 re re8 re do4 |
     do4 la2 r4 |
@@ -113,6 +91,8 @@ cantus = \relative do'' {
 }
 
 altus = \relative do' {
+    R1*3 |
+    
     re8 re re4 re fa |
     fa8 fa mi4 mi sol |
     sol8 sol fa4 fa fa~ |
@@ -160,6 +140,8 @@ altus = \relative do' {
 }
 
 textocantus = \lyricmode{
+    Glo -- ria~a Dios en lo al -- to del cie -- lo.
+  
     Y~en la tie -- rra paz a los hom -- bres que a -- ma el Se -- ñor.
     Te~a -- la -- ba -- mos, te glo -- ri -- fi -- ca -- mos, te da -- mos gra -- cias _ por tu glo -- _ ria.
     
@@ -194,89 +176,66 @@ textoaltus = \lyricmode{
     A -- _ mén.
 }
 
-incipitcantus = \markup {
-    \score {
-        {
-            \set Staff.instrumentName = "Cantus "
-            \override NoteHead.style = #'neomensural
-            \override Staff.TimeSignature.style = #'neomensural
-            \cadenzaOn 
-            \clef "petrucci-c1"
-            \key do \major
-            \time 2/2
-            la'1
-        } 
-        \layout { line-width = 20 indent = 0 }
-    }
+NotesSop = \relative do' { 
+    R1*4
 }
-
-incipitaltus=\markup{
-	\score{
-		{ 
-            \set Staff.instrumentName = "Altus     "
-            \override NoteHead.style = #'neomensural 
-            \override Staff.TimeSignature.style = #'neomensural
-            \cadenzaOn
-            \clef "petrucci-c3"
-            \key do \major
-            \time 2/2
-            fa'1
-		} 
-        \layout { line-width = 20 indent = 0 }
-	}
+NotesAlt = \relative do' { 
+    la4\p
+}
+NotesTer = \relative do { 
+    R1*4
+}
+NotesBas = \relative do { 
+    R1*4
 }
 
 
 \score {
-    \new ChoirStaff<<
-        \new Staff <<
-            \global
-            \new Voice = "v1" {
-                %\set Staff.midiInstrument = #"choir aahs"
-                \set Staff.instrumentName = \incipitcantus
-                \clef "treble"
-                \cantus
-            }
-            \new Lyrics \lyricsto "v1" { \textocantus }
+<<
+    \new ChoirStaff <<
+        \new Voice = "soprano" << 
+            \set Staff.instrumentName = #"Sopranos"
+            \set Staff.midiInstrument = #"choir aahs"
+            \set Staff.midiMaximumVolume = #1.5
+            \global \cantus 
         >>
+        \new Lyrics = "soprano"
+        \context Lyrics = "soprano" \lyricsto "soprano" \textocantus
 
+        \new Voice = "alto" << 
+            \set Staff.instrumentName = #"Contraltos"
+            \set Staff.midiInstrument = #"choir aahs"
+            \set Staff.midiMaximumVolume = #1.5
+            \global \altus 
+        >>
+        \new Lyrics = "alto"
+        \context Lyrics = "alto" \lyricsto "alto" \textoaltus
+    >>
+    
+    \new PianoStaff <<
         \new Staff <<
-            \global
-            \new Voice = "v2" {
-                %\set Staff.midiInstrument = #"choir aahs"
-                \set Staff.instrumentName = \incipitaltus
-                \clef "treble"
-                \altus 
-            }
-            \new Lyrics \lyricsto "v2" { \textoaltus }
+            \set Staff.instrumentName = #"Organo"
+            \set Staff.midiInstrument = #"church organ"
+            \set Staff.midiMaximumVolume = #0.6
+            \set Staff.printPartCombineTexts = ##f
+            \partcombine
+            << \global \NotesSop >>
+            << \global \NotesAlt >>
+        >>
+        \new Staff <<
+            \set Staff.midiInstrument = #"church organ"
+            \set Staff.midiMaximumVolume = #0.6
+            \clef bass
+            \set Staff.printPartCombineTexts = ##f
+            \partcombine
+            << \global \NotesTer >>
+            << \global \NotesBas >>
         >>
     >>
+>>
 
-    \layout{ 
-        \context {
-            \Lyrics 
-                \override VerticalAxisGroup.staff-affinity = #UP
-                \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 0) (minimum-distance . 0) (padding . 1))
-                \override LyricText.font-size = #1.2
-                \override LyricHyphen.minimum-distance = #0.5
-        }
-        \context {
-            \Score 
-                tempoHideNote = ##t
-                \override BarNumber.padding = #2 
-        }
-        \context {
-            \Voice 
-                melismaBusyProperties = #'()
-        }
-        \context {
-            \Staff 
-                \override VerticalAxisGroup.staff-staff-spacing = #'((basic-distance . 11) (minimum-distance . 0) (padding . 1))
-                \consists Ambitus_engraver 
-                \override LigatureBracket.padding = #1
-        }
-    }
     \midi { }
+    \layout { }
 }
 
 % --- Musica
