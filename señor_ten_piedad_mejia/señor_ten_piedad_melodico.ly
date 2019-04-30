@@ -9,12 +9,6 @@
 
 #(set-global-staff-size 17.7)
 
-<<<<<<< HEAD
-\markup { \fill-line { \center-column { \fontsize #5 "Señor, ten piedad" \fontsize #2 \small "Misa Melodica" } } }
-\markup { \fill-line { " " \fontsize #2 "Alejandro Mejia Pereda"  } }
-% \markup { \fill-line { " " \right-column { \fontsize #2 "Versión Sinfonica Coral: Francisco Jarquín Vega" } } }
-=======
->>>>>>> 38332f0e3d1d800ec4a4db97e839e1e4c30389c8
 \header {
   title = \titulo
   subtitle = \subtitulo
