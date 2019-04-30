@@ -7,7 +7,7 @@
 
 \include "melodia.ily"
 
-#(set-global-staff-size 17.7)
+%#(set-global-staff-size 17.7)
 
 \header {
   title = \titulo
@@ -38,7 +38,7 @@
         \new Staff <<
           \set Staff.instrumentName = #"Tenor "
           \new Voice = "tenor" << \global \tenor >>
-          \new Lyrics \lyricsto "tenor" \letra
+          \new Lyrics \lyricsto "tenor" \letra_tenor
         >>
         \new Staff <<
           \set Staff.instrumentName = #"Bajo "
@@ -49,6 +49,19 @@
   >>
   \midi {}
   \layout {}
+}
+
+\markup {
+  \column {
+    \line { 2. Abrid los ojos, la tumba mirad, resucitado ya vive el Señor. Esta es la nueva que habéis de anunciar. ¡Aleluya! }
+    \line { 3. Triunfó la vida, la muerte acabó, ya mi Señor ha vencido en la cruz, el odio huya y brote el amor. ¡Aleluya! }
+    \line { 4. En el cenáculo todo están; pasmados oyen la voz de Jesús: hermanos míos os traigo la paz. ¡Aleluya! }
+    \line { 5. De su costado nos da a beber, su sangre y agua nos han de saciar la vida entera podrá florecer. ¡Aleluya! }
+    \line { 6. Cantadle, pueblo, que él se adquirió, nos ha librado de la esclavitud por sus ovejas la vida entregó. ¡Aleluya! }
+    \line { 7. Los redimidos su nombre cantad en esta fiesta de resurrección. Démosle gracias por tanta bondad. ¡Aleluya! }
+    \line { 8. Por los caminos miradlos volver; hay regocijo en torno a Sión. Gitad a coro en Jerusalén. ¡Aleluya! }
+    \line { 9. Entrad en Pascua, lo nuevo gustad, que venga el reino de nuestro Señor, partid el pan de la sinceridad. ¡Aleluya! }
+  }
 }
 
 \paper {
