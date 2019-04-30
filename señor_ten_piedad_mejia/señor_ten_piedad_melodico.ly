@@ -24,7 +24,7 @@ global = {
   \bar "|."
 }
 
-\markup { \fill-line { \center-column { \fontsize #5 "Señor ten piedad" \fontsize #2 \small "Misa Melodica" } } }
+\markup { \fill-line { \center-column { \fontsize #5 "Señor, ten piedad" \fontsize #2 \small "Misa Melodica" } } }
 \markup { \fill-line { " " \fontsize #2 "Alejandro Mejia Pereda"  } }
 % \markup { \fill-line { " " \right-column { \fontsize #2 "Versión Sinfonica Coral: Francisco Jarquín Vega" } } }
 \header {
