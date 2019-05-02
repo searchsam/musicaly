@@ -35,6 +35,17 @@
   \layout {}
 }
 
+\markup {
+  \column {
+    \line { 2. Sobre la cruz Cristo venciò y el sufrimiento iluminò. }
+    \line { 3. Porque esperò, Dios lo librò y de la muerte nos salvò. }
+    \line { 4. El pueblo al fin la vida hallò; nuestra desdicha terminò, }
+    \line { 5. La luz de Dios ya nos llegò; la nueva vida nos llenò. }
+    \line { 6. Levanten hoy el rostro a Dios, que en Èl nos llega salvaciòn. }
+    \line { 7. Y al esperar encontràran resurrección y libertad. }
+  }
+}
+
 \paper {
   #(set-paper-size "letter")
 }
