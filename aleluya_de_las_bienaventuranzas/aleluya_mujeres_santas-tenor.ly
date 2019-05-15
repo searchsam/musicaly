@@ -28,7 +28,7 @@
   <<
     \new Staff <<
       \new Voice = "voz" << \global \tenor >>
-      \new Lyrics \lyricsto "voz" \letra
+      \new Lyrics \lyricsto "voz" \letra_tenor
     >>
   >>
   \midi {}

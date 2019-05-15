@@ -1,9 +1,9 @@
 % ****************************************************************
-%	Te conocimos al partir el pan - Soprano
+%	Aleluya, mujeres santas - Soprano
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.49"
+\version "2.19.49" 
 
 \include "melodia.ily"
 
@@ -27,6 +27,7 @@
 \score {
   <<
     \new Staff <<
+      \set Staff.midiInstrument = #"oboe"
       \new Voice = "voz" << \global \soprano >>
       \new Lyrics \lyricsto "voz" \letra
     >>

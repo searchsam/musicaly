@@ -6,41 +6,55 @@
 % --- Parametro globales
 global = {
   \tempo "Moderatto" 4=110
-  \key la \minor
-  \time 3/4
-  \partial 4 s4
-  s2.*6
-  s2
-  \mark \markup { \small "Fine" }
-  \bar ":|."
-  s4
-  s2.*14
-  \mark \markup { \small "DaCapo al Fine" }
-  \partial 2 s2
-  \bar "|."
+  \key mi \minor
+  \time 6/8
+  s2.*19
+  \key mi \major
+  s2.
+  \repeat volta 2 {
+    s2.*7
+    \key mi \minor
+    s2.
+  }
 }
 
-titulo = "Aleluya, Mujeres santas"
+titulo = "Te conocimos al partir el pan"
 subtitulo = ""
-autor = "Del Gregoriano"
+autor = "Josquín Madurga"
 derechos = "Creative Commons Attribution 3.0"
 etiqueta = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
 
 % --- Musica
-soprano = \relative do'' {
+soprano = \relative do' {
   \compressFullBarRests
   \dynamicUp
   
-  la4        | % 01
-  la2 si4       | % 02
-  la4( sol) \breathe la | % 03
-  do4( si) la   | % 04
-  mi2. \breathe | % 05
-  si'4 do si    | % 06
-  la2.~         | % 07
-  la4 r4 r      | % 08
-  R2.*14        | % 21
-  R2
+  R2.*3				| % 03
+  r2 r8 si			| % 04
+  mi4 sol8 fas mi res		| % 05
+  mi4 sol2 \break		| % 06
+  fas8 fas sol fas mi res	| % 07
+  mi2 r8 si 			| % 08
+  mi4 sol8 fas mi res		| % 09
+  mi4 sol2 \break		| % 10
+  la8 la si la sol la		| % 11
+  si2 r8 si			| % 12
+  re4 do8 fas,4 do'8		| % 13
+  do4. si \break			| % 14
+  la8 la si la sol la		| % 15
+  si2 r8 si			| % 16
+  la4 sol8 fas4 la8		| % 17
+  la4. sol			| % 18
+  fas8 fas sol fas mi res	| % 19
+  mi2 r4				| % 20
+  si'8 si si la sols la		| % 21
+  si2 sols8 mi			| % 22
+  dos'4. la			| % 23
+  si2.				| % 24
+  dos8 dos dos dos si la		| % 25
+  si2 sols8 mi			| % 26
+  la4. res,			| % 27
+  mi2 r4^\markup { \small "Da Capo" }
 }
 
 alto = \relative do' {
@@ -59,40 +73,43 @@ alto = \relative do' {
   R2
 }
 
-tenor = \relative do' {
+tenor = \relative do {
   \compressFullBarRests
   \dynamicUp
   \clef "G_8"
-  la4        | % 01
-  do2 mi4       | % 02
-  mi4( do) \breathe la | % 03
-  sol4( si) re  | % 04
-  do2. \breathe | % 05
-  re4 mi re     | % 06
-  do2.~         | % 07
-  do4 r la      | \break % 08 
-  do2 re4       | % 09
-  mi4 re do     | % 10
-  re4 do si     | % 11
-  la2 \breathe la4 | % 12
-  do2 re4       | % 13
-  mi4 re do     | % 14
-  re4 do si     | % 15
-  la2 \breathe la4 | % 16
-  la2 si4       | % 17
-  la4 sol la    | % 18
-  do4 si la     | % 19
-  mi2.          | % 20
-  si'4 do si    | % 21
-  la2.~         | % 22
-  la4 r		| % 23 
+  R2.*3				| % 03
+  r2 r8 si			| % 04
+  mi4 sol8 fas mi res		| % 05
+  mi4 sol2 \break		| % 06
+  fas8 fas sol fas mi res	| % 07
+  mi2 r8 si 			| % 08
+  mi4 sol8 fas mi res		| % 09
+  mi4 sol2 \break		| % 10
+  la8 la si la sol la		| % 11
+  si2 r8 si			| % 12
+  re4 do8 fas,4 do'8		| % 13
+  do4. si \break			| % 14
+  la8 la si la sol la		| % 15
+  si2 r8 si			| % 16
+  la4 sol8 fas4 la8		| % 17
+  la4. sol			| % 18
+  fas8 fas sol fas mi res	| % 19
+  mi2 r4				| % 20
+  si'8 si si la sols la		| % 21
+  si2 sols8 mi			| % 22
+  dos'4. la			| % 23
+  si2.				| % 24
+  dos8 dos dos dos si la		| % 25
+  si2 sols8 mi			| % 26
+  la4. res,			| % 27
+  mi2 r4^\markup { \small "Da Capo" }
 }
 
 bajo = \relative do {
   \compressFullBarRests
   \dynamicUp
   \clef bass
-  la'4        | % 01
+  la4        | % 01
   la2 la4        | % 02
   la2 \breathe la4 | % 03
   sol2 sol4     | % 04
@@ -106,12 +123,11 @@ bajo = \relative do {
 
 % --- Letra
 letra = \lyricmode {
-  ¡A -- le -- lu -- ya!, ¡A -- le -- lu -- ya!, ¡A -- le -- lu -- ya!
-}
-
-letra_tenor = \lyricmode {
-  ¡A -- le -- lu -- ya!, ¡A -- le -- lu -- ya!, ¡A -- le -- lu -- ya!
-  "1. Mu" -- je -- res san -- tas de Je -- ru -- sa -- lén al al -- ba
-  co -- rren a~un -- gir al Se -- ñor. De~a -- ro -- mas lle -- nan
-  el a -- ma -- ne -- cer. ¡A -- le -- lu -- ya!
+  "1. An" -- dan -- do por el ca -- mi -- no te tro -- pe -- za -- moa, Se -- ñor,
+  te~hi -- cis -- te~el en -- con -- tra -- di -- zo nos dis -- te con -- ver -- sa -- ción,
+  te -- ní -- an tus pa -- la -- bras fuer -- za de vi -- da y~a -- mor,
+  po -- ní -- an es -- pe -- ran -- za y fué -- go~en el co -- ra -- zón.
+  
+  Te co -- no -- ci -- mos, Se -- ñor, al par -- tír el pan,
+  tú nos co -- no -- ces Se -- ñor al par -- tir el pan.
 }

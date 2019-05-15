@@ -1,5 +1,5 @@
 % ****************************************************************
-%	Te conocimos al partir el pan - Soprano
+%	Aleluya, mujeres santas - Soprano
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"

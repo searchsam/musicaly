@@ -1,5 +1,5 @@
 % ****************************************************************
-%	Te conocimos al partir el pan - Soprano
+%	Gloria ritmico - Soprano
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"

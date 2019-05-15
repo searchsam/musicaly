@@ -27,6 +27,7 @@
 \score {
   <<
     \new Staff <<
+      \set Staff.midiInstrument = #"english horn"
       \new Voice = "voz" << \global \tenor >>
       \new Lyrics \lyricsto "voz" \letra
     >>
@@ -35,7 +36,7 @@
   \layout {}
 }
 
-\markup {
+%{\markup {
   \column {
     \override #'(line-width . 65)
     \wordwrap { 2. Abrid los ojos, la tumba mirad, resucitado ya vive el Señor. Esta es la nueva que habéis de anunciar. ¡Aleluya! }
@@ -54,7 +55,7 @@
     \override #'(line-width . 80)
     \wordwrap { 9. Entrad en Pascua, lo nuevo gustad, que venga el reino de nuestro Señor, partid el pan de la sinceridad. ¡Aleluya! }
   }
-}
+}%}
 
 \paper {
   #(set-paper-size "letter")
