@@ -43,8 +43,15 @@ musica = \relative do' {
     la4 la la la la4 la la re2( do sib) r4 la la la la la4 sol la2( sol fa la) r2
 }
 
+armonia = \new ChordNames {
+    \italianChords
+    \chordmode { 
+        re4:m R4*6 sib2 R4*4 re4:m R4*8 do2 R4*2 re2:m
+    }
+}
+
 \score {
-    \new Staff \musica
+    << \armonia \new Staff \musica >>
     \layout {}
     \midi {}
 }

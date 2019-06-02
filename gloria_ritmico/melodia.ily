@@ -136,34 +136,30 @@ tenor = \relative do' {
   \compressFullBarRests
   \dynamicUp
   \clef "G_8"
-  R2			| % 01
-  mi,4 \segno mi		| % 02
-  si'8 si4.		|
-  si8. la16 sol8 fas	|
-  sol8 mi4.		|
-  si'4 si		|
+  R2*5			| % 01
+  si4 si			|
   la8 la4.		|
   sol8. si16 la8 fas	|
   sol2			|
   R2*4			|
   r4 si8 si		|
   do4 do			|
-  do8. do16 do8 do	|
+  do8. do16 re8 do	|
   si8 si4.~		|
   si4 r			|
   R2*3			|
   r4 si8 si		|
   do4 do			|
-  do8. do16 do8 do	|
+  do8. do16 re8 do	|
   si8 si4.~		|
   si4^\markup { \small "Da Segno" } r |
   R2			|
   R1			|
-  si8 si4.~ si4 r	|
-  si8 si4.~ si4 r	|
-  si8 si4.~ si4 r	|
+  si8 sol4.~ sol4 r	|
+  si8 sol4.~ sol4 r	|
+  si8 sol4.~ sol4 r	|
   R1			|
-  la8 la4.~ la4 r8 si	|
+  la8 mi4.~ mi4 r8 si'	|
   si8 la4 si2 si8	|
   si8 la4 si4 r8 mi8 mi |
   re8 re re re mi re mi si~ |
@@ -183,7 +179,7 @@ tenor = \relative do' {
   si4 si			|
   la8 la4.		|
   sol8.( si16 la8 fas)	|
-  si2			|
+  sol2			|
 }
 
 bajo = \relative do {
@@ -224,8 +220,7 @@ letra = \lyricmode {
 }
 
 letra_tenor = \lyricmode {
-  Glo -- ria, glo -- ria a Dios en el cie -- lo,
-  y~en la tie -- rra a los hom -- bres paz.
+  Y~en la tie -- rra a los hom -- bres paz.
   
   Te~a -- do -- ra -- mos y glo -- ri -- fi -- ca -- mos
   por tu gran -- de y e -- ter -- na glo -- ria.
