@@ -1,5 +1,5 @@
 % ****************************************************************
-%	Señor ten piedad v3 - Melodia a modo del renacimiento
+%	Gloria in excelsis Deo - Melodia a modo del renacimiento
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
@@ -26,7 +26,7 @@
         \override Stem.transparent = ##t
         \set Score.timing = ##f
         \override NoteHead.style = #'neomensural        
-        \key re \minor
+        \key sol \minor
         \relative do' {
             re4 fa sol sol sol sol fa sol fa re
         }
@@ -190,9 +190,9 @@ incipitaltus=\markup{
         \override Stem.transparent = ##t
         \set Score.timing = ##f
         \override NoteHead.style = #'neomensural        
-        \key re \minor
+        \key sol \minor
         \relative do'' {
-            la8 la4. re,2 fa4 sol8 sol la2 sol2 re8 re4. fa8 fa mi mi re4 re2
+            la8 la4. re,2 fa4 sol8 sol la2 sol2 re8 re4. fa8 fa mib mib re4 re2
         }
     }
     \new Lyrics \lyricsto "invocacion" {
@@ -527,8 +527,8 @@ textoaltus_estas = \lyricmode{
         \set Score.timing = ##f
         \override NoteHead.style = #'neomensural        
         \key re \minor
-        \relative do' {
-            \[re4 mi re\] \[do re2\]
+        \relative do'' {
+            \[la4 sib la\] \[sol la2\]
         }
     }
     \new Lyrics \lyricsto "invocacion" {

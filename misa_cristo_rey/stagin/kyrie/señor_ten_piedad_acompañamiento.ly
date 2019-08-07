@@ -33,14 +33,16 @@ sopMusic = \relative do' {
     sol4 la2 sol4 |
     la2 r |
     la4 fa2 fa4 |
-    sol4 la2. \fermata |
+    sol4 la2.
+    r1 \fermata |
     
     R1*12 |
     la4 fa2 fa4 |
     sol4 la2 sol4 |
     la2 r |
     la4 fa2 fa4 |
-    sol4 la2. \fermata |
+    sol4 la2. 
+    r1 \fermata |
     
     R1*12 |
     la4 fa2 fa4 |
@@ -66,7 +68,8 @@ altMusic = \relative do' {
     re4 re do2 |
     re2 r |
     la'4 fa2 fa4 |
-    sol4 la2. \fermata \bar "||" |
+    sol4 la2. 
+    r1 \fermata \bar "||" |
     
     R1*7 |
     la,4 la la do |
@@ -78,7 +81,8 @@ altMusic = \relative do' {
     re4 re do2 |
     re2 r |
     la'4 fa2 fa4 |
-    sol4 la2. \fermata \bar "||" |
+    sol4 la2. 
+    r1 \fermata \bar "||" |
     
     R1*7 |
     la,4 la la do |
@@ -103,42 +107,42 @@ altWords = \lyricmode {
 }
 
 NotesSop = \relative do' { 
-    R1*4 | re1\p | do2 re \bar "||" | 
-    do1 | fa1~ | fa2. mi4~ | mi2 re2 | la'1~ | la2 sol | la2 re, | la'1~ | la1 | 
+    R1*4 | re1 | do2 re \bar "||" | 
+    do1 | fa1~ | fa2. mi4~ | mi2 re2 | la'1~ | la2 sol | la2 re, | la'1~ | la1 | r1 
     
     R1*5 | re,1 | do2 re \bar "||" | 
-    do1 | fa1~ | fa1~ | fa2 mi2~ | mi4 re2. | la'1~ | la2 sol | la2 re, | la'1~ | la1 |
+    do1 | fa1~ | fa1~ | fa2 mi2~ | mi4 re2. | la'1~ | la2 sol | la2 re, | la'1~ | la1 | r1
     
     R1*5 | re,1 | do2 re \bar "||" |
     do1 | fa1~ | fa1~ | fa4 mi2. | re1 | la'1~ | la2 sol | la2 re, | la'1~ | la1 | do,1 | re1 | 
 }
 NotesAlt = \relative do' { 
     la4\p la la do | re re re re | re re re do| re mi re2 | la1 | sol2 la | 
-    la1 | re1~  | re2. do4~ | do2 la2 | re1~ | re2 do | re2 la | re1~ | re1 | 
+    la1 | re1~  | re2. do4~ | do2 la2 | re1~ | re2 do | re2 la | re1~ | re1 | r1 \fermata 
     
     
     la4 la la do | re re re re | re re re re | re re do re | mi re2. | la1 | sol2 la |
-    la1 | re1~  | re1~  | re2 do2~ | do4 la2. | re1~ | re2 do | re2 la | re1~ | re1 |
+    la1 | re1~  | re1~  | re2 do2~ | do4 la2. | re1~ | re2 do | re2 la | re1~ | re1 | r1 \fermata
     
     la4 la la do | re re re re | re re re re | re do re mi | re1 | la1 | sol2 la |
     la1 | re1~  | re1~ | re4 do2. | la1 | re1~ | re2 do | re2 la | re1~ | re1 | sol,1 | la1 |
 }
 NotesTer = \relative do { 
     R1*4 | fa1\p | mi2 fa | 
-    mi1 | la1~ | la2. sol4~ | sol2 fa2 | fa1~ | fa2 mi | fa1~ | fa1~ | fa1 |
+    mi1 | la1~ | la2. sol4~ | sol2 fa2 | fa1~ | fa2 mi | fa1~ | fa1~ | fa1 | r1 \fermata
     
     R1*5 | fa1 | mi2 fa | 
-    mi1 | la1~ | la1~ | la2 sol2~ | sol4 fa2. | fa1~ | fa2 mi | fa1~ | fa1~ | fa1 |
+    mi1 | la1~ | la1~ | la2 sol2~ | sol4 fa2. | fa1~ | fa2 mi | fa1~ | fa1~ | fa1 | r1 \fermata
     
     R1*5 | fa1 | mi2 fa |
     mi1 | la1~ | la1~ | la4 sol2. | fa1 | fa1~ | fa2 mi | fa1~ | fa1~ | fa1 | mi1 | fa1 | 
 }
 NotesBas = \relative do { 
     R1*4 | re1\p | do2 re |
-    la1 | re1~ | re2. do4~ | do2 re2 | re1~ | re2 do | re1~ | re1~ | re1 |
+    la1 | re1~ | re2. do4~ | do2 re2 | re1~ | re2 do | re1~ | re1~ | re1 | r1
     
     R1*5 | re1 | do2 re |
-    la1 | re1~ | re1~ | re2 do2~ | do4 re2. | re1~ | re2 do | re1~ | re1~ | re1 |
+    la1 | re1~ | re1~ | re2 do2~ | do4 re2. | re1~ | re2 do | re1~ | re1~ | re1 | r1
     
     R1*5 | re1 | do2 re |
     la1 | re1~ | re1~ | re4 do2. | re1 | re1~ | re2 do | re1~ | re1~ | re1 | do1 | re1 |

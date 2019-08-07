@@ -1,5 +1,5 @@
 % ****************************************************************
-%	Señor ten piedad v3 - Melodia a modo del renacimiento
+%	Gloria in excelsis Deo - Melodia a modo del renacimiento
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
@@ -9,7 +9,7 @@
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Gloria a Dios en el cielo" \fontsize #2 "Misa Cristo Rey" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez Avilés" \small "(2018)" } } }
+\markup { \fill-line { " " "Himno Litúrgico" \center-column { \fontsize #2 "Samuel Gutiérrez Avilés" \small "(2018)" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -134,24 +134,24 @@ incipitaltus=\markup{
     \new ChoirStaff<<
         \new Staff <<
             \global
-            \new Voice = "v1" {
-                %\set Staff.midiInstrument = #"choir aahs"
+            \new Voice = "soprano" {
+                \set Staff.midiInstrument = #"choir aahs"
                 \set Staff.instrumentName = \incipitcantus
                 \clef "treble"
                 \cantus_gloria
             }
-            \new Lyrics \lyricsto "v1" { \textocantus_gloria }
+            \new Lyrics \lyricsto "soprano" { \textocantus_gloria }
         >>
 
         \new Staff <<
             \global
-            \new Voice = "v2" {
-                %\set Staff.midiInstrument = #"choir aahs"
+            \new Voice = "alto" {
+                \set Staff.midiInstrument = #"choir aahs"
                 \set Staff.instrumentName = \incipitaltus
                 \clef "treble"
                 \altus_gloria
             }
-            \new Lyrics \lyricsto "v2" { \textoaltus_gloria }
+            \new Lyrics \lyricsto "alto" { \textoaltus_gloria }
         >>
     >>
 
@@ -236,24 +236,24 @@ textoaltus_senyor = \lyricmode{
     \new ChoirStaff<<
         \new Staff <<
             \global
-            \new Voice = "v1" {
-                %\set Staff.midiInstrument = #"choir aahs"
+            \new Voice = "soprano" {
+                \set Staff.midiInstrument = #"choir aahs"
                 \set Staff.instrumentName = \incipitcantus
                 \clef "treble"
                 \cantus_senyor
             }
-            \new Lyrics \lyricsto "v1" { \textocantus_senyor }
+            \new Lyrics \lyricsto "soprano" { \textocantus_senyor }
         >>
 
         \new Staff <<
             \global
-            \new Voice = "v2" {
-                %\set Staff.midiInstrument = #"choir aahs"
+            \new Voice = "alto" {
+                \set Staff.midiInstrument = #"choir aahs"
                 \set Staff.instrumentName = \incipitaltus
                 \clef "treble"
                 \altus_senyor
             }
-            \new Lyrics \lyricsto "v2" { \textoaltus_senyor }
+            \new Lyrics \lyricsto "alto" { \textoaltus_senyor }
         >>
     >>
 
@@ -338,24 +338,24 @@ textoaltus_quitas = \lyricmode{
     \new ChoirStaff<<
         \new Staff <<
             \global
-            \new Voice = "v1" {
-                %\set Staff.midiInstrument = #"choir aahs"
+            \new Voice = "soprano" {
+                \set Staff.midiInstrument = #"choir aahs"
                 \set Staff.instrumentName = \incipitcantus
                 \clef "treble"
                 \cantus_quitas
             }
-            \new Lyrics \lyricsto "v1" { \textocantus_quitas }
+            \new Lyrics \lyricsto "soprano" { \textocantus_quitas }
         >>
 
         \new Staff <<
             \global
-            \new Voice = "v2" {
-                %\set Staff.midiInstrument = #"choir aahs"
+            \new Voice = "alto" {
+                \set Staff.midiInstrument = #"choir aahs"
                 \set Staff.instrumentName = \incipitaltus
                 \clef "treble"
                 \altus_quitas
             }
-            \new Lyrics \lyricsto "v2" { \textoaltus_quitas }
+            \new Lyrics \lyricsto "alto" { \textoaltus_quitas }
         >>
     >>
 
@@ -470,24 +470,24 @@ textoaltus_estas = \lyricmode{
     \new ChoirStaff<<
         \new Staff <<
             \global
-            \new Voice = "v1" {
-                %\set Staff.midiInstrument = #"choir aahs"
+            \new Voice = "soprano" {
+                \set Staff.midiInstrument = #"choir aahs"
                 \set Staff.instrumentName = \incipitcantus
                 \clef "treble"
                 \cantus_estas
             }
-            \new Lyrics \lyricsto "v1" { \textocantus_estas }
+            \new Lyrics \lyricsto "soprano" { \textocantus_estas }
         >>
 
         \new Staff <<
             \global
-            \new Voice = "v2" {
-                %\set Staff.midiInstrument = #"choir aahs"
+            \new Voice = "alto" {
+                \set Staff.midiInstrument = #"choir aahs"
                 \set Staff.instrumentName = \incipitaltus
                 \clef "treble"
                 \altus_estas
             }
-            \new Lyrics \lyricsto "v2" { \textoaltus_estas }
+            \new Lyrics \lyricsto "alto" { \textoaltus_estas }
         >>
     >>
 
@@ -527,8 +527,8 @@ textoaltus_estas = \lyricmode{
         \set Score.timing = ##f
         \override NoteHead.style = #'neomensural        
         \key re \minor
-        \relative do' {
-            \[re4 mi re\] \[do re2\]
+        \relative do'' {
+            \[la4 sib la\] \[sol la2\]
         }
     }
     \new Lyrics \lyricsto "invocacion" {

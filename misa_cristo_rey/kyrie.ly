@@ -1,6 +1,5 @@
 % ****************************************************************
-%	Señor ten piedad - Melodia a modo del renacimiento
-%   	Texto y musica con acompañamiento
+%	Kyrie eleison - Melodia a modo del renacimiento
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
@@ -10,7 +9,7 @@
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Señor ten piedad" \fontsize #2 "Misa Cristo Rey" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" \small "(2018)" } } }
+\markup { \fill-line { " " "Acto Penitencial" \center-column { \fontsize #2 "Samuel Gutiérrez Avilés" \small "(2018)" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -74,8 +73,16 @@ textocantus = \lyricmode{
     Se -- ñor, ten pie -- dad, pie -- dad. Se -- ñor, ten pie -- dad.
 }
 
+textocantus_alternate = \lyricmode{
+    Cris-- to, ten pie -- dad, pie -- dad. Cris -- to, ten pie -- dad.
+}
+
 textoaltus = \lyricmode{
     Se -- ñor, ten pie -- dad. Se -- ñor, ten pie -- dad.
+}
+
+textoaltus_alternate = \lyricmode{
+    Cris -- to, ten pie -- dad. Cris -- to, ten pie -- dad.
 }
 
 incipitcantus = \markup {
@@ -115,22 +122,24 @@ incipitaltus=\markup{
     \new ChoirStaff<<
         \new Staff <<
             \global
-            \new Voice = "v1" {
+            \new Voice = "soprano" {
+                \set Staff.midiInstrument = #"choir aahs"
                 \set Staff.instrumentName = \incipitcantus
                 \clef "treble"
                 \cantus
             }
-            \new Lyrics \lyricsto "v1" { \textocantus }
+            \new Lyrics \lyricsto "soprano" { \textocantus }
         >>
 
         \new Staff <<
             \global
-            \new Voice = "v2" {
+            \new Voice = "alto" {
+                \set Staff.midiInstrument = #"choir aahs"
                 \set Staff.instrumentName = \incipitaltus
                 \clef "treble"
                 \altus 
             }
-            \new Lyrics \lyricsto "v2" { \textoaltus }
+            \new Lyrics \lyricsto "alto" { \textoaltus }
         >>
     >>
 
@@ -190,22 +199,24 @@ incipitaltus=\markup{
     \new ChoirStaff<<
         \new Staff <<
             \global
-            \new Voice = "v1" {
+            \new Voice = "soprano" {
+                \set Staff.midiInstrument = #"choir aahs"
                 \set Staff.instrumentName = \incipitcantus
                 \clef "treble"
                 \cantus
             }
-            \new Lyrics \lyricsto "v1" { \textocantus }
+            \new Lyrics \lyricsto "soprano" { \textocantus_alternate }
         >>
 
         \new Staff <<
             \global
-            \new Voice = "v2" {
+            \new Voice = "alto" {
+                \set Staff.midiInstrument = #"choir aahs"
                 \set Staff.instrumentName = \incipitaltus
                 \clef "treble"
                 \altus 
             }
-            \new Lyrics \lyricsto "v2" { \textoaltus }
+            \new Lyrics \lyricsto "alto" { \textoaltus_alternate }
         >>
     >>
 
@@ -265,22 +276,24 @@ incipitaltus=\markup{
     \new ChoirStaff<<
         \new Staff <<
             \global
-            \new Voice = "v1" {
+            \new Voice = "soprano" {
+              \set Staff.midiInstrument = #"choir aahs"
                 \set Staff.instrumentName = \incipitcantus
                 \clef "treble"
                 \cantus
             }
-            \new Lyrics \lyricsto "v1" { \textocantus }
+            \new Lyrics \lyricsto "soprano" { \textocantus }
         >>
 
         \new Staff <<
             \global
-            \new Voice = "v2" {
+            \new Voice = "alto" {
+                \set Staff.midiInstrument = #"choir aahs"
                 \set Staff.instrumentName = \incipitaltus
                 \clef "treble"
                 \altus 
             }
-            \new Lyrics \lyricsto "v2" { \textoaltus }
+            \new Lyrics \lyricsto "alto" { \textoaltus }
         >>
     >>
 
