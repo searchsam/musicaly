@@ -388,59 +388,56 @@ textoaltus_senyor = \lyricmode{
 }
 
 cantus_estas = \relative do'' {
-    la8 la la la mi4 sol8 sol |
-    la8 la sib sib la4 la |
-    re2 dos4 si |
-    la la sol2 |
-    la1 \fermata \bar "||"
-    
-    r2 la8 la la4 |
-    la4 do4 do8 do sib4 |
-    sib4 re re8 re do4 |
-    do4 la2 r4 |
-    do8 do do4 do4 mi4 |
-    mi8 mi re4 re4 do4 |
-    do8 do sib4 sib4 sol4(~ |
-    sol4 fa la4 sol)
-    la1 \fermata \bar "|."
+    r4 do2 do4
+    re4 re re re
+    re( do2) si4
+    do2 r4 sib
+    do4 do do do
+    sib4 sib2( la4)
+    sib2 re4 re 
+    re2 do8 do do4 
+    do4 re2 do4 
+    do8 do do do do4 re 
+    re re2 r4
+    do4 do do do
+    re2 re2( 
+    do4 si8 la si2) 
+    dos1 \fermata
+    \bar "|."
 }
 
-altus_estas = \relative do' {
-    re8 re re re mi4 mi |
-    fa4 fa8 fa fa4 fa |
-    fa4 fa la sol |
-    fas4 mi re4 mi |
-    fas1 \fermata |
-    
-    R1 |
-    fa8 fa mi4 mi sol |
-    sol8 sol fa4 fa2 |
-    r2 fa8 fa fa4 |
-    fa4 la4 la8 la sol4 |
-    sol4 sib4 sib2 |
-    la4 sol fa mi |
-    re4 re mi2
-    fas1 \fermata
+altus_estas = \relative do'' {
+    r4 la2 la4
+    sib4 sib sib sib
+    la2 sol2
+    sol2 r4 sol
+    la4 la sol2
+    sol4 sol fas2
+    sol2 sib4 la 
+    sib2 la8 la la4 
+    la4 sol2 sol4 
+    sol8 sol la la
+    la4 sib la sib2 r4
+    la4 la sol2 
+    sib4 sib sib4( la4~
+    la4 sol2~ sol4) 
+    la1 \fermata
 }
 
 textocantus_estas = \lyricmode{
-    La santa Iglesia católica,
-    la comunión de los santos,
-    el perdón de los pecados,
-    la resurrección de la carne
-    y la vida eterna.
-    
-    A -- _ mén.
+    La san -- ta~I -- gle -- sia ca -- tó -- _ li -- ca,
+    la co -- mu -- nión de los san -- _ tos,
+    el per -- dón de los pe -- ca -- dos,
+    la re -- su -- rrec -- ción de la car -- ne
+    y~en la vi -- da e ter -- _ _ _ _ _ _ na.
 }
 
 textoaltus_estas = \lyricmode{
-    La santa Iglesia católica,
-    la comunión de los santos,
-    el perdón de los pecados,
-    la resurrección de la carne
-    y la vida eterna.
-    
-    A -- _ mén.
+    La san -- ta~I -- gle -- sia ca -- tó -- li -- ca,
+    la co -- mu -- nión de los san -- tos,
+    el per -- dón de los pe -- ca -- dos,
+    la re -- su -- rrec -- ción de la car -- ne
+    y~en la vi -- da e -- ter -- _ _ _ na.
 }
 
 \score {
