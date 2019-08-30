@@ -1,17 +1,17 @@
 # PDF
-#/*/*.pdf
+/*/*.pdf
 *.pdf
 # PS
-#/*/*.ps
+/*/*.ps
 *.ps
 # MIDI
-#/*/*.midi
+/*/*.midi
 *.midi
-#/*/*.mid
+/*/*.mid
 *.mid
 # LOG
-#/*/*.log
+/*/*.log
 *.log
 #
-#/*/*~
+/*/*~
 *~
