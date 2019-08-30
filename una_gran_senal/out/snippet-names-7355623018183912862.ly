@@ -1,2 +1,0 @@
-snippet-map-7355623018183912862.ly
-2d/lily-869b061b.ly

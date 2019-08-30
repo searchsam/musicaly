@@ -1,6 +1,0 @@
-@image{./e6/lily-cc02110b-1}
-@image{./e6/lily-cc02110b-2}
-@image{./e6/lily-cc02110b-3}
-@image{./e6/lily-cc02110b-4}
-@image{./e6/lily-cc02110b-5}
-@c eof

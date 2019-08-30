@@ -1,3 +1,0 @@
-@image{./06/lily-57152d7f-1}
-@image{./06/lily-57152d7f-2}
-@c eof

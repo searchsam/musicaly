@@ -1,3 +1,0 @@
-@image{./a2/lily-61d67864-1}
-@image{./a2/lily-61d67864-2}
-@c eof
