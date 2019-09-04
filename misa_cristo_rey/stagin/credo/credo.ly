@@ -305,15 +305,15 @@ textoaltus_senyor = \lyricmode{
         \override Rest.style = #'neomensural
         \key sol \minor
         \relative do' {
-            \[mib2^\markup{ \italic "Solo Altus"} re4\] sib do2 sib4 sib do4 \[re do4\] do2 \breathe mib2 do4 re mib4 \[fa mib2\] sib \breathe
+            \[mib2^\markup{ \italic "Solo Altus"} re4\] sib do2 sib4 sib do4 \[re do4\] do2 \breathe mib2 do4 re mib4 \[fa mib2\] sib2. \breathe
             
             \bar "" \break
             
-            \[mib2 re4\] sib do2 sib4 sib do4 \[re do4\] do2 \breathe mib2 do4 \[re mib4\] \[fa mib2\] sib \breathe
+            \[mib2 re4\] sib do2 sib4 sib do4 \[re do4\] do2 \breathe mib2 do4 \[re mib4\] \[fa mib2\] sib2. \breathe
             
             \bar "" \break
             
-            do2 fa do re4 mib fa \[re mib2\] sib \breathe
+            do2 fa do re4 mib fa \[re mib2\] sib2. \breathe
             
             \bar "||" \break
             

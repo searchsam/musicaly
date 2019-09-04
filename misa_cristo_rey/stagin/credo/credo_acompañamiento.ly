@@ -120,16 +120,18 @@ altMusic = \relative do' {
     do4 re( do4) do4~ 
     do4 mib2 do4 
     re mib4 fa( mib4~ 
-    mib4) sib2 \breathe mib4~( 
-    mib4 re4) sib do4~ 
-    do4 sib4 sib do4 
-    re4( do4) do2 
-    mib2 do4 re( 
-    mib4) fa( mib2) 
-    sib2 do2 
-    fa2 do 
-    re4 mib fa re( 
-    mib2) sib
+    mib4) sib2.
+    mib2( re4) sib 
+    do2 sib4 sib 
+    do4 re4( do4) do4~ 
+    do4 mib2 do4 
+    re( mib4) fa( mib4~ 
+    mib4) 
+    sib2. 
+    do2 fa2 
+    do2 re4 mib 
+    fa re( mib2) 
+    sib
 }
 altWords = \lyricmode {
     Cre -- o~en Dios.
@@ -155,7 +157,8 @@ NotesSop = \relative do' {
     sib1~ | sib2 la~ | la2. sib4~ | sib1 \fermata | do1 | la1~ \bar "||" | 
     la1 | sib1 | la4 la4 sol sol | sol2 la~ | la2 sol~ | sol4 sol2 fa4 | sol4 fa sol2 | fa2. sol4~ | sol4 fas fas sol~ | sol4 fa2. | sol2 fa4 fa | sol1 | la1 \fermata | fa1 \fermata | 
     
-    do2 sib | do2 sib | do4 re do2~ | do1 | sib2. do4~ | do4 sib2 do4 |
+    do2 sib | do2 sib | do4 re do2~ | do1 | sib2. do4~ | do4 sib2. |
+    do2 sib | do2 sib | do4 re do2~ | do1 | sib2. do4~ | do4 sib2. |
 }
 NotesAlt = \relative do' { 
     fa2 re4 sib4 | mib2 re | do1 | sib1\fermata | fa'~\p | fa~ | fa1~ | 
@@ -166,7 +169,8 @@ NotesAlt = \relative do' {
     fa1  | sol2 fa~ | fa1~ | fa1 | sol1 | fa1~ | 
     fa1 | sol1 | fa4 fa mi re | mi2 fa~ | fa2 mi~ | mi4 re2 do4 | re4 re re2 | do2. re4~ | re4 dos re re~ | re4 do2. | re2 re4 do | re1 | mi1 | re1 |
     
-    sol,2 fa | sol2 fa | sol4 fa sol2~ | sol1 | fa2. sol4~ | sol4 fa2 sol4 |
+    sol,2 fa | sol2 fa | sol4 fa sol2~ | sol1 | fa2. sol4~ | sol4 fa2. |
+    sol2 fa | sol2 fa | sol4 fa sol2~ | sol1 | fa2. sol4~ | sol4 fa2. |
 }
 NotesTer = \relative do' { 
     R1*4 | sib1\p | la1 | sib1~ | 
@@ -177,7 +181,8 @@ NotesTer = \relative do' {
     sib1~ | sib2 la | do2. sib4~ | sib1 \fermata | sib1 | do1~ |
     do1 | re1 | re4 do do si | do2 do~ | do2 do~ | do4 sol2 fa4 | sol4 la sol2 | fa2. sol4~ | sol4 fas fas sol~ | sol4 fa2. | sol2 fa4 fa | sol1 | la1 \fermata | re,1 \fermata |
     
-    do2 sib | do2 sib | do4 sib do2~ | do1 | sib2. do4~ | do4 sib2 do4 |
+    do2 sib | do2 sib | do4 sib do2~ | do1 | sib2. do4~ | do4 sib2. |
+    do2 sib | do2 sib | do4 sib do2~ | do1 | sib2. do4~ | do4 sib2. |
 }
 NotesBas = \relative do { 
     R1*4 | re1\p | mib1 | re1~ |
@@ -188,7 +193,8 @@ NotesBas = \relative do {
     re1 | mib2 re~ | re1~ | re1 | mi1 | fa1~ |
     fa1 | sol1 | fa4 fa mi re | do2 fa~ | fa2 do~ | do4 sib2 la4 | sib4 re sib2 | la2. sib4~ | sib4 sib do sib~ | sib4 la2. | sib2 re4 do | si1 | dos1 | sib1 |
     
-    mib,2 re | mib2 re | mib4 re mib2~ | mib1 | re2. mib4~ | mib4 re2 mib4 |
+    mib,2 re | mib2 re | mib4 re mib2~ | mib1 | re2. mib4~ | mib4 re2. |
+    mib2 re | mib2 re | mib4 re mib2~ | mib1 | re2. mib4~ | mib4 re2. |
 }
 
 % --- acordes
