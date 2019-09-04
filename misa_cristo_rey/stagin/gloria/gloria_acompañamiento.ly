@@ -51,11 +51,11 @@ global = {
 
 cantus = \relative do'' {
     R1*4
-    re,4 fa sol sol |
+    re,4^\markup{ \italic "Solo"} fa sol sol |
     sol4 sol fa sol |
     fa4 re r2 \fermata |
     
-    r2 la'8 la la4 |
+    r2 la'8^\markup{ \italic "Tutti"} la la4 |
     la4 do4 do8 do sib4 |
     sib4 re re8 re do4 |
     do4 la2 r4 |
@@ -119,7 +119,7 @@ cantus = \relative do'' {
 altus = \relative do' {
     R1*6 |
     r2 r2 \fermata |
-    re8 re re4 re fa |
+    re8^\markup{ \italic "Tutti"} re re4 re fa |
     fa8 fa mi4 mi sol |
     sol8 sol fa4 fa fa~ |
     fa4 r fa8 fa fa4 |
@@ -144,7 +144,7 @@ altus = \relative do' {
     re4 mi fas2 |
     
     R1*10 |
-    r2 re8 re re re |
+    r2 re8^\markup{ \italic "Tutti"} re re re |
     mi4 mi fa fa8 fa |
     fa4 fa fa fa |
     la4 sol fa mi4 |

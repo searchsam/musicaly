@@ -29,7 +29,7 @@
         \override NoteHead.style = #'neomensural        
         \key re \minor
         \relative do' {
-            la^\markup{ \italic "Solo"} la la do re re re re re re re do re mi re \bar "|" 
+            la la la do re re re re re re re do re mi re \bar "|" 
         }
     }
     \new Lyrics \lyricsto "invocacion" {
@@ -55,7 +55,7 @@ global = {
 }
 
 cantus = \relative do' {
-    la'4^\markup{ \italic "Tutti"} fa2 fa4 |
+    la'4 fa2 fa4 |
     sol4 la2 sol4 |
     la2 r |
     la4 fa2 fa4 |
@@ -63,7 +63,7 @@ cantus = \relative do' {
 }
 
 altus = \relative do' {
-    r2 r4 fa4^\markup{ \italic "Tutti"} |
+    r2 r4 fa4 |
     re4 re do2 |
     re2 r |
     la'4 fa2 fa4 |
@@ -170,7 +170,7 @@ incipitaltus=\markup{
         \override NoteHead.style = #'neomensural        
         \key re \minor
         \relative do' {
-            la4^\markup{ \italic "Solo"} la la la la do re re re re re re re re do re mi re \bar "|" 
+            la4 la la la la do re re re re re re re re do re mi re \bar "|" 
         }
     }
     \new Lyrics \lyricsto "invocacion" {
@@ -245,7 +245,7 @@ incipitaltus=\markup{
         \override NoteHead.style = #'neomensural        
         \key re \minor
         \relative do' {
-            la4^\markup{ \italic "Solo"} la la la la la do re re re re re re do re mi re \bar "|" 
+            la4 la la la la la do re re re re re re do re mi re \bar "|" 
         }
     }
     \new Lyrics \lyricsto "invocacion" {
@@ -316,9 +316,3 @@ incipitaltus=\markup{
     #(set-default-paper-size "letter")
 	indent=3.5\cm
 }
-
-
-%{
-convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
-Aplicando la conversión:     El documento no ha cambiado.
-%}

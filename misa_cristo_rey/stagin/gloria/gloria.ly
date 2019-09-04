@@ -28,7 +28,7 @@
         \override NoteHead.style = #'neomensural        
         \key sol \minor
         \relative do' {
-            re4 fa sol sol sol sol fa sol fa re
+            re4^\markup{ \italic "Solo"} fa sol sol sol sol fa sol fa re
         }
     }
     \new Lyrics \lyricsto "invocacion" {
@@ -53,7 +53,7 @@ global = {
 }
 
 cantus_gloria = \relative do'' {
-    r2 la8 la la4 |
+    r2 la8^\markup{ \italic "Tutti"} la la4 |
     la4 do4 do8 do sib4 |
     sib4 re re8 re do4 |
     do4 la2 r4 |
@@ -65,7 +65,7 @@ cantus_gloria = \relative do'' {
 }
 
 altus_gloria = \relative do' {
-    re8 re re4 re fa |
+    re8^\markup{ \italic "Tutti"} re re4 re fa |
     fa8 fa mi4 mi sol |
     sol8 sol fa4 fa fa~ |
     fa4 r fa8 fa fa4 |
@@ -192,7 +192,7 @@ incipitaltus=\markup{
         \override NoteHead.style = #'neomensural        
         \key sol \minor
         \relative do'' {
-            la8 la4. re,2 fa4 sol8 sol la2 sol2 re8 re4. fa8 fa mib mib re4 re2
+            la8^\markup{ \italic "Solo"} la4. re,2 fa4 sol8 sol la2 sol2 re8 re4. fa8 fa mib mib re4 re2
         }
     }
     \new Lyrics \lyricsto "invocacion" {
@@ -209,7 +209,7 @@ incipitaltus=\markup{
 }
 
 cantus_senyor = \relative do'' {
-    \partial 2 la4 la |
+    \partial 2 la4^\markup{ \italic "Tutti"} la |
     mi sol la sib 
     la2 re2 |
     dos4 si( la2 )
@@ -217,7 +217,7 @@ cantus_senyor = \relative do'' {
 }
 
 altus_senyor = \relative do' {
-    re4 re |
+    re4^\markup{ \italic "Tutti"} re |
     mi4 mi fa2 |
     fa fa2 |
     la4 sol fas( mi4) |
@@ -294,7 +294,7 @@ textoaltus_senyor = \lyricmode{
         \override NoteHead.style = #'neomensural        
         \key re \minor
         \relative do'' {
-            la8 la4. re,2 fa8 fa sol8 sol la2 sol2 re2 fa4 mi re2
+            la8^\markup{ \italic "Solo"} la4. re,2 fa8 fa sol8 sol la2 sol2 re2 fa4 mi re2
         }
     }
     \new Lyrics \lyricsto "invocacion" {
@@ -311,7 +311,7 @@ textoaltus_senyor = \lyricmode{
 }
 
 cantus_quitas = \relative do'' {
-    la8 la la la mi4 sol |
+    la8^\markup{ \italic "Tutti"} la la la mi4 sol |
     la4 sib8 sib la4 la |
     re2 dos4 si |
     la4 la sol2 |
@@ -319,7 +319,7 @@ cantus_quitas = \relative do'' {
 }
 
 altus_quitas = \relative do' {
-    re8 re re re mi4 mi|
+    re8^\markup{ \italic "Tutti"} re re re mi4 mi|
     fa4 fa fa4 fa |
     fa2 la4 sol |
     fas4 mi4 re4 mi |
@@ -396,7 +396,7 @@ textoaltus_quitas = \lyricmode{
         \override NoteHead.style = #'neomensural        
         \key re \minor
         \relative do'' {
-            la8 la la la re,8 re re4 fa4 sol8 sol la2 sol4 sol re re fa4 mi8 mi re2
+            la8^\markup{ \italic "Solo"} la la la re,8 re re4 fa4 sol8 sol la2 sol4 sol re re fa4 mi8 mi re2
         }
     }
     \new Lyrics \lyricsto "invocacion" {
@@ -413,7 +413,7 @@ textoaltus_quitas = \lyricmode{
 }
 
 cantus_estas = \relative do'' {
-    la8 la la la mi4 sol8 sol |
+    la8^\markup{ \italic "Tutti"} la la la mi4 sol8 sol |
     la8 la sib sib la4 la |
     re2 dos4 si |
     la la sol2 |
@@ -431,7 +431,7 @@ cantus_estas = \relative do'' {
 }
 
 altus_estas = \relative do' {
-    re8 re re re mi4 mi |
+    re8^\markup{ \italic "Tutti"} re re re mi4 mi |
     fa4 fa8 fa fa4 fa |
     fa4 fa la sol |
     fas4 mi re4 mi |
@@ -549,3 +549,9 @@ textoaltus_estas = \lyricmode{
     #(set-default-paper-size "letter")
 	indent=3.5\cm
 }
+
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión:     El documento no ha cambiado.
+%}

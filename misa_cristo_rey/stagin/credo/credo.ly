@@ -28,7 +28,7 @@
         \override NoteHead.style = #'neomensural        
         \key sol \minor
         \relative do' {
-          \[fa4 re8 sib8 mib4\] re \[do4. sib8\]
+          \[fa4^\markup{ \italic "Solo"} re8 sib8 mib4\] re \[do4. sib8\]
         }
     }
     \new Lyrics \lyricsto "invocacion" {
@@ -54,7 +54,7 @@ global = {
 }
 
 cantus_gloria = \relative do'' {
-    r4 do2 do4
+    r4 do2^\markup{ \italic "Tutti"} do4
     re4 re re re
     re( do2 si4)
     do2 r4 do8 do 
@@ -67,7 +67,7 @@ cantus_gloria = \relative do'' {
 }
 
 altus_gloria = \relative do'' {
-    r4 la2 la4
+    r4 la2^\markup{ \italic "Tutti"} la4
     sib4 sib sib sib
     la2( sol2)
     sol2 r4 la8 la 
@@ -181,7 +181,7 @@ incipitaltus=\markup{
         \override NoteHead.style = #'neomensural        
         \key sol \minor
         \relative do' {
-            \[fa4 re8\] sib8 mib4 re8 \[do4. sib4\]
+            \[fa4^\markup{ \italic "Solo"} re8\] sib8 mib4 re8 \[do4. sib4\]
         }
     }
     \new Lyrics \lyricsto "invocacion" {
@@ -199,24 +199,24 @@ incipitaltus=\markup{
 }
 
 cantus_senyor = \relative do'' {
-    r4 do2 do4
+    r4 do2^\markup{ \italic "Tutti"} do4
     re4 re re re
     re( do2) si4
     do2 r4 do8 do 
     do4 do do do
     do4 re2 do4
     re4 re re2
-    do8 do do4 do
-    sib4 sib2( la4)
-    sib2
-    \tuplet 3/2 {do8 do do} do4 do re re4~(
-    re4 do si8 la) si4~
-    si4 si4 dos1 \fermata
+    do8 do do4 do sib4 
+    sib2( la4) sib4~ 
+    sib4 \tuplet 3/2 {do8 do do} do4 do 
+    re re2( do4 
+    si8 la) si2 si4 
+    dos1 \fermata
     \bar "|."
 }
 
 altus_senyor = \relative do'' {
-    r4 la2 la4
+    r4 la2^\markup{ \italic "Tutti"} la4
     sib4 sib sib sib
     la2 sol2
     sol2 r4 la8 la 
@@ -224,22 +224,21 @@ altus_senyor = \relative do'' {
     sol4 sol sol4 la4
     sib4 la sib2
     la8 la la4 la
-    sol4~ sol4 fas2
-    sol2
-    \tuplet 3/2 {la8 la la} la4 la sib sib4(
+    sol4~ sol4 fas2 sol4~
+    sol4 \tuplet 3/2 {la8 la la} la4 la sib sib4(
     la2) sol~ sol4 sol4 la1 \fermata
 }
 
 textocantus_senyor = \lyricmode{
     Hi -- jo ú -- ni -- co, nues -- tro _ Se -- ñor,
     que fue con -- ce -- bi -- do por o -- bra y gra -- cia del Es -- pí -- ri -- tu San -- _ to,
-    na -- cio de San -- ta Ma -- rí -- _ _ _ _ a _ Vir -- gen.
+    _ na -- cio de San -- ta Ma -- rí -- _ _ _ a Vir -- gen.
 }
 
 textoaltus_senyor = \lyricmode{
     Hi -- jo ú -- ni -- co, nues -- tro Se -- ñor,
     que fue con -- ce -- bi -- do por o -- bra y gra -- cia del Es -- pí -- ri -- tu _ San -- to,
-    na -- cio de San -- ta Ma -- rí -- _ a _ Vir -- gen.
+    na -- cio de San -- ta Ma -- rí -- _ _ a _ Vir -- gen.
 }
 
 \score {
@@ -370,7 +369,7 @@ textoaltus_senyor = \lyricmode{
         \override NoteHead.style = #'neomensural        
         \key sol \minor
         \relative do' {
-            fa4 re8 sib16 sib \tuplet 3/2 {mib8 mib mib} re8 do4. sib4
+            fa4^\markup{ \italic "Solo"} re8 sib16 sib \tuplet 3/2 {mib8 mib mib} re8 do4. sib4
         }
     }
     \new Lyrics \lyricsto "invocacion" {
@@ -388,7 +387,7 @@ textoaltus_senyor = \lyricmode{
 }
 
 cantus_estas = \relative do'' {
-    r4 do2 do4
+    r4 do2^\markup{ \italic "Tutti"} do4
     re4 re re re
     re( do2) si4
     do2 r4 sib
@@ -407,7 +406,7 @@ cantus_estas = \relative do'' {
 }
 
 altus_estas = \relative do'' {
-    r4 la2 la4
+    r4 la2^\markup{ \italic "Tutti"} la4
     sib4 sib sib sib
     la2 sol2
     sol2 r4 sol
@@ -502,7 +501,7 @@ textoaltus_estas = \lyricmode{
         \override NoteHead.style = #'neomensural        
         \key re \minor
         \relative do' {
-            \[re4 mi re\] \[do re2\]
+            \[re4^\markup{ \italic "Solo"} mi re\] \[do re2\]
         }
     }
     \new Lyrics \lyricsto "invocacion" {
@@ -516,6 +515,7 @@ textoaltus_estas = \lyricmode{
         line-width = 17\cm
         ragged-right = ##f
     }
+    \midi {}
 }
 
 % --- Musica
