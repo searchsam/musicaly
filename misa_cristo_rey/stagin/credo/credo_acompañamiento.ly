@@ -36,6 +36,11 @@ global = {
     \key sol \minor
     s1
     \tempo "Andante" 4 = 80
+    s1*17
+    \time 2/4
+    s2*29
+    \tempo "Moderatto" 4 = 120
+    \time 4/4
 }
 
 sopMusic = \relative do'' {
@@ -68,7 +73,39 @@ sopMusic = \relative do'' {
     r1
     \bar "||"
     
-    R1*12
+    R1*16
+    re,4^\markup{ \italic "Solo Soprano"} sol fa sib 
+    la2 
+    la8 sib r sib 
+    la4 r4 
+    la8 sib r sib16 sib 
+    la4 la8 sib 
+    r8 sib la4 
+    r4 la8 sib 
+    sib8 sib( la4 
+    sol8) la4. \fermata
+    
+    fa8^\markup{ \italic "Solo Soprano"} sib4 la8 
+    re4 do4~
+    do8 la4 sol8 
+    la4 do8 do( 
+    sib4) sol
+    fa8 sib4 la8 
+    re4 do4 
+    sol8 la4 do8 
+    do sib sib do 
+    do do( sib4 
+    la8 sol la4) 
+    sib2 \fermata \bar "||"
+    
+    do8^\markup{ \italic "Solo Soprano"} do re4 
+    la8 sib sol la8~ 
+    la4 sib8 sib 
+    la4. la8 
+    sib sib sib8 la8
+    sol4.( la8 
+    sib4. la8) 
+    sib2 \bar "||"
 }
 sopWords = \lyricmode {
     Pa -- dre to -- do -- po -- de -- ro -- so. 
@@ -77,6 +114,13 @@ sopWords = \lyricmode {
     Hi -- jo ú -- ni -- co, nues -- tro Se -- ñor,
     que fue con -- ce -- bi -- do por o -- bra y gra -- cia del Es -- pí -- ri -- tu San -- to,
     na -- cio de San -- ta Ma -- rí -- a Vir -- gen.
+    
+    Al ter -- cer dí -- a re -- su -- ci -- tó de~en -- tre los muer -- tos,
+    re -- su -- ci -- tó de~en -- tre los muer -- tos.
+    Su -- bió al cie -- lo y es -- tá sen -- ta -- do
+    a la de -- re -- cha de Dios Pa -- dre to -- do -- po -- de -- ro -- so.
+    Des -- de allí ha de ve -- nir a juz -- gar a vi -- vos y a muer -- tos.
+    
 }
 
 altMusic = \relative do' {
@@ -131,7 +175,34 @@ altMusic = \relative do' {
     do2 fa2 
     do2 re4 mib 
     fa re( mib2) 
-    sib
+    sib1 \fermata \bar "||"
+    
+    re4^\markup{ \italic "Solo Contralto"} re re sol 
+    fa2 
+    fa8 sol r sol 
+    fa4 r4 
+    fa8 sol r sol16 sol 
+    fa4 fa8 sol 
+    r sol fa4 
+    r4 fa8 sol 
+    sol8 fa( re4 
+    do8) re4. \fermata \bar "||"
+    
+    R2*12
+    sol8^\markup{ \italic "Solo Contralto"} sol sol4 
+    fa8 fa re fa8~ 
+    fa4 sol8 sol 
+    fa4. fa8 
+    sol sol sol8 fa8 
+    sol4.( fa8~ 
+    fa2) 
+    fa2
+    
+    R1*7 |
+    fa2^\markup{ \italic "Solo" }( re4 sib4 |
+    mib2) re2 |
+    do2.( sib4~
+    sib2\fermata) r \bar "||" |
 }
 altWords = \lyricmode {
     Cre -- o~en Dios.
@@ -146,6 +217,9 @@ altWords = \lyricmode {
     Pa -- de -- ció ba -- jo el po -- der de Pon -- cio Pi -- la -- to,
     fue cru -- ci -- fi -- ca -- do, muer -- to y se -- pul -- ta -- do.
     Des -- cen -- dió a los in -- fier -- nos,
+    al ter -- cer dí -- a re -- su -- ci -- tó de~en -- tre los muer -- tos,
+    re -- su -- ci -- tó de~en -- tre los muer -- tos.
+    Des -- de allí ha de ve -- nir a juz -- gar a vi -- vos y a muer -- tos.
 }
 
 NotesSop = \relative do' { 
@@ -159,6 +233,14 @@ NotesSop = \relative do' {
     
     do2 sib | do2 sib | do4 re do2~ | do1 | sib2. do4~ | do4 sib2. |
     do2 sib | do2 sib | do4 re do2~ | do1 | sib2. do4~ | do4 sib2. |
+    do2 sib | do2 sib~ | sib2 do2 | sib1 \fermata |
+    
+    re2 re4 re4 | fa2 | fa8 sol4. | fa2 | fa8 sol4. | fa4. sol8 | sol4 fa | fa4. sol8 | sol8 sib la4 | sol8 la4. \fermata |
+    sib4. la8~ | la4 sol~ | sol8 fa4 sol8 | fa2 | fa4 sol | sib4. la8~ | la4 sol~ | sol8 fa4 sol8~ | sol8 sol4 fa8~ | fa4 sol | fa2 | sol2 \fermata |
+    sol4 sol | la8 sib sol la~ | la4 sol | fa2 | sol4. fa8 | sol4. fa8 | fa4. fa8 | sib2 |
+    
+    R1*4 \bar "||" | sib1\p | la1 | sib1~ \bar "||" | 
+    sib1~ | sib2 la~ | la2. sib4~ | sib1 \fermata | do1 | la1~ \bar "||" |
 }
 NotesAlt = \relative do' { 
     fa2 re4 sib4 | mib2 re | do1 | sib1\fermata | fa'~\p | fa~ | fa1~ | 
@@ -171,6 +253,14 @@ NotesAlt = \relative do' {
     
     sol,2 fa | sol2 fa | sol4 fa sol2~ | sol1 | fa2. sol4~ | sol4 fa2. |
     sol2 fa | sol2 fa | sol4 fa sol2~ | sol1 | fa2. sol4~ | sol4 fa2. |
+    sol2 fa | sol2 fa~ | fa2 sol2 | fa1 |
+    
+    sib2 sib4 sib4 | do2 | do8 re4. | do2 | do8 re4. | do4. re8 | re4 do | do4. re8 | re8 fa fa4 | mib8 fa4. |
+    fa4. fa8~ | fa4 mib~ | mib8 do4 re8 | do2 | re4 re | fa4. fa8~ | fa4 mib~ | mib8 do4 mib8~ | mib8 re4 do8~ | do4 re | do2 | re2 |
+    do4 re | re8 re re re~ | re4 re | do2 | re4. do8 | re4. do8 | re4. do8 | fa2 |
+    
+    fa2 re4 sib4 | mib2 re | do1 | sib1\fermata | fa'~\p | fa~ | fa1~ | 
+    fa1  | sol2 fa~ | fa1~ | fa1 | sol1 | fa1~ | 
 }
 NotesTer = \relative do' { 
     R1*4 | sib1\p | la1 | sib1~ | 
@@ -183,18 +273,34 @@ NotesTer = \relative do' {
     
     do2 sib | do2 sib | do4 sib do2~ | do1 | sib2. do4~ | do4 sib2. |
     do2 sib | do2 sib | do4 sib do2~ | do1 | sib2. do4~ | do4 sib2. |
+    do2 sib | do2 sib~ | sib2 do2 | sib1 \fermata |
+    
+    sol'2 sib4 sol4 | fa2 | fa8 sol4. | fa2 | fa8 sol4. | fa4. sol8 | sol4 fa | fa4. sol8 | sol8 sib re4 | do8 re4. \fermata |
+    sib4. la8~ | la4 sol~ | sol8 fa4 sol8 | fa2 | fa4 sol | sib4. la8~ | la4 sol~ | sol8 fa4 sol8~ | sol8 sol4 fa8~ | fa4 sol | fa2 | sol2 \fermata |
+    sol4 sol | fa8 fa sol fa~ | fa4 sol | fa2 | sol4. fa8 | sol4. fa8 | fa4. fa8 | sib2 |
+    
+    R1*4 | sib1\p | la1 | sib1~ | 
+    sib1~ | sib2 la | do2. sib4~ | sib1 \fermata | sib1 | do1~ |
 }
 NotesBas = \relative do { 
     R1*4 | re1\p | mib1 | re1~ |
-    re1 | mib2 re~ | re1~ | re1 | mi1 | fa1~ |
+    re1 | mib2 re~ | re1~ | re1 | mib1 | fa1~ |
     fa1 | sol1 | fa4 fa mi re | do2 fa~ | fa2 do | sib1 | re4 fa si,2~ | si4 dos2. | re1 |
     
     R1*4 | re1 | mib1 | re1~ |
-    re1 | mib2 re~ | re1~ | re1 | mi1 | fa1~ |
+    re1 | mib2 re~ | re1~ | re1 | mib1 | fa1~ |
     fa1 | sol1 | fa4 fa mi re | do2 fa~ | fa2 do~ | do4 sib2 la4 | sib4 re sib2 | la2. sib4~ | sib4 sib do sib~ | sib4 la2. | sib2 re4 do | si1 | dos1 | sib1 |
     
     mib,2 re | mib2 re | mib4 re mib2~ | mib1 | re2. mib4~ | mib4 re2. |
     mib2 re | mib2 re | mib4 re mib2~ | mib1 | re2. mib4~ | mib4 re2. |
+    mib2 re | mib2 re~ | re2 mib2 | re1 |
+    
+    sol2 sib4 sol4 | la2 | la8 sib4. | la2 | la8 sib4. | la4. sib8 | sib4 la | la4. sib8 | sol8 re' re4 | do8 do4. |
+    re4. re8~ | re4 do~ | do8 la4 sib8 | la2 | sib4 sib | re4. re8~ | re4 do~ | do8 la4 do8~ | do8 sib4 la8~ | la4 sib | la2 | sib2 |
+    do4 sib | la8 sib sib la~ | la4 sib | la2 | sib4. la8 | sol4. la8 | sib4. la8 | re2 |
+    
+    R1*4 | re1\p | mib1 | re1~ |
+    re1 | mib2 re~ | re1~ | re1 | mib1 | fa1~ |
 }
 
 % --- acordes

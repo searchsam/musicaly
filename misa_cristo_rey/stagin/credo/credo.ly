@@ -313,19 +313,19 @@ textoaltus_senyor = \lyricmode{
             
             \bar "" \break
             
-            do2 fa do re4 mib fa \[re mib2\] sib2. \breathe
+            do2 fa do re4 mib fa \[re mib2\] sib1 \breathe
             
             \bar "||" \break
             
-            re4^\markup{ \italic "Solo Cantus y Altus"} <sol re> <fa re> <sib sol> <la fa>2 \breathe <la fa>8 <sib sol> r <sib sol> <la fa>4 r8 <la fa>8 <sib sol> r <sib sol>16 <sib sol> <la fa>4 \breathe
+            re4^\markup{ \italic "Solo Cantus y Altus"} <sol re> <fa re> <sib sol> <la fa>2 \breathe <la fa>8 <sib sol> r <sib sol> <la fa>4 r4 <la fa>8 <sib sol> r <sib sol>16 <sib sol> <la fa>4 \breathe
             
             \bar "" \break
             
-            <la fa>8 <sib sol> r <sib sol> <la fa>4 r8 <la fa>8 <sib sol> <sib sol>8 \[<sib fa> <la re,>4 <sol do,>8\] <la re,>4 \breathe
+            <la fa>8 <sib sol> r <sib sol> <la fa>4 r4 <la fa>8 <sib sol> <sib sol>8 \[<sib fa> <la re,>4 <sol do,>8\] <la re,>4. \breathe
             
             \bar "||" \break
             
-            fa8^\markup{ \italic "Solo Cantus"} sib4 la8 re4 do4 \breathe la4 sol8 la4 do8 \[do sib4\] sol \breathe
+            fa8^\markup{ \italic "Solo Cantus"} sib4 la8 re4 do4. \breathe la4 sol8 la4 do8 \[do sib4\] sol \breathe
             
             \bar "" \break
             
@@ -333,7 +333,7 @@ textoaltus_senyor = \lyricmode{
             
             \bar "||" \break
             
-            <do sol>8^\markup{ \italic "Solo Cantus y Altus"} <do sol> <re sol,>4 <la fa>8 <sib fa> <sol re> <la fa>4 <sib sol>8 <sib sol> <la fa>4 \breathe <la fa>8 <sib sol> <sib sol> <sib sol>8 <la fa> \[sol4 <la fa>8 <sib fa>4. <la fa>8\] <sib fa>2
+            <do sol>8^\markup{ \italic "Solo Cantus y Altus"} <do sol> <re sol,>4 <la fa>8 <sib fa> <sol re> <la fa>4. <sib sol>8 <sib sol> <la fa>4. \breathe <la fa>8 <sib sol> <sib sol> <sib sol>8 <la fa>4 \[sol4. <la fa>8 <sib fa>4. <la fa>8\] <sib fa>2
             
             \bar "||"
         }
