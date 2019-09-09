@@ -1,6 +1,6 @@
 % ****************************************************************
-%	Santo - Melodia a modo del renacimiento
-%   	Texto y musica con acompañamiento
+%	Señor ten piedad v3 - Melodia a modo del renacimiento
+%   Texto y musica con acompañamiento
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
@@ -9,8 +9,8 @@
 %#(set-global-staff-size 16.4)
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Santo" \fontsize #2 "Misa Cristo Rey" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" \small "(2019)" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Señor ten piedad" \fontsize #2 "Misa Cristo Rey" } } }
+\markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" \small "(2018)" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -23,13 +23,13 @@
 
 % --- Parametro globales
 global = {
-    \tempo "Andante Maestuoso" 4 = 100
+    \tempo "Moderatto" 4 = 100
     \key re \minor
     \time 4/4
 }
 sopMusic = \relative do' {
     R1*10 |
-    la'4 fa2 fa4 |
+    la'4^\markup{ \italic "Tutti"} fa2 fa4 |
     sol4 la2 sol4 |
     la2 r |
     la4 fa2 fa4 |
@@ -37,7 +37,7 @@ sopMusic = \relative do' {
     r1 \fermata |
     
     R1*12 |
-    la4 fa2 fa4 |
+    la4^\markup{ \italic "Tutti"} fa2 fa4 |
     sol4 la2 sol4 |
     la2 r |
     la4 fa2 fa4 |
@@ -45,7 +45,7 @@ sopMusic = \relative do' {
     r1 \fermata |
     
     R1*12 |
-    la4 fa2 fa4 |
+    la4^\markup{ \italic "Tutti"} fa2 fa4 |
     sol4 la2 sol4 |
     la2 r |
     la4 fa2 fa4 |
@@ -60,11 +60,11 @@ sopWords = \lyricmode {
 
 altMusic = \relative do' {
     R1*6 |
-    la4 la la do |
+    la4^\markup{ \italic "Solo" } la la do |
     re re re re |
     re re re do|
     re mi re2 \bar "||" |
-    r2 r4 fa4 |
+    r2 r4 fa4^\markup{ \italic "Tutti"} |
     re4 re do2 |
     re2 r |
     la'4 fa2 fa4 |
@@ -72,12 +72,12 @@ altMusic = \relative do' {
     r1 \fermata \bar "||" |
     
     R1*7 |
-    la,4 la la do |
+    la,4^\markup{ \italic "Solo"} la la do |
     re re re re |
     re re re re |
     re re do re |
     mi re2 r4 \bar "||" |
-    r2 r4 fa4 |
+    r2 r4 fa4^\markup{ \italic "Tutti"} |
     re4 re do2 |
     re2 r |
     la'4 fa2 fa4 |
@@ -85,12 +85,12 @@ altMusic = \relative do' {
     r1 \fermata \bar "||" |
     
     R1*7 |
-    la,4 la la do |
+    la,4^\markup{ \italic "Tutti"} la la do |
     re re re re |
     re re re re |
     re do re mi |
     re2 r2 \bar "||" |
-    r2 r4 fa4 |
+    r2 r4 fa4^\markup{ \italic "Tutti"} |
     re4 re do2 |
     re2 r |
     la'4 fa2 fa4 |

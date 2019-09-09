@@ -5,7 +5,7 @@
 \language "espanol"
 \version "2.19.82"
 
-%#(set-global-staff-size 16.4)
+#(set-global-staff-size 19.5)
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Credo" \fontsize #2 "Misa Cristo Rey" } } }
@@ -38,7 +38,7 @@
     }
 >>
     \layout {
-        indent = 1.5 \cm
+        indent = 2 \cm
         line-width = 17\cm
         ragged-right = ##f
     }
@@ -96,7 +96,7 @@ incipitcantus = \markup {
             \clef "petrucci-g"
             \key re \minor
             \time 2/2
-            re'1
+            do''1
         } 
         \layout { line-width = 20 indent = 0 }
     }
@@ -112,7 +112,7 @@ incipitaltus=\markup{
             \clef "petrucci-c2"
             \key re \minor
             \time 2/2
-            re'1
+            la1
 		} 
         \layout { line-width = 20 indent = 0 }
 	}
@@ -191,7 +191,7 @@ incipitaltus=\markup{
     }
 >>
     \layout {
-        indent = 1.5 \cm
+        indent = 2 \cm
         line-width = 17\cm
         ragged-right = ##f
     }
@@ -379,7 +379,7 @@ textoaltus_senyor = \lyricmode{
     }
 >>
     \layout {
-        indent = 1.5 \cm
+        indent = 2 \cm
         line-width = 17\cm
         ragged-right = ##f
     }
@@ -511,7 +511,7 @@ textoaltus_estas = \lyricmode{
     }
 >>
     \layout {
-        indent = 1.5 \cm
+        indent = 2 \cm
         line-width = 17\cm
         ragged-right = ##f
     }

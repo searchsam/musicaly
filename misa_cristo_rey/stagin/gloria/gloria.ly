@@ -38,7 +38,7 @@
     }
 >>
     \layout {
-        indent = 1.5 \cm
+        indent = 2 \cm
         line-width = 17\cm
         ragged-right = ##f
     }
@@ -104,7 +104,7 @@ incipitcantus = \markup {
             \override NoteHead.style = #'neomensural
             \override Staff.TimeSignature.style = #'neomensural
             \cadenzaOn 
-            \clef "petrucci-c1"
+            \clef "petrucci-g"
             \key do \major
             \time 2/2
             la'1
@@ -123,7 +123,7 @@ incipitaltus=\markup{
             \clef "petrucci-c3"
             \key do \major
             \time 2/2
-            fa'1
+            re1
 		} 
         \layout { line-width = 20 indent = 0 }
 	}
@@ -202,7 +202,7 @@ incipitaltus=\markup{
     }
 >>
     \layout {
-        indent = 1.5 \cm
+        indent = 2 \cm
         line-width = 17\cm
         ragged-right = ##f
     }
@@ -304,7 +304,7 @@ textoaltus_senyor = \lyricmode{
     }
 >>
     \layout {
-        indent = 1.5 \cm
+        indent = 2 \cm
         line-width = 17\cm
         ragged-right = ##f
     }
@@ -538,7 +538,7 @@ textoaltus_estas = \lyricmode{
     }
 >>
     \layout {
-        indent = 1.5 \cm
+        indent = 2 \cm
         line-width = 17\cm
         ragged-right = ##f
     }
