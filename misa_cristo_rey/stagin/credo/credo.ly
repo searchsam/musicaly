@@ -28,7 +28,7 @@
         \override NoteHead.style = #'neomensural        
         \key sol \minor
         \relative do' {
-          \[fa4^\markup{ \italic "Solo"} re8 sib8 mib4\] re \[do4. sib8\]
+          \[fa4^\markup{ \italic "Solo"} re8 sib8 mib4\] re \[do4. sib4.\]
         }
     }
     \new Lyrics \lyricsto "invocacion" {
@@ -181,7 +181,7 @@ incipitaltus=\markup{
         \override NoteHead.style = #'neomensural        
         \key sol \minor
         \relative do' {
-            \[fa4^\markup{ \italic "Solo"} re8\] sib8 mib4 re8 \[do4. sib4\]
+            \[fa4^\markup{ \italic "Solo"} re8\] sib8 mib4 re8 do4. sib4.
         }
     }
     \new Lyrics \lyricsto "invocacion" {
@@ -369,12 +369,12 @@ textoaltus_senyor = \lyricmode{
         \override NoteHead.style = #'neomensural        
         \key sol \minor
         \relative do' {
-            fa4^\markup{ \italic "Solo"} re8 sib16 sib \tuplet 3/2 {mib8 mib mib} re8 do4. sib4
+            fa4^\markup{ \italic "Solo"} re8 sib mib8 mib re re do4. sib4.
         }
     }
     \new Lyrics \lyricsto "invocacion" {
         \lyricmode {
-            Cre -- o en el Es -- pí -- ri -- tu San -- to.
+            Cre -- o~en el Es -- pí -- ri -- tu San -- to.
         }
     }
 >>
@@ -428,7 +428,7 @@ textocantus_estas = \lyricmode{
     la co -- mu -- nión de los san -- _ tos,
     el per -- dón de los pe -- ca -- dos,
     la re -- su -- rrec -- ción de la car -- ne
-    y~en la vi -- da e ter -- _ _ _ _ _ _ na.
+    y~en la vi -- da e ter -- _ _ _ _ na.
 }
 
 textoaltus_estas = \lyricmode{
@@ -436,7 +436,7 @@ textoaltus_estas = \lyricmode{
     la co -- mu -- nión de los san -- tos,
     el per -- dón de los pe -- ca -- dos,
     la re -- su -- rrec -- ción de la car -- ne
-    y~en la vi -- da e -- ter -- _ _ _ na.
+    y~en la vi -- da e -- ter -- _ _ _ _ na.
 }
 
 \score {
