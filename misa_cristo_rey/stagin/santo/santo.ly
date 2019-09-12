@@ -64,7 +64,7 @@ cantus = \relative do' {
     sib4( la8 sib do4) sib \break
     
     sol4 la sib do sib la sib r
-    sol4 la sib do sib la sib do sib2 \fermata r \bar "||" \break
+    sol4 la sib do sib la sib do si2 \fermata r \bar "||" \break
     
     sol4( fa) do'2( 
     si4) do2 r4
@@ -77,7 +77,7 @@ cantus = \relative do' {
     sib4( la8 sib do4) sib \break
     
     sol4 la sib do sib la sib r
-    sol4 la sib do sib la( sib) do( sib2) \fermata r \bar "||" \break
+    sol4 la sib do sib la( sib) do( si2) \fermata r \bar "||" \break
     
     sol4( fa) do'2( 
     si4) do2 r4
@@ -91,8 +91,10 @@ altus = \relative do' {
     sol2( fa4) sol
     sol2( fa4) sol
     R1
-    sol4 la sib do sib la sol fa
-    sol4 la sib do sib2 \fermata r
+    sol4 la sib la
+    sol la sol fa
+    sol4 la sib la
+    sol2 \fermata r
     
     sol4( fa) mi2( 
     re4) mi2 r4
@@ -105,8 +107,10 @@ altus = \relative do' {
     sol2( fa4) sol
     sol2( fa4) sol
     R1
-    sol4 la sib do sib la sol fa
-    sol4 la( sib) do( sib2) \fermata r
+    sol4 la sib la
+    sol la sol fa
+    sol4 la sib la
+    sol2 \fermata r
     
     sol4( fa) mi2( 
     re4) mi2 r4

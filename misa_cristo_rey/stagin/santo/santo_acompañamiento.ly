@@ -23,129 +23,171 @@
 
 % --- Parametro globales
 global = {
-    \tempo "Andante Maestuoso" 4 = 100
+    \tempo "Andante Maestuoso" 4 = 80
     \key re \minor
     \time 4/4
+    \skip 1*14
+    \tempo "Allegro" 4 = 120
+    \skip 1*6
+    \tempo "Andante Maestuoso" 4 = 80
+    \skip 1*10
+    \tempo "Allegro" 4 = 120
+    \skip 1*6
 }
-sopMusic = \relative do' {
-    R1*10 |
-    la'4 fa2 fa4 |
-    sol4 la2 sol4 |
-    la2 r |
-    la4 fa2 fa4 |
-    sol4 la2.
-    r1 \fermata |
+sopMusic = \relative do'' {
+    R1*3 |
+    sib4 sib( la2) \fermata |
+    R1*2 |
     
-    R1*12 |
-    la4 fa2 fa4 |
-    sol4 la2 sol4 |
-    la2 r |
-    la4 fa2 fa4 |
-    sol4 la2. 
-    r1 \fermata |
+    sib4^\markup{ \italic "Todos"}( la8 sib do4) sib |
+    sib4( la8 sib do4) sib |
+    sib4( la8 sib do4) sib |
     
-    R1*12 |
-    la4 fa2 fa4 |
-    sol4 la2 sol4 |
-    la2 r |
-    la4 fa2 fa4 |
-    sol4 la2. \fermata |
-    R1*2 \bar "|."
+    sol4 la sib do |
+    sib la sib r |
+    sol4 la sib do | 
+    sib la sib do |
+    si2 \fermata r \bar "||" |
+    
+    sol4( fa) do'2( |
+    si4) do2 r4 |
+    sol4( fa) do'2( |
+    si4) do2 r4 |
+    do8 do si4( la8 si do4~ |
+    do) si4 do2 \fermata \bar "||" |
+    
+    R1*2 | 
+    sib4( la8 sib do4) sib |
+    sib4( la8 sib do4) sib |
+    sib4( la8 sib do4) sib |
+    
+    sol4 la sib do |
+    sib la sib r |
+    sol4 la sib do | 
+    sib la sib do |
+    si2 \fermata r \bar "||" |
+    
+    sol4( fa) do'2( |
+    si4) do2 r4 |
+    sol4( fa) do'2( |
+    si4) do2 r4 |
+    do8 do si4( la8 si do4~ |
+    do) si4 do2 \fermata \bar "|." |
 }
 sopWords = \lyricmode {
-    Se -- ñor, ten pie -- dad, pie -- dad. Se -- ñor, ten pie -- dad.
-    Se -- ñor, ten pie -- dad, pie -- dad. Se -- ñor, ten pie -- dad.
-    Se -- ñor, ten pie -- dad, pie -- dad. Se -- ñor, ten pie -- dad.
+    San -- to.
+    San -- to, san -- to, san -- to.
+    Los cie -- los y la tie -- rra es -- tan lle -- nos de tu glo -- ri -- a.
+    Ho -- sa -- na, ho -- sa -- na, en el cie -- e -- lo.
+    
+    San -- to, san -- to, san -- to.
+    Ben -- di -- to el que vie -- ne en el nom -- bre del Se -- ñor.
+    Ho -- sa -- na, ho -- sa -- na, en el cie -- e -- lo.
 }
 
 altMusic = \relative do' {
     R1*6 |
-    la4 la la do |
-    re re re re |
-    re re re do|
-    re mi re2 \bar "||" |
-    r2 r4 fa4 |
-    re4 re do2 |
-    re2 r |
-    la'4 fa2 fa4 |
-    sol4 la2. 
-    r1 \fermata \bar "||" |
     
-    R1*7 |
-    la,4 la la do |
-    re re re re |
-    re re re re |
-    re re do re |
-    mi re2 r4 \bar "||" |
-    r2 r4 fa4 |
-    re4 re do2 |
-    re2 r |
-    la'4 fa2 fa4 |
-    sol4 la2. 
-    r1 \fermata \bar "||" |
+    sol'2^\markup{ \italic "Todos"}( fa4) sol |
+    sol2( fa4) sol |
+    sol2( fa4) sol |
     
-    R1*7 |
-    la,4 la la do |
-    re re re re |
-    re re re re |
-    re do re mi |
-    re2 r2 \bar "||" |
-    r2 r4 fa4 |
-    re4 re do2 |
-    re2 r |
-    la'4 fa2 fa4 |
-    sol4 la2. \fermata \bar "||" |
-    R1*2 \bar "|."
+    R1 |
+    sol4 la sib la |
+    sol la sol fa |
+    sol4 la sib la |
+    sol2 \fermata r |
+    
+    sol4( fa) mi2( |
+    re4) mi2 r4 |
+    sol4( fa) mi2( |
+    re4) mi2 r4 |
+    mi4 re fa4( sol8 fa |
+    mi4) re mi2 \fermata |
+    
+    R1*2 |
+    sol2( fa4) sol |
+    sol2( fa4) sol |
+    sol2( fa4) sol |
+    
+    R1 |
+    sol4 la sib la |
+    sol la sol fa |
+    sol4 la sib la |
+    sol2 \fermata r |
+    
+    sol4( fa) mi2( |
+    re4) mi2 r4 |
+    sol4( fa) mi2( |
+    re4) mi2 r4 |
+    mi4 re fa4( sol8 fa |
+    mi4) re mi2 \fermata |
 }
 altWords = \lyricmode {
-    Tú que nos li -- bras -- te del pe -- ca -- do y de la muer -- te.
-    Se -- ñor, ten pie -- dad. Se -- ñor, ten pie -- dad.
-    Tú que nos re -- con -- ci -- lias -- te con el Pa -- dre y nues -- tros her -- ma -- nos.
-    Se -- ñor, ten pie -- dad. Se -- ñor, ten pie -- dad.
-    Tú que nos re -- su -- ci -- ta -- rás y glo -- ri -- fi -- ca -- rás con -- ti -- go.
-    Se -- ñor, ten pie -- dad. Se -- ñor, ten pie -- dad.
+    San -- to, san -- to, san -- to.
+    Los cie -- los y la tie -- rra es -- tan lle -- nos de ti.
+    Ho -- sa -- na, ho -- sa -- na, en el cie -- e -- lo.
+    
+    San -- to, san -- to, san -- to.
+    Ben -- di -- to el que vie -- ne en el nom -- bre.
+    Ho -- sa -- na, ho -- sa -- na, en el cie -- e -- lo.
 }
 
-NotesSop = \relative do' { 
-    R1*4 | re1 | do2 re \bar "||" | 
-    do1 | fa1~ | fa2. mi4~ | mi2 re2 | la'1~ | la2 sol | la2 re, | la'1~ | la1 | r1 
+NotesSop = \relative do'' { 
+    sib4\p^\markup{ \italic "Solo"} sib( la2) \fermata \bar "||" | fa1 | sib1 \fermata \bar "||" |
+    sib2 fa \fermata \bar "||" | fa1 | sib1 \fermata \bar "||" |
     
-    R1*5 | re,1 | do2 re \bar "||" | 
-    do1 | fa1~ | fa1~ | fa2 mi2~ | mi4 re2. | la'1~ | la2 sol | la2 re, | la'1~ | la1 | r1
+    sib2 la4 sib4~ | sib2 la4 sib4~ | sib2 la4 sib4 |
+    sib2. la4 | sib2. la4 | sib2. la4 | sib2. la4 | si1 \fermata |
+    do4 do do2 | si4 do2.~ | do4 do do2 | si4 do2.~ | do4 si do2 | do4 si do2 \fermata |
     
-    R1*5 | re,1 | do2 re \bar "||" |
-    do1 | fa1~ | fa1~ | fa4 mi2. | re1 | la'1~ | la2 sol | la2 re, | la'1~ | la1 | do,1 | re1 | 
+    do1 | sib1 \fermata \bar "||" |
+    
+    sib2 la4 sib4~ | sib2 la4 sib4~ | sib2 la4 sib4 |
+    sib2. la4 | sib2. la4 | sib2. la4 | sib2. la4 | si1 \fermata |
+    do4 do do2 | si4 do2.~ | do4 do do2 | si4 do2.~ | do4 si do2 | do4 si do2 \fermata |
 }
 NotesAlt = \relative do' { 
-    la4\p la la do | re re re re | re re re do| re mi re2 | la1 | sol2 la | 
-    la1 | re1~  | re2. do4~ | do2 la2 | re1~ | re2 do | re2 la | re1~ | re1 | r1 \fermata 
+    R1 | re\p | sol1 |
+    sol2 re | re1 | sol1 |
     
+    sol2 fa4 sol~ | sol2 fa4 sol~ | sol2 fa4 sol |
+    sol2. fa4 | sol2. fa4 | sol2. fa4 | sol2. fa4 | sol1 |
+    sol4 fa sol2 | sol4 sol2.~ | sol4 fa sol2 | sol4 sol2.~ | sol4 sol4 fa2 | sol4 sol sol2 |
     
-    la4 la la do | re re re re | re re re re | re re do re | mi re2. | la1 | sol2 la |
-    la1 | re1~  | re1~  | re2 do2~ | do4 la2. | re1~ | re2 do | re2 la | re1~ | re1 | r1 \fermata
+    sol1 | sol1 |
     
-    la4 la la do | re re re re | re re re re | re do re mi | re1 | la1 | sol2 la |
-    la1 | re1~  | re1~ | re4 do2. | la1 | re1~ | re2 do | re2 la | re1~ | re1 | sol,1 | la1 |
+    sol2 fa4 sol~ | sol2 fa4 sol~ | sol2 fa4 sol |
+    sol2. fa4 | sol2. fa4 | sol2. fa4 | sol2. fa4 | sol1 |
+    sol4 fa sol2 | sol4 sol2.~ | sol4 fa sol2 | sol4 sol2.~ | sol4 sol4 fa2 | sol4 sol sol2 |
 }
-NotesTer = \relative do { 
-    R1*4 | fa1\p | mi2 fa | 
-    mi1 | la1~ | la2. sol4~ | sol2 fa2 | fa1~ | fa2 mi | fa1~ | fa1~ | fa1 | r1 \fermata
+NotesTer = \relative do' { 
+    R1 | re,1\p | sol1 \fermata |
+    sol2 re | re1 | sol1 \fermata |
     
-    R1*5 | fa1 | mi2 fa | 
-    mi1 | la1~ | la1~ | la2 sol2~ | sol4 fa2. | fa1~ | fa2 mi | fa1~ | fa1~ | fa1 | r1 \fermata
+    sol2 fa4 sol~ | sol2 fa4 sol~ | sol2 fa4 sol |
+    sol2. fa4 | sol2. fa4 | sol2. fa4 | sol2. fa4 | sol1 \fermata |
+    do4 la do2 | re4 do2.~ | do4 la do2 | re4 do2.~ | do4 re la2 | do4 re do2 \fermata |
     
-    R1*5 | fa1 | mi2 fa |
-    mi1 | la1~ | la1~ | la4 sol2. | fa1 | fa1~ | fa2 mi | fa1~ | fa1~ | fa1 | mi1 | fa1 | 
+    do1 | sol1 \fermata |
+    
+    sol2 fa4 sol~ | sol2 fa4 sol~ | sol2 fa4 sol |
+    sol2. fa4 | sol2. fa4 | sol2. fa4 | sol2. fa4 | sol1 \fermata |
+    do4 la do2 | re4 do2.~ | do4 la do2 | re4 do2.~ | do4 re la2 | do4 re do2 \fermata |
 }
 NotesBas = \relative do { 
-    R1*4 | re1\p | do2 re |
-    la1 | re1~ | re2. do4~ | do2 re2 | re1~ | re2 do | re1~ | re1~ | re1 | r1
+    R1 | la1\p | re1 |
+    re2 la | la1 | re1 |
     
-    R1*5 | re1 | do2 re |
-    la1 | re1~ | re1~ | re2 do2~ | do4 re2. | re1~ | re2 do | re1~ | re1~ | re1 | r1
+    re2 do4 re~ | re2 do4 re~ | re2 do4 re |
+    re2. do4 | re2. do4 | re2. do4 | re2. do4 | re1 \fermata |
+    mi4 fa mi2 | fa4 mi2.~ | mi4 fa mi2 | fa4 mi2.~ | mi4 fa fa2 | mi4 fa mi2 |
     
-    R1*5 | re1 | do2 re |
-    la1 | re1~ | re1~ | re4 do2. | re1 | re1~ | re2 do | re1~ | re1~ | re1 | do1 | re1 |
+    mi1 | re1 |
+    
+    re2 do4 re~ | re2 do4 re~ | re2 do4 re |
+    re2. do4 | re2. do4 | re2. do4 | re2. do4 | re1 \fermata |
+    sol4 fa sol2 | fa4 sol2.~ | sol4 fa sol2 | fa4 sol2.~ | sol4 fa fa2 | sol4 fa sol2 |
 }
 
 % --- acordes
