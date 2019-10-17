@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.32"
+\version "2.19.80"
 
 %#(set-global-staff-size 16)
 
@@ -21,7 +21,7 @@ global = {
 \markup { \fill-line { \center-column { \fontsize #2 "" } \center-column { \fontsize #2 "Anonimo" \small "" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
@@ -102,13 +102,13 @@ acordes = \new ChordNames {
     \acordes
     \new Staff <<
       \new Voice = "soprano" << \global \soprano >>
-    \\
+      \\
       \new Voice = "alto" << \global \contralto >>
     >>
     \new Lyrics \lyricsto "soprano" \letra_uno
     \new Staff <<
       \new Voice = "tenor" << \global \tenor >>
-    \\
+      \\
       \new Voice = "bajo" << \global \bajo >>
     >>
   >>
@@ -120,3 +120,8 @@ acordes = \new ChordNames {
 \paper {
   #( set-default-paper-size "letter" )
 }
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.40, 2.19.46, 2.19.49, 2.19.80
+%}

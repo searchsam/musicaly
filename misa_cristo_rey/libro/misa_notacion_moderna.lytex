@@ -1,0 +1,64 @@
+% *********************************************************
+%    MISA EN HONOR A LA FIESTA DE CRISTO REY DEL UNIVERSO
+%   Texto y musica con acompañamiento en notacion moderna
+%   by serachsam
+% *********************************************************
+
+\documentclass[letterpaper]{report}
+
+% \usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{pifont}
+\usepackage{pdflscape}
+% \usepackage{lscape}
+\usepackage{geometry}
+\geometry{
+    letterpaper,
+    left=1.5cm,
+    right=1.5cm,
+    bottom=1.5cm,
+    top=1.5cm
+}
+%% Portada del Libro
+\title{ \textbf{ \Huge Misa Cristo Rey  } \\
+{ \LARGE Solemnidad Cristo Rey del Universo } }
+\author{ \textit{ \large Carmelitas Descazas, Managua, Nicaragua } }
+\date{ \LARGE Samuel José Gutiérrez Avilés }
+
+\begin{document}
+\pagenumbering{gobble} % borra los numeros de paguinas
+
+%% - Portada
+\maketitle
+
+%% - Kyrie eleison - Melodia a modo del renacimiento
+\begin{lilypond}%[staffsize=19]
+	\include "../stagin/kyrie/señor_ten_piedad_acompañamiento.ly"
+\end{lilypond}
+\clearpage
+
+%% - Gloria in excelsis Deo - Melodia a modo del renacimiento
+\begin{lilypond}%[staffsize=20]
+	\include "../stagin/gloria/gloria_acompañamiento.ly"
+\end{lilypond}
+\clearpage
+
+%% - Credo in unum Deum - Melodia a modo del renacimiento
+\begin{lilypond}%[staffsize=20]
+	\include "../stagin/credo/credo_acompañamiento.ly"
+\end{lilypond}
+\clearpage
+
+%% - Sanctus - Melodia a modo del renacimiento
+\begin{lilypond}%[staffsize=20]
+	\include "../stagin/sanctus/santo_acompañamiento.ly"
+\end{lilypond}
+\clearpage
+
+%% - Agnus Dei - Melodia a modo del renacimiento
+\begin{lilypond}%[staffsize=20]
+	\include "../stagin/agnus/cordero_acompañamiento.ly"
+\end{lilypond}
+\clearpage
+
+\end{document}

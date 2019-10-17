@@ -6,11 +6,11 @@
 \language "espanol"
 \version "2.19.82"
 
-#(set-global-staff-size 18)
+%#(set-global-staff-size 16.4)
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Señor ten piedad" \fontsize #2 "Misa Cristo Rey" } } }
-\markup { \fill-line { " " "Kyrie Eleison" \center-column { \fontsize #2 "Samuel Gutiérrez" \small "(Octubre 2019)" } } }
+\markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" \small "(Octubre 2019)" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -103,49 +103,49 @@ altWords = \lyricmode {
 }
 
 NotesSop = \relative do' {
-  R1*4 | fa1\p | mi2 fa~ \bar "||" | \break
-  fa1 | fa1~ | fa2. mi4~ | mi2 fa2~ | fa1~ | fa2 mi | fa1~ | fa1 | mi4 fa2.~ | \break
+  R1*4 | fa1\p | mi2 fa \bar "||" |
+  dos1 | fa1~ | fa2. mi4~ | mi2 fa2~ | fa1~ | fa2 mi | fa1~ | fa1 | sol4 la2. |
 
-  fa1 | mi2 fa~ \bar "||" | \break
-  fa1 | fa1~ | fa1~ | fa2 mi2~ | mi4 fa2.~ | fa1~ | fa2 mi | fa1~ | fa1 | mi4 fa2.~ | \break
+  fa1 | mi2 fa \bar "||" |
+  dos1 | fa1~ | fa1~ | fa2 mi2~ | mi4 fa2.~ | fa1~ | fa2 mi | fa1~ | fa1 | sol4 la2. |
 
-  fa1 | mi2 fa~ \bar "||" | \break
-  fa1 | fa1~ | fa1~ | fa4 mi2. | fa1~ | fa1~ | fa2 mi | fa1~ | fa1 | mi4 fa2. \fermata | \break
+  fa1 | mi2 fa \bar "||" |
+  dos1 | fa1~ | fa1~ | fa4 mi2. | fa1~ | fa1~ | fa2 mi | fa1~ | fa1 | sol4 la2. |
+
+  do,1 \fermata | re1 \fermata |
+}
+NotesAlt = \relative do' {
+  la4\p la la do | re re re re | re re re do| re mi re2 | re1 | do2 re \bar "||" |
+  la1 | re1~  | re2. do4~ | do2 re2~ | re1~ | re2 do | re1~ | re1 | do4 re2. |
+
+  re1 | do2 re \bar "||" |
+  la1 | re1~  | re1~ | re2 do2~ | do4 re2.~ | re1~ | re2 do | re1~ | re1 | do4 re2. |
+
+  re1 | do2 re \bar "||" |
+  la1 | re1~  | re1~ | re4 do2. | re1~ | re1~ | re2 do | re1~ | re1 | do4 re2. |
+
+  sol,1 | la1 |
+}
+NotesTer = \relative do {
+  R1*4 | la'1\p | sol2 la |
+  mi1 | la1~ | la2. sol4~ | sol2 la2~ | la1~ | la2 sol | la1~ | la1 | sol4 la2. |
+
+  la1 | sol2 la |
+  mi1 | la1~ | la1~ | la2 sol2~ | sol4 la2.~ | la1~ | la2 sol | la1~ | la1 | sol4 la2. |
+
+  la1 | sol2 la |
+  mi1 | la1~ | la1~ | la4 sol2. | la1~ | la1~ | la2 sol | la1~ | la1 | sol4 la2. |
 
   mi1 \fermata | fa1 \fermata |
 }
-NotesAlt = \relative do' {
-  la4\p la la do | re re re re | re re re do| re mi re2 | re1 | do2 do~ \bar "||" |
-  do1 | re1~  | re2. do4~ | do2 re2~ | re1~ | re2 do | re1~ | re1 | do4 re2.~ |
-
-  re1 | do2 do~ \bar "||" |
-  do1 | re1~  | re1~ | re2 do2~ | do4 re2.~ | re1~ | re2 do | re1~ | re1 | do4 re2.~ |
-
-  re1 | do2 do~ \bar "||" |
-  do1 | re1~  | re1~ | re4 do2. | re1~ | \break re1~ | re2 do | re1~ | re1 | do4 re2. |
-
-  do1 | re1 |
-}
-NotesTer = \relative do {
-  R1*4 | la'1\p | sol2 fa~ |
-  fa1 | la1~ | la2. sol4~ | sol2 la2~ | la1~ | la2 sol | la1~ | la1 | sol4 la2.~ |
-
-  la1 | sol2 fa~ |
-  fa1 | la1~ | la1~ | la2 sol2~ | sol4 la2.~ | la1~ | la2 sol | la1~ | la1 | sol4 la2.~ |
-
-  la1 | sol2 fa~ |
-  fa1 | la1~ | la1~ | la4 sol2. | la1~ | la1~ | la2 sol | la1~ | la1 | sol4 la2. \fermata |
-
-  sol1 \fermata | la1 \fermata |
-}
 NotesBas = \relative do {
-  R1*4 | re1\p | do2 la~ |
-  la1 | re1~ | re2. do4~ | do2 re2~ | re1~ | re2 do | re1~ | re1 | do4 re2.~ |
+  R1*4 | re1\p | do2 re |
+  la1 | re1~ | re2. do4~ | do2 re2~ | re1~ | re2 do | re1~ | re1 | do4 re2. |
 
-  re1 | do2 la~ |
-  la1 | re1~ | re1~ | re2 do2~ | do4 re2.~ | re1~ | re2 do | re1~ | re1 | do4 re2.~ |
+  re1 | do2 re |
+  la1 | re1~ | re1~ | re2 do2~ | do4 re2.~ | re1~ | re2 do | re1~ | re1 | do4 re2. |
 
-  re1 | do2 la~ |
+  re1 | do2 re |
   la1 | re1~ | re1~ | re4 do2. | re1~ | re1~ | re2 do | re1~ | re1 | do4 re2. |
 
   do1 | re1 |
@@ -155,13 +155,10 @@ NotesBas = \relative do {
 armonias = \new ChordNames {
   \chordmode {
     \italianChords
-    R1*4 | re1:m | do2 fa2 |
-
-    R1 | re1:m | R2. do4 | R2 re2:m | R1 | R2 do2 | re1:m | R1 | do4 re2.:m | re1:m | do2 fa2 |
-
-    R1 | re1:m | R1 | R2 do2 | R4 re2.:m | R1 | R2 do2 | re1:m | R1 | do4 re2.:m | re1:m | do2 fa2 |
-
-    R1 | re1:m | R1 | R4 do2. | re1:m | R1 | R2 do2 | re1:m | R1 | do4 re2.:m | do1 | re1:m |
+    re1:m | do2 re2:m |
+    la1:m | re1:m | R2. do4 | R2 re2:m | R1 | R2 do2 | re1:m | R1*2 | do2 re2:m |
+    la1:m | re1:m | R1 | R2 do2 | R4 re2.:m | R1 | R2 do2 | re1:m | R1*2 | do2 re2:m |
+    la1:m | re1:m | R1 | R4 do2. | re1:m | R1 | R2 do2 | re1:m | R1*2 | do1 | re1:m |
   }
 }
 
@@ -186,7 +183,7 @@ armonias = \new ChordNames {
       \new Lyrics = "alto"
       \context Lyrics = "alto" \lyricsto "alto" \altWords
     >>
-    \armonias
+    %\armonias
     \new PianoStaff <<
       \new Staff <<
         \set Staff.instrumentName = #"Organo"

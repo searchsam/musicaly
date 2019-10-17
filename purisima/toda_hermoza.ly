@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.32"
+\version "2.19.80"
 
 %#(set-global-staff-size 16)
 
@@ -21,7 +21,7 @@ global = {
 \markup { \fill-line { \center-column { \fontsize #2 "" } \center-column { \fontsize #2 "Anonimo" \small "" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
@@ -116,7 +116,7 @@ armonias = \new ChordNames {
   \set chordChanges = ##t
   \italianChords
   \chordmode {
-    re2. R4 si8:7 mi4.:m mi4.:m7 la2.:7 re4. R2. R4 si8:7 mi4.:m mi4.:m7 la2.:7 re4.    
+    re2. R4 si8:7 mi4.:m mi4.:m7 la2.:7 re4. R2. R4 si8:7 mi4.:m mi4.:m7 la2.:7 re4.
   }
 }
 
@@ -125,12 +125,12 @@ armonias = \new ChordNames {
     \armonias
     \new Staff <<
       \new Voice = "soprano" << \global \soprano_uno >>
-    \\
+      \\
       \new Voice = "alto" << \global \contralto_uno >>
     >>
     \new Staff <<
       \new Voice = "tenor" << \global \tenor_uno >>
-    \\
+      \\
       \new Voice = "bajo" << \global \bajo_uno >>
     >>
   >>
@@ -234,7 +234,7 @@ acordes = \new ChordNames {
   \set chordChanges = ##t
   \italianChords
   \chordmode {
-    re2. si4.:7 mi4.:m mi4.:m7 la2.:7 re4. R2. si4.:7 mi4.:m mi4.:m7 la2.:7 re4.    
+    re2. si4.:7 mi4.:m mi4.:m7 la2.:7 re4. R2. si4.:7 mi4.:m mi4.:m7 la2.:7 re4.
   }
 }
 
@@ -243,13 +243,13 @@ acordes = \new ChordNames {
     \acordes
     \new Staff <<
       \new Voice = "soprano" << \global \soprano_dos >>
-    \\
+      \\
       \new Voice = "alto" << \global \contralto_dos >>
     >>
     \new Lyrics \lyricsto "soprano" \letra_uno
     \new Staff <<
       \new Voice = "tenor" << \global \tenor_dos >>
-    \\
+      \\
       \new Voice = "bajo" << \global \bajo_dos >>
     >>
   >>
@@ -261,3 +261,8 @@ acordes = \new ChordNames {
 \paper {
   #( set-default-paper-size "letter" )
 }
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.40, 2.19.46, 2.19.49, 2.19.80
+%}

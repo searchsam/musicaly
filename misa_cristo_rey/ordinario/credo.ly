@@ -5,7 +5,7 @@
 \language "espanol"
 \version "2.19.82"
 
-#(set-global-staff-size 19.5)
+#(set-global-staff-size 18)
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Credo" \fontsize #2 "Misa Cristo Rey" } } }

@@ -1,4 +1,0 @@
-@image{./d3/lily-a85c6912-1}
-@image{./d3/lily-a85c6912-2}
-@image{./d3/lily-a85c6912-3}
-@c eof
