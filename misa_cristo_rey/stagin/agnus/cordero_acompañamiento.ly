@@ -231,7 +231,7 @@ armonias = \new ChordNames {
       \new Lyrics = "alto"
       \context Lyrics = "alto" \lyricsto "alto" \altWords
     >>
-    \armonias
+    %\armonias
     \new PianoStaff <<
       \new Staff <<
         \set Staff.instrumentName = #"Organo"
