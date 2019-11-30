@@ -8,14 +8,18 @@
 % --- Includes
 \include "gregorian.ly"
 \include "persignarse.ily"
+\include "constriccion.ily"
+\include "padre_nuestro.ily"
+\include "ave_maria.ily"
 \include "letanias.ily"
+\include "oracion_final.ily"
 
 % --- Tamaño del pentagrama
-%#(set-global-staff-size 19)
+%#(set-global-staff-size 18)
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #8 \smallCaps "Rosario" \fontsize #2 "Rosarium Virginis Mariae" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" \small "(Octubre 2019)" } } }
+\markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" \fontsize #2 "Linda Martínez" \small "(Octubre 2019)" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -31,6 +35,84 @@
       \globalPersignarse
       \new Voice = "melody" \chantPersignarse
       \new Lyrics = "one" \lyricsto melody \verbaPersignarse
+    >>
+  >>
+  \layout {
+    ragged-right = ##f
+
+    \context {
+      \Staff
+      \remove "Time_signature_engraver"
+      \remove "Bar_engraver"
+      \RemoveEmptyStaves
+      \hide Stem
+    }
+
+  }
+  \midi {}
+}
+
+% --- Acto de Constriccion
+\score {
+  \header { piece = \markup { \fontsize #3 \italic "Acto de Constriccion." } }
+  <<
+    \acordesConstriccion
+    \new Staff <<
+      \globalConstriccion
+      \new Voice = "melody" \chantConstriccion
+      \new Lyrics = "one" \lyricsto melody \verbaConstriccion
+    >>
+  >>
+  \layout {
+    ragged-right = ##f
+
+    \context {
+      \Staff
+      \remove "Time_signature_engraver"
+      \remove "Bar_engraver"
+      \RemoveEmptyStaves
+      \hide Stem
+    }
+
+  }
+  \midi {}
+}
+
+% --- Padre Nuestro
+\score {
+  \header { piece = \markup { \fontsize #3 \italic "Padre Nuestro." } }
+  <<
+    \acordesPadreNuestro
+    \new Staff <<
+      \globalPadreNuestro
+      \new Voice = "melody" \chantPadreNuestro
+      \new Lyrics = "one" \lyricsto melody \verbaPadreNuestro
+    >>
+  >>
+  \layout {
+    ragged-right = ##f
+
+    \context {
+      \Staff
+      \remove "Time_signature_engraver"
+      \remove "Bar_engraver"
+      \RemoveEmptyStaves
+      \hide Stem
+    }
+
+  }
+  \midi {}
+}
+
+% --- Ave María
+\score {
+  \header { piece = \markup { \fontsize #3 \italic "Ave María." } }
+  <<
+    \acordesAveMaria
+    \new Staff <<
+      \globalAveMaria
+      \new Voice = "melody" \chantAveMaria
+      \new Lyrics = "one" \lyricsto melody \verbaAveMaria
     >>
   >>
   \layout {
@@ -270,7 +352,6 @@
       \RemoveEmptyStaves
       \hide Stem
     }
-
   }
   \midi {}
 }
@@ -299,6 +380,32 @@
   \midi {}
 }
 
+% --- Oracion Final
+\score {
+  \header { piece = \markup { \fontsize #3 \italic "Oración Final" } }
+  <<
+    \acordesOraionFinal
+    \new Staff <<
+      \globalOraionFinal
+      \new Voice = "melody" \chantOraionFinal
+      \new Lyrics = "one" \lyricsto melody \verbaOraionFinal
+    >>
+  >>
+  \layout {
+    ragged-right = ##f
+
+    \context {
+      \Staff
+      \remove "Time_signature_engraver"
+      \remove "Bar_engraver"
+      \RemoveEmptyStaves
+      \hide Stem
+    }
+
+  }
+  \midi {}
+}
+  
 % --- Pagina
 \paper {
   #( set-default-paper-size "letter" )

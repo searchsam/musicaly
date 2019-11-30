@@ -139,11 +139,11 @@ acordesLetanias_parte_uno = \new ChordNames {
   \italianChords
   \chordmode {
     % Señor ten piedad
-    sol\breve re2:7 sol2 sol\breve re2:7 sol2
-    sol\breve re2:7 sol2 sol\breve re2:7 sol2
-    sol\breve re2:7 sol2 sol\breve re2:7 sol2
-    sol\breve re2:7 sol2 sol\breve re2:7 sol2
-    sol\breve re2:7 sol2 sol\breve re2:7 sol2
+    sol\breve re2:7 sol2 sol\breve re2 sol2
+    sol\breve re2:7 sol2 sol\breve re2 sol2
+    sol\breve re2:7 sol2 sol\breve re2 sol2
+    sol\breve re2:7 sol2 sol\breve re2 sol2
+    sol\breve re2:7 sol2 sol\breve re2 sol2
   }
 }
 
@@ -173,9 +173,9 @@ acordesLetanias_parte_cuatro = \new ChordNames {
   \italianChords
   \chordmode {
     % Cordero de Dios
-    sol\breve re2.:7 sol2. sol2 re2 sol2
-    sol\breve re2.:7 sol2. sol2 re2 sol2
-    sol\breve re2.:7 sol2. sol4. re2 sol2.
+    sol\breve re2. sol2. sol2 re2 sol2
+    sol\breve re2. sol2. sol2 re2 sol2
+    sol\breve re2. sol2. sol4. re2 sol2.
   }
 }
 
@@ -184,6 +184,6 @@ acordesLetanias_parte_cinco = \new ChordNames {
   \italianChords
   \chordmode {
     % Cordero de Dios
-    sol\breve re2.:7 sol2 sol\breve sol\breve sol4 re1 sol2.
+    sol\breve re2. sol2 sol\breve sol\breve sol4 re1 sol2.
   }
 }

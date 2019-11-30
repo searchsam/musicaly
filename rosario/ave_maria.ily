@@ -1,6 +1,6 @@
 
 % --- Parametro globales
-globalConstriccion = { 
+globalAveMaria = { 
   \tempo 4 = 60
   \clef treble
   \key sol \major
@@ -8,38 +8,47 @@ globalConstriccion = {
 }
 
 % --- Musica
-chantConstriccion = \relative do'' {
+chantAveMaria = \relative do'' {
   \set Score.timing = ##f
   
   sol\breve \divisioMinima
-  re\breve \divisioMinima
-  mi4 mi fas fas sol2 \divisioMaior \break
   sol\breve \divisioMinima
-  re\breve \divisioMinima
-  mi4 mi mi fas fas fas sol4 sol \divisioMaior
-  fas4( sol) sol2 \finalis \break \skip 32
+  sol\breve la2 la \divisioMaior \break
+  la\breve \divisioMinima
+  la\breve \divisioMinima
+  la\breve si2 sol \divisioMaior
+  fas2 sol \finalis \break \skip 32
 }
 
 % --- Letra
-verbaConstriccion = \lyricmode {
+verbaAveMaria = \lyricmode {
   \once \override LyricText.self-alignment-X = #-1
-  "Por la señal de la Santa Cruz," 
+  "Dios te salve María llena eres de gracia el Señor es contigo;"
   \once \override LyricText.self-alignment-X = #-1
-  "de nuestros enemigos" li -- bra -- nos Se -- ñor.
-  
+  "bendita tú eres entre todas las mujeres,"
   \once \override LyricText.self-alignment-X = #-1
-  "En el nombre del Padre," 
+  "y bendito es el fruto de tu vientre,"  Je -- sús.
   \once \override LyricText.self-alignment-X = #-1
-  "y del Hijo," y del Es -- pí -- ri -- tu San -- to.
-  
-  A -- mén.
+  "Santa María, Madre de Dios,"
+  \once \override LyricText.self-alignment-X = #-1
+  "ruega por nosotros, pecadores," 
+  \once \override LyricText.self-alignment-X = #-1
+  "ahora y en la ahora de nuestra" muer -- te. A -- mén.
 }
 
 % --- Acordes
-acordesConstriccion = \new ChordNames {
+acordesAveMaria = \new ChordNames {
   \set chordChanges = ##t
   \italianChords
   \chordmode {
-    
+    sol\breve
+    sol\breve
+    sol\breve
+    la1
+    la\breve
+    la\breve
+    la\breve
+    mi2:m sol2
+    re2 sol
   }
 }

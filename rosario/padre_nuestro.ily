@@ -1,6 +1,6 @@
 
 % --- Parametro globales
-globalLetanias = { 
+globalPadreNuestro = { 
   \tempo 4 = 60
   \clef treble
   \key sol \major
@@ -8,38 +8,55 @@ globalLetanias = {
 }
 
 % --- Musica
-chantLetanias = \relative do'' {
+chantPadreNuestro = \relative do'' {
   \set Score.timing = ##f
   
   sol\breve \divisioMinima
-  re\breve \divisioMinima
-  mi4 mi fas fas sol2 \divisioMaior \break
   sol\breve \divisioMinima
-  re\breve \divisioMinima
-  mi4 mi mi fas fas fas sol4 sol \divisioMaior
-  fas4( sol) sol2 \finalis \break \skip 32
+  sol\breve \divisioMinima
+  sol\breve la2 la \divisioMaior \break
+  la\breve \divisioMinima
+  la\breve \divisioMinima
+  la\breve \divisioMinima
+  la\breve si2( sol) \divisioMaior
+  fas2 sol \finalis \break \skip 32
 }
 
 % --- Letra
-verbaLetanias = \lyricmode {
+verbaPadreNuestro = \lyricmode {
   \once \override LyricText.self-alignment-X = #-1
-  "Por la señal de la Santa Cruz," 
+  "Padre nuestro, que estás en el cielo,"
   \once \override LyricText.self-alignment-X = #-1
-  "de nuestros enemigos" li -- bra -- nos Se -- ñor.
-  
+  "santificado sea tu Nombre;"
   \once \override LyricText.self-alignment-X = #-1
-  "En el nombre del Padre," 
+  "venga a nosotros tu reino;"
   \once \override LyricText.self-alignment-X = #-1
-  "y del Hijo," y del Es -- pí -- ri -- tu San -- to.
-  
-  A -- mén.
+  "hágase tu voluntad en la tierra como en el"  cie -- lo.
+  \once \override LyricText.self-alignment-X = #-1
+  "Danos hoy nuestro pan de cada día;"
+  \once \override LyricText.self-alignment-X = #-1
+  "perdona nuestras ofensas,"
+  \once \override LyricText.self-alignment-X = #-1
+  "como también nosotros perdonamos a los que nos ofenden;"
+  \once \override LyricText.self-alignment-X = #-1
+  "no nos dejes caer en la tentación, y líbranos del" mal. A -- mén.
 }
 
 % --- Acordes
-acordesLetanias = \new ChordNames {
+acordesPadreNuestro = \new ChordNames {
   \set chordChanges = ##t
   \italianChords
   \chordmode {
-    
+    sol\breve
+    sol\breve
+    sol\breve
+    sol\breve
+    la1
+    la\breve
+    la\breve
+    la\breve
+    la\breve
+    mi2:m sol2
+    re2 sol
   }
 }
