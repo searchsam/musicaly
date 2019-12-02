@@ -17,6 +17,7 @@ global = {  \tempo "Moderatto" 4 = 110 \clef treble \key la \minor \time 4/4 s1*
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 "El Señor es mi pastor" \fontsize #3 \caps "Salmo 23(22)" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Argüello" } } }
+\markup { \fill-line { " " \center-column { \fontsize #2 "Trasncripción: Samuel Gutiérrez Avilés"} } }
 \header {
   copyright = "Creative Commons Attribution 3.0" 
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
