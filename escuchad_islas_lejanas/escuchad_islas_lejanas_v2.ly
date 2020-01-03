@@ -34,7 +34,7 @@ melodia = \relative do' {
   dos2 si8 dos re dos~
   dos2 si8 dos re dos~
   dos2. fas8 mi 
-  re4. si8 dos8 re mi re~
+  re2 dos8 re mi re~
   re2 mi8 re mi re
   dos1
   \textLengthOn
