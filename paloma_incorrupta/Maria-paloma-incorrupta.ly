@@ -3,7 +3,7 @@
 % by serach.sam@
 % María Paloma Incorrumpa - María Paloma Incorrupta
 % ****************************************************************
-\include "marcas.ily"
+%\include "marcas.ily"
 \version "2.16.2"
 
 #(set-global-staff-size 17)
@@ -25,7 +25,7 @@ oboe = \relative c' {
   	a4 b8 c8 b4 a4 | %4
   	gis2 f2 | %5
   	<< f1 d1>> | %6
-  	\segno r4_\markup { \tiny "Entrada de la guitarra" } r4 r4 r8 d'16 e16 | %7
+  	r4_\markup { \tiny "Entrada de la guitarra" } r4 r4 r8 d'16 e16 | %7
   	f8 e8 d8 a8 c8 b8 bes8 a8 | %8
   	g2 r2 | %9
   	r4 r4 r4 r16 g16 a16 bes16 | %10

@@ -16,8 +16,8 @@ chantPersignarse = \relative do'' {
   mi4 mi fas fas sol2 \divisioMaior \break
   sol\breve \divisioMinima
   re\breve \divisioMinima
-  mi4 mi mi fas fas fas sol4 sol \divisioMaior \break
-  fas4( sol) sol2 \finalis \break \skip 32
+  mi4 mi mi fas fas fas sol2 sol \divisioMaior \break
+  fas2.( sol4) sol1 \finalis \break \skip 32
 }
 
 % --- Letra
@@ -41,7 +41,7 @@ acordesPersignarse = \new ChordNames {
   \italianChords
   \chordmode {
     sol\breve re\breve do2 re2:7 sol2
-    sol\breve re\breve do2. re2.:7 sol2
-    re4:7 sol2.
+    sol\breve re\breve do2. re2.:7 sol1
+    re2.:7 sol4
   }
 }
