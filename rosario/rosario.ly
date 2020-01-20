@@ -380,6 +380,32 @@
   \midi {}
 }
 
+% --- Salve
+\score {
+  \header { piece = \markup { \fontsize #3 \italic "Salve." } }
+  <<
+    \acordesAveMaria
+    \new Staff <<
+      \globalAveMaria
+      \new Voice = "melody" \chantAveMaria
+      \new Lyrics = "one" \lyricsto melody \verbaAveMaria
+    >>
+  >>
+  \layout {
+    ragged-right = ##f
+
+    \context {
+      \Staff
+      \remove "Time_signature_engraver"
+      \remove "Bar_engraver"
+      \RemoveEmptyStaves
+      \hide Stem
+    }
+
+  }
+  \midi {}
+}
+
 % --- Oracion Final
 \score {
   \header { piece = \markup { \fontsize #3 \italic "Oración Final" } }
@@ -405,7 +431,7 @@
   }
   \midi {}
 }
-  
+
 % --- Pagina
 \paper {
   #( set-default-paper-size "letter" )

@@ -1,11 +1,15 @@
+% ****************************************************************
+%	Dios es Fiel - Contralto
+%	by serach.sam@
+% ****************************************************************
 \language "espanol"
-\version "2.19.32"
+\version "2.19.80"
 
-\markup { \fill-line { \center-column { \fontsize #5 "Adoración de la Cruz" } } }
+\markup { \fill-line { \center-column { \fontsize #5 "Adoración de la Cruz" \fontsize #3 \caps "SubTitulo"} } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Tomas Luis de Victoria" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
@@ -46,4 +50,16 @@ global = { \tempo "Andante" 4 = 90 \key re \major \time 2/2 s1*2 \bar "||" s1*4 
       \new Lyrics \lyricsto "bass" \basswords
     >>
   >>
+  \layout {}
+  \midi {}
 }
+
+% --- Pagina
+\paper {
+  #( set-default-paper-size "letter" )
+}
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.40, 2.19.46, 2.19.49, 2.19.80
+%}

@@ -5,7 +5,7 @@
 
 % --- Parametro globales
 global = {
-  %\tempo "Moderatto" 4=100
+  \tempo "Moderatto" 4=100
   \key sol \major
   \time 4/4
   s1*19

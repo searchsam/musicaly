@@ -5,7 +5,8 @@
 %#(set-global-staff-size 18)
 
 \markup { \fill-line { \center-column { \fontsize #5 "Como es Maravilloso" \fontsize #3 "Salmo 132 (133)" } } }
-%\markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Argüello" } } }
+\markup { \fill-line { \smallCaps "" \center-column { \fontsize #1 "Kiko Argüello" } } }
+\markup { \fill-line { " " \center-column { \fontsize #1 "Adaptación: Samuel Gutiérrez" } } }
 
 \header {
  copyright = "Creative Commons Attribution 3.0" 

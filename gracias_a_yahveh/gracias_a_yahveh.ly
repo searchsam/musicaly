@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.22"
+\version "2.19.80"
 
 % --- Includes
 %\include "texto.ily"
@@ -16,10 +16,11 @@ global = {  \tempo "Moderatto" 4 = 100 \clef treble \key mi \minor }
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 "Gracias a Yahveh" \fontsize #3 \caps "Salmo 136(135)" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Argüello" \small "" } } }
+\markup { \fill-line { \smallCaps "" \center-column { \fontsize #1 "Kiko Argüello" } } }
+\markup { \fill-line { " " \center-column { \fontsize #1 "Adaptación: Samuel Gutiérrez" } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  copyright = "Creative Commons Attribution 3.0"
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
@@ -55,7 +56,7 @@ instrumento = \relative do'' {
 acordes = \new ChordNames {
   \set chordChanges = ##t
   \italianChords
-  \chordmode { 
+  \chordmode {
     mi2:m re4 mi2:m re4 mi4:m
     mi2:m re4 mi2:m re4 mi4:m
     la2:m la4:m mi2:m si4:7 mi4:m
@@ -67,11 +68,13 @@ acordes = \new ChordNames {
 \score {
   <<
     \acordes
-    \new Staff { <<
-      \set Staff.midiInstrument = #"flute"
-      \global
-      \instrumento
-    >>}
+    \new Staff {
+      <<
+        \set Staff.midiInstrument = #"flute"
+        \global
+        \instrumento
+      >>
+    }
   >>
   \midi {}
   \layout {}
@@ -81,3 +84,9 @@ acordes = \new ChordNames {
 \paper {
   #( set-default-paper-size "letter" )
 }
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40,
+2.19.46, 2.19.49, 2.19.80
+%}

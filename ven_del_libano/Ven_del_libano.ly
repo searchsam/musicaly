@@ -3,13 +3,14 @@
 
 \version "2.16.0"
 
-#(set-global-staff-size 25)
+%#(set-global-staff-size 25)
 
 %\markup { \fill-line { \center-align { "Dedicado a Javier Leonardo y Maybel Jahayra por su Matrimoion" } } }
 
 \markup { \fill-line { \center-column { \fontsize #5 "Ven del Líbano" \fontsize #3 "Cantar de los Cantares 4,8ss" } } }
 
-%\markup { \fill-line { " " \fontsize #2 "Kiko Argüello" } }
+\markup { \fill-line { \smallCaps "" \center-column { \fontsize #1 "Kiko Argüello" } } }
+\markup { \fill-line { " " \center-column { \fontsize #1 "Adaptación: Samuel Gutiérrez" } } }
 
 \header {
   copyright = "Creative Commons Attribution 3.0"

@@ -16,7 +16,8 @@ global = {  \tempo "Moderatto" 4 = 100 \clef treble \key sol \major \time 4/4 s2
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 "Levanto mis ojos a los montes" \fontsize #3 \caps "Salmo 121(120)" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Argüello" \small "" } } }
+\markup { \fill-line { \smallCaps "" \center-column { \fontsize #1 "Kiko Argüello" } } }
+\markup { \fill-line { " " \center-column { \fontsize #1 "Adaptación: Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0" 
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }

@@ -6,14 +6,15 @@
 \version "2.19.32"
 
 % --- Tamaño del pentagrama
-#(set-global-staff-size 35)
+%#(set-global-staff-size 35)
 
 % --- Parametro globales
 global = {  \tempo "Moderato" 4 = 90 \key mi \minor \time 2/4 s4 s2*12 \bar "|." }
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 "Oh Señor nuestro Dios" \fontsize #3 \caps "Salmo 8" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Argüello" \small "" } } }
+\markup { \fill-line { \smallCaps "" \center-column { \fontsize #1 "Kiko Argüello" } } }
+\markup { \fill-line { " " \center-column { \fontsize #1 "Adaptación: Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0" 
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }

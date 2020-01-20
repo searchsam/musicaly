@@ -16,7 +16,7 @@ chantOraionFinal = \relative do'' {
   sol\breve mi2 re mi mi \divisioMinima \break
   sol\breve \divisioMinima
   si\breve sol4 la la fas mi re mi2 sol \divisioMaior
-  fas4( sol) sol2 \finalis \break \skip 32
+  fas2.( sol4) sol1 \finalis \break \skip 32
 }
 
 % --- Letra
@@ -43,7 +43,7 @@ acordesOraionFinal = \new ChordNames {
     sol\breve mi2:m re2 mi1:m
     sol\breve
     mi\breve:m re2*3 mi2:m sol2
-    re4 sol2.
+    re2.:7 sol4
   }
 }
  

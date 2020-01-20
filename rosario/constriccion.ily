@@ -17,7 +17,7 @@ chantConstriccion = \relative do'' {
   sol\breve mi2 re mi \divisioMinima \break
   sol\breve \divisioMinima \break
   si\breve la4 fas mi re mi2 sol \divisioMaior
-  fas4( sol) sol2 \finalis \break \skip 32
+  fas2.( sol4) sol1 \finalis \break \skip 32
 }
 
 % --- Letra
@@ -47,7 +47,7 @@ acordesConstriccion = \new ChordNames {
     sol\breve mi2:m re2 mi2:m
     sol\breve
     mi\breve:m re1 mi2:m sol2
-    re4 sol2.
+    re2.:7 sol4
   }
 }
  

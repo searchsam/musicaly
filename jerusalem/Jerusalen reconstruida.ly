@@ -6,7 +6,8 @@
 %#(set-global-staff-size 25)
 
 \markup { \fill-line { \center-column { \fontsize #5 "Jerusalén reconstruida" \fontsize #3 "Tobías 13, 11-17" } } }
-\markup { \fill-line { " " \fontsize #2 "Kiko Argüello" } }
+\markup { \fill-line { \smallCaps "" \center-column { \fontsize #1 "Kiko Argüello" } } }
+\markup { \fill-line { " " \center-column { \fontsize #1 "Adaptación: Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
