@@ -4,43 +4,43 @@
 % "Ven del Libano" - "Kiko Argüello" - "Arreglo Bayardo Ruben Mojica"
 % ********************************************************************
 \language "espanol"
-\version "2.16.0"
+\version "2.19.80"
 
 #(set-global-staff-size 26)
 \markup { \fill-line { \center-column { \fontsize #5 "Ven del Líbano" \fontsize #3 \caps "flauta" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Argüello" \fontsize #2 "Arr. Bayardo Mojica" } } }
 
 \header {
-  copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  copyright = "Creative Commons Attribution 3.0"
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
-global = { 
-  \key mi \minor 
-  \time 2/4 
-  \tempo "Andante" 4 = 60 
-  s2*2 
-  \bar "||" 
-  s2*3 
-  \mark \markup { \musicglyph #"scripts.segno" } \tempo "Moderato" 4 = 100 
-  s2*60 
-  \bar "|." 
+global = {
+  \key mi \minor
+  \time 2/4
+  \tempo "Andante" 4 = 60
+  s2*2
+  \bar "||"
+  s2*3
+  \mark \markup { \musicglyph "scripts.segno" } \tempo "Moderato" 4 = 100
+  s2*60
+  \bar "|."
 }
 
 tenor = \relative do'' {
   \compressFullBarRests
-  \override Score.BarNumber #'break-visibility = #end-of-line-invisible
+  \override Score.BarNumber.break-visibility = #end-of-line-invisible
   \set Score.barNumberVisibility = #(every-nth-bar-number-visible 5)
-  \override Score.BarNumber #'font-size = #2
-  \override Score.BarNumber #'stencil = #(make-stencil-boxer 0.1 0.25 ly:text-interface::print)
-  
+  \override Score.BarNumber.font-size = #2
+  \override Score.BarNumber.stencil = #(make-stencil-boxer 0.1 0.25 ly:text-interface::print)
+
   si'32( do32 re32 mi32 fas32 mi32 re32 do32) si16.( las32 sol32 fas16.) | %1
   mi8( res8) do8 \fermata si8 | %2
   si32( do32 res32 mi32 fas16 res16 do16 si16) mi16 \fermata res16 | %3
   do2 | %4
   sol'2 | %5
-  \repeat volta 4 { 
+  \repeat volta 4 {
     r4 sol4-- | %6
     r8 sol8-. sol8-. sol8-. | %7
     r4 sol4 | %8
@@ -110,7 +110,7 @@ tenor = \relative do'' {
 \score {
   <<
     \new Staff = "tenor" <<
-      \set Staff.instrumentName = "Flauta" \set Staff.midiInstrument = "flute" 
+      \set Staff.instrumentName = "Flauta" \set Staff.midiInstrument = "flute"
       \global \tenor
     >>
   >>
@@ -121,3 +121,11 @@ tenor = \relative do'' {
 \paper {
   #( set-default-paper-size "letter" )
 }
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión: 2.17.0, 2.17.4, 2.17.5, 2.17.6, 2.17.11,
+2.17.14, 2.17.15, 2.17.18, 2.17.19, 2.17.20, 2.17.25, 2.17.27,
+2.17.29, 2.17.97, 2.18.0, 2.19.2, 2.19.7, 2.19.11, 2.19.16, 2.19.22,
+2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40, 2.19.46, 2.19.49, 2.19.80
+%}

@@ -1,16 +1,18 @@
 % Created on Wed Mar 02 13:55:24 CST 2011
 % search.sam@
 
-\version "2.19.32"
+\version "2.19.80"
 
 %#(set-global-staff-size 25)
 
 \markup { \fill-line { \center-column { \fontsize #5 "Jerusalén reconstruida" \fontsize #3 "Tobías 13, 11-17" } } }
 \markup { \fill-line { " " \fontsize #2 "Kiko Argüello" } }
+\markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
+
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
-  breakbefore = ##t 
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  breakbefore = ##t
 }
 
 oboe = \new Staff {
@@ -18,9 +20,9 @@ oboe = \new Staff {
   \tempo "Moderato" 4 = 100
   \time 4/4
   \key e \minor
-  
-  \relative c'' { 	
-    % Type notes here 
+
+  \relative c'' {
+    % Type notes here
     \partial 4 r8^\markup { \small "Introducción" } g16( a16 | %1
     b2~ b8) b8 a8( g8) | %2
     a2. r8 fis16( g16 | %3
@@ -36,8 +38,8 @@ oboe = \new Staff {
 
 armonia = \new ChordNames {
   \set chordChanges = ##t
-  \italianChords  
-  \chordmode { 
+  \italianChords
+  \chordmode {
     R4 e1:m d1 d1 e1:m e1:m d1 d1 e1:m
   }
 }
@@ -54,3 +56,8 @@ armonia = \new ChordNames {
 \paper {
   #(set-paper-size "letter")
 }
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.40, 2.19.46, 2.19.49, 2.19.80
+%}

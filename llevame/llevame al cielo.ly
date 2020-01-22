@@ -224,6 +224,8 @@ CelloD = \simultaneous {
 		\set Score.skipBars = ##t
 		\set Score.melismaBusyProperties = #'()
 	>>
+	\midi {}
+	\layout {}
 }
 \paper {
 	#(set-paper-size "letter")

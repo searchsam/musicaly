@@ -5,12 +5,14 @@
 
 #(set-global-staff-size 21)
 
+\markup { \fill-line { \center-column { \fontsize #5 "El Lagarero" \fontsize #3 "Isaias 63, 1 - 6" } } }
+\markup { \fill-line { " " \fontsize #2 "Kiko Argüello" } }
+\markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
+
 \header {
-	title = \markup { \smallCaps "El Lagarero" } 
-	subtitle = "Isaias 63, 1 - 6" 
- 	opus = "(Marzo 20, 2011)"
- 	copyright = \markup { "Camino Neocatecumenal" \char ##x00A9 }
- 	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  copyright = "Creative Commons Attribution 3.0"
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  breakbefore = ##t
 }
 
 lagarero = \new Staff {
@@ -22,7 +24,7 @@ lagarero = \new Staff {
 	\relative c' { 	
  % Type notes here 
  	r8^\markup{ \italic \small Introduccion } g8 a8 bes8 a2|%1
- 	g2 r8 g8 a8 bes8|%2
+ 	g2 g8 a8 bes a~|%2
  	a4 g4 f4 e4|%3
  	d2_\markup { \small Â¿Quien es ese...} r2|%4
  	\bar "||"

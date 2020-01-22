@@ -5,9 +5,9 @@
 
 #(set-global-staff-size 18)
 
-\markup { \fill-line { \center-column { \fontsize #5 "Una gran señal" "Encuentro Centroamericano de Jovenes del Camino Neocatecumenal, San Salvador 2010" \fontsize #3 "Apocalipsís 12" } } }
+\markup { \fill-line { \center-column { \fontsize #5 "Una gran señal" \fontsize #3 "Apocalipsís 12" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Argüello" } } }
-
+\markup { \fill-line { " " \center-column { \fontsize #2 "Adaptación: Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -18,11 +18,10 @@ oboe = \new Staff {
 	
 	\set Staff.midiInstrument = "bassoon"
 	\tempo "Vivo" 4 = 160 
-	\clef bass
 	\time 2/2
 	\key a \minor
 	
-	\relative c { 	
+	\relative c' { 	
  % Type notes here 
  	R1 | %1
  	r2 r4^\markup { \small Introducción } e4 | %2
@@ -44,14 +43,14 @@ oboe = \new Staff {
  	e2 a2 | %18
  	\bar "||"
  	\textLengthOn
- 	s2._\markup \center-column { \small "Una gran señal apareció en el cielo:..." }^\markup { \small Acompañamiento } a,4 | %19
+ 	s2._\markup \center-column { \small "Una gran señal apareció en el cielo:..." }^\markup { \small Acompañamiento } a4 | %19
  	\textLengthOff
  	e'2. d4 | %20
  	e1 | %21
  	\textLengthOn
  	s1_\markup \center-column { \small "...Una mujer,..." } |
  	\textLengthOff
- 	d4 g4 b2 | %22
+ 	d,4 g4 b2 | %22
  	g4 d2 r4 | %23
  	\textLengthOn
  	s2._\markup \center-column { \small "...una mujer vestida del sol,..." } a'4 | %24
@@ -59,14 +58,14 @@ oboe = \new Staff {
  	c8[ b8 a8] c8[ b8 a8] c8 b8 | %25
  	a2 r2 | %26
  	\textLengthOn
- 	s2._\markup \center-column { \small "...con la luna bajo sus pies,..." } a,4 | %27
+ 	s2._\markup \center-column { \small "...con la luna bajo sus pies,..." } a4 | %27
  	\textLengthOff
  	e'2. d4 | %28
  	e1 | %29
  	\textLengthOn
  	s1_\markup \center-column { \small "...y una corona de doce estrellas;..." } |
  	\textLengthOff
- 	d4 g4 b2 | %30
+ 	d,4 g4 b2 | %30
  	g4 d2 r4 | %31
  	\textLengthOn
  	s2._\markup \center-column { \small "...está encinta, y grita..." } a'4 | %32
@@ -93,7 +92,7 @@ oboe = \new Staff {
  	g2 f4 g4( | %41
  	g2) r2 | %42
  	\textLengthOn
- 	s2._\markup \center-column { \small "...con siete cabezas..." } f8 | %43
+ 	s2._\markup \center-column { \small "...con siete cabezas..." } f4 | %43
  	\textLengthOff
  	a1 | %44
  	\textLengthOn
@@ -109,7 +108,7 @@ oboe = \new Staff {
  		} 
  	} |
  	\textLengthOff
- 	a,8 b8 c8 d8 e4 f4 | %48
+ 	a8 b8 c8 d8 e4 f4 | %48
  	e4 f4 e2 | %49
  	\textLengthOn
  	s2._\markup { 
@@ -117,7 +116,7 @@ oboe = \new Staff {
  			\small "...de la Mujer que iba a dar a luz,..."
  			\small "...aquel que ha de regir las naciones de la tierra,..."
  		} 
- 	} d4 | %50
+ 	} d,4 | %50
  	\textLengthOff
  	g2 f4 g4( |%51
  	g4) a4 g2 | %52
@@ -140,7 +139,7 @@ oboe = \new Staff {
  	\textLengthOff
  	gis4 a4 b2 | %54
  	\bar "||"
- 	e,8.^\markup { \small Final } e16 e4 d4 d4 | %55
+ 	e8.^\markup { \small Final } e16 e4 d4 d4 | %55
  	c4 c2 r4 | %56
  	e8. e16 e4 d4 d4 | %57
  	c4 d2 r4 | %58

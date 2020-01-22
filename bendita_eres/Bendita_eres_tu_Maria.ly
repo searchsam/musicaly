@@ -4,7 +4,7 @@
 % Bendita eres tú, María - María Paloma Incorrupta
 % ****************************************************************
 \language "espanol"
-\version "2.19.49"
+\version "2.19.80"
 
 \include "funciones.ily"
 
@@ -14,15 +14,16 @@ global = { \key si \minor \time 4/4 \tempo "Andagio" 4 = 70 s1*12 \bar "||" \tim
 
 \markup { \fill-line { \center-column { \fontsize #5 "Bendita eres tú, María" \fontsize #3 "Lucas 1,42-45" } } }
 \markup { \fill-line { "" \center-column { \fontsize #2 "Kiko Argüello" } } }
+\markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
-oboe = \relative do'' { 	
- % Type notes here 
+oboe = \relative do'' {
+  % Type notes here
   si1^\markup { \small Introducción } 	| %1
   si4 dos re mi 			| %2
   fas2. sol4  				| %3
@@ -113,12 +114,12 @@ oboe = \relative do'' {
     \textLengthOn
     s2_\markup { \small "...María,..." }	| %51
     \textLengthOff
-    si,4 dos				| %52 
+    si,4 dos				| %52
     si re					| %53
     \textLengthOn
     s2_\markup { \small "...bendita María,..." }| %54
     \textLengthOff
-    si4 las				| %55 
+    si4 las				| %55
     si sol'				| %56
     \textLengthOn
     s2_\markup { \small "...tú  has creído a la palabra del Señor..." }	| %57
@@ -132,19 +133,19 @@ oboe = \relative do'' {
 armonias = \new ChordNames {
   \set chordChanges = ##t
   \italianChords
-  \chordmode { 
-  si1:m R1*2 la1 R1 re1 R1 dos1 R1*3 si1:m 
-  R2 si4:m la4 R2 si2:m
-  R2 si4:m la4 R2 si2:m
-  R2 si4:m la4 R2 si2:m
-  R1 si4:m la4 R2 si2:m
-  R2 sol2 R1 sol4 fas4
-  R1 si4:m la4 R1 si2:m
-  R2 si4:m fas4
-  R1 mi4:m fas4
-  R1 mi2:m R2 mi4:m fas4
-  R2 si2:m R1 si4:m sol4
-  R1 sol4 fas4
+  \chordmode {
+    si1:m R1*2 la1 R1 re1 R1 dos1 R1*3 si1:m
+    R2 si4:m la4 R2 si2:m
+    R2 si4:m la4 R2 si2:m
+    R2 si4:m la4 R2 si2:m
+    R1 si4:m la4 R2 si2:m
+    R2 sol2 R1 sol4 fas4
+    R1 si4:m la4 R1 si2:m
+    R2 si4:m fas4
+    R1 mi4:m fas4
+    R1 mi2:m R2 mi4:m fas4
+    R2 si2:m R1 si4:m sol4
+    R1 sol4 fas4
   }
 }
 
@@ -152,11 +153,13 @@ armonias = \new ChordNames {
 \score {
   <<
     \armonias
-    \new Staff { <<
-      \set Staff.midiInstrument = #"violin"
-      \global
-      \oboe
-    >>}
+    \new Staff {
+      <<
+        \set Staff.midiInstrument = #"violin"
+        \global
+        \oboe
+      >>
+    }
   >>
   \midi {}
   \layout {}
@@ -165,9 +168,3 @@ armonias = \new ChordNames {
 \paper {
   #(set-paper-size "letter")
 }
-
-%{
-convert-ly (GNU LilyPond) 2.19.49  convert-ly: Procesando «»...
-Aplicando la conversión: 2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40,
-2.19.46, 2.19.49
-%}

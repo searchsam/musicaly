@@ -9,7 +9,8 @@
 
 \markup { \fill-line { \center-column { \fontsize #5 "Ven del Líbano" \fontsize #3 "Cantar de los Cantares 4,8ss" } } }
 
-%\markup { \fill-line { " " \fontsize #2 "Kiko Argüello" } }
+\markup { \fill-line { " " \fontsize #2 "Kiko Argüello" } }
+\markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 
 \header {
   copyright = "Creative Commons Attribution 3.0"

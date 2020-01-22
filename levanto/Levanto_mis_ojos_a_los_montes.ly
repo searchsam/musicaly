@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.22"
+\version "2.19.80"
 
 % --- Includes
 %\include "texto.ily"
@@ -15,11 +15,13 @@
 global = {  \tempo "Moderatto" 4 = 100 \clef treble \key sol \major \time 4/4 s2*16 \bar "|." }
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 "Levanto mis ojos a los montes" \fontsize #3 \caps "Salmo 121(120)" } } }
+\markup { \fill-line { \center-column { \fontsize #5 "Levanto mis ojos a los montes" \fontsize #3 "Salmo 121(120)" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Argüello" \small "" } } }
+\markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
+
 \header {
   copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
@@ -67,3 +69,9 @@ acordes = \new ChordNames {
 \paper {
   #( set-default-paper-size "letter" )
 }
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40,
+2.19.46, 2.19.49, 2.19.80
+%}

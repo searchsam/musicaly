@@ -18,6 +18,7 @@ global = { \tempo 4 = 90 \key dos \minor \time 2/4 s2*29 \bar "|." }
 
 \markup { \fill-line { \center-column { \fontsize #5 "Shemá Israel" \fontsize #3 "Deuteronomio 6, 4-9" } } }
 \markup { \fill-line { " " \fontsize #2 "Kiko Argüello" } }
+\markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 \header {
 	copyright = "Creative Commons Attribution 3.0" 
 	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }

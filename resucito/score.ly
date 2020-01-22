@@ -1,4 +1,3 @@
-\include "comun/book-titling.ily"
 \include "flauta.ily"
 \include "oboe.ily"
 \include "clarinete.ily"
@@ -25,8 +24,7 @@ global = { \tempo "Andantino" 4=90 \time 4/4 s1*26 \bar "|." \override Score.Reh
       copyright = "Managua - Nicaragua"
     }
   
-    \bookTitle "RESUCITO"
-    \useRehearsalNumbers ##t
+    
     \pageBreak
   }
 

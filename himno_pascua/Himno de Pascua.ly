@@ -7,8 +7,8 @@
 #(set-global-staff-size 22)
 
 \markup { \fill-line { \center-column { \fontsize #5 "Himno de Pascua" \fontsize #3 "Himno" } } }
-
 \markup { \fill-line { " " \fontsize #2 "Kiko Argüello" } }
+\markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 
 \header {
  	copyright = "Creative Commons Attribution 3.0"

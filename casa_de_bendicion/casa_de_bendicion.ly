@@ -6,9 +6,8 @@
 %#(set-global-staff-size 18)
 
 \markup { \fill-line { \center-column { \fontsize #5 "María, casa de bendición " \fontsize #3 "Las Bodas de Caná – Juan 2, 1-11" } } }
-
-\markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Argüello" } } }
-
+\markup { \fill-line { "" \center-column { \fontsize #2 "Kiko Argüello" } } }
+\markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 
 \header {
  	copyright = "Creative Commons Attribution 3.0"

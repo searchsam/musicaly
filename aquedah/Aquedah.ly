@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.49"
+\version "2.19.80"
 
 #(set-global-staff-size 18)
 
@@ -12,19 +12,19 @@
 \markup { \fill-line { " " \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
 global = {
-  \tempo "Moderatto" 4 = 100 
+  \tempo "Moderatto" 4 = 100
   \key la \minor
   \time 4/4
-  s1*20
+  s1*64
   \bar "|."
 }
 
-oboe = \relative do'' { 	
+oboe = \relative do'' {
   mi1^\markup { \small Introduccion } | %1
   fa8 mi8 sol8 fas8 fa4 mi4~	| %2
   mi2 mi4 re4			| %3
@@ -70,7 +70,7 @@ oboe = \relative do'' {
   \textLengthOn
   s2._\markup { "...no sea que por el miedo me resista..." } mi8 fa | % 32
   \textLengthOff
-  mi4. re8 do2			| % 33	
+  mi4. re8 do2			| % 33
   \textLengthOn
   s2._\markup { "...y no sea válido tu sacrificio..." } r8 re8 | % 34
   \textLengthOff
@@ -83,7 +83,7 @@ oboe = \relative do'' {
   s1_\markup \center-column { \small "...Aquedah, aquedah," } | %39
   s1_\markup \center-column { \small "aquedah, aquedah..." } | %40
   \textLengthOff
-  do'8_\markup \center-column { \small "...Átame," } si la4. si8_\markup \center-column { \small "átame fuerte,..." } la sol | % 41 
+  do'8_\markup \center-column { \small "...Átame," } si la4. si8_\markup \center-column { \small "átame fuerte,..." } la sol | % 41
   fa4 sols8 \acciaccatura { la16[ si] } la4 si8 la sols | % 42
   la4_\markup \center-column { \small "...Padre mío,..." } si16 la sols la8 si16 la sols la4~ | % 43
   \textLengthOn
@@ -115,8 +115,8 @@ oboe = \relative do'' {
 
 armonia = \new ChordNames {
   \set chordChanges = ##t
-  \italianChords    
-  \chordmode { 
+  \italianChords
+  \chordmode {
     la1:m R1*2
     la4:m re2.:m9 R1
     re4:m9 la2.:m R1
@@ -165,3 +165,8 @@ armonia = \new ChordNames {
 \paper {
   #(set-paper-size "letter")
 }
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.80
+%}

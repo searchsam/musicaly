@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.18.0"
+\version "2.19.80"
 
 % --- Includes
 %\include "texto.ily"
@@ -15,12 +15,12 @@
 global = {  \tempo "Moderatto" 4 = 110 \clef treble \key la \minor \time 4/4 s1*9 \bar"||" s1*9 \bar ".|:" s1*21 \bar ":|." s1*19 \bar "|." }
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 "El Señor es mi pastor" \fontsize #3 \caps "Salmo 23(22)" } } }
+\markup { \fill-line { \center-column { \fontsize #5 "El Señor es mi pastor" \fontsize #3 "Salmo 23(22)" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Argüello" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Trasncripción: Samuel Gutiérrez Avilés"} } }
+\markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  copyright = "Creative Commons Attribution 3.0"
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
@@ -57,54 +57,54 @@ instrumento = \relative do'' {
   do2) r2  				| %27
   \textLengthOn
   s1
-    _\markup \center-column { \small "Repara mis fuerzas..." } 
-    _\markup \center-column { \small "Preparas una mesa..." }
-    _\markup \center-column { \small "Si,..." }
+  _\markup \center-column { \small "Repara mis fuerzas..." }
+  _\markup \center-column { \small "Preparas una mesa..." }
+  _\markup \center-column { \small "Si,..." }
   | %28
   \textLengthOff
   sol,8 re' sol si sol re si'4	| %29
   \textLengthOn
   s1
-    _\markup \center-column { \small "...y me lleva..." }
-    _\markup \center-column { \small "...ante mi..." } 
-    _\markup \center-column { \small "...tu amor y tu alegria..." } 
+  _\markup \center-column { \small "...y me lleva..." }
+  _\markup \center-column { \small "...ante mi..." }
+  _\markup \center-column { \small "...tu amor y tu alegria..." }
   | %30
   \textLengthOff
   fa,8 do' fa la fa do la'4	| %31
   \textLengthOn
   s1
-    _\markup \center-column { \small "...por el camino del amor;" }
-    _\markup \center-column { \small "...frente a mis enemigos;" }
-    _\markup \center-column { \small "...me acompañaran;" } 
+  _\markup \center-column { \small "...por el camino del amor;" }
+  _\markup \center-column { \small "...frente a mis enemigos;" }
+  _\markup \center-column { \small "...me acompañaran;" }
   | %32
   \textLengthOff
   mi,8 si' mi sols mi si sols'4 | %33
   \textLengthOn
   s1
-    _\markup \center-column { \small "Repara mis fuerzas..." }
-    _\markup \center-column { \small "Me unges la cabeza..." } 
-    _\markup \center-column { \small "Si,..." } 
+  _\markup \center-column { \small "Repara mis fuerzas..." }
+  _\markup \center-column { \small "Me unges la cabeza..." }
+  _\markup \center-column { \small "Si,..." }
   | %34
   \textLengthOff
   sol,8 re' sol si sol re si'4	| %35
   \textLengthOn
   s1
-    _\markup \center-column { \small "...y me lleva..." }
-    _\markup \center-column { \small "...con perfume,..." }
-    _\markup \center-column { \small "...yo vivire,..." } 
+  _\markup \center-column { \small "...y me lleva..." }
+  _\markup \center-column { \small "...con perfume,..." }
+  _\markup \center-column { \small "...yo vivire,..." }
   | %36
   \textLengthOff
   fa,8 do' fa la fa do la'4	| %37
   \textLengthOn
   s1
-    _\markup \center-column { \small "...por el camino del amor." }
-    _\markup \center-column { \small "...mi copa rebosa." }
-    _\markup \center-column { \small "...en tu casa eternamente." } 
+  _\markup \center-column { \small "...por el camino del amor." }
+  _\markup \center-column { \small "...mi copa rebosa." }
+  _\markup \center-column { \small "...en tu casa eternamente." }
   | %38
   \textLengthOff
   si,8 sols'4 mi8 si4 r4_"El Señor"	| %39
   r1^\markup { \small "Solo para la segunda estrofa." } | %40
-   \textLengthOn
+  \textLengthOn
   s1_\markup \center-column { \small "Aunque camine..." } | %41
   sol8 re' sol si sol re si'4	| %42
   \textLengthOn
@@ -149,19 +149,19 @@ instrumento = \relative do'' {
 acordes = \new ChordNames {
   \set chordChanges = ##t
   \italianChords
-  \chordmode { 
-     la1:m la1:m fa1 fa1
-     mi1 mi2 mi2:7 mi1:7 la1:m la1:m
-     la1:m la1:m fa1 fa1
-     mi1 mi2 mi2:7 mi1:7 la1:m la1:m
-      la1:m la1:m fa1 fa1
-     mi1 mi2 mi2:7 mi1:7 la1:m la1:m
-     sol1 sol1 fa1 fa1 mi1 mi1
-     sol1 sol1 fa1 fa1 mi1 mi1
-     R1
-     sol1 sol1 fa1 fa1 mi1 mi1
-     mi1 mi1 mi1 mi1 la1:m la1:m
-     sol1 sol1 fa1 fa1 mi1 mi1
+  \chordmode {
+    la1:m la1:m fa1 fa1
+    mi1 mi2 mi2:7 mi1:7 la1:m la1:m
+    la1:m la1:m fa1 fa1
+    mi1 mi2 mi2:7 mi1:7 la1:m la1:m
+    la1:m la1:m fa1 fa1
+    mi1 mi2 mi2:7 mi1:7 la1:m la1:m
+    sol1 sol1 fa1 fa1 mi1 mi1
+    sol1 sol1 fa1 fa1 mi1 mi1
+    R1
+    sol1 sol1 fa1 fa1 mi1 mi1
+    mi1 mi1 mi1 mi1 la1:m la1:m
+    sol1 sol1 fa1 fa1 mi1 mi1
   }
 }
 
@@ -169,11 +169,13 @@ acordes = \new ChordNames {
 \score {
   <<
     \acordes
-    \new Staff { <<
-      \set Staff.midiInstrument = #"flute"
-      \global
-      \instrumento
-    >>}
+    \new Staff {
+      <<
+        \set Staff.midiInstrument = #"flute"
+        \global
+        \instrumento
+      >>
+    }
   >>
   \midi {}
   \layout {}
@@ -183,3 +185,9 @@ acordes = \new ChordNames {
 \paper {
   #( set-default-paper-size "letter" )
 }
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.2, 2.19.7, 2.19.11, 2.19.16, 2.19.22,
+2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40, 2.19.46, 2.19.49, 2.19.80
+%}

@@ -3,10 +3,10 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.32"
+\version "2.19.80"
 
 % --- Tamaño del pentagrama
-#(set-global-staff-size 35)
+#(set-global-staff-size 25)
 
 % --- Parametro globales
 global = {  \tempo "Moderato" 4 = 90 \key mi \minor \time 2/4 s4 s2*12 \bar "|." }
@@ -14,9 +14,10 @@ global = {  \tempo "Moderato" 4 = 90 \key mi \minor \time 2/4 s4 s2*12 \bar "|."
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 "Oh Señor nuestro Dios" \fontsize #3 \caps "Salmo 8" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Argüello" \small "" } } }
+\markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  copyright = "Creative Commons Attribution 3.0"
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
@@ -35,7 +36,7 @@ instrumento = \relative do'' {
   la2			| %11
   fas2 				| %12
   mi4 la4			| %13
-  do2				| %14 
+  do2				| %14
   si2				| %15
 }
 
@@ -43,8 +44,8 @@ instrumento = \relative do'' {
 acordes = \new ChordNames {
   \set chordChanges = ##t
   \italianChords
-  \chordmode { 
-    R4 
+  \chordmode {
+    R4
     mi2*3:m sol2*3 si2*3:7 la2*2:m si2:7
   }
 }
@@ -53,11 +54,13 @@ acordes = \new ChordNames {
 \score {
   <<
     \acordes
-    \new Staff { <<
-      \set Staff.midiInstrument = #"oboe"
-      \global
-      \instrumento
-    >>}
+    \new Staff {
+      <<
+        \set Staff.midiInstrument = #"oboe"
+        \global
+        \instrumento
+      >>
+    }
   >>
   \midi {}
   \layout {}
@@ -67,3 +70,8 @@ acordes = \new ChordNames {
 \paper {
   #( set-default-paper-size "letter" )
 }
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.40, 2.19.46, 2.19.49, 2.19.80
+%}
