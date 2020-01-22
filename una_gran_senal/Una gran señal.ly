@@ -1,7 +1,7 @@
 % Created on Sat Nov 26 18:14:14 CST 2011
-% by search.sam@ 
+% by search.sam@
 
-\version "2.19.32"
+\version "2.19.80"
 
 #(set-global-staff-size 18)
 
@@ -10,25 +10,25 @@
 \markup { \fill-line { " " \center-column { \fontsize #2 "Adaptación: Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
 oboe = \new Staff {
-	
+
 	\set Staff.midiInstrument = "bassoon"
-	\tempo "Vivo" 4 = 160 
+	\tempo "Vivo" 4 = 160
 	\time 2/2
 	\key a \minor
-	
-	\relative c' { 	
- % Type notes here 
+
+	\relative c' {
+ % Type notes here
  	R1 | %1
  	r2 r4^\markup { \small Introducción } e4 | %2
- 	a2 gis4 g4( | %3 
+ 	a2 gis4 g4( | %3
  	g4) fis4 f4 e4( | %4
  	e4) r2 e4 | %5
- 	a2 gis4 g4( | %6 
+ 	a2 gis4 g4( | %6
  	g4) fis4 f4 e4( | %7
  	e4) r2 e4 | %8
  	f2 e4 d4( | %9
@@ -101,40 +101,40 @@ oboe = \new Staff {
  	gis2 r4 e8 f8 | %46
  	gis4 d4 e2 | %47
  	\textLengthOn
- 	s1_\markup { 
- 		\center-column { 
+ 	s1_\markup {
+ 		\center-column {
  			\small "El Dragón se detuvo delante de la Mujer,..."
  			\small "Y la Mujer dio a luz un Hijo varón,..."
- 		} 
+ 		}
  	} |
  	\textLengthOff
  	a8 b8 c8 d8 e4 f4 | %48
  	e4 f4 e2 | %49
  	\textLengthOn
- 	s2._\markup { 
- 		\center-column { 
+ 	s2._\markup {
+ 		\center-column {
  			\small "...de la Mujer que iba a dar a luz,..."
  			\small "...aquel que ha de regir las naciones de la tierra,..."
- 		} 
+ 		}
  	} d,4 | %50
  	\textLengthOff
  	g2 f4 g4( |%51
  	g4) a4 g2 | %52
  	\textLengthOn
- 	s1_\markup { 
- 		\center-column { 
+ 	s1_\markup {
+ 		\center-column {
  			\small "...para devorar a su Hijo..."
  			\small "...y su Hijo fue arrebatado..."
- 		} 
+ 		}
  	} |
  	\textLengthOff
  	f4 g4 a2 | %53
  	\textLengthOn
- 	s1_\markup { 
- 		\center-column { 
+ 	s1_\markup {
+ 		\center-column {
  			\small "...en cuanto naciera."
  			\small "...hasta Dios y hasta su trono."
- 		} 
+ 		}
  	} |
  	\textLengthOff
  	gis4 a4 b2 | %54
@@ -170,52 +170,57 @@ oboe = \new Staff {
 }
 
 armonias = \new ChordNames {
-	
-      \set chordChanges = ##t
-      \italianChords
-      
-      \chordmode { 
-      	      a1:m R1*18 
-      	      a1:m R1 
-      	      g1 R1*2 
-      	      a1:m R1*2 
-      	      a1:m R1*2
-      	      g1 R1*2
-      	      a1:m R1*2
-      	      f1 R1
-      	      e1 e1:7 R1*2
-      	      a1:m R1
-      	      g1 R1*2
-      	      f1 R1
-      	      e1 e1:7 R1
-      	      a1:m R1*2
-      	      g1 R1*2
-      	      f1 R1
-      	      e1 R1
-      	      a1:m R1*2
-      	      g1 R1
-      	      f1 R1
-      	      e1
-      	      a1:m R1
-      	      g1 R1
-      	      f1 R1
-      	      e1 R1
-      	      e1:7
-      	      a1:m
-      }
+
+  \set chordChanges = ##t
+  \italianChords
+
+  \chordmode {
+    a1:m R1*18
+    a1:m R1
+    g1 R1*2
+    a1:m R1*2
+    a1:m R1*2
+    g1 R1*2
+    a1:m R1*2
+    f1 R1
+    e1 e1:7 R1*2
+    a1:m R1
+    g1 R1*2
+    f1 R1
+    e1 e1:7 R1
+    a1:m R1*2
+    g1 R1*2
+    f1 R1
+    e1 R1
+    a1:m R1*2
+    g1 R1
+    f1 R1
+    e1
+    a1:m R1
+    g1 R1
+    f1 R1
+    e1 R1
+    e1:7
+    a1:m
+  }
 }
 
 \score {
-	<<
-		\armonias
-		\oboe
-	>>
-	\midi {
-	}
-	\layout {
-	}
+  <<
+    \armonias
+    \oboe
+  >>
+  \midi {
+  }
+  \layout {
+  }
 }
 
 \paper {
   #(set-paper-size "letter")
 }
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.40, 2.19.46, 2.19.49, 2.19.80
+%}

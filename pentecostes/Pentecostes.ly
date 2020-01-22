@@ -12,7 +12,7 @@
 \header {
  	copyright = "Creative Commons Attribution 3.0"
  	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
- 	breakbefore = ##t 
+ 	breakbefore = ##t
 }
 
 piano = \new Staff {
@@ -22,9 +22,9 @@ piano = \new Staff {
 	\clef treble
 	\time 4/4
 	\key a \minor
-	
-	\relative c'' { 	
- % Type notes here 
+
+	\relative c'' {
+ % Type notes here
 	\partial 4 c8^\markup { \small Introducción } d8 | %1
 	e2 r8 e8 e8 f8 | %2
 	e8 d8( d4) r8 d8 d8 e8 | %3
@@ -34,7 +34,7 @@ piano = \new Staff {
 	e8 g2 r4 a8 | %7
 	g8 f8 e2 r4 | %8
 	e8 e8 f8 d8 e2\fermata | %9
-	
+
 	\bar "|."
 	}
 }
@@ -43,9 +43,9 @@ armonia = \new ChordNames {
 
 	\set chordChanges = ##t
     \italianChords
-		
-    \chordmode { 
-		e1:m b1:7 a1:m b1:7 
+
+    \chordmode {
+		e1:m b1:7 a1:m b1:7
 		e1:m e1:m R1
 		b1:7 b1:7 R1
 		e1:m a4.:m e4.:m
@@ -61,7 +61,7 @@ armonia = \new ChordNames {
 		%\armonia
 		\piano
 	>>
-	
+
 	\midi {
 	}
 	\layout {

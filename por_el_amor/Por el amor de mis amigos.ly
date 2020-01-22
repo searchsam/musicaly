@@ -3,7 +3,7 @@
 
 \version "2.19.80"
 
-#(set-global-staff-size 22)
+%#(set-global-staff-size 22)
 
 \markup { \fill-line { \center-column { \fontsize #5 "Por el amor de mis amigos" \fontsize #3 "Salmo 122 (121)" } } }
 \markup { \fill-line { " " \fontsize #2 "Kiko Argüello" } }

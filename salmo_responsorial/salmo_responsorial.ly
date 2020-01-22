@@ -9,7 +9,7 @@
 %\include "texto.ily"
 
 % --- Tamaño del pentagrama
-#(set-global-staff-size 25)
+%#(set-global-staff-size 25)
 
 % --- Parametro globales
 global = {  \tempo "Moderatto" 4 = 110 \clef treble \key fas \minor \time 4/4 s1*33 \bar "|." }

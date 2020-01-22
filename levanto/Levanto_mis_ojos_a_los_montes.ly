@@ -20,7 +20,7 @@ global = {  \tempo "Moderatto" 4 = 100 \clef treble \key sol \major \time 4/4 s2
 \markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 
 \header {
-  copyright = "Creative Commons Attribution 3.0" 
+  copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
@@ -43,9 +43,9 @@ instrumento = \relative do'' {
 acordes = \new ChordNames {
   \set chordChanges = ##t
   \italianChords
-  \chordmode { 
-    sol1 si1:m 
-    do2 re2:7 sol1 
+  \chordmode {
+    sol1 si1:m
+    do2 re2:7 sol1
     do1 sol1
     re2 do2 sol1
   }

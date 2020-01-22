@@ -1,7 +1,7 @@
 % Created on Mon Apr 18 22:51:51 CST 2011
-% by search.sam@ 
+% by search.sam@
 
-\version "2.19.49"
+\version "2.19.80"
 
 %#(set-global-staff-size 18)
 
@@ -10,52 +10,52 @@
 \markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 
 \header {
- 	copyright = "Creative Commons Attribution 3.0"
- 	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
- 	breakbefore = ##t
+  copyright = "Creative Commons Attribution 3.0"
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  breakbefore = ##t
 }
 
 casa = \new Staff {
 
-	\set PianoStaff.midiInstrument = #"trupet"
-	\tempo "Moderato" 4 = 100
-	
-	\clef treble
-	\time 4/4
-	\key d \major
-	
-	\relative c' {
-	
-		fis4 g4 a8 a8 a8 a8 | %1
-		fis8 a8 b8 a8~ a2 r4 |%2
-	
-		\bar "|."
-	}
+  \set PianoStaff.midiInstrument = #"trupet"
+  \tempo "Moderato" 4 = 100
+
+  \clef treble
+  \time 4/4
+  \key d \major
+
+  \relative c' {
+
+    fis4 g4 a8 a8 a8 a8 | %1
+    fis8 a8 b8 a8~ a2 r1 |%2
+
+    \bar "|."
+  }
 }
 
 armonias = \new ChordNames {
-	
-    \set chordChanges = ##t
-    \italianChords
-		
-    \chordmode { 
-		d1
-    }
+
+  \set chordChanges = ##t
+  \italianChords
+
+  \chordmode {
+    d1
+  }
 }
 
 \score {
-	<<
-		\armonias
-		\casa
-	>>
-	\midi {
-	}
-	\layout {
-	}
+  <<
+    \armonias
+    \casa
+  >>
+  \midi {
+  }
+  \layout {
+  }
 }
 
 \paper {
-	#(set-paper-size "letter")
+  #(set-paper-size "letter")
 }
 
 %{
@@ -72,4 +72,10 @@ Aplicando la conversión: 2.15.7, 2.15.9, 2.15.10, 2.15.16, 2.15.17,
 %{
 convert-ly (GNU LilyPond) 2.19.49  convert-ly: Procesando «»...
 Aplicando la conversión: 2.19.40, 2.19.46, 2.19.49
+%}
+
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.80
 %}

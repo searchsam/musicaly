@@ -3,7 +3,7 @@
 
 \version "2.16.0"
 
-#(set-global-staff-size 25)
+%#(set-global-staff-size 25)
 
 %\markup { \fill-line { \center-align { "Dedicado a Javier Leonardo y Maybel Jahayra por su Matrimoion" } } }
 
@@ -15,7 +15,7 @@
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
-  breakbefore = ##t 
+  breakbefore = ##t
 }
 
 libano = \new Staff {
@@ -23,18 +23,18 @@ libano = \new Staff {
   \time 4/4
   \set Staff.midiInstrument = "oboe"
   \key d \minor
-  \relative c' { 	
-    % Type notes here 
+  \relative c' {
+    % Type notes here
     a4.^\markup { \small "Introducción" } d2 r8 |
     d8 f8 a4. g4.^"acc." |
     e8 c4. r8 c8( d8) e8 |
     f4. f8 e4 d8 c8 |
     d2. r4 |
     \textLengthOn
-    s1^"Estrofa - Cantor"_\markup \center-column { 
+    s1^"Estrofa - Cantor"_\markup \center-column {
       \small "Ven del líbano... ...del líbano ven."
     } |
-    s1^"Coro - Asamblea"_\markup \center-column { 
+    s1^"Coro - Asamblea"_\markup \center-column {
       \small "Busqué el amor... ...lo dejaré jamás"
     } |
     \textLengthOff
@@ -55,11 +55,11 @@ libano = \new Staff {
 }
 
 armonia = \new ChordNames {
-  
+
   \set chordChanges = ##t
   \italianChords
-  
-  \chordmode { 
+
+  \chordmode {
     d1:m R2 R8 c4. R1 bes2 c2 d1:m
     R1*2 d2:m f1 g2 g1:m R2 d2:m
     d2:m f1 g2 R2 bes2 c2 d2:m

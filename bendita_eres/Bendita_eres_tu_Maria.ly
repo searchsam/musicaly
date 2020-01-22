@@ -168,3 +168,15 @@ armonias = \new ChordNames {
 \paper {
   #(set-paper-size "letter")
 }
+
+%{
+convert-ly (GNU LilyPond) 2.19.49  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40,
+2.19.46, 2.19.49
+%}
+
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.80
+%}

@@ -78,7 +78,7 @@ oboe = \relative do'' {
   mi_\markup { "...y los dos seamos rechazados..." } re fa4. mi8 re do | % 35
   mi4. re8 do2			| % 36
   \textLengthOn
-  s1_\markup \center-column { \small "...Aquedah, aquedah," } | %37
+  s1_\markup \center-column { \small "...Aquedah,..." } | %37
   s1_\markup \center-column { \small "aquedah, aquedah..." } | %38
   s1_\markup \center-column { \small "...Aquedah, aquedah," } | %39
   s1_\markup \center-column { \small "aquedah, aquedah..." } | %40
