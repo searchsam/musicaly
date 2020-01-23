@@ -21,8 +21,8 @@ titulo = "Virge y Madre"
 subtitulo = "Paraiso XXXIII 1 - 21"
 subsubtitulo = "Para la Gloria de nuestra Santísima Madre"
 instrumento = "Coro Mixto"
-poeta = "Dante Alighieri"
-compositor = "Mons. Marco Frisina"
+poeta = "Letra: Dante Alighieri"
+compositor = "Música: Mons. Marco Frisina"
 derechos = "Creative Commons Attribution 3.0"
 etiqueta = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
 

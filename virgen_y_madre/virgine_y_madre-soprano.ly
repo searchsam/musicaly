@@ -7,7 +7,7 @@
 
 \include "melodia.ily"
 
-#(set-global-staff-size 24)
+%#(set-global-staff-size 24)
 
 \markup { \fill-line { \center-column { \fontsize #5 \titulo \fontsize #2 \subtitulo \small \subsubtitulo } } }
 \markup { \fill-line { \fontsize #2 \smallCaps "Soprano" \fontsize #2 \poeta } }

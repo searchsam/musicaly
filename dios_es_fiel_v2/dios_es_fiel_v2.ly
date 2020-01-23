@@ -1,17 +1,6 @@
 \language "espanol"
 \version "2.19.80"
 
-% --- Tamaño del pentagrama
-%#(set-global-staff-size 17)
-
-\markup { \fill-line { \center-column { \fontsize #5 "Dios es fiel"  \fontsize #3 \caps " "} } }
-\markup { \fill-line { \fontsize #2 \caps "Coro Mixto" \center-column { \fontsize #2 "Text y Música: Alberto Taulé" } } }
-\header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
-  breakbefore = ##t
-}
-
 % --- Includes
 \include "global.ily"
 \include "armonia.ily"
@@ -20,6 +9,21 @@
 \include "alto.ily"
 \include "tenor.ily"
 \include "bajo.ily"
+
+% --- Tamaño del pentagrama
+%#(set-global-staff-size 17)
+
+\header {
+  title = "Dios es fiel"
+  subtitle = ""
+  subsubtitle = ""
+  instrument = "Coro Mixto"
+  poet = ""
+  composer = "Letra y Música: Alberto Taulé"
+  copyright = "Creative Commons Attribution 3.0"
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  breakbefore = ##t
+}
 
 \score {
   \new ChoirStaff <<

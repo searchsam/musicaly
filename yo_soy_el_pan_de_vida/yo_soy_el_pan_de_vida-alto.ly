@@ -7,7 +7,7 @@
 
 \include "melodia.ily"
 
-#(set-global-staff-size 24)
+%#(set-global-staff-size 24)
 
 % --- Parametro globales
 
@@ -30,13 +30,13 @@
     \new Staff <<
       \new Voice = "voz" << \global \alto >>
       \new Lyrics \lyricsto "voz" \letra
+      \new Lyrics \lyricsto "voz" \segunda
+      \new Lyrics \lyricsto "voz" \tercera
     >>
   >>
   \midi {}
   \layout {}
 }
-
-\letras
 
 \paper {
   #(set-paper-size "letter")

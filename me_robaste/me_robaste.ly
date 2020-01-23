@@ -27,16 +27,16 @@ global = {
 
 melodia = \relative do'' {
   % Type notes here
-  la8 sib la2 sol8 la
-  sib1
-  sib8 do sib2 re8 sib
-  la1
-  la8 sib la2 sol8 la
-  sib1
-  re8 sib la2.~
-  la4 la8 sib
-  la4 la8 sol
-  fa1
+  la8( sib la2) sol8( la
+  sib1)
+  sib8( do sib2) re8( sib
+  la1)
+  la8( sib la2) sol8( la
+  sib1)
+  re8( sib la2.~
+  la4) la8( sib
+  la4) la8( sol
+  fa1)
   \textLengthOn
   s1_\markup { \small "Me robaste el corazón..." }
   \textLengthOff

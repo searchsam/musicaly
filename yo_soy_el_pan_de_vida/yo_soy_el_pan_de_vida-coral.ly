@@ -1,5 +1,5 @@
 % ****************************************************************
-%	Señor ten piedad - Coro Mixto
+%	Yo soy el pan de vida - Coro Mixto
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
@@ -7,7 +7,7 @@
 
 \include "melodia.ily"
 
-#(set-global-staff-size 19)
+#(set-global-staff-size 18)
 
 \header {
   title = \titulo

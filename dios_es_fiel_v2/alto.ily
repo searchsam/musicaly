@@ -19,7 +19,7 @@ alto = \relative do' {
   fa4 fa \breathe 	| \break %12
   %\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((extra-offset . (0 . 11)))
   sol4 sol		| %13
-  fa4 miS8 re		| %14
+  fa4 mi8 re		| %14
   mi8 re dos sib		| %15
   la2			| %16
 }
