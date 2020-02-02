@@ -19,7 +19,7 @@
   subsubtitle = ""
   instrument = "Coro Mixto"
   poet = ""
-  composer = "Letra y Música: Alberto Taulé"
+  composer = "Letra y Música: Pbro. Alberto Taulé"
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
@@ -29,31 +29,23 @@
   \new ChoirStaff <<
     \acordes
     \new Staff <<
-      \new Voice = "soprano" <<
-        \global
-        \soprano
-      >>
+      \set Staff.instrumentName = #"Soprano "
+      \new Voice = "soprano" << \global \soprano >>
       \new Lyrics \lyricsto "soprano" \primeraLetra
     >>
     \new Staff <<
-      \new Voice = "alto" <<
-        \global
-        \alto
-      >>
+      \set Staff.instrumentName = #"Contralto "
+      \new Voice = "alto" << \global \alto >>
       \new Lyrics \lyricsto "alto" \primeraLetra
     >>
     \new Staff <<
-      \new Voice = "tenor" <<
-        \global
-        \tenor
-      >>
+      \set Staff.instrumentName = #"Tenor "
+      \new Voice = "tenor" << \global \tenor >>
       \new Lyrics \lyricsto "tenor" \primeraLetra
     >>
     \new Staff <<
-      \new Voice = "bass" <<
-        \global
-        \bajo
-      >>
+      \set Staff.instrumentName = #"Bajo "
+      \new Voice = "bass" << \global \bajo >>
       \new Lyrics \lyricsto "bass" \primeraLetra
     >>
   >>

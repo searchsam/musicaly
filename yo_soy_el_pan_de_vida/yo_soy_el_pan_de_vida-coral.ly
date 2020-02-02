@@ -7,7 +7,7 @@
 
 \include "melodia.ily"
 
-#(set-global-staff-size 18)
+#(set-global-staff-size 17.9)
 
 \header {
   title = \titulo
@@ -20,12 +20,9 @@
   breakbefore = ##t
 }
 
-% --- Musica
-
-% --- Letra
-
 \score {
   <<
+    \acordes
     \new ChoirStaff <<
       \new Staff <<
         \set Staff.instrumentName = #"Soprano "
@@ -58,8 +55,3 @@
 \paper {
   #(set-paper-size "letter")
 }
-
-%{
-convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
-Aplicando la conversión:     El documento no ha cambiado.
-%}

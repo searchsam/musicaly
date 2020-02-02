@@ -77,7 +77,7 @@ alto = \relative do' {
   re4 re8 re re4 re		| %4
   re8 re re re mi4 mi		| %5
   re4 fa8 mi re re re la		| %6
-  si4 si8 re do2			| %7
+  sib4 sib8 re do2		| %7
   la1				| %8
   R1*7^\markup{ \small \italic "Solista 1"} \break | %15
   re4 re fa mi			| %16
@@ -85,7 +85,7 @@ alto = \relative do' {
   re4 re8 re re2			| %18
   re8 re re re mi2		| %19
   re4 fa8 mi re4 re8( la)	| %20
-  si8 si si re do2		| %21
+  sib8 sib sib re do2		| %21
   la1				| %22
   R1*7^\markup{ \small \italic "Solista 2"} \break | %29
   re4 re8 re fa4 mi		| %30
@@ -93,7 +93,7 @@ alto = \relative do' {
   re4 re8 re re4 re		| %32
   re8 re re re mi4 mi		| %33
   re4 fa8 mi re4 la		| %34
-  si8 si si re do2		| %35
+  sib8 sib sib re do2		| %35
   la1				| %36
   R1*7^\markup{ \small \italic "Solista 1 y 2"} \break | %43
   re4 re8 re fa4 mi		| %44
@@ -101,7 +101,7 @@ alto = \relative do' {
   re4 re8 re re4 re		| %46
   re8 re re re mi4 mi		| %47
   re4 fa8 mi re re re( la)	| %48
-  si4 si8 re do2			| %49
+  sib4 sib8 re do2			| %49
   la1				| %50
   la1				| %51
   la1 \fermata			| %52

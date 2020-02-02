@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.49" 
+\version "2.19.80"
 
 \include "melodia.ily"
 
@@ -26,6 +26,7 @@
 
 \score {
   <<
+    \acordes		
     \new Staff <<
       \set Staff.midiInstrument = #"oboe"
       \new Voice = "voz" << \global \soprano >>
@@ -39,3 +40,8 @@
 \paper {
   #(set-paper-size "letter")
 }
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.80
+%}

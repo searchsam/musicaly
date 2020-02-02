@@ -16,7 +16,7 @@
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 "Dios es fiel" \fontsize #3 \caps " "}}}
-\markup { \fill-line { \fontsize #2 \caps "Soprano" \center-column { \fontsize #2 "Texto y Música: Alberto Taulé" } } }
+\markup { \fill-line { \fontsize #2 \caps "Soprano" \center-column { \fontsize #2 "Texto y Música: Pbro. Alberto Taulé" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }

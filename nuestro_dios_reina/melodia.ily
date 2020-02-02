@@ -8,15 +8,12 @@ global = {
   \tempo "Allegro Moderatto" 4=125
   \key do \major
   \time 4/4
-  s1*2
-  s4 \bar ".|:" s2.
-  s1*23
-  \partial 4 s4
+  s1*24
   \bar ":|."
 }
 
 titulo = "Nuestro Dios reina"
-subtitulo = "Basada en Isaías 52 y 53."
+subtitulo = "Isaías 52 y 53."
 autor = "Leonard E. Smith Jr"
 derechos = "Creative Commons Attribution 3.0"
 etiqueta = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -26,32 +23,30 @@ soprano = \relative do' {
   \compressFullBarRests
   \dynamicUp
   
-  R1*2			| % 02
   r4 mi fa sol		| % 03
   la2. do4		| % 04
-  si4 do si4. la8	| % 05
-  la4. sol8 sol2		| % 06
+  si4. do8 si4 la	| % 05
+  la4. sol8 sol2		| \break % 06
   r4 mi fa mi		| % 07
-  re1			| % 08
-  la'1		 	| % 09
-  sol1			| % 10
+  re1~			| % 08
+  re2 la'	 	| % 09
+  sol1			| \break % 10
   r4 mi fa sol		| % 11
   la2. do4		| % 12
-  si4 do si4. la8	| % 13
-  la4. sol8 sol2~	| % 14
-  sol4 r fa mi		| % 15
+  si4. do8 si4 la	| % 13
+  la4. sol8 sol2~	| \break % 14
+  sol2 fa4 mi		| % 15
   re1~			| % 16
-  re4 r la' si		| % 17
+  re2 la'4 do		| % 17
   do1~			| % 18
   do4 r mi re		| % 19
   do1~			| % 20
   do4 r mi re		| % 21
   do1~			| % 22
   do4 r mi4 re		| % 23
-  do2( la4 do		| % 24
-  re4) r la si		| % 25
-  do1~			| % 26
-  do4			| % 27
+  do2(~ do8 la do4	| % 24
+  re4) r la do		| % 25
+  do1			| % 26
 }
 
 alto = \relative do' {
@@ -74,7 +69,6 @@ tenor = \relative do {
   \compressFullBarRests
   \dynamicUp
   \clef "G_8"
-  R1*2			| % 02
   r4 mi fa sol		| % 03
   la2. do4		| % 04
   si4 do si4. la8	| % 05
@@ -120,7 +114,17 @@ bajo = \relative do {
 
 % --- Letra
 letra = \lyricmode {
-  Que~he -- mo -- so ver por los mon -- tes los pies de~a -- quel que~a -- nun -- cia sal -- va -- ción.
+  Que~her -- mo -- so ver por los mon -- tes los pies de~a -- quel que~a -- nun -- cia sal -- va -- ción.
   Gri -- tan -- do paz y nue -- vas de fe -- li -- ci -- dad: ¡Nues -- to Dios re -- i -- na!
   ¡Nues -- tro Dios re -- i -- na! ¡Nues -- tro Dios re -- i -- na!
+}
+
+acordes = \new ChordNames {
+  \set chordChanges = ##t
+  \italianChords
+  \chordmode {
+    do1 fa1 sol1 fa2 do2 do1 sol1 sol2 fa2 do1
+    do1 fa1 sol1 fa2 do2 do1 sol1 sol2 fa2 do1 
+    do1 fa1 fa1 do1 do1 fa1 sol2 fa2 do1
+  }
 }

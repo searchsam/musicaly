@@ -27,11 +27,13 @@
 
 \score {
   <<
+    \acordes
     \new Staff <<
       \new Voice = "voz" << \global \bajo >>
       \new Lyrics \lyricsto "voz" \letra
       \new Lyrics \lyricsto "voz" \segunda
       \new Lyrics \lyricsto "voz" \tercera
+      \new Lyrics \lyricsto "voz" \cuarta
     >>
   >>
   \midi {}
