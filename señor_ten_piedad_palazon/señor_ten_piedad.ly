@@ -1,20 +1,5 @@
-% ****************************************************************
-%	Dios es Fiel - Coro
-%	by serach.sam@
-% ****************************************************************
 \language "espanol"
 \version "2.19.80"
-
-% --- Tamaño del pentagrama
-%#(set-global-staff-size 15)
-
-\markup { \fill-line { \center-column { \fontsize #5 "Dios es fiel"  \fontsize #3 \caps " " } } }
-\markup { \fill-line { \fontsize #2 \caps "Coro Mixto" \center-column { \fontsize #2 "Text y Música: Alberto Taulé" } } }
-\header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
-  breakbefore = ##t
-}
 
 % --- Includes
 \include "global.ily"
@@ -25,37 +10,44 @@
 \include "tenor.ily"
 \include "bajo.ily"
 
+% --- Tamaño del pentagrama
+%#(set-global-staff-size 17)
+
+\header {
+  title = "Dios es fiel"
+  subtitle = ""
+  subsubtitle = ""
+  instrument = "Coro Mixto"
+  poet = ""
+  composer = "Letra y Música: Pbro. Alberto Taulé"
+  copyright = "Creative Commons Attribution 3.0"
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  breakbefore = ##t
+}
+
 \score {
   \new ChoirStaff <<
     \acordes
     \new Staff <<
-      \new Voice = "soprano" <<
-        \global
-        \soprano
-      >>
+      \set Staff.instrumentName = #"Soprano "
+      \new Voice = "soprano" << \global \soprano >>
       \new Lyrics \lyricsto "soprano" \primeraLetra
     >>
     \new Staff <<
-      \new Voice = "alto" <<
-        \global
-        \alto
-      >>
+      \set Staff.instrumentName = #"Contralto "
+      \new Voice = "alto" << \global \alto >>
       \new Lyrics \lyricsto "alto" \primeraLetra
     >>
     \new Staff <<
-      \new Voice = "tenor" <<
-        \global
-        \tenor
-      >>
+      \set Staff.instrumentName = #"Tenor "
+      \new Voice = "tenor" << \global \tenor >>
       \new Lyrics \lyricsto "tenor" \primeraLetra
     >>
     \new Staff <<
-      \new Voice = "bass" <<
-        \global
-        \bajo
-      >>
+      \set Staff.instrumentName = #"Bajo "
+      \new Voice = "bass" << \global \bajo >>
       \new Lyrics \lyricsto "bass" \primeraLetra
-    >>	
+    >>
   >>
   \layout {}
   \midi {}
@@ -112,9 +104,10 @@
 % --- Pagina
 \paper {
   #( set-default-paper-size "letter" )
+  #(include-special-characters)
 }
 
 %{
 convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
-Aplicando la conversión:     El documento no ha cambiado.
+Aplicando la conversión: 2.19.40, 2.19.46, 2.19.49, 2.19.80
 %}

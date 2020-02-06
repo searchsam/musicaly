@@ -1,5 +1,5 @@
 % ****************************************************************
-%	Dios es Fiel - Tenor
+%	Dios es Fiel - Bajo
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
@@ -9,15 +9,15 @@
 \include "global.ily"
 \include "armonia.ily"
 \include "lyric.ily"
-\include "tenor.ily"
+\include "bajo.ily"
 
 % --- Tamaño del pentagrama
 #(set-global-staff-size 22)
 
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 "Dios es fiel" \fontsize #3 \caps " "} } }
-\markup { \fill-line { \fontsize #2 \caps "Tenor" \center-column { \fontsize #2 "Texto y Música: Alberto Taulé" } } }
+\markup { \fill-line { \center-column { \fontsize #5 "Dios es fiel" \fontsize #3 \caps " " } } }
+\markup { \fill-line { \fontsize #2 \caps "Bajo" \center-column { \fontsize #2 "Texto y Música: Pbro. Alberto Taulé" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -29,19 +29,19 @@
   <<
     \acordes
     \new Staff {
-      \new Voice = "tenor" {
+      \new Voice = "bajo" {
         <<
           %\set Staff.midiInstrument = #"piano"
           \global
-          \tenor
+          \bajo
         >>
       }
     }
-    \new Lyrics{ \lyricsto "tenor" { \primeraLetra } }
-    \new Lyrics{ \lyricsto "tenor" { \segundaLetra } }
-    \new Lyrics{ \lyricsto "tenor" { \terceraLetra } }
-    \new Lyrics{ \lyricsto "tenor" { \cuartaLetra } }
-    \new Lyrics{ \lyricsto "tenor" { \quintaLetra } }
+    \new Lyrics{ \lyricsto "bajo" { \primeraLetra } }
+    \new Lyrics{ \lyricsto "bajo" { \segundaLetra } }
+    \new Lyrics{ \lyricsto "bajo" { \terceraLetra } }
+    \new Lyrics{ \lyricsto "bajo" { \cuartaLetra } }
+    \new Lyrics{ \lyricsto "bajo" { \quintaLetra } }
   >>
   \midi {}
   \layout {}
