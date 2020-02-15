@@ -15,8 +15,8 @@
 #(set-global-staff-size 22)
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 "Dios es fiel" \fontsize #3 \caps " "}}}
-\markup { \fill-line { \fontsize #2 \caps "Soprano" \center-column { \fontsize #2 "Texto y Música: Pbro. Alberto Taulé" } } }
+\markup { \fill-line { \center-column { \fontsize #5 "Señor, ten piedad" \fontsize #3 \caps " "}}}
+\markup { \fill-line { \fontsize #2 \caps "Soprano" \center-column { \fontsize #2 "Música: Francisco Palazón" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -26,7 +26,7 @@
 % --- Partitura
 \score {
   <<
-    \acordes
+    %\acordes
     \new Staff {
       \new Voice = "soprano" {
         <<
@@ -36,11 +36,7 @@
         >>
       }
     }
-    \new Lyrics{ \lyricsto "soprano"{ \primeraLetra } }
-    \new Lyrics{ \lyricsto "soprano"{ \segundaLetra } }
-    \new Lyrics{ \lyricsto "soprano"{ \terceraLetra } }
-    \new Lyrics{ \lyricsto "soprano"{ \cuartaLetra } }
-    \new Lyrics{ \lyricsto "soprano"{ \quintaLetra } }
+    \new Lyrics{ \lyricsto "soprano"{ \letra } }
   >>
   \midi {}
   \layout {}

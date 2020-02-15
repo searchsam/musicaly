@@ -16,8 +16,8 @@
 
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 "Dios es fiel" \fontsize #3 \caps " " } } }
-\markup { \fill-line { \fontsize #2 \caps "Bajo" \center-column { \fontsize #2 "Texto y Música: Pbro. Alberto Taulé" } } }
+\markup { \fill-line { \center-column { \fontsize #5 "Señor, ten piedad" \fontsize #3 \caps " " } } }
+\markup { \fill-line { \fontsize #2 \caps "Bajo" \center-column { \fontsize #2 "Música: Francisco Palazón" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -27,7 +27,7 @@
 % --- Partitura
 \score {
   <<
-    \acordes
+    %\acordes
     \new Staff {
       \new Voice = "bajo" {
         <<
@@ -37,11 +37,7 @@
         >>
       }
     }
-    \new Lyrics{ \lyricsto "bajo" { \primeraLetra } }
-    \new Lyrics{ \lyricsto "bajo" { \segundaLetra } }
-    \new Lyrics{ \lyricsto "bajo" { \terceraLetra } }
-    \new Lyrics{ \lyricsto "bajo" { \cuartaLetra } }
-    \new Lyrics{ \lyricsto "bajo" { \quintaLetra } }
+    \new Lyrics{ \lyricsto "bajo" { \letra } }
   >>
   \midi {}
   \layout {}

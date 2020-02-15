@@ -1,5 +1,5 @@
 % ****************************************************************
-%	Dios es Fiel - Contralto
+%	Dios es Fiel - Soprano
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
@@ -9,15 +9,14 @@
 \include "global.ily"
 \include "armonia.ily"
 \include "lyric.ily"
-\include "alto.ily"
+\include "solista.ily"
 
 % --- Tamaño del pentagrama
 #(set-global-staff-size 22)
 
-
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 "Señor, ten piedad" \fontsize #3 \caps " "} } }
-\markup { \fill-line { \fontsize #2 \caps "Contralto" \center-column { \fontsize #2 "Música: Francisco Palazón" } } }
+\markup { \fill-line { \center-column { \fontsize #5 "Señor, ten piedad" \fontsize #3 \caps " "}}}
+\markup { \fill-line { \fontsize #2 \caps "Solista" \center-column { \fontsize #2 "Música: Francisco Palazón" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -29,15 +28,15 @@
   <<
     %\acordes
     \new Staff {
-      \new Voice = "alto" {
+      \new Voice = "solista" {
         <<
           %\set Staff.midiInstrument = #"piano"
           \global
-          \alto
+          \solista
         >>
       }
     }
-    \new Lyrics{ \lyricsto "alto" { \letraAlto } }
+    \new Lyrics{ \lyricsto "solista"{ \letraSolista } }
   >>
   \midi {}
   \layout {}

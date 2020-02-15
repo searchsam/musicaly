@@ -3,23 +3,18 @@ soprano = \relative do'' {
   \compressFullBarRests
   \dynamicUp
   %Escribir la musica aqui...
-  la4 re,			| %01
-  sib'4 sol8 fa		| %02
-  mi8 fa sol do,		| %03
-  la'4 la	 \breathe	| \break %04
-  %\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((extra-offset . (0 . 3)))
-  fa4 fa			| %05
-  sol4 mi8 re		| %06
-  dos8 re mi sol		| %07
-  fa2 \breathe		| \break %08
-  %\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((extra-offset . (0 . 7)))
-  la4 re			| %09
-  sib4 la8 sol		| %10
-  do8 re do sib		| %11
-  la8( sol) fa4 \breathe | \break %12
-  %\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((extra-offset . (0 . 11)))
-  sib4 sib		| %13
-  la4 sol8 fa		| %14
-  la8 sol fa mi		| %15
-  re2			| %16
+  R2*2			| % 02
+  R2.			| % 03
+  R2			| % 04
+  r4 re,8^\(( la')	| % 05
+  la8( do) re re		| % 06
+  re4\) r		| % 07
+  R2*2			| % 09
+  re8\( re do16( re) do8 | % 10
+  do4\) r		| % 11
+  R2			| % 12
+  r4 re,8^\(( la')	| % 13
+  sol8( la16 sib) la8-- do-- | % 14
+  re2\)^\markup { \halign #-3 \italic \bold "rit." } \fermata | % 15
 }
+

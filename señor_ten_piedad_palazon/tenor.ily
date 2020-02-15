@@ -4,23 +4,17 @@ tenor = \relative do' {
   \compressFullBarRests
   \dynamicUp
   %Escribir la musica aqui...
-  re4 la			| %01
-  re4 sib8 sib		| %02
-  sib8 sib sib sib	| %03
-  do4 do \breathe	| \break %04
-  %\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((extra-offset . (0 . 3)))
-  sib4 fa		| %05
-  sib4 sol8 sol		| %06
-  sol8 sol la la		| %07
-  la2 \breathe		| \break %08
-  %\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((extra-offset . (0 . 7)))
-  do4 la			| %09
-  re4 re8 re		| %10
-  mi8 fa mi re		| %11
-  do8( sib) la4 \breathe 	| \break %12
-  %\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((extra-offset . (0 . 11)))
-  re4 re			| %13
-  re4 la8 la		| %14
-  sol8 sol la la	| %15
-  fa2			| %16
+  R2*2			| % 02
+  R2.			| % 03
+  R2			| % 04
+  r4 re,8^\(( la')	| % 05
+  re8( la) sib sol	| % 06
+  sib4\) r		| % 07
+  R2*2			| % 09
+  sib8^\( la sol do 	| % 10
+  la4\) r		| % 11
+  R2			| % 12
+  r4 re,8^\(( la')	| % 13
+  sib4 do8-- la-- 	| % 14
+  la2^\markup { \halign #-3 \italic \bold "rit." } \) \fermata | % 15
 }
