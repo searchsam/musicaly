@@ -9,7 +9,7 @@ tenor = \relative do' {
   R2			| % 04
   r4 re,8^\(( la')	| % 05
   re8( la) sib sol	| % 06
-  sib4\) r		| % 07
+  la4\) r		| % 07
   R2*2			| % 09
   sib8^\( la sol do 	| % 10
   la4\) r		| % 11

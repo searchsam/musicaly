@@ -5,10 +5,18 @@
 
 % --- Parametro globales
 global = {
-  \tempo "Andante Moderato" 4=95
+  \tempo "Andante Moderato" 4=92
   \key sol \major
   \time 4/4
+  \partial 8 s8
+  s1*3
+  \mark "FIN"
+  \bar "||"
+  s1*2
+  \mark \markup { \musicglyph #"scripts.segno" }
+  \bar "||"
   s1*10
+  \bar "||"
   \repeat volta 2 {s1*7 }
   \alternative {
     { s1 }
@@ -20,7 +28,7 @@ global = {
 titulo = "Yo soy el pan de vida"
 subtitulo = "Juan 6"
 instrumento = "Coro Mixto"
-autor = "Música: Hna. Suzanne Toolan RSM"
+autor = "Letra y Música: Hna. Suzanne Toolan RSM"
 arreglo = "Traducción: Martín Verde Barajas"
 derechos = "Creative Commons Attribution 3.0"
 etiqueta = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -30,7 +38,9 @@ soprano = \relative do' {
   \compressFullBarRests
   \dynamicUp
   
-  sol'4^\markup{ \italic \bold "Estrofa" } sol8 sol sol4 sol | % 01
+  \partial 8 r8
+  R1*5
+  sol'4 sol8^\markup{ \italic \bold "Estrofa" } sol sol4 sol | % 01
   si2 si4 si8 si		| % 02
   do4. do8 do do do do	| % 03
   do4 do4. r8 re, re	| % 04
@@ -45,7 +55,7 @@ soprano = \relative do' {
   do2 si4 si		| % 12
   la2~ la8 re, re re	| \break % 13
   re'2 si4 sol		| % 14
-  do4( si) la sol	| % 15
+  do4( si) \breathe la sol | % 15
   sol2 fas4. fas8	| % 16
   sol2 r8 re re re	| % 18
   sol2~ sol8 r r4	| % 19
@@ -55,7 +65,9 @@ alto = \relative do' {
   \compressFullBarRests
   \dynamicUp
   
-  si4^\markup{ \italic \bold "Estrofa" } si8 si sol4 si | % 01
+  \partial 8 r8
+  R1*5
+  si4 si8^\markup{ \italic \bold "Estrofa" } si sol4 si | % 01
   re2 re4 re8 re		| % 02
   mi4. mi8 mi mi mi mi	| % 03
   re4 re4. r8 re re	| % 04
@@ -70,7 +82,7 @@ alto = \relative do' {
   sol2 sol4 sol		| % 12
   fas2~ fas8 re re re	| \break % 13
   sol2 fa4 fa		| % 14
-  sol2 mi4 mi		| % 15
+  sol2 \breathe mi4 mi		| % 15
   re2 re4. re8		| % 16
   re2 r8 re re re	| % 18
   re2~ re8 r r4	| % 19
@@ -81,7 +93,9 @@ tenor = \relative do {
   \dynamicUp
   \clef "G_8"
   
-  si'4^\markup{ \italic \bold "Estrofa" } si8 si sol4 si | % 01
+  \partial 8 r8
+  R1*5
+  si'4 si8^\markup{ \italic \bold "Estrofa" } si sol4 si | % 01
   re2 re4 re8 re		| % 02
   mi4. mi8 mi mi mi mi	| % 03
   re4 re4. r8 re re	| % 04
@@ -96,7 +110,7 @@ tenor = \relative do {
   mi2 re4 re		| % 12
   do2~ do8 re, re re	| \break % 13
   si'2 re4 re		| % 14
-  mi2 dos4 dos		| % 15
+  mi2 \breathe dos4 dos		| % 15
   si2 do4. do8		| % 16
   si2 r8 re, re re	| % 18
   si'2~ si8 r r4		| % 19
@@ -107,7 +121,9 @@ bajo = \relative do {
   \dynamicUp
   \clef bass
   
-  sol'4^\markup{ \italic \bold "Estrofa" } sol8 sol sol4 re | % 01
+  \partial 8 r8
+  R1*5
+  sol'4 sol8^\markup{ \italic \bold "Estrofa" } sol sol4 re | % 01
   si2 si4 si8 si		| % 02
   do4. do8 do do do do	| % 03
   re4 re4. r8 re re	| % 04
@@ -116,13 +132,13 @@ bajo = \relative do {
   sol4 re si si		| % 07
   mi2~ mi8 r do do	| % 08
   la'4. la8 la4 la	| % 09
-  re,4 re r8 re re re 	| \break % 10
+  sol4 sol r8 re re re 	| \break % 10
   sol2^\markup{ \italic \bold "Coro" } fas4 fas | % 11
   sol2~ sol8 sol sol sol	| % 11
   do,2 sol'4 sol		| % 12
-  fas2~ fas8 re re re	| \break % 13
-  sol2 sol4 sol		| % 14
-  do,4( re) mi fas	| % 15
+  sol2~ sol8 re re re	| \break % 13
+  sol2 sol4 mi		| % 14
+  do4( re) \breathe mi fas | % 15
   sol2 fas4. fas8	| % 16
   sol2 r8 re re re	| % 18
   sol2~ sol8 r r4	| % 19
@@ -164,9 +180,12 @@ acordes = \new ChordNames {
   \set chordChanges = ##t
   \italianChords
   \chordmode {
+    \partial 8 s8
+    s1*5
+    
     sol1 si1:m do1 re1:7 sol2 si2:m do1 sol2 si2:m mi2:m do2 la1:m re1:7
     
-    sol2 re2 sol1 do2 sol2 re1:7 sol2 sol2:7 do2 la2 sol2 re2:7 sol2 re2:7 sol1
+    sol2 re2 sol1 do2 sol2 re1:7 sol2 sol2:7 do2 la4 la4:7 sol2 re2:7 sol2 re2:7 sol1
   }
 }
 

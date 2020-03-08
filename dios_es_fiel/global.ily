@@ -1,6 +1,6 @@
 % --- Parametro globales
 global = {
-    \tempo "Andante" 4 = 70 
+    \tempo "Andante" 4 = 75 
     \clef treble 
     \key re \minor 
     \time 2/4 

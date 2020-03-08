@@ -7,7 +7,7 @@
 
 \include "melodia.ily"
 
-#(set-global-staff-size 17.9)
+#(set-global-staff-size 17)
 
 \header {
   title = \titulo
