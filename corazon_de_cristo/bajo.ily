@@ -22,7 +22,7 @@ bajo = \relative do {
   sol4 fa8 fa mib4 mib8 re |
   do8 do mib mib re4 re |
   sol4 fa8 fa mib mib fa fa |
-  mib4( re) sol2 | \break
+  mib4( re sol2) | \break
   
   R1*8^\markup{ \small \italic "Solista 2"} | \break
   sol4._\pp^\markup { \small "Bocaliso" } fa8 mib2 |
@@ -36,10 +36,10 @@ bajo = \relative do {
   
   R1*8^\markup{ \small \italic "Solista 2"} | \break
   sol8 sol sol fa mib4 mib |
-  fa4 re8 re sol4 sol |
+  fa8 fa re8 re sol2 |
   mib4 re8( do) sol' sol sol fa |
   mib4 do8 do re2 | \break
-  sol4 fa8 fa mib4 mib8 re |
+  sol4 fa8 fa mib mib mib8 re |
   do8 do mib mib re4 re |
   sol4 fa4 mib8 mib fa4 |
   mib4( re) sol2 | \break
@@ -59,13 +59,13 @@ letraBajo = \lyricmode {
   Co -- ra -- zón de Cris -- to, en quien el Pa -- dre
   en -- con -- tró su di -- vi -- na com -- pla -- cen -- cia,
   e -- res de -- se -- o de co -- li -- nas e -- ter -- nas,
-  fuen -- te de vi -- da y san -- ti -- dad.
+  fuen -- te de vi -- da~y san -- ti -- dad.
   
   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
   
   Co -- ra -- zón de Cris -- to, e -- res sal -- va -- ción
   del que po -- ne su~es -- pe -- ran -- za en Tí,
-  de los que mue -- ren es -- ran -- za y con -- fian -- za,
+  de los que mue -- ren es -- pe -- ran -- za y con -- fian -- za,
   de los san -- tos dul -- zu -- ra.
   
   A -- mén.

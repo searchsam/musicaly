@@ -38,8 +38,8 @@ solistaDos = \relative do {
   
   r1 |
   re8 re re fa sol4 re |
-  re8( do) sib do re2 |
-  mib2 r | \break
+  re8 do sib do re2( |
+  mib2) r | \break
   sol,4 re'8 do mib2 |
   re2 r |
   r8 re8 re fa sol4 fa8 fa |

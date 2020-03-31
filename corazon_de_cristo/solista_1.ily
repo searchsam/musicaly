@@ -22,17 +22,17 @@ solistaUno = \relative do'' {
   R1*8^\markup{ \small \italic "Solista 2"} | \break
   re8 re sol la sib4 sol |
   fa4 sol8 la re,4 re |
-  do4 sol'8 sol sol( fa) mib re |
+  do4 sol'8 sol sol fa mib( re) |
   do4 re8 mib re4 re | \break
-  re4 sol8 la sib sib sol8 sol |
+  re8 re sol8 la sib4 sol8 sol |
   do8 sib la sol la4 la |
   sib4 do8 re re do sib( la) |
   sol4( sib8 la) sol2 | \break
     
   R1*8^\markup{ \small \italic "Solista 2"} | \break
   r2 sol8 sol la sib |
-  la4 re re8( do) sib la |
-  sol2 sib |
+  la4 re re8 do sib la |
+  sol2( sib) |
   r2 re,4 fas8 la | \break
   sib2 sol |
   r2 r8 la sib do |

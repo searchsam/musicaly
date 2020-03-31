@@ -21,7 +21,7 @@ soprano = \relative do'' {
   re4 sol8 la sib4 sol8 sol |
   do8 sib la sol la4 la |
   sib4 do8 re re do sib la |
-  sol4( sib8 la) sol2 | \break
+  sol4( sib8 la sol2) | \break
   
   R1*8^\markup{ \small \italic "Solista 2"} | \break
   sol1_\pp^\markup { \small "Bocaliso" } |
@@ -35,10 +35,10 @@ soprano = \relative do'' {
   
   R1*8^\markup{ \small \italic "Solista 2"} | \break
   re8 re sol8 la sib4 sol |
-  fa4 sol8 la re,4 re |
-  do4 sol'8 sol sol fa mib re |
+  fa8 fa sol8 la re,2 |
+  do4 sol'4 sol8 fa mib re |
   do4 re8 mib re2 | \break
-  re4 sol8 la sib4 sol8 sol |
+  re4 sol8 la sib8 sib sol8 sol |
   do8 sib la sol la4 la |
   sib4 do8( re) re do sib( la) |
   sol4( sib8 la) sol2 | \break
@@ -58,13 +58,13 @@ letraSoprano = \lyricmode {
   Co -- ra -- zón de Cris -- to, en quien el Pa -- dre
   en -- con -- tró su di -- vi -- na com -- pla -- cen -- cia,
   e -- res de -- se -- o de co -- li -- nas e -- ter -- nas,
-  fuen -- te de vi -- da y san -- ti -- dad.
+  fuen -- te de vi -- da~y san -- ti -- dad.
   
   _ _ _ _ _ _ _ _ _ _ _ _ _
   
   Co -- ra -- zón de Cris -- to, e -- res sal -- va -- ción
-  del que po -- ne su es -- pe -- ran -- za en Tí,
-  de los que mue -- ren es -- ran -- za y con -- fian -- za,
+  del que po -- ne su~es -- pe -- ran -- za en Tí,
+  de los que mue -- ren es -- pe -- ran -- za y con -- fian -- za,
   de los san -- tos dul -- zu -- ra.
   
   A -- mén.
