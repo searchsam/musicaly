@@ -56,7 +56,7 @@ letraSoprano = \lyricmode {
   de to -- da vir -- tud e -- res a -- bis -- mo.
   
   Co -- ra -- zón de Cris -- to, en quien el Pa -- dre
-  en -- con -- tró su di -- vi -- na com -- pla -- cen -- cia,
+  en -- con -- tró su com -- pla -- cen -- cia di -- vi -- na,
   e -- res de -- se -- o de co -- li -- nas e -- ter -- nas,
   fuen -- te de vi -- da~y san -- ti -- dad.
   

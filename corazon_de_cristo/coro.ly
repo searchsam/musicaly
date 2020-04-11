@@ -18,16 +18,14 @@
 #(set-global-staff-size 17)
 
 \header {
-  title = "Corazón de Cristo"
-  subtitle = "De las Letanías al Sagrado Corazón"
-  subsubtitle = ""
-  instrument = "Coro Mixto"
-  poet = ""
-  composer = "Música: Pbro. Marco Frisina"
-  arranger = "Traducción: Luz Marina Wilson"
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
-  breakbefore = ##t
+  title = \title
+  subtitle = \subtitle
+  instrument = \instrument
+  composer = \composer
+  arranger = \arranger
+  copyright = \copyright
+  tagline = \tagline
+  breakbefore = \breakbefore
 }
 
 \score {

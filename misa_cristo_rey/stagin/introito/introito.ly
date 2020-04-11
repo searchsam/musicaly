@@ -1,5 +1,5 @@
 % ****************************************************************
-%	Salmo responsorial - Melodia vaticana
+%	Pricipe de los siglos - Melodia inspirada en las composiciones de Mons Marco Frisina
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
@@ -12,8 +12,10 @@
 
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Principe de los siglos" \fontsize #2 "Introito - Misa de Cristo Rey" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutierrez" \small "(Octubre 2019)" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Principe de los siglos" \fontsize #2 "Misa de Cristo Rey" "Introito - Himno Solemnidad Jesucristo Rey del Universo" } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" \small "(Abril 2020)" } } }
+
 
 \header {
   copyright = "Creative Commons Attribution 3.0"
@@ -24,15 +26,30 @@
 % --- Musica
 
 % --- Estrofa
-melody_stanza = \relative do'' {
-  \tempo 4 = 80
-  \key re \major
+melody_stanza = \relative do' {
+  \tempo "Adagio" 4 = 70
+  \key re \minor
   \set Score.timing = ##f
+
+  la4^\markup { \italic "Voces grabes"} re8( mi) fa4 re8 re |
+  do8 re mi do re4 re 		| \break
+  do4 re8( mi) sib4 sib		|
+  mi8 re  do re mi4 mi		| \break
+  la,4 re8 mi re4 re4		|
+  mi8 fa sol mi re4 re 		| \break
+  do4 re8( mi) fa4 fa		|
+  sol8 fa mi fa mi2		|
+  re1				| \break
   
-  re,4 re8 la'4. si4 sol8 la4. la4. sol8( fas) mi fas4. fas r4 \divisioMaior \break
-  la4. si8( dos4) fas,4. fas4. sol8 fas mi re mi4. mi r4 \divisioMaior \break
-  fas4. sol8 si4 la4. la si8 la sol la si4. si r4 \divisioMaior \break
-  la4. la8 sol fas mi fas sol fas mi4. re r4 \divisioMaior \break
+  la'4 sol8( fa) sib la sol fa	|
+  sol8 fa mi sol la4 la		| \break
+  do4 sol8( do) re4 re8 re	|
+  do8 sib do re la4 la		| \break
+  la4 sol8 fa sib do re do	|
+  do8 sib la( sol) la2		| \break
+  do4 sol8( do) sib4 sib8 sib	|
+  do8 re mi fa mi2 re1		| \break
+  
   s32-"R."
 }
 letter_stanza_uno = \lyricmode {
@@ -40,20 +57,35 @@ letter_stanza_uno = \lyricmode {
   Je -- su -- cris -- to, rey de las na -- cio -- nes:
   te con -- fe -- sa -- mos ár -- bi -- tro su -- pre -- mo
   de las men -- tes y los co -- ra -- zo -- nes.
+  
+  En la tie -- rra te a -- do -- ran los mor -- ta -- les
+  y los san -- tos te~a -- la -- ban en el cie -- lo,
+  u -- ni -- dos a sus vo -- ces te~a -- cla -- ma -- mos
+  pro -- cla -- mán -- do -- te rey del u -- ni -- ver -- so.
 }
 
 % --- acordes
 harmony_stanza = \new ChordNames {
   \chordmode {
     \italianChords
+    re2:m sib2 do2 re2:m
+    do2 sib2 do2 la2:m
+    re2:m sib2 do2 re2:m
+    do2 sib2 do2 la2:m re1:m
+    
+    re2:m sib2 do2 re2:m
+    do2 sib2 do2 la2:m
+    re2:m sib2 do2 re2:m
+    do2 sib2 do2 la2:m re1:m
   }
 }
 
 % --- Estrofa
 \score {
   <<
+    \harmony_stanza
     \new Voice = "stanza" <<
-      \set Staff.midiInstrument = #"choir aahs"
+      %\set Staff.midiInstrument = #"choir aahs"
       \melody_stanza
     >>
     \new Lyrics = "primera" \lyricsto stanza \letter_stanza_uno
@@ -84,9 +116,6 @@ harmony_stanza = \new ChordNames {
       % \override VerticalAxisGroup.remove-first = ##t
     }
   }
-  \header {
-    piece = \markup {\smallCaps "Estrofas."}
-  }
 }
 
 
@@ -94,8 +123,3 @@ harmony_stanza = \new ChordNames {
 \paper{
   #(set-default-paper-size "letter")
 }
-
-%{
-convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
-Aplicando la conversión:     El documento no ha cambiado.
-%}

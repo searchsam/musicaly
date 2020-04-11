@@ -14,14 +14,14 @@
 
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 "Corazón de Cristo" \fontsize #3 \caps "De las Letanías al Sagrado Corazón"} } }
-\markup { \fill-line { \fontsize #2 \caps "Contralto" \center-column { \fontsize #2 "Música: Pbro. Marco Frisina" } } }
-\markup { \fill-line { "" \center-column { \fontsize #2 "Traducción: Luz Marina Wilson" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #3 \caps \subtitle } } }
+\markup { \fill-line { \fontsize #2 \caps "Contralto" \center-column { \fontsize #2 \composer } } }
+\markup { \fill-line { "" \center-column { \fontsize #2 \arranger } } }
 
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
-  breakbefore = ##t
+  copyright = \copyright
+  tagline = \tagline
+  breakbefore = \breakbefore
 }
 
 % --- Partitura

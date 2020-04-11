@@ -41,7 +41,7 @@ bajo = \relative do {
   mib4 do8 do re2 | \break
   sol4 fa8 fa mib mib mib8 re |
   do8 do mib mib re4 re |
-  sol4 fa4 mib8 mib fa4 |
+  sol4 fa mib8 mib fa4 |
   mib4( re) sol2 | \break
   
   mib2( do) |
@@ -57,7 +57,7 @@ letraBajo = \lyricmode {
   de to -- da vir -- tud e -- res a -- bis -- mo.
   
   Co -- ra -- zón de Cris -- to, en quien el Pa -- dre
-  en -- con -- tró su di -- vi -- na com -- pla -- cen -- cia,
+  en -- con -- tró su com -- pla -- cen -- cia di -- vi -- na,
   e -- res de -- se -- o de co -- li -- nas e -- ter -- nas,
   fuen -- te de vi -- da~y san -- ti -- dad.
   

@@ -11,7 +11,7 @@ solistaDos = \relative do {
   sol4 fa8 sol sib4 sib |
   do4 re8 mib sib4. la8 |
   sol8 la sib do do2 | \break
-  re4 mib8 fa fa4 do8 do |
+  re4 mib8 fa fa4 do4 |
   do8 si do re mib4 do |
   do4 sib8 la sib4 sol8 sol |
   sol8 fa sol la la2 | \break
@@ -54,7 +54,7 @@ letraSolistaDos = \lyricmode {
   % la letra va aqui.
   Co -- ra -- zón de Cris -- to, dig -- no de a -- la -- ban -- za,
   Tú e -- res Rey de to -- do co -- ra -- zón,
-  te -- so -- ro de sa -- bi -- du -- ría y de cien -- cia,
+  te -- so -- ro de sa -- bi -- du -- ría y cien -- cia,
   en quien ha -- bi -- ta to -- da la ple -- ni -- tud.
   
   Co -- ra -- zón de Cris -- to, ri -- co pa -- ra quien te~in -- vo -- ca,

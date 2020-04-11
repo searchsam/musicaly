@@ -23,3 +23,14 @@ global = {
     s1*2
     \bar "|." 
 }
+
+title = "Corazón de Cristo"
+subtitle = "De las Letanías al Sagrado Corazón de Jesús"
+subsubtitle = ""
+instrument = "Coro Mixto"
+poet = ""
+composer = "Música: Mons. Marco Frisina"
+arranger = "Traducción: Luz Marina Zepeda Wilson"
+copyright = "Creative Commons Attribution 3.0"
+tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+breakbefore = ##t

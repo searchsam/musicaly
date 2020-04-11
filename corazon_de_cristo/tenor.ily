@@ -41,7 +41,7 @@ tenor = \relative do' {
   sol4 sol8 sol sol4( fas) | \break
   sol4 sol8 sol sol8 sol sol8 sol |
   do8 do sib sib re4 re |
-  re4 re4 mib8 mib do4 |
+  re4 re mib8 mib do4 |
   do2 sib | \break
   
   sib2( mib) |
@@ -57,7 +57,7 @@ letraTenor = \lyricmode {
   de to -- da vir -- tud e -- res a -- bis -- mo.
   
   Co -- ra -- zón de Cris -- to, en quien el Pa -- dre
-  en -- con -- tró su di -- vi -- na com -- pla -- cen -- cia,
+  en -- con -- tró su com -- pla -- cen -- cia di -- vi -- na,
   e -- res de -- se -- o de co -- li -- nas e -- ter -- nas,
   fuen -- te de vi -- da~y san -- ti -- dad.
   
