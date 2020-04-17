@@ -37,10 +37,10 @@ letter_antifona = \lyricmode {
   A -- quí es -- toy, Se -- ñor, pa -- ra~ha -- cer tu vo -- lun -- tad.
 }
 % --- acordes
-harmony_antifona = \new ChordNames { 
-    \chordmode { 
+harmony_antifona = \new ChordNames {
+    \chordmode {
         \italianChords
-        
+
     }
 }
 
@@ -99,7 +99,7 @@ letter_stanza_uno = \lyricmode {
   "abriste," en cam
   \once \override LyricText.self-alignment-X = #LEFT
   "bio, mis oídos a" tu voz.
-  No~ex -- xi -- gis -- te ho -- lo 
+  No~ex -- xi -- gis -- te ho -- lo
   \once \override LyricText.self-alignment-X = #LEFT
   "caustos por" la cul -- pa,
   a -- sí que di -- je: A -- quí es -- toy.
@@ -142,7 +142,7 @@ letter_stanza_cuatro = \lyricmode {
   "antes bien," pro -- cla
   \once \override LyricText.self-alignment-X = #LEFT
   "mé tu lealtad y tu aux" xi -- lio.
-  Tu a -- mor y tu le 
+  Tu a -- mor y tu le
   \once \override LyricText.self-alignment-X = #LEFT
   "altad no los he o" cul ta -- do
   a la gran _
@@ -151,8 +151,8 @@ letter_stanza_cuatro = \lyricmode {
 }
 
 % --- acordes
-harmony_stanza = \new ChordNames { 
-  \chordmode { 
+harmony_stanza = \new ChordNames {
+  \chordmode {
     \italianChords
   }
 }
@@ -187,10 +187,10 @@ harmony_stanza = \new ChordNames {
         barAlways = ##t
       }
       \context {
-    \Staff \RemoveEmptyStaves
-    % To use the setting globally, uncomment the following line:
-    % \override VerticalAxisGroup.remove-first = ##t
-  }
+        \Staff \RemoveEmptyStaves
+        % To use the setting globally, uncomment the following line:
+        % \override VerticalAxisGroup.remove-first = ##t
+      }
     }
     \header {
       piece = \markup {\smallCaps "Estrofas."}
