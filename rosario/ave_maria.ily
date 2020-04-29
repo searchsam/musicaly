@@ -49,6 +49,6 @@ acordesAveMaria = \new ChordNames {
     la\breve
     la\breve
     mi2:m sol2
-    re2 sol
+    re2:7 sol
   }
 }

@@ -45,8 +45,8 @@ acordesConstriccion = \new ChordNames {
     re\breve sol1
     sol\breve fa1:m
     sol\breve mi2:m re2 mi2:m
-    sol\breve
-    mi\breve:m re1 mi2:m sol2
+    mi\breve:m
+    sol\breve re1 mi2:m sol2
     re2.:7 sol4
   }
 }

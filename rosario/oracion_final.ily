@@ -41,8 +41,8 @@ acordesOraionFinal = \new ChordNames {
     sol\breve re2 re2:7 sol2
     re\breve sol1
     sol\breve mi2:m re2 mi1:m
-    sol\breve
-    mi\breve:m re2*3 mi2:m sol2
+    mi\breve:m
+    sol\breve re2*3 mi2:m sol2
     re2.:7 sol4
   }
 }

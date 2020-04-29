@@ -8,11 +8,11 @@
 % --- includes
 \include "gregorian.ly"
 
-#(set-global-staff-size 19)
+%#(set-global-staff-size 19)
 
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Aleluya" \fontsize #2 "Misa de Cristo Rey"} } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Señor ten piedad" \fontsize #2 "Misa San José"} } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Música: Samuel Gutiérrez Avilés" } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez Castro" \small "(Abril 2020)" } } }
 \header {
@@ -34,18 +34,15 @@ harmony_stanza = \new ChordNames {
 \score {
   \new Staff <<
     \new Voice = "melody" \relative do' {
+      \tempo 4 = 90
       \time 4/4
-      \override Lyrics.LyricText.X-extent  = #'(0 . 3)
+      %\override Lyrics.LyricText.X-extent  = #'(0 . 3)
 
-      re4 sol la8 sib la2
-      re,4 sol la8 sib do2
-      la4 sol fa8 mi re2
+      re4 sol la8 sib la4 sol8 fa sol4 sol
       s32
     }
     \new Lyrics \lyricsto "melody" {
-      A -- le -- lu -- _ ya,
-      a -- le -- lu -- _ ya,
-      a -- le -- lu -- _ ya.
+      Se -- ñor ten pie -- dad de no -- so -- tros.
     }
   >>
   \midi {}
