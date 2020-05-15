@@ -1,0 +1,470 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{pifont}
+\usepackage{color}
+\usepackage{longtable} 
+
+\setlength{\parindent}{0pt}
+
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\newcommand{\tab}[1]{\hspace{.2\textwidth}\rlap{#1}}
+
+\begin{document}
+    
+    \title{ \textsc{ \bfseries Letanía de los Santos }}
+    \date{ " " }
+    \maketitle
+    
+    %% - Musica - Kyrie, eleison
+    \begin{lilypond}
+		\language "espanol"
+		\version "2.19.37"
+		\include "gregorian.ly"
+		
+        \score{
+			<<
+			  \new ChordNames {
+				  \set chordChanges = ##t
+				  \italianChords
+				  \chordmode { 
+					  mi4:m mi4:m mi4:m re4 mi4:m
+				  }
+				}
+			  \new Staff <<
+				\new Voice = "chant" \relative do' {
+					\clef "G_8"
+					\key mi \minor
+					\time 1/4
+					%\override Lyrics.LyricText.X-extent  = #'(0 . 3)
+					\hide Staff.BarLine
+					sol4 mi mi re mi
+					\undo \hide Staff.BarLine
+					\bar ":|."
+				}
+				\new Lyrics = "one" \lyricsto "chant" { 
+					Se -- ñor, ten pie -- dad
+				}
+			  >>
+			>>
+			\layout {
+			  \context {
+				\Staff
+				\remove "Time_signature_engraver"
+				\override BarLine.X-extent = #'(-1 . 1)
+				\hide Stem
+				\hide Beam
+				\hide TupletNumber
+			  }
+			}
+		  }
+
+        \paper {
+            #( set-default-paper-size "letter" )
+        }
+    \end{lilypond} \\
+    
+    %% - Musica - Christe, eleison
+    \begin{lilypond}
+		\language "espanol"
+		\version "2.19.37"
+		\include "gregorian.ly"
+		
+        \score{
+			<<
+			  \new ChordNames {
+				  \set chordChanges = ##t
+				  \italianChords
+				  \chordmode { 
+					  mi4:m mi4:m mi4:m re4 mi4:m
+				  }
+				}
+			  \new Staff <<
+				\new Voice = "chant" \relative do' {
+					\clef "G_8"
+					\key mi \minor
+					\time 1/4
+					%\override Lyrics.LyricText.X-extent  = #'(0 . 3)
+					\hide Staff.BarLine
+					sol4 mi mi re mi
+					\undo \hide Staff.BarLine
+					\bar ":|."
+				}
+				\new Lyrics = "one" \lyricsto "chant" { 
+					Cris -- to, ten pie -- dad
+				}
+			  >>
+			>>
+			\layout {
+			  \context {
+				\Staff
+				\remove "Time_signature_engraver"
+				\override BarLine.X-extent = #'(-1 . 1)
+				\hide Stem
+				\hide Beam
+				\hide TupletNumber
+			  }
+			}
+		  }
+
+        \paper {
+            #( set-default-paper-size "letter" )
+        }
+    \end{lilypond} \\
+    
+    %% - Musica - Kyrie, eleison
+    \begin{lilypond}
+		\language "espanol"
+		\version "2.19.37"
+		\include "gregorian.ly"
+		
+        \score{
+			<<
+			  \new ChordNames {
+				  \set chordChanges = ##t
+				  \italianChords
+				  \chordmode { 
+					  mi4:m mi4:m mi4:m re4 mi4:m
+				  }
+				}
+			  \new Staff <<
+				\new Voice = "chant" \relative do' {
+					\clef "G_8"
+					\key mi \minor
+					\time 1/4
+					%\override Lyrics.LyricText.X-extent  = #'(0 . 3)
+					\hide Staff.BarLine
+					sol4 mi mi re mi
+					\undo \hide Staff.BarLine
+					\bar ":|."
+				}
+				\new Lyrics = "one" \lyricsto "chant" { 
+					Se -- ñor, ten pie -- dad
+				}
+			  >>
+			>>
+			\layout {
+			  \context {
+				\Staff
+				\remove "Time_signature_engraver"
+				\override BarLine.X-extent = #'(-1 . 1)
+				\hide Stem
+				\hide Beam
+				\hide TupletNumber
+			  }
+			}
+		  }
+
+        \paper {
+            #( set-default-paper-size "letter" )
+        }
+    \end{lilypond} \\
+    
+    %% - Musica - Invocaciones a los santos
+    \begin{lilypond}
+		\language "espanol"
+		\version "2.19.37"
+		\include "gregorian.ly"
+		%#(set-global-staff-size 15)
+        \score{
+			<<
+			  \new ChordNames {
+				  \set chordChanges = ##t
+				  \italianChords
+				  \chordmode { 
+					  mi1:m mi8:m re4
+					  re4 do4 mi4:m
+				  }
+				}
+			  \new Staff <<
+				\new Voice = "chant" \relative do' {
+					\clef "G_8"
+					\key mi \minor
+					\time 4/4
+					%\override Lyrics.LyricText.X-extent  = #'(0 . 3)
+					\hide Staff.BarLine
+					sol1 sol8 la( fas) 
+					\finalis
+					fas8 fas mi fas sol sol
+					\undo \hide Staff.BarLine
+					\bar "|."
+				}
+				\new Lyrics = "one" \lyricsto "chant" { 
+				\once \override LyricText.self-alignment-X = #-1
+					"Santa María, Madre " de Dios, __ rue -- ga por no -- so -- tros.
+				}
+			  >>
+			>>
+			\layout {
+				\context {
+					\Staff
+					\remove "Time_signature_engraver"
+					%\override BarLine.X-extent = #'(-1 . 1)
+					\hide Stem
+					\hide Beam
+					\hide TupletNumber
+				}
+			}
+		}
+
+        \paper {
+            #( set-default-paper-size "letter" )
+        }
+    \end{lilypond}
+    
+    \noindent
+    \textbf{
+		\begin{longtable}{ p{0.7\textwidth} r }
+			San Miguel,				& ruega por nosotros. \\
+			Santos angeles de Dios,	& rogad por nosotros. \\
+			San Juan Bautista,		& ruega por nosotros. \\
+			San José,				& ruega por nosotros. \\
+			Santos Pedro y Pablo,	& rogad por nosotros. \\
+			San Andrés,				& ruega por nosotros. \\
+			San Juan,				& ruega por nosotros. \\
+			Santa María Magdalena,	& ruega por nosotros. \\
+			San Esteban,			& ruega por nosotros. \\
+			San Ignacio de Antioquía, & ruega por nosotros. \\
+			San Lorenzo,			& ruega por nosotros. \\
+			Santas Perpetua y Felicidad, & rogad por nosotros. \\
+			Santa Inés,				& ruega por nosotros. \\
+			San Gregorio,			& ruega por nosotros. \\
+			San Agustín,			& ruega por nosotros. \\
+			San Atanasio,			& ruega por nosotros. \\
+			San Basilio,			& ruega por nosotros. \\
+			San Martín,				& ruega por nosotros. \\
+			Santos Juan XXIII y Juan Pablo II,	& rogad por nosotros. \\
+			San Benito,				& ruega por nosotros. \\
+			Santos Francisco y Domingo,	& rogad por nosotros. \\
+			San Francisco Javier,	& ruega por nosotros. \\
+			San Juan María Vianney,	& ruega por nosotros. \\
+			Santa Catalina de Siena, & ruega por nosotros. \\
+			Santa Teresa de Avila,	& ruega por nosotros. \\
+			Santa Teresa de Lisieux, & ruega por nosotros. \\
+			Santos y Santas de Dios, & rogad por nosotros.
+		\end{longtable}
+	}
+	
+	%% - Musica - Invocaciones a Cristo
+    \begin{lilypond}
+		\language "espanol"
+		\version "2.19.37"
+		\include "gregorian.ly"
+		%#(set-global-staff-size 15)
+        \score{
+			<<
+			  \new ChordNames {
+				  \set chordChanges = ##t
+				  \italianChords
+				  \chordmode { 
+					  mi1:m mi4:m mi8:m re8
+					  re2 do4
+				  }
+				}
+			  \new Staff <<
+				\new Voice = "chant" \relative do' {
+					\clef "G_8"
+					\key mi \minor
+					\time 4/4
+					%\override Lyrics.LyricText.X-extent  = #'(0 . 3)
+					\hide Staff.BarLine
+					sol1 fas8 mi sol\( la\)
+					\finalis
+					fas4 sol mi re do
+					\undo \hide Staff.BarLine
+					\bar "|."
+				}
+				\new Lyrics = "one" \lyricsto "chant" { 
+				\once \override LyricText.self-alignment-X = #-1
+					"Muestra" te pro -- pi -- cio, lí -- bra -- nos, Se -- ñor.
+				}
+			  >>
+			>>
+			\layout {
+				\context {
+					\Staff
+					\remove "Time_signature_engraver"
+					%\override BarLine.X-extent = #'(-1 . 1)
+					\hide Stem
+					\hide Beam
+					\hide TupletNumber
+				}
+			}
+		}
+
+        \paper {
+            #( set-default-paper-size "letter" )
+        }
+    \end{lilypond}
+    
+    \noindent
+    \textbf{
+		\begin{longtable}{ p{0.7\textwidth} r }
+			De todo mal,			& líbranos Señor. \\
+			De todo pecado,			& líbranos Señor. \\
+			De la muerte eterna,	& líbranos Señor. \\
+			Por tu encarnación,		& líbranos Señor. \\
+			Por tu muerte y resurrección, & líbranos Señor. \\
+			Por el envío del Espíritu Santo, & líbranos Señor.
+		\end{longtable}
+	}
+	
+	\vspace{1cm}
+	%% - Musica - Súplicas por diversas necesidades
+    \begin{lilypond}
+		\language "espanol"
+		\version "2.19.37"
+		\include "gregorian.ly"
+		%#(set-global-staff-size 15)
+        \score{
+			<<
+			  \new ChordNames {
+				  \set chordChanges = ##t
+				  \italianChords
+				  \chordmode { 
+					  mi1:m R8 re4 sol8
+				  }
+				}
+			  \new Staff <<
+				\new Voice = "chant" \relative do' {
+					\clef "G_8"
+					\key mi \minor
+					\time 4/4
+					%\override Lyrics.LyricText.X-extent  = #'(0 . 3)
+					\hide Staff.BarLine
+					sol1 sol8 fas la si
+					\finalis
+					sol8 fas mi re mi fas sol
+					\undo \hide Staff.BarLine
+					\bar "|."
+				}
+				\new Lyrics = "one" \lyricsto "chant" { 
+				\once \override LyricText.self-alignment-X = #-1
+					"Nosotros que somos" pe -- ca -- do -- res, te ro -- ga -- mos, ó -- ye -- nos.
+				}
+			  >>
+			>>
+			\layout {
+				\context {
+					\Staff
+					\remove "Time_signature_engraver"
+					%\override BarLine.X-extent = #'(-1 . 1)
+					\hide Stem
+					\hide Beam
+					\hide TupletNumber
+				}
+			}
+		}
+
+        \paper {
+            #( set-default-paper-size "letter" )
+        }
+    \end{lilypond}
+    
+    \textbf{
+		Para que regeneres a N…, \\
+		\itab{ \hspace{1cm} con la gracia del Bautismo, } \hspace{7cm} \tab{ te rogamos, óyenos. } \\
+		Para que regeneres a estos elegidos, \\
+		\itab{ \hspace{1cm} con la gracia del Bautismo, } \hspace{7cm} \tab{ te rogamos, óyenos. } \\
+		Jesus, Hijo de Dios vivo, \hspace{1.85cm} \tab{ te rogamos, óyenos. } \\
+	}
+    
+    %% - Musica - Conclusión
+    \begin{lilypond}
+		\language "espanol"
+		\version "2.19.37"
+		\include "gregorian.ly"
+		
+        \score{
+			<<
+			  \new ChordNames {
+				  \set chordChanges = ##t
+				  \italianChords
+				  \chordmode { 
+					  mi4:m 
+				  }
+				}
+			  \new Staff <<
+				\new Voice = "chant" \relative do' {
+					\clef "G_8"
+					\key mi \minor
+					\time 1/4
+					%\override Lyrics.LyricText.X-extent  = #'(0 . 3)
+					\hide Staff.BarLine
+					sol4 fas sol mi fas sol
+					\undo \hide Staff.BarLine
+					\bar ":|."
+				}
+				\new Lyrics = "one" \lyricsto "chant" { 
+					Cris -- to es -- cu -- cha -- nos.
+				}
+			  >>
+			>>
+			\layout {
+			  \context {
+				\Staff
+				\remove "Time_signature_engraver"
+				\override BarLine.X-extent = #'(-1 . 1)
+				\hide Stem
+				\hide Beam
+				\hide TupletNumber
+			  }
+			}
+		  }
+
+        \paper {
+            #( set-default-paper-size "letter" )
+        }
+    \end{lilypond} \\
+    
+    %% - Musica - Conclusión
+    \begin{lilypond}
+		\language "espanol"
+		\version "2.19.37"
+		\include "gregorian.ly"
+		
+        \score{
+			<<
+			  \new ChordNames {
+				  \set chordChanges = ##t
+				  \italianChords
+				  \chordmode { 
+					  mi4:m 
+				  }
+				}
+			  \new Staff <<
+				\new Voice = "chant" \relative do' {
+					\clef "G_8"
+					\key mi \minor
+					\time 1/4
+					%\override Lyrics.LyricText.X-extent  = #'(0 . 3)
+					\hide Staff.BarLine
+					sol4 fas sol mi fas sol
+					\undo \hide Staff.BarLine
+					\bar ":|."
+				}
+				\new Lyrics = "one" \lyricsto "chant" { 
+					Cris -- to es -- cu -- cha -- nos.
+				}
+			  >>
+			>>
+			\layout {
+			  \context {
+				\Staff
+				\remove "Time_signature_engraver"
+				\override BarLine.X-extent = #'(-1 . 1)
+				\hide Stem
+				\hide Beam
+				\hide TupletNumber
+			  }
+			}
+		  }
+
+        \paper {
+            #( set-default-paper-size "letter" )
+        }
+    \end{lilypond} \\
+    
+\end{document}
