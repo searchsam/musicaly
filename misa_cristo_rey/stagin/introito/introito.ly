@@ -57,10 +57,10 @@ harmony_stanza = \new ChordNames {
       s32
     }
     \new Lyrics \lyricsto "melody" {
-      Prín -- ci -- _ pe ab -- so -- lu -- to de los si -- glos,
-      Je -- su -- _ cris -- to, rey de las na -- cio -- nes:
+      Prín -- ci __ -- _ pe ab -- so -- lu -- to de los si -- glos,
+      Je -- su __ -- _ cris -- to, rey de las na -- cio -- nes:
       te con -- fe -- sa -- mos ár -- bi -- tro su -- pre -- mo
-      de las _ men -- tes y los co -- ra -- zo -- nes.
+      de las __ _ men -- tes y los co -- ra -- zo -- nes.
     }
   >>
   \layout {
@@ -69,7 +69,7 @@ harmony_stanza = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
+      %\hide Stem
       \RemoveEmptyStaves
       \hide TupletNumber
     }
@@ -101,10 +101,10 @@ harmony_stanza = \new ChordNames {
       s32
     }
     \new Lyrics \lyricsto "melody" {
-      En la _ tie -- _ rra te~a -- do -- ran los mor -- ta -- les
-      y los _ san -- tos te~a -- la -- ban en el cie -- lo,
-      u -- ni -- dos a sus vo -- ces te~a -- cla -- ma -- _ mos
-      pro -- cla -- _ mán -- do -- te rey del u -- ni -- ver -- so.
+      En la __ _ tie __ -- _ rra te~a -- do -- ran los mor -- ta -- les
+      y los __ _ san -- tos te~a -- la -- ban en el cie -- lo,
+      u -- ni -- dos a sus vo -- ces te~a -- cla -- ma __ -- _ mos
+      pro -- cla __ -- _ mán -- do -- te rey del u -- ni -- ver -- so.
     }
   >>
   \layout {
@@ -113,7 +113,7 @@ harmony_stanza = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
+      %\hide Stem
       \RemoveEmptyStaves
       \hide TupletNumber
     }
@@ -145,7 +145,7 @@ harmony_stanza = \new ChordNames {
       s32
     }
     \new Lyrics \lyricsto "melody" {
-      Je -- su -- _  cris -- to, prín -- ci -- pe pa -- cí -- fi -- co
+      Je -- su __ -- _  cris -- to, prín -- ci -- pe pa -- cí -- fi -- co
       so -- me -- te~a los es -- pí -- ri -- tus re -- bel -- des,
       haz que en -- cuen -- tren el rum -- bo los per -- di -- dos
       en un so -- lo a -- pris -- co se con -- gre -- guen.
@@ -157,7 +157,7 @@ harmony_stanza = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
+      %\hide Stem
       \RemoveEmptyStaves
       \hide TupletNumber
     }
@@ -189,10 +189,10 @@ harmony_stanza = \new ChordNames {
       s32
     }
     \new Lyrics \lyricsto "melody" {
-      Por e -- so pen -- des de~u -- na cruz _ san -- _ grien -- ta,
-      a -- bres en e -- lla tus di -- _ vi -- nos bra -- zos;
-      por e -- so mues -- tras en tu pe -- _ cho he -- ri -- do
-      tu ar -- _ dien -- te co -- ra -- zón a -- tra -- ve -- sa -- do.
+      Por e -- so pen -- des de~u -- na cruz __ _ san __ -- _ grien -- ta,
+      a -- bres en e -- lla tus di __ -- _ vi -- nos bra -- zos;
+      por e -- so mues -- tras en tu pe __ -- _ cho he -- ri -- do
+      tu ar __ -- _ dien -- te co -- ra -- zón a -- tra -- ve -- sa -- do.
     }
   >>
   \layout {
@@ -201,7 +201,7 @@ harmony_stanza = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
+      %\hide Stem
       \RemoveEmptyStaves
       \hide TupletNumber
     }
@@ -233,7 +233,7 @@ harmony_stanza = \new ChordNames {
       s32
     }
     \new Lyrics \lyricsto "melody" {
-      Es -- tás o -- cul -- to en _ los al -- ta -- res
+      Es -- tás o -- cul -- to en __ _ los al -- ta -- res
       tras las i -- má -- ge -- nes del pan y el vi -- no;
       por e -- so vier -- tes de tu pe -- cho~a -- bier -- to
       san -- gre de sal -- va -- ción pa -- ra tus hi -- jos.
@@ -245,7 +245,7 @@ harmony_stanza = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
+      %\hide Stem
       \RemoveEmptyStaves
       \hide TupletNumber
     }
@@ -277,10 +277,10 @@ harmony_stanza = \new ChordNames {
       s32
     }
     \new Lyrics \lyricsto "melody" {
-      Con ho -- _ no -- _ res pú -- bli -- cos te en -- sal -- cen
-      los que _ tie -- nen po -- der so -- bre la tie -- rra;
-      El ma -- es -- tro~y el juez te rin -- _ dan  _ cul -- to,
-      el ar -- _ te y la ley no te des -- mien -- tan.
+      Con ho __ -- _ no -- _ res pú -- bli -- cos te en -- sal -- cen
+      los que __ _ tie -- nen po -- der so -- bre la tie -- rra;
+      El ma -- es -- tro~y el juez te rin __ -- _ dan  _ cul -- to,
+      el ar __ -- _ te y la ley no te des -- mien -- tan.
     }
   >>
   \layout {
@@ -289,7 +289,7 @@ harmony_stanza = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
+      %\hide Stem
       \RemoveEmptyStaves
       \hide TupletNumber
     }
@@ -321,10 +321,10 @@ harmony_stanza = \new ChordNames {
       s32
     }
     \new Lyrics \lyricsto "melody" {
-      Las in -- _ sig -- nias de los re -- yes to -- dos
+      Las in __ -- _ sig -- nias de los re -- yes to -- dos
       te se -- an pa -- ra siem -- pre de -- di -- ca -- das,
       y es -- tén so -- me -- ti -- dos a tu ce -- tro
-      los ciu -- da -- da -- nos de _ las na -- cio -- nes.
+      los ciu -- da -- da -- nos de __ _ las na -- cio -- nes.
     }
   >>
   \layout {
@@ -333,7 +333,7 @@ harmony_stanza = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
+      %\hide Stem
       \RemoveEmptyStaves
       \hide TupletNumber
     }
@@ -352,7 +352,7 @@ harmony_stanza = \new ChordNames {
   \new Staff <<
     \new Voice = "melody" \relative do'' {
       \time 4/4
-      \override Lyrics.LyricText.X-extent  = #'(0 . 3)
+      %\override Lyrics.LyricText.X-extent  = #'(0 . 3)
 
       la4 sol8 fa sib la sol fa
       sol8 fa mi sol la4 la \divisioMaior \break
@@ -365,9 +365,9 @@ harmony_stanza = \new ChordNames {
       s32
     }
     \new Lyrics \lyricsto "melody" {
-      Go -- bier -- _ nas _ con a -- mor el u -- ni -- ver -- so,
+      Go -- bier __ -- _ nas __ _ con a -- mor el u -- ni -- ver -- so,
       glo -- ri -- fi -- ca -- do se -- as, Je -- su -- cris -- to,
-      y que con -- ti -- go~y con tu~e -- ter -- _ no _ Pa -- dre
+      y que con -- ti -- go~y con tu~e -- ter __ -- _ no __ _ Pa -- dre
       re -- ci -- ba glo -- ria~el San -- to Es -- pí -- ri -- tu.
     }
   >>
@@ -377,7 +377,7 @@ harmony_stanza = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
+      %\hide Stem
       \RemoveEmptyStaves
       \hide TupletNumber
     }

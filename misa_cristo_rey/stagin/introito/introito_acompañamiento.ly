@@ -555,7 +555,7 @@ armonias = \new ChordNames {
     >>
     \new Lyrics = "melodia"
     \context Lyrics = "melodia" \lyricsto "melodia" \Words
-    \armonias
+    %\armonias
     \new PianoStaff <<
       \new Staff <<
         \set Staff.instrumentName = #"Organo"
