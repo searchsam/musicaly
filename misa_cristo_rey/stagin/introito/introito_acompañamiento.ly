@@ -319,8 +319,15 @@ NotesAlt = \relative do' {
   do2 la		| 
   re1		| \bar "||" \break
   
-  do1		|
-  re1		|
+  re2 sib 	|
+  do2 re		|
+  do2 sib	|
+  do2 la		| \break
+  re2 sib 	|
+  do2 re		|
+  do2 sib	|
+  do2 la		| 
+  re1		| \bar "||" \break
 }
 NotesTer = \relative do {
   re1\p | re2 do | re1 | la'1 | \bar "||"

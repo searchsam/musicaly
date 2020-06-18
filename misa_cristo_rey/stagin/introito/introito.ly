@@ -12,7 +12,7 @@
 
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Principe de los siglos" \fontsize #2 "Misa de Cristo Rey" "Himno Solemnidad Cristo Rey"} } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Entrada" \fontsize #2 "Misa de Cristo Rey" "Principe de los siglos - Himno Solemnidad Cristo Rey"} } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Letra: Pbro. Vittorio Genovesi S. J." } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Música: Samuel Gutiérrez Avilés" } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez Castro" \small "(Abril 2020)" } } }
@@ -46,23 +46,24 @@ harmony_stanza = \new ChordNames {
       \time 4/4
       \override Lyrics.LyricText.X-extent  = #'(0 . 3)
 
-      la4 re8 mi fa4 re8 re
+      la4 \[re8 mi\] fa4 re8 re
       do8 re mi do re4 re \divisioMaior \break
-      do4 re8 mi sib4 sib
+      do4 \[re8 mi\] sib4 sib
       mi8 re  do re mi4 mi \divisioMaior \break
       la,4 re8 mi re4 re4
       mi8 fa sol mi re4 re \divisioMaior \break
-      do4 re8 mi fa4 fa
+      do4 \[re8 mi\] fa4 fa
       sol8 fa mi fa mi2 re1 \finalis \break
       s32
     }
     \new Lyrics \lyricsto "melody" {
-      Prín -- ci __ -- _ pe ab -- so -- lu -- to de los si -- glos,
-      Je -- su __ -- _ cris -- to, rey de las na -- cio -- nes:
+      Prín -- ci -- _ pe ab -- so -- lu -- to de los si -- glos,
+      Je -- su -- _ cris -- to, rey de las na -- cio -- nes:
       te con -- fe -- sa -- mos ár -- bi -- tro su -- pre -- mo
-      de las __ _ men -- tes y los co -- ra -- zo -- nes.
+      de las _ men -- tes y los co -- ra -- zo -- nes.
     }
   >>
+  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -90,23 +91,24 @@ harmony_stanza = \new ChordNames {
       \time 4/4
       \override Lyrics.LyricText.X-extent  = #'(0 . 3)
 
-      la4 sol8 fa sib la sol fa
+      la4 \[sol8 fa\] \[sib la\] sol fa
       sol8 fa mi sol la4 la \divisioMaior \break
-      do4 sol8 do re4 re8 re
+      do4 \[sol8 do\] re4 re8 re
       do8 sib do re la4 la \divisioMaior \break
       la4 sol8 fa sib do re do
-      do8 sib la sol la2 \divisioMaior \break
-      do4 sol8 do sib4 sib8 sib
+      do8 sib \[la sol\] la2 \divisioMaior \break
+      do4 \[sol8 do\] sib4 sib8 sib
       do8 re mi fa mi2 re1 \finalis \break
       s32
     }
     \new Lyrics \lyricsto "melody" {
-      En la __ _ tie __ -- _ rra te~a -- do -- ran los mor -- ta -- les
-      y los __ _ san -- tos te~a -- la -- ban en el cie -- lo,
-      u -- ni -- dos a sus vo -- ces te~a -- cla -- ma __ -- _ mos
-      pro -- cla __ -- _ mán -- do -- te rey del u -- ni -- ver -- so.
+      En la _ tie -- _ rra te~a -- do -- ran los mor -- ta -- les
+      y los _ san -- tos te~a -- la -- ban en el cie -- lo,
+      u -- ni -- dos a sus vo -- ces te~a -- cla -- ma -- _ mos
+      pro -- cla -- _ mán -- do -- te rey del u -- ni -- ver -- so.
     }
   >>
+  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -134,7 +136,7 @@ harmony_stanza = \new ChordNames {
       \time 4/4
       \override Lyrics.LyricText.X-extent  = #'(0 . 3)
 
-      la4 re8 mi fa4 re8 re
+      la4 \[re8 mi\] fa4 re8 re
       do8 re mi do re4 re \divisioMaior \break
       do4 re8 mi sib4 sib
       mi8 re  do re mi4 mi \divisioMaior \break
@@ -145,12 +147,13 @@ harmony_stanza = \new ChordNames {
       s32
     }
     \new Lyrics \lyricsto "melody" {
-      Je -- su __ -- _  cris -- to, prín -- ci -- pe pa -- cí -- fi -- co
+      Je -- su -- _  cris -- to, prín -- ci -- pe pa -- cí -- fi -- co
       so -- me -- te~a los es -- pí -- ri -- tus re -- bel -- des,
       haz que en -- cuen -- tren el rum -- bo los per -- di -- dos
       en un so -- lo a -- pris -- co se con -- gre -- guen.
     }
   >>
+  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -179,22 +182,23 @@ harmony_stanza = \new ChordNames {
       \override Lyrics.LyricText.X-extent  = #'(0 . 3)
 
       la4 sol8 fa sib la sol fa
-      sol8 fa mi sol la4 la \divisioMaior \break
+      \[sol8 fa\] \[mi sol\] la4 la \divisioMaior \break
       do4 sol8 do re4 re8 re
-      do8 sib do re la4 la \divisioMaior \break
+      \[do8 sib\] do re la4 la \divisioMaior \break
       la4 sol8 fa sib do re do
-      do8 sib la sol la4 la \divisioMaior \break
-      do4 sol8 do sib sib sib8 sib
+      \[do8 sib\] la sol la4 la \divisioMaior \break
+      do4 \[sol8 do\] sib sib sib8 sib
       do8 re mi fa mi2 re1 \finalis \break
       s32
     }
     \new Lyrics \lyricsto "melody" {
-      Por e -- so pen -- des de~u -- na cruz __ _ san __ -- _ grien -- ta,
-      a -- bres en e -- lla tus di __ -- _ vi -- nos bra -- zos;
-      por e -- so mues -- tras en tu pe __ -- _ cho he -- ri -- do
-      tu ar __ -- _ dien -- te co -- ra -- zón a -- tra -- ve -- sa -- do.
+      Por e -- so pen -- des de~u -- na cruz _ san -- _ grien -- ta,
+      a -- bres en e -- lla tus di -- _ vi -- nos bra -- zos;
+      por e -- so mues -- tras en tu pe -- _ cho he -- ri -- do
+      tu ar -- _ dien -- te co -- ra -- zón a -- tra -- ve -- sa -- do.
     }
   >>
+  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -223,7 +227,7 @@ harmony_stanza = \new ChordNames {
       \override Lyrics.LyricText.X-extent  = #'(0 . 3)
 
       la4 re8 mi fa4 re4
-      do8 re mi do re4 re \divisioMaior \break
+      \[do8 re\] mi do re4 re \divisioMaior \break
       do4 re8 mi sib4 sib8 sib
       mi8 re  do re mi4 mi \divisioMaior \break
       la,4 re8 mi re4 re
@@ -233,12 +237,13 @@ harmony_stanza = \new ChordNames {
       s32
     }
     \new Lyrics \lyricsto "melody" {
-      Es -- tás o -- cul -- to en __ _ los al -- ta -- res
+      Es -- tás o -- cul -- to en _ los al -- ta -- res
       tras las i -- má -- ge -- nes del pan y el vi -- no;
       por e -- so vier -- tes de tu pe -- cho~a -- bier -- to
       san -- gre de sal -- va -- ción pa -- ra tus hi -- jos.
     }
   >>
+  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -266,23 +271,24 @@ harmony_stanza = \new ChordNames {
       \time 4/4
       \override Lyrics.LyricText.X-extent  = #'(0 . 3)
 
-      la4 sol8 fa sib la sol fa
+      la4 \[sol8 fa\] sib la sol fa
       sol8 fa mi sol la4 la \divisioMaior \break
-      do4 sol8 do re4 re8 re
+      do4 \[sol8 do\] re4 re8 re
       do8 sib do re la4 la \divisioMaior \break
       la4 sol8 fa sib do re do
-      do8 sib la sol la4 la \divisioMaior \break
-      do4 sol8 do sib4 sib8 sib
+      \[do8 sib\] la sol la4 la \divisioMaior \break
+      do4 \[sol8 do\] sib4 sib8 sib
       do8 re mi fa mi2 re1 \finalis \break
       s32
     }
     \new Lyrics \lyricsto "melody" {
-      Con ho __ -- _ no -- _ res pú -- bli -- cos te en -- sal -- cen
-      los que __ _ tie -- nen po -- der so -- bre la tie -- rra;
-      El ma -- es -- tro~y el juez te rin __ -- _ dan  _ cul -- to,
-      el ar __ -- _ te y la ley no te des -- mien -- tan.
+      Con ho -- _ no -- _ res pú -- bli -- cos te en -- sal -- cen
+      los que _ tie -- nen po -- der so -- bre la tie -- rra;
+      El ma -- es -- tro~y el juez te rin -- _ dan  _ cul -- to,
+      el ar -- _ te y la ley no te des -- mien -- tan.
     }
   >>
+  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -310,23 +316,24 @@ harmony_stanza = \new ChordNames {
       \time 4/4
       \override Lyrics.LyricText.X-extent  = #'(0 . 3)
 
-      la4 re8 mi fa4 re4
+      la4 \[re8 mi\] fa4 re4
       do8 re mi do re4 re \divisioMaior \break
       do4 re8 mi sib4 sib
       mi8 re  do re mi4 mi \divisioMaior \break
       la,4 re8 mi re4 re
       mi8 fa sol mi re4 re \divisioMaior  \break
       do4 re8 mi fa4 fa
-      sol8 fa mi fa mi2 re1 \finalis \break
+      \[sol8 fa\] mi fa mi2 re1 \finalis \break
       s32
     }
     \new Lyrics \lyricsto "melody" {
-      Las in __ -- _ sig -- nias de los re -- yes to -- dos
+      Las in -- _ sig -- nias de los re -- yes to -- dos
       te se -- an pa -- ra siem -- pre de -- di -- ca -- das,
       y es -- tén so -- me -- ti -- dos a tu ce -- tro
-      los ciu -- da -- da -- nos de __ _ las na -- cio -- nes.
+      los ciu -- da -- da -- nos de _ las na -- cio -- nes.
     }
   >>
+  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -354,23 +361,24 @@ harmony_stanza = \new ChordNames {
       \time 4/4
       %\override Lyrics.LyricText.X-extent  = #'(0 . 3)
 
-      la4 sol8 fa sib la sol fa
+      la4 \[sol8 fa\] \[sib la\] sol fa
       sol8 fa mi sol la4 la \divisioMaior \break
       do4 sol8 do re4 re
       do8 sib do re la4 la \divisioMaior \break
       la4 sol8 fa sib do re do
-      do8 sib la sol la4 la \divisioMaior \break
+      \[do8 sib\] \[la sol\] la4 la \divisioMaior \break
       do4 sol8 do sib4 sib
       do8 re mi fa mi2 re1 \finalis \break
       s32
     }
     \new Lyrics \lyricsto "melody" {
-      Go -- bier __ -- _ nas __ _ con a -- mor el u -- ni -- ver -- so,
+      Go -- bier -- _ nas _ con a -- mor el u -- ni -- ver -- so,
       glo -- ri -- fi -- ca -- do se -- as, Je -- su -- cris -- to,
-      y que con -- ti -- go~y con tu~e -- ter __ -- _ no __ _ Pa -- dre
+      y que con -- ti -- go~y con tu~e -- ter -- _ no _ Pa -- dre
       re -- ci -- ba glo -- ria~el San -- to Es -- pí -- ri -- tu.
     }
   >>
+  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -406,6 +414,7 @@ harmony_stanza = \new ChordNames {
       A -- mén.
     }
   >>
+  \midi {}
   \layout {
     ragged-right = ##f
     \context {
