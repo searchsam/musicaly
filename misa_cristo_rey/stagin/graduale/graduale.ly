@@ -12,7 +12,7 @@
 
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "El Señor es mi Pastor" \fontsize #2 "Misa de Cristo Rey" "Salmo Responsorial de la Solemnidad Cristo Rey"} } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Melodia Responsorial" \fontsize #2 "Misa de Cristo Rey" "Salmo Responsorial de la Solemnidad Cristo Rey"} } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Música: Samuel Gutiérrez Avilés" } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez Castro" \small "(Mayo 2020)" } } }
 \header {
@@ -53,7 +53,7 @@ harmony_stanza = \new ChordNames {
     >>
   >>
   \header {
-    piece = \markup { \smallCaps "Ciclo A" }
+    piece = \markup { \smallCaps "Ciclo A" \italic \small "Salmo 22, 1-2a. 2b-3. 5-6 (R.: cf. 1)"}
   }
   \midi {}
   \layout {
@@ -384,7 +384,7 @@ harmony_stanza_b = \new ChordNames {
     >>
   >>
   \header {
-    piece = \markup { \smallCaps "Ciclo B" }
+    piece = \markup { \smallCaps "Ciclo B" - \italic \small "Salmo 92, 1ab. 1c-2. 5 (R.: cf. 1a)" }
   }
   \midi {}
   \layout {
@@ -518,24 +518,280 @@ harmony_stanza_b = \new ChordNames {
         
         \override TupletBracket.bracket-visibility = ##f
         fa8 \mark \markup{ "Estrofa II" } sol la \breve \tuplet 3/2 {la8 fa sol} la4 la \divisioMaxima \break
+        la8 sol fa \breve fa8 mi re4 re \divisioMaxima \break
+        \[re8 do\] la \breve sib4 do re4 re \finalis \break
+        s32
+      }
+      \new Lyrics \lyricsto "melody" {
+        A~sí es
+        \once \override LyricText.self-alignment-X = #-1
+        "tá firme el orbe" y no va -- ci -- la.
+        Tu tro --
+        \once \override LyricText.self-alignment-X = #-1
+        "no está firme" des -- de siem -- pre,        
+        y _ 
+        \once \override LyricText.self-alignment-X = #-1
+        "tú e" -- res e -- ter -- no.
+      }
+    >>
+  >>
+  \midi {}
+  \layout {
+    ragged-right = ##f
+    \context {
+      \Staff
+      \remove "Time_signature_engraver"
+      \remove "Bar_engraver"
+      \hide Stem
+      \RemoveEmptyStaves
+      \hide TupletNumber
+    }
+    \context {
+      \Score
+      barAlways = ##t
+    }
+  }
+}
+
+\score {
+  <<
+    %\harmony_stanza_estrofa
+    \new Staff <<
+      \set Staff.midiInstrument = "oboe"
+      \new Voice = "melody" \relative do' {
+        \set Score.timing = ##f
+        %\tempo "Adagio" 4 = 70
+        \time 4/4
+        \key re \minor
+        
+        \override TupletBracket.bracket-visibility = ##f
+        fa8 \mark \markup{ "Estrofa III" } sol la \breve \tuplet 3/2 {\[la8 fa\] sol} la4 la \divisioMaxima \break
+        la8 sol fa \breve fa8 mi re4 re \divisioMaxima \break
+        re8 do la \breve \[sib4 do\] re4 re \finalis \break
+        s32
+      }
+      \new Lyrics \lyricsto "melody" {
+        Tus man --
+        \once \override LyricText.self-alignment-X = #-1
+        "datos son fieles" y _ se -- gu -- ros;
+        la san --
+        \once \override LyricText.self-alignment-X = #-1
+        "tidad es el adorno" de tu ca -- sa,
+        Se -- ñor, 
+        \once \override LyricText.self-alignment-X = #-1
+        "por días sin" tér -- _ mi -- no.
+      }
+    >>
+  >>
+  \midi {}
+  \layout {
+    ragged-right = ##f
+    \context {
+      \Staff
+      \remove "Time_signature_engraver"
+      \remove "Bar_engraver"
+      \hide Stem
+      \RemoveEmptyStaves
+      \hide TupletNumber
+    }
+    \context {
+      \Score
+      barAlways = ##t
+    }
+  }
+}
+
+% --- Antifona
+\score {
+  <<
+    %\harmony_stanza_b
+    \new Staff <<
+      %\set Staff.midiInstrument = "clarinet"
+      \new Voice = "melody" \relative do' {
+        \set Score.timing = ##f
+        %\tempo "Adagio" 4 = 70
+        \time 4/4
+        \key re \minor
+
+        re4 \mark \markup{ "Antifona" \small \italic "Salmista"} mi fa2  \divisioMinima
+        sol4 fa8 mi re2 \divisioMinima
+        fa4 mi8 re \[do4 re2.\] \finalis \break 
+        s32
+      }
+      \new Lyrics \lyricsto "melody" {
+        Va -- mos a -- le -- gres a la ca -- sa del Se -- ñor.
+      }
+    >>
+  >>
+  \header {
+    piece = \markup { \smallCaps "Ciclo C" - \italic \small "Salmo 121, 1-2. 4-5 (R.: cf. 1)" }
+  }
+  \midi {}
+  \layout {
+    ragged-right = ##f
+    \context {
+      \Staff
+      \remove "Time_signature_engraver"
+      \remove "Bar_engraver"
+      \hide Stem
+      \RemoveEmptyStaves
+      \hide TupletNumber
+    }
+    \context {
+      \Score
+      barAlways = ##t
+    }
+  }
+}
+
+% --- Antifona Repeticion
+\score {
+  \new StaffGroup = "Antifona" <<
+    %\harmony_stanza
+    \new Staff <<
+      %\set Staff.midiInstrument = "clarinet"
+      \new Voice = "melody" \relative do' {
+        \set Score.timing = ##f
+        %\tempo "Adagio" 4 = 70
+        \time 4/4
+        \key re \minor
+        
+        re4 \mark \markup{ "Antifona" \small \italic "Salmista y Asamblea"} mi fa2 \divisioMinima
+        sol4 fa8 mi re2 \divisioMinima
+        fa4 mi8 re \[do4 re2.\] \finalis \break 
+        s32
+      }
+      \new Lyrics \lyricsto "melody" {
+        Va -- mos a -- le -- gres a la ca -- sa del Se -- ñor.
+      }
+    >>
+    \new Staff <<
+      %\set Staff.midiInstrument = "oboe"
+      \new Voice = "contramelody" \relative do' {
+        \set Score.timing = ##f
+        %\tempo "Adagio" 4 = 70
+        \time 4/4
+        \key re \minor
+        
+        re4 mi fa2   \divisioMinima
+        mi4 do8 do re2 \divisioMinima
+        re4 mi8 re \[do4 re2.\] \finalis \break 
+        s32
+      }
+      \new Lyrics \lyricsto "contramelody" {
+        Va -- mos a -- le -- gres a la ca -- sa del Se -- ñor.
+      }
+    >>
+  >>
+  \midi {}
+  \layout {
+    ragged-right = ##f
+    \context {
+      \Staff
+      \remove "Time_signature_engraver"
+      \remove "Bar_engraver"
+      \hide Stem
+      \RemoveEmptyStaves
+      \hide TupletNumber
+    }
+    \context {
+      \Score
+      barAlways = ##t
+    }
+  }
+}
+
+\score {
+  <<
+    %\harmony_stanza_estrofa
+    \new Staff <<
+      \set Staff.midiInstrument = "oboe"
+      \new Voice = "melody" \relative do' {
+        \set Score.timing = ##f
+        %\tempo "Adagio" 4 = 70
+        \time 4/4
+        \key re \minor
+        
+        \override TupletBracket.bracket-visibility = ##f
+        fa8 \mark \markup{ "Estrofa I" } sol la \breve \tuplet 3/2 {\[la8 fa\] sol} la4 la \divisioMaxima \break
         \[la8 sol\] fa \breve \[fa8 mi\] re4 re \divisioMaxima \break
-        do8 re mi \breve \tuplet 3/2 { mi4 re8 } fa4 fa \divisioMaxima \break
+        do8 re mi \breve \tuplet 3/2 { mi4 re8 } fa2 \divisioMaxima \break
         re8 do la \breve sib4 do re4 re \finalis \break
         s32
       }
       \new Lyrics \lyricsto "melody" {
-        Me con 
+        ¡Qué~a -- le -- 
         \once \override LyricText.self-alignment-X = #-1
-        "duce hacia" fuen -- tes tran -- qui -- las
-        y _
+        "gría cuando" me _ di -- je -- ron:
+        «Va -- _
         \once \override LyricText.self-alignment-X = #-1
-        "repara" mis _ fuer -- zas;
-        me _ 
+        "mos a la casa" del _ Se -- ñor»!
+        Ya es --
         \once \override LyricText.self-alignment-X = #-1
-        "guía por el sen" -- de -- ro jus -- to,
+        "tán pisando" nues -- tros pies
         por el 
         \once \override LyricText.self-alignment-X = #-1
         "honor" de su nom -- bre.
+      }
+    >>
+  >>
+  \midi {}
+  \layout {
+    ragged-right = ##f
+    \context {
+      \Staff
+      \remove "Time_signature_engraver"
+      \remove "Bar_engraver"
+      \hide Stem
+      \RemoveEmptyStaves
+      \hide TupletNumber
+    }
+    \context {
+      \Score
+      barAlways = ##t
+    }
+  }
+}
+
+\score {
+  <<
+    %\harmony_stanza_estrofa
+    \new Staff <<
+      \set Staff.midiInstrument = "oboe"
+      \new Voice = "melody" \relative do' {
+        \set Score.timing = ##f
+        %\tempo "Adagio" 4 = 70
+        \time 4/4
+        \key re \minor
+        
+        \override TupletBracket.bracket-visibility = ##f
+        fa8 \mark \markup{ "Estrofa II" } sol la \breve \tuplet 3/2 {\[la8 fa sol\]} la4 la \divisioMaxima \break
+        \[la8 sol\] fa \breve \[fa8 mi\] re4 re \divisioMaxima \break
+        do8 re mi \breve \tuplet 3/2 { mi4 re8 } fa2 \divisioMaxima \break
+        fa8 sol la \breve \tuplet 3/2 {\[la8 fa sol\]} la4 la \divisioMaxima \break
+        \[la8 sol\] fa \breve fa8 mi re4 re \divisioMaxima \break
+        re8 do la \breve sib4 do re2 \finalis \break
+        s32
+      }
+      \new Lyrics \lyricsto "melody" {
+        A -- llá
+        \once \override LyricText.self-alignment-X = #-1
+        "suben" las _ _ tri -- bus,  
+        las _
+        \once \override LyricText.self-alignment-X = #-1
+        "tribus" del _ Se -- ñor,
+        se -- gún
+        \once \override LyricText.self-alignment-X = #-1
+        "la costumbre de" Is -- ra -- el,
+        a ce --
+        \once \override LyricText.self-alignment-X = #-1
+        "lebrar el nombre" del _ _ Se -- ñor;  
+        en _
+        \once \override LyricText.self-alignment-X = #-1
+        "ella están los tribunales" de jus -- ti -- cia,
+        en el 
+        \once \override LyricText.self-alignment-X = #-1
+        "palacio" de Da -- vid.
       }
     >>
   >>
