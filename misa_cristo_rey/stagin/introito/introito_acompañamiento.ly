@@ -127,7 +127,7 @@ Words = \lyricmode {
   u -- ni -- dos a sus vo -- ces te~a -- cla -- ma -- mos
   pro -- cla -- mán -- do -- te rey del u -- ni -- ver -- so.
   
-  Je -- su -- cris -- to, prín -- ci -- pe pa -- cí -- fi -- co
+  Je -- su -- cris -- to, prín -- ci -- pe pa -- cí -- fi -- co:
   so -- me -- te~a los es -- pí -- ri -- tus re -- bel -- des,
   haz que en -- cuen -- tren el rum -- bo los per -- di -- dos
   en un so -- lo a -- pris -- co se con -- gre -- guen.

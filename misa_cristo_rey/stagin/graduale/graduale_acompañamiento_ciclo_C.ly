@@ -30,12 +30,12 @@ global = {
 Music = \relative do' {
   R1*4		 		| \bar "||" \break
   
-  re4^\markup{ \italic "Solo" } mi8 mi fa4 fa |
-  sol4( fa8) mi re4 re		|
+  re4^\markup{ \italic "Solo" } mi8 mi fa4 fa \breathe |
+  sol4( fa8) mi re4 re \breathe	|
   fa4( mi8) re do4( re4~		|
   re2) r				| \bar "||" \break
-  re4^\markup{ \italic "Todos" } mi8 mi <fa re>4 <fa re> |
-  <sol mi>4( <fa do>8) <mi do> re4 re |
+  re4^\markup{ \italic "Todos" } mi8 mi <fa re>4 <fa re> \breathe |
+  <sol mi>4( <fa do>8) <mi do> re4 re \breathe |
   <fa re>4( mi8) re do4( re4~	|
   re2) r				| \bar "||" \break
   
@@ -48,8 +48,8 @@ Music = \relative do' {
   re8 do la la2 r8 		|
   sib4 do re4 re 		| \bar "||" \break
   
-  re4^\markup{ \italic "Todos" } mi8 mi <fa re>4 <fa re> |
-  <sol mi>4( <fa do>8) <mi do> re4 re |
+  re4^\markup{ \italic "Todos" } mi8 mi <fa re>4 <fa re> \breathe |
+  <sol mi>4( <fa do>8) <mi do> re4 re \breathe |
   <fa re>4( mi8) re do4( re4~	|
   re2) r				| \bar "||" \break
   
@@ -57,17 +57,17 @@ Music = \relative do' {
   \tuplet 3/2 {la8( fa sol)} la4 la r | \break
   la8( sol) fa fa2 r8 		|
   fa8 mi re2 r4 			| \break
-  do8 re mi mi mi mi4 mi8  	|
+  do8 re mi mi mi mi4 \breathe mi8 |
   \tuplet 3/2 { mi4 re8 } fa2 r4 | \break
-  fa8 sol la la la la la4 	|
+  fa8 sol la la la la la4 \breathe |
   \tuplet 3/2 {la8( fa) sol} la2 r4 | \break
   la16( sol) fa8 fa16 fa fa8 \tuplet 3/2 {fa8 fa fa} fa fa |
   fa8 mi re4 re r 		| \break
   re8 sib la la2 la8		|
   sib4 do re2	 		| \bar "||" \break
   
-  re4^\markup{ \italic "Todos" } mi8 mi <fa re>4 <fa re> |
-  <sol mi>4( <fa do>8) <mi do> re4 re |
+  re4^\markup{ \italic "Todos" } mi8 mi <fa re>4 <fa re> \breathe |
+  <sol mi>4( <fa do>8) <mi do> re4 re \breathe |
   <fa re>4( mi8) re do4( re4~	|
   re2) r				|
 

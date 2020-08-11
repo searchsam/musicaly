@@ -5,10 +5,7 @@
 \language "espanol"
 \version "2.19.82"
 
-% --- includes
-\include "gregorian.ly"
-
-#(set-global-staff-size 19)
+%#(set-global-staff-size 19)
 
 
 % --- Cabecera
@@ -39,21 +36,19 @@ harmony_stanza = \new ChordNames {
   <<
     %\harmony_stanza
     \new Staff <<
+      \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-        \set Score.timing = ##f
-        \override Lyrics.LyricText.X-extent  = #'(0 . 3)
 
-        \partial 4 r8 re
+        \partial 4 r8^"Solo" re
         re4. mi8 fa4 sol
         mi2. r8 mi
         fa4. sol8 la4 sib
         sol2. r4
         la4. sib8 sol4. la8
-        fa4 re mi2 \finalis
-        \break s32
+        fa4 re mi2 \bar "||"
       }
       \new Lyrics \lyricsto "melody" {
         Sa -- gra -- rio del Al -- tar,
@@ -64,25 +59,19 @@ harmony_stanza = \new ChordNames {
   >>
   \midi {}
   \layout {
-    ragged-right = ##f
-    \context {
-      \Staff
-      \remove "Time_signature_engraver"
-      \remove "Bar_engraver"
-      \hide Stem
-      \RemoveEmptyStaves
-      \hide TupletNumber
-    }
     \context {
       \Score
-      barAlways = ##t
+      \omit BarNumber
     }
+  }
+  \header {
+    piece = \markup { \smallCaps "Estribillo" }
   }
 }
 
 % --- Coro Repeticion
 \score {
-  \new StaffGroup = "Antifona" <<
+  \new PianoStaff = "Antifona" <<
     %\harmony_stanza
     \new Staff <<
       %\set Staff.midiInstrument = "violin"
@@ -90,17 +79,14 @@ harmony_stanza = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-        \set Score.timing = ##f
-        \override Lyrics.LyricText.X-extent  = #'(0 . 3)
         
-        \partial 4 r8 re
+        \partial 4 r8^"Tutti" re
         re4. mi8 fa4 sol
         mi2. r8 mi
         fa4. sol8 la4 sib
         sol2. r4
         la4. sib8 sol4. la8
-        fa4 re mi2 \finalis
-        \break s32
+        fa4 re mi2 \bar "||"
       }
       \new Lyrics \lyricsto "melody" {
         Sa -- gra -- rio del Al -- tar,
@@ -111,11 +97,9 @@ harmony_stanza = \new ChordNames {
     \new Staff <<
       %\set Staff.midiInstrument = "oboe"
       \new Voice = "contramelody" \relative do' {
-        \tempo 4 = 90
+        \tempo 4 = 60
         \key re \minor
         \time 4/4
-        \set Score.timing = ##f
-        \override Lyrics.LyricText.X-extent  = #'(0 . 3)
         
         \partial 4 r8 re
          re4. re8 re4 re 
@@ -123,8 +107,7 @@ harmony_stanza = \new ChordNames {
          do4. re8 mi4 fa
          sol2. r4
          fa4. mi8 re4. do8
-         sib4 sib dos2 \finalis
-        \break s32
+         sib4 sib dos2 \bar "||"
       }
       \new Lyrics \lyricsto "contramelody" {
         Sa -- gra -- rio del Al -- tar,
@@ -135,19 +118,13 @@ harmony_stanza = \new ChordNames {
   >>
   \midi {}
   \layout {
-    ragged-right = ##f
-    \context {
-      \Staff
-      \remove "Time_signature_engraver"
-      \remove "Bar_engraver"
-      \hide Stem
-      \RemoveEmptyStaves
-      \hide TupletNumber
-    }
     \context {
       \Score
-      barAlways = ##t
+      \omit BarNumber
     }
+  }
+  \header {
+    piece = \markup { \smallCaps "Estribillo" }
   }
 }
 
@@ -155,73 +132,332 @@ harmony_stanza = \new ChordNames {
 harmony = \new ChordNames {
   \chordmode {
     \italianChords
-    re2:m sib2 do4 sib2 la4:m
-    sol2.:m re4:m
+    sol2:m fa2 sib2 sol2:m
+    fa2 sib2 la2 re2:m
+    
+    sol2:m fa2 sib2 sol2:m
+    fa2 do2:m re2:m sol2:m
   }
 }
 
 % --- Estrofa I
 \score {
-  \new StaffGroup = "Estrofa" <<
+  \new PianoStaff = "Estrofa" <<
     %\harmony
     \new Staff <<
-      %\set Staff.midiInstrument = "violin"
+      \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \tempo 4 = 60
         \key re \minor	
         \time 4/4
-        %\set Score.timing = ##f
-        \override Lyrics.LyricText.X-extent  = #'(0 . 3)
         
-        re4 re la' la
-        \break s32
+        sib'8^"Tutti" sib sib4 la8 sib do8 la
+        sib4( la) sib2 \breathe \break
+        do8 sib la do sib do re sib
+        la4( sol) la2 \bar "||" \break
+        sol8 la sib4 la8 sol fa8 la
+        sib4( la) sol2 \breathe \break
+        fa8 sol la fa sol8 fa mib sol
+        fa4( mib) re2 \bar "||"
       }
       \new Lyrics \lyricsto "melody" {
         Tu a -- mor, es a -- mor de cie -- lo, 
         mi a -- mor, mez -- cla de cie -- lo~y tie -- rra.
-        Tu a -- mor, es pu -- ru~e~in -- fi -- ni -- to,
+        Tu a -- mor, es pu -- ro~e~in -- fi -- ni -- to,
         mí a -- mor, li -- mi -- ta -- do~e~im -- per -- fec -- to.
       }
     >>
     \new Staff <<
-      %\set Staff.midiInstrument = "oboe"
+      \set Staff.midiInstrument = "oboe"
       \new Voice = "contramelody" \relative do' {
-        \tempo 4 = 90
+        \tempo 4 = 60
         \key re \minor
         \time 4/4
-        \set Score.timing = ##f
-        \override Lyrics.LyricText.X-extent  = #'(0 . 3)
         
-        
-        \break s32
+        re8 do sib4 do8 re mib do
+        re4( fa) sol2 \breathe
+        fa8 mib re do re mib fa re
+        mi2 re \bar "||"
+        re8 re re4 do8 sib la do
+        re2 sib \breathe
+        do8 re mib fa do re mib do
+        re4( do) re2 \bar "||"
       }
       \new Lyrics \lyricsto "contramelody" {
-        Sa -- gra -- rio del Al -- tar,
-        sa -- gra -- rio del Al -- tar,
-        ni -- do de tu tier -- no~a -- mor.
+        Tu a -- mor, es a -- mor de cie -- lo, 
+        mi a -- mor, mez -- cla de cie -- lo~y tie -- rra.
+        Tu a -- mor, es pu -- ro~e~in -- fi -- ni -- to,
+        mí a -- mor, li -- mi -- ta -- do~e~im -- per -- fec -- to.
       }
     >>
   >>
   \midi {}
   \layout {
-    ragged-right = ##f
-    \context {
-      \Staff
-      \remove "Time_signature_engraver"
-      \remove "Bar_engraver"
-      %\hide Stem
-      \RemoveEmptyStaves
-      \hide TupletNumber
-    }
     \context {
       \Score
-      barAlways = ##t
+      \omit BarNumber
     }
+  }
+  \header {
+    piece = \markup { \smallCaps "Estrofa I" }
+  }
+}
+
+% --- Estrofa II
+\score {
+  \new PianoStaff = "Estrofa" <<
+    %\harmony
+    \new Staff <<
+      \set Staff.midiInstrument = "oboe"
+      \new Voice = "melody" \relative do' {
+        \tempo 4 = 60
+        \key re \minor	
+        \time 4/4
+        
+        sib'8^"Tutti" sib sib4 la8 sib do8 la
+        sib4 la sib2 \breathe \break
+        do8 sib la do sib do re sib
+        la4 sol la2 \bar "||" \break        
+        sol8 la sib4 la8( sol) fa8( la)
+        sib4( la) sol2 \breathe \break
+        fa8 sol la fa sol8 fa mib sol
+        fa4 mib re2 \bar "||"
+      }
+      \new Lyrics \lyricsto "melody" {
+        Se -- a yo, Je -- sús mí -- o, des -- de hoy,
+        to -- do pa -- ra Ti, co -- mo Tú pa -- ra mi.
+        Que te a -- me yo siem -- pre, 
+        co -- mo te a -- ma -- ron los A -- pós -- to -- les;
+      }
+    >>
+    \new Staff <<
+      \set Staff.midiInstrument = "oboe"
+      \new Voice = "contramelody" \relative do' {
+        \tempo 4 = 60
+        \key re \minor
+        \time 4/4
+        
+        re8 do sib4 do8 re mib do
+        re4 fa sol2 \breathe
+        fa8 mib re do re mib fa re
+        mi4 mi re2 \bar "||"
+        re8 re re4 do8( sib) la( do)
+        re2 sib \breathe
+        do8 re mib fa do re mib do
+        re4 do re2 \bar "||"
+      }
+      \new Lyrics \lyricsto "contramelody" {
+        Se -- a yo, Je -- sús mí -- o, des -- de hoy,
+        to -- do pa -- ra Ti, co -- mo Tú pa -- ra mi.
+        Que te a -- me yo siem -- pre, 
+        co -- mo te a -- ma -- ron los A -- pós -- to -- les;
+      }
+    >>
+  >>
+  \midi {}
+  \layout {
+    \context {
+      \Score
+      \omit BarNumber
+    }
+  }
+  \header {
+    piece = \markup { \smallCaps "Estrofa II" }
+  }
+}
+
+% --- Estrofa III
+\score {
+  \new PianoStaff = "Estrofa" <<
+    %\harmony
+    \new Staff <<
+      \set Staff.midiInstrument = "oboe"
+      \new Voice = "melody" \relative do' {
+        \tempo 4 = 60
+        \key re \minor	
+        \time 4/4
+        
+        sib'4^"Tutti" sib8 sib la8 sib do8( la)
+        sib4( la sib2) \breathe \break
+        do8 sib la do sib do re sib
+        la4( sol) la2 \bar "||" \break        
+        sol4 la8 sib la8 sol fa8 la
+        sib4( la) sol2 \breathe \break
+        fa8 sol la fa sol8 fa mib sol
+        fa4( mib) re2 \bar "||"
+      }
+      \new Lyrics \lyricsto "melody" {
+        Mis la -- bios be -- sen tus pies,
+        co -- mo los be -- só la Mag -- da -- le -- na.
+        Mi -- ra y~es -- cu -- cha mi co -- ra -- zón,
+        co -- mo es -- cu -- chas -- te a Za -- que -- o.
+      }
+    >>
+    \new Staff <<
+      \set Staff.midiInstrument = "oboe"
+      \new Voice = "contramelody" \relative do' {
+        \tempo 4 = 60
+        \key re \minor
+        \time 4/4
+        
+        re4 do8 sib do8 re mib( do)
+        re4( fa sol2) \breathe
+        fa8 mib re do re mib fa re
+        mi2 re \bar "||"
+        re4 re8 re do8 sib la do
+        re2 sib \breathe
+        do8 re mib fa do re mib do
+        re4( do) re2 \bar "||"
+      }
+      \new Lyrics \lyricsto "contramelody" {
+        Mis la -- bios be -- sen tus pies,
+        co -- mo los be -- só la Mag -- da -- le -- na.
+        Mi -- ra y~es -- cu -- cha mi co -- ra -- zón,
+        co -- mo es -- cu -- chas -- te a Za -- que -- o.
+      }
+    >>
+  >>
+  \midi {}
+  \layout {
+    \context {
+      \Score
+      \omit BarNumber
+    }
+  }
+  \header {
+    piece = \markup { \smallCaps "Estrofa III" }
+  }
+}
+
+% --- Estrofa IV
+\score {
+  \new PianoStaff = "Estrofa" <<
+    %\harmony
+    \new Staff <<
+      \set Staff.midiInstrument = "oboe"
+      \new Voice = "melody" \relative do' {
+        \tempo 4 = 60
+        \key re \minor	
+        \time 4/4
+        
+        sib'4^"Tutti" sib8 sib la8 sib do8 la
+        sib4( la) sib2 \breathe \break
+        do8 sib la do sib do re sib
+        la4 sol la2 \bar "||" \break        
+        sol4 la8 sib la8 sol fa8 la
+        sib4( la) sol2 \breathe \break
+        fa8( sol) la fa sol8( fa) mib sol
+        fa4( mib) re2 \bar "||"
+      }
+      \new Lyrics \lyricsto "melody" {
+        A -- mor me pi -- des y~a -- mor me das.
+        Dé -- ja -- me re -- cli -- nar -- me en tu pe -- cho
+        co -- mo~a tu dis -- cí -- pu -- lo~a -- ma -- do.
+        De -- se -- o vi -- vir con -- ti -- go.
+      }
+    >>
+    \new Staff <<
+      \set Staff.midiInstrument = "oboe"
+      \new Voice = "contramelody" \relative do' {
+        \tempo 4 = 60
+        \key re \minor
+        \time 4/4
+        
+        re4 do8 sib do8 re mib do
+        re4( fa) sol2 \breathe
+        fa8 mib re do re mib fa re
+        mi4 mi re2 \bar "||"
+        re4 re8 re do8 sib la do
+        re2 sib \breathe
+        do8( re) mib fa do( re) mib do
+        re4( do) re2 \bar "||"
+      }
+      \new Lyrics \lyricsto "contramelody" {
+        A -- mor me pi -- des y~a -- mor me das.
+        Dé -- ja -- me re -- cli -- nar -- me en tu pe -- cho
+        co -- mo~a tu dis -- cí -- pu -- lo~a -- ma -- do.
+        De -- se -- o vi -- vir con -- ti -- go.
+      }
+    >>
+  >>
+  \midi {}
+  \layout {
+    \context {
+      \Score
+      \omit BarNumber
+    }
+  }
+  \header {
+    piece = \markup { \smallCaps "Estrofa IV" }
+  }
+}
+
+% --- Estrofa V
+\score {
+  \new PianoStaff = "Estrofa" <<
+    %\harmony
+    \new Staff <<
+      \set Staff.midiInstrument = "oboe"
+      \new Voice = "melody" \relative do' {
+        \tempo 4 = 60
+        \key re \minor	
+        \time 4/4
+        
+        sib'4^"Tutti" sib8 sib la8 sib do8 la
+        sib4( la) sib2 \breathe \break
+        do8( sib) la( do) sib8( do) re sib
+        la4( sol) la2 \bar "||" \break        
+        sol8 sol la8 sib la8 sol fa8 la
+        sib8 la sol( fa) sol2 \breathe \break
+        fa8 sol la fa sol8 fa mib sol
+        fa4( mib) re2 \bar "|."
+      }
+      \new Lyrics \lyricsto "melody" {
+        Só -- lo tu a -- mor, mi a -- ma -- do,
+        en Ti mi vi -- da pu -- se.
+        Pa -- ra el mun -- do soy u -- na flor mar -- chi -- ta,
+        no quie -- ro más que~a -- mán -- do -- te, mo -- rir.
+      }
+    >>
+    \new Staff <<
+      \set Staff.midiInstrument = "oboe"
+      \new Voice = "contramelody" \relative do' {
+        \tempo 4 = 60
+        \key re \minor
+        \time 4/4
+        
+        re4 do8 sib do8 re mib do
+        re4( fa) sol2 \breathe
+        fa8( mib) re( do) re8( mib) fa re
+        mi2 re \bar "||"
+        re8 re re8 re do8 sib la do
+        re8 re re4 sib2 \breathe
+        do8 re mib fa do re mib do
+        re4( do) re2 \bar "|."
+      }
+      \new Lyrics \lyricsto "contramelody" {
+        Só -- lo tu a -- mor, mi a -- ma -- do,
+        en Ti mi vi -- da pu -- se.
+        Pa -- ra el mun -- do soy u -- na flor mar -- chi -- ta,
+        no quie -- ro más que~a -- mán -- do -- te, mo -- rir.
+      }
+    >>
+  >>
+  \midi {}
+  \layout {
+    \context {
+      \Score
+      \omit BarNumber
+    }
+  }
+  \header {
+    piece = \markup { \smallCaps "Estrofa V" }
   }
 }
 
 % --- Papel
 \paper{
   #(set-default-paper-size "letter")
+  indent = 0
   page-breaking = #ly:page-turn-breaking
 }

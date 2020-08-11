@@ -30,22 +30,22 @@ global = {
 Music = \relative do' {
   R1*4		 		| \bar "||" \break
   
-  re4^\markup{ \italic "Solo" } mi fa2 |
-  sol4 fa8 mi re2		|
+  re4^\markup{ \italic "Solo" } mi fa2 \breathe |
+  sol4 fa8 mi re2 \breathe	|
   fa4 mi8 re do4 re4~		|
   re2 r				| \bar "||" \break
-  re4^\markup{ \italic "Todos" } mi <fa re>2 |
-  <sol mi>4 <fa do>8 <mi do> re2 |
+  re4^\markup{ \italic "Todos" } mi <fa re>2 \breathe |
+  <sol mi>4 <fa do>8 <mi do> re2 \breathe |
   <fa re>4 mi8 re do4 re4~	|
   re2 r				| \bar "||" \break
   
-  fa8^\markup{ "Estrofa I" \italic "Solo" } sol la la la la la4 |
+  fa8^\markup{ "Estrofa I" \italic "Solo" } sol la la la la la4 \breathe |
   \tuplet 3/2 {la8 fa sol} la4 la r | \break
   la8( sol) fa4 fa8 fa fa fa 	|
-  fa fa fa mi re2		| \bar "||" \break
+  fa fa fa mi re2 \breathe	| \bar "||" \break
   
-  re4^\markup{ \italic "Todos" } mi <fa re>2 |
-  <sol mi>4 <fa do>8 <mi do> re2 |
+  re4^\markup{ \italic "Todos" } mi <fa re>2 \breathe |
+  <sol mi>4 <fa do>8 <mi do> re2 \breathe |
   <fa re>4 mi8 re do4 re4~	|
   re2 r				| \bar "||" \break
   
@@ -53,13 +53,13 @@ Music = \relative do' {
   \tuplet 3/2 {la8 fa sol} la4 la r | \break
   la8( sol) fa fa4 fa4 r8 	|
   fa8( mi) re4 re r 		| \break
-  do8( re) mi mi4 mi8 mi mi 	|
+  do8( re) mi mi4 \breathe mi8 mi mi 	|
   \tuplet 3/2 { mi4 re8 } fa4 fa r | \break
   re8 sib la la2 r8 		|
-  sib4 do re4 re 		| \bar "||" \break
+  sib4 do re4 re \breathe	| \bar "||" \break
   
-  re4^\markup{ \italic "Todos" } mi <fa re>2 |
-  <sol mi>4 <fa do>8 <mi do> re2 |
+  re4^\markup{ \italic "Todos" } mi <fa re>2 \breathe |
+  <sol mi>4 <fa do>8 <mi do> re2 \breathe |
   <fa re>4 mi8 re do4 re4~	|
   re2 r				| \bar "||" \break
   
@@ -67,27 +67,27 @@ Music = \relative do' {
   \tuplet 3/2 {la8 fa sol} la2 r4 | \break
   la8( sol) fa fa4 r8 fa fa 	|
   fa8 mi re4 re r 		| \break
-  do8( re) mi mi mi mi mi mi 	|
+  do8( re) mi mi mi mi mi mi\breathe |
   \tuplet 3/2 { mi4 re8 } fa4 fa r | \break
   re8 sib la4 la4 r 		|
-  sib( do) re re 		| \bar "||" \break
+  sib( do) re re \breathe	| \bar "||" \break
   
-  re4^\markup{ \italic "Todos" } mi <fa re>2 |
-  <sol mi>4 <fa do>8 <mi do> re2 |
+  re4^\markup{ \italic "Todos" } mi <fa re>2 \breathe |
+  <sol mi>4 <fa do>8 <mi do> re2 \breathe |
   <fa re>4 mi8 re do4 re4~	|
   re2 r				| \bar "||" \break
   
   fa8^\markup{ "Estrofa III" \italic "Solo" } sol la la la la la la |
-  la la \tuplet 3/2 {la8 fa sol} la4 la | \break
+  la la \breathe \tuplet 3/2 {la8 fa sol} la4 la | \break
   la8( sol) fa4 r8 fa fa fa 	|
   fa8 mi re4 re r 		| \break
-  do8 re mi mi mi mi mi mi 	|
+  do8 re mi mi mi mi mi mi \breathe |
   \tuplet 3/2 { mi4 re8 } fa2 r4	| \break
   re8( sib) la4 la4 r8 la 	|
-  sib4 do re2 			| \bar "||" \break
+  sib4 do re2 \breathe		| \bar "||" \break
   
-  re4^\markup{ \italic "Todos" } mi <fa re>2 |
-  <sol mi>4 <fa do>8 <mi do> re2 |
+  re4^\markup{ \italic "Todos" } mi <fa re>2 \breathe |
+  <sol mi>4 <fa do>8 <mi do> re2 \breathe |
   <fa re>4 mi8 re do4 re4~	|
   re2 r				|
 
@@ -429,7 +429,7 @@ armonias = \new ChordNames {
     >>
     \new Lyrics = "melodia"
     \context Lyrics = "melodia" \lyricsto "melodia" \Words
-    \armonias
+    %\armonias
     \new PianoStaff <<
       \new Staff <<
         \set Staff.instrumentName = #"Organo"

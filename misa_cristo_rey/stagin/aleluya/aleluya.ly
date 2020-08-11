@@ -37,35 +37,32 @@ harmony_stanza = \new ChordNames {
     \new Staff <<
       %\set Staff.midiInstrument = "clarinet"
       \new Voice = "melody" \relative do' {
-        %\tempo "Adagio" 4 = 70
+        \tempo "Adagio" 4 = 70
         \time 4/4
         \key la \major
-        %\override Lyrics.LyricText.X-extent  = #'(0 . 3)
 
-        r8^\markup{"Aleluya"} la8
-        dos4 \tuplet 3/2 { \[re8[ dos re]\] } mi4. mi8
-        re4 \tuplet 3/2 { \[mi8[ re mi]\] } fas4. fas8
-        mi4 \tuplet 3/2 { \[re8[ dos re]\] } si2 \finalis \break
-        s32
+        \partial 4 r8\mark \markup{ "Aleluya" } la8
+        dos4 \tuplet 3/2 { re8( dos re) } mi4. mi8
+        re4 \tuplet 3/2 { mi8( re mi) } fas4. fas8
+        mi4 \tuplet 3/2 { re8( dos re) } si2 \bar "||" \break s32
       }
       \new Lyrics \lyricsto "melody" {
-        A -- le -- lu -- _ _ ya,
-        a -- le -- lu -- _ _ ya,
-        a -- le -- lu -- _ _ ya.
+        A -- le -- lu -- ya,
+        a -- le -- lu -- ya,
+        a -- le -- lu -- ya.
       }
     >>
     \new Staff <<
       %\set Staff.midiInstrument = "oboe"
       \new Voice = "contramelody" \relative do'' {
-        %\tempo "Adagio" 4 = 70
+        \tempo "Adagio" 4 = 70
         \time 4/4
         \key la \major
-        %\override Lyrics.LyricText.X-extent  = #'(0 . 3)
 
-        r4 r4 re dos si
+        \partial 4 r4
+        r4 re dos si
         la4 re dos si
-        la4 \tuplet 3/2 { re8[ dos si] } sols2 \finalis \break
-        s32
+        la4 \tuplet 3/2 { re8[ dos si] } sols2 \bar "||" \break s32
       }
       \new Lyrics \lyricsto "contramelody" {
         A -- le -- lu -- ya,
@@ -76,18 +73,13 @@ harmony_stanza = \new ChordNames {
   >>
   \midi {}
   \layout {
-    ragged-right = ##f
     \context {
       \Staff
-      \remove "Time_signature_engraver"
-      \remove "Bar_engraver"
-      \hide Stem
       \RemoveEmptyStaves
-      \hide TupletNumber
     }
     \context {
       \Score
-      barAlways = ##t
+      \omit BarNumber
     }
   }
 }
@@ -108,9 +100,8 @@ harmony_stanza_antifona = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key la \major
-        %\override Lyrics.LyricText.X-extent  = #'(0 . 3)
         
-        mi\breve^\markup{"Antifona"} 
+        mi\breve^\markup{ "Antifona" } 
         mi4 fas4 sols8 si4. 
         la2 \divisioMaior \break
         sols\breve \divisioMinima 
@@ -135,9 +126,7 @@ harmony_stanza_antifona = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
       \RemoveEmptyStaves
-      \hide TupletNumber
     }
     \context {
       \Score

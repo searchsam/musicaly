@@ -62,9 +62,7 @@ harmony_stanza = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
       \RemoveEmptyStaves
-      \hide TupletNumber
     }
     \context {
       \Score
@@ -119,9 +117,7 @@ harmony_stanza = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
       \RemoveEmptyStaves
-      \hide TupletNumber
     }
     \context {
       \Score
@@ -141,7 +137,7 @@ harmony_stanza_antifona = \new ChordNames {
 
 \score {
   <<
-    \harmony_stanza_antifona
+    %\harmony_stanza_antifona
     \new Staff <<
       %\set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
@@ -150,16 +146,15 @@ harmony_stanza_antifona = \new ChordNames {
         \time 4/4
         \key re \minor
         
-        \override TupletBracket.bracket-visibility = ##f
-        fa8 \mark \markup{ "Estrofa I" } sol la \breve \tuplet 3/2 {la8 fa sol} la4 la \divisioMaxima \break
-        \[la8 sol\] fa \breve fa8 mi re2 \finalis \break
+        fa8 \mark \markup{ "Estrofa I" } sol la \breve \divisioMinima \tuplet 3/2 {la8 fa sol} la4 la \divisioMaxima \break
+        la8( sol) fa \breve fa8 mi re2 \finalis \break
         s32
       }
       \new Lyrics \lyricsto "melody" {
         El Se 
         \once \override LyricText.self-alignment-X = #-1
         "ñor es mi pastor," na -- da me fal -- ta:
-        en _
+        en
         \once \override LyricText.self-alignment-X = #-1
         "verdes praderas me hace" re -- cos -- tar.
       }
@@ -172,9 +167,7 @@ harmony_stanza_antifona = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
       \RemoveEmptyStaves
-      \hide TupletNumber
     }
     \context {
       \Score
@@ -205,10 +198,9 @@ harmony_stanza_estrofa = \new ChordNames {
         \time 4/4
         \key re \minor
         
-        \override TupletBracket.bracket-visibility = ##f
-        fa8 \mark \markup{ "Estrofa II" } sol la \breve \tuplet 3/2 {la8 fa sol} la4 la \divisioMaxima \break
-        \[la8 sol\] fa \breve \[fa8 mi\] re4 re \divisioMaxima \break
-        \[do8 re\] mi \breve \tuplet 3/2 { mi4 re8 } fa4 fa \divisioMaxima \break
+        fa8 \mark \markup{ "Estrofa II" } sol la \breve \divisioMinima \tuplet 3/2 {la8 fa sol} la4 la \divisioMaxima \break
+        la8( sol) fa \breve fa8( mi) re4 re \divisioMaxima \break
+        do8( re) mi \breve \divisioMinima \tuplet 3/2 { mi4 re8 } fa4 fa \divisioMaxima \break
         re8 sib la \breve sib4 do re4 re \finalis \break
         s32
       }
@@ -216,10 +208,10 @@ harmony_stanza_estrofa = \new ChordNames {
         Me con 
         \once \override LyricText.self-alignment-X = #-1
         "duce hacia" fuen -- tes tran -- qui -- las
-        y _
+        y
         \once \override LyricText.self-alignment-X = #-1
-        "repara" mis _ fuer -- zas;
-        me _ 
+        "repara" mis fuer -- zas;
+        me
         \once \override LyricText.self-alignment-X = #-1
         "guía por el sen" -- de -- ro jus -- to,
         por el 
@@ -235,9 +227,7 @@ harmony_stanza_estrofa = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
       \RemoveEmptyStaves
-      \hide TupletNumber
     }
     \context {
       \Score
@@ -258,18 +248,17 @@ harmony_stanza_estrofa = \new ChordNames {
         \time 4/4
         \key re \minor
         
-        \override TupletBracket.bracket-visibility = ##f
-        fa8 \mark \markup{ "Estrofa III" } sol la \breve \tuplet 3/2 {la8 fa sol} la2 \divisioMaxima \break
-        \[la8 sol\] fa \breve fa8 mi re4 re \divisioMaxima \break
-        do8 re mi \breve \tuplet 3/2 { mi4 re8 } fa4 fa \divisioMaxima \break
-        re8 sib la \breve \[sib4 do\] re4 re \finalis \break
+        fa8 \mark \markup{ "Estrofa III" } sol la \breve \divisioMinima \tuplet 3/2 {la8 fa sol} la2 \divisioMaxima \break
+        la8( sol) fa \breve fa8 mi re4 re \divisioMaxima \break
+        do8 re mi \breve \divisioMinima \tuplet 3/2 { mi4 re8 } fa4 fa \divisioMaxima \break
+        re8 sib la \breve sib4( do) re4 re \finalis \break
         s32
       }
       \new Lyrics \lyricsto "melody" {
         Pre -- pa -- 
         \once \override LyricText.self-alignment-X = #-1
         "ras una me" -- sa an -- te mí,
-        en -- _
+        en --
         \once \override LyricText.self-alignment-X = #-1
         "frente de mis" e -- ne -- mi -- gos;
         me _ 
@@ -277,7 +266,7 @@ harmony_stanza_estrofa = \new ChordNames {
         "unges la cabeza" con per -- fu -- me,
         y mi
         \once \override LyricText.self-alignment-X = #-1
-        "copa" re -- _ bo -- sa.
+        "copa" re -- bo -- sa.
       }
     >>
   >>
@@ -288,9 +277,7 @@ harmony_stanza_estrofa = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
       \RemoveEmptyStaves
-      \hide TupletNumber
     }
     \context {
       \Score
@@ -311,24 +298,23 @@ harmony_stanza_estrofa = \new ChordNames {
         \time 4/4
         \key re \minor
         
-        \override TupletBracket.bracket-visibility = ##f
-        fa8 \mark \markup{ "Estrofa IV" } sol la \breve \tuplet 3/2 {la8 fa sol} la4 la \divisioMaxima \break
-        \[la8 sol\] fa \breve fa8 mi re4 re \divisioMaxima \break
-        do8 re mi \breve \tuplet 3/2 { mi4 re8 } fa2 \divisioMaxima \break
-        \[re8 sib\] la \breve sib4 do re2 \finalis \break
+        fa8 \mark \markup{ "Estrofa IV" } sol la \breve \divisioMinima \tuplet 3/2 {la8 fa sol} la4 la \divisioMaxima \break
+        la8( sol) fa \breve fa8 mi re4 re \divisioMaxima \break
+        do8 re mi \breve \divisioMinima \tuplet 3/2 { mi4 re8 } fa2 \divisioMaxima \break
+        re8( sib) la \breve sib4 do re2 \finalis \break
         s32
       }
       \new Lyrics \lyricsto "melody" {
         Tu bon --
         \once \override LyricText.self-alignment-X = #-1
         "dad y tu misericordia" me a -- com -- pa -- ñan,
-        to -- _
+        to --
         \once \override LyricText.self-alignment-X = #-1
         "dos los días" de mi vi -- da,
         y ha --
         \once \override LyricText.self-alignment-X = #-1
         "bitaré en la casa" del Se -- ñor,
-        por _
+        por
         \once \override LyricText.self-alignment-X = #-1
         "años sin" tér -- mi -- no.
       }
@@ -341,9 +327,7 @@ harmony_stanza_estrofa = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
       \RemoveEmptyStaves
-      \hide TupletNumber
     }
     \context {
       \Score
@@ -375,7 +359,7 @@ harmony_stanza_b = \new ChordNames {
 
         re4 \mark \markup{ "Antifona" \small \italic "Salmista"} mi fa2  \divisioMinima
         sol4 fa8 mi re4 re \divisioMinima
-        fa4 mi8 re \[do4 re2.\] \finalis \break 
+        fa4 mi8 re do4( re2.) \finalis \break 
         s32
       }
       \new Lyrics \lyricsto "melody" {
@@ -393,9 +377,7 @@ harmony_stanza_b = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
       \RemoveEmptyStaves
-      \hide TupletNumber
     }
     \context {
       \Score
@@ -418,7 +400,7 @@ harmony_stanza_b = \new ChordNames {
         
         re4 \mark \markup{ "Antifona" \small \italic "Salmista y Asamblea"} mi fa2 \divisioMinima
         sol4 fa8 mi re4 re \divisioMinima
-        fa4 mi8 re \[do4 re2.\] \finalis \break 
+        fa4 mi8 re do4( re2.) \finalis \break 
         s32
       }
       \new Lyrics \lyricsto "melody" {
@@ -435,7 +417,7 @@ harmony_stanza_b = \new ChordNames {
         
         re4 mi fa2   \divisioMinima
         mi4 do8 do re4 re \divisioMinima
-        re4 mi8 re \[do4 re2.\] \finalis \break 
+        re4 mi8 re do4( re2.) \finalis \break 
         s32
       }
       \new Lyrics \lyricsto "contramelody" {
@@ -450,9 +432,7 @@ harmony_stanza_b = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
       \RemoveEmptyStaves
-      \hide TupletNumber
     }
     \context {
       \Score
@@ -472,8 +452,7 @@ harmony_stanza_b = \new ChordNames {
         \time 4/4
         \key re \minor
         
-        \override TupletBracket.bracket-visibility = ##f
-        fa8 \mark \markup{ "Estrofa I" } sol la \breve \tuplet 3/2 {la8 fa sol} la2 \divisioMaxima \break
+        fa8 \mark \markup{ "Estrofa I" } sol la \breve \divisioMinima \tuplet 3/2 {la8 fa sol} la2 \divisioMaxima \break
         la8 sol fa \breve fa8 mi re2 \finalis \break
         s32
       }
@@ -494,9 +473,7 @@ harmony_stanza_b = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
       \RemoveEmptyStaves
-      \hide TupletNumber
     }
     \context {
       \Score
@@ -516,10 +493,9 @@ harmony_stanza_b = \new ChordNames {
         \time 4/4
         \key re \minor
         
-        \override TupletBracket.bracket-visibility = ##f
-        fa8 \mark \markup{ "Estrofa II" } sol la \breve \tuplet 3/2 {la8 fa sol} la4 la \divisioMaxima \break
+        fa8 \mark \markup{ "Estrofa II" } sol la \breve \divisioMinima \tuplet 3/2 {la8 fa sol} la4 la \divisioMaxima \break
         la8 sol fa \breve fa8 mi re4 re \divisioMaxima \break
-        \[re8 sib\] la \breve \[sib4 do\] re2 \finalis \break
+        re8( sib) la \breve sib4( do) re2 \finalis \break
         s32
       }
       \new Lyrics \lyricsto "melody" {
@@ -529,9 +505,9 @@ harmony_stanza_b = \new ChordNames {
         Tu tro --
         \once \override LyricText.self-alignment-X = #-1
         "no está firme" des -- de siem -- pre,        
-        y _ 
+        y
         \once \override LyricText.self-alignment-X = #-1
-        "tú eres e" -- ter -- _ no.
+        "tú eres e" -- ter -- no.
       }
     >>
   >>
@@ -542,9 +518,7 @@ harmony_stanza_b = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
       \RemoveEmptyStaves
-      \hide TupletNumber
     }
     \context {
       \Score
@@ -564,20 +538,19 @@ harmony_stanza_b = \new ChordNames {
         \time 4/4
         \key re \minor
         
-        \override TupletBracket.bracket-visibility = ##f
-        fa8 \mark \markup{ "Estrofa III" } sol la \breve \tuplet 3/2 {\[la8 fa\] sol} la4 la \divisioMaxima \break
+        fa8 \mark \markup{ "Estrofa III" } sol la \breve \divisioMinima \tuplet 3/2 {la8( fa) sol} la4 la \divisioMaxima \break
         la8 sol fa \breve fa8 mi re4 re \divisioMaxima \break
-        \[re8 sib\] la \breve sib4 do re2 \finalis \break
+        re8( sib) la \breve sib4 do re2 \finalis \break
         s32
       }
       \new Lyrics \lyricsto "melody" {
         Tus man --
         \once \override LyricText.self-alignment-X = #-1
-        "datos son fieles" y _ se -- gu -- ros;
+        "datos son fieles" y se -- gu -- ros;
         la san --
         \once \override LyricText.self-alignment-X = #-1
         "tidad es el adorno" de tu ca -- sa,
-        Se -- _
+        Se --
         \once \override LyricText.self-alignment-X = #-1
         "ñor, por días sin" tér -- mi -- no.
       }
@@ -590,9 +563,7 @@ harmony_stanza_b = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
       \RemoveEmptyStaves
-      \hide TupletNumber
     }
     \context {
       \Score
@@ -614,12 +585,12 @@ harmony_stanza_b = \new ChordNames {
         \key re \minor
 
         re4 \mark \markup{ "Antifona" \small \italic "Salmista"} mi8 mi fa4 fa  \divisioMinima
-        \[sol4 fa8\] mi re4 re \divisioMinima
-        \[fa4 mi8\] re \[do4 re2.\] \finalis \break 
+        sol4( fa8) mi re4 re \divisioMinima
+        fa4( mi8) re do4( re2.) \finalis \break 
         s32
       }
       \new Lyrics \lyricsto "melody" {
-        Va -- mos a -- le -- gres a  _ la ca -- sa del _ Se -- ñor.
+        Va -- mos a -- le -- gres a  la ca -- sa del Se -- ñor.
       }
     >>
   >>
@@ -633,9 +604,7 @@ harmony_stanza_b = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
       \RemoveEmptyStaves
-      \hide TupletNumber
     }
     \context {
       \Score
@@ -657,12 +626,12 @@ harmony_stanza_b = \new ChordNames {
         \key re \minor
         
         re4 \mark \markup{ "Antifona" \small \italic "Salmista y Asamblea"} mi8 mi fa4 fa \divisioMinima
-        \[sol4 fa8\] mi re4 re \divisioMinima
-        \[fa4 mi8\] re \[do4 re2.\] \finalis \break 
+        sol4( fa8) mi re4 re \divisioMinima
+        fa4( mi8) re do4( re2.) \finalis \break 
         s32
       }
       \new Lyrics \lyricsto "melody" {
-        Va -- mos a -- le -- gres a _ la ca -- sa del _ Se -- ñor.
+        Va -- mos a -- le -- gres a la ca -- sa del Se -- ñor.
       }
     >>
     \new Staff <<
@@ -674,12 +643,12 @@ harmony_stanza_b = \new ChordNames {
         \key re \minor
         
         re4 mi8 mi fa4 fa \divisioMinima
-        \[mi4 do8\] do re4 re \divisioMinima
-        \[re4 mi8\] re \[do4 re2.\] \finalis \break 
+        mi4( do8) do re4 re \divisioMinima
+        re4( mi8) re do4( re2.) \finalis \break 
         s32
       }
       \new Lyrics \lyricsto "contramelody" {
-        Va -- mos a -- le -- gres a _ la ca -- sa del _ Se -- ñor.
+        Va -- mos a -- le -- gres a la ca -- sa del Se -- ñor.
       }
     >>
   >>
@@ -690,9 +659,7 @@ harmony_stanza_b = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
       \RemoveEmptyStaves
-      \hide TupletNumber
     }
     \context {
       \Score
@@ -712,18 +679,17 @@ harmony_stanza_b = \new ChordNames {
         \time 4/4
         \key re \minor
         
-        \override TupletBracket.bracket-visibility = ##f
-        fa8 \mark \markup{ "Estrofa I" } sol la \breve \tuplet 3/2 {\[la8 fa\] sol} la4 la \divisioMaxima \break
-        \[la8 sol\] fa \breve fa8 mi re2 \divisioMaxima \break
-        do8 re mi \breve \tuplet 3/2 { mi4 re8 } fa2 \divisioMaxima \break
+        fa8 \mark \markup{ "Estrofa I" } sol la \breve \divisioMinima \tuplet 3/2 {la8( fa) sol} la4 la \divisioMaxima \break
+        la8( sol) fa \breve fa8 mi re2 \divisioMaxima \break
+        do8 re mi \breve \divisioMinima \tuplet 3/2 { mi4 re8 } fa2 \divisioMaxima \break
         re8 do la \breve sib4 do re4 re \finalis \break
         s32
       }
       \new Lyrics \lyricsto "melody" {
         ¡Qué~a -- le -- 
         \once \override LyricText.self-alignment-X = #-1
-        "gría cuando" me _ di -- je -- ron:
-        «Va -- _
+        "gría cuando" me di -- je -- ron:
+        «Va --
         \once \override LyricText.self-alignment-X = #-1
         "mos a la casa" del Se -- ñor»!
         Ya es --
@@ -742,9 +708,7 @@ harmony_stanza_b = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
       \RemoveEmptyStaves
-      \hide TupletNumber
     }
     \context {
       \Score
@@ -764,20 +728,19 @@ harmony_stanza_b = \new ChordNames {
         \time 4/4
         \key re \minor
         
-        \override TupletBracket.bracket-visibility = ##f
-        fa8 \mark \markup{ "Estrofa II" } sol la \breve \tuplet 3/2 {\[la8 fa sol\]} la4 la \divisioMaxima \break
-        \[la8 sol\] fa \breve fa8 mi re2 \divisioMaxima \break
-        do8 re mi \breve \tuplet 3/2 { mi4 re8 } fa2 \divisioMaxima \break
-        fa8 sol la \breve \tuplet 3/2 {\[la8 fa\] sol} la2 \divisioMaxima \break
-        \[la8 sol\] fa \breve fa8 mi re4 re \divisioMaxima \break
+        fa8 \mark \markup{ "Estrofa II" } sol la \breve \divisioMinima \tuplet 3/2 {la8( fa sol)} la4 la \divisioMaxima \break
+        la8( sol) fa \breve fa8 mi re2 \divisioMaxima \break
+        do8 re mi \breve \divisioMinima \tuplet 3/2 { mi4 re8 } fa2 \divisioMaxima \break
+        fa8 sol la \breve \divisioMinima \tuplet 3/2 {la8( fa) sol} la2 \divisioMaxima \break
+        la8( sol) fa \breve fa8 mi re4 re \divisioMaxima \break
         re8 sib la \breve sib4 do re2 \finalis \break
         s32
       }
       \new Lyrics \lyricsto "melody" {
         A -- llá
         \once \override LyricText.self-alignment-X = #-1
-        "suben" las _ _ tri -- bus,  
-        las _
+        "suben" las tri -- bus,  
+        las
         \once \override LyricText.self-alignment-X = #-1
         "tribus" del Se -- ñor,
         se -- gún
@@ -785,8 +748,8 @@ harmony_stanza_b = \new ChordNames {
         "la costumbre de" Is -- ra -- el,
         a ce --
         \once \override LyricText.self-alignment-X = #-1
-        "lebrar el nombre" del _ Se -- ñor;  
-        en _
+        "lebrar el nombre" del Se -- ñor;  
+        en
         \once \override LyricText.self-alignment-X = #-1
         "ella están los tribunales" de jus -- ti -- cia,
         en el 
@@ -802,9 +765,7 @@ harmony_stanza_b = \new ChordNames {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \hide Stem
       \RemoveEmptyStaves
-      \hide TupletNumber
     }
     \context {
       \Score

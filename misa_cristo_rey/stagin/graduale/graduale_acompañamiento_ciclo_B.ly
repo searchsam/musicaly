@@ -30,46 +30,46 @@ global = {
 Music = \relative do' {
   R1*4		 		| \bar "||" \break
   
-  re4^\markup{ \italic "Solo" } mi fa2 |
-  sol4 fa8 mi re4 re		|
+  re4^\markup{ \italic "Solo" } mi fa2 \breathe |
+  sol4 fa8 mi re4 re \breathe	|
   fa4 mi8 re do4( re4~		|
   re2) r				| \bar "||" \break
-  re4^\markup{ \italic "Todos" } mi <fa re>2 |
-  <sol mi>4 <fa do>8 <mi do> re4 re |
+  re4^\markup{ \italic "Todos" } mi <fa re>2 \breathe |
+  <sol mi>4 <fa do>8 <mi do> re4 re \breathe |
   <fa re>4 mi8 re do4( re4~	|
   re2) r				| \bar "||" \break
   
-  fa8^\markup{ "Estrofa I" \italic "Solo" } sol la la la la la la |
+  fa8^\markup{ "Estrofa I" \italic "Solo" } sol la la la la la la \breathe |
   \tuplet 3/2 {la8 fa sol} la2 r4 | \break
   la8 sol fa4 fa8 fa fa fa 	|
-  fa fa fa mi re2		| \bar "||" \break
+  fa fa fa mi re2 \breathe	| \bar "||" \break
   
-  re4^\markup{ \italic "Todos" } mi <fa re>2 |
-  <sol mi>4 <fa do>8 <mi do> re4 re |
+  re4^\markup{ \italic "Todos" } mi <fa re>2 \breathe |
+  <sol mi>4 <fa do>8 <mi do> re4 re \breathe |
   <fa re>4 mi8 re do4( re4~	|
   re2) r				| \bar "||" \break
   
-  fa8^\markup{ "Estrofa II" \italic "Solo" } sol la la la la la la |
+  fa8^\markup{ "Estrofa II" \italic "Solo" } sol la la la la la la \breathe |
   \tuplet 3/2 {la8 fa sol} la4 la r | \break
   la8 sol fa fa fa fa4 r8 	|
   fa8 mi re4 re r 		| \break
   re8( sib) la4 r8 la la la 	|
-  sib4( do) re2 			| \bar "||" \break
+  sib4( do) re2 \breathe		| \bar "||" \break
   
-  re4^\markup{ \italic "Todos" } mi <fa re>2 |
-  <sol mi>4 <fa do>8 <mi do> re4 re |
+  re4^\markup{ \italic "Todos" } mi <fa re>2 \breathe |
+  <sol mi>4 <fa do>8 <mi do> re4 re \breathe |
   <fa re>4 mi8 re do4( re4~	|
   re2) r				| \bar "||" \break
   
-  fa8^\markup{ "Estrofa III" \italic "Solo" } sol la la la la la4 |
+  fa8^\markup{ "Estrofa III" \italic "Solo" } sol la la la la la4\breathe |
   \tuplet 3/2 {la8( fa) sol} la4 la r | \break
   la8 sol fa fa fa fa fa fa 	|
   fa8 mi re4 re r 		| \break
   re8( sib) la4 la8 la la la	|
-  sib4 do re2	 		| \bar "||" \break
+  sib4 do re2 \breathe 		| \bar "||" \break
   
-  re4^\markup{ \italic "Todos" } mi <fa re>2 |
-  <sol mi>4 <fa do>8 <mi do> re2 |
+  re4^\markup{ \italic "Todos" } mi <fa re>2 \breathe |
+  <sol mi>4 <fa do>8 <mi do> re2 \breathe |
   <fa re>4 mi8 re do4 re4~	|
   re2 r				|
 
@@ -352,9 +352,3 @@ armonias = \new ChordNames {
   #(set-default-paper-size "letter")
   indent=3.5\cm
 }
-
-
-%{
-convert-ly (GNU LilyPond) 2.19.84  convert-ly: Procesando «»...
-Aplicando la conversión:     El documento no ha cambiado.
-%}
