@@ -17,16 +17,19 @@
 
 % --- Parametros globales
 global = {
-    \tempo "Allegretto" 4=90
-    \key re \minor
+    \tempo "Allegretto" 4 = 90
+    \key mi \minor
     \time 4/4
     s1*29
     \bar "|."
 }
 
 % --- Musica
-musica = \relative do'' {
-    re,8 la'8 la sib8. la16 sol4 re'8~
+musica = \relative do' {
+  
+  mi4 si'8 do si4 la8 sol la2. r4
+  
+    re8 la'8 la sib8. la16 sol4 re'8~
     re8 do8 sib8 la4 sol r8
     <la fa>4 <sib sol>8 <do la> <re sol,>4 <do fa,>8 <sib sol>
     <do fa,>4 <sib sol>4 <la re,>8 fa <sol re>4 \bar "||"
@@ -40,6 +43,9 @@ musica = \relative do'' {
 
 % --- Letra
 letra = \lyricmode {
+  
+  ¡Por -- que~es e -- ter -- no su~a -- mor.
+  
     Dad gra -- cias al Se -- ñor, por que~él es bue -- no. ¡Por -- que~es e -- ter -- no su~a -- mor. A -- le -- lu -- ya!
 
     Dad gra -- cias al Dios de los Dio -- ses, Se -- ñor de Se -- ño -- res. ¡Por -- que~es e -- ter -- no su~a -- mor. A -- le -- lu -- ya!
