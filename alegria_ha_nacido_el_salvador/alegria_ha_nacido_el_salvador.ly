@@ -5,7 +5,7 @@
 \language "espanol"
 \version "2.19.32"
 
-%#(set-global-staff-size 16)
+#(set-global-staff-size 19)
 
 % --- Parametro globales
 global = {
@@ -26,8 +26,10 @@ global = {
 }
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Alegría, ha nacido el Salvador" \fontsize #2 " " } } }
-\markup { \fill-line { \center-column { \fontsize #2 " " } \center-column { \fontsize #2 "Canción folclórica italiana" \small "" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Alegría, ha nacido el Salvador" \fontsize #2 "Villancico" } } }
+\markup { \fill-line { \center-column { \fontsize #2 " " } \center-column { \fontsize #2 "Canción folclórica Italiana" } } }
+\markup { \fill-line { \center-column { \fontsize #2 " " } \center-column { \fontsize #2 "Adaptación: Samuel Gutiérrez" } } }
+\markup { \fill-line { \center-column { \fontsize #2 " " } \center-column { \fontsize #2 "Linda Martínez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -510,25 +512,25 @@ acordes = \new ChordNames {
     \new ChoirStaff <<
       \new Staff <<
         \set Staff.instrumentName = \markup { \smallCaps "Soprano" }
-        \set Staff.midiInstrument = "music box"
+        %\set Staff.midiInstrument = "music box"
         \new Voice = "soprano" << \global \soprano >>
         \new Lyrics \lyricsto "soprano" \soprano_letra
       >>
       \new Staff <<
         \set Staff.instrumentName = \markup { \smallCaps "Contralto" }
-        \set Staff.midiInstrument = "music box"
+        %\set Staff.midiInstrument = "music box"
         \new Voice = "alto" << \global \contralto >>
         \new Lyrics \lyricsto "alto" \contralto_letra
       >>
       \new Staff <<
         \set Staff.instrumentName = \markup { \smallCaps "Tenor" }
-        \set Staff.midiInstrument = "music box"
+        %\set Staff.midiInstrument = "music box"
         \new Voice = "tenor" << \global \tenor >>
         \new Lyrics \lyricsto "tenor" \tenor_letra
       >>
       \new Staff <<
         \set Staff.instrumentName = \markup { \smallCaps "Bajo" }
-        \set Staff.midiInstrument = "music box"
+        %\set Staff.midiInstrument = "music box"
         \new Voice = "bass" << \global \bajo >>
         \new Lyrics \lyricsto "bass" \bajo_letra
       >>
