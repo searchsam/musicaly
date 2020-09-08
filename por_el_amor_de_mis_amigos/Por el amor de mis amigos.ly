@@ -26,7 +26,7 @@ violinI = \new Staff {
   \relative c' {
     % Type notes here
 
-    d4^\markup { \small Introducción } des4 d4 | %1
+    d4^\markup { \small Introducción } cis4 d4 | %1
     bes'4 a4. g8 | %2
     ees2.( | %3
     ees2.) | %4
@@ -34,7 +34,7 @@ violinI = \new Staff {
     bes'4 a4. g8 | %6
     d2.( | %7
     d2.) | %8
-    d4 des4 d4 | %9
+    d4 cis4 d4 | %9
     bes'4 a4. g8 | %10
     ees4 d4 ees4 | %11
     c2. | %12

@@ -15,8 +15,8 @@ alto = \relative do' {
   mi2~			| %10
   mi2			| %11
   mi4 fas		| %12
-  mi8 re mi4~ 		| %13
-  mi2			| \break %14
+  mi8 re si4~ 		| %13
+  si2			| \break %14
   R2*9			| \break %23
   mi8( fas sol la)	| %24
   sol4 sol		| %25

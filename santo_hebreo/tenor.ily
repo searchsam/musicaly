@@ -16,8 +16,8 @@ tenor = \relative do' {
   do2~			| %10
   do2			| %11
   do4 re			| %12
-  si8 la si4~ 		| %13
-  si2			| \break %14
+  si8 la sol4~ 		| %13
+  sol2			| \break %14
   R2*9			| \break %23
   si2			| %24
   mi4 mi			| %25

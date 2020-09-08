@@ -149,9 +149,9 @@ acordes = \new ChordNames {
   \italianChords
   \chordmode {
     re4. la4. si4.:m sol4. re4. la4.
-    re4. la4. sol4. la 4. si2.
+    re4. la4. sol4. la 4. si2.:m
     re4. la4. si4.:m sol4. re4. la4.
-    re4. la4. sol4. la 4. si2.
+    re4. la4. sol4. la 4. si2.:m
   }
 }
 

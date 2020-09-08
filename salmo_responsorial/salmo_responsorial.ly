@@ -28,13 +28,13 @@ global = {  \tempo "Moderatto" 4 = 110 \clef treble \key fas \minor \time 4/4 s1
 instrumento = \relative do'' {
   \compressFullBarRests
   %Escribir la musica aqui...
-  r1 					| %1
-  fas2 mis4 re 			| %2
-  dos2. si4  			| %3
-  la sols2.				| %4
-  fas2 mis4 re			| %5
-  dos1 				| %6
-  r4 fas8 la dos4 mis4	| %7
+  r1 				| %1
+  fas2. mis4 			| %2
+  re4 dos2.   			| %3
+  si8 la sols2.			| %4
+  fas2. mis4 			| %5
+  re4 dos2. 			| %6
+  r4 fas8 la dos4 mis4		| %7
   fas2. r4 \bar ".|:"		| %8
   \textLengthOn
   s2._\markup \center-column { \small "Mi alma esta sedienta de ti,..." }^\markup { \small Acompañamiento } fas4( | %9
@@ -47,7 +47,7 @@ instrumento = \relative do'' {
   \textLengthOn
   s2._\markup \center-column { \small "...mi alma esta sedienta de ti." } fas4( | %13
   \textLengthOff
-  fas4) fa re dos		| %14
+  fas4) mis re dos		| %14
   r4 fas8 la dos4 mis4 	| %15
   fas2. r4 \bar "||"		| %16
   \textLengthOn
@@ -68,13 +68,13 @@ instrumento = \relative do'' {
   si la sols2	| %24
   r4 fas8 la dos4 mis4	| %25
   fas2. r4 \bar ":|."		| %26
-  fas2^\markup { \small "Luego de terminadas todas las estrofas." } mis4 re | %27
-  dos2. si4  			| %28
-  la sols2.				| %29
-  fas2 mis4 re			| %30
-  dos1 				| %31
-  r4 fas8 la dos4 mis4	| %32
-  fas2. r4 				| %33
+  fas2.^\markup { \small "Luego de terminadas todas las estrofas." } mis4 | %27
+  re4 dos2.   			| %28
+  si8 la sols2.			| %29
+  fas2. mis4 			| %30
+  re4 dos2. 			| %31
+  r4 fas8 la dos4 mis4		| %32
+  fas2. r4 \bar "|."		| %33
 }
 
 % --- Acordes

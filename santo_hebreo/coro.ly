@@ -19,7 +19,7 @@
   subsubtitle = ""
   instrument = "Coro Mixto"
   poet = ""
-  composer = \markup { \right-column { "Música: Giuseppe Gennarini" "Kiko Argüello"} }
+  composer = \markup { \right-column { "Giuseppe Gennarini" "Kiko Argüello"} }
   arranger = "Arreglo: Samuel Gutiérrez"
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -38,7 +38,7 @@
     >>
     \new Staff <<
       \set Staff.instrumentName = #"Contralto "
-      \set Staff.midiInstrument = #"clarinet"
+      \set Staff.midiInstrument = #"oboe"
       \new Voice = "alto" << \global \alto >>
       \new Lyrics \lyricsto "alto" \letraContralto
       \new Lyrics \lyricsto "alto" \segundaLetraAlto

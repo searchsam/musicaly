@@ -11,7 +11,7 @@
 global = {
   \tempo "Allegro Moderatto" 4=100
   \key re \major
-  \time 3/4
+  \time 6/8
   s2.*8
   \bar "|."
 }
@@ -26,28 +26,28 @@ global = {
 }
 
 soprano = \relative do'' {
-  \partial 4 re,8 fas	| % 1
+  \partial 4. r8 re,8 fas | % 1
   la4. fas8 sol mi	| % 2
-  la2 mi8 fas		| % 3
-  sol4( sol8) sol fas mi| % 4
-  sol4( fas) r8 re	| % 5
+  la4. r8 mi8 fas		| % 3
+  sol4. sol8 fas mi| % 4
+  sol8( fas4) r4 re8	| % 5
   si'4 si8 mi, fas sol	| % 6
   la8( si) la4. la8	| % 7
   si4 la8 sol fas mi	| % 8
-  \partial 2 sol4( fas) | % 9
+  \partial 4. sol8( fas4) | % 9
 }
 
 tenor = \relative do' {
   \clef "G_8"
-  \partial 4 re,8 fas	| % 1
+  \partial 4. r8 re,8 fas	| % 1
   la4. fas8 sol mi	| % 2
-  la2 mi8 fas		| % 3
-  sol4( sol8) sol fas mi| % 4
-  sol4( fas) r8 re	| % 5
+  la4. r8 mi8 fas		| % 3
+  sol4. sol8 fas mi| % 4
+  sol8( fas4) r4 re8	| % 5
   si'4 si8 mi, fas sol	| % 6
   la8( si) la4. la8	| % 7
   si4 la8 sol fas mi	| % 8
-  \partial 2 sol4( fas) | % 9
+  \partial 4. sol8( fas4) | % 9
 }
 
 letra_uno = \lyricmode {
@@ -60,7 +60,7 @@ acordes = \new ChordNames {
   \set chordChanges = ##t
   \italianChords
   \chordmode {
-    re4 R2. la2.:7 R2. re2 re4:7 sol2. re2. la2.:7 re2
+    re4. R2. la2.:7 R2. re2. sol2. re2. sol4. la4.:7 re2
   }
 }
 

@@ -5,9 +5,6 @@
 \language "espanol"
 \version "2.19.82"
 
-% --- includes
-\include "gregorian.ly"
-
 %#(set-global-staff-size 19)
 
 
@@ -36,7 +33,6 @@ harmony_stanza = \new ChordNames {
     \new Voice = "melody" \relative do' {
       \tempo 4 = 90
       \time 4/4
-      %\override Lyrics.LyricText.X-extent  = #'(0 . 3)
 
       re4 sol la8 sib la4 sol8 fa sol4 sol
       s32
@@ -46,21 +42,7 @@ harmony_stanza = \new ChordNames {
     }
   >>
   \midi {}
-  \layout {
-    ragged-right = ##f
-    \context {
-      \Staff
-      \remove "Time_signature_engraver"
-      \remove "Bar_engraver"
-      \hide Stem
-      \RemoveEmptyStaves
-      \hide TupletNumber
-    }
-    \context {
-      \Score
-      barAlways = ##t
-    }
-  }
+  \layout {}
 }
 
 % --- Papel

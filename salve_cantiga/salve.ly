@@ -254,7 +254,7 @@ armonia = \new ChordNames {
     %\armonia
     \new Staff <<
       \set Staff.instrumentName = \markup { \smallCaps "Flauta" }
-      \set Staff.midiInstrument = #"soprano sax"
+      \set Staff.midiInstrument = #"oboe"
       \new Voice = "instrumento" << \global \flauta >>
     >>
     \new Staff <<

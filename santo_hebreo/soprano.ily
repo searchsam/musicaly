@@ -57,6 +57,6 @@ soprano = \relative do'' {
   la2			| %11
   \override TextSpanner.bound-details.left.text = "rit."
   la4\startTextSpan si	| %12
-  sol8 fas mi4~ 		| %13
-  mi2\stopTextSpan \fermata | %14
+  sol8 fas sols4~	| %13
+  sols2\stopTextSpan \fermata | %14
 }

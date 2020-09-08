@@ -16,7 +16,7 @@ bajo = \relative do {
   la2~			| %10
   la2			| %11
   la4 si			| %12
-  sol8 fas mi4~ 		| %13
+  sol8 fas mi4~		| %13
   mi2			| \break %14
   R2*9			| \break %23
   mi8( fas sol fas)	| %24

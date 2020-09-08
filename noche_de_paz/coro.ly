@@ -1,7 +1,7 @@
 \version "2.19.28"
 \language "espanol"
 
-#(set-global-staff-size 14)
+%#(set-global-staff-size 14)
 
 \markup { \fill-line { \center-column { \fontsize #5 "Noche de Paz" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Coral Frances" } } }

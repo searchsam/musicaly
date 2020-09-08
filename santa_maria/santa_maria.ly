@@ -330,7 +330,7 @@ pandereta = \drummode {
   tamb4 tamb8 tamb8
   tamb4 tamb8 tamb8
   tamb4 tamb8 tamb8
-  tamb4 tamb4
+  tamb4 tamb8 tamb8
   tamb4 tamb8 tamb8
   tamb4 tamb8 tamb8
   tamb4 tamb8 tamb8
@@ -423,7 +423,7 @@ armonia = \new ChordNames {
     \armonia
     \new Staff <<
       \set Staff.instrumentName = \markup { \smallCaps "Flauta" }
-      \set Staff.midiInstrument = #"recorder"
+      \set Staff.midiInstrument = #"oboe"
       \new Voice = "instrumento" << \global \flauta >>
     >>
     \new Staff <<
