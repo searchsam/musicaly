@@ -26,7 +26,7 @@
 global = {
   \key re \minor
   \time 2/4
-  s2*100
+  s2*119
   \bar "|."
 }
 melodia = \relative do' {
@@ -38,7 +38,7 @@ melodia = \relative do' {
   r4 re8 mi8
   fa4. fa8
   mi4 re8
-  do re2
+  do re2 \bar "||"
   R2 \break
   
   \tempo "Allegro" 4 = 70
@@ -55,7 +55,7 @@ melodia = \relative do' {
   re4. re8
   mi4 do4
   re4 re~ 
-  re4 r \break
+  re4 r \bar "||" \break
   
   \tempo "Allegro" 4 = 80
   fa4. fa8
@@ -65,7 +65,7 @@ melodia = \relative do' {
   r4 re8 mi8
   fa4. fa8
   mi4 re8
-  do re2
+  do re2 \bar "||"
   R2 \break
   
   \tempo "Allegro" 4 = 70
@@ -83,7 +83,7 @@ melodia = \relative do' {
   re8 re4.
   mi4 do
   re4 re~ 
-  re4 r \break
+  re4 r \bar "||" \break
   
   \tempo "Allegro" 4 = 80
   fa4. fa8
@@ -93,7 +93,7 @@ melodia = \relative do' {
   r4 re8 mi8
   fa4. fa8
   mi4 re8
-  do re2
+  do re2 \bar "||"
   R2 \break
   
   \tempo "Allegro" 4 = 70
@@ -111,7 +111,7 @@ melodia = \relative do' {
   re2
   mi4 do4
   re2
-  r2 \break
+  r2 \bar "||" \break
   
   \tempo "Allegro" 4 = 80
   fa4. fa8
@@ -121,7 +121,7 @@ melodia = \relative do' {
   r4 re8 mi8
   fa4. fa8
   mi4 re8
-  do re2
+  do re2 \bar "||"
   R2 \break
   
   \tempo "Allegro" 4 = 70
@@ -139,7 +139,7 @@ melodia = \relative do' {
   re8 re re re8
   mi4 do4
   re4 re~ 
-  re4 r \break
+  re4 r \bar "||" \break
   
   \tempo "Allegro" 4 = 80
   fa4. fa8
@@ -149,8 +149,13 @@ melodia = \relative do' {
   r4 re8 mi8
   fa4. fa8
   mi4 re8
-  do re2
-  R2 \break
+  do re2 \bar "||"
+  r4. fa8  \break
+  
+  sib4 la sol fa re4. mi8 fa2 fa4 r8 fa8
+  sib4 la sol fa re4. mi8 fa2 fa4 r8 fa8
+  sib4 la sol fa re4. mi8 fa2 fa4 r8 fa8
+  sib4 la sol fa re4. mi8 fa2 fa
 }
 letra = \lyricmode {
   Yo soy pa -- ra mi~a -- ma -- do
@@ -187,15 +192,12 @@ letra = \lyricmode {
   
   Yo soy pa -- ra mi~a -- ma -- do
   y mi~a -- ma -- do es pa -- ra mi.
+  
+  Su~iz -- quier -- da ba -- jo mi ca -- be -- za, 
+  y con su dies -- tra me a -- bra -- za.
+  Su~iz -- quier -- da ba -- jo mi ca -- be -- za, 
+  y con su dies -- tra me a -- bra -- za.
 }
-
-NotesSop = \relative do'' {}
-
-NotesAlt = \relative do'' {}
-
-NotesTer = \relative do' {}
-
-NotesBas = \relative do {}
 
 % --- acordes
 armonias = \new ChordNames {
@@ -235,6 +237,11 @@ armonias = \new ChordNames {
     
     re2:m do2 re2:m R2
     R2 do2 re2:m R2
+    
+    sib2 sol2:m re2:m fa2 R2
+    sib2 sol2:m re2:m fa2 R2
+    sib2 sol2:m re2:m fa2 R2
+    sib2 sol2:m re2:m fa2 R2
   }
 }
 
@@ -242,30 +249,11 @@ armonias = \new ChordNames {
   <<
     \armonias
     \new Voice = "solista" <<
-     % \set Staff.midiInstrument = #"oboe"
+     \set Staff.midiInstrument = #"oboe"
       \global \melodia
     >>
     \new Lyrics = "solista"
     \context Lyrics = "solista" \lyricsto "solista" \letra
-    %{\new PianoStaff <<
-      \new Staff <<
-        \set Staff.midiInstrument = #"church organ"
-        \set Staff.midiMaximumVolume = #0.4
-        \set Staff.printPartCombineTexts = ##f
-        \partcombine
-        << \global \NotesSop >>
-        << \global \NotesAlt >>
-      >>
-      \new Staff <<
-        \set Staff.midiInstrument = #"church organ"
-        \set Staff.midiMaximumVolume = #0.4
-        \clef bass
-        \set Staff.printPartCombineTexts = ##f
-        \partcombine
-        << \global \NotesTer >>
-        << \global \NotesBas >>
-      >>
-    >>%}
   >>
   \midi { }
   \layout { }

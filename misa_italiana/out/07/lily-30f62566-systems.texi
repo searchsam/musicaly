@@ -1,0 +1,7 @@
+@image{./07/lily-30f62566-1}
+@image{./07/lily-30f62566-2}
+@image{./07/lily-30f62566-3}
+@image{./07/lily-30f62566-4}
+@image{./07/lily-30f62566-5}
+@image{./07/lily-30f62566-6}
+@c eof
