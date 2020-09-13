@@ -38,6 +38,7 @@
       }
     }
   >>
+  \midi {}
   \layout {
     indent = 4.5 \cm
     line-width = 13\cm
@@ -75,7 +76,7 @@ cantusNotesPiedad = \relative do' {
   r2 fa2^\markup{ \italic "Tutti"}~ |
   fa2 re2 |
   sol1 |
-  do1 |
+  do2 fa, |
   sib2 fa |
   sib1 |
   sol1 |
@@ -142,6 +143,7 @@ altusLyricsPiedad = \lyricmode {
       \new Lyrics \lyricsto altusNotes { \altusLyricsPiedad }
     >>
   >>
+  \midi {}
   \layout {
     \context {
       \Score
@@ -181,6 +183,7 @@ altusLyricsPiedad = \lyricmode {
       }
     }
   >>
+  \midi {}
   \layout {
     indent = 4.5 \cm
     line-width = 13\cm
@@ -207,6 +210,7 @@ altusLyricsPiedad = \lyricmode {
       \new Lyrics \lyricsto altusNotes { \altusLyricsPiedad }
     >>
   >>
+  \midi {}
   \layout {
     \context {
       \Score
@@ -246,6 +250,7 @@ altusLyricsPiedad = \lyricmode {
       }
     }
   >>
+  \midi {}
   \layout {
     indent = 4.5 \cm
     line-width = 13\cm
@@ -283,7 +288,7 @@ cantusNotesPaz = \relative do' {
   r2 fa2^\markup{ \italic "Tutti"}~ |
   fa2 re2 |
   sol1 |
-  do1 |
+  do2 sol |
   sib2 fa |
   sib1 |
   sol1 |
@@ -350,6 +355,7 @@ altusLyricsPaz = \lyricmode {
       \new Lyrics \lyricsto altusNotes { \altusLyricsPaz }
     >>
   >>
+  \midi {}
   \layout {
     \context {
       \Score
