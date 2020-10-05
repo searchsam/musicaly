@@ -41,14 +41,15 @@ harmony_stanza = \new ChordNames {
   \new Staff <<
     \new Voice = "melody" \relative do' {
       \tempo 4 = 60
+      \key re \minor
       \time 4/4
 
       la4 re8( mi) fa4 re8 re
-      do8 re mi do re4 re \breathe \break
+      do8 re mi do re4 re \break
       do4 re8( mi) sib4 sib
-      mi8 re  do re mi4 mi \bar "||" \break
+      mi8 re  do re mi4 mi \breathe \bar "||" \break
       la,4 re8 mi re4 re4
-      mi8 fa sol mi re4 re \breathe \break
+      mi8 fa sol mi re4 re \break
       do4 re8( mi) fa4 fa
       sol8 fa mi fa mi2 re1 \bar "||"
     }
@@ -76,14 +77,15 @@ harmony_stanza = \new ChordNames {
   \new Staff <<
     \new Voice = "melody" \relative do'' {
       \tempo 4 = 60
+      \key re \minor
       \time 4/4
 
       la4 sol8( fa) sib( la) sol fa
-      sol8 fa mi sol la4 la \breathe \break
+      sol8 fa mi sol la4 la \break
       do4 sol8( do) re4 re8 re
-      do8 sib do re la4 la \bar "||" \break
+      do8 sib do re la4 la \breathe \bar "||" \break
       la4 sol8 fa sib do re do
-      do8 sib la( sol) la2 \breathe \break
+      do8 sib la( sol) la2 \break
       do4 sol8( do) sib4 sib8 sib
       do8 re mi fa mi2 re1 \bar "||"
     }
@@ -111,14 +113,15 @@ harmony_stanza = \new ChordNames {
   \new Staff <<
     \new Voice = "melody" \relative do' {
       \tempo 4 = 60
+      \key re \minor
       \time 4/4
 
       la4 re8( mi) fa4 re8 re
-      do8 re mi do re4 re \breathe \break
+      do8 re mi do re4 re \break
       do4 re8 mi sib4 sib
-      mi8 re  do re mi4 mi \bar "||" \break
+      mi8 re  do re mi4 mi \breathe \bar "||" \break
       la,4 re8 mi re4 re8 re
-      mi8 fa sol mi re4 re \breathe \break
+      mi8 fa sol mi re4 re \break
       do4 re8 mi fa4 fa
       sol8 fa mi fa mi2 re1 \bar "||"
     }
@@ -146,14 +149,15 @@ harmony_stanza = \new ChordNames {
   \new Staff <<
     \new Voice = "melody" \relative do'' {
       \tempo 4 = 60
+      \key re \minor
       \time 4/4
 
       la4 sol8 fa sib la sol fa
-      sol8( fa) mi( sol) la4 la \breathe \break
+      sol8( fa) mi( sol) la4 la \break
       do4 sol8 do re4 re8 re
-      do8( sib) do re la4 la \bar "||" \break
+      do8( sib) do re la4 la \breathe \bar "||" \break
       la4 sol8 fa sib do re do
-      do8( sib) la sol la4 la \breathe \break
+      do8( sib) la sol la4 la \break
       do4 sol8( do) sib sib sib8 sib
       do8 re mi fa mi2 re1 \bar "||"
     }
@@ -181,14 +185,15 @@ harmony_stanza = \new ChordNames {
   \new Staff <<
     \new Voice = "melody" \relative do' {
       \tempo 4 = 60
+      \key re \minor
       \time 4/4
 
       la4 re8 mi fa4 re4
-      do8( re) mi do re4 re \breathe \break
+      do8( re) mi do re4 re \break
       do4 re8 mi sib4 sib8 sib
-      mi8 re  do re mi4 mi \bar "||" \break
+      mi8 re  do re mi4 mi \breathe \bar "||" \break
       la,4 re8 mi re4 re
-      mi8 fa sol mi re4 re \breathe \break
+      mi8 fa sol mi re4 re \break
       do4 re8 mi fa4 fa
       sol8 fa mi fa mi2 re1 \bar "||"
     }
@@ -216,14 +221,15 @@ harmony_stanza = \new ChordNames {
   \new Staff <<
     \new Voice = "melody" \relative do'' {
       \tempo 4 = 60
+      \key re \minor
       \time 4/4
 
       la4 sol8( fa) sib( la) sol fa
-      sol8 fa mi sol la4 la \breathe \break
+      sol8 fa mi sol la4 la \break
       do4 sol8( do) re4 re8 re
-      do8 sib do re la4 la \bar "||" \break
+      do8 sib do re la4 la \breathe \bar "||" \break
       la4 sol8 fa sib do re do
-      do8( sib) la( sol) la4 la \breathe \break
+      do8( sib) la( sol) la4 la \break
       do4 sol8( do) sib4 sib8 sib
       do8 re mi fa mi2 re1 \bar "||"
     }
@@ -251,14 +257,15 @@ harmony_stanza = \new ChordNames {
   \new Staff <<
     \new Voice = "melody" \relative do' {
       \tempo 4 = 60
+      \key re \minor
       \time 4/4
 
       la4 re8( mi) fa4 re4
-      do8 re mi do re4 re \breathe \break
+      do8 re mi do re4 re \break
       do4 re8 mi sib4 sib
-      mi8 re  do re mi4 mi \bar "||" \break
+      mi8 re  do re mi4 mi \breathe \bar "||" \break
       la,4 re8 mi re4 re
-      mi8 fa sol mi re4 re \breathe \break
+      mi8 fa sol mi re4 re \break
       do4 re8 mi fa4 fa
       sol8( fa) mi fa mi2 re1 \bar "||"
     }
@@ -286,14 +293,15 @@ harmony_stanza = \new ChordNames {
   \new Staff <<
     \new Voice = "melody" \relative do'' {
       \tempo 4 = 60
+      \key re \minor
       \time 4/4
 
       la4 sol8( fa) sib( la) sol fa
-      sol8 fa mi sol la4 la \breathe \break
+      sol8 fa mi sol la4 la \break
       do4 sol8 do re4 re
-      do8 sib do re la4 la \bar "||" \break
+      do8 sib do re la4 la \breathe \bar "||" \break
       la4 sol8 fa sib do re do
-      do8( sib) la( sol) la4 la \breathe \break
+      do8( sib) la( sol) la4 la \break
       do4 sol8 do sib4 sib
       do8 re mi fa mi2 re1 \bar "||"
     }
@@ -321,6 +329,7 @@ harmony_stanza = \new ChordNames {
   \new Staff <<
     \new Voice = "melody" \relative do'' {
       \tempo 4 = 60
+      \key re \minor
       \time 4/4
 
       <do sol>1

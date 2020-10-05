@@ -5,9 +5,9 @@
 
 %#(set-global-staff-size 22)
 
-\markup { \fill-line { \center-column { \fontsize #5 "Porque es eterno su amor" \fontsize #3 "Salmo 136 (135)" } } }
-\markup { \fill-line { \fontsize #2 \smallCaps "" \fontsize #2 "Samuel Gutiérrez"  } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" \small "(Septiembre, 2020)" } } }
+\markup { \fill-line { \center-column { \fontsize #5 "Alabado Sea" \fontsize #3 "Salmo 136 (135)" } } }
+\markup { \fill-line { \fontsize #2 \smallCaps "" \fontsize #2 "Linda Martínez"  } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" \small "(Septiembre, 2020)" } } }
 \header {
   dedication = "Dedicado a la Hnra. Lorena del Amor de Dios - Carmelitas Descalzas Managua"
   copyright = "Creative Commons Attribution 3.0"
@@ -201,7 +201,7 @@ musica = \relative do' {
   <sol si>4 <la do>
   <sol si>2 
   <mi la>4 <sol si> 
-  <la dos>2 
+  <la dos>2
 }
 
 % --- Letra
