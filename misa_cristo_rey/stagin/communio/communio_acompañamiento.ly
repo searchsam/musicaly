@@ -1,5 +1,5 @@
 % ****************************************************************
-%	Pricipe de los siglos - Melodia inspirada en las composiciones de Mons Marco Frisina
+%	Madre de la iglesia - Melodia inspirada en las composiciones de Mons Marco Frisina
 %   	Texto y musica con acompañamiento
 %	by serach.sam@
 % ****************************************************************
@@ -9,8 +9,8 @@
 #(set-global-staff-size 19.8)
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Principe de los siglos" \fontsize #2 "Misa de Cristo Rey" "Introito - Himno Solemnidad Cristo Rey" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Letra: Pbro. Vittorio Genovesi S. J." } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Madre de la Iglesia" \fontsize #2 "Misa de Cristo Rey" "Communio - Himno de la Memoria María Madre de la Iglesia" } } }
+%\markup { \fill-line { " " \right-column { \fontsize #2 "Letra: Pablo VI" } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Música: Samuel Gutiérrez Avilés" } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez Castro" \small "(Abril 2020)" } } }
 \header {
@@ -30,474 +30,281 @@ global = {
 
 Music = \relative do' {
   R1*4 \bar "||" \break
-  
-  la4^\markup { \italic "Contralto" } re8( mi) fa4 re8 re |
-  do8 re mi do re4 re 		|
-  do4 re8( mi) sib4 sib 		|
-  mi8 re  do re mi4 mi 		| \break
-  la,4 re8 mi re4 re4 		|
-  mi8 fa sol mi re4 re 		|
-  do4 re8( mi) fa4 fa 		|
-  sol8 fa mi fa mi2 		|
-  re1 				| \bar "||" \break
-  
-  la'4^\markup { \italic "Soprano" } sol8( fa) sib( la) sol fa |
-  sol8 fa mi sol la4 la 		|
-  do4 sol8( do) re4 re8 re	|
-  do8 sib do re la4 la 		| \break
-  la4 sol8 fa sib do re do	|
-  do8 sib la( sol) la2 		|
-  do4 sol8( do) sib4 sib8 sib	|
-  do8 re mi fa mi2 		|
-  re1 				| \bar "||" \break
-  
-  la,4^\markup { \italic "Contralto" } re8( mi) fa4 re8 re |
-  do8 re mi do re4 re 		|
-  do4 re8 mi sib4 sib		|
-  mi8 re  do re mi4 mi 		| \break
-  la,4 re8 mi re4 re8 re		|
-  mi8 fa sol mi re4 re		|
-  do4 re8 mi fa4 fa		|
-  sol8 fa mi fa mi2 		|
-  re1				| \bar "||" \break
-  
-  la'4^\markup { \italic "Soprano" } sol8 fa sib la sol fa |
-  sol8( fa) mi( sol) la4 la	|
-  do4 sol8 do re4 re8 re		|
-  do8( sib) do re la4 la 	| \break
-  la4 sol8 fa sib do re do	|
-  do8( sib) la sol la4 la 	|
-  do4 sol8( do) sib sib sib8 sib	|
-  do8 re mi fa mi2 		|
-  re1 				| \bar "||" \break
-  
-  la,4^\markup { \italic "Contralto" } re8 mi fa4 re4 |
-  do8( re) mi do re4 re 		|
-  do4 re8 mi sib4 sib8 sib	|
-  mi8 re  do re mi4 mi 		| \break
-  la,4 re8 mi re4 re		|
-  mi8 fa sol mi re4 re 		|
-  do4 re8 mi fa4 fa		|
-  sol8 fa mi fa mi2 		|
-  re1 				| \bar "||" \break
-  
-  la'4^\markup { \italic "Soprano" } sol8( fa) sib( la) sol fa |
-  sol8 fa mi sol la4 la 		|
-  do4 sol8( do) re4 re8 re	|
-  do8 sib do re la4 la 		| \break
-  la4 sol8 fa sib do re do	|
-  do8( sib) la( sol) la4 la 	|
-  do4 sol8( do) sib4 sib8 sib	|
-  do8 re mi fa mi2 		|
-  re1 				| \bar "||" \break
-  
-  la,4^\markup { \italic "Contralto" } re8( mi) fa4 re4 |
-  do8 re mi do re4 re 		|
-  do4 re8 mi sib4 sib		|
-  mi8 re  do re mi4 mi 		| \break
-  la,4 re8 mi re4 re		|
-  mi8 fa sol mi re4 re 		|
-  do4 re8 mi fa4 fa		|
-  sol8( fa) mi fa mi2 		|
-  re1 				| \bar "||" \break
-  
-  la'4^\markup { \italic "Soprano" } sol8( fa) sib( la) sol fa |
-  sol8 fa mi sol la4 la		|
-  do4 sol8 do re4 re		|
-  do8 sib do re la4 la 		| \break
-  la4 sol8 fa sib do re do	|
-  do8( sib) la( sol) la4 la	|
-  do4 sol8 do sib4 sib		|
-  do8 re mi fa mi2 		|
-  re1 				| \bar "||" \break
-  
-  <do sol>1^\markup { \italic "Soprano" }_\markup { \italic "Contralto" } |
-  <re la>1			|
+
+  fa4^\markup { \italic "Solo Mezzosoprano" } mi8 re mi re do mi |
+  re8( do) sib re do4 do 	|
+  sol'4 la8 sol fa sol la fa	|
+  fa8( mi) re( fa) mi4 mi \breathe | \break
+  fa4 mi8 re mi fa sol mi	|
+  fa8( sol) la( fa) sol4 sol 	|
+  re4 fa8 mi re do sib re	|
+  mi8( re) dos( mi) re4 re 	| \bar "||" \break
+
+  la'4^\markup { \italic "Soprano" } sol8 fa sol fa mi( sol) |
+  fa8 mi re fa mi4 mi		|
+  sol4 la8 sib do sib la do|	|
+  re do sib re dos4 dos \breathe | \break
+  la4 sib8 la sol fa mi( sol)	|
+  la8 sib do la sib4 sib 	|
+  la4 sol8 la sib la sol sib	|
+  dos8( sib) la( dos) re4 re 	| \bar "||" \break
+
+  fa,4^\markup { \italic "Solo Mezzosoprano" } mi8 re mi re do mi |
+  re8( do) sib( re) do4 do	|
+  sol'4 la8 sol fa sol la fa 	|
+  fa8 mi re fa mi4 mi \breathe 	| \break
+  fa4 mi8 re mi fa sol( mi)	|
+  fa8 sol la fa sol2 		|
+  re4 fa8 mi re do sib re	|
+  mi8( re) dos( mi) re4 re 	| \bar "||" \break
+
+  la'4^\markup { \italic "Soprano" } sol8 fa sol fa mi sol |
+  fa8( mi) re( fa) mi4 mi 	|
+  sol4 la8 sib do sib la( do)	|
+  re do sib re dos4 dos \breathe	| \break
+  la4 sib8 la sol fa mi sol	|
+  la8( sib) do la sib4 sib	|
+  la4 sol8 la sib la sol sib	|
+  dos8( sib) la dos re4 re	| \bar "||" \break
+
+  sol,1^\markup { \italic "Soprano" } |
+  la1			|
 
   \bar "|."
 }
 Words = \lyricmode {
-  Prín -- ci -- pe ab -- so -- lu -- to de los si -- glos,
-  Je -- su -- cris -- to, rey de las na -- cio -- nes:
-  te con -- fe -- sa -- mos ár -- bi -- tro su -- pre -- mo
-  de las men -- tes y los co -- ra -- zo -- nes.
-  
-  En la tie -- rra te~a -- do -- ran los mor -- ta -- les
-  y los san -- tos te~a -- la -- ban en el cie -- lo,
-  u -- ni -- dos a sus vo -- ces te~a -- cla -- ma -- mos
-  pro -- cla -- mán -- do -- te rey del u -- ni -- ver -- so.
-  
-  Je -- su -- cris -- to, prín -- ci -- pe pa -- cí -- fi -- co
-  so -- me -- te~a los es -- pí -- ri -- tus re -- bel -- des,
-  haz que en -- cuen -- tren el rum -- bo los per -- di -- dos
-  en un so -- lo a -- pris -- co se con -- gre -- guen.
-  
-  Por e -- so pen -- des de~u -- na cruz san -- grien -- ta,
-  a -- bres en e -- lla tus di -- vi -- nos bra -- zos;
-  por e -- so mues -- tras en tu pe -- cho he -- ri -- do
-  tu ar -- dien -- te co -- ra -- zón a -- tra -- ve -- sa -- do.
-  
-  Es -- tás o -- cul -- to en los al -- ta -- res
-  tras las i -- má -- ge -- nes del pan y el vi -- no;
-  por e -- so vier -- tes de tu pe -- cho~a -- bier -- to
-  san -- gre de sal -- va -- ción pa -- ra tus hi -- jos.
-  
-  Con ho -- no -- res pú -- bli -- cos te en -- sal -- cen
-  los que tie -- nen po -- der so -- bre la tie -- rra;
-  El ma -- es -- tro~y el juez te rin -- dan  cul -- to,
-  el ar -- te y la ley no te des -- mien -- tan.
-  
-  Las in -- sig -- nias de los re -- yes to -- dos
-  te se -- an pa -- ra siem -- pre de -- di -- ca -- das,
-  y es -- tén so -- me -- ti -- dos a tu ce -- tro
-  los ciu -- da -- da -- nos de las na -- cio -- nes.
-  
-  Go -- bier -- nas con a -- mor el u -- ni -- ver -- so,
-  glo -- ri -- fi -- ca -- do se -- as, Je -- su -- cris -- to,
-  y que con -- ti -- go~y con tu~e -- ter -- no Pa -- dre
-  re -- ci -- ba glo -- ria~el San -- to Es -- pí -- ri -- tu.
-  
+  Ca -- be -- za~y cuer -- po, Cris -- to for -- ma un to -- do,
+  hi -- jo de Dios e hi -- jo de Ma -- rí -- a:
+  un hi -- jo~en quien se jun -- tan mu -- chos hi -- jos:
+  en su Ma -- dre la~I -- gle -- sia se per -- fi -- la.
+
+  U -- na y o -- tra son ma -- dre y son vír -- gen,
+  u -- na y o -- tra del Es -- pí -- ri -- tu con -- ci -- ben,
+  u -- na y o -- tra sin man -- cha ni pe -- ca -- do,
+  al Pa -- dre ce -- les -- tial en -- gen -- dran hi -- jos.
+
+  Ma -- rí -- a da al cuer -- po la ca -- be -- za,
+  la I -- gle -- sia a la ca -- be -- za da el cuer -- po:
+  u -- na y o -- tra son ma -- dre del Se -- ñor,
+  nin -- gu -- na sin la o -- tra por en -- te -- ro.
+
+  Glo -- ria~a la Tri -- ni -- dad i -- nac -- ce -- si -- ble
+  que ha que -- ri -- do mo -- rar en -- tre no -- so -- tros,
+  en Ma -- rí -- a, la~I -- gle -- sia, en nues -- tra al -- ma,
+  pa -- ra lle -- nar -- nos de su e -- ter -- no go -- zo.
+
+  A -- mén.
+}
+
+Music_dos = \relative do' {
+  R1*4 \bar "||" \break
+
+  R1*8 |
+
+  re4^\markup { \italic "Contralto" } re8 re do8 re mi( do) |
+  sib8 do re sib do4 do		|
+  re4 re8 re do re mi do		|
+  sib do re sib la4 la \breathe	|
+  re4 re8 re mi8 re do( mi)	|
+  fa8 mi re fa sol4 sol		|
+  fa4 fa8 mi re do sib re	|
+  mi( fa) sol( mi) fa4 fa	|
+
+  R1*8 |
+
+  re4^\markup { \italic "Contalto" } re8 re do8 re mi do |
+  sib8( do) re( sib) do4 do	|
+  re4 re8 re do re mi( do) 	|
+  sib do re sib la4 la 	| \breathe
+  re4 re8 re mi8 re do mi	|
+  fa8( mi) re fa sol4 sol	|
+  fa4 fa8 mi re do sib re 	|
+  mi( fa) sol mi fa4 fa 		| \bar "||"
+
+  do1^\markup { \italic "Contralto" } |
+  re1			|
+
+  \bar "|."
+}
+Words_dos = \lyricmode {
+  U -- na y o -- tra son ma -- dre y son vír -- gen,
+  u -- na y o -- tra del Es -- pí -- ri -- tu con -- ci -- ben,
+  u -- na y o -- tra sin man -- cha ni pe -- ca -- do,
+  al Pa -- dre ce -- les -- tial en -- gen -- dran hi -- jos.
+
+  Glo -- ria~a la Tri -- ni -- dad i -- nac -- ce -- si -- ble
+  que ha que -- ri -- do mo -- rar en -- tre no -- so -- tros,
+  en Ma -- rí -- a, la~I -- gle -- sia, en nues -- tra al -- ma,
+  pa -- ra lle -- nar -- nos de su e -- ter -- no go -- zo.
+
   A -- mén.
 }
 
 NotesSop = \relative do' {
-  R1*3 |fa1\p | \bar "||"
-  
-  fa2 re2	|
-  mi2 fa 	|
-  mi2 re		|
-  mi2 do		| \break
-  fa2 re2	|
-  mi2 fa 	|
-  mi2 re		|
-  mi2 do		| 
-  fa1		| \bar "||" \break
-  
-  fa2 re2	|
-  mi2 fa 	|
-  mi2 re		|
-  mi2 do		| \break
-  fa2 re2	|
-  mi2 fa 	|
-  mi2 re		|
-  mi2 do		| 
-  fa1		| \bar "||" \break
-  
-  fa2 re2	|
-  mi2 fa 	|
-  mi2 re		|
-  mi2 do		| \break
-  fa2 re2	|
-  mi2 fa 	|
-  mi2 re		|
-  mi2 do		| 
-  fa1		| \bar "||" \break
-  
-  fa2 re2	|
-  mi2 fa 	|
-  mi2 re		|
-  mi2 do		| \break
-  fa2 re2	|
-  mi2 fa 	|
-  mi2 re		|
-  mi2 do		| 
-  fa1		| \bar "||" \break
-  
-  fa2 re2	|
-  mi2 fa 	|
-  mi2 re		|
-  mi2 do		| \break
-  fa2 re2	|
-  mi2 fa 	|
-  mi2 re		|
-  mi2 do		| 
-  fa1		| \bar "||" \break
-  
-  fa2 re2	|
-  mi2 fa 	|
-  mi2 re		|
-  mi2 do		| \break
-  fa2 re2	|
-  mi2 fa 	|
-  mi2 re		|
-  mi2 do		| 
-  fa1		| \bar "||" \break
-  
-  fa2 re2	|
-  mi2 fa 	|
-  mi2 re		|
-  mi2 do		| \break
-  fa2 re2	|
-  mi2 fa 	|
-  mi2 re		|
-  mi2 do		| 
-  fa1		| \bar "||" \break
-  
-  fa2 re2	|
-  mi2 fa 	|
-  mi2 re		|
-  mi2 do		| \break
-  fa2 re2	|
-  mi2 fa 	|
-  mi2 re		|
-  mi2 do		| 
-  fa1		| \bar "||" \break
-  
+  R1*3 | fa1~\p | \bar "||"
+
+  fa2 mi2	|
+  re2 do 	|
+  sib'2 la	|
+  re,2 dos	|
+  fa2 mi2	|
+  la2 sib 	|
+  fa2 sib	|
+  dos,2 fa~	|
+
+  fa2 mi2	|
+  re2 do 	|
+  sib'2 la	|
+  re,2 dos	|
+  fa2 mi2	|
+  la2 sib 	|
+  fa2 sib	|
+  dos,2 fa~	|
+
+  fa2 mi2	|
+  re2 do 	|
+  sib'2 la	|
+  re,2 dos	|
+  fa2 mi2	|
+  la2 sib 	|
+  fa2 sib	|
+  dos,2 fa~	|
+
+  fa2 mi2	|
+  re2 do 	|
+  sib'2 la	|
+  re,2 dos	|
+  fa2 mi2	|
+  la2 sib 	|
+  fa2 sib	|
+  dos,2 fa	|
+
   mi1		|
   fa1		|
 }
 NotesAlt = \relative do' {
-  la1 | sib2 do | re1 | re1\p | \bar "||"
-  
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| \break
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| 
-  re1		| \bar "||" \break
-  
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| \break
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| 
-  re1		| \bar "||" \break
-  
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| \break
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| 
-  re1		| \bar "||" \break
-  
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| \break
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| 
-  re1		| \bar "||" \break
-  
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| \break
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| 
-  re1		| \bar "||" \break
-  
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| \break
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| 
-  re1		| \bar "||" \break
-  
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| \break
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| 
-  re1		| \bar "||" \break
-  
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| \break
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| 
-  re1		| \bar "||" \break
+  re1 | mi2 fa | mi1 | re1~\p | \bar "||"
+
+  re2 do 	|
+  sib2 la	|
+  sol'2 fa	|
+  sib,2 la	|
+  re2 do 	|
+  fa2 sol	|
+  re2 sol	|
+  la,2 re~	|
+
+  re2 do 	|
+  sib2 la	|
+  sol'2 fa	|
+  sib,2 la	|
+  re2 do 	|
+  fa2 sol	|
+  re2 sol	|
+  la,2 re~	|
+
+  re2 do 	|
+  sib2 la	|
+  sol'2 fa	|
+  sib,2 la	|
+  re2 do 	|
+  fa2 sol	|
+  re2 sol	|
+  la,2 re~	|
+
+  re2 do 	|
+  sib2 la	|
+  sol'2 fa	|
+  sib,2 la	|
+  re2 do 	|
+  fa2 sol	|
+  re2 sol	|
+  la,2 re	|
+
+  do1		|
+  re1		|
 }
 NotesTer = \relative do {
-  re1\p | re2 do | re1 | la'1 | \bar "||"
-  
-  la2 fa 	|
-  sol2 la	|
-  sol2 fa	|
-  sol2 mi	| \break
-  la2 fa 	|
-  sol2 la	|
-  sol2 fa	|
-  sol2 mi	| 
-  la1		| \bar "||" \break
-  
-  la2 fa 	|
-  sol2 la	|
-  sol2 fa	|
-  sol2 mi	| \break
-  la2 fa 	|
-  sol2 la	|
-  sol2 fa	|
-  sol2 mi	| 
-  la1		| \bar "||" \break
-  
-  la2 fa 	|
-  sol2 la	|
-  sol2 fa	|
-  sol2 mi	| \break
-  la2 fa 	|
-  sol2 la	|
-  sol2 fa	|
-  sol2 mi	| 
-  la1		| \bar "||" \break
-  
-  la2 fa 	|
-  sol2 la	|
-  sol2 fa	|
-  sol2 mi	| \break
-  la2 fa 	|
-  sol2 la	|
-  sol2 fa	|
-  sol2 mi	| 
-  la1		| \bar "||" \break
-  
-  la2 fa 	|
-  sol2 la	|
-  sol2 fa	|
-  sol2 mi	| \break
-  la2 fa 	|
-  sol2 la	|
-  sol2 fa	|
-  sol2 mi	| 
-  la1		| \bar "||" \break
-  
-  la2 fa 	|
-  sol2 la	|
-  sol2 fa	|
-  sol2 mi	| \break
-  la2 fa 	|
-  sol2 la	|
-  sol2 fa	|
-  sol2 mi	| 
-  la1		| \bar "||" \break
-  
-  la2 fa 	|
-  sol2 la	|
-  sol2 fa	|
-  sol2 mi	| \break
-  la2 fa 	|
-  sol2 la	|
-  sol2 fa	|
-  sol2 mi	| 
-  la1		| \bar "||" \break
-  
-  la2 fa 	|
-  sol2 la	|
-  sol2 fa	|
-  sol2 mi	| \break
-  la2 fa 	|
-  sol2 la	|
-  sol2 fa	|
-  sol2 mi	| 
-  la1		| \bar "||" \break
-  
+  re1\p | mi2 re | mi1 | la1~ | \bar "||"
+
+  la2 sol 	|
+  fa2 mi		|
+  re'2 do	|
+  fa,2 mi	|
+  la2 sol 	|
+  do2 re		|
+  la2 re		|
+  mi,2 la~	|
+
+  la2 sol 	|
+  fa2 mi		|
+  re'2 do	|
+  fa,2 mi	|
+  la2 sol 	|
+  do2 re		|
+  la2 re		|
+  mi,2 la~	|
+
+  la2 sol 	|
+  fa2 mi		|
+  re'2 do	|
+  fa,2 mi	|
+  la2 sol 	|
+  do2 re		|
+  la2 re		|
+  mi,2 la~	|
+
+  la2 sol 	|
+  fa2 mi		|
+  re'2 do	|
+  fa,2 mi	|
+  la2 sol 	|
+  do2 re		|
+  la2 re		|
+  mi,2 la	|
+
   sol1		|
   la1		|
 }
 NotesBas = \relative do {
-  la1\p | sib2 do | re1 | re1 | \bar "||"
-  
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| \break
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| 
-  re1		| \bar "||" \break
-  
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| \break
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| 
-  re1		| \bar "||" \break
-  
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| \break
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| 
-  re1		| \bar "||" \break
-  
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| \break
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| 
-  re1		| \bar "||" \break
-  
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| \break
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| 
-  re1		| \bar "||" \break
-  
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| \break
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| 
-  re1		| \bar "||" \break
-  
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| \break
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| 
-  re1		| \bar "||" \break
-  
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| \break
-  re2 sib 	|
-  do2 re		|
-  do2 sib	|
-  do2 la		| 
-  re1		| \bar "||" \break
-  
+  la1\p | do2 sib | dos1 | re1~ | \bar "||"
+
+  re2 do 	|
+  sib2 la	|
+  sol'2 fa	|
+  sib,2 la	|
+  re2 do 	|
+  fa2 sol	|
+  re2 sol	|
+  la,2 re~	|
+
+  re2 do 	|
+  sib2 la	|
+  sol'2 fa	|
+  sib,2 la	|
+  re2 do 	|
+  fa2 sol	|
+  re2 sol	|
+  la,2 re~	|
+
+  re2 do 	|
+  sib2 la	|
+  sol'2 fa	|
+  sib,2 la	|
+  re2 do 	|
+  fa2 sol	|
+  re2 sol	|
+  la,2 re~	|
+
+  re2 do 	|
+  sib2 la	|
+  sol'2 fa	|
+  sib,2 la	|
+  re2 do 	|
+  fa2 sol	|
+  re2 sol	|
+  la,2 re	|
+
   do1		|
   re1		|
 }
@@ -506,48 +313,28 @@ NotesBas = \relative do {
 armonias = \new ChordNames {
   \chordmode {
     \italianChords
-    re1:m sib2 do re1:m R1
-    
-    R2 sib2 do2 re2:m
-    do2 sib2 do2 la2:m
-    re2:m sib2 do2 re2:m
-    do2 sib2 do2 la2:m re1:m
+    re1:m do2 sib la1:7 re1:m
 
-    R2 sib2 do2 re2:m
-    do2 sib2 do2 la2:m
-    re2:m sib2 do2 re2:m
-    do2 sib2 do2 la2:m re1:m
-    
-    R2 sib2 do2 re2:m
-    do2 sib2 do2 la2:m
-    re2:m sib2 do2 re2:m
-    do2 sib2 do2 la2:m re1:m
-    
-    R2 sib2 do2 re2:m
-    do2 sib2 do2 la2:m
-    re2:m sib2 do2 re2:m
-    do2 sib2 do2 la2:m re1:m
-    
-    R2 sib2 do2 re2:m
-    do2 sib2 do2 la2:m
-    re2:m sib2 do2 re2:m
-    do2 sib2 do2 la2:m re1:m
-    
-    R2 sib2 do2 re2:m
-    do2 sib2 do2 la2:m
-    re2:m sib2 do2 re2:m
-    do2 sib2 do2 la2:m re1:m
-    
-    R2 sib2 do2 re2:m
-    do2 sib2 do2 la2:m
-    re2:m sib2 do2 re2:m
-    do2 sib2 do2 la2:m re1:m
-    
-    R2 sib2 do2 re2:m
-    do2 sib2 do2 la2:m
-    re2:m sib2 do2 re2:m
-    do2 sib2 do2 la2:m re1:m
-    
+    s2 do2 sib2 la2:m
+    sol2:m fa2 sib2 la2
+    re2:m do2 fa2 sol2:m
+    re2:m sol2:m la2:7 re2:m
+
+    s2 do2 sib2 la2:m
+    sol2:m fa2 sib2 la2
+    re2:m do2 fa2 sol2:m
+    re2:m sol2:m la2:7 re2:m
+
+    s2 do2 sib2 la2:m
+    sol2:m fa2 sib2 la2
+    re2:m do2 fa2 sol2:m
+    re2:m sol2:m la2:7 re2:m
+
+    s2 do2 sib2 la2:m
+    sol2:m fa2 sib2 la2
+    re2:m do2 fa2 sol2:m
+    re2:m sol2:m la2:7 re2:m
+
     do1 re1:m
   }
 }
@@ -555,14 +342,19 @@ armonias = \new ChordNames {
 \score {
   <<
     \new Voice = "melodia" <<
-      %\set Staff.instrumentName = #"Sopranos"
       \set Staff.midiInstrument = #"choir aahs"
       \set Staff.midiMaximumVolume = #1.5
       \global \Music
-    >>
-    \new Lyrics = "melodia"
+    >>\new Lyrics = "melodia"
     \context Lyrics = "melodia" \lyricsto "melodia" \Words
-    %\armonias
+    \new Voice = "melodia_dos" <<
+      \set Staff.midiInstrument = #"choir aahs"
+      \set Staff.midiMaximumVolume = #1.5
+      \global \Music_dos
+    >>
+    \new Lyrics = "melodia_dos"
+    \context Lyrics = "melodia_dos" \lyricsto "melodia_dos" \Words_dos
+    \armonias
     \new PianoStaff <<
       \new Staff <<
         \set Staff.instrumentName = #"Organo"
@@ -592,10 +384,5 @@ armonias = \new ChordNames {
 \paper{
   #(set-default-paper-size "letter")
   indent=3.5\cm
+  page-breaking = #ly:page-turn-breaking
 }
-
-
-%{
-convert-ly (GNU LilyPond) 2.19.84  convert-ly: Procesando «»...
-Aplicando la conversión:     El documento no ha cambiado.
-%}

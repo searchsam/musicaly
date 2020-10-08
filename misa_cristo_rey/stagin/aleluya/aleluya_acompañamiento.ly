@@ -184,8 +184,8 @@ armonias = \new ChordNames {
     re2 dos2:m si2:m la2 fas1:m
 
     la4 re4 dos2:m re4 mi4 fas2:m la4 re4 mi2 R1
-    mi1 R1 la1 sols1:m fas1:m R4 mi4 fas2:m
-    R1 la4 re4 dos2:m re4 mi4 fas2:m la4 re4 mi2
+    mi1 R1 la1 sols1:m fas1:m s4 mi4 fas2:m
+    s1 la4 re4 dos2:m re4 mi4 fas2:m la4 re4 mi2
   }
 }
 
@@ -213,7 +213,7 @@ armonias = \new ChordNames {
         \context Lyrics = "contralto" \lyricsto "contralto" \alto_words
       >>
     >>
-    %\armonias
+    \armonias
     \new PianoStaff <<
       \new Staff <<
         \set Staff.instrumentName = #"Organo"
@@ -243,4 +243,5 @@ armonias = \new ChordNames {
 \paper{
   #(set-default-paper-size "letter")
   indent=3.5\cm
+  page-breaking = #ly:page-turn-breaking
 }

@@ -6,10 +6,11 @@
 \language "espanol"
 \version "2.19.82"
 
-#(set-global-staff-size 17)
+#(set-global-staff-size 21)
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Santo" \fontsize #2 "Misa Cristo Rey" } } }
+\markup { \fill-line { " " \center-column { \fontsize #2 "Linda Martínez" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" \small "(Octubre 2019)" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
@@ -244,4 +245,5 @@ altusLyrics = \lyricmode {
 % --- Pagina
 \paper{
   #(set-default-paper-size "letter")
+  %page-breaking = #ly:page-turn-breaking
 }

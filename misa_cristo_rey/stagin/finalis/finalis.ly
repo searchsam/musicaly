@@ -33,14 +33,14 @@ harmony_stanza = \new ChordNames {
 % --- Coro
 \score {
   <<
-    %\harmony_stanza
+    \harmony_stanza
     \new Staff <<
       \new Voice = "melody" \relative do' {
-        \tempo 4 = 60
+        \tempo 4 = 70
         \key re \minor
         \time 2/4
-        
-        fa4 sol8 la 
+
+        fa4 sol8 la
         sol4 fa8( sol)
         la4 la \break
         do4 sib8( la)
@@ -90,22 +90,22 @@ harmony = \new ChordNames {
 % --- Coro
 \score {
   <<
-    %\harmony
+    \harmony
     \new Staff <<
       \new Voice = "melody" \relative do' {
-        \tempo 4 = 60
+        \tempo 4 = 70
         \key re \minor
         \time 2/4
-        
-        fa4 sol8 fa 
+
+        fa4 sol8 fa
         mi4 re8 do
         re4 re \break
         fa4 mi8( fa)
         sol4 fa8 mi
         re4 mi8 fa
         mi2 \breathe \bar "||" \break
-        la4 sol8 fa 
-        mi4 re8 do 
+        la4 sol8 fa
+        mi4 re8 do
         re2 \break
         mi4 re8( do)
         re4 do8( re)
@@ -138,11 +138,11 @@ harmony = \new ChordNames {
     %\harmony_stanza
     \new Staff <<
       \new Voice = "melody" \relative do' {
-        \tempo 4 = 60
+        \tempo 4 = 70
         \key re \minor
         \time 2/4
-        
-        fa4 sol8 la 
+
+        fa4 sol8 la
         sol4 fa8 sol
         la4 la \break
         do4 sib8 la
@@ -161,7 +161,7 @@ harmony = \new ChordNames {
       \new Lyrics \lyricsto "melody" {
         ¡Ten -- sa la cuer -- da~en el ar -- co,
         que~ha -- ce te -- rri -- ble~a tu de -- re -- cha!
-        A -- gu -- das son tus fle -- chas, 
+        A -- gu -- das son tus fle -- chas,
         ba -- jo tus pies es -- tán los pue -- blos.
       }
     >>
@@ -183,18 +183,18 @@ harmony = \new ChordNames {
     %\harmony
     \new Staff <<
       \new Voice = "melody" \relative do' {
-        \tempo 4 = 60
+        \tempo 4 = 70
         \key re \minor
         \time 2/4
-        
-        fa4 sol8 fa 
+
+        fa4 sol8 fa
         mi4 re8( do)
         re2 \break
         fa4 mi8( fa)
         sol4 fa8( mi)
         re4 mi8 fa
         mi2 \breathe \bar "||" \break
-        la4 sol8 fa 
+        la4 sol8 fa
         mi4 re8( do)
         re4 re \break
         mi4 re8 do
@@ -204,9 +204,9 @@ harmony = \new ChordNames {
         re2) \bar "||"
       }
       \new Lyrics \lyricsto "melody" {
-        Tu tro -- no es de Dios; 
+        Tu tro -- no es de Dios;
         tu ce -- tro es la e -- qui -- dad;
-        tú a -- mas la jus -- ti -- cia 
+        tú a -- mas la jus -- ti -- cia
         y o -- dias la im -- pie -- dad.
       }
     >>
@@ -228,11 +228,11 @@ harmony = \new ChordNames {
     %\harmony_stanza
     \new Staff <<
       \new Voice = "melody" \relative do' {
-        \tempo 4 = 60
+        \tempo 4 = 70
         \key re \minor
         \time 2/4
-        
-        fa4 sol8 la 
+
+        fa4 sol8 la
         sol4 fa8 sol
         la4 la \break
         do4 sib8 la
@@ -273,19 +273,19 @@ harmony = \new ChordNames {
     %\harmony
     \new Staff <<
       \new Voice = "melody" \relative do' {
-        \tempo 4 = 60
+        \tempo 4 = 70
         \key re \minor
         \time 2/4
-        
-        fa4 sol8 fa 
+
+        fa4 sol8 fa
         mi8 mi re8 do
         re4 re \break
         fa4 mi8 fa
         sol4 fa8 mi
         re4 mi8( fa)
         mi4 mi \breathe \bar "||" \break
-        la4 sol8 fa 
-        mi8 mi re8 do 
+        la4 sol8 fa
+        mi8 mi re8 do
         re2 \break
         mi4 re8 do
         re8 re do8 re
@@ -318,11 +318,11 @@ harmony = \new ChordNames {
     %\harmony_stanza
     \new Staff <<
       \new Voice = "melody" \relative do' {
-        \tempo 4 = 60
+        \tempo 4 = 70
         \key re \minor
         \time 2/4
-        
-        fa8 fa sol8 la 
+
+        fa8 fa sol8 la
         sol8 sol fa8 sol
         la4 la \break
         do4 sib8 la
@@ -339,9 +339,9 @@ harmony = \new ChordNames {
         fa2) \bar "||"
       }
       \new Lyrics \lyricsto "melody" {
-        La hi -- ja de Ti -- ro con pre -- sen -- tes, 
-        to -- da es -- plén -- di -- da, la hi -- ja del rey, 
-        con ves -- ti -- dos en o -- ro; 
+        La hi -- ja de Ti -- ro con pre -- sen -- tes,
+        to -- da es -- plén -- di -- da, la hi -- ja del rey,
+        con ves -- ti -- dos en o -- ro;
         es lle -- va -- da~an -- te el rey.
       }
     >>
@@ -363,10 +363,10 @@ harmony = \new ChordNames {
     %\harmony
     \new Staff <<
       \new Voice = "melody" \relative do' {
-        \tempo 4 = 60
+        \tempo 4 = 70
         \key re \minor
         \time 2/4
-        
+
         fa4 sol8( fa)
         mi4 re8( do)
         re4 re \break
@@ -374,8 +374,8 @@ harmony = \new ChordNames {
         sol4 fa8( mi)
         re4 mi8( fa)
         mi2 \breathe \bar "||" \break
-        la4 sol8 fa 
-        mi4 re8 do 
+        la4 sol8 fa
+        mi4 re8 do
         re4 re \break
         mi4 re8( do)
         re4 do8 re
@@ -384,9 +384,9 @@ harmony = \new ChordNames {
         re2) \bar "||"
       }
       \new Lyrics \lyricsto "melody" {
-        Vír -- ge -- nes tras e -- lla, 
-        don -- de él son lle -- va -- das; 
-        en -- tre~al -- bo -- ro -- zo a -- van -- zan, 
+        Vír -- ge -- nes tras e -- lla,
+        don -- de él son lle -- va -- das;
+        en -- tre~al -- bo -- ro -- zo a -- van -- zan,
         en -- tran en el pa -- la -- cio del rey.
       }
     >>
@@ -408,11 +408,11 @@ harmony = \new ChordNames {
     %\harmony_stanza
     \new Staff <<
       \new Voice = "melody" \relative do' {
-        \tempo 4 = 60
+        \tempo 4 = 70
         \key re \minor
         \time 2/4
-        
-        fa8 fa sol8 la 
+
+        fa8 fa sol8 la
         sol8 sol fa8 sol
         la4 la \break
         do4 sib8 la
@@ -429,9 +429,9 @@ harmony = \new ChordNames {
         fa2 \bar "||"
       }
       \new Lyrics \lyricsto "melody" {
-        En lu -- gar de pa -- dres ten -- drás hi -- jos; 
+        En lu -- gar de pa -- dres ten -- drás hi -- jos;
         prín -- ci -- pes los ha -- rás de la tie -- rra.
-        ¡Tu nom -- bre se -- rá me -- mo -- ra -- ble, 
+        ¡Tu nom -- bre se -- rá me -- mo -- ra -- ble,
         los pue -- blos te~a -- la -- ba -- ran por los si -- glos!
       }
     >>

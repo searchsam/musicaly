@@ -5,11 +5,12 @@
 \language "espanol"
 \version "2.19.82"
 
-#(set-global-staff-size 18)
+#(set-global-staff-size 19.5)
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Credo" \fontsize #2 "Misa Cristo Rey" } } }
-\markup { \fill-line { " " "Simbolo Apostolico" \center-column { \fontsize #2 "Samuel Gutiérrez Avilés" \small "(Octubre 2019)" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Credo" \fontsize #2 "Misa Cristo Rey" "Simbolo Apostolico"} } }
+\markup { \fill-line { " " \center-column { \fontsize #2 "Linda Martínez" } } }
+\markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -536,4 +537,5 @@ altusLyricsEspiritu = \lyricmode {
 % --- Pagina
 \paper{
   #(set-default-paper-size "letter")
+  page-breaking = #ly:page-turn-breaking
 }

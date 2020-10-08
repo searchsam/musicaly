@@ -29,7 +29,7 @@ global = {
 
 Music = \relative do' {
   R1*4		 		| \bar "||" \break
-  
+
   re4^\markup{ \italic "Solo" } mi8 mi fa4 fa \breathe |
   sol4( fa8) mi re4 re \breathe	|
   fa4( mi8) re do4( re4~		|
@@ -38,7 +38,7 @@ Music = \relative do' {
   <sol mi>4( <fa do>8) <mi do> re4 re \breathe |
   <fa re>4( mi8) re do4( re4~	|
   re2) r				| \bar "||" \break
-  
+
   fa8^\markup{ "Estrofa I" \italic "Solo" } sol la la4 r8 la8 la |
   \tuplet 3/2 {la8( fa) sol} la4 la r | \break
   la8( sol) fa4 fa8 fa fa fa 	|
@@ -47,12 +47,12 @@ Music = \relative do' {
   \tuplet 3/2 { mi4 re8 } fa2 r4 | \break
   re8 do la la2 r8 		|
   sib4 do re4 re 		| \bar "||" \break
-  
+
   re4^\markup{ \italic "Todos" } mi8 mi <fa re>4 <fa re> \breathe |
   <sol mi>4( <fa do>8) <mi do> re4 re \breathe |
   <fa re>4( mi8) re do4( re4~	|
   re2) r				| \bar "||" \break
-  
+
   fa8^\markup{ "Estrofa II" \italic "Solo" } sol la la2 r8 |
   \tuplet 3/2 {la8( fa sol)} la4 la r | \break
   la8( sol) fa fa2 r8 		|
@@ -65,7 +65,7 @@ Music = \relative do' {
   fa8 mi re4 re r 		| \break
   re8 sib la la2 la8		|
   sib4 do re2	 		| \bar "||" \break
-  
+
   re4^\markup{ \italic "Todos" } mi8 mi <fa re>4 <fa re> \breathe |
   <sol mi>4( <fa do>8) <mi do> re4 re \breathe |
   <fa re>4( mi8) re do4( re4~	|
@@ -76,27 +76,27 @@ Music = \relative do' {
 Words = \lyricmode {
   Va -- mos a -- le -- gres a  la ca -- sa del Se -- ñor.
   Va -- mos a -- le -- gres a  la ca -- sa del Se -- ñor.
-  
+
   ¡Qué~a -- le -- grí -- a cuan -- do me di -- je -- ron:
   «Va -- mos a la ca -- sa del Se -- ñor»!
   Ya es -- tán pi -- san -- do nues -- tros pies
   por el ho -- nor de su nom -- bre.
-  
+
   Va -- mos a -- le -- gres a  la ca -- sa del Se -- ñor.
-  
-  A -- llá su -- ben las tri -- bus,  
+
+  A -- llá su -- ben las tri -- bus,
   las tri -- bus del Se -- ñor,
   se -- gún la cos -- tum -- bre de Is -- ra -- el,
-  a ce -- le  brar el nom -- bre del Se -- ñor;  
+  a ce -- le  brar el nom -- bre del Se -- ñor;
   en e -- lla es -- tán los tri -- bu -- na -- les de jus -- ti -- cia,
   en el pa -- la -- cio de Da -- vid.
-  
+
   Va -- mos a -- le -- gres a  la ca -- sa del Se -- ñor.
 }
 
 NotesSop = \relative do' {
   R1*3 fa1\p~  		| \bar "||"
-  
+
   fa4 mi fa2		|
   mi2 fa			|
   re2 mi4 fa~		|
@@ -105,7 +105,7 @@ NotesSop = \relative do' {
   mi2 fa			|
   re2 mi4 fa~		|
   fa1~			| \bar "||"
-  
+
   fa4 la2.~		|
   la4 dos,2.		|
   dos4 re2.~		|
@@ -114,12 +114,12 @@ NotesSop = \relative do' {
   mi4 re2.~		|
   re4 la'2.		|
   re,4 mi fa2~		| \bar "||"
-  
+
   fa4 mi fa2		|
   mi2 fa			|
   re2 mi4 fa~		|
   fa1~			| \bar "||"
-  
+
   fa4 la2.~		|
   la4 dos,2.		|
   dos4 re2.~		|
@@ -132,7 +132,7 @@ NotesSop = \relative do' {
   re4 fa2.		|
   re4 la'2.		|
   re,4 mi fa2~		| \bar "||"
-  
+
   fa4 mi fa2		|
   mi2 fa			|
   re2 mi4 fa~		|
@@ -142,8 +142,8 @@ NotesAlt = \relative do' {
   re4 mi fa2		|
   sol4 fa8 mi re2	|
   fa4 mi8 re do4 re	|
-  re1\p~			| \bar "||"		
-  
+  re1\p~			| \bar "||"
+
   re4 do re2		|
   do2 re			|
   sib2 do4 re~		|
@@ -152,7 +152,7 @@ NotesAlt = \relative do' {
   do2 re			|
   sib2 do4 re~		|
   re1~			| \bar "||"
-  
+
   re4 fa2.~		|
   fa4 la,2.		|
   la4 sib2.~		|
@@ -161,12 +161,12 @@ NotesAlt = \relative do' {
   do4 sib2.~		|
   sib4 fa'2.		|
   sib,4 do re2~		| \bar "||"
-  
+
   re4 do re2		|
   do2 re			|
   sib2 do4 re~		|
   re1~			| \bar "||"
-  
+
   re4 fa2.~		|
   fa4 la,2.		|
   la4 sib2.~		|
@@ -187,7 +187,7 @@ NotesAlt = \relative do' {
 }
 NotesTer = \relative do' {
   R1*3 la1\p~ 		| \bar "||"
-  
+
   la4 sol la2		|
   sol2 la		|
   fa2 sol4 la~		|
@@ -196,7 +196,7 @@ NotesTer = \relative do' {
   sol2 la		|
   fa2 sol4 la~		|
   la1~			| \bar "||"
-  
+
   la4 do2.~		|
   do4 mi,2.		|
   mi4 fa2.~		|
@@ -205,7 +205,7 @@ NotesTer = \relative do' {
   sol4 fa2.~		|
   fa4 do'2.		|
   fa,4 sol la2~		| \bar "||"
-  
+
   la4 sol la2		|
   sol2 la		|
   fa2 sol4 la~		|
@@ -223,7 +223,7 @@ NotesTer = \relative do' {
   fa4 la2.		|
   fa4 do'2.		|
   fa,4 sol la2~		| \bar "||"
-  
+
   la4 sol la2		|
   sol2 la		|
   fa2 sol4 la~		|
@@ -231,7 +231,7 @@ NotesTer = \relative do' {
 }
 NotesBas = \relative do {
   R1*3 re1\p~ 		| \bar "||"
-  
+
   re4 do re2		|
   do2 re			|
   sib2 do4 re~		|
@@ -240,7 +240,7 @@ NotesBas = \relative do {
   do2 re			|
   sib2 do4 re~		|
   re1~			| \bar "||"
-  
+
   re4 fa2.~		|
   fa4 la,2.		|
   sol4 sib2.~		|
@@ -249,7 +249,7 @@ NotesBas = \relative do {
   do4 sib2.~		|
   sib4 fa'2.		|
   sib,4 do re2~		| \bar "||"
-  
+
   re4 do re2		|
   do2 re			|
   sib2 do4 re~		|
@@ -267,7 +267,7 @@ NotesBas = \relative do {
   sib4 re2.		|
   sib4 fa'2.		|
   sib,4 do re2~		| \bar "||"
-  
+
   re4 do re2		|
   do2 re			|
   sib2 do4 re~		|
@@ -278,25 +278,25 @@ NotesBas = \relative do {
 armonias = \new ChordNames {
   \chordmode {
     \italianChords
-    re4:m do4 re2:m do2 re2:m sib,2 do4 re4:m R1
-    re4:m do4 re2:m do2 re2:m sib,2 do4 re4:m R1
-    re4:m do4 re2:m do2 re2:m sib,2 do4 re4:m R1
-    
-    re4:m fa2. R4 la2.
-    la4:7 sib2. R4 re2.:m
-    la4:m do2. R4 sib2.
-    R4 fa2. sib4:m do4 re2:m
-    
-    re4:m do4 re2:m do2 re2:m sib,2 do4 re4:m R1
-    
-    re4:m fa2. R4 la2.
-    la4:7 sib2. R4 re2.:m
-    la4:m do2. R4 sib2.
-    re4:m fa2. R4 la2.
-    la4:7 sib2. R4 re2.:m
+    s1*3 re1:m
+    s4 do4 re2:m do2 re2:m sib,2 do4 re4:m s1
+    s4 do4 re2:m do2 re2:m sib,2 do4 re4:m s1
+
+    s4 fa2. s4 la2.
+    la4:7 sib2. s4 re2.:m
+    la4:m do2. s4 sib2.
+    s4 fa2. sib4:m do4 re2:m
+
+    s4 do4 re2:m do2 re2:m sib,2 do4 re4:m s1
+
+    s4 fa2. s4 la2.
+    la4:7 sib2. s4 re2.:m
+    la4:m do2. s4 sib2.
+    re4:m fa2. s4 la2.
+    la4:7 sib2. s4 re2.:m
     sib4 fa2. sib4:m do4 re2:m
-    
-    re4:m do4 re2:m do2 re2:m sib,2 do4 re4:m R2 fa
+
+    s4 do4 re2:m do2 re2:m sib,2 do4 re4:m s2 fa
   }
 }
 
@@ -339,10 +339,5 @@ armonias = \new ChordNames {
 \paper{
   #(set-default-paper-size "letter")
   indent=3.5\cm
+  page-breaking = #ly:page-turn-breaking
 }
-
-
-%{
-convert-ly (GNU LilyPond) 2.19.84  convert-ly: Procesando «»...
-Aplicando la conversión:     El documento no ha cambiado.
-%}

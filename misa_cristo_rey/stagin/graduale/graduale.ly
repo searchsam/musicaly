@@ -44,7 +44,7 @@ harmony_stanza = \new ChordNames {
 
         re4 \mark \markup{ "Antifona" \small \italic "Salmista"} mi fa2  \divisioMinima
         sol4 fa8 mi re2 \divisioMinima
-        fa4 mi8 re do4 re2. \finalis \break 
+        fa4 mi8 re do4 re2. \finalis \break
         s32
       }
       \new Lyrics \lyricsto "melody" {
@@ -82,10 +82,10 @@ harmony_stanza = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-        
+
         re4 \mark \markup{ "Antifona" \small \italic "Salmista y Asamblea"} mi fa2 \divisioMinima
         sol4 fa8 mi re2 \divisioMinima
-        fa4 mi8 re do4 re2. \finalis \break 
+        fa4 mi8 re do4 re2. \finalis \break
         s32
       }
       \new Lyrics \lyricsto "melody" {
@@ -99,10 +99,10 @@ harmony_stanza = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-        
+
         re4 mi re2   \divisioMinima
         mi4 do8 do re2 \divisioMinima
-        re4 mi8 re do4 re2. \finalis \break 
+        re4 mi8 re do4 re2. \finalis \break
         s32
       }
       \new Lyrics \lyricsto "contramelody" {
@@ -145,13 +145,13 @@ harmony_stanza_antifona = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-        
+
         fa8 \mark \markup{ "Estrofa I" } sol la \breve \divisioMinima \tuplet 3/2 {la8 fa sol} la4 la \divisioMaxima \break
         la8( sol) fa \breve fa8 mi re2 \finalis \break
         s32
       }
       \new Lyrics \lyricsto "melody" {
-        El Se 
+        El Se
         \once \override LyricText.self-alignment-X = #-1
         "ñor es mi pastor," na -- da me fal -- ta:
         en
@@ -197,7 +197,7 @@ harmony_stanza_estrofa = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-        
+
         fa8 \mark \markup{ "Estrofa II" } sol la \breve \divisioMinima \tuplet 3/2 {la8 fa sol} la4 la \divisioMaxima \break
         la8( sol) fa \breve fa8( mi) re4 re \divisioMaxima \break
         do8( re) mi \breve \divisioMinima \tuplet 3/2 { mi4 re8 } fa4 fa \divisioMaxima \break
@@ -205,7 +205,7 @@ harmony_stanza_estrofa = \new ChordNames {
         s32
       }
       \new Lyrics \lyricsto "melody" {
-        Me con 
+        Me con
         \once \override LyricText.self-alignment-X = #-1
         "duce hacia" fuen -- tes tran -- qui -- las
         y
@@ -214,7 +214,7 @@ harmony_stanza_estrofa = \new ChordNames {
         me
         \once \override LyricText.self-alignment-X = #-1
         "guía por el sen" -- de -- ro jus -- to,
-        por el 
+        por el
         \once \override LyricText.self-alignment-X = #-1
         "honor" de su nom -- bre.
       }
@@ -247,7 +247,7 @@ harmony_stanza_estrofa = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-        
+
         fa8 \mark \markup{ "Estrofa III" } sol la \breve \divisioMinima \tuplet 3/2 {la8 fa sol} la2 \divisioMaxima \break
         la8( sol) fa \breve fa8 mi re4 re \divisioMaxima \break
         do8 re mi \breve \divisioMinima \tuplet 3/2 { mi4 re8 } fa4 fa \divisioMaxima \break
@@ -255,13 +255,13 @@ harmony_stanza_estrofa = \new ChordNames {
         s32
       }
       \new Lyrics \lyricsto "melody" {
-        Pre -- pa -- 
+        Pre -- pa --
         \once \override LyricText.self-alignment-X = #-1
         "ras una me" -- sa an -- te mí,
         en --
         \once \override LyricText.self-alignment-X = #-1
         "frente de mis" e -- ne -- mi -- gos;
-        me _ 
+        me _
         \once \override LyricText.self-alignment-X = #-1
         "unges la cabeza" con per -- fu -- me,
         y mi
@@ -297,7 +297,7 @@ harmony_stanza_estrofa = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-        
+
         fa8 \mark \markup{ "Estrofa IV" } sol la \breve \divisioMinima \tuplet 3/2 {la8 fa sol} la4 la \divisioMaxima \break
         la8( sol) fa \breve fa8 mi re4 re \divisioMaxima \break
         do8 re mi \breve \divisioMinima \tuplet 3/2 { mi4 re8 } fa2 \divisioMaxima \break
@@ -359,7 +359,7 @@ harmony_stanza_b = \new ChordNames {
 
         re4 \mark \markup{ "Antifona" \small \italic "Salmista"} mi fa2  \divisioMinima
         sol4 fa8 mi re4 re \divisioMinima
-        fa4 mi8 re do4( re2.) \finalis \break 
+        fa4 mi8 re do4( re2.) \finalis \break
         s32
       }
       \new Lyrics \lyricsto "melody" {
@@ -397,10 +397,10 @@ harmony_stanza_b = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-        
+
         re4 \mark \markup{ "Antifona" \small \italic "Salmista y Asamblea"} mi fa2 \divisioMinima
         sol4 fa8 mi re4 re \divisioMinima
-        fa4 mi8 re do4( re2.) \finalis \break 
+        fa4 mi8 re do4( re2.) \finalis \break
         s32
       }
       \new Lyrics \lyricsto "melody" {
@@ -414,10 +414,10 @@ harmony_stanza_b = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-        
+
         re4 mi fa2   \divisioMinima
         mi4 do8 do re4 re \divisioMinima
-        re4 mi8 re do4( re2.) \finalis \break 
+        re4 mi8 re do4( re2.) \finalis \break
         s32
       }
       \new Lyrics \lyricsto "contramelody" {
@@ -451,13 +451,13 @@ harmony_stanza_b = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-        
+
         fa8 \mark \markup{ "Estrofa I" } sol la \breve \divisioMinima \tuplet 3/2 {la8 fa sol} la2 \divisioMaxima \break
         la8 sol fa \breve fa8 mi re2 \finalis \break
         s32
       }
       \new Lyrics \lyricsto "melody" {
-        El Se 
+        El Se
         \once \override LyricText.self-alignment-X = #-1
         "ñor reina, vestido" de ma -- jes -- tad,
         el Se
@@ -492,7 +492,7 @@ harmony_stanza_b = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-        
+
         fa8 \mark \markup{ "Estrofa II" } sol la \breve \divisioMinima \tuplet 3/2 {la8 fa sol} la4 la \divisioMaxima \break
         la8 sol fa \breve fa8 mi re4 re \divisioMaxima \break
         re8( sib) la \breve sib4( do) re2 \finalis \break
@@ -504,7 +504,7 @@ harmony_stanza_b = \new ChordNames {
         "tá firme el orbe" y no va -- ci -- la.
         Tu tro --
         \once \override LyricText.self-alignment-X = #-1
-        "no está firme" des -- de siem -- pre,        
+        "no está firme" des -- de siem -- pre,
         y
         \once \override LyricText.self-alignment-X = #-1
         "tú eres e" -- ter -- no.
@@ -537,7 +537,7 @@ harmony_stanza_b = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-        
+
         fa8 \mark \markup{ "Estrofa III" } sol la \breve \divisioMinima \tuplet 3/2 {la8( fa) sol} la4 la \divisioMaxima \break
         la8 sol fa \breve fa8 mi re4 re \divisioMaxima \break
         re8( sib) la \breve sib4 do re2 \finalis \break
@@ -586,7 +586,7 @@ harmony_stanza_b = \new ChordNames {
 
         re4 \mark \markup{ "Antifona" \small \italic "Salmista"} mi8 mi fa4 fa  \divisioMinima
         sol4( fa8) mi re4 re \divisioMinima
-        fa4( mi8) re do4( re2.) \finalis \break 
+        fa4( mi8) re do4( re2.) \finalis \break
         s32
       }
       \new Lyrics \lyricsto "melody" {
@@ -624,10 +624,10 @@ harmony_stanza_b = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-        
+
         re4 \mark \markup{ "Antifona" \small \italic "Salmista y Asamblea"} mi8 mi fa4 fa \divisioMinima
         sol4( fa8) mi re4 re \divisioMinima
-        fa4( mi8) re do4( re2.) \finalis \break 
+        fa4( mi8) re do4( re2.) \finalis \break
         s32
       }
       \new Lyrics \lyricsto "melody" {
@@ -641,10 +641,10 @@ harmony_stanza_b = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-        
+
         re4 mi8 mi fa4 fa \divisioMinima
         mi4( do8) do re4 re \divisioMinima
-        re4( mi8) re do4( re2.) \finalis \break 
+        re4( mi8) re do4( re2.) \finalis \break
         s32
       }
       \new Lyrics \lyricsto "contramelody" {
@@ -678,7 +678,7 @@ harmony_stanza_b = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-        
+
         fa8 \mark \markup{ "Estrofa I" } sol la \breve \divisioMinima \tuplet 3/2 {la8( fa) sol} la4 la \divisioMaxima \break
         la8( sol) fa \breve fa8 mi re2 \divisioMaxima \break
         do8 re mi \breve \divisioMinima \tuplet 3/2 { mi4 re8 } fa2 \divisioMaxima \break
@@ -686,7 +686,7 @@ harmony_stanza_b = \new ChordNames {
         s32
       }
       \new Lyrics \lyricsto "melody" {
-        ¡Qué~a -- le -- 
+        ¡Qué~a -- le --
         \once \override LyricText.self-alignment-X = #-1
         "gría cuando" me di -- je -- ron:
         «Va --
@@ -695,7 +695,7 @@ harmony_stanza_b = \new ChordNames {
         Ya es --
         \once \override LyricText.self-alignment-X = #-1
         "tán pisando" nues -- tros pies
-        por el 
+        por el
         \once \override LyricText.self-alignment-X = #-1
         "honor" de su nom -- bre.
       }
@@ -727,7 +727,7 @@ harmony_stanza_b = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-        
+
         fa8 \mark \markup{ "Estrofa II" } sol la \breve \divisioMinima \tuplet 3/2 {la8( fa sol)} la4 la \divisioMaxima \break
         la8( sol) fa \breve fa8 mi re2 \divisioMaxima \break
         do8 re mi \breve \divisioMinima \tuplet 3/2 { mi4 re8 } fa2 \divisioMaxima \break
@@ -739,7 +739,7 @@ harmony_stanza_b = \new ChordNames {
       \new Lyrics \lyricsto "melody" {
         A -- llá
         \once \override LyricText.self-alignment-X = #-1
-        "suben" las tri -- bus,  
+        "suben" las tri -- bus,
         las
         \once \override LyricText.self-alignment-X = #-1
         "tribus" del Se -- ñor,
@@ -748,11 +748,11 @@ harmony_stanza_b = \new ChordNames {
         "la costumbre de" Is -- ra -- el,
         a ce --
         \once \override LyricText.self-alignment-X = #-1
-        "lebrar el nombre" del Se -- ñor;  
+        "lebrar el nombre" del Se -- ñor;
         en
         \once \override LyricText.self-alignment-X = #-1
         "ella están los tribunales" de jus -- ti -- cia,
-        en el 
+        en el
         \once \override LyricText.self-alignment-X = #-1
         "palacio" de Da -- vid.
       }

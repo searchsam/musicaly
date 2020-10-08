@@ -194,17 +194,17 @@ NotesBas = \relative do {
 armonias = \new ChordNames {
   \chordmode {
     \italianChords
-    R1 | re1:m | sol1:m | R2 re2:m | R1 | sol1:m |
-    
-    R2 fa4 sol4:m | R2 fa4 sol4:m | R2 fa4 sol4:m |
-    R2. fa4 | sol2.:m fa4 | sol2.:m fa4 | sol2.:m fa4 | sol1 |
-    do1 | sol4:7 do2. | R1 | sol4:7 do2. | R4 sol4 fa2 | do4 sol4:7 do2 | 
-    
+    s1 | re1:m | sol1:m | s2 re2:m | s1 | sol1:m |
+
+    s2 fa4 sol4:m | s2 fa4 sol4:m | s2 fa4 sol4:m |
+    s2. fa4 | sol2.:m fa4 | sol2.:m fa4 | sol2.:m fa4 | sol1 |
+    do1 | sol4:7 do2. | s1 | sol4:7 do2. | s4 sol4 fa2 | do4 sol4:7 do2 |
+
     re1:m | sol1:m |
-    
-    R2 fa4 sol4:m | R2 fa4 sol4:m | R2 fa4 sol4:m |
-    R2. fa4 | sol2.:m fa4 | sol2.:m fa4 | sol2.:m fa4 | sol1 |
-    do4 fa4 do2 | sol4:7 do2. | R4 fa4 do2 | sol4:7 do2. | R4 sol4 fa2 | do4 sol4:7 do2 |
+
+    s2 fa4 sol4:m | s2 fa4 sol4:m | s2 fa4 sol4:m |
+    s2. fa4 | sol2.:m fa4 | sol2.:m fa4 | sol2.:m fa4 | sol1 |
+    do4 fa4 do2 | sol4:7 do2. | s4 fa4 do2 | sol4:7 do2. | s4 sol4 fa2 | do4 sol4:7 do2 |
   }
 }
 
@@ -259,4 +259,5 @@ armonias = \new ChordNames {
 \paper{
   #(set-default-paper-size "letter")
   indent=3.5\cm
+  page-breaking = #ly:page-turn-breaking
 }

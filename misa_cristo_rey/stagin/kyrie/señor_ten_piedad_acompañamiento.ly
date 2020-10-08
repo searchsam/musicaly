@@ -155,13 +155,13 @@ NotesBas = \relative do {
 armonias = \new ChordNames {
   \chordmode {
     \italianChords
-    R1*4 | re1:m | do2 fa2 |
+    s1*4 | re1:m | do2 fa2 |
 
-    R1 | re1:m | R2. do4 | R2 re2:m | R1 | R2 do2 | re1:m | R1 | do4 re2.:m | re1:m | do2 fa2 |
+    s1 | re1:m | s2. do4 | s2 re2:m | s1 | s2 do2 | re1:m | s1 | do4 re2.:m | re1:m | do2 fa2 |
 
-    R1 | re1:m | R1 | R2 do2 | R4 re2.:m | R1 | R2 do2 | re1:m | R1 | do4 re2.:m | re1:m | do2 fa2 |
+    s1 | re1:m | s1 | s2 do2 | s4 re2.:m | s1 | s2 do2 | re1:m | s1 | do4 re2.:m | re1:m | do2 fa2 |
 
-    R1 | re1:m | R1 | R4 do2. | re1:m | R1 | R2 do2 | re1:m | R1 | do4 re2.:m | do1 | re1:m |
+    s1 | re1:m | s1 | s4 do2. | re1:m | s1 | s2 do2 | re1:m | s1 | do4 re2.:m | do1 | re1:m |
   }
 }
 
@@ -216,4 +216,5 @@ armonias = \new ChordNames {
 \paper{
   #(set-default-paper-size "letter")
   indent=3.5\cm
+  page-breaking = #ly:page-turn-breaking
 }

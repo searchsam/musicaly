@@ -332,8 +332,8 @@ harmony_stanza = \new ChordNames {
       \key re \minor
       \time 4/4
 
-      <do sol>1
-      <re la>1 \bar "|." \break
+      <do, sol'>1
+      <re la'>1 \bar "|." \break
       s32
     }
     \new Lyrics \lyricsto "melody" {

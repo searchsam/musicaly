@@ -100,12 +100,12 @@ harmony_stanza_antifona = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key la \major
-        
-        mi\breve^\markup{ "Antifona" } 
-        mi4 fas4 sols8 si4. 
+
+        mi\breve^\markup{ "Antifona" }
+        mi4 fas4 sols8 si4.
         la2 \divisioMaior \break
-        sols\breve \divisioMinima 
-        fas\breve 
+        sols\breve \divisioMinima
+        fas\breve
         fas4 sols4 fas2 \finalis \break
         s32
       }

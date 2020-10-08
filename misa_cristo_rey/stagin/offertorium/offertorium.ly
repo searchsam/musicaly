@@ -79,7 +79,7 @@ harmony_stanza = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-        
+
         \partial 4 r8^"Tutti" re
         re4. mi8 fa4 sol
         mi2. r8 mi
@@ -100,14 +100,14 @@ harmony_stanza = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-        
+
         \partial 4 r8 re
-         re4. re8 re4 re 
-         mi2. r8 mi8
-         do4. re8 mi4 fa
-         sol2. r4
-         fa4. mi8 re4. do8
-         sib4 sib dos2 \bar "||"
+        re4. re8 re4 re
+        mi2. r8 mi8
+        do4. re8 mi4 fa
+        sol2. r4
+        fa4. mi8 re4. do8
+        sib4 sib dos2 \bar "||"
       }
       \new Lyrics \lyricsto "contramelody" {
         Sa -- gra -- rio del Al -- tar,
@@ -134,7 +134,7 @@ harmony = \new ChordNames {
     \italianChords
     sol2:m fa2 sib2 sol2:m
     fa2 sib2 la2 re2:m
-    
+
     sol2:m fa2 sib2 sol2:m
     fa2 do2:m re2:m sol2:m
   }
@@ -148,9 +148,9 @@ harmony = \new ChordNames {
       \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \tempo 4 = 60
-        \key re \minor	
+        \key re \minor
         \time 4/4
-        
+
         sib'8^"Tutti" sib sib4 la8 sib do8 la
         sib4( la) sib2 \breathe \break
         do8 sib la do sib do re sib
@@ -161,7 +161,7 @@ harmony = \new ChordNames {
         fa4( mib) re2 \bar "||"
       }
       \new Lyrics \lyricsto "melody" {
-        Tu a -- mor, es a -- mor de cie -- lo, 
+        Tu a -- mor, es a -- mor de cie -- lo,
         mi a -- mor, mez -- cla de cie -- lo~y tie -- rra.
         Tu a -- mor, es pu -- ro~e~in -- fi -- ni -- to,
         mí a -- mor, li -- mi -- ta -- do~e~im -- per -- fec -- to.
@@ -173,7 +173,7 @@ harmony = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-        
+
         re8 do sib4 do8 re mib do
         re4( fa) sol2 \breathe
         fa8 mib re do re mib fa re
@@ -184,7 +184,7 @@ harmony = \new ChordNames {
         re4( do) re2 \bar "||"
       }
       \new Lyrics \lyricsto "contramelody" {
-        Tu a -- mor, es a -- mor de cie -- lo, 
+        Tu a -- mor, es a -- mor de cie -- lo,
         mi a -- mor, mez -- cla de cie -- lo~y tie -- rra.
         Tu a -- mor, es pu -- ro~e~in -- fi -- ni -- to,
         mí a -- mor, li -- mi -- ta -- do~e~im -- per -- fec -- to.
@@ -211,13 +211,13 @@ harmony = \new ChordNames {
       \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \tempo 4 = 60
-        \key re \minor	
+        \key re \minor
         \time 4/4
-        
+
         sib'8^"Tutti" sib sib4 la8 sib do8 la
         sib4 la sib2 \breathe \break
         do8 sib la do sib do re sib
-        la4 sol la2 \bar "||" \break        
+        la4 sol la2 \bar "||" \break
         sol8 la sib4 la8( sol) fa8( la)
         sib4( la) sol2 \breathe \break
         fa8 sol la fa sol8 fa mib sol
@@ -226,7 +226,7 @@ harmony = \new ChordNames {
       \new Lyrics \lyricsto "melody" {
         Se -- a yo, Je -- sús mí -- o, des -- de hoy,
         to -- do pa -- ra Ti, co -- mo Tú pa -- ra mi.
-        Que te a -- me yo siem -- pre, 
+        Que te a -- me yo siem -- pre,
         co -- mo te a -- ma -- ron los A -- pós -- to -- les;
       }
     >>
@@ -236,7 +236,7 @@ harmony = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-        
+
         re8 do sib4 do8 re mib do
         re4 fa sol2 \breathe
         fa8 mib re do re mib fa re
@@ -249,7 +249,7 @@ harmony = \new ChordNames {
       \new Lyrics \lyricsto "contramelody" {
         Se -- a yo, Je -- sús mí -- o, des -- de hoy,
         to -- do pa -- ra Ti, co -- mo Tú pa -- ra mi.
-        Que te a -- me yo siem -- pre, 
+        Que te a -- me yo siem -- pre,
         co -- mo te a -- ma -- ron los A -- pós -- to -- les;
       }
     >>
@@ -274,13 +274,13 @@ harmony = \new ChordNames {
       \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \tempo 4 = 60
-        \key re \minor	
+        \key re \minor
         \time 4/4
-        
+
         sib'4^"Tutti" sib8 sib la8 sib do8( la)
         sib4( la sib2) \breathe \break
         do8 sib la do sib do re sib
-        la4( sol) la2 \bar "||" \break        
+        la4( sol) la2 \bar "||" \break
         sol4 la8 sib la8 sol fa8 la
         sib4( la) sol2 \breathe \break
         fa8 sol la fa sol8 fa mib sol
@@ -299,7 +299,7 @@ harmony = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-        
+
         re4 do8 sib do8 re mib( do)
         re4( fa sol2) \breathe
         fa8 mib re do re mib fa re
@@ -337,13 +337,13 @@ harmony = \new ChordNames {
       \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \tempo 4 = 60
-        \key re \minor	
+        \key re \minor
         \time 4/4
-        
+
         sib'4^"Tutti" sib8 sib la8 sib do8 la
         sib4( la) sib2 \breathe \break
         do8 sib la do sib do re sib
-        la4 sol la2 \bar "||" \break        
+        la4 sol la2 \bar "||" \break
         sol4 la8 sib la8 sol fa8 la
         sib4( la) sol2 \breathe \break
         fa8( sol) la fa sol8( fa) mib sol
@@ -362,7 +362,7 @@ harmony = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-        
+
         re4 do8 sib do8 re mib do
         re4( fa) sol2 \breathe
         fa8 mib re do re mib fa re
@@ -400,13 +400,13 @@ harmony = \new ChordNames {
       \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \tempo 4 = 60
-        \key re \minor	
+        \key re \minor
         \time 4/4
-        
+
         sib'4^"Tutti" sib8 sib la8 sib do8 la
         sib4( la) sib2 \breathe \break
         do8( sib) la( do) sib8( do) re sib
-        la4( sol) la2 \bar "||" \break        
+        la4( sol) la2 \bar "||" \break
         sol8 sol la8 sib la8 sol fa8 la
         sib8 la sol( fa) sol2 \breathe \break
         fa8 sol la fa sol8 fa mib sol
@@ -425,7 +425,7 @@ harmony = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-        
+
         re4 do8 sib do8 re mib do
         re4( fa) sol2 \breathe
         fa8( mib) re( do) re8( mib) fa re

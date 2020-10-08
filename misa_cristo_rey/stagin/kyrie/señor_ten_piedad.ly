@@ -273,4 +273,5 @@ altusLyrics = \lyricmode {
 % --- Pagina
 \paper{
   #(set-default-paper-size "letter")
+  page-breaking = #ly:page-turn-breaking
 }
