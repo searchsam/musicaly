@@ -1,277 +1,221 @@
 % ****************************************************************
-%	Señor ten piedad - Melodia a modo del renacimiento
-%   	Texto y musica con acompañamiento
+%	Señor ten piedad v3 - Melodia a modo del renacimiento
+%   Texto y musica con acompañamiento
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
 \version "2.19.82"
 
-%#(set-global-staff-size 16.4)
+#(set-global-staff-size 18)
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Señor ten piedad" \fontsize #2 "Misa Cristo Rey" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" \small "(Octubre 2019)" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Señor ten piedad" \fontsize #2 "Misa Cristo Rey" "Kyrie eleison" } } }
+\markup { \fill-line { " " \center-column { \fontsize #2 "Linda Martínez" } } }
+\markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
+% --- Musica
+
+% --- invocacion
+
 % --- Parametro globales
 global = {
-  \set Score.skipBars = ##t
-  \clef "treble"
+  \tempo "Moderatto" 4 = 100
   \key re \minor
-  \time 2/2
-
-  % the actual music
-  \skip 1*5
-
-  % let finis bar go through all staves
-  \override Staff.BarLine.transparent = ##f
-
-  % finis bar
-  \bar "|."
+  \time 4/4
 }
-
-% --- Musica
-cantusIncipit = {
-  \set Staff.instrumentName = "Cantus"
-  \clef "petrucci-g"
-  \key fa \major
-  \time 2/2
-  la'1.
-}
-
-cantusNotes = \relative do ' {
-  la'4^\markup{ \italic "Tutti"} fa2 fa4 |
+sopMusic = \relative do' {
+  R1*10 | \break
+  la'4^\markup{ \italic "Soprano"} fa2 fa4 |
   sol4 la2 sol4 |
   la2 r |
   la4 fa2 fa4 |
-  sol4 la2. \fermata | \break
-}
+  sol4 la2. \fermata |
 
-cantusLyrics = \lyricmode {
+  R1*7 | \break
+  la4^\markup{ \italic "Soprano"} fa2 fa4 |
+  sol4 la2 sol4 |
+  la2 r |
+  la4 fa2 fa4 |
+  sol4 la2. \fermata |
+
+  R1*7 |
+  la4^\markup{ \italic "Soprano"} fa2 fa4 |
+  sol4 la2 sol4 |
+  la2 r |
+  la4 fa2 fa4 |
+  sol4 la2. \fermata |
+  R1*2 \bar "|."
+}
+sopWords = \lyricmode {
+  Se -- ñor, ten pie -- dad, pie -- dad. Se -- ñor, ten pie -- dad.
+  Se -- ñor, ten pie -- dad, pie -- dad. Se -- ñor, ten pie -- dad.
   Se -- ñor, ten pie -- dad, pie -- dad. Se -- ñor, ten pie -- dad.
 }
 
-altusIncipit = {
-  \set Staff.instrumentName = "Altus"
-  \clef "petrucci-c3"
-  \key fa \major
-  \time 2/2
-  fa'1.
-}
-
-altusNotes = \relative do' {
-  r2 r4 fa4^\markup{ \italic "Tutti"} |
+altMusic = \relative do' {
+  R1*6 |
+  la4^\markup{ \italic "Solo Contralto" } la la do |
+  re re re re |
+  re re re do|
+  re mi re2 \bar "||" |
+  r2 r4 fa4^\markup{ \italic "Contralto"} |
   re4 re do2 |
   re2 r |
   la'4 fa2 fa4 |
-  sol4 la2. \fermata | \break
-}
+  sol4 la2. \fermata \bar "||" |
 
-altusLyrics = \lyricmode {
+  R1*2 |
+  la,4^\markup{ \italic "Solo Contralto"} la la do |
+  re re re re |
+  re re re re |
+  re re do re |
+  mi re2. \bar "||" |
+  r2 r4 fa4^\markup{ \italic "Contralto"} |
+  re4 re do2 |
+  re2 r |
+  la'4 fa2 fa4 |
+  sol4 la2. \fermata \bar "||" |
+
+  R1*2 |
+  la,4^\markup{ \italic "Solo Contralto"} la la do |
+  re re re re |
+  re re re re |
+  re do re mi |
+  re1 \bar "||" |
+  r2 r4 fa4^\markup{ \italic "Contralto"} |
+  re4 re do2 |
+  re2 r |
+  la'4 fa2 fa4 |
+  sol4 la2. \fermata \bar "||" |
+  R1*2 \bar "|."
+}
+altWords = \lyricmode {
+  Tú que nos li -- bras -- te del pe -- ca -- do y de la muer -- te.
+  Se -- ñor, ten pie -- dad. Se -- ñor, ten pie -- dad.
+  Tú que nos re -- con -- ci -- lias -- te con el Pa -- dre y nues -- tros her -- ma -- nos.
+  Se -- ñor, ten pie -- dad. Se -- ñor, ten pie -- dad.
+  Tú que nos re -- su -- ci -- ta -- rás y glo -- ri -- fi -- ca -- rás con -- ti -- go.
   Se -- ñor, ten pie -- dad. Se -- ñor, ten pie -- dad.
 }
 
-% --- invocacion #1
-\score{
-  <<
-    \new Voice = "invocacion" {
-      \override Staff.TimeSignature.stencil = #'()
-      \override Stem.transparent = ##t
-      \set Score.timing = ##f
-      \override NoteHead.style = #'neomensural
-      \key re \minor
-      \relative do' {
-        la4^\markup{ \italic "Solo"} la la do re re re re re re re do re mi re2
-      }
-    }
-    \new Lyrics \lyricsto "invocacion" {
-      \lyricmode {
-        Tú que nos li -- bras -- te del pe -- ca -- do y de la muer -- te.
-      }
-    }
-  >>
-  \layout {
-    indent = 1.5 \cm
-    line-width = 17\cm
-    ragged-right = ##f
+NotesSop = \relative do' {
+  R1*4 | fa1\p | mi2 fa~ \bar "||" | \break
+  fa1 | fa1~ | fa2. mi4~ | mi2 fa2~ | fa1~ | fa2 mi | fa1~ | fa1 | mi4 fa2.~ | \break
+
+  fa1 | mi2 fa~ \bar "||" | \break
+  fa1 | fa1~ | fa1~ | fa2 mi2~ | mi4 fa2.~ | fa1~ | fa2 mi | fa1~ | fa1 | mi4 fa2.~ | \break
+
+  fa1 | mi2 fa~ \bar "||" | \break
+  fa1 | fa1~ | fa1~ | fa4 mi2. | fa1~ | fa1~ | fa2 mi | fa1~ | fa1 | mi4 fa2. \fermata | \break
+
+  mi1 \fermata | fa1 \fermata |
+}
+NotesAlt = \relative do' {
+  la4\p la la do | re re re re | re re re do| re mi re2 | re1 | do2 do~ \bar "||" |
+  do1 | re1~  | re2. do4~ | do2 re2~ | re1~ | re2 do | re1~ | re1 | do4 re2.~ |
+
+  re1 | do2 do~ \bar "||" |
+  do1 | re1~  | re1~ | re2 do2~ | do4 re2.~ | re1~ | re2 do | re1~ | re1 | do4 re2.~ |
+
+  re1 | do2 do~ \bar "||" |
+  do1 | re1~  | re1~ | re4 do2. | re1~ | \break re1~ | re2 do | re1~ | re1 | do4 re2. |
+
+  do1 | re1 |
+}
+NotesTer = \relative do {
+  R1*4 | la'1\p | sol2 fa~ |
+  fa1 | la1~ | la2. sol4~ | sol2 la2~ | la1~ | la2 sol | la1~ | la1 | sol4 la2.~ |
+
+  la1 | sol2 fa~ |
+  fa1 | la1~ | la1~ | la2 sol2~ | sol4 la2.~ | la1~ | la2 sol | la1~ | la1 | sol4 la2.~ |
+
+  la1 | sol2 fa~ |
+  fa1 | la1~ | la1~ | la4 sol2. | la1~ | la1~ | la2 sol | la1~ | la1 | sol4 la2. \fermata |
+
+  sol1 \fermata | la1 \fermata |
+}
+NotesBas = \relative do {
+  R1*4 | re1\p | do2 la~ |
+  la1 | re1~ | re2. do4~ | do2 re2~ | re1~ | re2 do | re1~ | re1 | do4 re2.~ |
+
+  re1 | do2 la~ |
+  la1 | re1~ | re1~ | re2 do2~ | do4 re2.~ | re1~ | re2 do | re1~ | re1 | do4 re2.~ |
+
+  re1 | do2 la~ |
+  la1 | re1~ | re1~ | re4 do2. | re1~ | re1~ | re2 do | re1~ | re1 | do4 re2. |
+
+  do1 | re1 |
+}
+
+% --- acordes
+armonias = \new ChordNames {
+  \chordmode {
+    \italianChords
+    s1*4 | re1:m | do2 fa2 |
+
+    s1 | re1:m | s2. do4 | s2 re2:m | s1 | s2 do2 | re1:m | s1 | do4 re2.:m | re1:m | do2 fa2 |
+
+    s1 | re1:m | s1 | s2 do2 | s4 re2.:m | s1 | s2 do2 | re1:m | s1 | do4 re2.:m | re1:m | do2 fa2 |
+
+    s1 | re1:m | s1 | s4 do2. | re1:m | s1 | s2 do2 | re1:m | s1 | do4 re2.:m | do1 | re1:m |
   }
 }
 
 \score {
   <<
-    \new StaffGroup = choirStaff <<
-      \new Voice = "cantusNotes" <<
-        \set Staff.instrumentName = #"Cantus"
-        \incipit \cantusIncipit
-        \global
-        \cantusNotes
+    \new ChoirStaff <<
+      \new Voice = "soprano" <<
+        \set Staff.instrumentName = #"Soprano"
+        \set Staff.midiInstrument = #"choir aahs"
+        \set Staff.midiMaximumVolume = #1.5
+        \global \sopMusic
       >>
-      \new Lyrics \lyricsto cantusNotes { \cantusLyrics }
-      \new Voice = "altusNotes" <<
-        \set Staff.instrumentName = #"Altus"
-        \global
-        \incipit \altusIncipit
-        \altusNotes
+      \new Lyrics = "soprano"
+      \context Lyrics = "soprano" \lyricsto "soprano" \sopWords
+
+      \new Voice = "alto" <<
+        \set Staff.instrumentName = #"Contralto"
+        \set Staff.midiInstrument = #"choir aahs"
+        \set Staff.midiMaximumVolume = #1.5
+        \global \altMusic
       >>
-      \new Lyrics \lyricsto altusNotes { \altusLyrics }
+      \new Lyrics = "alto"
+      \context Lyrics = "alto" \lyricsto "alto" \altWords
+    >>
+    %\armonias
+    \new PianoStaff <<
+      \new Staff <<
+        \set Staff.instrumentName = #"Organo"
+        \set Staff.midiInstrument = #"church organ"
+        \set Staff.midiMaximumVolume = #0.6
+        \set Staff.printPartCombineTexts = ##f
+        \partcombine
+        << \global \NotesSop >>
+        << \global \NotesAlt >>
+      >>
+      \new Staff <<
+        \set Staff.midiInstrument = #"church organ"
+        \set Staff.midiMaximumVolume = #0.6
+        \clef bass
+        \set Staff.printPartCombineTexts = ##f
+        \partcombine
+        << \global \NotesTer >>
+        << \global \NotesBas >>
+      >>
     >>
   >>
-  \layout {
-    \context {
-      \Score
-      \hide BarLine
-    }
-    \context {
-      \Lyrics
-      \consists "Bar_engraver"
-      \consists "Separating_line_group_engraver"
-    }
-    \context {
-      \Voice
-      \hide Slur
-      \remove "Forbid_line_break_engraver"
-    }
-    indent = 4.5\cm
-    incipit-width = 2.5\cm
-  }
+  \midi { }
+  \layout { }
 }
 
-% --- Invocacion #2
-\score{
-  <<
-    \new Voice = "invocacion" {
-      \override Staff.TimeSignature.stencil = #'()
-      \override Stem.transparent = ##t
-      \set Score.timing = ##f
-      \override NoteHead.style = #'neomensural
-      \key re \minor
-      \relative do' {
-        la4^\markup{ \italic "Solo"} la la la la do re re re re re re re re do re mi re2.
-      }
-    }
-    \new Lyrics \lyricsto "invocacion" {
-      \lyricmode {
-        Tú que nos re -- con -- ci -- lias -- te con el Pa -- dre y nues -- tros her -- ma -- nos.
-      }
-    }
-  >>
-  \layout {
-    indent = 1.5 \cm
-    line-width = 17\cm
-    ragged-right = ##f
-  }
-}
-
-\score {
-  <<
-    \new StaffGroup = choirStaff <<
-      \new Voice = "cantusNotes" <<
-        \set Staff.instrumentName = #"Cantus"
-        \incipit \cantusIncipit
-        \global
-        \cantusNotes
-      >>
-      \new Lyrics \lyricsto cantusNotes { \cantusLyrics }
-      \new Voice = "altusNotes" <<
-        \set Staff.instrumentName = #"Altus"
-        \global
-        \incipit \altusIncipit
-        \altusNotes
-      >>
-      \new Lyrics \lyricsto altusNotes { \altusLyrics }
-    >>
-  >>
-  \layout {
-    \context {
-      \Score
-      \hide BarLine
-    }
-    \context {
-      \Lyrics
-      \consists "Bar_engraver"
-      \consists "Separating_line_group_engraver"
-    }
-    \context {
-      \Voice
-      \hide Slur
-      \remove "Forbid_line_break_engraver"
-    }
-    indent = 4.5\cm
-    incipit-width = 2.5\cm
-  }
-}
-
-% --- Invocacion #3
-\score{
-  <<
-    \new Voice = "invocacion" {
-      \override Staff.TimeSignature.stencil = #'()
-      \override Stem.transparent = ##t
-      \set Score.timing = ##f
-      \override NoteHead.style = #'neomensural
-      \key re \minor
-      \relative do' {
-        la4^\markup{ \italic "Solo"} la la la la la do re re re re re re do re mi re1
-      }
-    }
-    \new Lyrics \lyricsto "invocacion" {
-      \lyricmode {
-        Tú que nos re -- su -- ci -- ta -- rás y glo -- ri -- fi -- ca -- rás con -- ti -- go.
-      }
-    }
-  >>
-  \layout {
-    indent = 1.5 \cm
-    line-width = 17\cm
-    ragged-right = ##f
-  }
-}
-
-\score {
-  <<
-    \new StaffGroup = choirStaff <<
-      \new Voice = "cantusNotes" <<
-        \set Staff.instrumentName = #"Cantus"
-        \incipit \cantusIncipit
-        \global
-        \cantusNotes
-      >>
-      \new Lyrics \lyricsto cantusNotes { \cantusLyrics }
-      \new Voice = "altusNotes" <<
-        \set Staff.instrumentName = #"Altus"
-        \global
-        \incipit \altusIncipit
-        \altusNotes
-      >>
-      \new Lyrics \lyricsto altusNotes { \altusLyrics }
-    >>
-  >>
-  \layout {
-    \context {
-      \Score
-      \hide BarLine
-    }
-    \context {
-      \Lyrics
-      \consists "Bar_engraver"
-      \consists "Separating_line_group_engraver"
-    }
-    \context {
-      \Voice
-      \hide Slur
-      \remove "Forbid_line_break_engraver"
-    }
-    indent = 4.5\cm
-    incipit-width = 2.5\cm
-  }
-}
-
-% --- Pagina
+% --- Musica
 \paper{
   #(set-default-paper-size "letter")
+  indent=3.5\cm
   page-breaking = #ly:page-turn-breaking
 }
