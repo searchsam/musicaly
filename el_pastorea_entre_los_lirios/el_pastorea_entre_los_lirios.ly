@@ -14,7 +14,7 @@
 \markup { \fill-line { \fontsize #2 \smallCaps "" \fontsize #2 "Samuel Gutiérrez"  } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" \small "(Agosto, 2020)" } } }
 \header {
-  dedication = "Dedicado a la Hnra. Carmen María de Jesús - Carmelitas Descalzas Managua"
+  dedication = "Dedicado a la Hna. Carmen María de Jesús - Carmelitas Descalzas Managua"
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t

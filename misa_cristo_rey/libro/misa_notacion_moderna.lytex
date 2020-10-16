@@ -26,7 +26,8 @@
 \date{ \LARGE Linda Isabel Martínez Castro \\ Samuel José Gutiérrez Avilés \\ \small \textit{2018 - 2020} }
 
 \begin{document}
-    \pagenumbering{gobble} % borra los numeros de paguinas
+    \pagenumbering{gobble}
+    %\pagestyle{plain}
 
     %% - Portada
     \maketitle

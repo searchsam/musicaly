@@ -113,9 +113,9 @@ letra = \lyricmode {
   Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre. A -- le -- lu -- ya. Can le -- lu -- ya.
   Dios es un gue -- rre -- ro su nom -- bre~es el Se -- ñor. Hu -- dio en el mar al e -- jer -- ci -- to,
   los ca -- ros de~E -- gip -- to su -- mer -- ge~en el mar ro -- jo; A -- lla~en lo pro -- fun -- do los se -- pul -- to.
-  La dies -- tra de Dios se~e -- le --va has -- ta~el cie -- lo, la dies -- tra de Dios es te -- rri -- ble.
+  La dies -- tra de Dios se~e -- le -- va has -- ta~el cie -- lo, la dies -- tra de Dios es te -- rri -- ble.
   Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre. A -- le -- lu -- ya. Can le -- lu -- ya.
-  El mar ca -- yo~y cu -- brio las a -- guas los ta -- pa --ron,
+  El mar ca -- yo~y cu -- brio las a -- guas los ta -- pa -- ron,
   su -- bli -- me~es su vic -- to -- ria.
   Quien co -- mo tu Se -- ñor,
   con -- du -- ces con fuer -- zas al pue -- blo re -- di -- mi -- do,

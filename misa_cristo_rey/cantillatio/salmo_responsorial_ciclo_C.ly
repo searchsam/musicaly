@@ -45,8 +45,8 @@ Music = \relative do' {
   fa8 mi re2 r4 			| \break
   do8 re mi4 r8 mi mi mi 	|
   \tuplet 3/2 { mi4 re8 } fa2 r4 | \break
-  re8 do la la2 r8 		|
-  sib4 do re4 re 		| \bar "||" \break
+  re8 do la la2 la8 		|
+  sib4 do re2 			| \bar "||" \break
 
   re4^\markup{ \italic "Todos" } mi8 mi <fa re>4 <fa re> \breathe |
   <sol mi>4( <fa do>8) <mi do> re4 re \breathe |
@@ -80,7 +80,7 @@ Words = \lyricmode {
   ¡Qué~a -- le -- grí -- a cuan -- do me di -- je -- ron:
   «Va -- mos a la ca -- sa del Se -- ñor»!
   Ya es -- tán pi -- san -- do nues -- tros pies
-  por el ho -- nor de su nom -- bre.
+  tus um -- bra -- les, Je -- ru -- sa -- lén.
 
   Va -- mos a -- le -- gres a  la ca -- sa del Se -- ñor.
 

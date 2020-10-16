@@ -14,7 +14,7 @@
 \markup { \fill-line { \fontsize #2 \smallCaps " " \fontsize #2 "Música: Samuel Gutiérrez"  } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" \small "(Diciembre, 2018)" } } }
 \header {
-  dedication = "Consagración Hnra. Itxia Jovanela del Niño Jesús - Carmelitas Descalzas Managua"
+  dedication = "Consagración Hna. Itxia Jovanela del Niño Jesús - Carmelitas Descalzas Managua"
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t

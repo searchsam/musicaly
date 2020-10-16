@@ -5,11 +5,11 @@
 
 %#(set-global-staff-size 22)
 
-\markup { \fill-line { \center-column { \fontsize #5 "Alabado Sea" \fontsize #3 "Salmo 136 (135)" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Alabado Sea" \fontsize #3 "Salmo 136 (135)" } } }
 \markup { \fill-line { \fontsize #2 \smallCaps "" \fontsize #2 "Linda Martínez"  } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" \small "(Septiembre, 2020)" } } }
 \header {
-  dedication = "Dedicado a la Hnra. Lorena del Amor de Dios - Carmelitas Descalzas Managua"
+  dedication = "Dedicado a la Hna. Lorena del Amor de Dios - Carmelitas Descalzas Managua"
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
