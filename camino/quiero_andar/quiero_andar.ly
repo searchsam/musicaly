@@ -10,7 +10,7 @@ global = { \key do \major \time 4/4 \tempo "Allegro" 4 = 100 s1*62 }
 
 %#(set-global-staff-size 17)
 
-\markup { \fill-line { \center-column { \fontsize #5 "Quiero andar" \fontsize #3 "Canto Sefardí" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Quiero andar" \fontsize #3 "Canto Sefardí" } } }
 \markup { \fill-line { "" \center-column { \fontsize #2 "Kiko Argüello" } } }
 \markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 
@@ -148,4 +148,10 @@ armonias = \new ChordNames {
 convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
 Aplicando la conversión: 2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40,
 2.19.46, 2.19.49, 2.19.80
+%}
+
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión:     El documento no ha cambiado.
 %}

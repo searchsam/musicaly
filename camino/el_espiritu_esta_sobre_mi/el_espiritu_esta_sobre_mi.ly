@@ -6,7 +6,7 @@
 
 #(set-global-staff-size 22)
 
-\markup { \fill-line { \center-column { \fontsize #5 "El Espíritu del Señor está sbre mí" \fontsize #3 "Lucas 4, 18 – Isaías 61, 1-3" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "El Espíritu del Señor está sbre mí" \fontsize #3 "Lucas 4, 18 – Isaías 61, 1-3" } } }
 \markup { \fill-line { " " \fontsize #2 "Kiko Argüello" } }
 \markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 
@@ -137,4 +137,10 @@ Aplicando la conversión: 2.15.7, 2.15.9, 2.15.10, 2.15.16, 2.15.17,
 %{
 convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
 Aplicando la conversión: 2.19.80
+%}
+
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión:     El documento no ha cambiado.
 %}

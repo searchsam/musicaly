@@ -15,7 +15,7 @@
 global = {  \tempo "Allegro" 4 = 120 \clef treble \key mi \minor \time 2/4 s2*8 \bar "|." }
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 "Dayenu" \fontsize #3 "De la Liturgia Hebrea del Seder Pascual" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Dayenu" \fontsize #3 "De la Liturgia Hebrea del Seder Pascual" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Argüello" \small "" } } }
 \markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 
@@ -69,3 +69,8 @@ acordes = \new ChordNames {
 \paper {
   #( set-default-paper-size "letter" )
 }
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión:     El documento no ha cambiado.
+%}

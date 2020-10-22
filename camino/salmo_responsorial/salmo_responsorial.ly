@@ -15,7 +15,7 @@
 global = {  \tempo "Moderatto" 4 = 110 \clef treble \key fas \minor \time 4/4 s1*33 \bar "|." }
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 "Salmodia para el salmo responsorial" \fontsize #3 \caps "XXII Domingo del Tiempo ordinario - Año A" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Salmodia para el salmo responsorial" \fontsize #3 "XXII Domingo del Tiempo ordinario - Año A" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Arguello" } } }
 \markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 \header {
@@ -116,4 +116,10 @@ acordes = \new ChordNames {
 convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
 Aplicando la conversión: 2.19.2, 2.19.7, 2.19.11, 2.19.16, 2.19.22,
 2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40, 2.19.46, 2.19.49, 2.19.80
+%}
+
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión:     El documento no ha cambiado.
 %}

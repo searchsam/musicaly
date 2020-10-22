@@ -15,7 +15,7 @@
 global = {  \tempo "Moderatto" 4 = 100 \clef treble \key sol \major \time 4/4 s2*16 \bar "|." }
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 "Levanto mis ojos a los montes" \fontsize #3 "Salmo 121(120)" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Levanto mis ojos a los montes" \fontsize #3 "Salmo 121(120)" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Argüello" \small "" } } }
 \markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 
@@ -55,11 +55,13 @@ acordes = \new ChordNames {
 \score {
   <<
     \acordes
-    \new Staff { <<
-      \set Staff.midiInstrument = #"flute"
-      \global
-      \instrumento
-    >>}
+    \new Staff {
+      <<
+        \set Staff.midiInstrument = #"flute"
+        \global
+        \instrumento
+      >>
+    }
   >>
   \midi {}
   \layout {}
@@ -74,4 +76,10 @@ acordes = \new ChordNames {
 convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
 Aplicando la conversión: 2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40,
 2.19.46, 2.19.49, 2.19.80
+%}
+
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión:     El documento no ha cambiado.
 %}

@@ -5,7 +5,7 @@
 
 #(set-global-staff-size 19.9)
 
-\markup { \fill-line { \center-column { \fontsize #5 "El jacal de los pastores" \fontsize #3 "Cantar de los Cantares 1, 2-8" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "El jacal de los pastores" \fontsize #3 "Cantar de los Cantares 1, 2-8" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Argüello" } } }
 \markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 
@@ -125,8 +125,8 @@ armonias = \new ChordNames {
   \chordmode {
     R1*2 d1:m R1*4
     d1:m R1*2 bes4 a2.
-    R1*5 R2 d2:m R1*4
-    bes2 a2 R1*3 R2. d4:m
+    R1*5 s2 d2:m R1*4
+    bes2 a2 s1*3 s2. d4:m
   }
 }
 
@@ -154,4 +154,10 @@ Aplicando la conversión: 2.15.7, 2.15.9, 2.15.10, 2.15.16, 2.15.17,
 2.17.14, 2.17.15, 2.17.18, 2.17.19, 2.17.20, 2.17.25, 2.17.27,
 2.17.29, 2.17.97, 2.18.0, 2.19.2, 2.19.7, 2.19.11, 2.19.16, 2.19.22,
 2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40, 2.19.46, 2.19.49, 2.19.80
+%}
+
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión:     El documento no ha cambiado.
 %}

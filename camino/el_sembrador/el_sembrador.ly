@@ -4,7 +4,7 @@
 \version "2.19.80"
 %#(set-global-staff-size 18)
 
-\markup { \fill-line { \center-column { \fontsize #5 "El Sembrador" \fontsize #3 "Marcos 4, 3ss" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "El Sembrador" \fontsize #3 "Marcos 4, 3ss" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Argüello" } } }
 \markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 
@@ -196,4 +196,10 @@ Aplicando la conversión: 2.17.0, 2.17.4, 2.17.5, 2.17.6, 2.17.11,
 %{
 convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
 Aplicando la conversión: 2.19.80
+%}
+
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión:     El documento no ha cambiado.
 %}

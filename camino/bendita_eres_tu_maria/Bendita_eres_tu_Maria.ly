@@ -12,7 +12,7 @@ global = { \key si \minor \time 4/4 \tempo "Andagio" 4 = 70 s1*12 \bar "||" \tim
 
 %#(set-global-staff-size 17)
 
-\markup { \fill-line { \center-column { \fontsize #5 "Bendita eres tú, María" \fontsize #3 "Lucas 1,42-45" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Bendita eres tú, María" \fontsize #3 "Lucas 1,42-45" } } }
 \markup { \fill-line { "" \center-column { \fontsize #2 "Kiko Argüello" } } }
 \markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 

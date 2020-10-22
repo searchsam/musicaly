@@ -6,9 +6,9 @@
 
 \version "2.19.80"
 
-#(set-global-staff-size 16.8)
+#(set-global-staff-size 16.5)
 
-\markup { \fill-line { \center-column { \fontsize #5 "María, paloma incorrupta" \fontsize #3 "Himno inspirado en los Kontákia de san Romano el Meloda" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "María, paloma incorrupta" \fontsize #3 "Himno inspirado en los Kontákia de san Romano el Melodico" } } }
 \markup { \fill-line { "" \center-column { \fontsize #2 "Kiko Argüello" } } }
 \markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 
@@ -176,11 +176,11 @@ armonias = \new ChordNames {
   \italianChords
   \chordmode {
     R1*6
-    d1:m R1 g1:m R1 a1 R1 d1:m R1 R2 g2:m R1 a1 R1*3 d1:m
+    d1:m R1 g1:m R1 a1 R1 d1:m R1 s2 g2:m R1 a1 R1*3 d1:m
     g1:m a1 R1 g1:m a1 R1 bes1 a1 R1 bes1 R1*3 a1 %intermadio
-    R1*10 g1:m R1 R2 a2 R1 g1:m
+    R1*10 g1:m R1 s2 a2 R1 g1:m
     a1 R1 bes1 R1*2 a1 R1 bes1 a1 %intermedio
-    R1*9 g1:m R1 R2 a1 R2 d1:m g1:m R1 a1 R1 g1:m
+    R1*9 g1:m R1 s2 a1 s2 d1:m g1:m R1 a1 R1 g1:m
     R1*2 bes1 a1
   }
 }
@@ -211,4 +211,10 @@ Aplicando la conversión: 2.17.0, 2.17.4, 2.17.5, 2.17.6, 2.17.11,
 2.17.14, 2.17.15, 2.17.18, 2.17.19, 2.17.20, 2.17.25, 2.17.27,
 2.17.29, 2.17.97, 2.18.0, 2.19.2, 2.19.7, 2.19.11, 2.19.16, 2.19.22,
 2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40, 2.19.46, 2.19.49, 2.19.80
+%}
+
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión:     El documento no ha cambiado.
 %}

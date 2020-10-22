@@ -7,7 +7,7 @@
 
 #(set-global-staff-size 22)
 
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Aclamad al Señor" \fontsize #2 "Salmo 100 (99)" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Aclamad al Señor" \fontsize #3 "Salmo 100 (99)" } } }
 \markup { \fill-line { \fontsize #2 "" \fontsize #2 "Kiko Argüello"  } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 \header {

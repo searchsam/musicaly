@@ -7,7 +7,7 @@
 
 %#(set-global-staff-size 17)
 
-\markup { \fill-line { \center-column { \fontsize #5 "Sube Dios entre Aclamaciones" \fontsize #3 "Salmo 46(47), 5-7" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Sube Dios entre Aclamaciones" \fontsize #3 "Salmo 46(47), 5-7" } } }
 \markup { \fill-line { \fontsize #2 \smallCaps "Flauta" \fontsize #2 "Kiko Argüello"  } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 \header {
@@ -25,7 +25,7 @@ global = {
   \bar "|."
 }
 
-melodia = \relative do'' { 	
+melodia = \relative do'' {
   % Type notes here
   si4 si8 si 			| % 01
   si8 la sol la 			| % 02
@@ -50,7 +50,7 @@ melodia = \relative do'' {
 armonia = \new ChordNames {
   \set chordChanges = ##t
   \italianChords
-  \chordmode { 
+  \chordmode {
     mi2:m
   }
 }
@@ -58,11 +58,13 @@ armonia = \new ChordNames {
 \score {
   <<
     \armonia
-    \new Staff { <<
-      %\set Staff.midiInstrument = "trumpet"
-      \global 
-      \melodia
-    >> }
+    \new Staff {
+      <<
+        %\set Staff.midiInstrument = "trumpet"
+        \global
+        \melodia
+      >>
+    }
   >>
   \midi {}
   \layout {}
@@ -75,4 +77,10 @@ armonia = \new ChordNames {
 %{
 convert-ly (GNU LilyPond) 2.19.81  convert-ly: Procesando «»...
 Aplicando la conversión: 2.19.80
+%}
+
+
+%{
+convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
+Aplicando la conversión:     El documento no ha cambiado.
 %}
