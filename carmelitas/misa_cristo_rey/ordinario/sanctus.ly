@@ -11,7 +11,7 @@
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Santo" \fontsize #2 "Misa Cristo Rey" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Linda Martínez" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" \small "(Octubre 2019)" } } }
+\markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -85,7 +85,7 @@ cantusNotes = \relative do'' {
   sib4( la8 sib do4) sib \break
 
   sol4 la sib do sib la sib r
-  sol4 la sib do sib la sib do si2 \fermata r \bar "||" \break
+  sol4 la sib do sib la sib do( si2) \fermata r \bar "||" \break
 
   sol4( fa) do'2(
   si4) do2 r4
@@ -143,7 +143,7 @@ altus = \relative do' {
 
 cantusLyrics = \lyricmode {
   San -- to, san -- to, san -- to.
-  Los cie -- los y la tie -- rra es -- tan lle -- nos de tu glo -- ri -- a.
+  Los cie -- los y la tie -- rra es -- tan lle -- nos de tu glo -- ria.
   Ho -- sa -- na, ho -- sa -- na, en el cie -- lo.
 
   San -- to, san -- to, san -- to.

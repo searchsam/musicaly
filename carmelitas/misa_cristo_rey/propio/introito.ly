@@ -10,7 +10,7 @@
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Entrada" \fontsize #2 "Misa de Cristo Rey" "Principe de los siglos - Himno Solemnidad Cristo Rey"} } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Letra: Pbro. Vittorio Genovesi S.J." } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Letra: Vittorio Genovesi S.J." } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Música: Linda Martínez" } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {

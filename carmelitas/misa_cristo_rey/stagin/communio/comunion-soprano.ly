@@ -343,7 +343,7 @@ armonias = \new ChordNames {
     \new StaffGroup = "Comunion" <<
       \new Staff <<
         \set Staff.instrumentName = #"Soprano"
-        \set Staff.midiInstrument = #"piano"
+        \set Staff.midiInstrument = #"oboe"
         \set Staff.midiMaximumVolume = #1.5
         
         \new Voice = "melodia" <<

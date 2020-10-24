@@ -27,7 +27,7 @@ global = {
   \tempo "Andante Maestuoso" 4 = 80
   \key re \minor
   \time 4/4
-  \skip 1*14
+  \skip 1*12
   \tempo "Allegro" 4 = 120
   \skip 1*6
   \tempo "Andante Maestuoso" 4 = 80
@@ -37,8 +37,7 @@ global = {
 }
 sopMusic = \relative do'' {
   R1*3 |
-  sib4^\markup{ \italic "Solo Soprano"} sib( la2) |
-  R1*2 |
+  sib4^\markup{ \italic "Solo Soprano"} sib( la2) \fermata |
 
   sib4^\markup{ \italic "Soprano"}( la8 sib do4) sib |
   sib4( la8 sib do4) sib |
@@ -87,7 +86,7 @@ sopWords = \lyricmode {
 }
 
 altMusic = \relative do' {
-  R1*6 |
+  R1*4 |
 
   sol'2^\markup{ \italic "Contralto"}( fa4) sol |
   sol2( fa4) sol |
@@ -136,7 +135,7 @@ altWords = \lyricmode {
 
 NotesSop = \relative do'' {
   sib4\p sib( la2) \bar "||" | fa1 | sol1~ \bar "||" |
-  sol2 fa~ \bar "||" | fa1 | sol1~ \bar "||" | \break
+  sol2 fa \fermata \bar "||" \bar "||" | \break
 
   sol2 fa4 sol4~ | sol2 fa4 sol4~ | sol2 fa4 sol4~ | \break
   sol2. fa4 | sol2. fa4 | sol2. fa4 | sol2. fa4 | sol1 \fermata | \break
@@ -150,7 +149,7 @@ NotesSop = \relative do'' {
 }
 NotesAlt = \relative do' {
   R1 | re\p | re1~ |
-  re2 re~ | re1 | re1~ |
+  re2 re \fermata |
 
   re2 do4 re~ | re2 do4 re~ | re2 do4 re~ |
   re2. do4 | re2. do4 | re2. do4 | re2. do4 | re1 |
@@ -164,7 +163,7 @@ NotesAlt = \relative do' {
 }
 NotesTer = \relative do' {
   R1 | la1\p | sol1~ |
-  sol2 la~ | la1 | sol1~ |
+  sol2 la\fermata |
 
   sol2 fa4 sol~ | sol2 fa4 sol~ | sol2 fa4 sol~ |
   sol2. fa4 | sol2. fa4 | sol2. fa4 | sol2. fa4 | sol1 \fermata |
@@ -178,7 +177,7 @@ NotesTer = \relative do' {
 }
 NotesBas = \relative do {
   R1 | re1\p | sib1~ |
-  sib2 re~ | re1 | sib1~ |
+  sib2 re \fermata |
 
   sib2 la4 sib~ | sib2 la4 sib~ | sib2 la4 sib~ |
   sib2. la4 | sib2. la4 | sib2. la4 | sib2. la4 | si1 \fermata |

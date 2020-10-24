@@ -27,7 +27,7 @@ global = {
   \tempo "Andante Maestuoso" 4 = 80
   \key re \minor
   \time 4/4
-  \skip 1*14
+  \skip 1*12
   \tempo "Allegro" 4 = 120
   \skip 1*6
   \tempo "Andante Maestuoso" 4 = 80
@@ -38,7 +38,6 @@ global = {
 sopMusic = \relative do'' {
   R1*3 |
   sib4^\markup{ \italic "Solo Soprano"} sib( la2) |
-  R1*2 |
 
   sib4^\markup{ \italic "Soprano"}( la8 sib do4) sib |
   sib4( la8 sib do4) sib |
@@ -47,8 +46,8 @@ sopMusic = \relative do'' {
   sol4 la sib do |
   sib la sib r |
   sol4 la sib do |
-  sib la sib do |
-  si2 r \bar "||" |
+  sib la sib do( |
+  si2) r \bar "||" |
 
   sol4( fa) do'2( |
   si4) do2 r4 |
@@ -78,7 +77,7 @@ sopMusic = \relative do'' {
 sopWords = \lyricmode {
   San -- to.
   San -- to, san -- to, san -- to.
-  Los cie -- los y la tie -- rra es -- tan lle -- nos de tu glo -- ri -- a.
+  Los cie -- los y la tie -- rra es -- tan lle -- nos de tu glo -- ria.
   Ho -- sa -- na, ho -- sa -- na, en el cie -- e -- lo.
 
   San -- to, san -- to, san -- to.
@@ -121,13 +120,11 @@ altMusic = \relative do' {
   fa4 fa fa fa |
   fa4 fa fa fa |
   fa4 fa fa fa |
-  fa4 fa fa fa |
-  fa4 fa fa fa |
 }
 
 NotesSop = \relative do'' {
   sib4\p sib( la2) \bar "||" | fa1 | sol1~ \bar "||" |
-  sol2 fa~ \bar "||" | fa1 | sol1~ \bar "||" | \break
+  sol2 fa \bar "||" | \break
 
   sol2 fa4 sol4~ | sol2 fa4 sol4~ | sol2 fa4 sol4~ | \break
   sol2. fa4 | sol2. fa4 | sol2. fa4 | sol2. fa4 | sol1 | \break
@@ -141,7 +138,7 @@ NotesSop = \relative do'' {
 }
 NotesAlt = \relative do' {
   R1 | re\p | re1~ |
-  re2 re~ | re1 | re1~ |
+  re2 re~ |
 
   re2 do4 re~ | re2 do4 re~ | re2 do4 re~ |
   re2. do4 | re2. do4 | re2. do4 | re2. do4 | re1 |
@@ -155,7 +152,7 @@ NotesAlt = \relative do' {
 }
 NotesTer = \relative do' {
   R1 | la1\p | sol1~ |
-  sol2 la~ | la1 | sol1~ |
+  sol2 la |
 
   sol2 fa4 sol~ | sol2 fa4 sol~ | sol2 fa4 sol~ |
   sol2. fa4 | sol2. fa4 | sol2. fa4 | sol2. fa4 | sol1 |
@@ -169,7 +166,7 @@ NotesTer = \relative do' {
 }
 NotesBas = \relative do {
   R1 | re1\p | sib1~ |
-  sib2 re~ | re1 | sib1~ |
+  sib2 re |
 
   sib2 la4 sib~ | sib2 la4 sib~ | sib2 la4 sib~ |
   sib2. la4 | sib2. la4 | sib2. la4 | sib2. la4 | si1 |
@@ -205,7 +202,7 @@ armonias = \new ChordNames {
     \new ChoirStaff <<
       \new Staff <<
         \set Staff.instrumentName = #"Soprano"
-        \set Staff.midiInstrument = #"piano"
+        \set Staff.midiInstrument = #"oboe"
         \set Staff.midiMaximumVolume = #1.5
         
         \new Voice = "soprano" <<

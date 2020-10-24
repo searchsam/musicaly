@@ -29,11 +29,11 @@ global = {
   \time 4/4
   s1*11
   \key re \minor
-  s1*10
+  s1*8
   \key sol \minor
   s1*7
   \key re \minor
-  s1*15
+  s1*13
   \key sol \minor
   s1
   \tempo "Andante" 4 = 80
@@ -47,7 +47,7 @@ global = {
 }
 
 sopMusic = \relative do'' {
-  R1*13 |
+  R1*11 |
   r4 do2^\markup{ \italic "Soprano" } do4
   re4 re re re
   re( do2 si4)
@@ -59,7 +59,7 @@ sopMusic = \relative do'' {
   R1*3
   \bar "||"
 
-  R1*6 |
+  R1*4 |
   r4 do2^\markup{ \italic "Soprano" } do4
   re4 re re re
   re( do2) si4
@@ -112,7 +112,7 @@ sopMusic = \relative do'' {
   R1*3
   \bar "||"
 
-  R1*6 |
+  R1*4 |
   r4 do2^\markup{ \italic "Soprano"} do4
   re4 re re re
   re( do2) si4
@@ -160,8 +160,7 @@ altMusic = \relative do' {
   fa2^\markup{ \italic "Solo Contralto" }( re4 sib4 |
   mib2) re2 |
   do2.( sib4~
-  sib2\fermata) r \bar "||" |
-  R1*2
+  sib2.\fermata) r4 \bar "||" |
   r4 la'2^\markup{ \italic "Contralto" } la4
   sib4 sib sib sib
   la2( sol2)
@@ -174,8 +173,7 @@ altMusic = \relative do' {
   fa2^\markup{ \italic "Solo Contralto" } re4 sib4 |
   mib2 re2 |
   do2. sib4~
-  sib2 \fermata r \bar "||" |
-  R1*2
+  sib2. \fermata r4 \bar "||" |
   r4 la'2^\markup{ \italic "Contralto" } la4
   sib4 sib sib sib
   la2 sol2
@@ -233,9 +231,7 @@ altMusic = \relative do' {
   fa2^\markup{ \italic "Solo Contralto"} re4 sib
   mib4 mib re re
   do2. sib4~
-  sib2 \fermata r2 \bar "||"
-  R1*2 \bar "||"
-
+  sib2. \fermata r4 \bar "||"
   r4 la'2^\markup{ \italic "Contralto"} la4
   sib4 sib sib sib
   la2 sol2
@@ -285,11 +281,11 @@ altWords = \lyricmode {
 
 NotesSop = \relative do' {
   R1*4 \bar "||" | re1\p | fa1 | re1~ \bar "||" | \break
-  re1 | sol2 fa | mib2. re4~ | re1 \fermata | mi1 | fa1~ \bar "||" \break |
+  re1 | sol2 fa | mib2. re4~ | re1 \fermata \break |
   fa1 | sol1 | fa2 sol | mi2 fa~ | fa2 mi | sol1 | fa2 sol2~ | sol4 la2. \fermata \bar "||" \break |
 
   re,1 | fa1 | re1~ \bar "||" |
-  re1 | sol2 fa | mib2. re4~ | re1 \fermata | mi1 | fa1~ \bar "||" \break |
+  re1 | sol2 fa | mib2. re4~ | re1 \fermata \bar "||" \break |
   fa1 | sol1 | fa2 sol | mi2 fa~ | fa2 mi~ | mi4 sol2 fa4 | sol1 | fa2. sol4~ | sol4 fas2 sol4~ | sol4 fa2. | sol2 fa | sol1 | la1 \fermata | re,1 \fermata \break |
 
   mib2 re | mib2 re | mib1~ | mib1 | re2. mib4~ | mib4 re2. \bar "||" \break |
@@ -301,7 +297,7 @@ NotesSop = \relative do' {
   sol2 | fa2~ | fa4 sol | fa2 | sol2~ | sol4. fa8 | re4. fa8 | re2~ \fermata \bar "||" | \break
 
   re1 | fa1 | re1~ \bar "||" |
-  re1 | sol2 fa | mib2. re4~ | re1 \fermata | mi1 | fa1~ \bar "||" \break |
+  re1 | sol2 fa | mib2. re4~ | re1 \fermata \bar "||" \break |
   fa1 | sol1 | fa2 sol | mi2 sol | fa2 mi | sol2 fas2  | sol2 re2~  | re2 fa~ | fa4 sol2 mi4~ | mi4 fa2 re4~ | re1 | fa2 mi | sol2. fa4~ | fa4 sol2. | la1 \fermata \bar "||" \break | fa1~ \fermata |
 
   fa2 sol
@@ -311,11 +307,11 @@ NotesSop = \relative do' {
 }
 NotesAlt = \relative do' {
   fa2\p re4 sib4 | mib2 re | do1 | sib1\fermata | sib | do | sib1~ |
-  sib1 | mib2 re | do2. sib4~ | sib1 | do1 | do1~ |
+  sib1 | mib2 re | do2. sib4~ | sib1 |
   do1 | re1 | re2 re | do2 do~ | do2 do | re1 | do2 re2~ | re4 mi2. |
 
   sib1 | do | sib1~ |
-  sib1 | mib2 re | do2. sib4~ | sib1 | do1 | do1~ |
+  sib1 | mib2 re | do2. sib4~ | sib1 |
   do1 | re1 | re2 re | do2 do~ | do2 do~ | do4 re2 do4 | re1 | do2. re4~ | re4 re2 re4~ | re4 do2. | re2 do | re1 | mi1 | sib1 |
 
   do2 sib | do2 sib | do1~ | do1 | sib2. do4~ | do4 sib2. |
@@ -327,7 +323,7 @@ NotesAlt = \relative do' {
   re2 | re2~ | re4 re | do2 | re2~ | re4. do8 | sib4. do8 | sib2~ |
 
   sib1 | do | sib1~ |
-  sib1 | mib2 re | do2. sib4~ | sib1 | do1 | do1~ |
+  sib1 | mib2 re | do2. sib4~ | sib1 |
   do1 | re1 | re2 re | do2 re | do2 do | re2 re2 | re2 sib2~ | sib2 do~ | do4 re2 do4~ | do4 do2 sib4~ | sib1 | do2 do | re2. re4~ | re4 re2. | mi1 | re1~ |
 
   re2 re
@@ -336,11 +332,11 @@ NotesAlt = \relative do' {
 }
 NotesTer = \relative do' {
   R1*4 | fa,1\p | mib1 | fa1~ |
-  fa1 | sib2 la | sol2. fa4~ | fa1 \fermata | sol1 | fa1~ |
+  fa1 | sib2 la | sol2. fa4~ | fa1 \fermata |
   fa1 | sol1 | la2 fa | sol2 fa~ | fa2 sol | sol1 | fa2 sol2~ | sol4 la2. \fermata |
 
   fa1 | mib1 | fa1~ |
-  fa1 | sib2 la | sol2. fa4~ | fa1 \fermata | sol1 | fa1~ |
+  fa1 | sib2 la | sol2. fa4~ | fa1 \fermata |
   fa1 | sol1 | la2 fa | sol2 fa~ | fa2 sol~ | sol4 sol2 fa4 | sol1 | fa2. sol4~ | sol4 la2 sol4~ | sol4 fa2. | sol2 fa | sol1 | la1 \fermata | fa1 \fermata |
 
   sol2 fa | sol2 fa | sol1~ | sol1 | fa2. sol4~ | sol4 fa2. |
@@ -352,7 +348,7 @@ NotesTer = \relative do' {
   sol2 | la2~ | la4 sol | fa2 | sol2~ | sol4. fa8 | fa4. fa8 | fa2~ \fermata |
 
   fa1 | mib1 | fa1~ |
-  fa1 | sib2 la | sol2. fa4~ | fa1 \fermata | sol1 | fa1~ |
+  fa1 | sib2 la | sol2. fa4~ | fa1 \fermata |
   fa1 | sol1 | la2 fa | sol2 sol | fa2 sol | sol2 la2 | sol2 fa2~ | fa2 fa~ | fa4 sol2 sol4~ | sol4 fa2 fa4~ | fa1 | fa2 sol | sol2. la4~ | la4 sol2. | la1 \fermata | la1~ \fermata |
 
   la2 sol
@@ -361,11 +357,11 @@ NotesTer = \relative do' {
 }
 NotesBas = \relative do {
   R1*4 | sib1\p | la1 | sib1~ |
-  sib1 | mib2 re | do2. sib4~ | sib1 | sib1 | la1~ |
+  sib1 | mib2 re | do2. sib4~ | sib1 |
   la1 | sib1 | re2 si | do2 la~ | la2 do | sib1 | la2 si2~ | si4 dos2. |
 
   sib1 | la1 | sib1~ |
-  sib1 | mib2 re | do2. sib4~ | sib1 | sib1 | la1~ |
+  sib1 | mib2 re | do2. sib4~ | sib1 |
   la1 | sib1 | re2 si | do2 la~ | la2 do~ | do4 sib2 la4 | sib1 | la2. sib4~ | sib4 do2 sib4~ | sib4 la2. | sib2 la | si1 | dos1 | sib1 |
 
   do2 sib | do2 sib | do1~ | do1 | sib2. do4~ | do4 sib2. |
@@ -377,7 +373,7 @@ NotesBas = \relative do {
   sib2 | re2~ | re4 sib | la2 | sib2~ | sol4. la8 | sib4. la8 | sib2~ |
 
   sib1 | la1 | sib1~ |
-  sib1 | mib2 re | do2. sib4~ | sib1 | sib1 | la1~ |
+  sib1 | mib2 re | do2. sib4~ | sib1 |
   la1 | sib1 | re2 si | do2 sib | la2 do | sib2 re2 | sib2 sib2~ | sib2 la~ | la4 sib2 do4~ | do4 la2 sib4~ | sib1 | la2 do | sib2. re4~ | re4 si2. | dos1 | re1~ |
 
   re2 sib

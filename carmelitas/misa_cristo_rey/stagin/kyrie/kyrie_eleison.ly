@@ -56,6 +56,10 @@ cantusLyrics = \lyricmode {
   Se -- ñor, ten pie -- dad, pie -- dad. Se -- ñor, ten pie -- dad.
 }
 
+cantusLyricsAltenative = \lyricmode {
+  Cris -- to, ten pie -- dad, pie -- dad. Cris -- to, ten pie -- dad.
+}
+
 altusIncipit = {
   \set Staff.instrumentName = "Altus"
   \clef "petrucci-c3"
@@ -74,6 +78,10 @@ altusNotes = \relative do' {
 
 altusLyrics = \lyricmode {
   Se -- ñor, ten pie -- dad. Se -- ñor, ten pie -- dad.
+}
+
+altusLyricsAltenative = \lyricmode {
+  Cris -- to, ten pie -- dad. Cris -- to, ten pie -- dad.
 }
 
 % --- invocacion #1
@@ -176,14 +184,14 @@ altusLyrics = \lyricmode {
         \global
         \cantusNotes
       >>
-      \new Lyrics \lyricsto cantusNotes { \cantusLyrics }
+      \new Lyrics \lyricsto cantusNotes { \cantusLyricsAltenative }
       \new Voice = "altusNotes" <<
         \set Staff.instrumentName = #"Altus"
         \global
         \incipit \altusIncipit
         \altusNotes
       >>
-      \new Lyrics \lyricsto altusNotes { \altusLyrics }
+      \new Lyrics \lyricsto altusNotes { \altusLyricsAltenative }
     >>
   >>
   \layout {

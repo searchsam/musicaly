@@ -181,7 +181,7 @@ armonias = \new ChordNames {
       >>
       \new Staff <<
         \set Staff.instrumentName = #"Contralto"
-        \set Staff.midiInstrument = #"piano"
+        \set Staff.midiInstrument = #"oboe"
         \set Staff.midiMaximumVolume = #1.5
         
         \new Voice = "contralto" <<

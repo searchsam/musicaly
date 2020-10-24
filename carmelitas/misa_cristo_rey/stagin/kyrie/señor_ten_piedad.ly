@@ -53,7 +53,7 @@ sopMusic = \relative do' {
 }
 sopWords = \lyricmode {
   Se -- ñor, ten pie -- dad, pie -- dad. Se -- ñor, ten pie -- dad.
-  Se -- ñor, ten pie -- dad, pie -- dad. Se -- ñor, ten pie -- dad.
+  Cris -- to, ten pie -- dad, pie -- dad. Cris -- to, ten pie -- dad.
   Se -- ñor, ten pie -- dad, pie -- dad. Se -- ñor, ten pie -- dad.
 }
 
@@ -98,7 +98,7 @@ altWords = \lyricmode {
   Tú que nos li -- bras -- te del pe -- ca -- do y de la muer -- te.
   Se -- ñor, ten pie -- dad. Se -- ñor, ten pie -- dad.
   Tú que nos re -- con -- ci -- lias -- te con el Pa -- dre y nues -- tros her -- ma -- nos.
-  Se -- ñor, ten pie -- dad. Se -- ñor, ten pie -- dad.
+  Cris -- to, ten pie -- dad. Cris -- to, ten pie -- dad.
   Tú que nos re -- su -- ci -- ta -- rás y glo -- ri -- fi -- ca -- rás con -- ti -- go.
   Se -- ñor, ten pie -- dad. Se -- ñor, ten pie -- dad.
 }

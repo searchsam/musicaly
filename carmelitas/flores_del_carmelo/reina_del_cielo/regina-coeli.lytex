@@ -1,0 +1,76 @@
+
+\documentclass[12pt, letter, latin1, utf8]{report}
+
+\title{ \huge \textsc{Reina del Cielo} \\ \Large \textsl{ - Regina Coeli - } }
+\date{Noviembre 26, 2017}
+\author{ \textbf{Samuel Jos\'e Guti\'errez Avil\'es} \\ \small En la Solemnidad de Cristo Rey del Universo \and \textit{"Dedicado a los 25 a\~nos de vostos perpetuos de Carmer Teresa"} }
+
+\begin{document}
+
+    \maketitle
+
+    \textit{Regina Coeli}\footnote{ Enciclopedia Cat\'olica, https://goo.gl/p766Ka } es el nombre de una de las cuatro ant\'ifonas marianas y
+    oraci\'on cristol\'ogica de la Iglesia Cat\'olica en honor de la Sant\'isima Virgen Mar\'ia.
+    Las otras tres ant\'ifonas marianas son: \textit{Ave Regina Caelorum}, \textit{Alma Redemptoris Mater} y \textit{Salve Regina}.
+    
+    \textit{Regina Coeli} son las palabras latinas con que abre el himno pascual a la
+    Sant\'isima Virgen Mar\'ia que traducidas al espa\~nol son "Reina del cielo", 
+    es una composici\'on lit\'urgica a manera de felicitaci\'on a la Sant\'isima Virgen Mar\'ia 
+    por la resurrecci\'on de su Hijo Jesucristo.
+    \\
+    
+    El \textit{Regina Coeli} sustituye el rezo del Angelus durante el tiempo pascual.
+    As\'i lo estableci\'o el rezo de la ant\'ifona de \textit{Regina Coeli} el Papa Benedicto XIV en 1742.
+    Lit\'urgicamente est\'a prescrita en el Breviario Romano desde las completas del 
+    S\'abado Santo hasta la hora nona del domingo de Pentecost\'es. Debe ser cantado o rezado en coro y de pie.
+    \\
+
+    Aunque no se conoce el autor, ya se rezaba en el siglo XII y los frailes menores (\textit{Ordo Fratrum Minorum - OFM}) 
+    lo rezaban despu\'es del Oficio de Completas ya en la primera mitad del siglo XIII y 
+    gracias a la misma actividad de los frailes franciscanos se populariz\'o y expandi\'o por todo el mundo cristiano.
+
+    Si bien esta oraci\'on es de autor desconocido, la tradici\'on se la atribuye a San Gregorio Magno Papa, 
+    el cual escuch\'o los tres primeros versos cantados por \'angeles mientras caminaba 
+    descalzo una mañana en una procesi\'on en Roma, a las que \'el agreg\'o la cuarta l\'inea.
+    \\
+
+    El himno no parece caer en desuso en la Iglesia, siendo uno de los m\'as populares y 
+    rezado -incluso fuera del preceptivo tiempo pascual- por los cat\'olicos hasta el d\'ia de hoy.
+    \\
+    
+    \begin{center} 
+	\LARGE \textsc{ Regina Coeli } 
+	\\
+
+	\begin{lilypond}
+	\language "espanol"
+	\include "gregorian.ly"
+	\score {<<
+	    \new VaticanaVoice = "cantus" {
+		\[ fa  \] \[ sol \] \[ fa\ictus \] \[ sol \] \augmentum la \divisioMinima
+		\[ sib \] \[ la \] \[ sol\ictus \] \[ sib \] \[ la \] \[ sol \] \augmentum fa \divisioMaior
+		
+	    }
+	    \new Lyrics \lyricsto "cantus" {
+		Re -- gí -- na Cáe -- li lea -- tá -- re, a -- lle -- lú -- ia:
+		
+	    }
+	>>}
+	\end{lilypond}
+    \end{center}
+    
+    \pagebreak
+
+    \begin{center} \LARGE \textsc{ Reina del Cielo } \end{center}
+    \begin{center} \large \textsl{ Regina Coeli } \end{center}
+    \normalsize \textup{Partitura Maestra \hfill Samuel J. Guti\'errez Avil\'es}
+    \lilypondfile[quote,noindent]{reina_del_cielo-es.ly}
+
+    \pagebreak
+    
+    \begin{center} \LARGE \textsc{ Regina Coeli } \end{center}
+    \begin{center} \large \textsl{ Reina del Cielo } \end{center}
+    \normalsize \textup{Partitura Maestra \hfill Samuel J. Guti\'errez Avil\'es}
+    \lilypondfile[quote,noindent]{reina_del_cielo-la.ly}
+
+\end{document}
