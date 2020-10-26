@@ -34,21 +34,21 @@ sopMusic = \relative do' {
   sol4 la2 sol4 |
   la2 r |
   la4 fa2 fa4 |
-  sol4 la2. \fermata |
+  sol4 la2. |
 
   R1*7 | \break
   la4^\markup{ \italic "Soprano"} fa2 fa4 |
   sol4 la2 sol4 |
   la2 r |
   la4 fa2 fa4 |
-  sol4 la2. \fermata |
+  sol4 la2. |
 
   R1*7 |
   la4^\markup{ \italic "Soprano"} fa2 fa4 |
   sol4 la2 sol4 |
   la2 r |
   la4 fa2 fa4 |
-  sol4 la2. \fermata |
+  sol4 la2. |
   R1*2 \bar "|."
 }
 sopWords = \lyricmode {
@@ -67,7 +67,7 @@ altMusic = \relative do' {
   re4 re do2 |
   re2 r |
   la'4 fa2 fa4 |
-  sol4 la2. \fermata \bar "||" |
+  sol4 la2. \bar "||" |
 
   R1*2 |
   la,4^\markup{ \italic "Solo Contralto"} la la do |
@@ -79,7 +79,7 @@ altMusic = \relative do' {
   re4 re do2 |
   re2 r |
   la'4 fa2 fa4 |
-  sol4 la2. \fermata \bar "||" |
+  sol4 la2. \bar "||" |
 
   R1*2 |
   la,4^\markup{ \italic "Solo Contralto"} la la do |
@@ -91,7 +91,7 @@ altMusic = \relative do' {
   re4 re do2 |
   re2 r |
   la'4 fa2 fa4 |
-  sol4 la2. \fermata \bar "||" |
+  sol4 la2. \bar "||" |
   R1*2 \bar "|."
 }
 altWords = \lyricmode {
@@ -111,9 +111,9 @@ NotesSop = \relative do' {
   fa1 | fa1~ | fa1~ | fa2 mi2~ | mi4 fa2.~ | fa1~ | fa2 mi | fa1~ | fa1 | mi4 fa2.~ | \break
 
   fa1 | mi2 fa~ \bar "||" | \break
-  fa1 | fa1~ | fa1~ | fa4 mi2. | fa1~ | fa1~ | fa2 mi | fa1~ | fa1 | mi4 fa2. \fermata | \break
+  fa1 | fa1~ | fa1~ | fa4 mi2. | fa1~ | fa1~ | fa2 mi | fa1~ | fa1 | mi4 fa2. | \break
 
-  mi1 \fermata | fa1 \fermata |
+  mi1 | fa1 |
 }
 NotesAlt = \relative do' {
   la4\p la la do | re re re re | re re re do| re mi re2 | re1 | do2 do~ \bar "||" |
@@ -135,9 +135,9 @@ NotesTer = \relative do {
   fa1 | la1~ | la1~ | la2 sol2~ | sol4 la2.~ | la1~ | la2 sol | la1~ | la1 | sol4 la2.~ |
 
   la1 | sol2 fa~ |
-  fa1 | la1~ | la1~ | la4 sol2. | la1~ | la1~ | la2 sol | la1~ | la1 | sol4 la2. \fermata |
+  fa1 | la1~ | la1~ | la4 sol2. | la1~ | la1~ | la2 sol | la1~ | la1 | sol4 la2. |
 
-  sol1 \fermata | la1 \fermata |
+  sol1 | la1 |
 }
 NotesBas = \relative do {
   R1*4 | re1\p | do2 la~ |

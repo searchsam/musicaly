@@ -14,7 +14,6 @@
 \markup { \fill-line { " " \center-column { \fontsize #2 "Música: Linda Martínez" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
-  dedication = "Dedicado a la Hna. Carmen Teresa de Cristo Rey - Carmelitas Descalzas Managua"
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t

@@ -55,7 +55,7 @@ sopMusic = \relative do'' {
   do4 do do do
   re2 re8 re re4(~
   re4 do si8 la si4~
-  si4) dos2. \fermata
+  si4) dos2.
   R1*3
   \bar "||"
 
@@ -72,7 +72,7 @@ sopMusic = \relative do'' {
   sib4~ sib4
   \tuplet 3/2 {do8 do do} do4 do re re2( do4
   si8 la) si2 si4
-  dos1 \fermata
+  dos1
   r1
   \bar "||"
 
@@ -86,7 +86,7 @@ sopMusic = \relative do'' {
   r8 sib la4
   r4 la8 sib
   sib8 sib( la4
-  sol8) la4. \fermata
+  sol8) la4.
 
   fa8^\markup{ \italic "Solo Soprano"} sib4 la8
   re4 do4~
@@ -99,7 +99,7 @@ sopMusic = \relative do'' {
   do sib sib do
   do do( sib4
   la8 sol la4)
-  sib2 \fermata \bar "||"
+  sib2 \bar "||"
 
   do8^\markup{ \italic "Solo Soprano"} do re4
   la8 sib sol la8~
@@ -108,7 +108,7 @@ sopMusic = \relative do'' {
   sib sib sib8 la8
   sol4.( la8
   sib4. la8)
-  sib2 \fermata
+  sib2
   R1*3
   \bar "||"
 
@@ -127,10 +127,10 @@ sopMusic = \relative do'' {
   do4 do do do
   re2 re2(
   do4 si8 la si2)
-  dos1 \fermata
+  dos1
 
   R1
-  la2( sib la) sol( la1) \fermata
+  la2( sib la) sol( la1)
 }
 sopWords = \lyricmode {
   Pa -- dre to -- do -- po -- de -- ro -- so.
@@ -160,20 +160,20 @@ altMusic = \relative do' {
   fa2^\markup{ \italic "Solo Contralto" }( re4 sib4 |
   mib2) re2 |
   do2.( sib4~
-  sib2.\fermata) r4 \bar "||" |
+  sib2.) r4 \bar "||" |
   r4 la'2^\markup{ \italic "Contralto" } la4
   sib4 sib sib sib
   la2( sol2)
   sol2 r4 la8 la
   la4 la sol2
   sib4 sib sib8 sib sib4(
-  la2 sol~ sol4) la2. \fermata
+  la2 sol~ sol4) la2.
   R1*3
 
   fa2^\markup{ \italic "Solo Contralto" } re4 sib4 |
   mib2 re2 |
   do2. sib4~
-  sib2. \fermata r4 \bar "||" |
+  sib2. r4 \bar "||" |
   r4 la'2^\markup{ \italic "Contralto" } la4
   sib4 sib sib sib
   la2 sol2
@@ -185,7 +185,7 @@ altMusic = \relative do' {
   sol4~ sol4 fas2
   sol4~ sol4
   \tuplet 3/2 {la8 la la} la4 la sib sib4(
-  la2) sol~ sol4 sol4 la1 \fermata
+  la2) sol~ sol4 sol4 la1
   r1
 
   mib2^\markup{ \italic "Solo Contralto"}( re4) sib
@@ -204,7 +204,7 @@ altMusic = \relative do' {
   do2 fa2
   do2 re4 mib
   fa re( mib2)
-  sib1 \fermata \bar "||"
+  sib1 \bar "||"
 
   re4^\markup{ \italic "Solo Contralto"} re re sol
   fa2
@@ -215,7 +215,7 @@ altMusic = \relative do' {
   r sol fa4
   r4 fa8 sol
   sol8 fa( re4
-  do8) re4. \fermata \bar "||"
+  do8) re4. \bar "||"
 
   R2*12
   sol8^\markup{ \italic "Solo Contralto"} sol sol4
@@ -225,13 +225,13 @@ altMusic = \relative do' {
   sol sol sol8 fa8
   sol4.( fa8~
   fa2)
-  fa2 \fermata
+  fa2
 
   R1*3 |
   fa2^\markup{ \italic "Solo Contralto"} re4 sib
   mib4 mib re re
   do2. sib4~
-  sib2. \fermata r4 \bar "||"
+  sib2. r4 \bar "||"
   r4 la'2^\markup{ \italic "Contralto"} la4
   sib4 sib sib sib
   la2 sol2
@@ -246,11 +246,11 @@ altMusic = \relative do' {
   la4 la sol2
   sib4 sib sib4( la4~
   la4 sol2~ sol4)
-  la1 \fermata
+  la1
 
   R1*2
   re,2( do)
-  re1 \fermata
+  re1
 }
 altWords = \lyricmode {
   Cre -- o~en Dios.
@@ -281,32 +281,32 @@ altWords = \lyricmode {
 
 NotesSop = \relative do' {
   R1*4 \bar "||" | re1\p | fa1 | re1~ \bar "||" | \break
-  re1 | sol2 fa | mib2. re4~ | re1 \fermata \break |
-  fa1 | sol1 | fa2 sol | mi2 fa~ | fa2 mi | sol1 | fa2 sol2~ | sol4 la2. \fermata \bar "||" \break |
+  re1 | sol2 fa | mib2. re4~ | re1 \break |
+  fa1 | sol1 | fa2 sol | mi2 fa~ | fa2 mi | sol1 | fa2 sol2~ | sol4 la2. \bar "||" \break |
 
   re,1 | fa1 | re1~ \bar "||" |
-  re1 | sol2 fa | mib2. re4~ | re1 \fermata \bar "||" \break |
-  fa1 | sol1 | fa2 sol | mi2 fa~ | fa2 mi~ | mi4 sol2 fa4 | sol1 | fa2. sol4~ | sol4 fas2 sol4~ | sol4 fa2. | sol2 fa | sol1 | la1 \fermata | re,1 \fermata \break |
+  re1 | sol2 fa | mib2. re4~ | re1 \bar "||" \break |
+  fa1 | sol1 | fa2 sol | mi2 fa~ | fa2 mi~ | mi4 sol2 fa4 | sol1 | fa2. sol4~ | sol4 fas2 sol4~ | sol4 fa2. | sol2 fa | sol1 | la1 | re,1 \break |
 
   mib2 re | mib2 re | mib1~ | mib1 | re2. mib4~ | mib4 re2. \bar "||" \break |
   mib2 re | mib2 re | mib1~ | mib1 | re2. mib4~ | mib4 re2. \bar "||" \break |
-  fa1 | mib2 re~ | re2 mib2 | re1 \fermata \bar "||" \break |
+  fa1 | mib2 re~ | re2 mib2 | re1 \bar "||" \break |
 
-  sol1 | fa2~ | fa8 sol4. | fa2~ | fa8 sol4. | fa4. sol8~ | sol4 fa~ | fa4. sol8~ | sol8 re fa4 | mib8 fa4. \fermata \break |
-  re2~ | re4 mib~ | mib8 fa4.~ | fa2 | sol2 | re2~ | re4 sol~ | sol8 fa4.~ | fa8 sol4 fa8~ | fa4 sol | fa2 | sol2 \fermata \break |
-  sol2 | fa2~ | fa4 sol | fa2 | sol2~ | sol4. fa8 | re4. fa8 | re2~ \fermata \bar "||" | \break
+  sol1 | fa2~ | fa8 sol4. | fa2~ | fa8 sol4. | fa4. sol8~ | sol4 fa~ | fa4. sol8~ | sol8 re fa4 | mib8 fa4. \break |
+  re2~ | re4 mib~ | mib8 fa4.~ | fa2 | sol2 | re2~ | re4 sol~ | sol8 fa4.~ | fa8 sol4 fa8~ | fa4 sol | fa2 | sol2 \break |
+  sol2 | fa2~ | fa4 sol | fa2 | sol2~ | sol4. fa8 | re4. fa8 | re2~ \bar "||" | \break
 
   re1 | fa1 | re1~ \bar "||" |
-  re1 | sol2 fa | mib2. re4~ | re1 \fermata \bar "||" \break |
-  fa1 | sol1 | fa2 sol | mi2 sol | fa2 mi | sol2 fas2  | sol2 re2~  | re2 fa~ | fa4 sol2 mi4~ | mi4 fa2 re4~ | re1 | fa2 mi | sol2. fa4~ | fa4 sol2. | la1 \fermata \bar "||" \break | fa1~ \fermata |
+  re1 | sol2 fa | mib2. re4~ | re1 \bar "||" \break |
+  fa1 | sol1 | fa2 sol | mi2 sol | fa2 mi | sol2 fas2  | sol2 re2~  | re2 fa~ | fa4 sol2 mi4~ | mi4 fa2 re4~ | re1 | fa2 mi | sol2. fa4~ | fa4 sol2. | la1 \bar "||" \break | fa1~ |
 
   fa2 sol
   fa2 mi
-  fa1 \fermata
+  fa1
   \bar "|."
 }
 NotesAlt = \relative do' {
-  fa2\p re4 sib4 | mib2 re | do1 | sib1\fermata | sib | do | sib1~ |
+  fa2\p re4 sib4 | mib2 re | do1 | sib1 | sib | do | sib1~ |
   sib1 | mib2 re | do2. sib4~ | sib1 |
   do1 | re1 | re2 re | do2 do~ | do2 do | re1 | do2 re2~ | re4 mi2. |
 
@@ -332,28 +332,28 @@ NotesAlt = \relative do' {
 }
 NotesTer = \relative do' {
   R1*4 | fa,1\p | mib1 | fa1~ |
-  fa1 | sib2 la | sol2. fa4~ | fa1 \fermata |
-  fa1 | sol1 | la2 fa | sol2 fa~ | fa2 sol | sol1 | fa2 sol2~ | sol4 la2. \fermata |
+  fa1 | sib2 la | sol2. fa4~ | fa1 |
+  fa1 | sol1 | la2 fa | sol2 fa~ | fa2 sol | sol1 | fa2 sol2~ | sol4 la2. |
 
   fa1 | mib1 | fa1~ |
-  fa1 | sib2 la | sol2. fa4~ | fa1 \fermata |
-  fa1 | sol1 | la2 fa | sol2 fa~ | fa2 sol~ | sol4 sol2 fa4 | sol1 | fa2. sol4~ | sol4 la2 sol4~ | sol4 fa2. | sol2 fa | sol1 | la1 \fermata | fa1 \fermata |
+  fa1 | sib2 la | sol2. fa4~ | fa1 |
+  fa1 | sol1 | la2 fa | sol2 fa~ | fa2 sol~ | sol4 sol2 fa4 | sol1 | fa2. sol4~ | sol4 la2 sol4~ | sol4 fa2. | sol2 fa | sol1 | la1 | fa1 |
 
   sol2 fa | sol2 fa | sol1~ | sol1 | fa2. sol4~ | sol4 fa2. |
   sol2 fa | sol2 fa | sol1~ | sol1 | fa2. sol4~ | sol4 fa2. |
-  fa1 | sol2 fa~ | fa2 sol2 | fa1 \fermata |
+  fa1 | sol2 fa~ | fa2 sol2 | fa1 |
 
-  sol1 | fa2~ | fa8 sol4. | fa2~ | fa8 sol4. | fa4. sol8~ | sol4 fa~ | fa4. sol8~ | sol8 fa la4 | sol8 la4. \fermata |
-  fa2~ | fa4 sol~ | sol8 fa4.~ | fa2 | sol2 | fa2~ | fa4 sol~ | sol8 fa4.~ | fa8 sol4 fa8~ | fa4 sol | fa2 | sol2 \fermata |
-  sol2 | la2~ | la4 sol | fa2 | sol2~ | sol4. fa8 | fa4. fa8 | fa2~ \fermata |
+  sol1 | fa2~ | fa8 sol4. | fa2~ | fa8 sol4. | fa4. sol8~ | sol4 fa~ | fa4. sol8~ | sol8 fa la4 | sol8 la4. |
+  fa2~ | fa4 sol~ | sol8 fa4.~ | fa2 | sol2 | fa2~ | fa4 sol~ | sol8 fa4.~ | fa8 sol4 fa8~ | fa4 sol | fa2 | sol2 |
+  sol2 | la2~ | la4 sol | fa2 | sol2~ | sol4. fa8 | fa4. fa8 | fa2~ |
 
   fa1 | mib1 | fa1~ |
-  fa1 | sib2 la | sol2. fa4~ | fa1 \fermata |
-  fa1 | sol1 | la2 fa | sol2 sol | fa2 sol | sol2 la2 | sol2 fa2~ | fa2 fa~ | fa4 sol2 sol4~ | sol4 fa2 fa4~ | fa1 | fa2 sol | sol2. la4~ | la4 sol2. | la1 \fermata | la1~ \fermata |
+  fa1 | sib2 la | sol2. fa4~ | fa1 |
+  fa1 | sol1 | la2 fa | sol2 sol | fa2 sol | sol2 la2 | sol2 fa2~ | fa2 fa~ | fa4 sol2 sol4~ | sol4 fa2 fa4~ | fa1 | fa2 sol | sol2. la4~ | la4 sol2. | la1 | la1~ |
 
   la2 sol
   la2 sol
-  la1 \fermata
+  la1
 }
 NotesBas = \relative do {
   R1*4 | sib1\p | la1 | sib1~ |

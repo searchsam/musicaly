@@ -34,7 +34,7 @@ harmony_stanza = \new ChordNames {
 % --- Coro
 \score {
   <<
-    \harmony_stanza
+    %\harmony_stanza
     \new Staff <<
       \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {

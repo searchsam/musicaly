@@ -136,7 +136,7 @@ NotesSop = \relative do' {
   fa4 mi fa2		|
   mi2 fa			|
   re2 mi4 fa~		|
-  fa2 la \fermata	|
+  fa2 la			|
 }
 NotesAlt = \relative do' {
   re4 mi fa2		|
@@ -227,7 +227,7 @@ NotesTer = \relative do' {
   la4 sol la2		|
   sol2 la		|
   fa2 sol4 la~		|
-  la2 do	 \fermata	|
+  la2 do			|
 }
 NotesBas = \relative do {
   R1*3 re1\p~ 		| \bar "||"

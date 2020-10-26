@@ -29,7 +29,7 @@ global = {
   \time 4/4
 }
 sopMusic = \relative do' {
-  R1*9 		|
+  R1*7 		|
   r2 fa2^\markup{ \italic "Soprano"}~ |
   fa2 re2 	|
   sol1 		|
@@ -44,7 +44,7 @@ sopMusic = \relative do' {
   mi4 mi2. 	|
   fas1 		|
 
-  R1*6 		|
+  R1*4 		|
   r2 fa2^\markup{ \italic "Soprano"}~ |
   fa2 re2 	|
   sol1 		|
@@ -59,7 +59,7 @@ sopMusic = \relative do' {
   mi4 mi2. 	|
   fas1 		|
 
-  R1*6 		|
+  R1*4 		|
   r2 fa2^\markup{ \italic "Soprano"}~ |
   fa2 re2 	|
   sol1 		|
@@ -72,7 +72,7 @@ sopMusic = \relative do' {
   sib2 la 	|
   la2 fa 	|
   si1 		|
-  do1 \fermata 	|
+  do1 		|
 }
 sopWords = \lyricmode {
   Que qui -- tas el pe -- ca -- do del mun -- do.
@@ -105,10 +105,8 @@ altMusic = \relative do' {
   dos1 		|
   re1 		|
 
-  R1*2		|
   sol4^\markup{ \italic "Solo Mezzosoprano"} sol sol sol( |
   la4) la2. 	|
-  R1*2 		|
 
   re,1^\markup{ \italic "Contralto"} |
   sib1 		|
@@ -127,7 +125,6 @@ altMusic = \relative do' {
   R1*2		|
   sol4^\markup{ \italic "Solo Mezzosoprano"} sol sol sol( |
   la4) la2. 	|
-  R1*2 		|
 
   re,1^\markup{ \italic "Contralto"} |
   sib1 		|
@@ -141,7 +138,7 @@ altMusic = \relative do' {
   mi2 la 	|
   re,2 fa 	|
   mi1 		|
-  la1 \fermata 	|
+  la1 		|
 }
 altWords = \lyricmode {
   Cor -- de -- ro de Dios.
@@ -158,38 +155,38 @@ altWords = \lyricmode {
 }
 
 NotesSop = \relative do' {
-  R1*2 | la'1\p | fas1 | sol1~ | \break sol1 | la1~ | la1 | fa1~ | \break
+  R1*2 | la'1\p | fas1 | sol1~ | \break sol1 | la1 | \break
 
-  fa1~ | fa1 | mi1 | fa1 | re1~ | re1 | sol1 | la1 | \break fa1 | sol1 | re1 | la'1 | fas1~ | \break fas1 | sol1~ | sol1 | la1~ | la1 | fa1~ | \break
+  fa1~ | fa1 | mi1 | fa1 | re1~ | re1 | sol1 | la1 | \break fa1 | sol1 | re1 | la'1 | fas1~ | \break fas1 | sol1~ | sol1 | la1 | \break
 
-  fa1~ | fa1 | mi1 | fa1 | re1~ | re1 | sol1 | la1 | \break fa1 | sol1 | re1 | la'1 | fas1~ | \break fas1 | sol1~ | sol1 | la1~ | la1 | fa1~ | \break
+  fa1~ | fa1 | mi1 | fa1 | re1~ | re1 | sol1 | la1 | \break fa1 | sol1 | re1 | la'1 | fas1~ | \break fas1 | sol1~ | sol1 | la1 | \break
 
-  fa1~ | fa1 | mi1 | fa1 | re1~ | re1 | sol1 | la1 | \break fa1 | mi2 la | fa1 | sol1 | la \fermata |
+  fa1~ | fa1 | mi1 | fa1 | re1~ | re1 | sol1 | la1 | \break fa1 | mi2 la | fa1 | sol1 | la |
 }
 NotesAlt = \relative do' {
-  sol'4\p sol sol sol | la la2. \bar "||" | mi1 | re1 | re1 \bar "||" | re1 | mi1~ \bar "||" | mi1 | re1~ \bar "||" |
+  sol'4\p sol sol sol | la la2. \bar "||" | mi1 | re1 | re1 \bar "||" | re1 | mi1 \bar "||" |
 
-  re1~ | re1 | do1~ | do1 | sib1~ | sib1 | re1 | mi1 | re1 | re1 | sib1 | mi1 | re1~ \bar "||" | re1 | re1 \bar "||" | re1 | mi1~ \bar "||" | mi1 | re1~ \bar "||" |
+  re1~ | re1 | do1~ | do1 | sib1~ | sib1 | re1 | mi1 | re1 | re1 | sib1 | mi1 | re1~ \bar "||" | re1 | re1 \bar "||" | re1 | mi1 \bar "||" |
 
-  re1~ | re1 | do1 | do1 | sib1~ | sib1 | re1 | mi1 | re1 | re1 | sib1 | mi1 | re1~ \bar "||" | re1 | re1 \bar "||" | re1 | mi1~ \bar "||" | mi1 | re1~ \bar "||" |
+  re1~ | re1 | do1 | do1 | sib1~ | sib1 | re1 | mi1 | re1 | re1 | sib1 | mi1 | re1~ \bar "||" | re1 | re1 \bar "||" | re1 | mi1 \bar "||" |
 
   re1~ | re1 | do1 | do1 | sib1~ | sib1 | re1 | mi1 | re1 | do2 mi | re1 | mi1 | mi \bar "|." |
 }
 NotesTer = \relative do {
-  R1*2 | la'1\p | la | sol1~ | sol1 | la1 | sol1 | la1~ |
+  R1*2 | la'1\p | la | sol1~ | sol1 | la1 |
 
-  la1 | sib1 | sol1 | fa1 | fa1~ | fa1 | sol1 | la1 | la1 | sol1 | fa1 | sol1 | la1~ | la | sol1~ | sol1 | la1 | sol1 | la1~ |
+  la1 | sib1 | sol1 | fa1 | fa1~ | fa1 | sol1 | la1 | la1 | sol1 | fa1 | sol1 | la1~ | la | sol1~ | sol1 | la1 |
 
-  la1 | sib1 | sol1 | fa1 | fa1~ | fa1 | sol1 | la1 | la1 | sol1 | fa1 | sol1 | la1~ | la | sol1~ | sol1 | la1 | sol1 | la1~ |
+  la1 | sib1 | sol1 | fa1 | fa1~ | fa1 | sol1 | la1 | la1 | sol1 | fa1 | sol1 | la1~ | la | sol1~ | sol1 | la1 |
 
-  la1 | sib1 | sol1 | fa1 | fa1~ | fa1 | sol1 | la1 | la1 | sol2 la | la1 | si1 | la1 \fermata |
+  la1 | sib1 | sol1 | fa1 | fa1~ | fa1 | sol1 | la1 | la1 | sol2 la | la1 | si1 | la1 |
 }
 NotesBas = \relative do {
-  R1*2 | dos1\p | do | sib1~ | sib1 | dos1~ | dos1 | re1~ |
+  R1*2 | dos1\p | do | sib1~ | sib1 | dos1 |
 
-  re1~ | re1 | do1 | la1 | sib1~ | sib1 | sib1 | dos1 | re1 | sib1 | sib1 | dos1 | re1 | do | sib1~ | sib1 | dos1~ | dos1 | re1~ |
+  re1~ | re1 | do1 | la1 | sib1~ | sib1 | sib1 | dos1 | re1 | sib1 | sib1 | dos1 | re1 | do | sib1~ | sib1 | dos1 |
 
-  re1~ | re1 | do1 | la1 | sib1~ | sib1 | sib1 | dos1 | re1 | sib1 | sib1 | dos1 | re1 | do | sib1~ | sib1 | dos1~ | dos1 | re1~ |
+  re1~ | re1 | do1 | la1 | sib1~ | sib1 | sib1 | dos1 | re1 | sib1 | sib1 | dos1 | re1 | do | sib1~ | sib1 | dos1 |
 
   re1~ | re1 | do1 | la1 | sib1~ | sib1 | sib1 | dos1 | re1 | sib2 do | re1 | re1 | do1 |
 }
@@ -200,14 +197,14 @@ armonias = \new ChordNames {
     \italianChords
     s1*2 | la1 |
 
-    re1:7 | sol1:m | s1 | la1 | la1:7 | re1:m |
-    s1*2 | do1 | fa1 | sib1 | s1 | sol1:m | la1 | re1:m | sol1:m | sib1 | la1:7 | re1 |
+    re1:7 | sol1:m | s1 | la1 |
+    re1:m | s1 | do1 | fa1 | sib1 | s1 | sol1:m | la1 | re1:m | sol1:m | sib1 | la1:7 | re1 |
 
-    re1:7 | sol1:m | s1 | la1 | la1:7 | re1:m |
-    s1*2 | do1 | fa1 | sib1 | s1 | sol1:m | la1 | re1:m | sol1:m | sib1 | la1:7 | re1 |
+    re1:7 | sol1:m | s1 | la1 |
+    re1:m | s1 | do1 | fa1 | sib1 | s1 | sol1:m | la1 | re1:m | sol1:m | sib1 | la1:7 | re1 |
 
-    re1:7 | sol1:m | R1 | la1 | la1:7 | re1:m |
-    s1*2 | do1 | fa1 | sib1 | s1 | sol1:m | la1 | re1:m | do2:7 la2:m | re1:m | mi1:m7 | la1:m |
+    re1:7 | sol1:m | R1 | la1 |
+    re1:m | s1 | do1 | fa1 | sib1 | s1 | sol1:m | la1 | re1:m | do2:7 la2:m | re1:m | mi1:m7 | la1:m |
   }
 }
 

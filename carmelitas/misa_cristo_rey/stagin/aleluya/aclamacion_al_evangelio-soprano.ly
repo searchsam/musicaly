@@ -41,7 +41,7 @@ soprano_music = \relative do' {
   sols8 sols sols sols sols sols sols sols \breathe |
   r4 fas8 fas fas fas fas4 |
   fas4 sols4 fas2	|
-  R1 			| \bar "||" \break
+  R1 \bar "||" 		| \break
   
   r4 re'\p^\markup{ \italic \small "Soprano" } dos si	|
   la4 re dos si 		|

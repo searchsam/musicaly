@@ -35,13 +35,13 @@ soprano_music = \relative do' {
   la4 \tuplet 3/2 { re8 dos si } sols2 |
   R1			| \bar "||" \break
   
-  mi^\markup{ \italic \small "Solo Soprano"} | 
+  mi8^\markup{ \italic \small "Solo Soprano"} mi mi mi mi mi mi mi | 
   mi4 fas sols si	|
   la2 r 			|
-  sols1 \breathe 	|
-  fas1 			|
+  sols8 sols sols sols sols sols sols sols \breathe |
+  r4 fas8 fas fas fas fas4 |
   fas4 sols4 fas2	|
-  R1 			| \bar "||" \break
+  R1 \bar "||" 		| \break
   
   r4 re'\p^\markup{ \italic \small "Soprano" } dos si	|
   la4 re dos si 		|
@@ -55,12 +55,9 @@ soprano_words = \lyricmode {
   a -- le -- lu -- ya,
   a -- le -- lu -- ya.
   
-  \once \override LyricText.self-alignment-X = #-1
-  "Bendito el que viene en" nom -- bre del Se -- ñor.
-  \once \override LyricText.self-alignment-X = #-1
-  "Bendito el reino que llega,"
-  \once \override LyricText.self-alignment-X = #-1
-  "el de nuestro pa" -- dre Da -- vid.
+  Ben -- di -- to el que vie -- ne en nom -- bre del Se -- ñor.
+  Ben -- di -- to~el rei -- no que lle -- ga,
+  el de nues -- tro pa -- dre Da -- vid.
   
   A -- le -- lu -- ya,
   a -- le -- lu -- ya,

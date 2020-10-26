@@ -31,7 +31,7 @@ cantus = \relative do'' {
   R1*5
   re,4^\markup{ \italic "Solo Mezzosoprano"} fa sol sol |
   sol4 sol fa sol |
-  fa4 re2.\fermata \break |
+  fa4 re2. \break |
 
   r2 la'8^\markup{ \italic "Soprano"} la la4 |
   la4 do4 do8 do sib4 |
@@ -41,29 +41,29 @@ cantus = \relative do'' {
   mi8 mi re4 re4 do4 |
   do8 do sib4 sib4 sol4~ |
   sol4 sol8 sol la4( sol)
-  la1 \fermata |
+  la1 |
 
   R1*1 \break |
   la8^\markup{\italic "Solo Mezzosoprano"} la4. re,2 |
   fa4 sol8 sol la2 |
   sol2 re8 re4. |
-  fa8 fa mi mi re4 re4 \fermata \break |
+  fa8 fa mi mi re4 re4 \break |
   \time 2/4 la'4^\markup{\italic "Soprano"} la |
   \time 4/4 mi sol la sib |
   la2 re2 |
   dos4 si( la2 )
-  la1 \fermata |
+  la1 |
 
   R1*1 \break |
   la8^\markup{\italic "Solo Mezzosoprano"} la4. re,2 |
   fa8 fa sol8 sol la2 |
   sol2 re2 |
-  fa4 mi re2 \fermata \break |
+  fa4 mi re2 \break |
   la'8^\markup{ \italic "Soprano"} la la la mi4 sol |
   la4 sib8 sib la4 la |
   re2 dos4 si |
   la4 la sol2 |
-  la1 \fermata |
+  la1 |
 
   R1*1 \break |
   la8^\markup{\italic "Solo Mezzosoprano"} la la la re,8 re re4 |
@@ -74,7 +74,7 @@ cantus = \relative do'' {
   la8 la sib sib la4 la |
   re2 dos4 si  |
   la4 la sol2 |
-  la1 \fermata |
+  la1 |
 
   \time 2/4 la8 la la4 |
   \time 4/4 la4 do4 do8 do sib4 |
@@ -84,17 +84,17 @@ cantus = \relative do'' {
   mi8 mi re4 re4 do4 |
   do8 do sib4 sib4 sol4(~ |
   sol4 fa la4 sol)
-  la1 \fermata |
+  la1 |
 
   R1 |
   la2( sib |
   la2) sol( |
-  la1) \fermata |
+  la1) |
 }
 
 altus = \relative do' {
   R1*7 |
-  r4 r2. \fermata |
+  r4 r2. |
   re8^\markup{ \italic "Contralto"} re re4 re fa |
   fa8 fa mi4 mi sol |
   sol8 sol fa4 fa fa~ |
@@ -103,21 +103,21 @@ altus = \relative do' {
   sol4 sib4 sib8 sib la4 |
   la4 fa2 r4 |
   re4 re mi2
-  fas1 \fermata |
+  fas1 |
 
   R1*5 |
   re4^\markup{\italic "Contralto"} re |
   mi4 mi fa2 |
   fa fa2 |
   la4 sol fa( mi4) |
-  fas1 \fermata |
+  fas1 |
 
   R1*5 |
   re8^\markup{ \italic "Contralto"} re re re mi4 mi |
   fa4 fa fa4 fa |
   fa2 la4 sol |
   fa mi4 re4 mi |
-  fas1 \fermata |
+  fas1 |
 
   R1*5 |
   re8^\markup{ \italic "Contralto"} re re re mi4 mi |
@@ -134,11 +134,11 @@ altus = \relative do' {
   sol4 sib4 sib2 |
   la4 sol fa mi |
   re4 re mi2
-  fas1 \fermata |
+  fas1 |
 
   R1*2 |
   re2( do) |
-  re1 \fermata |
+  re1 |
 }
 
 textocantus = \lyricmode{
@@ -186,7 +186,7 @@ NotesSop = \relative do'' {
   la2 fa2~ \bar "||" | \break
   fa2 sol~
   sol2 fa~
-  fa1~ \fermata \bar "||" \break
+  fa1~ \bar "||" \break
   fa1~
   fa4 mi2 sol4~
   sol4 fa2 fa4~
@@ -195,7 +195,7 @@ NotesSop = \relative do'' {
   mi4 sol2 fa4~
   fa4 re2 sol4~
   sol2 la2
-  fas1 \fermata
+  fas1
 
   fa1~ \bar "||"
   fa1~
@@ -206,7 +206,7 @@ NotesSop = \relative do'' {
   mi2 fa2~
   fa2 re2
   la'4 sol la2
-  fas1 \fermata
+  fas1
 
   fa1~ \bar "||"
   fa1~
@@ -217,7 +217,7 @@ NotesSop = \relative do'' {
   fa1
   re2 la'4 sol4
   la1
-  fas1 \fermata
+  fas1
 
   fa1~ \bar "||"
   fa1~
@@ -228,7 +228,7 @@ NotesSop = \relative do'' {
   fa1
   re2 la'4 sol4
   la1
-  fas1 \fermata \bar "||" \break
+  fas1 \bar "||" \break
 
   fa2~
   fa4 mi2 sol4~
@@ -238,12 +238,12 @@ NotesSop = \relative do'' {
   mi4 sol2 fa4~
   fa4 sol2.~
   sol4 fa la2
-  fas1 \fermata \bar "||" \break
+  fas1 \bar "||" \break
 
   fa1~
   fa2 sol
   fa2 mi
-  fa1 \fermata
+  fa1
   \bar "|."
 }
 NotesAlt = \relative do' {
@@ -317,7 +317,7 @@ NotesTer = \relative do' {
   sol2 la~
   la2 sol~
   sol2 la~
-  la1~ \fermata
+  la1~
   la1~
   la4 sol2 sol4~
   sol4 la2 fa4~
@@ -326,7 +326,7 @@ NotesTer = \relative do' {
   sol4 sol2 fa4~
   fa4 fa2 sol4~
   sol2 sol2
-  la1 \fermata
+  la1
 
   la1~
   la1~
@@ -337,7 +337,7 @@ NotesTer = \relative do' {
   sol2 fa2~
   fa2 fa
   la4 sol sol2
-  la1 \fermata
+  la1
 
   la1~
   la1~
@@ -348,7 +348,7 @@ NotesTer = \relative do' {
   fa1
   fa2 la4 sol4
   sol1
-  la1 \fermata
+  la1
 
   la1~
   la1~
@@ -359,7 +359,7 @@ NotesTer = \relative do' {
   fa1
   fa2 la4 sol4
   la1
-  la1 \fermata
+  la1
 
   la2~
   la4 sol2 sol4~
@@ -369,12 +369,12 @@ NotesTer = \relative do' {
   sol4 sol2 fa4~
   fa4 fa2.~
   sol4 la sol2
-  la1 \fermata
+  la1
 
   la1~
   la2 sol
   la2 sol
-  la1 \fermata
+  la1
 }
 NotesBas = \relative do {
   R1*3

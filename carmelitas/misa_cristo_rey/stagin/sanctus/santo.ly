@@ -37,7 +37,7 @@ global = {
 }
 sopMusic = \relative do'' {
   R1*3 |
-  sib4^\markup{ \italic "Solo Soprano"} sib( la2) \fermata |
+  sib4^\markup{ \italic "Solo Soprano"} sib( la2) |
 
   sib4^\markup{ \italic "Soprano"}( la8 sib do4) sib |
   sib4( la8 sib do4) sib |
@@ -47,14 +47,14 @@ sopMusic = \relative do'' {
   sib la sib r |
   sol4 la sib do |
   sib la sib do |
-  si2 \fermata r \bar "||" |
+  si2 r \bar "||" |
 
   sol4( fa) do'2( |
   si4) do2 r4 |
   sol4( fa) do'2( |
   si4) do2 r4 |
   do8 do si4( la8 si do4~ |
-  do) si4 do2 \fermata \bar "||" |
+  do) si4 do2 \bar "||" |
 
   R1*2 |
   sib4( la8 sib do4) sib |
@@ -65,14 +65,14 @@ sopMusic = \relative do'' {
   sib la sib r |
   sol4 la sib do |
   sib la( sib) do( |
-  si2) \fermata r \bar "||" |
+  si2) r \bar "||" |
 
   sol4( fa) do'2( |
   si4) do2 r4 |
   sol4( fa) do'2( |
   si4) do2 r4 |
   do8 do si4( la8 si do4~ |
-  do) si4 do2 \fermata \bar "|." |
+  do) si4 do2 \bar "|." |
 }
 sopWords = \lyricmode {
   San -- to.
@@ -96,14 +96,14 @@ altMusic = \relative do' {
   sol4 la sib la |
   sol la sol fa |
   sol4 la sib la |
-  sol2 \fermata r |
+  sol2 r |
 
   sol4( fa) mi2( |
   re4) mi2 r4 |
   sol4( fa) mi2( |
   re4) mi2 r4 |
   mi4 re fa4( sol8 fa |
-  mi4) re mi2 \fermata |
+  mi4) re mi2 |
 
   R1*2 |
   sol2( fa4) sol |
@@ -114,14 +114,14 @@ altMusic = \relative do' {
   sol4 la sib la |
   sol la sol fa |
   sol4 la( sib) la( |
-  sol2) \fermata r |
+  sol2) r |
 
   sol4( fa) mi2( |
   re4) mi2 r4 |
   sol4( fa) mi2( |
   re4) mi2 r4 |
   mi4 re fa4( sol8 fa |
-  mi4) re mi2 \fermata |
+  mi4) re mi2 |
 }
 altWords = \lyricmode {
   San -- to, san -- to, san -- to.
@@ -135,21 +135,21 @@ altWords = \lyricmode {
 
 NotesSop = \relative do'' {
   sib4\p sib( la2) \bar "||" | fa1 | sol1~ \bar "||" |
-  sol2 fa \fermata \bar "||" \bar "||" | \break
+  sol2 fa \bar "||" \bar "||" | \break
 
   sol2 fa4 sol4~ | sol2 fa4 sol4~ | sol2 fa4 sol4~ | \break
-  sol2. fa4 | sol2. fa4 | sol2. fa4 | sol2. fa4 | sol1 \fermata | \break
-  mi1 | sol4 mi2.~ | mi1 | sol4 mi2.~ | mi4 sol fa2 | mi4 sol mi2 \fermata | \break
+  sol2. fa4 | sol2. fa4 | sol2. fa4 | sol2. fa4 | sol1 | \break
+  mi1 | sol4 mi2.~ | mi1 | sol4 mi2.~ | mi4 sol fa2 | mi4 sol mi2 | \break
 
   fa1 | sol1~ \bar "||" | \break
 
   sol2 fa4 sol4~ | sol2 fa4 sol4~ | sol2 fa4 sol4~ | \break
-  sol2. fa4 | sol2. fa4 | sol2. fa4 | sol2. fa4 | sol1 \fermata | \break
-  mi1 | sol4 mi2.~ | mi1 | sol4 mi2.~ | mi4 sol fa2 | mi4 sol mi2 \fermata |
+  sol2. fa4 | sol2. fa4 | sol2. fa4 | sol2. fa4 | sol1 | \break
+  mi1 | sol4 mi2.~ | mi1 | sol4 mi2.~ | mi4 sol fa2 | mi4 sol mi2 |
 }
 NotesAlt = \relative do' {
   R1 | re\p | re1~ |
-  re2 re \fermata |
+  re2 re |
 
   re2 do4 re~ | re2 do4 re~ | re2 do4 re~ |
   re2. do4 | re2. do4 | re2. do4 | re2. do4 | re1 |
@@ -163,30 +163,30 @@ NotesAlt = \relative do' {
 }
 NotesTer = \relative do' {
   R1 | la1\p | sol1~ |
-  sol2 la\fermata |
+  sol2 la |
 
   sol2 fa4 sol~ | sol2 fa4 sol~ | sol2 fa4 sol~ |
-  sol2. fa4 | sol2. fa4 | sol2. fa4 | sol2. fa4 | sol1 \fermata |
-  sol1 | fa4 sol2.~ | sol1 | fa4 sol2.~ | sol4 sol fa2 | sol4 fa sol2 \fermata |
+  sol2. fa4 | sol2. fa4 | sol2. fa4 | sol2. fa4 | sol1 |
+  sol1 | fa4 sol2.~ | sol1 | fa4 sol2.~ | sol4 sol fa2 | sol4 fa sol2 |
 
   la1 | sol1~ |
 
   sol2 fa4 sol~ | sol2 fa4 sol~ | sol2 fa4 sol~ |
-  sol2. fa4 | sol2. fa4 | sol2. fa4 | sol2. fa4 | sol1 \fermata |
-  sol1 | fa4 sol2.~ | sol1 | fa4 sol2.~ | sol4 sol fa2 | sol4 fa sol2 \fermata |
+  sol2. fa4 | sol2. fa4 | sol2. fa4 | sol2. fa4 | sol1 |
+  sol1 | fa4 sol2.~ | sol1 | fa4 sol2.~ | sol4 sol fa2 | sol4 fa sol2 |
 }
 NotesBas = \relative do {
   R1 | re1\p | sib1~ |
-  sib2 re \fermata |
+  sib2 re |
 
   sib2 la4 sib~ | sib2 la4 sib~ | sib2 la4 sib~ |
-  sib2. la4 | sib2. la4 | sib2. la4 | sib2. la4 | si1 \fermata |
+  sib2. la4 | sib2. la4 | sib2. la4 | sib2. la4 | si1 |
   do1 | si4 do2.~ | do1 | si4 do2.~ | do4 si la2 | do4 si do2 |
 
   re1 | sib1~ |
 
   sib2 la4 sib~ | sib2 la4 sib~ | sib2 la4 sib~ |
-  sib2. la4 | sib2. la4 | sib2. la4 | sib2. la4 | si1 \fermata |
+  sib2. la4 | sib2. la4 | sib2. la4 | sib2. la4 | si1 |
   do1 | si4 do2.~ | do1 | si4 do2.~ | do4 si la2 | do4 si do2 |
 }
 

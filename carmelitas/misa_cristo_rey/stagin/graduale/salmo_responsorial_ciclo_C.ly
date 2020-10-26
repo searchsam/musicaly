@@ -87,7 +87,7 @@ Words = \lyricmode {
   A -- llá su -- ben las tri -- bus,
   las tri -- bus del Se -- ñor,
   se -- gún la cos -- tum -- bre de Is -- ra -- el,
-  a ce -- le  brar el nom -- bre del Se -- ñor;
+  a ce -- le -- brar el nom -- bre del Se -- ñor;
   en e -- lla es -- tán los tri -- bu -- na -- les de jus -- ti -- cia,
   en el pa -- la -- cio de Da -- vid.
 
@@ -136,7 +136,7 @@ NotesSop = \relative do' {
   fa4 mi fa2		|
   mi2 fa			|
   re2 mi4 fa~		|
-  fa2 la \fermata	|
+  fa2 la			|
 }
 NotesAlt = \relative do' {
   re4 mi fa2		|
@@ -227,7 +227,7 @@ NotesTer = \relative do' {
   la4 sol la2		|
   sol2 la		|
   fa2 sol4 la~		|
-  la2 do	 \fermata	|
+  la2 do			|
 }
 NotesBas = \relative do {
   R1*3 re1\p~ 		| \bar "||"
