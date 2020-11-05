@@ -102,7 +102,7 @@ harmony_stanza_antifona = \new ChordNames {
         \key la \major
 
         mi\breve^\markup{ "Aclamación" }
-        mi4 fas4 sols8 si4.
+        mi4 fas sols si
         la2 \divisioMaior \break
         sols\breve \divisioMinima
         fas\breve

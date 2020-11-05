@@ -33,7 +33,7 @@ harmony_stanza = \new ChordNames {
 % --- Coro
 \score {
   <<
-    \harmony_stanza
+    %\harmony_stanza
     \new Staff <<
       \new Voice = "melody" \relative do' {
         \tempo 4 = 70
@@ -90,7 +90,7 @@ harmony = \new ChordNames {
 % --- Coro
 \score {
   <<
-    \harmony
+    %\harmony
     \new Staff <<
       \new Voice = "melody" \relative do' {
         \tempo 4 = 70
