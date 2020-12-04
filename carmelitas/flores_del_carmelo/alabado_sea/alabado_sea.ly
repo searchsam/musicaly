@@ -79,35 +79,35 @@ musica = \relative do' {
   la4 r8 mi \bar "||" \break
 
   re8 mi la8 do
-  si4 sol
-  la4 la \breathe \bar "||"
-  la4 si8 do
-  si4 la8 sol
-  la4 r8 mi \bar "||" \break
-
-  re8 mi la8 do
-  si4 la8 sol
-  la4 la \breathe \bar "||"
-  la4 si8 do
-  si4 la8 sol
-  la4 r8 mi \bar "||" \break
-
-  re8 mi la8 do
-  si8 si la8 sol
-  la4 la \breathe \bar "||"
-  la4 si8 do
-  si4 la8 sol
-  la4 r8 mi \bar "||" \break
-
-  re8 mi la8 do
-  si4 la8 sol
+  si4 la8 (sol)
   la4 la \breathe \bar "||"
   la4 si8 do
   si4 la8 sol
   la4 r \bar "||" \break
 
-  mi4 la8 do
+  mi8 mi la8 do
+  si8 si \tuplet 3/2 {si la sol}
+  la4 la \breathe \bar "||"
+  la4 si8 do
+  si4 la8 sol
+  la4 r8 mi \bar "||" \break
+
+  re8 mi la8 do
   si8 si la8 sol
+  la4 la \breathe \bar "||"
+  la4 si8 do
+  si4 la8 sol
+  la4 r8 mi \bar "||" \break
+
+  re8 mi la8 do
+  si4 la8 sol
+  la4 la \breathe \bar "||"
+  la4 si8 do
+  si4 la8 sol
+  la4 r8 mi \bar "||" \break
+
+  re8 mi la8 do
+  si4 la8 sol
   la4 la \breathe \bar "||"
   la4 si8 do
   si4 la8 sol
@@ -132,7 +132,7 @@ musica = \relative do' {
   la2 \breathe \bar "||"
   la4 si8 do
   si4 la8 sol
-  la4 r \bar "||" \break
+  la4 r8 mi \bar "||" \break
 
   mi4 la8 do
   si8 si la8 sol
@@ -176,15 +176,15 @@ musica = \relative do' {
   si4 la8 sol
   la4 r8 mi \bar "||" \break
 
-  re8 mi la8 do
-  si4 la8 sol
+  \tuplet 3/2 {re8 mi mi} la8 do
+  si4 la8( sol)
   la4 la \breathe \bar "||"
   la4 si8 do
   si4 la8 sol
-  la4 r \bar "||" \break
+  la4 r8 mi \bar "||" \break
 
-  mi4 la8 do
-  si8 si la8 sol
+  re8 mi la do
+  si4 la8 sol
   la4 la \breathe \bar "||"
   la4 si8 do
   si4 la8 sol
@@ -214,21 +214,21 @@ letra = \lyricmode {
   ¡So -- bre las a -- guas a -- sen -- tó la tie -- rra! ¡Por -- que~es e -- ter -- no su~a -- mor!
   ¡Hi -- zo las gran -- des lum -- bre -- ras! ¡Por -- que~es e -- ter -- no su~a -- mor!
   ¡El sol pa -- ra re -- gir el dí -- a! ¡Por -- que~es e -- ter -- no su~a -- mor!
-  ¡Lu -- na~y es -- tre -- llas pa -- ra la no -- che! ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Lu -- na y es -- tre -- llas pa -- ra la no -- che! ¡Por -- que~es e -- ter -- no su~a -- mor!
   ¡Hi -- rió~a los pri -- mo -- gé -- ni -- tos de~E -- gip -- to! ¡Por -- que~es e -- ter -- no su~a -- mor!
   ¡Sa -- có a Is -- ra -- el de~en -- tre e -- llos! ¡Por -- que~es e -- ter -- no su~a -- mor!
-  ¡Con ma -- no fuer -- te~y ten -- so bra -- zo! ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Con ma -- no fuer -- te y ten -- so bra -- zo! ¡Por -- que~es e -- ter -- no su~a -- mor!
   ¡Par -- tió en dos el Mar Ro -- jo! ¡Por -- que~es e -- ter -- no su~a -- mor!
   ¡Hi -- zo pa -- sar en me -- dio~a~Is -- ra -- el! ¡Por -- que~es e -- ter -- no su~a -- mor!
   ¡Hun -- dió en él al Fa -- ra -- ón! ¡Por -- que~es e -- ter -- no su~a -- mor!
-  ¡Guió a su pue -- blo~en el de -- sier -- to! ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Gui -- ó a su pue -- blo~en el de -- sier -- to! ¡Por -- que~es e -- ter -- no su~a -- mor!
   ¡Hi -- rió a gran -- des re -- yes! ¡Por -- que~es e -- ter -- no su~a -- mor!
   ¡Dio muer -- te~a re -- yes po -- de -- ro -- sos! ¡Por -- que~es e -- ter -- no su~a -- mor!
   ¡Dio sus tie -- rras en he -- ren -- cia! ¡Por -- que~es e -- ter -- no su~a -- mor!
   ¡En he -- ren -- cia~a su sier -- vo Is -- ra -- el! ¡Por -- que~es e -- ter -- no su~a -- mor!
   ¡Se~a -- cor -- dó de no -- so -- tros hu -- mi -- lla -- dos! ¡Por -- que~es e -- ter -- no su~a -- mor!
   ¡Nos li -- bró de nues -- tros e -- ne -- mi -- gos! ¡Por -- que~es e -- ter -- no su~a -- mor!
-  ¡El da pan a to -- do vi -- vien -- te! ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡El da el pan a to -- do vi -- vien -- te! ¡Por -- que~es e -- ter -- no su~a -- mor!
   ¡Dad gra -- cias al Dios de los cie -- los! ¡Por -- que~es e -- ter -- no su~a -- mor!
   ¡Por -- que~es e -- ter -- no su~a -- mor!
 }
@@ -271,6 +271,7 @@ armonia = \new ChordNames {
   <<
     \armonia
     \new Staff <<
+      \set Staff.midiInstrument = #"oboe"|
       \new Voice = "voz" << \global \musica >>
       \new Lyrics \lyricsto "voz" \letra
     >>
