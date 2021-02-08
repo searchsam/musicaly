@@ -6,11 +6,11 @@
 \language "espanol"
 \version "2.19.82"
 
-#(set-global-staff-size 18)
+%#(set-global-staff-size 18)
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Cordero de Dios" \fontsize #2 "Misa Cristo Rey" "Agnus Dei" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Linda Martínez" } } }
+\markup { \fill-line { \fontsize #2 "Coro Femenino" \center-column { \fontsize #2 "Linda Martínez" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
@@ -260,4 +260,5 @@ armonias = \new ChordNames {
   #(set-default-paper-size "letter")
   indent=3.5\cm
   page-breaking = #ly:page-turn-breaking
+  %system-system-spacing = #'((basic-distance . 12) (minimum-distance . 8) (padding . 3) (stretchability . 60))
 }

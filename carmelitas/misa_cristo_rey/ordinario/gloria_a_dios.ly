@@ -5,11 +5,11 @@
 \language "espanol"
 \version "2.19.82"
 
-#(set-global-staff-size 17)
+%#(set-global-staff-size 17)
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Gloria a Dios en lo alto del cielo" \fontsize #2 "Misa Cristo Rey" "Gloria in excelsis Deo" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Linda Martínez" } } }
+\markup { \fill-line { \fontsize #2 "Coro Femenino" \center-column { \fontsize #2 "Linda Martínez" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
@@ -93,8 +93,7 @@ cantus = \relative do'' {
 }
 
 altus = \relative do' {
-  R1*7 |
-  r4 r2. |
+  R1*8 |
   re8^\markup{ \italic "Contralto"} re re4 re fa |
   fa8 fa mi4 mi sol |
   sol8 sol fa4 fa fa~ |
@@ -515,4 +514,5 @@ armonias = \new ChordNames {
   #(set-default-paper-size "letter")
   indent=3.5\cm
   page-breaking = #ly:page-turn-breaking
+  %system-system-spacing = #'((basic-distance . 12) (minimum-distance . 8) (padding . 3) (stretchability . 60))
 }

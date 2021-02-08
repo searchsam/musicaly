@@ -11,7 +11,7 @@
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Madre de la Iglesia" \fontsize #2 "Misa de Cristo Rey" "Communio - Himno Memoria María, Madre de la Iglesia" } } }
 %\markup { \fill-line { " " \right-column { \fontsize #2 "Letra: Pablo VI" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Linda Martínez" } } }
+\markup { \fill-line { \fontsize #2 "Coro Femenino" \center-column { \fontsize #2 "Linda Martínez" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"

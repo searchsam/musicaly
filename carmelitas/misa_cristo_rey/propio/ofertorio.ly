@@ -10,7 +10,7 @@
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Sagrario del Altar" \fontsize #2 "Misa de Cristo Rey" "Ofertorium - Oración al Santisimo Sacramento" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Letra: Teresa del Niño Jesús O.C.D." } } }
+\markup { \fill-line { \fontsize #2 "Coro Femenino" \right-column { \fontsize #2 "Letra: Teresa del Niño Jesús O.C.D." } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Música: Linda Martínez" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
