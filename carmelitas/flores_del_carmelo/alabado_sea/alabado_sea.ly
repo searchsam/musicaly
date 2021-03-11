@@ -271,7 +271,7 @@ armonia = \new ChordNames {
   <<
     \armonia
     \new Staff <<
-      \set Staff.midiInstrument = #"oboe"|
+      \set Staff.midiInstrument = #"oboe"
       \new Voice = "voz" << \global \musica >>
       \new Lyrics \lyricsto "voz" \letra
     >>
@@ -281,5 +281,7 @@ armonia = \new ChordNames {
 }
 
 \paper {
-  #(set-paper-size "letter")
+  #(set-default-paper-size "letter")
+  indent=3.5\cm
+  page-breaking = #ly:page-turn-breaking
 }

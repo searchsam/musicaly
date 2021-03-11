@@ -9,15 +9,12 @@ globalAveMaria = {
 
 % --- Musica
 chantAveMaria = \relative do'' {
-  \set Score.timing = ##f
-  
-  sol\breve \divisioMinima
-  sol\breve \divisioMinima
-  sol\breve la2 la \divisioMaior \break
-  la\breve \divisioMinima
-  la\breve \divisioMinima
-  la\breve si2 sol \divisioMaior
-  fas2 sol \finalis \break \skip 32
+  sol1 \breathe
+  sol1 \breathe \break
+  sol1 la2 la \breathe \break
+  la1 \breathe
+  la1 si2 sol \breathe \break
+  fas2 sol
 }
 
 % --- Letra
@@ -29,9 +26,7 @@ verbaAveMaria = \lyricmode {
   \once \override LyricText.self-alignment-X = #-1
   "y bendito es el fruto de tu vientre,"  Je -- sús.
   \once \override LyricText.self-alignment-X = #-1
-  "Santa María, Madre de Dios,"
-  \once \override LyricText.self-alignment-X = #-1
-  "ruega por nosotros, pecadores," 
+  "Santa María, Madre de Dios, ruega por nosotros, pecadores," 
   \once \override LyricText.self-alignment-X = #-1
   "ahora y en la ahora de nuestra" muer -- te. A -- mén.
 }
@@ -41,13 +36,12 @@ acordesAveMaria = \new ChordNames {
   \set chordChanges = ##t
   \italianChords
   \chordmode {
-    sol\breve
-    sol\breve
-    sol\breve
+    sol1
+    sol1
+    sol1
     la1
-    la\breve
-    la\breve
-    la\breve
+    la1
+    la1
     mi2:m sol2
     re2:7 sol
   }

@@ -1,6 +1,6 @@
 
 % --- Parametro globales
-globalAveMaria = { 
+globalSalve = { 
   \tempo 4 = 60
   \clef treble
   \key sol \major
@@ -8,24 +8,25 @@ globalAveMaria = {
 }
 
 % --- Musica
-chantAveMaria = \relative do'' {
-  \set Score.timing = ##f
-  
-  sol\breve \divisioMinima
-  sol\breve \divisioMinima
-  sol\breve la2 la \divisioMaior \break
-  la\breve \divisioMinima
-  la\breve \divisioMinima
-  la\breve si2 sol \divisioMaior
-  fas2 sol \finalis \break \skip 32
+chantSalve = \relative do'' {
+  sol1 \breathe si4 si si sol sol2 la4 la fas mi re mi sol2
+  fas1 \breathe
+  la1 \breathe
+  sol\breve la2 la \breathe \break
+  la\breve \breathe
+  la\breve \breathe
+  la\breve si2 sol \breathe
+  fas2 sol
 }
 
 % --- Letra
-verbaAveMaria = \lyricmode {
+verbaSalve = \lyricmode {
   \once \override LyricText.self-alignment-X = #-1
-  "Dios te salve María llena eres de gracia el Señor es contigo;"
+  "Dios te salve, Reina y Madre de misericordia," vi -- da, dul -- zu -- ra y es -- pe -- ran -- za nues -- tra. 
   \once \override LyricText.self-alignment-X = #-1
-  "bendita tú eres entre todas las mujeres,"
+  "Dios te salve."
+  \once \override LyricText.self-alignment-X = #-1
+  "A Ti clamamos los desterrados hijos de Eva, a Ti suspiramos, gimiendo y llorando en este valle de lágrimas."
   \once \override LyricText.self-alignment-X = #-1
   "y bendito es el fruto de tu vientre,"  Je -- sús.
   \once \override LyricText.self-alignment-X = #-1
@@ -37,15 +38,15 @@ verbaAveMaria = \lyricmode {
 }
 
 % --- Acordes
-acordesAveMaria = \new ChordNames {
+acordesSalve = \new ChordNames {
   \set chordChanges = ##t
   \italianChords
   \chordmode {
-    sol\breve
-    sol\breve
-    sol\breve
-    la1
-    la\breve
+    mi1:m
+    sol1 sol2
+    re2. mi2.:m
+    sol2
+    re1
     la\breve
     la\breve
     mi2:m sol2

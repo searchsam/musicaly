@@ -8,16 +8,14 @@ globalConstriccion = {
 }
 
 % --- Musica
-chantConstriccion = \relative do'' {
-  \set Score.timing = ##f
-  
-  sol\breve la4 la fas2 sol4 sol \divisioMinima \break
-  fas\breve sol2 sol \divisioMinima \break
-  sol\breve fa2 fa \divisioMinima \break
-  sol\breve mi2 re mi \divisioMinima \break
-  sol\breve \divisioMinima \break
-  si\breve la4 fas mi re mi2 sol \divisioMaior
-  fas2.( sol4) sol1 \finalis \break \skip 32
+chantConstriccion = \relative do'' {  
+  sol1 la4 la fas2 sol4 sol \breathe \break
+  fas1 sol2 sol \breathe \break
+  sol1 fa2 fa \breathe \break
+  sol1 mi2 re mi \breathe \break
+  sol1 \breathe \break
+  si1 la4 fas mi re mi2 sol \breathe \break
+  fas2.( sol4) sol1
 }
 
 % --- Letra
@@ -41,12 +39,12 @@ acordesConstriccion = \new ChordNames {
   \set chordChanges = ##t
   \italianChords
   \chordmode {
-    sol\breve re2 re2:7 sol2
-    re\breve sol1
-    sol\breve fa1:m
-    sol\breve mi2:m re2 mi2:m
-    mi\breve:m
-    sol\breve re1 mi2:m sol2
+    sol1 re2 re2:7 sol2
+    re1 sol1
+    sol1 fa1:m
+    sol1 mi2:m re2 mi2:m
+    mi1:m
+    sol1 re1 mi2:m sol2
     re2.:7 sol4
   }
 }

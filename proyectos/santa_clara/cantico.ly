@@ -1,0 +1,208 @@
+
+% ****************************************************************
+%       Melodia de la Trinidad - Contratenor
+%	by serach.sam@
+% ****************************************************************
+\language "espanol"
+\version "2.19.80"
+
+%#(set-global-staff-size 22)
+
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Cantico" \fontsize #3 "De las cartas de Santa Clara a Santa Isabel de Hungria" } } }
+\markup { \fill-line { " " \fontsize #2 "Hrna. Clara de Asis, O.S.C."  } }
+\markup { \fill-line { " " \fontsize #2 "Musica: Linda Martínez"  } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
+
+\header {
+  copyright = "Creative Commons Attribution 3.0"
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  breakbefore = ##t
+}
+
+% --- Musica
+canto = \relative do' {
+  \key sol \major
+  \tempo 4=60
+  \time 6/8
+
+  si8 mi fas sol4.
+  fas4 fas8 si,4.
+  si16 si mi8 fas sol4.
+  fas4 fas8 sol4.
+  la16 la la8 fas sol4.
+  fas4 fas8 fas4. \bar "||" \break
+  
+  mi8 mi fas sol sol4 
+  fas16 fas8 fas16 fas sol la8 la4
+  sol16 sol la8 do si4. 
+  si4. mi,16 mi mi8 fas 
+  sol sol4 fas8 fas16 fas sol8 
+  la la4 sol8( la) do 
+  si4. do8 do la 
+  si4. la8 la fas8 
+  sol2. \bar "||" \break
+  
+  si,8( mi) fas sol4.
+  fas4 fas16 fas si,4.
+  si8 \tuplet 3/2 {mi16 mi mi} fas8 sol4.
+  fas4 fas16 fas sol4.
+  la8 la8 fas sol4.
+  fas4 fas16 fas fas4. \bar "||" \break
+  
+  mi8 mi fas sol sol4 
+  fas16 fas8 fas16 fas sol la8 la4
+  sol16 sol la8 do si4. 
+  si4. mi,16 mi mi8 fas 
+  sol sol4 fas8 fas16 fas sol8 
+  la la4 sol8( la) do 
+  si4. do8 do la 
+  si4. la8 la fas8 
+  sol2. \bar "||" \break
+  
+  si,8( mi) fas sol4.
+  fas4 fas8 si,4.
+  si8( mi fas) sol8 sol4
+  fas8 \tuplet 3/2 {fas fas fas} sol4.
+  \tuplet 3/2 {la8 la la} fas8 sol4.
+  fas8 \tuplet 3/2 {fas fas fas} fas4. \bar "||" \break
+  
+  mi8 mi fas sol sol4 
+  fas16 fas8 fas16 fas sol la8 la4
+  sol16 sol la8 do si4. 
+  si4. mi,16 mi mi8 fas 
+  sol sol4 fas8 fas16 fas sol8 
+  la la4 sol8( la) do 
+  si4. do8 do la 
+  si4. la8 la fas8 
+  sol2. \bar "||" \break
+  
+  \tuplet 3/2 {si,8 si mi} fas sol4.
+  \tuplet 3/2 {fas8 fas fas} fas8 si,4.
+  \tuplet 3/2 {si8 si mi} fas sol4.
+  \tuplet 3/2 {fas8 fas fas} fas sol4.
+  \tuplet 3/2 {la8 la la} fas8 sol4.
+  \tuplet 3/2 {fas8 fas fas} fas8 fas8 fas4 \bar "||" \break
+  
+  mi8 mi fas sol sol4 
+  fas16 fas8 fas16 fas sol la8 la4
+  sol16 sol la8 do si4. 
+  si4. mi,16 mi mi8 fas 
+  sol sol4 fas8 fas16 fas sol8 
+  la la4 sol8( la) do 
+  si4. do8 do la 
+  si4. la8 la fas8 
+  sol2. \bar "||" \break
+  
+  si,8( mi) fas sol8 sol4
+  \tuplet 3/2 {fas8 fas fas} fas8 si,8 si4
+  si8 mi fas sol8 sol4
+  fas4 fas8 sol8 sol4
+  la8 la fas sol4.
+  fas4 fas8 fas4. \bar "||" \break
+  
+  mi8 mi fas sol sol4 
+  fas16 fas8 fas16 fas sol la8 la4
+  sol16 sol la8 do si4. 
+  si4. mi,16 mi mi8 fas 
+  sol sol4 fas8 fas16 fas sol8 
+  la la4 sol8( la) do 
+  si4. do8 do la 
+  si4. la8 la fas8 
+  sol2. \bar "||" \break
+}
+
+% --- Letra
+letra_canto = \lyricmode {
+  Cuan -- do le~a -- máis, sois cas -- ta;
+  cuan -- do lo to -- cáis, sois pu -- ra;
+  cuan -- do lo~a -- cep -- táis, sois vir -- gen.
+  
+  Fe -- liz a -- que -- lla a  quien se le con -- ce -- de go -- zar del ban -- que -- te,
+  pa -- ra ad -- hie -- rir -- se de to -- do co -- ra -- zón a A -- quel que por su~a -- mor se en -- tre -- gó.
+  
+  Su po -- der es más fuer -- te,
+  su ge -- ne -- ro -- si -- dad más ex -- cel -- sa,
+  su as -- pec -- to más her -- mo -- so.
+  
+  Fe -- liz a -- que -- lla a  quien se le con -- ce -- de go -- zar del ban -- que -- te,
+  pa -- ra ad -- hie -- rir -- se de to -- do co -- ra -- zón a A -- quel que por su~a -- mor se en -- tre -- gó.
+  
+  Su a -- mor más sua -- ve,
+  su gra -- cia más e -- le -- gan -- te.
+  Si su -- fres con Él, rei -- na -- rás con Él.
+  
+  Fe -- liz a -- que -- lla a  quien se le con -- ce -- de go -- zar del ban -- que -- te,
+  pa -- ra ad -- hie -- rir -- se de to -- do co -- ra -- zón a A -- quel que por su~a -- mor se en -- tre -- gó.
+  
+  Si llo -- ras con Él, go -- za -- rás con Él;
+  si mue -- res con Él vi -- vi -- ras con Él.
+  Cu -- ya~her -- mo -- su -- ra ad -- mi -- ran los as -- tros.
+  
+  Fe -- liz a -- que -- lla a  quien se le con -- ce -- de go -- zar del ban -- que -- te,
+  pa -- ra ad -- hie -- rir -- se de to -- do co -- ra -- zón a A -- quel que por su~a -- mor se en -- tre -- gó.
+  
+  Cu -- yo go -- zo no tie -- ne lí -- mi -- te;
+  cu -- ya~her -- mo -- su -- ra ven los san -- tos,
+  cu -- yo~a -- fec -- to con -- mue -- ve.
+
+  Fe -- liz a -- que -- lla a  quien se le con -- ce -- de go -- zar del ban -- que -- te,
+  pa -- ra ad -- hie -- rir -- se de to -- do co -- ra -- zón a A -- quel que por su~a -- mor se en -- tre -- gó.
+  
+  Cuya contemplación reconforta,
+  cuya benignidad sacia,
+  cuya suavidad colma.
+
+  Fe -- liz a -- que -- lla a  quien se le con -- ce -- de go -- zar del ban -- que -- te,
+  pa -- ra ad -- hie -- rir -- se de to -- do co -- ra -- zón a A -- quel que por su~a -- mor se en -- tre -- gó.
+  
+  Cuya memoria ilumina,
+  cuyo perfume revive los muertos,
+  cuya visión santifica.
+  
+  Fe -- liz a -- que -- lla a  quien se le con -- ce -- de go -- zar del ban -- que -- te,
+  pa -- ra ad -- hie -- rir -- se de to -- do co -- ra -- zón a A -- quel que por su~a -- mor se en -- tre -- gó.
+  
+  Fija tu mente en el espejo, 
+  fija tu alma en el esplendor de la gloria, 
+  fija tu corazón en la divina sustancia.
+  
+  Fe -- liz a -- que -- lla a  quien se le con -- ce -- de go -- zar del ban -- que -- te,
+  pa -- ra ad -- hie -- rir -- se de to -- do co -- ra -- zón a A -- quel que por su~a -- mor se en -- tre -- gó.
+}
+
+armonia = \new ChordNames {
+  \italianChords
+  \chordmode {
+    mi4.:m sol4. re4. si,4.
+    mi4.:m sol4. re4. do4.
+    re4. sol4. re4. si4.
+    
+    mi4.:m sol4. si4.:m re4. do4. sol4. si4.
+    mi4.:m sol4. si4.:m re4. do4. sol4. la4.:m sol4. re4. sol2.
+    
+    mi4.:m sol4. re4. si,4.
+    mi4.:m sol4. re4. do4.
+    re4. sol4. re4. si4.
+    
+    mi4.:m sol4. si4.:m re4. do4. sol4. si4.
+    mi4.:m sol4. si4.:m re4. do4. sol4. la4.:m sol4. re4. sol2.
+  }
+}
+
+
+\score {
+  <<
+    \armonia
+    \new Staff <<
+      \set Staff.midiInstrument = "oboe"
+      \new Voice = "voz" \canto
+      \new Lyrics \lyricsto "voz" \letra_canto
+    >>
+  >>
+  \midi {}
+  \layout {}
+}
+
+\paper {
+  #(set-paper-size "letter")
+}

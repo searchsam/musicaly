@@ -6,12 +6,12 @@
 \version "2.19.82"
 
 % --- Includes
-\include "gregorian.ly"
 \include "persignarse.ily"
 \include "constriccion.ily"
 \include "padre_nuestro.ily"
 \include "ave_maria.ily"
 \include "letanias.ily"
+\include "salve.ily"
 \include "oracion_final.ily"
 
 % --- Tamaño del pentagrama
@@ -19,11 +19,17 @@
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #8 \smallCaps "Rosario" \fontsize #2 "Rosarium Virginis Mariae" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" \fontsize #2 "Linda Martínez" \small "(Octubre 2019)" } } }
+\markup { \fill-line { " " \center-column { \fontsize #2 "Linda Martínez" } } }
+\markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" \small "(Octubre 2019)" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
+}
+
+\layout {
+  indent = #0
+  ragged-right = ##f
 }
 
 % --- Persignarse
@@ -32,22 +38,19 @@
   <<
     \acordesPersignarse
     \new Staff <<
+      \set Staff.midiInstrument = #"oboe"
       \globalPersignarse
       \new Voice = "melody" \chantPersignarse
       \new Lyrics = "one" \lyricsto melody \verbaPersignarse
     >>
   >>
   \layout {
-    ragged-right = ##f
-
     \context {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \RemoveEmptyStaves
       \hide Stem
     }
-
   }
   \midi {}
 }
@@ -58,22 +61,19 @@
   <<
     \acordesConstriccion
     \new Staff <<
+      \set Staff.midiInstrument = #"oboe"
       \globalConstriccion
       \new Voice = "melody" \chantConstriccion
       \new Lyrics = "one" \lyricsto melody \verbaConstriccion
     >>
   >>
   \layout {
-    ragged-right = ##f
-
     \context {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \RemoveEmptyStaves
       \hide Stem
     }
-
   }
   \midi {}
 }
@@ -84,22 +84,19 @@
   <<
     \acordesPadreNuestro
     \new Staff <<
+      \set Staff.midiInstrument = #"oboe"
       \globalPadreNuestro
       \new Voice = "melody" \chantPadreNuestro
       \new Lyrics = "one" \lyricsto melody \verbaPadreNuestro
     >>
   >>
   \layout {
-    ragged-right = ##f
-
     \context {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \RemoveEmptyStaves
       \hide Stem
     }
-
   }
   \midi {}
 }
@@ -110,22 +107,19 @@
   <<
     \acordesAveMaria
     \new Staff <<
+      \set Staff.midiInstrument = #"oboe"
       \globalAveMaria
       \new Voice = "melody" \chantAveMaria
       \new Lyrics = "one" \lyricsto melody \verbaAveMaria
     >>
   >>
   \layout {
-    ragged-right = ##f
-
     \context {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \RemoveEmptyStaves
       \hide Stem
     }
-
   }
   \midi {}
 }
@@ -136,22 +130,19 @@
   <<
     \acordesLetanias_parte_uno
     \new Staff <<
+      \set Staff.midiInstrument = #"oboe"
       \globalLetanias
       \new Voice = "melody" \chantLetanias_parte_uno
       \new Lyrics = "one" \lyricsto melody \verbaLetanias_parte_uno
     >>
   >>
   \layout {
-    ragged-right = ##f
-
     \context {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \RemoveEmptyStaves
       \hide Stem
     }
-
   }
   \midi {}
 }
@@ -160,22 +151,19 @@
   <<
     \acordesLetanias_parte_dos
     \new Staff <<
+      \set Staff.midiInstrument = #"oboe"
       \globalLetanias
       \new Voice = "melody" \chantLetanias_parte_dos
       \new Lyrics = "one" \lyricsto melody \verbaLetanias_parte_dos
     >>
   >>
   \layout {
-    ragged-right = ##f
-
     \context {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \RemoveEmptyStaves
       \hide Stem
     }
-
   }
   \midi {}
 }
@@ -184,22 +172,19 @@
   <<
     \acordesLetanias_parte_tres
     \new Staff <<
+      \set Staff.midiInstrument = #"oboe"
       \globalLetanias
       \new Voice = "melody" \chantLetanias_parte_tres
       \new Lyrics = "one" \lyricsto melody \verbaLetanias_parte_tres
     >>
   >>
   \layout {
-    ragged-right = ##f
-
     \context {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \RemoveEmptyStaves
       \hide Stem
     }
-
   }
   \midi {}
 }
@@ -337,19 +322,17 @@
   <<
     \acordesLetanias_parte_cuatro
     \new Staff <<
+      \set Staff.midiInstrument = #"oboe"
       \globalLetanias
       \new Voice = "melody" \chantLetanias_parte_cuatro
       \new Lyrics = "one" \lyricsto melody \verbaLetanias_parte_cuatro
     >>
   >>
   \layout {
-    ragged-right = ##f
-
     \context {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \RemoveEmptyStaves
       \hide Stem
     }
   }
@@ -360,22 +343,19 @@
   <<
     \acordesLetanias_parte_cinco
     \new Staff <<
+      \set Staff.midiInstrument = #"oboe"
       \globalLetanias
       \new Voice = "melody" \chantLetanias_parte_cinco
       \new Lyrics = "one" \lyricsto melody \verbaLetanias_parte_cinco
     >>
   >>
   \layout {
-    ragged-right = ##f
-
     \context {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \RemoveEmptyStaves
       \hide Stem
     }
-
   }
   \midi {}
 }
@@ -384,24 +364,21 @@
 \score {
   \header { piece = \markup { \fontsize #3 \italic "Salve." } }
   <<
-    \acordesAveMaria
+    \acordesSalve
     \new Staff <<
-      \globalAveMaria
-      \new Voice = "melody" \chantAveMaria
-      \new Lyrics = "one" \lyricsto melody \verbaAveMaria
+      \set Staff.midiInstrument = #"oboe"
+      \globalSalve
+      \new Voice = "melody" \chantSalve
+      \new Lyrics = "one" \lyricsto melody \verbaSalve
     >>
   >>
   \layout {
-    ragged-right = ##f
-
     \context {
       \Staff
       \remove "Time_signature_engraver"
-      \remove "Bar_engraver"
-      \RemoveEmptyStaves
+      %\remove "Bar_engraver"
       \hide Stem
     }
-
   }
   \midi {}
 }
@@ -412,22 +389,19 @@
   <<
     \acordesOraionFinal
     \new Staff <<
+      \set Staff.midiInstrument = #"oboe"
       \globalOraionFinal
       \new Voice = "melody" \chantOraionFinal
       \new Lyrics = "one" \lyricsto melody \verbaOraionFinal
     >>
   >>
   \layout {
-    ragged-right = ##f
-
     \context {
       \Staff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \RemoveEmptyStaves
       \hide Stem
     }
-
   }
   \midi {}
 }

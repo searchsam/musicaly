@@ -1,5 +1,5 @@
 % ********************************************************
-%   MISA EN HONOR A LA FIESTA DE CRISTO REY DEL UNIVERSO
+%   FLORES DEL CARMELO DEL MONASTERIO MARIA MADRE DE MISERICORDIA Y SAN JOSE
 %   Texto y musica con acompañamiento
 %   by serachsam
 % ********************************************************
@@ -20,123 +20,39 @@
     top=1.5cm
 }
 %% Portada del Libro
-\title{ \textbf{ \Huge Misa Cristo Rey  } \\
-{ \LARGE Solemnidad Cristo Rey del Universo } }
+\title{ \textbf{ \Huge Flores del Carmelo  } \\
+{ \LARGE Motetes dedicados a las Hermanas del Monasterio María Madre de Misericordia y San José } }
 \author{ \textit{ \large Carmelitas Descalzas, Managua, Nicaragua } }
-\date{ \LARGE Linda Isabel Martínez Castro \\ Samuel José Gutiérrez Avilés \\ \small \textit{2018 - 2020} }
+\date{ \LARGE Linda Isabel Martínez Castro \\ Samuel José Gutiérrez Avilés \\ \small \textit{2017 - 2020} }
 
 \begin{document}
-    \pagenumbering{gobble}
-    %\pagestyle{plain}
+    %%\pagenumbering{gobble}
+    %%\pagestyle{plain}
 
     %% - Portada
     \maketitle
 
-    \begin{titlepage}
-        \centering
-        \vspace*{8cm}
-        { \scshape \Huge Ordinario de la Misa \par}
-        \vspace{1cm}
-        { \itshape \Large XXXIV Domingo del Tiempo Ordinario \par}
-        \vfill
-    \end{titlepage}
-    \clearpage
-
-    %% - Kyrie eleison - Melodia a modo del renacimiento
-    \begin{lilypond}%[staffsize=19]
-        \include "../ordinario/señor_ten_piedad.ly"
-    \end{lilypond}
-    \clearpage
-
-    %% - Gloria in excelsis Deo - Melodia a modo del renacimiento
     \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/gloria_a_dios.ly"
-    \end{lilypond}
-    \clearpage
-
-    %% - Credo in unum Deum - Melodia a modo del renacimiento
-    \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/creo_en_dios.ly"
-    \end{lilypond}
-    \clearpage
-
-    %% - Sanctus - Melodia a modo del renacimiento
-    \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/santo.ly"
-    \end{lilypond}
-    \clearpage
-
-    %% - Agnus Dei - Melodia a modo del renacimiento
-    \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/cordero_de_dios.ly"
-    \end{lilypond}
-    \clearpage
-
-    \begin{titlepage}
-        \centering
-        \vspace*{8cm}
-        { \scshape \Huge Propio de la Misa \par}
-        \vspace{1cm}
-        { \itshape \Large XXXIV Domingo del Tiempo Ordinario \par}
-        \vfill
-    \end{titlepage}
-    \clearpage
-
-    %% - Introito - Melodia a inspiracion de Mnsr. Marco Frisina
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/entrada.ly"
+        \include "../alabado_sea/alabado_sea.ly"
     \end{lilypond}
     \clearpage
     
-    %% - Offertorium - Melodia a inspiracion de Mnsr. Marco Frisina
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/ofertorio.ly"
-    \end{lilypond}
-    \clearpage
+    %% - Anhelo de un alma
+    %\begin{lilypond}%[staffsize=20]
+    %    \include "../anhelo_del_alma/anhelo_del_alma-coro.ly"
+    %\end{lilypond}
+    %\clearpage
 
-    %% - Communio - Melodia a inspiracion de Mnsr. Marco Frisina
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/comunion.ly"
-    \end{lilypond}
-    \clearpage
+    %% - El pastorea entre los lirios
+    %\begin{lilypond}%[staffsize=20]
+    %    \include "../el_pastorea_entre_los_lirios/el_pastorea_entre_los_lirios.ly"
+    %\end{lilypond}
+    %\clearpage
 
-    %% - Finalis - Melodia a inspiracion de Mnsr. Marco Frisina
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/final.ly"
-    \end{lilypond}
-    \clearpage
-    
-    \begin{titlepage}
-        \centering
-        \vspace*{8cm}
-        { \scshape \Huge Cantillatio \par}
-        \vspace{1cm}
-        { \itshape \Large XXXIV Domingo del Tiempo Ordinario \par}
-        \vfill
-    \end{titlepage}
-    \clearpage
-    
-    %% - Graduale - Melodia a inspiracion del Rvd. Lucien Deiss
-    \begin{lilypond}%[staffsize=20]
-        \include "../cantillatio/salmo_responsorial_ciclo_A.ly"
-    \end{lilypond}
-    \clearpage
-    
-    \begin{lilypond}%[staffsize=20]
-        \include "../cantillatio/salmo_responsorial_ciclo_B.ly"
-    \end{lilypond}
-    \clearpage
-    
-    \begin{lilypond}%[staffsize=20]
-        \include "../cantillatio/salmo_responsorial_ciclo_C.ly"
-    \end{lilypond}
-    \clearpage
-    
-    %% - Aleluya - Melodia a inspiracion del Rvd. Lucien Deiss
-    \begin{lilypond}%[staffsize=20]
-        \include "../cantillatio/aclamacion_al_evangelio.ly"
-    \end{lilypond}
-    \clearpage
-
+    %% - Reina del cielo
+    %\begin{lilypond}%[staffsize=20]
+    %    \include "../reina_del_cielo/reina_del_cielo.ly"
+    %\end{lilypond}
+    %\clearpage
 
 \end{document}
