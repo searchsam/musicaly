@@ -376,7 +376,7 @@
     \context {
       \Staff
       \remove "Time_signature_engraver"
-      %\remove "Bar_engraver"
+      \remove "Bar_engraver"
       \hide Stem
     }
   }

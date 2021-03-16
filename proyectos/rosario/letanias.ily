@@ -22,10 +22,10 @@ chantLetanias_parte_uno = \relative do'' {
   la4 fas sol2 \breathe 
   \partial 2. sol4 sol2 
   la4 fas sol2 \breathe \break
-  sol4 sol la4 fas sol2 \breathe 
-  sol4 sol la4 fas sol2 \breathe \break
-  sol4 sol la4 fas sol2 \breathe 
-  sol4 sol la4 fas sol2 \breathe \break
+  sol4 sol2 la4 fas sol2 \breathe 
+  sol4 sol2 la4 fas sol2 \breathe \break
+  sol4 sol2 la4 fas sol2 \breathe 
+  sol4 sol2 la4 fas sol2 \breathe \break
 }
 
 chantLetanias_parte_dos = \relative do'' {
@@ -50,8 +50,9 @@ chantLetanias_parte_cuatro = \relative do'' {
 
 chantLetanias_parte_cinco = \relative do'' {
   % Santa María
-  sol1 la4 la fas sol2 \breathe \break 
-  sol4 sol si1 sol2 la4 la fas fas fas sol4 sol2
+  sol1 \breathe
+  re1 \breathe \break 
+  mi4 mi mi mi2 fas2 sol2 sol
 }
 
 % --- Letra
@@ -104,10 +105,10 @@ verbaLetanias_parte_cuatro = \lyricmode {
 verbaLetanias_parte_cinco = \lyricmode {
   % Cordero de Dios
   \once \override LyricText.self-alignment-X = #-1
-  "Ruega por nosotros Santa" Ma -- dre de Dios.
-  Pa -- ra
+  "Ruega por nosotros Santa Madre de Dios."
   \once \override LyricText.self-alignment-X = #-1
-  "que seamos dignos de alcan" -- zar las pro -- me -- zar de Cris -- to.
+  "Para que seamos dignos de alcanzar"
+   las pro -- me -- sas de Cris -- to.
 }
 
 % --- Acordes
@@ -119,8 +120,8 @@ acordesLetanias_parte_uno = \new ChordNames {
     sol2. re2:7 sol2 sol2. re2 sol2
     sol2. re2:7 sol2 sol2. re2 sol2
     sol2. re2:7 sol2 sol2. re2 sol2
-    sol2 re2:7 sol2 sol2 re2 sol2
-    sol2 re2:7 sol2 sol2 re2 sol2
+    sol2. re2:7 sol2 sol2. re2 sol2
+    sol2. re2:7 sol2 sol2. re2 sol2
   }
 }
 
@@ -161,6 +162,6 @@ acordesLetanias_parte_cinco = \new ChordNames {
   \italianChords
   \chordmode {
     % Cordero de Dios
-    sol1 re2. sol1 sol1 sol2 re1 s4 sol2.
+    sol1 re1 do1 s4 re2 sol1
   }
 }
