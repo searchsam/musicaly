@@ -6,22 +6,15 @@
 \version "2.19.82"
 
 % --- Includes
-\include "persignarse.ily"
-\include "credo.ily"
-\include "constriccion.ily"
-\include "padre_nuestro.ily"
-\include "ave_maria.ily"
-\include "letanias.ily"
-\include "salve.ily"
-\include "oracion_final.ily"
+\include "../letanias.ily"
 
 % --- Tamaño del pentagrama
 %#(set-global-staff-size 18)
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #8 \smallCaps "Rosario" \fontsize #2 "Rosarium Virginis Mariae" } } }
+\markup { \fill-line { \center-column { \fontsize #8 \smallCaps "Letanias Lauretanas" \fontsize #2 "Rosarium Virginis Mariae" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Linda Martínez" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" \small "(Octubre 2019)" } } }
+\markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez"} } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
@@ -33,124 +26,8 @@
   ragged-right = ##f
 }
 
-% --- Persignarse
-\score {
-  \header { piece = \markup { \fontsize #3 \italic "Persignarse." } }
-  <<
-    \acordesPersignarse
-    \new Staff <<
-      \set Staff.midiInstrument = #"oboe"
-      \globalPersignarse
-      \new Voice = "melody" \chantPersignarse
-      \new Lyrics = "one" \lyricsto melody \verbaPersignarse
-    >>
-  >>
-  \layout {
-    \context {
-      \Staff
-      \remove "Time_signature_engraver"
-      \remove "Bar_engraver"
-      \hide Stem
-    }
-  }
-  \midi {}
-}
-
-% --- Confeción de Fe
-\score {
-  \header { piece = \markup { \fontsize #3 \italic "Credo." } }
-  <<
-    \acordesCredo
-    \new Staff <<
-      \set Staff.midiInstrument = #"oboe"
-      \globalCredo
-      \new Voice = "melody" \chantCredo
-      \new Lyrics = "one" \lyricsto melody \verbaCredo
-    >>
-  >>
-  \layout {
-    \context {
-      \Staff
-      \remove "Time_signature_engraver"
-      \remove "Bar_engraver"
-      \hide Stem
-    }
-  }
-  \midi {}
-}
-
-% --- Acto de Constriccion
-\score {
-  \header { piece = \markup { \fontsize #3 \italic "Acto de Constriccion." } }
-  <<
-    \acordesConstriccion
-    \new Staff <<
-      \set Staff.midiInstrument = #"oboe"
-      \globalConstriccion
-      \new Voice = "melody" \chantConstriccion
-      \new Lyrics = "one" \lyricsto melody \verbaConstriccion
-    >>
-  >>
-  \layout {
-    \context {
-      \Staff
-      \remove "Time_signature_engraver"
-      \remove "Bar_engraver"
-      \hide Stem
-    }
-  }
-  \midi {}
-}
-
-% --- Padre Nuestro
-\score {
-  \header { piece = \markup { \fontsize #3 \italic "Padre Nuestro." } }
-  <<
-    \acordesPadreNuestro
-    \new Staff <<
-      \set Staff.midiInstrument = #"oboe"
-      \globalPadreNuestro
-      \new Voice = "melody" \chantPadreNuestro
-      \new Lyrics = "one" \lyricsto melody \verbaPadreNuestro
-    >>
-  >>
-  \layout {
-    \context {
-      \Staff
-      \remove "Time_signature_engraver"
-      \remove "Bar_engraver"
-      \hide Stem
-    }
-  }
-  \midi {}
-}
-
-% --- Ave María
-\score {
-  \header { piece = \markup { \fontsize #3 \italic "Ave María." } }
-  <<
-    \acordesAveMaria
-    \new Staff <<
-      \set Staff.midiInstrument = #"oboe"
-      \globalAveMaria
-      \new Voice = "melody" \chantAveMaria
-      \new Lyrics = "one" \lyricsto melody \verbaAveMaria
-    >>
-  >>
-  \layout {
-    \context {
-      \Staff
-      \remove "Time_signature_engraver"
-      \remove "Bar_engraver"
-      \hide Stem
-    }
-  }
-  \midi {}
-}
-
 % --- Letanias
 \score {
-  \header { piece = \markup { \fontsize #3 \italic "Letanias." } }
   <<
     \acordesLetanias_parte_uno
     \new Staff <<
@@ -371,52 +248,6 @@
       \globalLetanias
       \new Voice = "melody" \chantLetanias_parte_cinco
       \new Lyrics = "one" \lyricsto melody \verbaLetanias_parte_cinco
-    >>
-  >>
-  \layout {
-    \context {
-      \Staff
-      \remove "Time_signature_engraver"
-      \remove "Bar_engraver"
-      \hide Stem
-    }
-  }
-  \midi {}
-}
-
-% --- Salve
-\score {
-  \header { piece = \markup { \fontsize #3 \italic "Salve." } }
-  <<
-    \acordesSalve
-    \new Staff <<
-      \set Staff.midiInstrument = #"oboe"
-      \globalSalve
-      \new Voice = "melody" \chantSalve
-      \new Lyrics = "one" \lyricsto melody \verbaSalve
-    >>
-  >>
-  \layout {
-    \context {
-      \Staff
-      \remove "Time_signature_engraver"
-      \remove "Bar_engraver"
-      \hide Stem
-    }
-  }
-  \midi {}
-}
-
-% --- Oracion Final
-\score {
-  \header { piece = \markup { \fontsize #3 \italic "Oración Final" } }
-  <<
-    \acordesOraionFinal
-    \new Staff <<
-      \set Staff.midiInstrument = #"oboe"
-      \globalOraionFinal
-      \new Voice = "melody" \chantOraionFinal
-      \new Lyrics = "one" \lyricsto melody \verbaOraionFinal
     >>
   >>
   \layout {

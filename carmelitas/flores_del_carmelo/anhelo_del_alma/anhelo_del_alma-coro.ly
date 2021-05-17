@@ -490,19 +490,19 @@ armonias = \new ChordNames {
       \new Staff <<
         \set Staff.midiInstrument = #"church organ"
         \set Staff.midiMaximumVolume = #0.4
-        \set Staff.printPartCombineTexts = ##f
-        \partcombine
-        << \global \NotesSop >>
-        << \global \NotesAlt >>
+        \new Voice <<
+          { << \global \NotesSop >> } 
+          { << \global \NotesAlt >> }
+        >>
       >>
       \new Staff <<
         \set Staff.midiInstrument = #"church organ"
         \set Staff.midiMaximumVolume = #0.4
         \clef bass
-        \set Staff.printPartCombineTexts = ##f
-        \partcombine
-        << \global \NotesTer >>
-        << \global \NotesBas >>
+        \new Voice <<
+          { << \global \NotesTer >> }
+          { << \global \NotesBas >> }
+        >>
       >>
     >>
   >>

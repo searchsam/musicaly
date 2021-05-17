@@ -1,0 +1,109 @@
+% ********************************************************
+%   ROSARIO
+%   Texto y musica con acompa\~namiento
+%   by serachsam
+% ********************************************************
+
+\documentclass[letterpaper]{report}
+
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{pifont}
+\usepackage{pdflscape}
+% \usepackage{lscape}
+\usepackage{geometry}
+\geometry{
+    letterpaper,
+    left=1.5cm,
+    right=1.5cm,
+    bottom=1.5cm,
+    top=1.5cm
+}
+
+\setlength{\parskip}{\baselineskip}
+
+%% Portada del Libro
+\title{ \textbf{ \Huge Rosario  } \\ { \LARGE Solemnidad Rosarium Virginis Mariae } }
+\author{ \large Linda Isabel Mart\'inez Castro \\ Samuel Jos\'e Guti\'errez Avil\'es }
+\date{ \LARGE \small \textit{2019 - 2021} }
+
+\begin{document}
+    %%\pagenumbering{gobble}
+    %%\pagestyle{plain}
+
+    %% - Portada
+    \maketitle
+    
+    %% - Introduccion
+    \begin{center}
+        \vspace*{9cm}
+        { \Huge Introducci\'on \par}
+    \end{center}
+    \clearpage
+    
+    \LARGE HISTORIA
+    
+    \Large Este proyecto musical nacio de la constantes ganas de cantar junto con la frecuencia con la que lo rezabamos. 
+    Un d\'ia simplemente pensamos: <<?`Porque no lo hacemos cantado?>> Recordamos diferente tonos en los que habias 
+    escuchado que se cantaban las diferentes partes, pero no habia un melodia o tono coherente en todo el recorrido del rezo. 
+    Sin mas nos decidimos de hacer. Junto con escuchar las diferentes versiones gregorias nos decidimos por hacer un sola 
+    melodia homogenia para todo el rosario.
+    
+    \LARGE ESTRUCTURA DEL ROSARIO
+
+    \Large Las diferentes partes propuestas a continuaci\'on siguen la estructura propuesta por el Papa San Juan Pablo II 
+    en su enciclica Rosarium Virginis Mariae:
+    
+    \renewcommand{\theenumi}{\arabic{enumi}}
+    \begin{enumerate}
+        \item Persignarse
+        \item Credo
+        \item Acto de Constricci\'on
+        \item Padre Nuestro
+        \item Ave Mar\'ia
+        \item Letanias Lauretanas
+        \item Salve
+        \item Oraci\'on Final
+    \end{enumerate}
+    \clearpage
+    
+    \begin{lilypond}%[staffsize=20]
+        \include "../partes/persignarse.ly"
+    \end{lilypond}
+    \clearpage
+    
+    \begin{lilypond}%[staffsize=20]
+        \include "../partes/credo.ly"
+    \end{lilypond}
+    \clearpage
+    
+    \begin{lilypond}%[staffsize=20]
+        \include "../partes/acto_contriccion.ly"
+    \end{lilypond}
+    \clearpage
+    
+    \begin{lilypond}%[staffsize=20]
+        \include "../partes/padre_nuestro.ly"
+    \end{lilypond}
+    \clearpage
+    
+    \begin{lilypond}%[staffsize=20]
+        \include "../partes/ave_maria.ly"
+    \end{lilypond}
+    \clearpage
+    
+    \begin{lilypond}%[staffsize=20]
+        \include "../partes/letanias.ly"
+    \end{lilypond}
+    \clearpage
+    
+    \begin{lilypond}%[staffsize=20]
+        \include "../partes/salve.ly"
+    \end{lilypond}
+    \clearpage
+    
+    \begin{lilypond}%[staffsize=20]
+        \include "../partes/oracion_final.ly"
+    \end{lilypond}
+    \clearpage
+\end{document}

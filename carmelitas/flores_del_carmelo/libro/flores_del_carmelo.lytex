@@ -38,21 +38,27 @@
     \clearpage
     
     %% - Anhelo de un alma
-    %\begin{lilypond}%[staffsize=20]
-    %    \include "../anhelo_del_alma/anhelo_del_alma-coro.ly"
-    %\end{lilypond}
-    %\clearpage
+    \begin{lilypond}%[staffsize=20]
+        \include "../anhelo_del_alma/anhelo_del_alma.ly"
+    \end{lilypond}
+    \clearpage
 
     %% - El pastorea entre los lirios
-    %\begin{lilypond}%[staffsize=20]
-    %    \include "../el_pastorea_entre_los_lirios/el_pastorea_entre_los_lirios.ly"
-    %\end{lilypond}
-    %\clearpage
+    \begin{lilypond}%[staffsize=20]
+        \include "../el_pastorea_entre_los_lirios/el_pastorea_entre_los_lirios.ly"
+    \end{lilypond}
+    \clearpage
+    
+    %% - Salmo responsorial
+    \begin{lilypond}%[staffsize=20]
+        \include "../salmo_responsorial_fiesta/salmo_responsorial.ly"
+    \end{lilypond}
+    \clearpage
 
     %% - Reina del cielo
-    %\begin{lilypond}%[staffsize=20]
-    %    \include "../reina_del_cielo/reina_del_cielo.ly"
-    %\end{lilypond}
-    %\clearpage
+    \begin{lilypond}%[staffsize=20]
+        \include "../reina_del_cielo/reina_del_cielo.ly"
+    \end{lilypond}
+    \clearpage
 
 \end{document}

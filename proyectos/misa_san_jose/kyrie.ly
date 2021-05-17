@@ -1,5 +1,5 @@
 % ****************************************************************
-%	Pricipe de los siglos - Melodia inspirada en las composiciones de Mons Marco Frisina
+%	Señor ten piedad - Melodia inspirada en la cancion medieval Zephyro spira
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
@@ -19,74 +19,112 @@
 
 % --- Musica
 % --- acordes
-harmony = \new ChordNames {
+armonia = \new ChordNames {
   \chordmode {
     \italianChords
-    la2:m do2 re2:m la2:m
-    la2:m sol2 re2 mi2
-
-    la2:m do2 re2:m la2:m
-    la2:m sol2 re2 mi2
-
-    la2:m do2 re2:m la2:m
-    la2:m sol2 re2 mi2
+    sol1:m fa2 sol2:m sol1:m fa2 sol2:m
+    sol1:m fa2 sol2:m sol1:m fa2 sol2:m
+    
+    do1:m sib2 do2:m do1:m sib2 do2:m
+    do1:m sib2 do2:m do1:m sib2 do2:m
+    
+    sol1:m fa2 sol2:m sol1:m fa2 sol2:m
+    sol1:m fa2 sol2:m sol1:m fa2 sol2:m
   }
 }
 
-blancas = \relative do' {
-  \tempo 4 = 60
-  \time 2/4
-
-  mi2\p sol fa4. fa8 mi2
-  mi2 re do4. do8 mi2 \break
-
-  la2 sol fa4. fa8 la2
-  la2 sol la4. la8 si2 \break
-
-  mi,2 sol fa4. fa8 mi2
-  mi2 re do4. do8 mi2
+blancas = \relative do'' {
+  \tempo 4=140
+  \key sol \minor
+  
+  R1*4
+  \clef bass
+  r4^\markup { \italic "Voces Oscuras" } sib,4 la( sol) 
+  la la sol2( 
+  sib2. la8 sol 
+  la4) la sib2  \bar "||" \break
+  
+  \clef treble
+  r4^\markup { \italic "Solo" } mib fa( sol)
+  fa4 fa sol2(
+  mib2. fa8 sol 
+  fa4) fa mib2 \break
+  r4^\markup { \italic "Voces Blancas" } mib fa( sol)
+  fa4 fa sol2(
+  mib2. fa8 sol 
+  fa4) fa mib2 \bar "||" \break
+  
+  R1*4
+  \clef bass
+  r4^\markup { \italic "Voces Oscuras" } sib4 la( sol) 
+  la la sol2( 
+  sib2. la8 sol 
+  la4) la sib2 \break
   
   \bar "|."
 }
 
 letra_blancas = \lyricmode {
-  Se -- ñor ten pie -- dad.
-  Se -- ñor ten pie -- dad.
-  Cris -- to ten pie -- dad.
-  Cris -- to ten pie -- dad.
-  Se -- ñor ten pie -- dad.
-  Se -- ñor ten pie -- dad.
+  Se -- ñor ten pie -- dad, pie -- dad.
+  Cris -- to ten pie -- dad, pie -- dad.
+  Cris -- to ten pie -- dad, pie -- dad.
+  Se -- ñor ten pie -- dad, pie -- dad.
 }
 
 oscuras = \relative do' {
+  \tempo 4=140
   \clef bass
-  \tempo 4 = 60
-  \time 2/4
-
-  do2\p do re4. re8 do2
-  do2 si la4. la8 do2 \break
-
-  mi2 do re4. re8 mi2
-  mi2 re re4. re8 mi2 \break
-
-  do2 do re4. re8 do2
-  do2 si la4. la8 do2
+  \key sol \minor
+  
+  r4^\markup { \italic "Solo" } sib4 la( sol) 
+  la la sol2( 
+  sib2. la8 sol 
+  la4) la sib2 \break
+  r4^\markup { \italic "Voces Oscuras - Segunda Voz" } sib,4 re2 
+  do4 do sol'2( 
+  sol1 
+  fa4) do re2 \break
+  
+  R1*4
+  \clef treble
+  r4^\markup { \italic "Voces Blancas - Segunda voz" } mib' do2
+  sib4 sib mib2( mib1
+  re4) sib do2 \break
+  
+  \clef bass
+  r4^\markup { \italic "Solo" } sib4 la( sol) 
+  la la sol2( 
+  sib2. la8 sol 
+  la4) la sib2 \break
+  r4^\markup { \italic "Voces Oscuras - Segunda Voz" } sib,4 re2 
+  do4 do sol'2( 
+  sol1 
+  fa4) do re2
 }
 
-% --- Estrofa 1
+letra_oscuras = \lyricmode {
+  Se -- ñor ten pie -- dad, pie -- dad.
+  Se -- ñor ten pie -- dad, pie -- dad.
+  Cris -- to ten pie -- dad, pie -- dad.
+  Se -- ñor ten pie -- dad, pie -- dad.
+  Se -- ñor ten pie -- dad, pie -- dad.
+}
+
 \score {
   <<
-    %\harmony
+    \armonia
     \new ChoirStaff <<
       \new Staff <<
-        \set Staff.midiInstrument = "choir aahs"
-        \new Voice = "melody" \blancas
-        \new Lyrics \lyricsto "melody" \letra_blancas
+        \set Staff.midiInstrument = "oboe"
+        \set Staff.instrumentName = "Mujeres"
+        \new Voice = "blancas" \blancas
+        \new Lyrics \lyricsto "blancas" \letra_blancas
       >>
       \new Staff <<
-        \set Staff.midiInstrument = "choir aahs"
-        \new Voice = "melody" \oscuras
-        \new Lyrics \lyricsto "melody" \letra_blancas
+        \set Staff.midiInstrument = "english horn"
+        \set Staff.instrumentName = "Hombres"
+        \new Voice = "oscuras" \oscuras
+        \new Lyrics \lyricsto "oscuras" \letra_oscuras
       >>
     >>
   >>
