@@ -1,6 +1,5 @@
-
 % ****************************************************************
-%       Melodia de la Trinidad - Contratenor
+%       Cantico de Santa Clara - Mezzosoprano
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"

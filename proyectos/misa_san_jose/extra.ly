@@ -8,6 +8,7 @@ melody = \relative do' {
 \score {
   <<
     \new Voice = "stanza" <<
+      \set Staff.midiInstrument = "oboe"
       \melody
     >>
   >>

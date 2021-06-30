@@ -22,47 +22,80 @@
 armonia = \new ChordNames {
   \chordmode {
     \italianChords
-    mi2:m mi2:m re2 mi4:m re4
-    mi2:m mi2:m re2 mi2:m
-    mi2:m mi2:m re2 mi4:m re
-    mi2:m mi2:m re2 mi2:m
+    re2:m re2:m do2 re4:m do4
+    re2:m re2:m do2 re2:m
+    re2:m re2:m do2 re4:m do4
+    re2:m re2:m do2 re2:m
     
-    mi2:m mi2:m re2 re2 sol2 sol2 sol2 sol2 
-    sol2 sol2 sol2 mi4:m re4 mi2:m mi2:m mi4:m re4 mi2:m
+    re2:m re2:m do2 do2 fa2 fa2 fa2 fa2 
+    fa2 fa2 fa2 re4:m do4 re2:m fa2 re4:m do4 re2:m
+    
+    re2:m re2:m do2 re4:m do4
+    re2:m re2:m do2 re2:m
+    re2:m re2:m do2 re4:m do4
+    re2:m re2:m do2 re2:m
+    
+    re2:m re2:m do2 do2 fa2 fa2 fa2 fa2 
+    fa2 fa2 fa2 re4:m do4 re2:m fa2 re4:m do4 re2:m
+    
+    re2:m re2:m do2 re4:m do4
+    re2:m re2:m do2 re2:m
+    re2:m re2:m do2 re4:m do4
+    re2:m re2:m do2 re2:m
+    
+    re2:m re2:m do2 do2 fa2 fa2 fa2 fa2 
+    fa2 fa2 fa2 re4:m do4 re2:m fa2 re4:m do4 re2:m
+    
+    re2:m re2:m do2 re4:m do4
+    re2:m re2:m do2 re2:m
+    re2:m re2:m do2 re4:m do4
+    re2:m re2:m do2 re2:m
   }
 }
 
 blancas = \relative do' {
   \tempo "Allegro" 4=110
-  \key mi \minor
+  \key re \minor
   \time 2/4
   
-  mi4 re8 mi sol4 sol8 sol
-  sol8( la) sol fas mi4 re
-  mi4 re8 mi sol4 sol
-  fas8( mi) mi8 re mi4 mi \break
-  mi4 re8 mi sol4 sol8 sol
-  sol8( la) sol fas mi4 re
-  mi4 re8 mi sol4 sol
-  fas8( mi) mi8 re mi4 mi \break
+  re4 do8 re fa4 fa8 fa
+  fa8( sol) fa mi re4 do
+  re4 do8 re fa4 fa
+  mi8( re) re8 do re4 re \break
+  re4 do8 re fa4 fa8 fa
+  fa8( sol) fa mi re4 do
+  re4 do8 re fa4 fa
+  mi8( re) re8 do re4 re \bar "||" \break
   
-  mi4 re8 mi sol4 sol
-  la8 la si8 la la4 la
-  si4 si8 do si4 si8( la)
-  sol4 la8 si sol4 sol \break
-  sol4 sol8 la si4 si8 la
-  sol4 sol8 fas mi4 re
-  mi4 re8 mi sol4 sol8 fas
-  mi8 fas re4 mi mi \break
+  R2*16
+  re4 do8 re fa4 fa
+  fa8( sol) sol( mi) re4 do
+  re8 re do8 re fa8 fa8 fa4
+  mi8( re) re8( do) re4 re \break
+  re4 do8 re fa4 fa
+  fa8( sol) sol( mi) re4 do
+  re8 re do8 re fa8 fa8 fa4
+  mi8( re) re8( do) re4 re \bar "||" \break
   
-  mi4 re8 mi sol4 sol8 sol
-  sol8( la) sol fas mi4 re
-  mi4 re8 mi sol4 sol8 fas
-  mi8 fas re4 mi mi
-  mi4 re8 mi sol4 sol
-  sol8 la sol fas mi4 re
-  mi4 re8 mi sol4 sol8 fas
-  mi8 fas re4 mi mi \break
+  R2*16
+  re4 do8( re) fa4 fa
+  fa8( sol) fa( mi) re4 do
+  re4 do8( re) fa4 fa
+  mi8 re re8 do re8 re re4 \break
+  re4 do8( re) fa4 fa
+  fa8( sol) fa( mi) re4 do
+  re4 do8( re) fa4 fa
+  mi8 re re8 do re8 re re4 \bar "||" \break
+  
+  R2*16
+  re4 do8( re) fa4 fa
+  fa8( sol) fa( mi) re4 do
+  re4 do8( re) fa4 fa
+  mi8( re) re8( do) re8 re re4 \break
+  re4 do8( re) fa4 fa
+  fa8( sol) fa( mi) re4 do
+  re4 do8( re) fa4 fa
+  mi8( re) re8( do) re8 re re4 \bar "||" \break
   
   \bar "|."
 }
@@ -73,42 +106,72 @@ letra_blancas = \lyricmode {
   Glo -- ria a Dios en lo al -- to del cie -- lo,
   y en la tie -- rra paz a los hom -- bres.
   
-  Por tu in -- men -- sa glo -- ria te~a -- la -- ba -- mos,
-  te ben -- de -- ci -- mos, te a -- do -- ra -- mos,
-  te glo -- ri -- fi -- ca -- mos, te da -- mos gra -- cias,
+  Dios Pa -- dre to -- do -- po -- de -- ro -- so 
+  Se -- ñor, Hi -- jo ú -- ni -- co, Je -- su -- cris -- to.
+  Dios Pa -- dre to -- do -- po -- de -- ro -- so 
+  Se -- ñor, Hi -- jo ú -- ni -- co, Je -- su -- cris -- to.
   
-  Señor Dios, Rey celestial,
-  Dios Padre todopoderoso Señor,
-  Hijo único, Jesucristo.
+  Tú que qui -- tas el pe -- ca -- do de el mun -- do,~a -- 
+  tien -- de nues -- tra sú -- pli -- ca;
+  Tú que qui -- tas el pe -- ca -- do de el mun -- do,~a -- 
+  tien -- de nues -- tra sú -- pli -- ca;
   
-  Señor Dios, Cordero de Dios, Hijo del Padre;
-  tú que quitas el pecado del mundo,
-  ten piedad de nosotros;
-  
-  tú que quitas el pecado del mundo,
-  atiende nuestra súplica;
-  
-  tú que estás sentado a la derecha del Padre,
-  ten piedad de nosotros;
-  
-  porque sólo tú eres Santo,
-  sólo tú Señor, sólo tú Altísimo, Jesucristo,
-  con el Espíritu Santo en la gloria de Dios Padre.
-  
-  Amén.
+  Só -- lo tú Al -- tí -- si -- mo, Je -- su -- cris -- to,
+  con el Es -- pí -- ri -- tu San -- to en la glo -- ria de Dios Pa -- dre.
+  A -- mén.
 }
 
 oscuras = \relative do' {
   %\tempo 4=80
   \clef bass
-  \key mi \minor
+  \key re \minor
   \time 2/4
   
+  R2*16
+  re,4 do8 re fa4 fa
+  sol8 sol la8 sol sol4 sol
+  la4 la8 sib la4 la8( sol)
+  fa4 sol8 la fa4 fa \break
+  fa4 \tuplet 3/2 {fa8 fa sol} la4 la8( sol)
+  fa4 fa8 mi re4 do
+  re4 do8( re) fa2
+  fa8( mi) re8 do re2 \bar "||" \break
   
+  R2*16
+  re4 do8( re) fa4 fa
+  sol8 sol la8( sol) sol2
+  la4 la8 sib la4 la8( sol)
+  fa4 sol8( la) fa4 fa \break
+  fa4 fa8( sol) la4 la8( sol)
+  fa4 fa8( mi) re4( do)
+  re4 do8( re) fa2
+  fa8( mi) re8( do) re4 re \bar "||" \break
+  
+  R2*16
+  re4 do8 re fa4 fa
+  sol8 sol la8 sol sol4 sol
+  la4 la8( sib) la4 la8( sol)
+  fa4 sol8( la) fa2 \break
+  fa4 fa8( sol) la4 la8( sol)
+  fa4 fa8 mi re4 do
+  re4 do8( re) fa2
+  fa8( mi re8 do) re2 \bar "||" \break
+  
+  R2*16
 }
 
 letra_oscuras = \lyricmode {
+  Por tu in -- men -- sa glo -- ria te~a -- la -- ba -- mos,
+  te ben -- de -- ci -- mos, te a -- do -- ra -- mos,
+  te glo -- ri -- fi -- ca -- mos, te da -- mos gra -- cias,
+  Se -- ñor Dios, Rey ce -- les -- tial.
   
+  Se -- ñor Dios, Cor -- de -- ro de Dios, Hi -- jo del Pa -- dre;
+  tú que qui -- tas el pe -- ca -- do del mun -- do,
+  ten pie -- dad de no -- so -- tros.
+  
+  Tú que es -- tás sen -- ta -- do~a la de -- re -- cha de el Pa -- dre, ten pie -- dad.
+  Por -- que só -- lo tú e -- res San -- to, só -- lo tú Se -- ñor.
 }
 
 \score {

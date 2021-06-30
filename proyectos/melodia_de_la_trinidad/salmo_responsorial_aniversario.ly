@@ -33,7 +33,6 @@
 % --- Musica
 antifona = \relative do' {
     \key mi \minor
-    \compressFullBarRests
     \dynamicUp
     \newSpacingSection
     \override Score.SpacingSpanner.spacing-increment = #3.6
@@ -49,7 +48,7 @@ letra_antifona = \lyricmode {
 armonia_antifona = \new ChordNames {
     \italianChords
     \chordmode { 
-        mi4:m R4*6 do2 R4*4 mi2:m R4*9 re2 R4*2 mi2:m
+        mi4:m s4*6 do2 R4*4 mi2:m R4*9 re2 R4*2 mi2:m
     }
 }
 
