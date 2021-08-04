@@ -1,0 +1,67 @@
+% ****************************************************************
+%	Aclamad al Señor - Flauta
+%	by serach.sam@
+% ****************************************************************
+\language "espanol"
+\version "2.19.80"
+
+%#(set-global-staff-size 22)
+
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Salve, reina de los cielos" \fontsize #3 "Himno" } } }
+\markup { \fill-line { \fontsize #2 "" \fontsize #2 "Kiko Argüello"  } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
+\header {
+  copyright = "Creative Commons Attribution 3.0"
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  breakbefore = ##t
+}
+
+global = {
+  \tempo "Allegro" 4 = 110
+  \time 4/4
+  \key la \minor
+  s1*11
+  \bar "|."
+}
+
+melodia = \relative do'' {
+  \textLengthOn
+  s1_\markup \center-column { \small "Salve reina de los cielos... ...ruega al Señor por nosotros" }
+  \textLengthOff
+  \break
+  r2 la4 si 
+  do1~
+  do4 re4 do2 
+  si8 la do2. 
+  si4 do si la~
+  la2. r4
+  re2. si4
+  sol2. si4
+  re2 mi4 re
+  do1
+}
+
+armonias = \new ChordNames {
+  \set chordChanges = ##t
+  \italianChords
+  \chordmode {
+   la1:m s1
+   la1:m s1*4 sol1 s1*2 fa1
+  }
+}
+
+\score {
+  <<
+    \armonias
+    \new Staff <<
+      \set Staff.midiInstrument = #"oboe"
+      << \melodia \global >>
+    >>
+  >>
+  \midi {}
+  \layout {}
+}
+
+\paper {
+  #(set-paper-size "letter")
+}
