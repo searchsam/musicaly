@@ -4,7 +4,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.82"
+\version "2.23.2"
 
 #(set-global-staff-size 18)
 
@@ -14,7 +14,7 @@
 \markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
@@ -236,7 +236,7 @@ armonias = \new ChordNames {
         \set Staff.midiInstrument = #"church organ"
         \set Staff.midiMaximumVolume = #0.6
         \set Staff.printPartCombineTexts = ##f
-        \partcombine
+        \partCombine
         << \global \NotesSop >>
         << \global \NotesAlt >>
       >>
@@ -245,7 +245,7 @@ armonias = \new ChordNames {
         \set Staff.midiMaximumVolume = #0.6
         \clef bass
         \set Staff.printPartCombineTexts = ##f
-        \partcombine
+        \partCombine
         << \global \NotesTer >>
         << \global \NotesBas >>
       >>
@@ -261,3 +261,8 @@ armonias = \new ChordNames {
   indent=3.5\cm
   page-breaking = #ly:page-turn-breaking
 }
+
+%{
+convert-ly (GNU LilyPond) 2.23.2  convert-ly: Procesando «»...
+Aplicando la conversión: 2.20.0, 2.21.0, 2.21.2, 2.23.1, 2.23.2
+%}

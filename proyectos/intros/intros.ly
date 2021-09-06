@@ -27,7 +27,7 @@ venMelodia = \relative do' {
   \key si \minor
   \time 2/4
 
-  r4 si4
+  r4 si'4
   re2~
   re4 si
   re4 fas
@@ -137,7 +137,7 @@ corderoAcordes = \new ChordNames {
 corderoMelodia = \relative do' {
   \tempo 4 = 80
   \clef treble
-  \key si \minor
+  \key sol \minor
   \time 4/4
 
   re2. mib8 fas

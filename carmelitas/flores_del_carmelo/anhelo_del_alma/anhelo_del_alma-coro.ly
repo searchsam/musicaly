@@ -4,7 +4,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.82"
+\version "2.23.2"
 
 %#(set-global-staff-size 18.5)
 
@@ -16,7 +16,7 @@
 \header {
   dedication = "Consagración Hna. Itxia Jovanela del Niño Jesús - Carmelitas Descalzas Managua"
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
@@ -69,9 +69,11 @@ sopMusic = \relative do'' {
 
   R2*3
   r4 r8 sol fas mi mi re mi4 mi
-  R2*4
-  si'2 la8 la sol la si4 si
+  R2 \break
   R2*3
+  si'2 la8 la sol la si4 si
+  R2 \break
+  R2*2
   r4 r8 sol8 fas mi mi re mi4 mi
   R2*4
   si'8 si si8 si la la sol8 la si2
@@ -88,9 +90,11 @@ sopMusic = \relative do'' {
 
   R2*3
   r4 r8 sol fas4 mi8 re mi2
-  R2*4
-  si'4 si8 la sol8 la si4 si2
+  R2 \break
   R2*3
+  si'4 si8 la sol8 la si4 si2
+  R2 \break
+  R2*2
   r4 r8 sol8 fas( mi) mi re mi2
   R2*4
   si'4 si8( la) sol8( la) si4 si2
@@ -218,7 +222,7 @@ altMusic = \relative do' {
   R2 \break
   mi2( sol2) mi4 mi
   R2*3
-  mi2 fas2 sol2 \break
+  mi2 fas2 sol2
   R2*4
   mi2( sol2) mi4 mi
   R2*3 \break
@@ -517,3 +521,8 @@ armonias = \new ChordNames {
   %indent=3.5\cm
   %page-breaking = #ly:page-turn-breaking
 }
+
+%{
+convert-ly (GNU LilyPond) 2.23.2  convert-ly: Procesando «»...
+Aplicando la conversión: 2.20.0, 2.21.0, 2.21.2, 2.23.1, 2.23.2
+%}
