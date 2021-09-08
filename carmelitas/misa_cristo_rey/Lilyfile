@@ -1,4 +1,5 @@
-lilypond
 ffmpeg
-texlive-scheme-basic
+lilypond
 sed
+texlive-scheme-basic
+timidity

@@ -39,10 +39,12 @@ compile_audio() {
         rm "${2}.mp3"
     fi
 
-    if [ -f "${2}.midi" ]; then
-        timidity "${2}.midi" -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k "${2}.mp3"
-        rm "${2}.midi"
+    if [ ! -f "${2}.midi" ]; then
+        lilypond -dbackend=null "${2}.ly"
     fi
+
+    timidity "${2}.midi" -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k "${2}.mp3"
+    rm "${2}.midi"
 
     cd ../..
 }
@@ -54,7 +56,14 @@ build_lily() {
 }
 
 clean() {
-    test_dir=write/*/
+    test_dir=""
+
+    if [ -n "${1}" ]; then
+        test_dir=write/$1/
+    else
+        test_dir=write/*/
+    fi
+
     for dir in $test_dir; do
         rm $dir*.midi
     done
@@ -109,11 +118,13 @@ if [ -n "${1}" ]; then
         done
     else
         test_dir=write/$1
-        for file in "${test_dir}/*.ly"; do
-            build_lily $test_dir $file
+        test_path=$test_dir/*.ly
+        for file in $test_path; do
+            readarray -d / -t tstrarr <<<"${file}"
+            file_name="${tstrarr[-1]}"
 
-            readarray -d / -t strarr <<<"$file"
-            file_name="${strarr[-1]}"
+            build_lily $test_dir $file_name
+
             readarray -d . -t strarr <<<"$file_name"
             name="${strarr[0]}"
 
@@ -123,7 +134,7 @@ if [ -n "${1}" ]; then
         done
     fi
 
-    clean
+    clean $1
 else
     test
 fi
