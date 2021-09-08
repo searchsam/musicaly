@@ -35,6 +35,9 @@ modify_files() {
         if grep -q "soprano" "${1}"; then
             sed -i "s/\"soprano.ily\"/\"${3}\/${2}-soprano.ily\"/" $1
         fi
+        if grep -q "solo" "${1}"; then
+            sed -i "s/\"solo.ily\"/\"${3}\/${2}-solo.ily\"/" $1
+        fi
 
         case $2 in
         agnus)
@@ -96,8 +99,11 @@ modify_files() {
                 sed -i "s/\"..\/${2}\/${2}.ly\"/\"..\/propio\/${2}.ly\"/" $1
             else
                 sed -i "s/\"..\/${2}\/salmo_responsorial_ciclo_A.ly\"/\"..\/propio\/salmo_responsorial_ciclo_A.ly\"/" $1
+                sed -i "s/\"..\/${2}\/salmo_responsorial_ciclo_A-solo.ly\"/\"..\/propio\/salmo_responsorial_ciclo_A-solo.ly\"/" $1
                 sed -i "s/\"..\/${2}\/salmo_responsorial_ciclo_B.ly\"/\"..\/propio\/salmo_responsorial_ciclo_B.ly\"/" $1
+                sed -i "s/\"..\/${2}\/salmo_responsorial_ciclo_B-solo.ly\"/\"..\/propio\/salmo_responsorial_ciclo_B-solo.ly\"/" $1
                 sed -i "s/\"..\/${2}\/salmo_responsorial_ciclo_C.ly\"/\"..\/propio\/salmo_responsorial_ciclo_C.ly\"/" $1
+                sed -i "s/\"..\/${2}\/salmo_responsorial_ciclo_C-solo.ly\"/\"..\/propio\/salmo_responsorial_ciclo_C-solo.ly\"/" $1
             fi
             ;;
         introito)
