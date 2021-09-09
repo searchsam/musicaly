@@ -1,9 +1,11 @@
 harmonies = \new ChordNames {
+  \set ChordNames.midiInstrument = "string ensemble 2"
+  \set ChordNames.midiMaximumVolume = #0
+  \set chordChanges = ##t
   \chordmode {
     \italianChords
     s1*2 |
     la1 |
-
     re1:7 |
     sol1:m |
     s1 |
@@ -21,7 +23,6 @@ harmonies = \new ChordNames {
     sib1 |
     la1:7 |
     re1 |
-
     re1:7 |
     sol1:m |
     s1 |
@@ -39,7 +40,6 @@ harmonies = \new ChordNames {
     sib1 |
     la1:7 |
     re1 |
-
     re1:7 |
     sol1:m |
     R1 |

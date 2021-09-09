@@ -1,10 +1,15 @@
-% ****************************************************************
-%	Sagrario del altar - Melodia inspirada en las composiciones de Mons Marco Frisina
-%	by serach.sam@
-% ****************************************************************
+% ***************************************************************************
+%	Communio - Melody inspired by the compositions of Mons Marco Frisina
+%	Music and accompaniment by serachsam
+% ***************************************************************************
 \language "espanol"
-\version "2.19.82"
+\version "2.23.2"
 
+% --- Global parameters
+
+% --- Includes
+
+% --- Global size
 #(set-global-staff-size 19)
 
 
@@ -14,14 +19,14 @@
 \markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
-% --- Musica
+% --- Music
 
 
-% --- acordes
+% --- Harmony
 harmony = \new ChordNames {
   \chordmode {
     \italianChords
@@ -30,7 +35,7 @@ harmony = \new ChordNames {
   }
 }
 
-% --- Estrofa I
+% --- Stanza I
 \score {
   \new StaffGroup = "Estrofa" <<
     %\harmony
@@ -75,7 +80,7 @@ harmony = \new ChordNames {
   }
 }
 
-% --- acordes
+% --- Harmony
 harmony_stanza = \new ChordNames {
   \chordmode {
     \italianChords
@@ -84,7 +89,7 @@ harmony_stanza = \new ChordNames {
   }
 }
 
-% --- Coro Repeticion
+% --- Chorus Repeat
 \score {
   \new StaffGroup = "Antifona" <<
     %\harmony_stanza
@@ -294,13 +299,8 @@ harmony_stanza = \new ChordNames {
   }
 }
 
-% --- Papel
+% --- Paper
 \paper{
   #(set-default-paper-size "letter")
   page-breaking = #ly:page-turn-breaking
 }
-
-%{
-convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
-Aplicando la conversión:     El documento no ha cambiado.
-%}

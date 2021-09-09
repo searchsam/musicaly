@@ -1,25 +1,28 @@
 % ****************************************************************
-%	Credo in unum Deum - Melodia a modo del renacimiento
-%	by serachsam
+%   Credo - Renaissance way melody
+%   Text and music with accompaniment by serachsam
 % ****************************************************************
 \language "espanol"
-\version "2.19.82"
+\version "2.23.2"
 
+% --- Global parameters
+
+% --- Includes
+
+% --- Global size
 #(set-global-staff-size 19.5)
 
-% --- Cabecera
+% --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Credo" \fontsize #2 "Misa Cristo Rey" "Simbolo Apostolico"} } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Linda Martínez" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
-% --- Parametro globales
-
-% --- invocacion #1
+% --- Invocation #1
 \score{
   <<
     \new Voice = "invocacion" {
@@ -63,7 +66,7 @@ globalPadre = {
   \bar "|."
 }
 
-% --- Musica
+% --- Music
 cantusIncipitPadre = {
   \set Staff.instrumentName = "Cantus"
   \clef "petrucci-g"
@@ -150,7 +153,7 @@ altusLyricsPadre = \lyricmode {
   }
 }
 
-% --- Invocacion #2
+% --- Invocation #2
 \score{
   <<
     \new Voice = "invocacion" {
@@ -291,7 +294,7 @@ altusLyricsHijo = \lyricmode {
   }
 }
 
-% --- solo
+% --- Solo
 \score{
   <<
     \new Voice = "invocacion" {
@@ -357,7 +360,7 @@ altusLyricsHijo = \lyricmode {
   \midi {}
 }
 
-% --- invocacion #3
+% --- Invocation #3
 \score{
   <<
     \new Voice = "invocacion" {
@@ -508,7 +511,7 @@ altusLyricsEspiritu = \lyricmode {
   }
 }
 
-% --- amen
+% --- Amen
 \score{
   <<
     \new Voice = "invocacion" {
@@ -534,7 +537,7 @@ altusLyricsEspiritu = \lyricmode {
   }
 }
 
-% --- Pagina
+% --- Paper
 \paper{
   #(set-default-paper-size "letter")
   page-breaking = #ly:page-turn-breaking

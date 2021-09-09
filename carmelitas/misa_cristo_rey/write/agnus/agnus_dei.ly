@@ -1,14 +1,19 @@
 % ****************************************************************
-%	Agnus Dei - Melodia a modo del renacimiento
-%   	Texto y musica con acompañamiento
-%	by serachsam
+%   Agnus Dei - Renaissance way melody
+%   Text and music with accompaniment by serachsam
 % ****************************************************************
+
 \language "espanol"
 \version "2.23.2"
 
-%#(set-global-staff-size 20)
+% --- Global parameters
 
-% --- Cabecera
+% --- Includes
+
+% --- Global size
+% #(set-global-staff-size 20)
+
+% --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Cordero de Dios" \fontsize #2 "Misa Cristo Rey" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Linda Martínez" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" } } }
@@ -18,9 +23,7 @@
   breakbefore = ##t
 }
 
-% --- Parametro globales
-
-% --- invocacion #1
+% --- Invocation #1
 \score{
   <<
     \new Voice = "invocacion" {
@@ -64,7 +67,7 @@ globalPiedad = {
   \bar "|."
 }
 
-% --- Musica
+% --- Music
 cantusIncipitPiedad = {
   \set Staff.instrumentName = "Cantus"
   \clef "petrucci-g"
@@ -165,7 +168,7 @@ altusLyricsPiedad = \lyricmode {
   }
 }
 
-% --- invocacion #2
+% --- Invocation #2
 \score{
   <<
     \new Voice = "invocacion" {
@@ -232,7 +235,7 @@ altusLyricsPiedad = \lyricmode {
   }
 }
 
-% --- invocacion #3
+% --- Invocation #3
 \score{
   <<
     \new Voice = "invocacion" {
@@ -276,7 +279,7 @@ globalPaz = {
   \bar "|."
 }
 
-% --- Musica
+% --- Music
 cantusIncipitPaz = {
   \set Staff.instrumentName = "Cantus"
   \clef "petrucci-g"
@@ -377,19 +380,8 @@ altusLyricsPaz = \lyricmode {
   }
 }
 
-% --- Pagina
+% --- Paper
 \paper{
   #(set-default-paper-size "letter")
   page-breaking = #ly:page-turn-breaking
 }
-
-%{
-convert-ly (GNU LilyPond) 2.23.2  convert-ly: Procesando «»...
-Aplicando la conversión: 2.20.0, 2.21.0, 2.21.2, 2.23.1, 2.23.2
-%}
-
-
-%{
-convert-ly (GNU LilyPond) 2.23.2  convert-ly: Procesando «»...
-Aplicando la conversión:     El documento no ha cambiado.
-%}

@@ -35,17 +35,18 @@ jump = \break
     \new Voice = "alto" <<
       \set Staff.midiInstrument = #"choir aahs"
       \set Staff.midiMaximumVolume = #1.5
-      \global \alt_music
+      \global \alto_music
     >>
     \new Lyrics = "alto"
-    \context Lyrics = "alto" \lyricsto "alto" \alt_words
+    \context Lyrics = "alto" \lyricsto "alto" \alto_lyrics
   >>
   \midi { }
   \layout { }
 }
 
-% --- Musica
+% --- Paper
 \paper{
   #(set-default-paper-size "letter")
-  system-system-spacing = #'((basic-distance . 12) (minimum-distance . 8) (padding . 3) (stretchability . 60))
+  indent=3.5\cm
+  page-breaking = #ly:page-turn-breaking
 }

@@ -1,28 +1,31 @@
-% ****************************************************************
-%	Aleluya - Melodia inspirada en las composiciones de Mons Marco Frisina
-%	by serach.sam@
-% ****************************************************************
+% ****************************************************************************
+%	Aleluya -  - Melody inspired by the compositions of Mons Marco Frisina
+%   	Music and accompaniment by serachsam
+% ****************************************************************************
 \language "espanol"
-\version "2.19.82"
+\version "2.23.2"
 
-% --- includes
+% --- Global parameters
+
+% --- Includes
 \include "gregorian.ly"
 
-%#(set-global-staff-size 19)
+% --- Global size
+% #(set-global-staff-size 20)
 
-
-% --- Cabecera
+% --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Aclamación al Evangelio" \fontsize #2 "Misa de Cristo Rey" "Aleluya de la Solemnidad Cristo Rey"} } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
-% --- Musica
-% --- acordes
+% --- Music
+
+% --- Harmony
 harmony_stanza = \new ChordNames {
   \chordmode {
     \italianChords
@@ -35,7 +38,7 @@ harmony_stanza = \new ChordNames {
   \new StaffGroup = "Aleluya" <<
     %\harmony_stanza
     \new Staff <<
-      %\set Staff.midiInstrument = "clarinet"
+      \set Staff.midiInstrument = #"choir aahs"
       \new Voice = "melody" \relative do' {
         \tempo "Adagio" 4 = 70
         \time 4/4
@@ -53,7 +56,7 @@ harmony_stanza = \new ChordNames {
       }
     >>
     \new Staff <<
-      %\set Staff.midiInstrument = "oboe"
+      \set Staff.midiInstrument = #"choir aahs"
       \new Voice = "contramelody" \relative do'' {
         \tempo "Adagio" 4 = 70
         \time 4/4
@@ -95,7 +98,7 @@ harmony_stanza_antifona = \new ChordNames {
   <<
     %\harmony_stanza_antifona
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
+      \set Staff.midiInstrument = #"choir aahs"
       \new Voice = "melody" \relative do' {
         %\tempo "Adagio" 4 = 70
         \time 4/4
@@ -135,7 +138,7 @@ harmony_stanza_antifona = \new ChordNames {
   }
 }
 
-% --- Papel
+% --- Paper
 \paper{
   #(set-default-paper-size "letter")
   page-breaking = #ly:page-turn-breaking

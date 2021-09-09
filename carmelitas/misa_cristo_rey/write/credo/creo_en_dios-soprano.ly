@@ -1,6 +1,6 @@
 % ****************************************************************
-%	Señor ten piedad v3 - Renaissance way melody
-%   Text and music with accompaniment by serachsam
+%	Creo en Dios - Renaissance way melody
+%   	Text and music with accompaniment by serachsam
 % ****************************************************************
 \language "espanol"
 \version "2.23.2"
@@ -17,7 +17,7 @@ jump = \break
 % #(set-global-staff-size 20)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Cordero de Dios" \fontsize #2 "Misa Cristo Rey" "Agnus Dei" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Creo en Dios" \fontsize #2 "Misa Cristo Rey" "Credo" } } }
 \markup { \fill-line { \fontsize #2 "Soprano" \center-column { \fontsize #2 "Linda Martínez" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {

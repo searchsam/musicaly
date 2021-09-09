@@ -1,5 +1,5 @@
 % ****************************************************************
-%	Señor ten piedad v3 - Renaissance way melody
+%   Creo en Dios - Renaissance way melody
 %   Text and music with accompaniment by serachsam
 % ****************************************************************
 \language "espanol"
@@ -11,14 +11,14 @@ jump = \break
 
 % --- Includes
 \include "global.ily"
-\include "soprano.ily"
+\include "alto.ily"
 
 % --- Global size
 % #(set-global-staff-size 20)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Cordero de Dios" \fontsize #2 "Misa Cristo Rey" "Agnus Dei" } } }
-\markup { \fill-line { \fontsize #2 "Soprano" \center-column { \fontsize #2 "Linda Martínez" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Creo en Dios" \fontsize #2 "Misa Cristo Rey" "Credo" } } }
+\markup { \fill-line { \fontsize #2 "Contralto" \center-column { \fontsize #2 "Linda Martínez" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
@@ -32,13 +32,13 @@ jump = \break
 
 \score {
   <<
-    \new Voice = "soprano" <<
+    \new Voice = "alto" <<
       \set Staff.midiInstrument = #"choir aahs"
       \set Staff.midiMaximumVolume = #1.5
-      \global \soprano_music
+      \global \alto_music
     >>
-    \new Lyrics = "soprano"
-    \context Lyrics = "soprano" \lyricsto "soprano" \soprano_lyrics
+    \new Lyrics = "alto"
+    \context Lyrics = "alto" \lyricsto "alto" \alto_lyrics
   >>
   \midi { }
   \layout { }
