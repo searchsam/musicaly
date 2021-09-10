@@ -19,7 +19,7 @@ jump = \break
 % --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Madre de la Iglesia" \fontsize #2 "Misa de Cristo Rey" "Communio - Himno Memoria María, Madre de la Iglesia" } } }
 %\markup { \fill-line { " " \right-column { \fontsize #2 "Letra: Pablo VI" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Linda Martínez" } } }
+\markup { \fill-line { \fontsize #2 "Soprano" \center-column { \fontsize #2 "Linda Martínez" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
@@ -34,7 +34,6 @@ jump = \break
 \score {
   <<
     \new Staff <<
-      \set Staff.instrumentName = #"Soprano"
       \set Staff.midiInstrument = #"choir aahs"
       \set Staff.midiMaximumVolume = #1.5
 

@@ -17,7 +17,7 @@ jump = \break
 \include "organ.ily"
 
 % --- Global size
-#(set-global-staff-size 19.8)
+% #(set-global-staff-size 19.8)
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Canto de Amor" \fontsize #2 "Misa de Cristo Rey" "Finalis - Salmo 45 (44)" } } }
@@ -30,19 +30,6 @@ jump = \break
 }
 
 % --- Music
-
-NotesSop = \relative do' {
-
-}
-NotesAlt = \relative do' {
-
-}
-NotesTer = \relative do {
-
-}
-NotesBas = \relative do {
-
-}
 
 % --- Harmony
 

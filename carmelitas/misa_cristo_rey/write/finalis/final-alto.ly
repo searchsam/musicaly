@@ -1,7 +1,7 @@
-% ******************************************************************************************
-%	Aclamaicion al Evangelio - Melody inspired by the compositions of Mons Marco Frisina
+% *************************************************************************************
+%	Madre de la iglesia - Melody inspired by the compositions of Mons Marco Frisina
 %   	Music and accompaniment by serachsam
-% ******************************************************************************************
+% *************************************************************************************
 \language "espanol"
 \version "2.23.2"
 
@@ -17,8 +17,8 @@ jump = \break
 % #(set-global-staff-size 20)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Aclamación al Evangelio" \fontsize #2 "Misa de Cristo Rey" "Aleluya - Solemnidad Cristo Rey del Universo" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Linda Martínez" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Canto de Amor" \fontsize #2 "Misa de Cristo Rey" "Finalis - Salmo 45 (44)" } } }
+\markup { \fill-line { \fontsize #2 "Contralto" \center-column { \fontsize #2 "Linda Martínez" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
@@ -33,15 +33,14 @@ jump = \break
 \score {
   <<
     \new Staff <<
-      \set Staff.instrumentName = #"Contralto"
-      \set Staff.midiInstrument = #"oboe"
+      \set Staff.midiInstrument = #"choir aahs"
       \set Staff.midiMaximumVolume = #1.5
 
-      \new Voice = "contralto" <<
+      \new Voice = "alto" <<
         \global \alto_music
       >>
-      \new Lyrics = "contralto"
-      \context Lyrics = "contralto" \lyricsto "contralto" \alto_lyrics
+      \new Lyrics = "alto"
+      \context Lyrics = "alto" \lyricsto "alto" \alto_lyrics
     >>
   >>
   \midi { }

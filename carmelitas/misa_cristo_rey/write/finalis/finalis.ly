@@ -45,7 +45,6 @@ harmony_stanza = \new ChordNames {
         \tempo 4 = 70
         \key re \minor
         \time 2/4
-
         fa4 sol8 la
         sol4 fa8( sol)
         la4 la \break
@@ -102,7 +101,6 @@ harmony = \new ChordNames {
         \tempo 4 = 70
         \key re \minor
         \time 2/4
-
         fa4 sol8 fa
         mi4 re8 do
         re4 re \break
@@ -147,7 +145,6 @@ harmony = \new ChordNames {
         \tempo 4 = 70
         \key re \minor
         \time 2/4
-
         fa4 sol8 la
         sol4 fa8 sol
         la4 la \break
@@ -192,7 +189,6 @@ harmony = \new ChordNames {
         \tempo 4 = 70
         \key re \minor
         \time 2/4
-
         fa4 sol8 fa
         mi4 re8( do)
         re2 \break
@@ -237,7 +233,6 @@ harmony = \new ChordNames {
         \tempo 4 = 70
         \key re \minor
         \time 2/4
-
         fa4 sol8 la
         sol4 fa8 sol
         la4 la \break
@@ -282,7 +277,6 @@ harmony = \new ChordNames {
         \tempo 4 = 70
         \key re \minor
         \time 2/4
-
         fa4 sol8 fa
         mi8 mi re8 do
         re4 re \break
@@ -327,7 +321,6 @@ harmony = \new ChordNames {
         \tempo 4 = 70
         \key re \minor
         \time 2/4
-
         fa8 fa sol8 la
         sol8 sol fa8 sol
         la4 la \break
@@ -372,7 +365,6 @@ harmony = \new ChordNames {
         \tempo 4 = 70
         \key re \minor
         \time 2/4
-
         fa4 sol8( fa)
         mi4 re8( do)
         re4 re \break
@@ -417,7 +409,6 @@ harmony = \new ChordNames {
         \tempo 4 = 70
         \key re \minor
         \time 2/4
-
         fa8 fa sol8 la
         sol8 sol fa8 sol
         la4 la \break

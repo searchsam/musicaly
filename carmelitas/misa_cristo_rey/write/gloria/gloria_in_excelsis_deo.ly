@@ -1,25 +1,28 @@
 % ****************************************************************
-%	Gloria in excelsis Deo - Melodia a modo del renacimiento
-%	by serachsam
+%   Gloria in excelsis Deo - Renaissance way melody
+%   Text and music with accompaniment by serachsam
 % ****************************************************************
 \language "espanol"
-\version "2.19.82"
+\version "2.23.2"
 
+% --- Global parameters
+
+% --- Includes
+
+% --- Global size
 %#(set-global-staff-size 16.4)
 
-% --- Cabecera
+% --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Gloria a Dios en el cielo" \fontsize #2 "Misa Cristo Rey" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Linda Martínez" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
-% --- Parametro globales
-
-% --- invocacion #1
+% --- Invocation #1
 \score{
   <<
     \new Voice = "invocacion" {
@@ -51,18 +54,15 @@ globalGloria = {
   \key re \minor
   \time 2/2
   \skip 1
-
   % the actual music
   \skip 1*8
-
   % let finis bar go through all staves
   \override Staff.BarLine.transparent = ##f
-
   % finis bar
   \bar "|."
 }
 
-% --- Musica
+% --- Music
 cantusIncipitGloria = {
   \set Staff.instrumentName = "Cantus"
   \clef "petrucci-g"
@@ -72,13 +72,13 @@ cantusIncipitGloria = {
 }
 
 cantusNotesGloria = \relative do'' {
-  r2 la8^\markup{ \italic "Tutti"} la la4 |
-  la4 do4 do8 do sib4 |
-  sib4 re re8 re do4 |
-  do4 la2 r4 |
-  do8 do do4 do4 mi4 |
-  mi8 mi re4 re4 do4 |
-  do8 do sib4 sib4 sol4~ |
+  r2 la8^\markup{ \italic "Tutti"} la la4
+  la4 do4 do8 do sib4
+  sib4 re re8 re do4
+  do4 la2 r4
+  do8 do do4 do4 mi4
+  mi8 mi re4 re4 do4
+  do8 do sib4 sib4 sol4~
   sol4 sol8 sol la4( sol)
   la1 \fermata
 }
@@ -98,15 +98,15 @@ altusIncipitGloria = {
 }
 
 altusNotesGloria = \relative do' {
-  re8^\markup{ \italic "Tutti"} re re4 re fa |
-  fa8 fa mi4 mi sol |
-  sol8 sol fa4 fa fa~ |
-  fa4 r fa8 fa fa4 |
-  fa4 la4 la8 la sol4 |
-  sol4 sib4 sib8 sib la4 |
-  la4 fa2 r4 |
+  re8^\markup{ \italic "Tutti"} re re4 re fa
+  fa8 fa mi4 mi sol
+  sol8 sol fa4 fa fa~
+  fa4 r fa8 fa fa4
+  fa4 la4 la8 la sol4
+  sol4 sib4 sib8 sib la4
+  la4 fa2 r4
   re4 re mi2
-  fas1 \fermata |
+  fas1 \fermata
 }
 
 altusLyricsGloria = \lyricmode {
@@ -154,7 +154,7 @@ altusLyricsGloria = \lyricmode {
   }
 }
 
-% --- Invocacion #2
+% --- Invocation #2
 \score{
   <<
     \new Voice = "invocacion" {
@@ -185,14 +185,11 @@ globalSeñor = {
   \clef "treble"
   \key re \minor
   \skip 1
-
   % the actual music
   \skip 2
   \skip 1*3
-
   % let finis bar go through all staves
   \override Staff.BarLine.transparent = ##f
-
   % finis bar
   \bar "|."
 }
@@ -206,9 +203,9 @@ cantusIncipitSeñor = {
 }
 
 cantusNotesSeñor = \relative do'' {
-  \time 2/4 la4^\markup{ \italic "Tutti"} la |
+  \time 2/4 la4^\markup{ \italic "Tutti"} la
   \time 2/2 mi4 sol la sib
-  la2 re2 |
+  la2 re2
   dos4 si( la2 )
   la1 \fermata
 }
@@ -226,10 +223,10 @@ altusIncipitSeñor = {
 }
 
 altusNotesSeñor = \relative do' {
-  re4^\markup{ \italic "Tutti"} re |
-  mi4 mi fa2 |
-  fa fa2 |
-  la4 sol fas( mi4) |
+  re4^\markup{ \italic "Tutti"} re
+  mi4 mi fa2
+  fa fa2
+  la4 sol fas( mi4)
   fas1 \fermata
 }
 
@@ -276,7 +273,7 @@ altusLyricsSeñor = \lyricmode {
   }
 }
 
-% --- Invocacion #3
+% --- Invocation #3
 \score{
   <<
     \new Voice = "invocacion" {
@@ -308,13 +305,10 @@ globalQuitas = {
   \key re \minor
   \time 2/2
   \skip 1
-
   % the actual music
   \skip 1*4
-
   % let finis bar go through all staves
   \override Staff.BarLine.transparent = ##f
-
   % finis bar
   \bar "|."
 }
@@ -328,10 +322,10 @@ cantusIncipitQuitas = {
 }
 
 cantusNotesQuitas = \relative do'' {
-  la8^\markup{ \italic "Tutti"} la la la mi4 sol |
-  la4 sib8 sib la4 la |
-  re2 dos4 si |
-  la4 la sol2 |
+  la8^\markup{ \italic "Tutti"} la la la mi4 sol
+  la4 sib8 sib la4 la
+  re2 dos4 si
+  la4 la sol2
   la1 \fermata
 }
 
@@ -348,10 +342,10 @@ altusIncipitQuitas = {
 }
 
 altusNotesQuitas = \relative do' {
-  re8^\markup{ \italic "Tutti"} re re re mi4 mi|
-  fa4 fa fa4 fa |
-  fa2 la4 sol |
-  fas4 mi4 re4 mi |
+  re8^\markup{ \italic "Tutti"} re re re mi4 mi
+  fa4 fa fa4 fa
+  fa2 la4 sol
+  fas4 mi4 re4 mi
   fas1 \fermata
 }
 
@@ -398,7 +392,7 @@ altusLyricsQuitas = \lyricmode {
   }
 }
 
-% --- invocacion #4
+% --- Invocation #4
 \score{
   <<
     \new Voice = "invocacion" {
@@ -430,14 +424,11 @@ globalEstas = {
   \key re \minor
   \time 2/2
   \skip 1
-
   % the actual music
   \skip 2
   \skip 1*12
-
   % let finis bar go through all staves
   \override Staff.BarLine.transparent = ##f
-
   % finis bar
   \bar "|."
 }
@@ -451,21 +442,20 @@ cantusIncipitEstas = {
 }
 
 cantusNotesEstas = \relative do'' {
-  la8^\markup{ \italic "Tutti"} la la la mi4 sol8 sol |
-  la8 la sib sib la4 la |
-  re2 dos4 si |
-  la la sol2 |
-  la1 \fermata \bar "||" | \break
-
-  \time 2/4 la8 la la4 |
-  \time 2/2 la4 do4 do8 do sib4 |
-  sib4 re re8 re do4 |
-  do4 la2 r4 |
-  do8 do do4 do4 mi4 |
-  mi8 mi re4 re4 do4 |
-  do8 do sib4 sib4 sol4(~ |
-  sol4 fa la4 sol) |
-  la1 \fermata |
+  la8^\markup{ \italic "Tutti"} la la la mi4 sol8 sol
+  la8 la sib sib la4 la
+  re2 dos4 si
+  la la sol2
+  la1 \fermata \bar "||" \break
+  \time 2/4 la8 la la4
+  \time 2/2 la4 do4 do8 do sib4
+  sib4 re re8 re do4
+  do4 la2 r4
+  do8 do do4 do4 mi4
+  mi8 mi re4 re4 do4
+  do8 do sib4 sib4 sol4(~
+  sol4 fa la4 sol)
+  la1 \fermata
 }
 
 cantusLyricsEstas = \lyricmode {
@@ -486,21 +476,20 @@ altusIncipitEstas = {
 }
 
 altusNotesEstas = \relative do' {
-  re8^\markup{ \italic "Tutti"} re re re mi4 mi |
-  fa4 fa8 fa fa4 fa |
-  fa4 fa la sol |
-  fas4 mi re4 mi |
-  fas1 \fermata |
-
-  r2 |
-  fa8 fa mi4 mi sol |
-  sol8 sol fa4 fa2 |
-  r2 fa8 fa fa4 |
-  fa4 la8 la la4 sol4 |
-  sol4 sib4 sib2 |
-  la4 sol fa mi |
-  re4 re mi2 |
-  fas1 \fermata |
+  re8^\markup{ \italic "Tutti"} re re re mi4 mi
+  fa4 fa8 fa fa4 fa
+  fa4 fa la sol
+  fas4 mi re4 mi
+  fas1 \fermata
+  r2
+  fa8 fa mi4 mi sol
+  sol8 sol fa4 fa2
+  r2 fa8 fa fa4
+  fa4 la8 la la4 sol4
+  sol4 sib4 sib2
+  la4 sol fa mi
+  re4 re mi2
+  fas1 \fermata
 }
 
 altusLyricsEstas = \lyricmode {
@@ -551,7 +540,7 @@ altusLyricsEstas = \lyricmode {
   }
 }
 
-% --- amen
+% --- Amen
 \score{
   <<
     \new Voice = "invocacion" {
@@ -577,7 +566,7 @@ altusLyricsEstas = \lyricmode {
   }
 }
 
-% --- Pagina
+% --- Paper
 \paper{
   #(set-default-paper-size "letter")
   page-breaking = #ly:page-turn-breaking

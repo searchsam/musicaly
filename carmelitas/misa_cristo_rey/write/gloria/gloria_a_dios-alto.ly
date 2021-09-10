@@ -1,7 +1,7 @@
-% ********************************************************************************
-%	Canto de amor - Melody inspired by the compositions of Mons Marco Frisina
-%	Music and accompaniment by serachsam
-% ********************************************************************************
+% ****************************************************************
+%   Gloria a Dios en lo alto del cielo - Renaissance way melody
+%   Text and music with accompaniment by serachsam
+% ****************************************************************
 \language "espanol"
 \version "2.23.2"
 
@@ -11,14 +11,14 @@ jump = \break
 
 % --- Includes
 \include "global.ily"
-\include "soprano.ily"
+\include "alto.ily"
 
 % --- Global size
 % #(set-global-staff-size 20)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Canto de Amor" \fontsize #2 "Misa de Cristo Rey" "Finalis - Salmo 45 (44)" } } }
-\markup { \fill-line { \fontsize #2 "Soprano" \center-column { \fontsize #2 "Linda Martínez" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Gloria a Dios en lo alto del cielo" \fontsize #2 "Misa Cristo Rey" "Gloria in excelsis Deo" } } }
+\markup { \fill-line { \fontsize #2 "Contralto" \center-column { \fontsize #2 "Linda Martínez" } } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
@@ -28,19 +28,17 @@ jump = \break
 
 % --- Music
 
-% --- Harmony
+% --- Harmonie
 
 \score {
   <<
-    \new Staff <<
+    \new Voice = "alto" <<
       \set Staff.midiInstrument = #"choir aahs"
       \set Staff.midiMaximumVolume = #1.5
-
-      \new Voice = "soprano" <<
-        \global \soprano_music
-      >>\new Lyrics = "soprano"
-      \context Lyrics = "soprano" \lyricsto "soprano" \soprano_lyrics
+      \global \alto_music
     >>
+    \new Lyrics = "alto"
+    \context Lyrics = "alto" \lyricsto "alto" \alto_lyrics
   >>
   \midi { }
   \layout { }

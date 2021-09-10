@@ -56,13 +56,10 @@ globalPiedad = {
   \key re \minor
   \time 2/2
   \skip 1
-
   % the actual music
   \skip 1*12
-
   % let finis bar go through all staves
   \override Staff.BarLine.transparent = ##f
-
   % finis bar
   \bar "|."
 }
@@ -77,20 +74,19 @@ cantusIncipitPiedad = {
 }
 
 cantusNotesPiedad = \relative do' {
-  r2 fa2^\markup{ \italic "Tutti"}~ |
-  fa2 re2 |
-  sol1 |
-  do2 fa, |
-  sib2 fa |
-  sib1 |
-  sol1 |
-  la1 |
-
-  la1 |
-  sol2 sol |
-  fa1 |
-  mi4 mi2. |
-  fas1 \fermata |
+  r2 fa2^\markup{ \italic "Tutti"}~
+  fa2 re2
+  sol1
+  do2 fa,
+  sib2 fa
+  sib1
+  sol1
+  la1
+  la1
+  sol2 sol
+  fa1
+  mi4 mi2.
+  fas1 \fermata
 }
 
 cantusLyricsPiedad = \lyricmode {
@@ -107,20 +103,19 @@ altusIncipitPiedad = {
 }
 
 altusNotesPiedad = \relative do' {
-  re1^\markup{ \italic "Tutti"} |
-  sib1 |
-  do1 |
-  fa2 la, |
-  fa'2 sib,~ |
-  sib2 re~ |
-  re2 sib |
-  mi1 |
-
-  re2 fa |
-  re1 |
-  sib2 re |
-  dos1 |
-  re1 \fermata |
+  re1^\markup{ \italic "Tutti"}
+  sib1
+  do1
+  fa2 la,
+  fa'2 sib,~
+  sib2 re~
+  re2 sib
+  mi1
+  re2 fa
+  re1
+  sib2 re
+  dos1
+  re1 \fermata
 }
 
 altusLyricsPiedad = \lyricmode {
@@ -268,13 +263,10 @@ globalPaz = {
   \key re \minor
   \time 2/2
   \skip 1
-
   % the actual music
   \skip 1*12
-
   % let finis bar go through all staves
   \override Staff.BarLine.transparent = ##f
-
   % finis bar
   \bar "|."
 }
@@ -289,20 +281,19 @@ cantusIncipitPaz = {
 }
 
 cantusNotesPaz = \relative do' {
-  r2 fa2^\markup{ \italic "Tutti"}~ |
-  fa2 re2 |
-  sol1 |
-  do2 sol |
-  sib2 fa |
-  sib1 |
-  sol1 |
-  la1 |
-
-  la2 fa |
-  sib2 la |
-  la2 fa |
-  si1 |
-  do1 \fermata |
+  r2 fa2^\markup{ \italic "Tutti"}~
+  fa2 re2
+  sol1
+  do2 sol
+  sib2 fa
+  sib1
+  sol1
+  la1
+  la2 fa
+  sib2 la
+  la2 fa
+  si1
+  do1 \fermata
 }
 
 cantusLyricsPaz = \lyricmode {
@@ -319,20 +310,19 @@ altusIncipitPaz = {
 }
 
 altusNotesPaz = \relative do' {
-  re1^\markup{ \italic "Tutti"} |
-  sib1 |
-  do1 |
-  fa2 la, |
-  fa'2 sib, |
-  r2 re~ |
-  re2 sib |
-  mi1 |
-
-  re2 fa |
-  mi2 la |
-  re,2 fa |
-  mi1 |
-  la1 \fermata |
+  re1^\markup{ \italic "Tutti"}
+  sib1
+  do1
+  fa2 la,
+  fa'2 sib,
+  r2 re~
+  re2 sib
+  mi1
+  re2 fa
+  mi2 la
+  re,2 fa
+  mi1
+  la1 \fermata
 }
 
 altusLyricsPaz = \lyricmode {

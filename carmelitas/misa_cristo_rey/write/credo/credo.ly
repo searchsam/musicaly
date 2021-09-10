@@ -55,13 +55,10 @@ globalPadre = {
   \key re \minor
   \time 2/2
   \skip 1
-
   % the actual music
   \skip 1*7
-
   % let finis bar go through all staves
   \override Staff.BarLine.transparent = ##f
-
   % finis bar
   \bar "|."
 }
@@ -186,13 +183,10 @@ globalHijo = {
   \time 2/2
   \key re \minor
   \skip 1
-
   % the actual music
   \skip 1*12
-
   % let finis bar go through all staves
   \override Staff.BarLine.transparent = ##f
-
   % finis bar
   \bar "|."
 }
@@ -306,38 +300,19 @@ altusLyricsHijo = \lyricmode {
       \override Rest.style = #'neomensural
       \key sol \minor
       \relative do' {
-        \[mib2^\markup{ \italic "Solo Altus"} re4\] sib do2 sib4 sib do4 \[re do4\] do2 \breathe mib2 do4 re mib4 \[fa mib2\] sib2. \breathe
-
-        \bar "" \break
-
-        \[mib2 re4\] sib do2 sib4 sib do4 \[re do4\] do2 \breathe mib2 do4 \[re mib4\] \[fa mib2\] sib2. \breathe
-
-        \bar "" \break
-
-        do2 fa do re4 mib fa \[re mib2\] sib1 \breathe
-
-        \bar "||" \break
-
-        re4^\markup{ \italic "Solo Cantus y Altus"} <sol re> <fa re> <sib sol> <la fa>2 \breathe <la fa>8 <sib sol> r <sib sol> <la fa>4 r4 <la fa>8 <sib sol> r <sib sol>16 <sib sol> <la fa>4 \breathe
-
-        \bar "" \break
-
-        <la fa>8 <sib sol> r <sib sol> <la fa>4 r4 <la fa>8 <sib sol> <sib sol>8 \[<sib fa> <la re,>4 <sol do,>8\] <la re,>4. \breathe
-
-        \bar "||" \break
-
-        fa8^\markup{ \italic "Solo Cantus"} sib4 la8 re4 do4. \breathe la4 sol8 la4 do8 \[do sib4\] sol \breathe
-
-        \bar "" \break
-
-        fa8 sib4 la8 re4 do4 sol8 la4 \breathe do8 do sib sib do do do( sib4 la8 sol la4) sib2 \breathe
-
-        \bar "||" \break
-
-        <do sol>8^\markup{ \italic "Solo Cantus y Altus"} <do sol> <re sol,>4 <la fa>8 <sib fa> <sol re> <la fa>4. <sib sol>8 <sib sol> <la fa>4. \breathe <la fa>8 <sib sol> <sib sol> <sib sol>8 <la fa>4 \[sol4. <la fa>8 <sib fa>4. <la fa>8\] <sib fa>2
-
-        \bar "||"
-      }
+        \[mib2^\markup{ \italic "Solo Altus"} re4\] sib do2 sib4 sib do4 \[re do4\] do2 \breathe
+        mib2 do4 re mib4 \[fa mib2\] sib2. \breathe \bar "" \break
+        \[mib2 re4\] sib do2 sib4 sib do4 \[re do4\] do2 \breathe mib2 do4 \[re mib4\] \[fa mib2\] sib2. \breathe \bar "" \break
+        do2 fa do re4 mib fa \[re mib2\] sib1 \breathe \bar "||" \break
+        re4^\markup{ \italic "Solo Cantus y Altus"} <sol re> <fa re> <sib sol> <la fa>2 \breathe
+        <la fa>8 <sib sol> r <sib sol> <la fa>4 r4 <la fa>8 <sib sol> r <sib sol>16 <sib sol> <la fa>4 \breathe \bar "" \break
+        <la fa>8 <sib sol> r <sib sol> <la fa>4 r4 <la fa>8 <sib sol> <sib sol>8 \[<sib fa> <la re,>4 <sol do,>8\] <la re,>4. \breathe \bar "||" \break
+        fa8^\markup{ \italic "Solo Cantus"} sib4 la8 re4 do4. \breathe
+        la4 sol8 la4 do8 \[do sib4\] sol \breathe \bar "" \break
+        fa8 sib4 la8 re4 do4 sol8 la4 \breathe
+        do8 do sib sib do do do( sib4 la8 sol la4) sib2 \breathe \bar "||" \break
+        <do sol>8^\markup{ \italic "Solo Cantus y Altus"} <do sol> <re sol,>4 <la fa>8 <sib fa> <sol re> <la fa>4. <sib sol>8 <sib sol> <la fa>4. \breathe
+        <la fa>8 <sib sol> <sib sol> <sib sol>8 <la fa>4 \[sol4. <la fa>8 <sib fa>4. <la fa>8\] <sib fa>2 \bar "||"
     }
     \new Lyrics \lyricsto "invocacion" {
       \lyricmode {
@@ -393,13 +368,10 @@ globalEspiritu = {
   \key re \minor
   \time 2/2
   \skip 1
-
   % the actual music
   \skip 1*14
-
   % let finis bar go through all staves
   \override Staff.BarLine.transparent = ##f
-
   % finis bar
   \bar "|."
 }

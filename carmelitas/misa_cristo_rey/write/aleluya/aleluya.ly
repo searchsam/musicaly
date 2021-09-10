@@ -43,7 +43,6 @@ harmony_stanza = \new ChordNames {
         \tempo "Adagio" 4 = 70
         \time 4/4
         \key la \major
-
         \partial 4 r8\mark \markup{ "Aleluya" } la8
         dos4 \tuplet 3/2 { re8( dos re) } mi4. mi8
         re4 \tuplet 3/2 { mi8( re mi) } fas4. fas8
@@ -103,7 +102,6 @@ harmony_stanza_antifona = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key la \major
-
         mi\breve^\markup{ "Antifona" }
         mi4 fas4 sols8 si4.
         la2 \divisioMaior \break

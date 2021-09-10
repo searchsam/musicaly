@@ -10,7 +10,7 @@
 % --- Includes
 
 % --- Global size
-#(set-global-staff-size 19)
+% #(set-global-staff-size 19)
 
 
 % --- Cabecera
@@ -30,8 +30,14 @@
 harmony = \new ChordNames {
   \chordmode {
     \italianChords
-    re2:m do2 sib2 la2:m sol2:m fa2 sib2 la2
-    re2:m do2 fa2 sol2:m re2:m sol2:m la2:7 re2:m
+    re2:m do2
+    sib2 la2:m
+    sol2:m fa2
+    sib2 la2
+    re2:m do2
+    fa2 sol2:m
+    re2:m sol2:m
+    la2:7 re2:m
   }
 }
 
@@ -84,8 +90,14 @@ harmony = \new ChordNames {
 harmony_stanza = \new ChordNames {
   \chordmode {
     \italianChords
-    re2:m do2 sib2 la2:m sol2:m fa2 sib2 la2
-    re2:m do2 fa2 sol2:m re2:m sol2:m la2:7 re2:m
+    re2:m do2
+    sib2 la2:m
+    sol2:m fa2
+    sib2 la2
+    re2:m do2
+    fa2 sol2:m
+    re2:m sol2:m
+    la2:7 re2:m
   }
 }
 
@@ -99,12 +111,10 @@ harmony_stanza = \new ChordNames {
         \tempo 4 = 70
         \key re \minor
         \time 4/4
-
         la4 sol8 fa sol fa mi( sol)
         fa8 mi re fa mi4 mi \break
         sol4 la8 sib do sib la do
         re do sib re dos4 dos \breathe \bar "||" \break
-
         la4 sib8 la sol fa mi( sol)
         la8 sib do la sib4 sib \break
         la4 sol8 la sib la sol sib
@@ -127,7 +137,6 @@ harmony_stanza = \new ChordNames {
         sib8 do re sib do4 do
         re4 re8 re do re mi do
         sib do re sib la4 la \breathe
-
         re4 re8 re mi8 re do( mi)
         fa8 mi re fa sol4 sol
         fa4 fa8 mi re do sib re
@@ -166,12 +175,10 @@ harmony_stanza = \new ChordNames {
         \tempo 4 = 70
         \key re \minor
         \time 4/4
-
         fa4 mi8 re mi re do mi
         re8( do) sib( re) do4 do \break
         sol'4 la8 sol fa sol la fa
         fa8 mi re fa mi4 mi \breathe \break
-
         fa4 mi8 re mi fa sol( mi)
         fa8 sol la fa sol2 \break
         re4 fa8 mi re do sib re
@@ -210,12 +217,10 @@ harmony_stanza = \new ChordNames {
         \tempo 4 = 70
         \key re \minor
         \time 4/4
-
         la4 sol8 fa sol fa mi sol
         fa8( mi) re( fa) mi4 mi \break
         sol4 la8 sib do sib la( do)
         re do sib re dos4 dos \breathe \break
-
         la4 sib8 la sol fa mi sol
         la8( sib) do la sib4 sib \break
         la4 sol8 la sib la sol sib
@@ -238,7 +243,6 @@ harmony_stanza = \new ChordNames {
         sib8( do) re sib do4 do
         re4 re8 re do re mi do
         sib( do) re sib la4 la \breathe
-
         re4 re8 re mi8 re do mi
         fa8 mi re fa sol4 sol
         fa4 fa8 mi re do sib re
@@ -274,7 +278,6 @@ harmony_stanza = \new ChordNames {
       \tempo 4 = 70
       \key re \minor
       \time 4/4
-
       <do, sol'>1
       <re la'>1 \bar "|." \break
       s32

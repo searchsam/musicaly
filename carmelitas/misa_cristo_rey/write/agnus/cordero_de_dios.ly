@@ -17,7 +17,7 @@ jump = \break
 \include "organ.ily"
 
 % --- Global size
-#(set-global-staff-size 18)
+%#(set-global-staff-size 18)
 
 % --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Cordero de Dios" \fontsize #2 "Misa Cristo Rey" "Agnus Dei" } } }
