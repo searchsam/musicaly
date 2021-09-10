@@ -1,25 +1,31 @@
-% ****************************************************************
-%	Sagrario del altar - Melodia inspirada en las composiciones de Mons Marco Frisina
-%	by serach.sam@
-% ****************************************************************
+% ***************************************************************************
+%	Finalis - Melody inspired by the compositions of Mons Marco Frisina
+%	Music and accompaniment by serachsam
+% ***************************************************************************
 \language "espanol"
-\version "2.19.82"
+\version "2.23.2"
 
+% --- Global parameters
+
+% --- Includes
+
+% --- Global size
 %#(set-global-staff-size 19)
 
 
-% --- Cabecera
+% --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Final" \fontsize #2 "Misa de Cristo Rey" "Canto de Amor - Salmo 45 (44)"} } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" \small "(Septiembre 2020)" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
-% --- Musica
-% --- acordes
+% --- Music
+
+% --- Harmony
 harmony_stanza = \new ChordNames {
   \chordmode {
     \italianChords
@@ -30,7 +36,7 @@ harmony_stanza = \new ChordNames {
   }
 }
 
-% --- Coro
+% --- Chorus
 \score {
   <<
     \harmony_stanza
@@ -76,7 +82,7 @@ harmony_stanza = \new ChordNames {
   }
 }
 
-% --- acordes
+% --- Harmony
 harmony = \new ChordNames {
   \chordmode {
     \italianChords
@@ -87,7 +93,7 @@ harmony = \new ChordNames {
   }
 }
 
-% --- Coro
+% --- Chorus
 \score {
   <<
     \harmony
@@ -448,8 +454,8 @@ harmony = \new ChordNames {
   }
 }
 
-% --- Papel
-\paper{
+% --- Paper
+\paper {
   #(set-default-paper-size "letter")
   indent = 0
   page-breaking = #ly:page-turn-breaking
