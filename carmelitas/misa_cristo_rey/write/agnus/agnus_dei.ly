@@ -1,6 +1,6 @@
 % ****************************************************************
 %   Agnus Dei - Renaissance way melody
-%   Text and music with accompaniment by serachsam
+%	Music and accompaniment by serachsam
 % ****************************************************************
 
 \language "espanol"

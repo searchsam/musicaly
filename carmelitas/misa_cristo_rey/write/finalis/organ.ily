@@ -80,7 +80,7 @@ notes_alto = \relative do' {
   sib2 |
   la2 |
   re2~\p | \bar "||" #(if (= particle 1) "" jump) % 4
-  re2 |
+  re2^\markup{ \italic "Soprano" } |
   sol |
   re2 |
   la2 |
@@ -95,7 +95,7 @@ notes_alto = \relative do' {
   re2 |
   la2 |
   re2~ | #(if (= particle 1) "" jump) % 19
-  re2 |
+  re2^\markup{ \italic "Contralto" } |
   la2 |
   sib2 |
   re2 |
@@ -110,7 +110,7 @@ notes_alto = \relative do' {
   re2 |
   la2 |
   re2~ | #(if (= particle 1) "" jump) % 34
-  re2 |
+  re2^\markup{ \italic "Soprano" } |
   sol2 |
   re2 |
   la2 |
@@ -125,7 +125,7 @@ notes_alto = \relative do' {
   re2 |
   la2 |
   re2~ | #(if (= particle 1) "" jump) % 49
-  re2 |
+  re2^\markup{ \italic "Contralto" } |
   la2 |
   sib2 |
   re2 |
@@ -140,7 +140,7 @@ notes_alto = \relative do' {
   re2 |
   la2 |
   re2~ | #(if (= particle 1) "" jump) % 64
-  re2 |
+  re2^\markup{ \italic "Soprano" } |
   sol2 |
   re2 |
   la2 |
@@ -155,7 +155,7 @@ notes_alto = \relative do' {
   re2 |
   la2 |
   re2~ | #(if (= particle 1) "" jump) % 79
-  re2 |
+  re2^\markup{ \italic "Contralto" } |
   la2 |
   sib2 |
   re2 |
@@ -170,7 +170,7 @@ notes_alto = \relative do' {
   re2 |
   la2 |
   re2~ | #(if (= particle 1) "" jump) % 94
-  re2 |
+  re2^\markup{ \italic "Soprano" } |
   sol2 |
   re2 |
   la2 |
@@ -185,7 +185,7 @@ notes_alto = \relative do' {
   re2 |
   la2 |
   re2~ | #(if (= particle 1) "" jump) % 109
-  re2 |
+  re2^\markup{ \italic "Contralto" } |
   la2 |
   sib2 |
   re2 |
@@ -200,7 +200,7 @@ notes_alto = \relative do' {
   re2 |
   la2 |
   re2~ | #(if (= particle 1) "" jump) % 124
-  re2 |
+  re2^\markup{ \italic "Soprano" } |
   sol2 |
   re2 |
   la2 |

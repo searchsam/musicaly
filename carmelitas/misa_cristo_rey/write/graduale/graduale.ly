@@ -1,28 +1,31 @@
-% ****************************************************************
-%	Melodia Responsorial - Melodia inspirada en las composiciones de Pbro Lucien Deiss
-%	by serach.sam@
-% ****************************************************************
+% *********************************************************************
+%	Graduale - Melody inspired by the compositions of Pbro Lucien Deiss
+%	Music and accompaniment by serachsam
+% *********************************************************************
 \language "espanol"
-\version "2.19.82"
+\version "2.23.2"
 
-% --- includes
+% --- Global parameters
+
+% --- Includes
 \include "gregorian.ly"
 
+% --- Global size
 %#(set-global-staff-size 19)
 
 
-% --- Cabecera
+% --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Melodia Responsorial" \fontsize #2 "Misa de Cristo Rey" "Salmo Responsorial de la Solemnidad Cristo Rey"} } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
 % --- Ciclo B
-% --- acordes
+% --- Harmony
 harmony_stanza = \new ChordNames {
   \chordmode {
     \italianChords
@@ -30,7 +33,7 @@ harmony_stanza = \new ChordNames {
   }
 }
 
-% --- Antifona
+% --- Antiphon
 \score {
   <<
     %\harmony_stanza
@@ -41,7 +44,6 @@ harmony_stanza = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-
         re4 \mark \markup{ "Antifona" \small \italic "Salmista"} mi fa2  \divisioMinima
         sol4 fa8 mi re2 \divisioMinima
         fa4 mi8 re do4 re2. \finalis \break
@@ -71,7 +73,7 @@ harmony_stanza = \new ChordNames {
   }
 }
 
-% --- Antifona Repeticion
+% --- Antiphon
 \score {
   \new StaffGroup = "Antifona" <<
     %\harmony_stanza
@@ -82,7 +84,6 @@ harmony_stanza = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-
         re4 \mark \markup{ "Antifona" \small \italic "Salmista y Asamblea"} mi fa2 \divisioMinima
         sol4 fa8 mi re2 \divisioMinima
         fa4 mi8 re do4 re2. \finalis \break
@@ -99,7 +100,6 @@ harmony_stanza = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-
         re4 mi re2   \divisioMinima
         mi4 do8 do re2 \divisioMinima
         re4 mi8 re do4 re2. \finalis \break
@@ -126,7 +126,7 @@ harmony_stanza = \new ChordNames {
   }
 }
 
-% Estrofa I
+% --- Stanza I
 harmony_stanza_antifona = \new ChordNames {
   \chordmode {
     \italianChords
@@ -145,7 +145,6 @@ harmony_stanza_antifona = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-
         fa8 \mark \markup{ "Estrofa I" } sol la \breve \divisioMinima \tuplet 3/2 {la8 fa sol} la4 la \divisioMaxima \break
         la8( sol) fa \breve fa8 mi re2 \finalis \break
         s32
@@ -176,7 +175,7 @@ harmony_stanza_antifona = \new ChordNames {
   }
 }
 
-% Estrofa II
+% --- Stanza II
 harmony_stanza_estrofa = \new ChordNames {
   \chordmode {
     \italianChords
@@ -197,7 +196,6 @@ harmony_stanza_estrofa = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-
         fa8 \mark \markup{ "Estrofa II" } sol la \breve \divisioMinima \tuplet 3/2 {la8 fa sol} la4 la \divisioMaxima \break
         la8( sol) fa \breve fa8( mi) re4 re \divisioMaxima \break
         do8( re) mi \breve \divisioMinima \tuplet 3/2 { mi4 re8 } fa4 fa \divisioMaxima \break
@@ -236,7 +234,7 @@ harmony_stanza_estrofa = \new ChordNames {
   }
 }
 
-% Estrofa III
+% --- Stanza III
 \score {
   <<
     %\harmony_stanza_estrofa
@@ -247,7 +245,6 @@ harmony_stanza_estrofa = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-
         fa8 \mark \markup{ "Estrofa III" } sol la \breve \divisioMinima \tuplet 3/2 {la8 fa sol} la2 \divisioMaxima \break
         la8( sol) fa \breve fa8 mi re4 re \divisioMaxima \break
         do8 re mi \breve \divisioMinima \tuplet 3/2 { mi4 re8 } fa4 fa \divisioMaxima \break
@@ -286,7 +283,7 @@ harmony_stanza_estrofa = \new ChordNames {
   }
 }
 
-% Estrofa IV
+% --- Stanza IV
 \score {
   <<
     %\harmony_stanza_estrofa
@@ -297,7 +294,6 @@ harmony_stanza_estrofa = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-
         fa8 \mark \markup{ "Estrofa IV" } sol la \breve \divisioMinima \tuplet 3/2 {la8 fa sol} la4 la \divisioMaxima \break
         la8( sol) fa \breve fa8 mi re4 re \divisioMaxima \break
         do8 re mi \breve \divisioMinima \tuplet 3/2 { mi4 re8 } fa2 \divisioMaxima \break
@@ -337,7 +333,7 @@ harmony_stanza_estrofa = \new ChordNames {
 }
 
 % --- Ciclo B
-% --- acordes
+% --- Harmony
 harmony_stanza_b = \new ChordNames {
   \chordmode {
     \italianChords
@@ -345,7 +341,7 @@ harmony_stanza_b = \new ChordNames {
   }
 }
 
-% --- Antifona
+% --- Antiphon
 \score {
   <<
     %\harmony_stanza_b
@@ -386,7 +382,7 @@ harmony_stanza_b = \new ChordNames {
   }
 }
 
-% --- Antifona Repeticion
+% --- Antiphon
 \score {
   \new StaffGroup = "Antifona" <<
     %\harmony_stanza
@@ -397,7 +393,6 @@ harmony_stanza_b = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-
         re4 \mark \markup{ "Antifona" \small \italic "Salmista y Asamblea"} mi fa2 \divisioMinima
         sol4 fa8 mi re4 re \divisioMinima
         fa4 mi8 re do4( re2.) \finalis \break
@@ -414,7 +409,6 @@ harmony_stanza_b = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-
         re4 mi fa2   \divisioMinima
         mi4 do8 do re4 re \divisioMinima
         re4 mi8 re do4( re2.) \finalis \break
@@ -451,7 +445,6 @@ harmony_stanza_b = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-
         fa8 \mark \markup{ "Estrofa I" } sol la \breve \divisioMinima \tuplet 3/2 {la8 fa sol} la2 \divisioMaxima \break
         la8 sol fa \breve fa8 mi re2 \finalis \break
         s32
@@ -537,7 +530,6 @@ harmony_stanza_b = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-
         fa8 \mark \markup{ "Estrofa III" } sol la \breve \divisioMinima \tuplet 3/2 {la8( fa) sol} la4 la \divisioMaxima \break
         la8 sol fa \breve fa8 mi re4 re \divisioMaxima \break
         re8( sib) la \breve sib4 do re2 \finalis \break
@@ -572,7 +564,7 @@ harmony_stanza_b = \new ChordNames {
   }
 }
 
-% --- Antifona
+% --- Antiphon
 \score {
   <<
     %\harmony_stanza_b
@@ -583,7 +575,6 @@ harmony_stanza_b = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-
         re4 \mark \markup{ "Antifona" \small \italic "Salmista"} mi8 mi fa4 fa  \divisioMinima
         sol4( fa8) mi re4 re \divisioMinima
         fa4( mi8) re do4( re2.) \finalis \break
@@ -613,7 +604,7 @@ harmony_stanza_b = \new ChordNames {
   }
 }
 
-% --- Antifona Repeticion
+% --- Antiphon
 \score {
   \new StaffGroup = "Antifona" <<
     %\harmony_stanza
@@ -624,7 +615,6 @@ harmony_stanza_b = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-
         re4 \mark \markup{ "Antifona" \small \italic "Salmista y Asamblea"} mi8 mi fa4 fa \divisioMinima
         sol4( fa8) mi re4 re \divisioMinima
         fa4( mi8) re do4( re2.) \finalis \break
@@ -641,7 +631,6 @@ harmony_stanza_b = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-
         re4 mi8 mi fa4 fa \divisioMinima
         mi4( do8) do re4 re \divisioMinima
         re4( mi8) re do4( re2.) \finalis \break
@@ -678,7 +667,6 @@ harmony_stanza_b = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-
         fa8 \mark \markup{ "Estrofa I" } sol la \breve \divisioMinima \tuplet 3/2 {la8( fa) sol} la4 la \divisioMaxima \break
         la8( sol) fa \breve fa8 mi re2 \divisioMaxima \break
         do8 re mi \breve \divisioMinima \tuplet 3/2 { mi4 re8 } fa2 \divisioMaxima \break
@@ -727,7 +715,6 @@ harmony_stanza_b = \new ChordNames {
         %\tempo "Adagio" 4 = 70
         \time 4/4
         \key re \minor
-
         fa8 \mark \markup{ "Estrofa II" } sol la \breve \divisioMinima \tuplet 3/2 {la8( fa sol)} la4 la \divisioMaxima \break
         la8( sol) fa \breve fa8 mi re2 \divisioMaxima \break
         do8 re mi \breve \divisioMinima \tuplet 3/2 { mi4 re8 } fa2 \divisioMaxima \break
@@ -774,7 +761,7 @@ harmony_stanza_b = \new ChordNames {
   }
 }
 
-% --- Papel
+% --- Paper
 \paper{
   #(set-default-paper-size "letter")
   page-breaking = #ly:page-turn-breaking

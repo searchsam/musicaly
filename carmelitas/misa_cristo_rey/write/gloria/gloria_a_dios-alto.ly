@@ -1,6 +1,6 @@
 % ****************************************************************
 %   Gloria a Dios en lo alto del cielo - Renaissance way melody
-%   Text and music with accompaniment by serachsam
+%   Music and accompaniment by serachsam
 % ****************************************************************
 \language "espanol"
 \version "2.23.2"

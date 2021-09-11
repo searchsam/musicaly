@@ -75,7 +75,7 @@ soprano_music = \relative do'' {
   do4 do do do |
   re2 re2( |
   do4 si8 la si2) |
-  dos1 | #(if (= particle 1) jump "") % 108
+  dos1 | \bar "||" #(if (= particle 1) jump "") % 108
   R1 |
   la2( sib la) sol( la1) |
 

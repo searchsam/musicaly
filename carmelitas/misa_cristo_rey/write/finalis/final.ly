@@ -79,7 +79,11 @@ jump = \break
     >>
   >>
   \midi { }
-  \layout { }
+  \layout {
+      \context {
+      \Staff \RemoveEmptyStaves
+    }
+  }
 }
 
 % --- Paper

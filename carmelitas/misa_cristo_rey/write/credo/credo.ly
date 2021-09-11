@@ -1,6 +1,6 @@
 % ****************************************************************
 %   Credo - Renaissance way melody
-%   Text and music with accompaniment by serachsam
+%	Music and accompaniment by serachsam
 % ****************************************************************
 \language "espanol"
 \version "2.23.2"
@@ -10,7 +10,7 @@
 % --- Includes
 
 % --- Global size
-#(set-global-staff-size 19.5)
+%#(set-global-staff-size 19)
 
 % --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Credo" \fontsize #2 "Misa Cristo Rey" "Simbolo Apostolico"} } }
@@ -313,6 +313,7 @@ altusLyricsHijo = \lyricmode {
         do8 do sib sib do do do( sib4 la8 sol la4) sib2 \breathe \bar "||" \break
         <do sol>8^\markup{ \italic "Solo Cantus y Altus"} <do sol> <re sol,>4 <la fa>8 <sib fa> <sol re> <la fa>4. <sib sol>8 <sib sol> <la fa>4. \breathe
         <la fa>8 <sib sol> <sib sol> <sib sol>8 <la fa>4 \[sol4. <la fa>8 <sib fa>4. <la fa>8\] <sib fa>2 \bar "||"
+      }
     }
     \new Lyrics \lyricsto "invocacion" {
       \lyricmode {

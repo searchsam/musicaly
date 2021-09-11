@@ -1,5 +1,5 @@
 % ****************************************************************************
-%	Aleluya -  - Melody inspired by the compositions of Mons Marco Frisina
+%	Aleluya - Melody inspired by the compositions of Mons Marco Frisina
 %   	Music and accompaniment by serachsam
 % ****************************************************************************
 \language "espanol"
@@ -103,7 +103,7 @@ harmony_stanza_antifona = \new ChordNames {
         \time 4/4
         \key la \major
         mi\breve^\markup{ "Antifona" }
-        mi4 fas4 sols8 si4.
+        mi4 fas4 sols4 si4
         la2 \divisioMaior \break
         sols\breve \divisioMinima
         fas\breve

@@ -1,6 +1,6 @@
 % ****************************************************************
 %	Señor ten piedad v3 - Renaissance way melody
-%   Text and music with accompaniment by serachsam
+%	Music and accompaniment by serachsam
 % ****************************************************************
 \language "espanol"
 \version "2.23.2"
@@ -77,7 +77,11 @@ jump = \break
     >>
   >>
   \midi { }
-  \layout { }
+  \layout {
+    \context {
+      \Staff \RemoveEmptyStaves
+    }
+  }
 }
 
 % --- Paper

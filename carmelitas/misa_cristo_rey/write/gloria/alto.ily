@@ -1,8 +1,8 @@
 alto_music = \relative do' {
   \compressEmptyMeasures
 
-  R1*5 | \bar "||" #(if (= particle 1) jump "") % 5
-  R1*3^\markup{ \italic "Solo Mezzosoprano"} | \bar "||" #(if (= particle 1) jump "") % 8
+  R1*5 | \bar "||"
+  R1*3 | \bar "||" #(if (= particle 1) jump "") % 8
   re8^\markup{ \italic "Contralto"} re re4 re fa |
   fa8 fa mi4 mi sol |
   sol8 sol fa4 fa fa~ |
@@ -13,21 +13,21 @@ alto_music = \relative do' {
   re4 re mi2
   fas1 |
   R1 | \bar "||" #(if (= particle 1) jump "") % 18
-  R1*4^\markup{ \italic "Solo Mezzosoprano"} | #(if (= particle 1) jump "") % 22
+  R1*4 | #(if (= particle 1) jump "") % 22
   \time 2/4 re4^\markup{\italic "Contralto"} re |
   \time 4/4 mi4 mi fa2 |
   fa fa2 |
   la4 sol fa( mi4) |
   fas1 |
   R1 | \bar "||" #(if (= particle 1) jump "") % 28
-  R1*4^\markup{ \italic "Solo Mezzosoprano"} | #(if (= particle 1) jump "") % 32
+  R1*4 | #(if (= particle 1) jump "") % 32
   re8^\markup{ \italic "Contralto"} re re re mi4 mi |
   fa4 fa fa4 fa |
   fa2 la4 sol |
   fa mi4 re4 mi |
   fas1 |
   R1 | \bar "||" #(if (= particle 1) jump "") % 38
-  R1*4^\markup{ \italic "Solo Mezzosoprano"} | #(if (= particle 1) jump "") % 42
+  R1*4 | #(if (= particle 1) jump "") % 42
   re8^\markup{ \italic "Contralto"} re re re mi4 mi |
   fa fa8 fa fa4 fa |
   fa fa la4 sol |

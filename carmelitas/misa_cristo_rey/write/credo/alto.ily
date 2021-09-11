@@ -86,7 +86,7 @@ alto_music = \relative do' {
   la4 la sol2 |
   sib4 sib sib4( la4~ |
   la4 sol2~ sol4) |
-  la1 | #(if (= particle 1) jump "") % 99
+  la1 | \bar "||" #(if (= particle 1) jump "") % 99
   R1*2 |
   re,2( do) |
   re1 |
