@@ -114,14 +114,14 @@ notes_alto = \relative do' {
   fa2\p re4 sib4 |
   mib2 re |
   do1 |
-  sib1 | \bar "||"
+  sib1 |
   sib |
   do |
-  sib1~ | \bar "||" #(if (= particle 1) "" jump) % 07
+  sib1~ | #(if (= particle 1) "" jump) % 07
   sib1 |
   mib2 re |
   do2. sib4~ |
-  sib1 | \bar "||" #(if (= particle 1) "" jump) % 11
+  sib1 | #(if (= particle 1) "" jump) % 11
   do1 |
   re1 |
   re2 re |
@@ -129,14 +129,14 @@ notes_alto = \relative do' {
   do2 do |
   re1 |
   do2 re2~ |
-  re4 mi2. | \bar "||" #(if (= particle 1) "" jump) % 19
+  re4 mi2. | #(if (= particle 1) "" jump) % 19
   sib1 |
   do |
   sib1~ |
   sib1 |
   mib2 re |
   do2. sib4~ |
-  sib1 | \bar "||" #(if (= particle 1) "" jump) % 26
+  sib1 | #(if (= particle 1) "" jump) % 26
   do1 |
   re1 |
   re2 re |
@@ -149,8 +149,8 @@ notes_alto = \relative do' {
   re4 do2. |
   re2 do |
   re1 |
-  mi1 | \bar "||"
-  sib1 | \bar "||" #(if (= particle 1) "" jump) % 40
+  mi1 |
+  sib1 | #(if (= particle 1) "" jump) % 40
   do2 sib |
   do2 sib |
   do1~ |
@@ -167,7 +167,7 @@ notes_alto = \relative do' {
   do2 sib~ |
   sib2 do2 |
   sib1 |
-  re1 | \bar "||"
+  re1 |
   do2~ | #(if (= particle 1) "" jump) % 58
   do8 re4. |
   do2~ |
@@ -196,14 +196,14 @@ notes_alto = \relative do' {
   re2~ |
   re4. do8 |
   sib4. do8 |
-  sib2~ | \bar "||" #(if (= particle 1) "" jump) % 86
+  sib2~ | #(if (= particle 1) "" jump) % 86
   sib1 |
   do |
   sib1~ |
   sib1 |
   mib2 re |
   do2. sib4~ |
-  sib1 | \bar "||" #(if (= particle 1) "" jump) % 93
+  sib1 | #(if (= particle 1) "" jump) % 93
   do1 |
   re1 |
   re2 re |
@@ -218,7 +218,7 @@ notes_alto = \relative do' {
   do2 do |
   re2. re4~ |
   re4 re2. |
-  mi1 | \bar "||" #(if (= particle 1) "" jump) % 108
+  mi1 | #(if (= particle 1) "" jump) % 108
   re1~ |
   re2 re |
   re2 do |

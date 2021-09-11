@@ -79,7 +79,7 @@ notes_alto = \relative do' {
   la2 |
   sib2 |
   la2 |
-  re2~\p | \bar "||" #(if (= particle 1) "" jump) % 4
+  re2~\p | #(if (= particle 1) "" jump) % 4
   re2^\markup{ \italic "Soprano" } |
   sol |
   re2 |

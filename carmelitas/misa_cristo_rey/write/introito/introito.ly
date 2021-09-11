@@ -1,14 +1,19 @@
-% ****************************************************************
-%	Pricipe de los siglos - Melodia inspirada en las composiciones de Mons Marco Frisina
-%	by serach.sam@
-% ****************************************************************
+% *************************************************************************************
+%	Introito - Melody inspired by the compositions of Mons Marco Frisina
+%   	Music and accompaniment by serachsam
+% *************************************************************************************
 \language "espanol"
 \version "2.19.82"
 
-%#(set-global-staff-size 19)
+% --- Global parameters
+
+% --- Includes
+
+% --- Global size
+%#(set-global-staff-size 19.8)
 
 
-% --- Cabecera
+% --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Entrada" \fontsize #2 "Misa de Cristo Rey" "Principe de los siglos - Himno Solemnidad Cristo Rey"} } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Letra: Pbro. Vittorio Genovesi S.J." } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Música: Linda Martínez" } } }
@@ -19,8 +24,9 @@
   breakbefore = ##t
 }
 
-% --- Musica
-% --- acordes
+% --- Music
+
+% --- Harmony
 harmony_stanza = \new ChordNames {
   \chordmode {
     \italianChords
@@ -28,7 +34,6 @@ harmony_stanza = \new ChordNames {
     do2 sib2 do2 la2:m
     re2:m sib2 do2 re2:m
     do2 sib2 do2 la2:m re1:m
-
     re2:m sib2 do2 re2:m
     do2 sib2 do2 la2:m
     re2:m sib2 do2 re2:m
@@ -36,14 +41,13 @@ harmony_stanza = \new ChordNames {
   }
 }
 
-% --- Estrofa 1
+% --- Stanza 1
 \score {
   \new Staff <<
     \new Voice = "melody" \relative do' {
       \tempo 4 = 60
       \key re \minor
       \time 4/4
-
       la4 re8( mi) fa4 re8 re
       do8 re mi do re4 re \break
       do4 re8( mi) sib4 sib
@@ -72,14 +76,13 @@ harmony_stanza = \new ChordNames {
   }
 }
 
-% --- Estrofa 2
+% --- Stanza 2
 \score {
   \new Staff <<
     \new Voice = "melody" \relative do'' {
       \tempo 4 = 60
       \key re \minor
       \time 4/4
-
       la4 sol8( fa) sib( la) sol fa
       sol8 fa mi sol la4 la \break
       do4 sol8( do) re4 re8 re
@@ -108,14 +111,13 @@ harmony_stanza = \new ChordNames {
   }
 }
 
-% --- Estrofa 3
+% --- Stanza 3
 \score {
   \new Staff <<
     \new Voice = "melody" \relative do' {
       \tempo 4 = 60
       \key re \minor
       \time 4/4
-
       la4 re8( mi) fa4 re8 re
       do8 re mi do re4 re \break
       do4 re8 mi sib4 sib
@@ -144,14 +146,13 @@ harmony_stanza = \new ChordNames {
   }
 }
 
-% --- Estrofa 4
+% --- Stanza 4
 \score {
   \new Staff <<
     \new Voice = "melody" \relative do'' {
       \tempo 4 = 60
       \key re \minor
       \time 4/4
-
       la4 sol8 fa sib la sol fa
       sol8( fa) mi( sol) la4 la \break
       do4 sol8 do re4 re8 re
@@ -180,14 +181,13 @@ harmony_stanza = \new ChordNames {
   }
 }
 
-% --- Estrofa 5
+% --- Stanza 5
 \score {
   \new Staff <<
     \new Voice = "melody" \relative do' {
       \tempo 4 = 60
       \key re \minor
       \time 4/4
-
       la4 re8 mi fa4 re4
       do8( re) mi do re4 re \break
       do4 re8 mi sib4 sib8 sib
@@ -216,14 +216,13 @@ harmony_stanza = \new ChordNames {
   }
 }
 
-% --- Estrofa 6
+% --- Stanza 6
 \score {
   \new Staff <<
     \new Voice = "melody" \relative do'' {
       \tempo 4 = 60
       \key re \minor
       \time 4/4
-
       la4 sol8( fa) sib( la) sol fa
       sol8 fa mi sol la4 la \break
       do4 sol8( do) re4 re8 re
@@ -252,14 +251,13 @@ harmony_stanza = \new ChordNames {
   }
 }
 
-% --- Estrofa 7
+% --- Stanza 7
 \score {
   \new Staff <<
     \new Voice = "melody" \relative do' {
       \tempo 4 = 60
       \key re \minor
       \time 4/4
-
       la4 re8( mi) fa4 re4
       do8 re mi do re4 re \break
       do4 re8 mi sib4 sib
@@ -288,14 +286,13 @@ harmony_stanza = \new ChordNames {
   }
 }
 
-% --- Estrofa 8
+% --- Stanza 8
 \score {
   \new Staff <<
     \new Voice = "melody" \relative do'' {
       \tempo 4 = 60
       \key re \minor
       \time 4/4
-
       la4 sol8( fa) sib( la) sol fa
       sol8 fa mi sol la4 la \break
       do4 sol8 do re4 re
@@ -324,14 +321,13 @@ harmony_stanza = \new ChordNames {
   }
 }
 
-% --- Estrofa 9
+% --- Stanza 9
 \score {
   \new Staff <<
     \new Voice = "melody" \relative do'' {
       \tempo 4 = 60
       \key re \minor
       \time 4/4
-
       <do, sol'>1
       <re la'>1 \bar "|." \break
       s32
@@ -357,7 +353,7 @@ harmony_stanza = \new ChordNames {
 }
 
 
-% --- Papel
+% --- Paper
 \paper{
   #(set-default-paper-size "letter")
   indent = 0

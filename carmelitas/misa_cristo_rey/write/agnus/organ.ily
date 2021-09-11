@@ -56,12 +56,12 @@ notes_soproano = \relative do' {
 
 notes_alto = \relative do' {
   sol'4\p sol sol sol |
-  la la2. | \bar "||" % 02
+  la la2. |
   mi1 |
   re1 |
-  re1 | \bar "||" % 05
   re1 |
-  mi1 | \bar "||" #(if (= particle 1) "" jump) % 07
+  re1 |
+  mi1 | #(if (= particle 1) "" jump) % 07
   re1~ |
   re1 |
   do1~ |
@@ -76,9 +76,9 @@ notes_alto = \relative do' {
   mi1 |
   re1~ | #(if (= particle 1) "" jump) % 20
   re1 |
-  re1 | \bar "||" % 22
   re1 |
-  mi1 | \bar "||" #(if (= particle 1) "" jump) % 24
+  re1 |
+  mi1 | #(if (= particle 1) "" jump) % 24
   re1~ |
   re1 |
   do1 |
@@ -91,11 +91,11 @@ notes_alto = \relative do' {
   re1 |
   sib1 |
   mi1 |
-  re1~ | \bar "||" #(if (= particle 1) "" jump) % 37
+  re1~ | #(if (= particle 1) "" jump) % 37
   re1 |
-  re1 | \bar "||" % 39
   re1 |
-  mi1 | \bar "||" #(if (= particle 1) "" jump) % 41
+  re1 |
+  mi1 | #(if (= particle 1) "" jump) % 41
   re1~ |
   re1 |
   do1 |

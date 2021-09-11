@@ -3,10 +3,10 @@ notes_soproano = \relative do'' {
     sol4 sol fa sol |
     fa4 re2. |
     fa1\p |
-    la2 fa2~ | \bar "||" #(if (= particle 1) "" jump) % 5
+    la2 fa2~ | #(if (= particle 1) "" jump) % 5
     fa2 sol~ |
     sol2 fa~ |
-    fa1~ | \bar "||" #(if (= particle 1) "" jump) % 8
+    fa1~ | #(if (= particle 1) "" jump) % 8
     fa1~ |
     fa4 mi2 sol4~ |
     sol4 fa2 fa4~ |
@@ -16,37 +16,37 @@ notes_soproano = \relative do'' {
     fa4 re2 sol4~ |
     sol2 la2 |
     fas1 |
-    fa1~ | \bar "||" #(if (= particle 1) "" jump) % 18
+    fa1~ | #(if (= particle 1) "" jump) % 18
     fa1~ |
     fa4 mi4 fa2 |
     sol1 |
-    fa4 mi4 fa2~ | \bar "||" #(if (= particle 1) "" jump) % 22
-    \time 2/4 fa2 | \bar "||"
+    fa4 mi4 fa2~ | #(if (= particle 1) "" jump) % 22
+    \time 2/4 fa2 |
     \time 4/4 mi2 fa2~ |
     fa2 re2 |
     la'4 sol la2 |
     fas1 |
-    fa1~ | \bar "||" #(if (= particle 1) "" jump) % 28
+    fa1~ | #(if (= particle 1) "" jump) % 28
     fa1~ |
     fa4 mi4 fa2 |
     sol1 |
-    fa4 mi4 fa2~ | \bar "||" #(if (= particle 1) "" jump) % 32
+    fa4 mi4 fa2~ | #(if (= particle 1) "" jump) % 32
     fa2 mi2 |
     fa1 |
     re2 la'4 sol4 |
     la1 |
     fas1 |
-    fa1~ | \bar "||" #(if (= particle 1) "" jump) % 38
+    fa1~ | #(if (= particle 1) "" jump) % 38
     fa1~ |
     fa4 mi4 fa2 |
     sol1 |
-    fa4 mi4 fa2~ | \bar "||" #(if (= particle 1) "" jump) % 42
+    fa4 mi4 fa2~ | #(if (= particle 1) "" jump) % 42
     fa2 mi2 |
     fa1 |
     re2 la'4 sol4 |
     la1 |
-    fas1 | \bar "||" #(if (= particle 1) "" jump) %48
-    \time 2/4 fa2~ | \bar "||"
+    fas1 | #(if (= particle 1) "" jump) %48
+    \time 2/4 fa2~ |
     \time 4/4 fa4 mi2 sol4~ |
     sol4 re2 fa4~ |
     fa4 fa2 fa4~ | #(if (= particle 1) "" jump) % 51
@@ -54,7 +54,7 @@ notes_soproano = \relative do'' {
     mi4 sol2 fa4~ |
     fa4 sol2.~ |
     sol4 fa la2 |
-    fas1 | \bar "||" #(if (= particle 1) "" jump) % 56
+    fas1 | #(if (= particle 1) "" jump) % 56
     fa1~ |
     fa2 sol |
     fa2 mi |

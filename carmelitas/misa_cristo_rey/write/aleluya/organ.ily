@@ -1,18 +1,18 @@
 notes_soproano = \relative do' {
   re'2 dos |
   si2 la |
-  la1 | \bar "||" #(if (= particle 1) "" jump) % 3
+  la1 | #(if (= particle 1) "" jump) % 3
   dos,4 fas mi2 |
   fas4 sols la2 |
   dos,4 fas sols2~ |
-  sols1~ | \bar "||" #(if (= particle 1) "" jump) % 7
+  sols1~ | #(if (= particle 1) "" jump) % 7
   sols1~ |
   sols1 |
   dos,1 | #(if (= particle 1) "" jump) % 10
   si1 |
   la'1~ |
   la4 sols la2~ |
-  la1 | \bar "||" #(if (= particle 1) "" jump) % 14
+  la1 | #(if (= particle 1) "" jump) % 14
   dos,4 fas mi2 |
   fas4 sols la2 |
   dos,4 fas sols2~ |
