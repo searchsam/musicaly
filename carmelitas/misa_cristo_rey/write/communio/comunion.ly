@@ -36,7 +36,7 @@ jump = \break
 
 \score {
   <<
-    \new StaffGroup = "Comunion" <<
+    \new ChoirStaff <<
       \new Staff <<
         \new Voice = "soprano" <<
           \set Staff.instrumentName = #"Soprano"

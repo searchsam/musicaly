@@ -35,7 +35,7 @@ jump = \break
 
 \score {
   <<
-    \new StaffGroup = "Comunion" <<
+    \new ChoirStaff <<
       \new Staff <<
         \new Voice = "soprano" <<
           \set Staff.instrumentName = #"Soprano"
@@ -86,7 +86,7 @@ jump = \break
   }
 }
 
-% --- Musica
+% --- Paper
 \paper{
   #(set-default-paper-size "letter")
   indent=3.5\cm
