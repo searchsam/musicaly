@@ -49,24 +49,24 @@ soprano_music = \relative do' {
 }
 
 soprano_lyrics = \lyricmode {
-    En la tie -- rra te~a -- do -- ran los mor -- ta -- les
-    y los san -- tos te~a -- la -- ban en el cie -- lo,
-    u -- ni -- dos a sus vo -- ces te~a -- cla -- ma -- mos
-    pro -- cla -- mán -- do -- te rey del u -- ni -- ver -- so.
+  En la tie -- rra te~a -- do -- ran los mor -- ta -- les
+  y los san -- tos te~a -- la -- ban en el cie -- lo,
+  u -- ni -- dos a sus vo -- ces te~a -- cla -- ma -- mos
+  pro -- cla -- mán -- do -- te rey del u -- ni -- ver -- so.
 
-    Por e -- so pen -- des de~u -- na cruz san -- grien -- ta,
-    a -- bres en e -- lla tus di -- vi -- nos bra -- zos;
-    por e -- so mues -- tras en tu pe -- cho he -- ri -- do
-    tu ar -- dien -- te co -- ra -- zón a -- tra -- ve -- sa -- do.
-    Con ho -- no -- res pú -- bli -- cos te en -- sal -- cen
-    los que tie -- nen po -- der so -- bre la tie -- rra;
-    El ma -- es -- tro~y el juez te rin -- dan  cul -- to,
-    el ar -- te y la ley no te des -- mien -- tan.
+  Por e -- so pen -- des de~u -- na cruz san -- grien -- ta,
+  a -- bres en e -- lla tus di -- vi -- nos bra -- zos;
+  por e -- so mues -- tras en tu pe -- cho he -- ri -- do
+  tu ar -- dien -- te co -- ra -- zón a -- tra -- ve -- sa -- do.
+  Con ho -- no -- res pú -- bli -- cos te en -- sal -- cen
+  los que tie -- nen po -- der so -- bre la tie -- rra;
+  El ma -- es -- tro~y el juez te rin -- dan  cul -- to,
+  el ar -- te y la ley no te des -- mien -- tan.
 
-    Go -- bier -- nas con a -- mor el u -- ni -- ver -- so,
-    glo -- ri -- fi -- ca -- do se -- as, Je -- su -- cris -- to,
-    y que con -- ti -- go~y con tu~e -- ter -- no Pa -- dre
-    re -- ci -- ba glo -- ria~el San -- to Es -- pí -- ri -- tu.
+  Go -- bier -- nas con a -- mor el u -- ni -- ver -- so,
+  glo -- ri -- fi -- ca -- do se -- as, Je -- su -- cris -- to,
+  y que con -- ti -- go~y con tu~e -- ter -- no Pa -- dre
+  re -- ci -- ba glo -- ria~el San -- to Es -- pí -- ri -- tu.
 
-    A -- mén.
+  A -- mén.
 }

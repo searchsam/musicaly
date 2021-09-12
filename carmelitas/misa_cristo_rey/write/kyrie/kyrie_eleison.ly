@@ -1,41 +1,42 @@
 % ****************************************************************
-%	Señor ten piedad - Melodia a modo del renacimiento
-%   	Texto y musica con acompañamiento
-%	by serach.sam@
+%   Kyrie eleison - Renaissance way melody
+%	Music and accompaniment by serachsam
 % ****************************************************************
 \language "espanol"
-\version "2.19.82"
+\version "2.23.2"
 
+% --- Global parameters
+
+% --- Includes
+
+% --- Global size
 %#(set-global-staff-size 16.4)
 
-% --- Cabecera
+% --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Señor ten piedad" \fontsize #2 "Misa Cristo Rey" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Linda Martínez" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
-% --- Parametro globales
+% --- Global parameters
 global = {
   \set Score.skipBars = ##t
   \clef "treble"
   \key re \minor
   \time 2/2
-
   % the actual music
   \skip 1*5
-
   % let finis bar go through all staves
   \override Staff.BarLine.transparent = ##f
-
   % finis bar
   \bar "|."
 }
 
-% --- Musica
+% --- Music
 cantusIncipit = {
   \set Staff.instrumentName = "Cantus"
   \clef "petrucci-g"
@@ -84,7 +85,7 @@ altusLyricsAltenative = \lyricmode {
   Cris -- to, ten pie -- dad. Cris -- to, ten pie -- dad.
 }
 
-% --- invocacion #1
+% --- Invocation #1
 \score{
   <<
     \new Voice = "invocacion" {
@@ -149,7 +150,7 @@ altusLyricsAltenative = \lyricmode {
   }
 }
 
-% --- Invocacion #2
+% --- Invocation #2
 \score{
   <<
     \new Voice = "invocacion" {
@@ -214,7 +215,7 @@ altusLyricsAltenative = \lyricmode {
   }
 }
 
-% --- Invocacion #3
+% --- Invocation #3
 \score{
   <<
     \new Voice = "invocacion" {
@@ -279,7 +280,7 @@ altusLyricsAltenative = \lyricmode {
   }
 }
 
-% --- Pagina
+% --- Paper
 \paper{
   #(set-default-paper-size "letter")
   page-breaking = #ly:page-turn-breaking

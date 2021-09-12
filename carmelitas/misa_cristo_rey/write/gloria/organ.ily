@@ -1,7 +1,7 @@
 notes_soproano = \relative do'' {
     re,4 fa sol sol |
     sol4 sol fa sol |
-    fa4 re2. |
+    fa4 re2. | \bar "||"
     fa1\p |
     la2 fa2~ | #(if (= particle 1) "" jump) % 5
     fa2 sol~ |

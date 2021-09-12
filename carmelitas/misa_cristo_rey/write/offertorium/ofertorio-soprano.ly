@@ -1,5 +1,5 @@
 % *************************************************************************************
-%	Pricipe de los siglos - Melody inspired by the compositions of Mons Marco Frisina
+%	Sagrario del altar - Melody inspired by the compositions of Mons Marco Frisina
 %   	Music and accompaniment by serachsam
 % *************************************************************************************
 \language "espanol"
@@ -17,8 +17,8 @@ jump = \break
 % #(set-global-staff-size 20)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Principe de los siglos" \fontsize #2 "Misa de Cristo Rey" "Introito - Himno Solemnidad Cristo Rey del Universo" } } }
-\markup { \fill-line { \fontsize #2 "Soprano" \right-column { \fontsize #2 "Letra: Vittorio Genovesi S.J." } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Sagrario del Altar" \fontsize #2 "Misa de Cristo Rey" "Ofertorium - Oración al Santisimo Sacramento" } } }
+\markup { \fill-line { \fontsize #2 "Soprano" \right-column { \fontsize #2 "Letra: Teresa del Niño Jesús O.C.D." } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {

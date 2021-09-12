@@ -49,25 +49,25 @@ alto_music = \relative do' {
 }
 
 alto_lyrics = \lyricmode {
-    Prín -- ci -- pe ab -- so -- lu -- to de los si -- glos,
-    Je -- su -- cris -- to, rey de las na -- cio -- nes:
-    te con -- fe -- sa -- mos ár -- bi -- tro su -- pre -- mo
-    de las men -- tes y los co -- ra -- zo -- nes.
+  Prín -- ci -- pe ab -- so -- lu -- to de los si -- glos,
+  Je -- su -- cris -- to, rey de las na -- cio -- nes:
+  te con -- fe -- sa -- mos ár -- bi -- tro su -- pre -- mo
+  de las men -- tes y los co -- ra -- zo -- nes.
 
-    Je -- su -- cris -- to, prín -- ci -- pe pa -- cí -- fi -- co:
-    so -- me -- te~a los es -- pí -- ri -- tus re -- bel -- des,
-    haz que en -- cuen -- tren el rum -- bo los per -- di -- dos
-    en un so -- lo a -- pris -- co se con -- gre -- guen.
+  Je -- su -- cris -- to, prín -- ci -- pe pa -- cí -- fi -- co:
+  so -- me -- te~a los es -- pí -- ri -- tus re -- bel -- des,
+  haz que en -- cuen -- tren el rum -- bo los per -- di -- dos
+  en un so -- lo a -- pris -- co se con -- gre -- guen.
 
-    Es -- tás o -- cul -- to en los al -- ta -- res
-    tras las i -- má -- ge -- nes del pan y el vi -- no;
-    por e -- so vier -- tes de tu pe -- cho~a -- bier -- to
-    san -- gre de sal -- va -- ción pa -- ra tus hi -- jos.
+  Es -- tás o -- cul -- to en los al -- ta -- res
+  tras las i -- má -- ge -- nes del pan y el vi -- no;
+  por e -- so vier -- tes de tu pe -- cho~a -- bier -- to
+  san -- gre de sal -- va -- ción pa -- ra tus hi -- jos.
 
-    Las in -- sig -- nias de los re -- yes to -- dos
-    te se -- an pa -- ra siem -- pre de -- di -- ca -- das,
-    y es -- tén so -- me -- ti -- dos a tu ce -- tro
-    los ciu -- da -- da -- nos de las na -- cio -- nes.
+  Las in -- sig -- nias de los re -- yes to -- dos
+  te se -- an pa -- ra siem -- pre de -- di -- ca -- das,
+  y es -- tén so -- me -- ti -- dos a tu ce -- tro
+  los ciu -- da -- da -- nos de las na -- cio -- nes.
 
-    A -- mén.
+  A -- mén.
 }

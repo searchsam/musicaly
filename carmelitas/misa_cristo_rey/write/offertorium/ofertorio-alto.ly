@@ -1,5 +1,5 @@
 % *************************************************************************************
-%	Pricipe de los siglos - Melody inspired by the compositions of Mons Marco Frisina
+%	Sagrario del altar - Melody inspired by the compositions of Mons Marco Frisina
 %   	Music and accompaniment by serachsam
 % *************************************************************************************
 \language "espanol"
@@ -11,14 +11,14 @@ jump = \break
 
 % --- Includes
 \include "global.ily"
-\include "soprano.ily"
+\include "alto.ily"
 
 % --- Global size
 % #(set-global-staff-size 20)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Principe de los siglos" \fontsize #2 "Misa de Cristo Rey" "Introito - Himno Solemnidad Cristo Rey del Universo" } } }
-\markup { \fill-line { \fontsize #2 "Soprano" \right-column { \fontsize #2 "Letra: Vittorio Genovesi S.J." } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Sagrario del Altar" \fontsize #2 "Misa de Cristo Rey" "Ofertorium - Oración al Santisimo Sacramento" } } }
+\markup { \fill-line { \fontsize #2 "Contralto" \right-column { \fontsize #2 "Letra: Teresa del Niño Jesús O.C.D." } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
@@ -37,10 +37,11 @@ jump = \break
       \set Staff.midiInstrument = #"choir aahs"
       \set Staff.midiMaximumVolume = #1.5
 
-      \new Voice = "soprano" <<
-        \global \soprano_music
-      >>\new Lyrics = "soprano"
-      \context Lyrics = "soprano" \lyricsto "soprano" \soprano_lyrics
+      \new Voice = "alto" <<
+        \global \alto_music
+      >>
+      \new Lyrics = "alto"
+      \context Lyrics = "alto" \lyricsto "alto" \alto_lyrics
     >>
   >>
   \midi { }

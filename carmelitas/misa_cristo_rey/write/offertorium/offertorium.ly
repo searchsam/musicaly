@@ -1,26 +1,31 @@
-% ****************************************************************
-%	Sagrario del altar - Melodia inspirada en las composiciones de Mons Marco Frisina
-%	by serach.sam@
-% ****************************************************************
+% *************************************************************************************
+%	Offertorium - Melody inspired by the compositions of Mons Marco Frisina
+%   	Music and accompaniment by serachsam
+% *************************************************************************************
 \language "espanol"
-\version "2.19.82"
+\version "2.23.2"
 
+% --- Global parameters
+
+% --- Includes
+
+% --- Global size
 %#(set-global-staff-size 19)
 
-
-% --- Cabecera
+% --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Ofertorio" \fontsize #2 "Misa de Cristo Rey" "Sagrario del Altar"} } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Letra: Teresa del Niño Jesús O.C.D." } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Música: Linda Martínez" } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
-% --- Musica
-% --- acordes
+% --- Music
+
+% --- Harmony
 harmony_stanza = \new ChordNames {
   \chordmode {
     \italianChords
@@ -31,7 +36,7 @@ harmony_stanza = \new ChordNames {
   }
 }
 
-% --- Coro
+% --- Chorus
 \score {
   <<
     \harmony_stanza
@@ -41,7 +46,6 @@ harmony_stanza = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-
         \partial 4 r8^"Solo" re
         re4. mi8 fa4 sol
         mi2. r8 mi
@@ -69,7 +73,7 @@ harmony_stanza = \new ChordNames {
   }
 }
 
-% --- Coro Repeticion
+% --- chorus
 \score {
   \new PianoStaff = "Antifona" <<
     %\harmony_stanza
@@ -79,7 +83,6 @@ harmony_stanza = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-
         \partial 4 r8^"Tutti" re
         re4. mi8 fa4 sol
         mi2. r8 mi
@@ -100,7 +103,6 @@ harmony_stanza = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-
         \partial 4 r8 re
         re4. re8 re4 re
         mi2. r8 mi8
@@ -128,19 +130,18 @@ harmony_stanza = \new ChordNames {
   }
 }
 
-% --- acordes
+% --- Harmony
 harmony = \new ChordNames {
   \chordmode {
     \italianChords
     sol2:m fa2 sib2 sol2:m
     fa2 sib2 la2 re2:m
-
     sol2:m fa2 sib2 sol2:m
     fa2 do2:m re2:m sol2:m
   }
 }
 
-% --- Estrofa I
+% --- Stanza I
 \score {
   \new PianoStaff = "Estrofa" <<
     %\harmony
@@ -150,7 +151,6 @@ harmony = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-
         sib'8^"Tutti" sib sib4 la8 sib do8 la
         sib4( la) sib2 \breathe \break
         do8 sib la do sib do re sib
@@ -173,7 +173,6 @@ harmony = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-
         re8 do sib4 do8 re mib do
         re4( fa) sol2 \breathe
         fa8 mib re do re mib fa re
@@ -203,7 +202,7 @@ harmony = \new ChordNames {
   }
 }
 
-% --- Estrofa II
+% --- Stanza II
 \score {
   \new PianoStaff = "Estrofa" <<
     %\harmony
@@ -213,7 +212,6 @@ harmony = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-
         sib'8^"Tutti" sib sib4 la8 sib do8 la
         sib4 la sib2 \breathe \break
         do8 sib la do sib do re sib
@@ -236,7 +234,6 @@ harmony = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-
         re8 do sib4 do8 re mib do
         re4 fa sol2 \breathe
         fa8 mib re do re mib fa re
@@ -266,7 +263,7 @@ harmony = \new ChordNames {
   }
 }
 
-% --- Estrofa III
+% --- Stanza III
 \score {
   \new PianoStaff = "Estrofa" <<
     %\harmony
@@ -276,7 +273,6 @@ harmony = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-
         sib'4^"Tutti" sib8 sib la8 sib do8( la)
         sib4( la sib2) \breathe \break
         do8 sib la do sib do re sib
@@ -299,7 +295,6 @@ harmony = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-
         re4 do8 sib do8 re mib( do)
         re4( fa sol2) \breathe
         fa8 mib re do re mib fa re
@@ -329,7 +324,7 @@ harmony = \new ChordNames {
   }
 }
 
-% --- Estrofa IV
+% --- Stanza IV
 \score {
   \new PianoStaff = "Estrofa" <<
     %\harmony
@@ -339,7 +334,6 @@ harmony = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-
         sib'4^"Tutti" sib8 sib la8 sib do8 la
         sib4( la) sib2 \breathe \break
         do8 sib la do sib do re sib
@@ -362,7 +356,6 @@ harmony = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-
         re4 do8 sib do8 re mib do
         re4( fa) sol2 \breathe
         fa8 mib re do re mib fa re
@@ -392,7 +385,7 @@ harmony = \new ChordNames {
   }
 }
 
-% --- Estrofa V
+% --- Stanza V
 \score {
   \new PianoStaff = "Estrofa" <<
     %\harmony
@@ -402,7 +395,6 @@ harmony = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-
         sib'4^"Tutti" sib8 sib la8 sib do8 la
         sib4( la) sib2 \breathe \break
         do8( sib) la( do) sib8( do) re sib
@@ -425,7 +417,6 @@ harmony = \new ChordNames {
         \tempo 4 = 60
         \key re \minor
         \time 4/4
-
         re4 do8 sib do8 re mib do
         re4( fa) sol2 \breathe
         fa8( mib) re( do) re8( mib) fa re
@@ -455,7 +446,7 @@ harmony = \new ChordNames {
   }
 }
 
-% --- Papel
+% --- Paper
 \paper{
   #(set-default-paper-size "letter")
   indent = 0
