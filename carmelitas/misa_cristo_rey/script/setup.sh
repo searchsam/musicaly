@@ -11,17 +11,9 @@ cd "$(dirname "$0")/.."
 
 echo "==> Setting up dirs structure..."
 
-dirs=(audio libro ordinario propio)
+dirs=(audio book write)
 for dir in "${dirs[@]}"; do
-    if [ -d $dir ]; then
-        rm -rf $dir
-        if [ $dir = "ordinario" ] || [ $dir = "propio" ]; then
-            mkdir $dir
-            mkdir "$dir/includes"
-        else
-            mkdir $dir
-        fi
-    else
+    if [ ! -d $dir ]; then
         mkdir $dir
     fi
     echo "$dir has been reset successfully"

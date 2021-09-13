@@ -9,31 +9,20 @@ cd "$(dirname "$0")/.."
 # ensure everything in the app is up to date.
 # sh script/update.sh
 
-# test -z "$RACK_ENV" && RACK_ENV='development'
-
 # boot the app and any other necessary processes.
 echo "==> Compiling PDF book..."
 
 compile_pdf() {
-    cd libro
-
+    cd book
     readarray -d . -t strarr <<<"$1"
     name="${strarr[0]}"}
-
     rm -rf out/
-
     lilypond-book --output=out --pdf $1
-
     cd out
-
     pdflatex "${name}.tex"
-
     cd ..
-
     cp "out/${name}.pdf" .
-
     rm -rf out/
-
     cd ..
 }
 
@@ -64,7 +53,7 @@ compile_audio() {
     done
 }
 
-compile_dir=libro/*.lytex
+compile_dir=book/*.lytex
 files=($compile_dir)
 
 if [ ${#files[@]} -gt 1 ]; then
