@@ -41,7 +41,7 @@ jump = \break
           \set Staff.instrumentName = #"Soprano"
           \set Staff.midiInstrument = #"choir aahs"
           \set Staff.midiMaximumVolume = #1.5
-          \global \soprano_music_a
+          \global_a \soprano_music_a
         >>\new Lyrics = "soprano"
         \context Lyrics = "soprano" \lyricsto "soprano" \soprano_lyrics_a
       >>
@@ -50,7 +50,7 @@ jump = \break
           \set Staff.instrumentName = #"Contralto"
           \set Staff.midiInstrument = #"choir aahs"
           \set Staff.midiMaximumVolume = #1.5
-          \global \alto_music_a
+          \global_a \alto_music_a
         >>
         \new Lyrics = "alto"
         \context Lyrics = "alto" \lyricsto "alto" \alto_lyrics_a
@@ -64,8 +64,8 @@ jump = \break
         \set Staff.midiMaximumVolume = #0.6
         \set Staff.printPartCombineTexts = ##f
         \partCombine
-        << \global \notes_soproano_a >>
-        << \global \notes_alto_a >>
+        << \global_a \notes_soproano_a >>
+        << \global_a \notes_alto_a >>
       >>
       \new Staff <<
         \set Staff.midiInstrument = #"church organ"
@@ -73,8 +73,8 @@ jump = \break
         \clef bass
         \set Staff.printPartCombineTexts = ##f
         \partCombine
-        << \global \notes_tenor_a >>
-        << \global \notes_bass_a >>
+        << \global_a \notes_tenor_a >>
+        << \global_a \notes_bass_a >>
       >>
     >>
   >>

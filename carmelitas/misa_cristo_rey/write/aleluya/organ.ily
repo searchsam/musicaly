@@ -17,8 +17,6 @@ notes_soproano = \relative do' {
   fas4 sols la2 |
   dos,4 fas sols2~ |
   sols1 |
-
-  \bar "|."
 }
 
 notes_alto = \relative do' {

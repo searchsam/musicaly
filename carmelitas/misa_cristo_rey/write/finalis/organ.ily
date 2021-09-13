@@ -215,8 +215,6 @@ notes_alto = \relative do' {
   re2 |
   la2 |
   re2 |
-
-  \bar "|."
 }
 
 notes_tenor = \relative do {

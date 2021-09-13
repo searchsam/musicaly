@@ -195,8 +195,6 @@ notes_alto = \relative do' {
     re2 sol, |
     sib2 la~ |
     la1 |
-
-  \bar "|."
 }
 
 notes_tenor = \relative do {

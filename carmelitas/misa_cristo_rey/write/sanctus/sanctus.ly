@@ -1,26 +1,28 @@
 % ****************************************************************
-%	Sanctus - Melodia a modo del renacimiento
-%   	Texto y musica con acompañamiento
-%	by serach.sam@
+%   Sanctus - Renaissance way melody
+%	Music and accompaniment by serachsam
 % ****************************************************************
 \language "espanol"
 \version "2.19.82"
 
-#(set-global-staff-size 21)
+% --- Global parameters
 
-% --- Cabecera
+% --- Includes
+
+% --- Global size
+%#(set-global-staff-size 21)
+
+% --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Santo" \fontsize #2 "Misa Cristo Rey" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Linda Martínez" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" \small "(Octubre 2019)" } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
-% --- Parametro globales
-
-% --- invocacion #1
+% --- Invocation #1
 \score{
   <<
     \new Voice = "invocacion" {
@@ -53,7 +55,6 @@ global = {
   \key re \minor
   \time 2/2
   \skip 1
-
   % the actual music
   \skip 1*7
   \tempo 4 = 120
@@ -62,15 +63,13 @@ global = {
   \skip 1*8
   \tempo 4 = 120
   \skip 1*6
-
   % let finis bar go through all staves
   \override Staff.BarLine.transparent = ##f
-
   % finis bar
   \bar "|."
 }
 
-% --- Musica
+% --- Music
 cantusIncipit = {
   \set Staff.instrumentName = "Cantus"
   \clef "petrucci-g"
@@ -83,23 +82,18 @@ cantusNotes = \relative do'' {
   sib4^\markup{ \italic "Tutti"}( la8 sib do4) sib
   sib4( la8 sib do4) sib
   sib4( la8 sib do4) sib \break
-
   sol4 la sib do sib la sib r
   sol4 la sib do sib la sib do si2 \fermata r \bar "||" \break
-
   sol4( fa) do'2(
   si4) do2 r4
   sol4( fa) do'2(
   si4) do2 r4
   do8 do si4( la8 si do4~ do si4) do2 \fermata \bar "||" \break
-
   sib4( la8 sib do4) sib
   sib4( la8 sib do4) sib
   sib4( la8 sib do4) sib \break
-
   sol4 la sib do sib la sib r
   sol4 la sib do sib la( sib) do( si2) \fermata r \bar "||" \break
-
   sol4( fa) do'2(
   si4) do2 r4
   sol4( fa) do'2(
@@ -116,14 +110,12 @@ altus = \relative do' {
   sol la sol fa
   sol4 la sib la
   sol2 \fermata r
-
   sol4( fa) mi2(
   re4) mi2 r4
   sol4( fa) mi2(
   re4) mi2 r4
   mi4 re fa4( sol8 fa
   mi4 re) mi2 \fermata
-
   sol2( fa4) sol
   sol2( fa4) sol
   sol2( fa4) sol
@@ -132,7 +124,6 @@ altus = \relative do' {
   sol la sol fa
   sol4 la sib la
   sol2 \fermata r
-
   sol4( fa) mi2(
   re4) mi2 r4
   sol4( fa) mi2(
@@ -168,14 +159,12 @@ altusNotes = \relative do'' {
   sol la sol fa
   sol4 la sib la
   sol2 \fermata r
-
   sol4( fa) mi2(
   re4) mi2 r4
   sol4( fa) mi2(
   re4) mi2 r4
   mi4 re fa4( sol8 fa
   mi4 re) mi2 \fermata
-
   sol2( fa4) sol
   sol2( fa4) sol
   sol2( fa4) sol
@@ -184,7 +173,6 @@ altusNotes = \relative do'' {
   sol la sol fa
   sol4 la( sib) la(
   sol2) \fermata r
-
   sol4( fa) mi2(
   re4) mi2 r4
   sol4( fa) mi2(
@@ -242,7 +230,7 @@ altusLyrics = \lyricmode {
   }
 }
 
-% --- Pagina
+% --- Paper
 \paper{
   #(set-default-paper-size "letter")
   %page-breaking = #ly:page-turn-breaking

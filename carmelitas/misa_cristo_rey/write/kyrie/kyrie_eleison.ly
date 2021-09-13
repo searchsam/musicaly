@@ -5,8 +5,6 @@
 \language "espanol"
 \version "2.23.2"
 
-% --- Global parameters
-
 % --- Includes
 
 % --- Global size

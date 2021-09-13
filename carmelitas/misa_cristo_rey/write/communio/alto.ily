@@ -1,29 +1,27 @@
 alto_music = \relative do' {
   \compressEmptyMeasures
 
-  R1*4 | \bar "||" #(if (= particle 1) jump "") % 4
-  R1*8 | \bar "||" #(if (= particle 1) jump "") % 12
-  re4^\markup { \italic "Contralto" } re8 re do8 re mi( do) |
+  R1*4 | #(if (= particle 1) jump "") % 4
+  R1*8 | #(if (= particle 1) jump "") % 12
+  re4 re8 re do8 re mi( do) |
   sib8 do re sib do4 do	|
   re4 re8 re do re mi do |
   sib do re sib la4 la \breathe | #(if (= particle 1) jump "") % 16
   re4 re8 re mi8 re do( mi) |
   fa8 mi re fa sol4 sol	|
   fa4 fa8 mi re do sib re |
-  mi( fa) sol( mi) fa4 fa | \bar "||" #(if (= particle 1) jump "") % 20
-  R1*8 | \bar "||" #(if (= particle 1) jump "") % 28
-  re4^\markup { \italic "Contalto" } re8 re do8 re mi do |
+  mi( fa) sol( mi) fa4 fa | #(if (= particle 1) jump "") % 20
+  R1*8 | #(if (= particle 1) jump "") % 28
+  re4 re8 re do8 re mi do |
   sib8( do) re( sib) do4 do |
   re4 re8 re do re mi( do) |
   sib do re sib la4 la \breathe | #(if (= particle 1) jump "") % 32
   re4 re8 re mi8 re do mi |
   fa8( mi) re fa sol4 sol |
   fa4 fa8 mi re do sib re |
-  mi( fa) sol mi fa4 fa | \bar "||" #(if (= particle 1) jump "") % 36
+  mi( fa) sol mi fa4 fa | #(if (= particle 1) jump "") % 36
   do1^\markup { \italic "Contralto" } |
   re1 |
-
-  \bar "|."
 }
 
 alto_lyrics = \lyricmode {

@@ -1,7 +1,7 @@
 alto_music = \relative do' {
   \compressEmptyMeasures
 
-  R1*4 | \bar "||" #(if (= particle 1) jump "") % 4
+  R1*4 | #(if (= particle 1) jump "") % 4
   la4 re8( mi) fa4 re8 re |
   do8 re mi do re4 re |
   do4 re8( mi) sib4 sib |
@@ -10,18 +10,18 @@ alto_music = \relative do' {
   mi8 fa sol mi re4 re |
   do4 re8( mi) fa4 fa |
   sol8 fa mi fa mi2 |
-  re1 | \bar "||" #(if (= particle 1) jump "") % 13
-  R1*9 | \bar "||" #(if (= particle 1) jump "") % 22
+  re1 | #(if (= particle 1) jump "") % 13
+  R1*9 | #(if (= particle 1) jump "") % 22
   la4 re8( mi) fa4 re8 re |
   do8 re mi do re4 re |
   do4 re8 mi sib4 sib |
-  mi8 re  do re mi4 mi \breathe | \bar "||" #(if (= particle 1) jump "") % 26
+  mi8 re  do re mi4 mi \breathe | #(if (= particle 1) jump "") % 26
   la,4 re8 mi re4 re8 re |
   mi8 fa sol mi re4 re |
   do4 re8 mi fa4 fa |
   sol8 fa mi fa mi2 |
-  re1 | \bar "||" #(if (= particle 1) jump "") % 31
-  R1*9 | \bar "||" #(if (= particle 1) jump "") % 40
+  re1 | #(if (= particle 1) jump "") % 31
+  R1*9 | #(if (= particle 1) jump "") % 40
   la4 re8 mi fa4 re4 |
   do8( re) mi do re4 re |
   do4 re8 mi sib4 sib8 sib |
@@ -30,8 +30,8 @@ alto_music = \relative do' {
   mi8 fa sol mi re4 re |
   do4 re8 mi fa4 fa |
   sol8 fa mi fa mi2 |
-  re1 | \bar "||" #(if (= particle 1) jump "") % 49
-  R1*9 | \bar "||" #(if (= particle 1) jump "") % 58
+  re1 | #(if (= particle 1) jump "") % 49
+  R1*9 | #(if (= particle 1) jump "") % 58
   la4 re8( mi) fa4 re4 |
   do8 re mi do re4 re |
   do4 re8 mi sib4 sib |
@@ -40,12 +40,10 @@ alto_music = \relative do' {
   mi8 fa sol mi re4 re |
   do4 re8 mi fa4 fa |
   sol8( fa) mi fa mi2 |
-  re1 | \bar "||" #(if (= particle 1) jump "") % 67
-  R1*9 | \bar "||" #(if (= particle 1) jump "") % 76
+  re1 | #(if (= particle 1) jump "") % 67
+  R1*9 | #(if (= particle 1) jump "") % 76
   do1 |
   re1 |
-
-  \bar "|."
 }
 
 alto_lyrics = \lyricmode {

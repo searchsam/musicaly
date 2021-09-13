@@ -1,7 +1,7 @@
 notes_soproano = \relative do'' {
     re,4 fa sol sol |
     sol4 sol fa sol |
-    fa4 re2. | \bar "||"
+    fa4 re2. |
     fa1\p |
     la2 fa2~ | #(if (= particle 1) "" jump) % 5
     fa2 sol~ |
@@ -59,8 +59,6 @@ notes_soproano = \relative do'' {
     fa2 sol |
     fa2 mi |
     fa1 |
-
-    \bar "|."
 }
 
 notes_alto = \relative do' {
@@ -193,8 +191,7 @@ notes_bass = \relative do {
     sib2 re~ |
     re1~ |
     re1~ |
-    re4 |
-    do2 sib4~ |
+    re4 do2 sib4~ |
     sib4 re2 la4~ |
     la1~ |
     la2. do4~ |

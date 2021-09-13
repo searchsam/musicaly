@@ -1,10 +1,10 @@
 soprano_music = \relative do'' {
   \compressEmptyMeasures
 
-  R1*4 | \bar "||"
-  R1*3 | \bar "||"
-  R1*4 | \bar "||" #(if (= particle 1) jump "") % 11
-  r4 do2^\markup{ \italic "Soprano" } do4 |
+  R1*4 |
+  R1*3 |
+  R1*4 | #(if (= particle 1) jump "") % 11
+  r4 do2 do4 |
   re4 re re re |
   re( do2 si4) |
   do2 r4 do8 do |
@@ -12,9 +12,9 @@ soprano_music = \relative do'' {
   re2 re8 re re4(~ |
   re4 do si8 la si4~ |
   si4) dos2. | #(if (= particle 1) jump "") % 19
-  R1*3 | \bar "||"
-  R1*4 | \bar "||" #(if (= particle 1) jump "") % 26
-  r4 do2^\markup{ \italic "Soprano" } do4 |
+  R1*3 |
+  R1*4 | #(if (= particle 1) jump "") % 26
+  r4 do2 do4 |
   re4 re re re |
   re( do2) si4 |
   do2 r4 do8 do |
@@ -26,10 +26,10 @@ soprano_music = \relative do'' {
   sib4 \tuplet 3/2 {do8 do do} do4 do |
   re4 re2( do4 |
   si8 la) si2 si4 |
-  dos1 | \bar "||" #(if (= particle 1) jump "") % 40
-  R1 | \bar "||"
+  dos1 | #(if (= particle 1) jump "") % 40
+  R1 |
   R1*16 | #(if (= particle 1) jump "") % 56
-  re,4^\markup{ \italic "Solo Soprano"} sol fa sib | \bar "||"
+  re,4^\markup{ \italic "Solo Soprano"} sol fa sib |
   la2 |
   la8 sib r sib |
   la4 r4 |
@@ -51,17 +51,17 @@ soprano_music = \relative do'' {
   do do( sib4 |
   la8 sol la4) |
   sib2 | #(if (= particle 1) jump "") % 78
-  do8^\markup{ \italic "Solo Soprano"} do re4 |
+  do8 do re4 |
   la8 sib sol la8~ |
   la4 sib8 sib |
   la4. la8 |
   sib sib sib8 la8 |
   sol4.( la8 |
   sib4. la8) |
-  sib2 | \bar "||" #(if (= particle 1) jump "") % 86
-  R1*3 | \bar "||"
-  R1*4 | \bar "||" #(if (= particle 1) jump "") % 93
-  r4 do2^\markup{ \italic "Soprano"} do4 |
+  sib2 | #(if (= particle 1) jump "") % 86
+  R1*3 |
+  R1*4 | #(if (= particle 1) jump "") % 93
+  r4 do2^\markup{ \italic "Todos"} do4 |
   re4 re re re |
   re( do2) si4 |
   do2 r4 sib |
@@ -75,11 +75,9 @@ soprano_music = \relative do'' {
   do4 do do do |
   re2 re2( |
   do4 si8 la si2) |
-  dos1 | \bar "||" #(if (= particle 1) jump "") % 108
+  dos1 | #(if (= particle 1) jump "") % 108
   R1 |
   la2( sib la) sol( la1) |
-
-  \bar "|."
 }
 
 soprano_lyrics = \lyricmode {

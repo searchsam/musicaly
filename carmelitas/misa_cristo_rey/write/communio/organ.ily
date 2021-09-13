@@ -76,8 +76,6 @@ notes_alto = \relative do' {
   la,2 re | #(if (= particle 1) "" jump) % 36
   do1 |
   re1 |
-
-  \bar "|."
 }
 
 notes_tenor = \relative do {

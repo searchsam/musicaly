@@ -1,7 +1,7 @@
 soprano_music = \relative do' {
   \compressEmptyMeasures
 
-  R2*4 | \bar "||" #(if (= particle 1) jump "") % 4
+  R2*4 | #(if (= particle 1) jump "") % 4
   fa4 sol8 la |
   sol4 fa8( sol) |
   la4 la |
@@ -16,8 +16,8 @@ soprano_music = \relative do' {
   sib4 do8( sib) |
   la4 sol8( fa) |
   sol2 |
-  fa2 | \bar "||" #(if (= particle 1) jump "") % 19
-  R2*15 | \bar "||" #(if (= particle 1) jump "") % 34
+  fa2 | #(if (= particle 1) jump "") % 19
+  R2*15 | #(if (= particle 1) jump "") % 34
   fa4 sol8 la |
   sol4 fa8 sol |
   la4 la |
@@ -32,8 +32,8 @@ soprano_music = \relative do' {
   sib4 do8( sib) |
   la4 sol8( fa) |
   sol2 |
-  fa2 | \bar "||" #(if (= particle 1) jump "") % 49
-  R2*15 | \bar "||" #(if (= particle 1) jump "") % 64
+  fa2 | #(if (= particle 1) jump "") % 49
+  R2*15 | #(if (= particle 1) jump "") % 64
   fa4 sol8 la |
   sol4 fa8 sol |
   la4 la |
@@ -48,8 +48,8 @@ soprano_music = \relative do' {
   sib4 do8 sib |
   la4 sol8( fa) |
   sol2 |
-  fa2 | \bar "||" #(if (= particle 1) jump "") % 79
-  R2*15 | \bar "||" #(if (= particle 1) jump "") % 94
+  fa2 | #(if (= particle 1) jump "") % 79
+  R2*15 | #(if (= particle 1) jump "") % 94
   fa8 fa sol8 la |
   sol8 sol fa8 sol |
   la4 la |
@@ -64,8 +64,8 @@ soprano_music = \relative do' {
   sib4 do8( sib) |
   la4 sol8( fa) |
   sol2( |
-  fa2) | \bar "||" #(if (= particle 1) jump "") % 109
-  R2*15 | \bar "||" #(if (= particle 1) jump "") % 124
+  fa2) | #(if (= particle 1) jump "") % 109
+  R2*15 | #(if (= particle 1) jump "") % 124
   fa8 fa sol8 la |
   sol8 sol fa8 sol |
   la4 la |
@@ -81,8 +81,6 @@ soprano_music = \relative do' {
   la4 sol8 fa |
   sol2 |
   fa2 |
-
-  \bar "|."
 }
 
 soprano_lyrics = \lyricmode {

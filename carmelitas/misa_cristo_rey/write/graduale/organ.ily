@@ -111,8 +111,6 @@ notes_alto_a = \relative do' {
   do2 re |
   sib2 do4 re~ |
   re2 fa |
-
-  \bar "|."
 }
 
 notes_tenor_a = \relative do' {
@@ -309,8 +307,6 @@ notes_alto_b = \relative do' {
   do2 re |
   sib2 do4 re~ |
   re2 fa |
-
-  \bar "|."
 }
 
 notes_tenor_b = \relative do' {
@@ -477,8 +473,6 @@ notes_alto_c = \relative do' {
   do2 re |
   sib2 do4 re~ |
   re2 fa |
-
-  \bar "|."
 }
 
 notes_tenor_c = \relative do' {

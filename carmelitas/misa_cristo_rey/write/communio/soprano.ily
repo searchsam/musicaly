@@ -1,7 +1,7 @@
 soprano_music = \relative do' {
   \compressEmptyMeasures
 
-  R1*4 | \bar "||" #(if (= particle 1) jump "") % 4
+  R1*4 | #(if (= particle 1) jump "") % 4
   fa4^\markup { \italic "Solo Mezzosoprano" } mi8 re mi re do mi |
   re8( do) sib re do4 do |
   sol'4 la8 sol fa sol la fa |
@@ -9,15 +9,15 @@ soprano_music = \relative do' {
   fa4 mi8 re mi fa sol mi |
   fa8( sol) la( fa) sol4 sol |
   re4 fa8 mi re do sib re |
-  mi8( re) dos( mi) re4 re | \bar "||" #(if (= particle 1) jump "") % 12
-  la'4^\markup { \italic "Soprano" } sol8 fa sol fa mi( sol) |
+  mi8( re) dos( mi) re4 re | #(if (= particle 1) jump "") % 12
+  la'4^\markup { \italic "Todos" } sol8 fa sol fa mi( sol) |
   fa8 mi re fa mi4 mi |
   sol4 la8 sib do sib la do |
   re do sib re dos4 dos \breathe | #(if (= particle 1) jump "") % 16
   la4 sib8 la sol fa mi( sol) |
   la8 sib do la sib4 sib  |
   la4 sol8 la sib la sol sib |
-  dos8( sib) la( dos) re4 re | \bar "||" #(if (= particle 1) jump "") % 20
+  dos8( sib) la( dos) re4 re | #(if (= particle 1) jump "") % 20
   fa,4^\markup { \italic "Solo Mezzosoprano" } mi8 re mi re do mi |
   re8( do) sib( re) do4 do |
   sol'4 la8 sol fa sol la fa |
@@ -25,19 +25,17 @@ soprano_music = \relative do' {
   fa4 mi8 re mi fa sol( mi)	|
   fa8 sol la fa sol2 |
   re4 fa8 mi re do sib re |
-  mi8( re) dos( mi) re4 re | \bar "||" #(if (= particle 1) jump "") % 28
-  la'4^\markup { \italic "Soprano" } sol8 fa sol fa mi sol |
+  mi8( re) dos( mi) re4 re | #(if (= particle 1) jump "") % 28
+  la'4^\markup { \italic "Todos" } sol8 fa sol fa mi sol |
   fa8( mi) re( fa) mi4 mi |
   sol4 la8 sib do sib la( do) |
   re do sib re dos4 dos \breathe | #(if (= particle 1) jump "") % 32
   la4 sib8 la sol fa mi sol	|
   la8( sib) do la sib4 sib |
   la4 sol8 la sib la sol sib |
-  dos8( sib) la dos re4 re | \bar "||" #(if (= particle 1) jump "") % 36
+  dos8( sib) la dos re4 re | #(if (= particle 1) jump "") % 36
   sol,1^\markup { \italic "Soprano" } |
   la1 |
-
-  \bar "|."
 }
 
 soprano_lyrics = \lyricmode {

@@ -43,7 +43,7 @@ notes_alto = \relative do' {
     la4 la la do |
     re re re re |
     re re re do|
-    re mi re2 | \bar "||"
+    re mi re2 |
     re1\p |
     do2 do~ | #(if (= particle 1) "" jump) % 6
     do1 |
@@ -81,8 +81,6 @@ notes_alto = \relative do' {
     do4 re2. | #(if (= particle 1) "" jump) % 39
     do1 |
     re1 |
-
-    \bar "|."
 }
 
 notes_tenor = \relative do {

@@ -1,16 +1,16 @@
 alto_music = \relative do' {
   \compressEmptyMeasures
 
-  R1*3 | \bar "||"
+  R1*3 |
   R1*6 |
-  r2 r4 r8 re | \bar "||" #(if (= particle 1) jump "") % 10
+  r2 r4 r8 re | #(if (= particle 1) jump "") % 10
   re4. re8 re4 re |
   mi2. r8 mi8 |
   do4. re8 mi4 fa |
   sol2. r4 |
   fa4. mi8 re4. do8 |
   sib4 sib dos2~ |
-  dos2 r | \bar "||" #(if (= particle 1) jump "") % 17
+  dos2 r | #(if (= particle 1) jump "") % 17
   re8 do sib4 do8 re mib do |
   re4( fa) sol2 |
   fa8 mib re do re mib fa re |
@@ -19,14 +19,14 @@ alto_music = \relative do' {
   re2 sib |
   do8 re mib fa do re mib do |
   re4( do) re2~ |
-  re2 r4 r8 re | \bar "||" #(if (= particle 1) jump "") % 26
+  re2 r4 r8 re | #(if (= particle 1) jump "") % 26
   re4. re8 re4 re |
   mi2. r8 mi8 |
   do4. re8 mi4 fa |
   sol2. r4 |
   fa4. mi8 re4. do8 |
   sib4 sib dos2~ |
-  dos2 r | \bar "||" #(if (= particle 1) jump "") % 31
+  dos2 r | #(if (= particle 1) jump "") % 31
   re8 do sib4 do8 re mib do |
   re4 fa sol2 |
   fa8 mib re do re mib fa re |
@@ -35,14 +35,14 @@ alto_music = \relative do' {
   re2 sib |
   do8 re mib fa do re mib do |
   re4 do re2~ |
-  re2 r4 r8 re | \bar "||" #(if (= particle 1) jump "") % 42
+  re2 r4 r8 re | #(if (= particle 1) jump "") % 42
   re4. re8 re4 re |
   mi2. r8 mi8 |
   do4. re8 mi4 fa |
   sol2. r4 |
   fa4. mi8 re4. do8 |
   sib4 sib dos2~ |
-  dos2 r | \bar "||" #(if (= particle 1) jump "") % 49
+  dos2 r | #(if (= particle 1) jump "") % 49
   re4 do8 sib do8 re mib( do) |
   re4( fa sol2) |
   fa8 mib re do re mib fa re |
@@ -51,14 +51,14 @@ alto_music = \relative do' {
   re2 sib |
   do8 re mib fa do re mib do |
   re4( do) re2~ |
-  re2 r4 r8 re | \bar "||" #(if (= particle 1) jump "") % 58
+  re2 r4 r8 re | #(if (= particle 1) jump "") % 58
   re4. re8 re4 re |
   mi2. r8 mi8 |
   do4. re8 mi4 fa |
   sol2. r4 |
   fa4. mi8 re4. do8 |
   sib4 sib dos2~ |
-  dos2 r | \bar "||" #(if (= particle 1) jump "") % 65
+  dos2 r | #(if (= particle 1) jump "") % 65
   re4 do8 sib do8 re mib do |
   re4( fa) sol2 |
   fa8 mib re do re mib fa re |
@@ -67,14 +67,14 @@ alto_music = \relative do' {
   re2 sib |
   do8( re) mib fa do( re) mib do |
   re4( do) re2~ |
-  re2 r4 r8 re | \bar "||" #(if (= particle 1) jump "") % 74
+  re2 r4 r8 re | #(if (= particle 1) jump "") % 74
   re4. re8 re4 re |
   mi2. r8 mi8 |
   do4. re8 mi4 fa |
   sol2. r4 |
   fa4. mi8 re4. do8 |
   sib4 sib dos2~ |
-  dos2 r | \bar "||" #(if (= particle 1) jump "") % 81
+  dos2 r | #(if (= particle 1) jump "") % 81
   re4 do8 sib do8 re mib do |
   re4( fa) sol2 |
   fa8( mib) re( do) re8( mib) fa re |
@@ -83,7 +83,7 @@ alto_music = \relative do' {
   re8 re re4 sib2 |
   do8 re mib fa do re mib do |
   re4( do) re2~ |
-  re2 r4 r8 re | \bar "||" #(if (= particle 1) jump "") % 90
+  re2 r4 r8 re | #(if (= particle 1) jump "") % 90
   re4. re8 re4 re |
   mi2. r8 mi8 |
   do4. re8 mi4 fa |
@@ -91,8 +91,6 @@ alto_music = \relative do' {
   fa4. mi8 re4. do8 |
   sib4 sib dos2~ |
   dos1 |
-
-  \bar "|."
 }
 
 alto_lyrics = \lyricmode {

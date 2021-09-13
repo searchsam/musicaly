@@ -1,61 +1,59 @@
 soprano_music_a = \relative do' {
   \compressEmptyMeasures
 
-  R1*4 | \bar "||" #(if (= particle 1) jump "") % 4
-  re4^\markup{ \italic "Solo" } mi fa2 |
+  R1*4 | #(if (= particle 1) jump "") % 4
+  re4^\markup{ \italic "Solo Mezzosoprano" } mi fa2 |
   sol4 fa8 mi re2 |
   fa4 mi8 re do4 re4~ |
-  re2 r | \bar "||" #(if (= particle 1) jump "") % 8
+  re2 r | #(if (= particle 1) jump "") % 8
   re4^\markup{ \italic "Todos" } mi fa2 |
   sol4 fa8 mi re2 |
   fa4 mi8 re do4 re4~ |
-  re2 r | \bar "||" #(if (= particle 1) jump "") % 12
-  fa8^\markup{ "Estrofa I" \italic "Solo" } sol la la la la la4 |
+  re2 r | #(if (= particle 1) jump "") % 12
+  fa8^\markup{ "Estrofa I" \italic "Solo Mezzosoprano" } sol la la la la la4 |
   \tuplet 3/2 {la8 fa sol} la4 la r |
   la8( sol) fa4 fa8 fa fa fa |
-  fa fa fa mi re2 \breathe | \bar "||" #(if (= particle 1) jump "")
+  fa fa fa mi re2 \breathe | #(if (= particle 1) jump "")
   re4^\markup{ \italic "Todos" } mi fa2 |
   sol4 fa8 mi re2 |
   fa4 mi8 re do4 re4~ |
-  re2 r | \bar "||" #(if (= particle 1) jump "") % 20
-  fa8^\markup{ "Estrofa II" \italic "Solo" } sol la la4. la8 la |
+  re2 r | #(if (= particle 1) jump "") % 20
+  fa8^\markup{ "Estrofa II" \italic "Solo Mezzosoprano" } sol la la4. la8 la |
   \tuplet 3/2 {la8 fa sol} la4 la r |
   la8 sol fa4. fa4. |
   fa8( mi) re4 re r | #(if (= particle 1) jump "") %24
   do8( re) mi mi4 mi8 mi mi |
   \tuplet 3/2 { mi4 re8 } fa4 fa r |
   re4 sib8 la la2 |
-  sib4 do re4 re \breathe | \bar "||" #(if (= particle 1) jump "") %28
+  sib4 do re4 re \breathe | #(if (= particle 1) jump "") %28
   re4^\markup{ \italic "Todos" } mi fa2 |
   sol4 fa8 mi re2 |
   fa4 mi8 re do4 re4~ |
-  re2 r | \bar "||" #(if (= particle 1) jump "") % 32
-  fa8(^\markup{ "Estrofa III" \italic "Solo" } sol) la la4 la8 la la |
+  re2 r | #(if (= particle 1) jump "") % 32
+  fa8(^\markup{ "Estrofa III" \italic "Solo Mezzosoprano" } sol) la la4 la8 la la |
   \tuplet 3/2 {la8 fa sol} la2 r4 |
   la8( sol) fa4 fa4 fa8 fa |
   fa8 mi re4 re r | #(if (= particle 1) jump "") % 36
   do8( re) mi mi mi mi mi mi |
   \tuplet 3/2 { mi4 re8 } fa4 fa r |
   re8 sib la4. la |
-  sib4( do) re re \breathe | \bar "||" #(if (= particle 1) jump "") % 40
+  sib4( do) re re \breathe | #(if (= particle 1) jump "") % 40
   re4^\markup{ \italic "Todos" } mi fa2 |
   sol4 fa8 mi re2 |
   fa4 mi8 re do4 re4~ |
-  re2 r | \bar "||" #(if (= particle 1) jump "") % 44
-  fa8^\markup{ "Estrofa III" \italic "Solo" } sol la la la la la la |
+  re2 r | #(if (= particle 1) jump "") % 44
+  fa8^\markup{ "Estrofa IV" \italic "Solo Mezzosoprano" } sol la la la la la la |
   la la \tuplet 3/2 {la8 fa sol} la4 la |
   la8( sol) fa4. fa8 fa fa |
   fa8 mi re4 re r | #(if (= particle 1) jump "") % 48
   do8 re mi mi mi mi mi mi |
   \tuplet 3/2 { mi4 re8 } fa2 r4 |
   re8( sib) la4 la4. la8 |
-  sib4 do re2 \breathe | \bar "||" #(if (= particle 1) jump "") % 52
+  sib4 do re2 \breathe | #(if (= particle 1) jump "") % 52
   re4^\markup{ \italic "Todos" } mi fa2 |
   sol4 fa8 mi re2 |
   fa4 mi8 re do4 re4~ |
   re2 r |
-
-  \bar "|."
 }
 
 soprano_lyrics_a = \lyricmode {
@@ -92,45 +90,43 @@ soprano_lyrics_a = \lyricmode {
 soprano_music_b = \relative do' {
   \compressEmptyMeasures
 
-  R1*4 | \bar "||" #(if (= particle 1) jump "") % 4
-  re4^\markup{ \italic "Solo" } mi fa2 |
+  R1*4 | #(if (= particle 1) jump "") % 4
+  re4^\markup{ \italic "Solo Mezzosoprano" } mi fa2 |
   sol4 fa8 mi re4 re |
   fa4 mi8 re do4( re4~ |
-  re2) r | \bar "||" #(if (= particle 1) jump "") % 8
+  re2) r | #(if (= particle 1) jump "") % 8
   re4^\markup{ \italic "Todos" } mi fa2 |
   sol4 fa8 mi re4 re |
   fa4 mi8 re do4( re4~ |
-  re2) r | \bar "||" #(if (= particle 1) jump "") % 12
-  fa8^\markup{ "Estrofa I" \italic "Solo" } sol la la la la la la |
+  re2) r | #(if (= particle 1) jump "") % 12
+  fa8^\markup{ "Estrofa I" \italic "Solo Mezzosoprano" } sol la la la la la la |
   \tuplet 3/2 {la8 fa sol} la2 r4 |
   la8 sol fa4 fa8 fa fa fa |
-  fa fa fa mi re2 \breathe | \bar "||" #(if (= particle 1) jump "") % 16
+  fa fa fa mi re2 \breathe | #(if (= particle 1) jump "") % 16
   re4^\markup{ \italic "Todos" } mi fa2 |
   sol4 fa8 mi re4 re |
   fa4 mi8 re do4( re4~ |
-  re2) r | \bar "||" #(if (= particle 1) jump "") % 20
-  fa8^\markup{ "Estrofa II" \italic "Solo" } sol la la la la la la |
+  re2) r | #(if (= particle 1) jump "") % 20
+  fa8^\markup{ "Estrofa II" \italic "Solo Mezzosoprano" } sol la la la la la la |
   \tuplet 3/2 {la8 fa sol} la4 la r |
   la8 sol fa fa fa4 fa |
   fa8 mi re4 re r | #(if (= particle 1) jump "") % 24
   re8( sib) la4. la8 la la |
-  sib4( do) re2 \breathe | \bar "||" #(if (= particle 1) jump "") % 26
+  sib4( do) re2 \breathe | #(if (= particle 1) jump "") % 26
   re4^\markup{ \italic "Todos" } mi fa2 |
   sol4 fa8 mi re4 re |
   fa4 mi8 re do4( re4~ |
-  re2) r | \bar "||" #(if (= particle 1) jump "") % 30
-  fa8^\markup{ "Estrofa III" \italic "Solo" } sol la la la la la4 |
+  re2) r | #(if (= particle 1) jump "") % 30
+  fa8^\markup{ "Estrofa III" \italic "Solo Mezzosoprano" } sol la la la la la4 |
   \tuplet 3/2 {la8( fa) sol} la4 la r |
   la8 sol fa fa fa fa fa fa |
   fa8 mi re4 re r | #(if (= particle 1) jump "") % 34
   re8( sib) la4 la8 la la la |
-  sib4 do re2 \breathe | \bar "||" #(if (= particle 1) jump "") % 36
+  sib4 do re2 \breathe | #(if (= particle 1) jump "") % 36
   re4^\markup{ \italic "Todos" } mi fa2 |
   sol4 fa8 mi re4 re |
   fa4 mi8 re do4( re4~ |
   re2) r |
-
-  \bar "|."
 }
 
 soprano_lyrics_b = \lyricmode {
@@ -158,28 +154,28 @@ soprano_lyrics_b = \lyricmode {
 soprano_music_c = \relative do' {
   \compressEmptyMeasures
 
-  R1*4 | \bar "||" #(if (= particle 1) jump "") % 4
-  re4^\markup{ \italic "Solo" } mi8 mi fa4 fa |
+  R1*4 | #(if (= particle 1) jump "") % 4
+  re4^\markup{ \italic "Solo Mezzosoprano" } mi8 mi fa4 fa |
   sol4( fa8) mi re4 re |
   fa4( mi8) re do4( re4~ |
-  re2) r | \bar "||" #(if (= particle 1) jump "") % 8
+  re2) r | #(if (= particle 1) jump "") % 8
   re4^\markup{ \italic "Todos" } mi8 mi fa4 fa |
   sol4( fa8) mi re4 re |
   fa4( mi8) re do4( re4~ |
-  re2) r | \bar "||" #(if (= particle 1) jump "") % 12
-  fa8^\markup{ "Estrofa I" \italic "Solo" } sol la la4. la8 la |
+  re2) r | #(if (= particle 1) jump "") % 12
+  fa8^\markup{ "Estrofa I" \italic "Solo Mezzosoprano" } sol la la4. la8 la |
   \tuplet 3/2 {la8( fa) sol} la4 la r |
   la8( sol) fa4 fa8 fa fa fa |
   fa8 mi re2 r4 | #(if (= particle 1) jump "") % 16
   do8 re mi4. mi8 mi mi |
   \tuplet 3/2 { mi4 re8 } fa2 r4 |
   re4 do8 la la2 |
-  sib4 do re4 re \breathe | \bar "||" #(if (= particle 1) jump "") % 20
+  sib4 do re4 re \breathe | #(if (= particle 1) jump "") % 20
   re4^\markup{ \italic "Todos" } mi8 mi fa4 fa |
   sol4( fa8) mi re4 re |
   fa4( mi8) re do4( re4~ |
-  re2) r | \bar "||" #(if (= particle 1) jump "") % 24
-  fa8(^\markup{ "Estrofa II" \italic "Solo" } sol) la4 la la |
+  re2) r | #(if (= particle 1) jump "") % 24
+  fa8(^\markup{ "Estrofa II" \italic "Solo Mezzosoprano" } sol) la4 la la |
   \tuplet 3/2 {la8( fa sol)} la4 la r |
   la4( sol8) fa4 fa4. |
   fa8 mi re2 r4 | #(if (= particle 1) jump "") % 28
@@ -190,13 +186,11 @@ soprano_music_c = \relative do' {
   la16( sol) fa8 fa16 fa fa8 \tuplet 3/2 {fa8 fa fa} fa fa |
   fa8 mi re4 re r |
   re8 sib la la2 la8 |
-  sib4 do re2 | \bar "||" #(if (= particle 1) jump "") % 36
+  sib4 do re2 \breathe | #(if (= particle 1) jump "") % 36
   re4^\markup{ \italic "Todos" } mi8 mi fa4 fa |
   sol4( fa8) mi re4 re |
   fa4( mi8) re do4( re4~ |
   re2) r |
-
-  \bar "|."
 }
 
 soprano_lyrics_c = \lyricmode {

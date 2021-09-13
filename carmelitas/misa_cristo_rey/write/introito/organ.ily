@@ -49,12 +49,12 @@ notes_soproano = \relative do' {
   fa2 re2 |
   mi2 fa |
   mi2 re |
-  mi2 do | #(if (= particle 1) "" jump) % 53
+  mi2 do |
   fa2 re2 |
   mi2 fa |
   mi2 re |
   mi2 do |
-  fa1~ | #(if (= particle 1) "" jump) % 58
+  fa1~ |
   fa2 re2 |
   mi2 fa |
   mi2 re |
@@ -156,8 +156,6 @@ notes_alto = \relative do' {
   re1 | #(if (= particle 1) "" jump) % 77
   do1 |
   re1 |
-
-  \bar "|."
 }
 
 notes_tenor = \relative do {
