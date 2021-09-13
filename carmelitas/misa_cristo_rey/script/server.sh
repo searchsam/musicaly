@@ -15,7 +15,7 @@ echo "==> Compiling PDF book..."
 compile_pdf() {
     cd book
     readarray -d . -t strarr <<<"$1"
-    name="${strarr[0]}"}
+    name="${strarr[0]}"
     rm -rf out/
     lilypond-book --output=out --pdf $1
     cd out
@@ -63,8 +63,9 @@ if [ ${#files[@]} -gt 1 ]; then
 
         compile_pdf $file_name
         if [[ $file_name == *"moderna"* ]]; then
-            compile_audio "ordinario"
-            compile_audio "propio"
+            for dir in write/*/; do
+                compile_audio $dir
+            done
         fi
     done
 fi

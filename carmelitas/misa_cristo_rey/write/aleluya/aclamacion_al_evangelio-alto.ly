@@ -33,9 +33,8 @@ jump = \break
 \score {
   <<
     \new Staff <<
-      \set Staff.midiInstrument = #"oboe"
+      \set Staff.midiInstrument = #"choir aahs"
       \set Staff.midiMaximumVolume = #1.5
-
       \new Voice = "contralto" <<
         \global \alto_music
       >>

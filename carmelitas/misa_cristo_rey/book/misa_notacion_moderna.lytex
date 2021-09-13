@@ -222,18 +222,18 @@
     \end{tabular}\\
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/señor_ten_piedad.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/kyrie/señor_ten_piedad.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/señor_ten_piedad-soprano.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/kyrie/señor_ten_piedad-soprano.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/señor_ten_piedad-contralto.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/kyrie/señor_ten_piedad-alto.ly"
     \end{lilypond}
     \clearpage
 
@@ -278,18 +278,18 @@
     Am\'en.
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/gloria_a_dios.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/gloria/gloria_a_dios.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/gloria_a_dios-soprano.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/gloria/gloria_a_dios-soprano.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/gloria_a_dios-contralto.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/gloria/gloria_a_dios-alto.ly"
     \end{lilypond}
     \clearpage
 
@@ -333,18 +333,18 @@
     Am\'en.
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/creo_en_dios.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/credo/creo_en_dios.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/creo_en_dios-soprano.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/credo/creo_en_dios-soprano.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/creo_en_dios-contralto.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/credo/creo_en_dios-alto.ly"
     \end{lilypond}
 
     \newpage
@@ -375,18 +375,18 @@
     Hosana, hosana, en el cielo.
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/santo.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/sanctus/santo.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/santo-soprano.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/sanctus/santo-soprano.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/santo-contralto.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/sanctus/santo-alto.ly"
     \end{lilypond}
     \clearpage
 
@@ -421,18 +421,18 @@
     \end{tabular}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/cordero_de_dios.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/agnus/cordero_de_dios.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/cordero_de_dios-soprano.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/agnus/cordero_de_dios-soprano.ly"
     \end{lilypond}
     \clearpage
 
     \begin{lilypond}[staffsize=18]
-        \include "../ordinario/cordero_de_dios-contralto.ly"
+        \include "../write/agnus/cordero_de_dios-alto.ly"
     \end{lilypond}
     \clearpage
 
@@ -511,18 +511,18 @@
     Am\'en.
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/entrada.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/introito/entrada.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/entrada-soprano.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/introito/entrada-soprano.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/entrada-contralto.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/introito/entrada-alto.ly"
     \end{lilypond}
     \clearpage
 
@@ -579,13 +579,13 @@
     El Se\~nor es mi pastor, nada me falta.
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/salmo_responsorial_ciclo_A.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/graduale/salmo_responsorial_ciclo_A.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/salmo_responsorial_ciclo_A-solo.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/graduale/salmo_responsorial_ciclo_A-solo.ly"
     \end{lilypond}
     \clearpage
 
@@ -623,13 +623,13 @@
     El Se\~nor reina, vestido de majestad.
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/salmo_responsorial_ciclo_B.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/graduale/salmo_responsorial_ciclo_B.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/salmo_responsorial_ciclo_B-solo.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/graduale/salmo_responsorial_ciclo_B-solo.ly"
     \end{lilypond}
     \clearpage
 
@@ -664,13 +664,13 @@
     Vamos alegres a la casa del Se\~nor.
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/salmo_responsorial_ciclo_C.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/graduale/salmo_responsorial_ciclo_C.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/salmo_responsorial_ciclo_C-solo.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/graduale/salmo_responsorial_ciclo_C-solo.ly"
     \end{lilypond}
     \clearpage
 
@@ -698,18 +698,18 @@
     Aleluya, aleluya, aleluya.
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/aclamacion_al_evangelio.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/aleluya/aclamacion_al_evangelio.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/aclamacion_al_evangelio-soprano.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/aleluya/aclamacion_al_evangelio-soprano.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/aclamacion_al_evangelio-contralto.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/aleluya/aclamacion_al_evangelio-alto.ly"
     \end{lilypond}
     \clearpage
 
@@ -778,18 +778,18 @@
     Sagrario del Altar, Sagrario del Altar, nido de tu tierno amor.
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/ofertorio.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/offertorium/ofertorio.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/ofertorio-soprano.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/offertorium/ofertorio-soprano.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/ofertorio-contralto.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/offertorium/ofertorio-alto.ly"
     \end{lilypond}
     \clearpage
 
@@ -835,18 +835,18 @@
     Am\'en.
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/comunion.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/communio/comunion.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/comunion-soprano.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/communio/comunion-soprano.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/comunion-contralto.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/communio/comunion-alto.ly"
     \end{lilypond}
     \clearpage
 
@@ -917,18 +917,18 @@
     los pueblos te alabaran por los siglos!
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/final.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/finalis/final.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/final-soprano.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/finalis/final-soprano.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/final-contralto.ly"
+    \begin{lilypond}[staffsize=19]
+        \include "../write/finalis/final-alto.ly"
     \end{lilypond}
     \clearpage
 \end{document}

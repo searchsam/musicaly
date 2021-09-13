@@ -35,7 +35,6 @@ jump = \break
     \new Staff <<
       \set Staff.midiInstrument = #"choir aahs"
       \set Staff.midiMaximumVolume = #1.5
-
       \new Voice = "soprano" <<
         \global \soprano_music
       >>

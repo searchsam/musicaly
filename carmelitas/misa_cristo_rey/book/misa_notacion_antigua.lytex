@@ -227,7 +227,7 @@
     \clearpage
 
     \begin{lilypond}%[staffsize=19]
-        \include "../ordinario/kyrie_eleison.ly"
+        \include "../write/kyrie/kyrie_eleison.ly"
     \end{lilypond}
     \clearpage
 
@@ -273,7 +273,7 @@
     \clearpage
 
     \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/gloria_in_excelsis_deo.ly"
+        \include "../write/gloria/gloria_in_excelsis_deo.ly"
     \end{lilypond}
     \clearpage
 
@@ -318,7 +318,7 @@
     \clearpage
 
     \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/credo.ly"
+        \include "../write/credo/credo.ly"
     \end{lilypond}
     \clearpage
 
@@ -349,7 +349,7 @@
     \clearpage
 
     \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/sanctus.ly"
+        \include "../write/sanctus/sanctus.ly"
     \end{lilypond}
     \clearpage
 
@@ -385,7 +385,7 @@
     \clearpage
 
     \begin{lilypond}%[staffsize=20]
-        \include "../ordinario/agnus_dei.ly"
+        \include "../write/agnus/agnus_dei.ly"
     \end{lilypond}
     \clearpage
 
@@ -466,8 +466,8 @@
     Am\'en.
     \clearpage
 
-    \begin{lilypond}%[staffsize=20]
-        \include "../propio/introito.ly"
+    \begin{lilypond}%[staffsize=19]
+        \include "../write/introito/introito.ly"
     \end{lilypond}
     \clearpage
 
@@ -590,7 +590,7 @@
     \clearpage
 
     \begin{lilypond}%[staffsize=20]
-        \include "../cantillatio/graduale.ly"
+        \include "../write/graduale/graduale.ly"
     \end{lilypond}
     \clearpage
 
@@ -619,7 +619,7 @@
     \clearpage
 
     \begin{lilypond}%[staffsize=20]
-        \include "../cantillatio/aleluya.ly"
+        \include "../write/aleluya/aleluya.ly"
     \end{lilypond}
     \clearpage
 
@@ -689,7 +689,7 @@
     \clearpage
 
     \begin{lilypond}%[staffsize=20]
-        \include "../propio/offertorium.ly"
+        \include "../write/offertorium/offertorium.ly"
     \end{lilypond}
     \clearpage
 
@@ -736,7 +736,7 @@
     \clearpage
 
     \begin{lilypond}%[staffsize=20]
-        \include "../propio/communio.ly"
+        \include "../write/communio/communio.ly"
     \end{lilypond}
     \clearpage
 
@@ -808,7 +808,7 @@
     \clearpage
 
     \begin{lilypond}%[staffsize=20]
-        \include "../propio/finalis.ly"
+        \include "../write/finalis/finalis.ly"
     \end{lilypond}
     \clearpage
 \end{document}
