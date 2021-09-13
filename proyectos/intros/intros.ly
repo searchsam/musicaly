@@ -1,5 +1,5 @@
 \language "espanol"
-\version "2.19.82"
+\version "2.23.2"
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #8 \smallCaps "intros" \fontsize #2 "Boda Juan Pablo y Elizabeth" } } }
@@ -7,7 +7,7 @@
 \markup { \fill-line { " " \center-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 

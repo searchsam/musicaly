@@ -4,7 +4,7 @@
 % Bendita eres tú, María - María Paloma Incorrupta
 % ****************************************************************
 \language "espanol"
-\version "2.19.80"
+\version "2.23.2"
 
 global = { \key do \major \time 4/4 \tempo "Allegro" 4 = 100 s1*62 }
 

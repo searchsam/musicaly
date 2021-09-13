@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.32"
+\version "2.23.2"
 
 % --- Includes
 %\include "o_vos_omnes.ily"
@@ -19,7 +19,7 @@ global = { \key sol \major \time 4/4 s1*68 \bar "|." }
 \markup { \fill-line { \center-column { \fontsize #2 "Arreglo Pbro Angel Torrellas" } \center-column { \fontsize #2 "Tomas Luis de Victoria" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 

@@ -1,7 +1,7 @@
 % Created on Mon Aug 29 16:03:40 CST 2011
 % by serach.sam@
 
-\version "2.19.49"
+\version "2.23.2"
 
 \header {
 	title = \markup { \center-align { " " \caps "Amen" } }
@@ -9,7 +9,7 @@
 	instrument = \markup { \smallCaps "CORO" }
 	composer =  \markup { \center-column { "G. F. Händel" } }
 	copyright = "Creative Commons Attribution 3.0" 
- 	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+ 	tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  	breakbefore = ##t
 }
 	

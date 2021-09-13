@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.83"
+\version "2.23.2"
 
 %#(set-global-staff-size 22)
 
@@ -55,7 +55,7 @@ armonia_antifona = \new ChordNames {
 % --- Musica
 estrofaUno = \relative do' {
     \key mi \minor
-    \compressFullBarRests
+    \compressEmptyMeasures
     \dynamicUp
     
     si4 si si si si si mi2( fas sol fas) \divisioMinima mi4 mi mi2( fas) mi \divisioMaior \break
@@ -88,7 +88,7 @@ armonia_estrofaUno = \new ChordNames {
 % --- Musica
 estrofaDos = \relative do' {
     \key mi \minor
-    \compressFullBarRests
+    \compressEmptyMeasures
     \dynamicUp
     
     si4 si si si si mi2( fas sol) fas \divisioMinima mi4 mi mi2( fas) mi \divisioMaior \break
@@ -121,7 +121,7 @@ armonia_estrofaDos = \new ChordNames {
 % --- Musica
 estrofaTres = \relative do' {
     \key mi \minor
-    \compressFullBarRests
+    \compressEmptyMeasures
     \dynamicUp
     
     si4 si si si mi2( fas sol) fas \divisioMinima mi4 mi2( fas) mi \divisioMaior \break
@@ -154,7 +154,7 @@ armonia_estrofaTres = \new ChordNames {
 % --- Musica
 estrofaCuatro = \relative do' {
     \key re \minor
-    \compressFullBarRests
+    \compressEmptyMeasures
     \dynamicUp
     
     la4 la la la la re2( mi fa) mi \divisioMinima re4 re re2( mi re) \divisioMaior \break

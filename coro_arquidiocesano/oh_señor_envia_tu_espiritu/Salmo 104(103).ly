@@ -1,13 +1,13 @@
 % Created on Sun Apr 17 21:45:44 CST 2011
 % by search.sam@
 
-\version "2.14.2"
+\version "2.23.2"
 
 \header {
 	title = \markup { \caps "Oh Señor envia tu Espiritu" }
 	subtitle = "Salmo 104(103)"
 	composer = "Pbro. Lucien Deiss"
-	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+	tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
 }
 
 senyorA = \new Staff {

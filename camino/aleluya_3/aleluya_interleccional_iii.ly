@@ -1,7 +1,7 @@
 % Created on Mon Aug 29 16:03:40 CST 2011
 % by serach.sam@
 
-\version "2.19.80"
+\version "2.23.2"
 %#(set-global-staff-size 18)
 
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Aleluya Interleccional" \fontsize #3 "Modelo III" } } }
@@ -31,7 +31,7 @@ global = {
 
 flute = \relative c' {
   \set Staff.midiInstrument = "flute"
-  \compressFullBarRests
+  \compressEmptyMeasures
   \dynamicUp
   % Music follows here.
   e4.^\markup { \small Introducción } g8 b8 a8 b8 a8 |

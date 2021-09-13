@@ -1,5 +1,5 @@
 \language "espanol"
-\version "2.19.80"
+\version "2.23.2"
 
 global = {
     \tempo "Allegro" 4 = 110
@@ -11,7 +11,7 @@ global = {
 
 % --- Musica
 melodia = \relative do'' {
-  \compressFullBarRests
+  \compressEmptyMeasures
   \dynamicUp
   %Escribir la musica aqui...
   la8 do re mi re4 re8 do si la( sol) la~ | %01

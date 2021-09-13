@@ -1,14 +1,14 @@
 %% Departure
 
 \language "espanol"
-\version "2.19.49"
+\version "2.23.2"
 
 %#(set-global-staff-size 20)
 
 \markup { \fill-line { \center-column { \fontsize #5 "Rurouni Kenshin - Deperture" \fontsize #2 "The Original Soundtrack II"} } }
 \header {
   copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 

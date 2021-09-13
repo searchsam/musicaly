@@ -4,7 +4,7 @@
 % Bendita eres tú, María - María Paloma Incorrupta
 % ****************************************************************
 \language "espanol"
-\version "2.19.80"
+\version "2.23.2"
 
 \include "funciones.ily"
 

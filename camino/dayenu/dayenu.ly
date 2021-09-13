@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.80"
+\version "2.23.2"
 
 % --- Includes
 %\include "texto.ily"
@@ -27,7 +27,7 @@ global = {  \tempo "Allegro" 4 = 120 \clef treble \key mi \minor \time 2/4 s2*8 
 
 % --- Musica
 instrumento = \relative do'' {
-  %\compressFullBarRests
+  %\compressEmptyMeasures
   %Escribir la musica aqui...
   si4 si	| %1
   do8 do do do	| %2

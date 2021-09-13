@@ -1,5 +1,5 @@
 \language "espanol"
-\version "2.19.28"
+\version "2.23.2"
 
 % --- Includes
 \include "flauta.ily"
@@ -20,7 +20,7 @@
 \markup { \fill-line { " " \center-column { \fontsize #2 "Alajandro Vega Matus" \small "Arreglo Edwin Torres" } } }
 \header {
 copyright = "Creative Commons Attribution 3.0" 
-tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
 breakbefore = ##t
 }
 

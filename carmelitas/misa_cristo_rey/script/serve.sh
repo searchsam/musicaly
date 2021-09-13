@@ -60,8 +60,8 @@ if [ ${#files[@]} -gt 1 ]; then
     for file in $compile_dir; do
         readarray -d / -t strarr <<<"$file"
         file_name="${strarr[-1]}"
-
         compile_pdf $file_name
+
         if [[ $file_name == *"moderna"* ]]; then
             for dir in write/*/; do
                 compile_audio $dir

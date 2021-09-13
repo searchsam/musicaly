@@ -3,13 +3,13 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.61"
+\version "2.23.2"
 
 % --- Musica
 antifona = \relative do' {
     \tempo 4 = 80
     \key sol \minor
-    \compressFullBarRests
+    \compressEmptyMeasures
     \dynamicUp
     \clef "G_8"
     

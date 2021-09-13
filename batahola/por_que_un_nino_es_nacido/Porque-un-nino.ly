@@ -1,7 +1,7 @@
 % Created on Mon Aug 29 16:03:40 CST 2011
 % by serach.sam@
 
-\version "2.16.1"
+\version "2.23.2"
 #(set-global-staff-size 18)
 
 \markup { \fill-line { \center-column { \fontsize #5 "Por que un niño es nacido" \fontsize #3 \caps "tenor" } } }
@@ -9,7 +9,7 @@
 
 \header {
  copyright = "Creative Commons Attribution 3.0" 
- tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+ tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  breakbefore = ##t
 }
 
@@ -31,7 +31,7 @@ global = {
 
 tenorVoice = \relative c' {
   \set Staff.midiInstrument = "choir aahs"
-  \compressFullBarRests
+  \compressEmptyMeasures
   \dynamicUp
   % Music follows here.
   R1*11 |
@@ -130,7 +130,7 @@ verse = \lyricmode {
   \midi {
     \context {
       \Score
-      tempoWholesPerMinute = #(ly:make-moment 100 4)
+      tempoWholesPerMinute = #(ly:make-moment 100/4)
     }
   }
 }

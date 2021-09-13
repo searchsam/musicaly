@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.32"
+\version "2.23.2"
 
 \include "gregorian.ly"
 \include "plegaria.ily"
@@ -19,7 +19,7 @@ global = { \tempo "Moderato" 4 = 100 \key la \minor \time 2/4 s2*20 \bar "|." }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Argüello" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 

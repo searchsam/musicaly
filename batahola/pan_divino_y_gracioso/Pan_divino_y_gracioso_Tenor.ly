@@ -4,7 +4,7 @@
 % Pan divino y gacioso - Tenor
 % ****************************************************************
 \language "espanol"
-\version "2.18.0"
+\version "2.23.2"
 
 #(set-global-staff-size 26)
 \markup { \fill-line { \center-column { \fontsize #5 "Pan divino y gracioso" \fontsize #3 \caps "tenor" } } }
@@ -12,7 +12,7 @@
 
 \header {
   copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
@@ -20,7 +20,7 @@ global = { \key mi \major \time 2/2 \tempo "Moderato" 4 = 90 s1*39 \bar "|." }
 
 tenor = \relative do'' {
   \dynamicUp
-  \compressFullBarRests
+  \compressEmptyMeasures
   % Type notes here 
   mi2.\p\< mi4 | %1
   mi2\! la,4 si4\> | %2

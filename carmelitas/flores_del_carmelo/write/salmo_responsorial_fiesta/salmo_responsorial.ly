@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.82"
+\version "2.23.2"
 
 % --- includes
 %\include "gregorian.ly"
@@ -18,7 +18,7 @@
 \header {
   dedication = "Consagración Itxia del Niño Jesús - Carmelitas Descalzas Managua"
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 

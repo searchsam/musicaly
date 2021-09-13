@@ -6,12 +6,12 @@
 \include "viola.ily"
 \include "cello.ily"
 \include "solo.ily"
-\version "2.12.3"
+\version "2.23.2"
 
 #(set-default-paper-size "letter" )
 %#(set-global-staff-size 17)
 
-global = { \tempo "Andantino" 4=90 \time 4/4 s1*26 \bar "|." \override Score.RehearsalMark #'self-alignment-X = #RIGHT \mark "D.C." } 
+global = { \tempo "Andantino" 4=90 \time 4/4 s1*26 \bar "|." \override Score.RehearsalMark.self-alignment-X = #RIGHT \mark "D.C." } 
 
 \book { 
   \bookpart{

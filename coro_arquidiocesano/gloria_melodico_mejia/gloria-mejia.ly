@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.49"
+\version "2.23.2"
 
 #(set-global-staff-size 22)
 
@@ -29,13 +29,13 @@ global = {
 \markup { \fill-line { " " \fontsize #2 "Armonizacion: Francisco Jarquín Vega"  } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t 
 }
 
 % --- Musica
 tenor = \relative do' {
-  \compressFullBarRests
+  \compressEmptyMeasures
   \dynamicUp
   \clef	"G_8"
   re4\segno re re do	        | %1

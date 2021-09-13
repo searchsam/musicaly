@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.18.0"
+\version "2.23.2"
 
 % --- Tamaño del pentagrama
 #(set-global-staff-size 25)
@@ -16,13 +16,13 @@ global = {  \clef treble \key do \major \time 4/4 s1*8 \bar "|." }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Red Hot ChiliPappers" } } }
 \header {
   %copyright = \markup { \general-align #Y #DOWN { \epsfile #X #10 #"gg.eps" } }
-  tagline = \markup { \general-align #Y #DOWN { \epsfile #X #5 #"gg.eps" } -  \with-url #"http://lilypond.org/web/" { All about \italic { ~music~ } \bold { Nicaragua } } }
+  tagline = \markup { \general-align #Y #DOWN { \epsfile #X #5 #"gg.eps" } -  \with-url "http://lilypond.org/web/" { All about \italic { ~music~ } \bold { Nicaragua } } }
   breakbefore = ##t
 }
 
 % --- Musica
 instrumento = \relative do'' {
-  %\compressFullBarRests
+  %\compressEmptyMeasures
   %Escribir la musica aqui...
   r4 mi8 mi( mi4) re 		| %1
   do4( re8 do~ do4) do8 do 	| %2

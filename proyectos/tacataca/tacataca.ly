@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.46"
+\version "2.23.2"
 
 %#(set-global-staff-size 22)
 
@@ -21,7 +21,7 @@ global = {
 \markup { \fill-line { \center-column { \fontsize #2 " " } \center-column { \fontsize #2 "Luis Gutierrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 

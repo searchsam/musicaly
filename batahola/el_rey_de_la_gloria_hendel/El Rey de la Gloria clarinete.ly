@@ -1,7 +1,7 @@
 % Created on Thu Feb 10 16:33:41 CST 2011
 % by search.sam@
 
-\version "2.12.3"
+\version "2.23.2"
 #(set-global-staff-size 19)
 
 \header {
@@ -18,7 +18,7 @@ staffClarineteEnSiB = \new Staff {
 	%\set Staff.instrumentName = "Clarinete en Si b"
 	\set Staff.midiInstrument = "clarinet"
 	\set Score.skipBars = ##t
-	%#(set-accidental-style 'default) 
+	%\accidentalStyle default 
 	\key g \major
 	\clef treble
 	\transpose f g 

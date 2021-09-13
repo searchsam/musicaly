@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.80"
+\version "2.23.2"
 
 % --- Tamaño del pentagrama
 #(set-global-staff-size 25)
@@ -23,7 +23,7 @@ global = {  \tempo "Moderato" 4 = 90 \key mi \minor \time 2/4 s4 s2*12 \bar "|."
 
 % --- Musica
 instrumento = \relative do'' {
-  %\compressFullBarRests
+  %\compressEmptyMeasures
   %Escribir la musica aqui...
   \partial 4 sol8. fas16	| %1
   mi2				| %2

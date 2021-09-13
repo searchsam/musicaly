@@ -1,7 +1,7 @@
 % Created on Mon Aug 29 16:03:40 CST 2011
 % by serach.sam@
 
-\version "2.19.80"
+\version "2.23.2"
 %#(set-global-staff-size 18)
 
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "El Sembrador" \fontsize #3 "Marcos 4, 3ss" } } }
@@ -53,7 +53,7 @@ global = {
 
 flute = \relative c'' {
   \set Staff.midiInstrument = "oboe"
-  \compressFullBarRests
+  \compressEmptyMeasures
   \dynamicUp
   % Music follows here.
   a8.^\markup { \small Introducción } a16 bes8 a4 g8 |

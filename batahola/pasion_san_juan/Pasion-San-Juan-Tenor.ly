@@ -4,7 +4,7 @@
 % La Pasion segun San Juan - Tenor
 % ****************************************************************
 \language "espanol"
-\version "2.19.32"
+\version "2.23.2"
 
 \include "tenor.ily"
 
@@ -14,7 +14,7 @@
 \markup { \fill-line { " " \center-column { \fontsize #2 "Tomás Luis de Victoria" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 

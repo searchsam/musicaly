@@ -1,7 +1,7 @@
 %% Acuerdate de Jesucristo
 
 \language "espanol"
-\version "2.19.80"
+\version "2.23.2"
 
 #(set-global-staff-size 22)
 

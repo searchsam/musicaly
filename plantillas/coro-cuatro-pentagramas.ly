@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.80"
+\version "2.23.2"
 
 \markup { \fill-line { \center-column { \fontsize #5 "Adoración de la Cruz" \fontsize #3 \caps "SubTitulo"} } }
 \markup { \fill-line { " " \center-column { \fontsize #2 "Tomas Luis de Victoria" } } }

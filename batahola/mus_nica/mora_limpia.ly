@@ -7,7 +7,7 @@
 %                               		%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\version "2.12.3"
+\version "2.23.2"
 
 mora = \relative c'' {
   \set Score.skipBars = ##t
@@ -30,11 +30,11 @@ mora = \relative c'' {
   c4. r4. |%16
   a'4 r8 a4 r8 |%17
   a4 r r |%18
-  \bar "|:" R2. |%19
+  \bar ".|:" R2. |%19
   \time 3/4 R2. |%20
   \time 6/8 <<d8b>> <<d4b>> <<f'8d>> <<f4d>> |%21
-  <<e2.c>> \bar ":|"%22 
-  g8 r f r e r \mark \markup { \musicglyph #"scripts.segno" } |%23
+  <<e2.c>> \bar ":|."%22 
+  g8 r f r e r \mark \markup { \musicglyph "scripts.segno" } |%23
   g r b, r d r |%24
   e4. r8 e'16 (f e f |%26
   e4.) r8 e16 (f e f |%27

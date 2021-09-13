@@ -4,7 +4,7 @@
 % Descripcion
 % ****************************************************************
 \language "espanol"
-\version "2.18.0"
+\version "2.23.2"
 
 \include "fragmentos.ily"
 #(set-global-staff-size 27)
@@ -12,7 +12,7 @@
 \markup { \fill-line { \center-column { \fontsize #5 "Ejercicios de Ritmo"  } } }
 \header {
   copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 

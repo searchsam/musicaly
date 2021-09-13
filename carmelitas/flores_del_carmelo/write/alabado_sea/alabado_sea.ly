@@ -1,7 +1,7 @@
 % Salmo 136, en honor a la eleccion de lorena del amor de Dios como madre
 %priora del monasterio maria madre de misericordia y san jose, managua.
 \language "espanol"
-\version "2.19.82"
+\version "2.23.2"
 
 %#(set-global-staff-size 22)
 
@@ -11,7 +11,7 @@
 \header {
   dedication = "Dedicado a la Hna. Lorena del Amor de Dios - Carmelitas Descalzas Managua"
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 

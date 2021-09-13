@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.80"
+\version "2.23.2"
 
 % --- Includes
 %\include "texto.ily"
@@ -33,7 +33,7 @@ global = {
 
 % --- Musica
 instrumento = \relative do'' {
-  \compressFullBarRests
+  \compressEmptyMeasures
   %Escribir la musica aqui...
   r4 do~
   do4 re

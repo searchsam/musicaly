@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.49"
+\version "2.23.2"
 
 % --- Includes
 %\include "texto.ily"
@@ -27,13 +27,13 @@ global = {
 \markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Argüello" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
 % --- Musica
 instrumento = \relative do' {
-  \compressFullBarRests
+  \compressEmptyMeasures
   %Escribir la musica aqui...
   <do mi>2\mf						| %1
   <mi sol>4_"Abba..." <mi sol> \fermata	| %2

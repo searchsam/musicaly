@@ -1,5 +1,5 @@
 % Created on Mon Apr 18 23:38:31 CST 2011
-\version "2.12.3"
+\version "2.23.2"
 
 \header {
 	title = "Tu has cubierto de verguenza la muerte" 

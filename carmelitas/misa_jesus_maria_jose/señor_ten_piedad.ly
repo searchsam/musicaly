@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.18.0"
+\version "2.23.2"
 
 % --- Includes
 %\include "texto.ily"
@@ -16,7 +16,7 @@
 \markup { \fill-line { " " \center-column { \fontsize #2 "Pbro. Jesús María Sánchez" \small "Arreglo Samuel Gutiérrez e Isabel Martinez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
@@ -31,31 +31,31 @@ instrumento = \relative do'' {
   la4 sol8 fas8. sol16 la8 	| %3
   si2. 			| \break %4
   \repeat volta 2 {
-  r2 r8 mi,8			| %5
-  sol4. la4 la8			| %6
-  mi4. r4 mi8			| %7
-  sol4 sol16 sol la4 la8 	| %8
-  si4. r4.			| %9
+    r2 r8 mi,8			| %5
+    sol4. la4 la8			| %6
+    mi4. r4 mi8			| %7
+    sol4 sol16 sol la4 la8 	| %8
+    si4. r4.			| %9
 
-  <si, sol'>4 <si mi>8 <la fas'>8. <la sol'>16 <la fas'>8 | %10
-  <si mi>4. <si mi>4.	| %11
-  <si sol'>4 <si mi>8 <la fas'>8. <la sol'>16 <la fas'>8 | %10
-  <si sol'>4. <si sol'>4.^"FINE"	| \bar "||" %11
-  r2. \break
-  sol'4. la4.		| %13
-  si4. la4.	| %14
-  <mi la>4 <do sol'>8 <re fas>8. <re sol>16 <re la'>8 | %14
-  <mi sol>4. <mi sol>4. | %15
-  <mi la>4 <do sol'>8 <re fas>8. <re sol>16 <re la'>8 | %14
-  <mi si'>4. <mi si'>4. | %15
-}
+    <si, sol'>4 <si mi>8 <la fas'>8. <la sol'>16 <la fas'>8 | %10
+    <si mi>4. <si mi>4.	| %11
+    <si sol'>4 <si mi>8 <la fas'>8. <la sol'>16 <la fas'>8 | %10
+    <si sol'>4. <si sol'>4.^"FINE"	| \bar "||" %11
+    r2. \break
+    sol'4. la4.		| %13
+    si4. la4.	| %14
+    <mi la>4 <do sol'>8 <re fas>8. <re sol>16 <re la'>8 | %14
+    <mi sol>4. <mi sol>4. | %15
+    <mi la>4 <do sol'>8 <re fas>8. <re sol>16 <re la'>8 | %14
+    <mi si'>4. <mi si'>4. | %15
+  }
 }
 
 letra = \lyricmode {
   _ _ _ _ _ _ _ _ _ _ _ _
   Se ñor nues tro Dios, Se ñor nues tro Sal va dor,
   ten pie dad de no so tros, ten pie dad de no so tros.
-  Cris to, Cris to, 
+  Cris to, Cris to,
   ten pie dad de no so tros, ten pie dad de no so tros.
 }
 
@@ -96,3 +96,10 @@ acordes = \new ChordNames {
 \paper {
   #( set-default-paper-size "letter" )
 }
+
+%{
+convert-ly (GNU LilyPond) 2.23.2  convert-ly: Procesando «»...
+Aplicando la conversión: 2.19.2, 2.19.7, 2.19.11, 2.19.16, 2.19.22,
+2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.39, 2.19.40, 2.19.46,
+2.19.49, 2.20.0, 2.21.0, 2.21.2, 2.23.1, 2.23.2
+%}

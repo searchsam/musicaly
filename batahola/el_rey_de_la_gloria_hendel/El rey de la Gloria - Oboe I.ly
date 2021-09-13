@@ -7,7 +7,7 @@
 % 					  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\version "2.12.3"
+\version "2.23.2"
 #(set-global-staff-size 18)
 
 \header {
@@ -16,14 +16,14 @@
  	composer = "GEORGE FREDERIC HANDEL" 
  	instrument = "OBOE I" 
  	copyright = "Creative Commons Attribution 3.0"
- 	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+ 	tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  	breakbefore = ##t
 }
 	
-letra =  #(define-music-function (parser location markp) (string?)
+letra =  #(define-music-function (markp) (string?)
 		#{
-			\once \override Score . RehearsalMark #'self-alignment-X = #left
-			\once \override Score . RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
+			\once \override Score.RehearsalMark.self-alignment-X = #left
+			\once \override Score.RehearsalMark.extra-spacing-width = #'(+inf.0 . -inf.0)
 			\mark \markup { \bold $markp }
 		#})
 

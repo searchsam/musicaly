@@ -1,7 +1,7 @@
 % Created on Tue Jan 25 13:49:28 CST 2011
 % by search.sam@ 
 
-\version "2.14.2"
+\version "2.23.2"
 
 #(set-global-staff-size 18)
 
@@ -11,7 +11,7 @@
 
 \header {
  	copyright = "Creative Commons Attribution 3.0"
- 	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+ 	tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  	breakbefore = ##t
 }
 

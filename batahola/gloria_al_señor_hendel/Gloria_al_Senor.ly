@@ -1,7 +1,7 @@
 % Created on Mon Aug 29 16:03:40 CST 2011
 % by serach.sam@
 
-\version "2.19.49"
+\version "2.23.2"
 #(set-global-staff-size 22)
 
 \markup { \fill-line { \center-column { \fontsize #5 "Gloria al Señor" \fontsize #3 \caps "tenor" } } }
@@ -9,7 +9,7 @@
 
 \header {
  copyright = "Creative Commons Attribution 3.0" 
- tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+ tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  breakbefore = ##t
 }
 
@@ -24,7 +24,7 @@ global = {
 
 tenorVoice = \relative c' {
   \set Staff.midiInstrument = "choir aahs"
-  \compressFullBarRests
+  \compressEmptyMeasures
   \dynamicUp
   % Music follows here.
   d4\f cis8. b16 a4 r4 |

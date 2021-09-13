@@ -4,7 +4,7 @@
 % "Ven del Libano" - "Kiko Argüello" - "Arreglo Bayardo Ruben Mojica"
 % ********************************************************************
 \language "espanol"
-\version "2.19.80"
+\version "2.23.2"
 
 #(set-global-staff-size 26)
 \markup { \fill-line { \center-column { \fontsize #5 "Ven del Líbano" \fontsize #3 \caps "flauta" } } }
@@ -29,7 +29,7 @@ global = {
 }
 
 tenor = \relative do'' {
-  \compressFullBarRests
+  \compressEmptyMeasures
   \override Score.BarNumber.break-visibility = #end-of-line-invisible
   \set Score.barNumberVisibility = #(every-nth-bar-number-visible 5)
   \override Score.BarNumber.font-size = #2

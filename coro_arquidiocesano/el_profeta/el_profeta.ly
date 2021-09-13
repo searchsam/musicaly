@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.80"
+\version "2.23.2"
 
 #(set-global-staff-size 22)
 
@@ -31,7 +31,7 @@ global = {
 
 % --- Musica
 tenor = \relative do {
-  \compressFullBarRests
+  \compressEmptyMeasures
   \dynamicUp
   \clef	"G_8"
   re8 re4 dos8

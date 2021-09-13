@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.18.0"
+\version "2.23.2"
 
 % --- Tamaño del pentagrama
 #(set-global-staff-size 24)
@@ -16,13 +16,13 @@ global = { \clef treble \key sol \major \time 6/8 s2.*6 \bar "||" s2.*24 \bar "|
 %\markup { \fill-line { " " \center-column { \fontsize #2 "Compositor" \small "Año" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
 % --- Musica
 vos = \relative do'' {
-  %\compressFullBarRests
+  %\compressEmptyMeasures
   %Escribir la musica aqui...
   si2.--^\markup{ \italic (xil)} 				| %1
   si2.-- 				| %2
@@ -61,7 +61,7 @@ vos = \relative do'' {
 }
 
 acom = \relative do'' {
-  \compressFullBarRests
+  \compressEmptyMeasures
   %Escribir la musica aqui...
   r2. 					| %1
   r2. 					| %2

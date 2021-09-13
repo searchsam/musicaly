@@ -1,4 +1,4 @@
-\version "2.16.2"
+\version "2.23.2"
 
 \header {
   title = ""
@@ -62,13 +62,13 @@ verseThree = \lyricmode {
       \new Voice = "alto" { \voiceTwo \alto }
     >>
     \new Lyrics \with {
-      \override VerticalAxisGroup #'staff-affinity = #CENTER
+      \override VerticalAxisGroup.staff-affinity = #CENTER
     } \lyricsto "soprano" \verseOne
     \new Lyrics \with {
-      \override VerticalAxisGroup #'staff-affinity = #CENTER
+      \override VerticalAxisGroup.staff-affinity = #CENTER
     } \lyricsto "soprano" \verseTwo
     \new Lyrics \with {
-      \override VerticalAxisGroup #'staff-affinity = #CENTER
+      \override VerticalAxisGroup.staff-affinity = #CENTER
     } \lyricsto "soprano" \verseThree
     \new Staff \with {
       midiInstrument = "choir aahs"

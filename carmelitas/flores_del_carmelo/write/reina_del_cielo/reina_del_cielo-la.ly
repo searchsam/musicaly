@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.49"
+\version "2.23.2"
 
 #(set-global-staff-size 10)
 
@@ -12,7 +12,7 @@ global = {
   \tempo "Moderatto" 4=90
   \key la \minor
   \time 2/4
-  s2*75
+  s2*73
   \bar "|."
 }
 
@@ -21,10 +21,11 @@ global = {
 \markup { \fill-line { " " \fontsize #2 "Samuel Gutiérrez Avilés"  } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t 
 }
 %}
+
 % --- Musica
 guitarra = \relative do' {
   \dynamicUp
@@ -101,8 +102,6 @@ guitarra = \relative do' {
   <re sol si>4\arpeggio <re sol si>8\arpeggio <re sol si>8\arpeggio
   <do mi la>4\arpeggio <do mi la>8\arpeggio <do mi la>8\arpeggio
   <do mi la>4\arpeggio <do mi la>8\arpeggio <do mi la>8\arpeggio
-  <re sol si>4\arpeggio <re sol si>8\arpeggio <re sol si>8\arpeggio
-  <do mi la>4\arpeggio <do mi la>8\arpeggio <do mi la>8\arpeggio
   <do mi la>2\arpeggio
 }
 
@@ -119,20 +118,19 @@ soprano = \relative do'' {
   si8( la sol) la~
   la4  r
   mi'4. mi8
-  re8( do re) mi~
+  re8( do r) mi~
   mi4 r \fermata \break
 
-  R2*9
-
+  R2*8
+  
   mi4. mi8
   re8( do re) mi~
   mi4 r \fermata \break
 
-  mi4. \tuplet 3/2 {re16 re do}
+  mi4. re16( do)
   si4. si8 
-  la8 sol8 si8 sol 
-  la4. la8~
-  la4 r
+  la8 sol si( sol)
+  la2 r
 
   la4. do8
   si8( la sol) la~
@@ -141,7 +139,7 @@ soprano = \relative do'' {
   re8( do re) mi~
   mi4 r \fermata \break
 
-  R2*8
+  R2*7
   
   mi4. mi8
   re8( do re) mi~
@@ -169,12 +167,12 @@ soprano = \relative do'' {
 }
 
 % --- Letra
-letra_soprano = \lyricmode {
-  Rei -- na del cie -- lo,~a -- lé -- gra -- te, a -- le -- lu -- ya. A -- le -- lu -- ya. A -- le -- lu -- ya.
+letra_sop = \lyricmode {
+  Re -- gi -- na cae -- li, lae -- ta -- re, a -- lle -- lu -- ia. A -- lle -- lu -- ia. A -- lle -- lu -- ia.
 
-  Ha re -- su -- ci -- ta -- do se -- gún su pa -- la -- bra, a -- le -- lu -- ya. A -- le -- lu -- ya. A -- le -- lu -- ya.
+  Re -- su -- rre -- xit, si -- cut di -- xit, a -- lle -- lu -- ia. A -- lle -- lu -- ia. A -- lle -- lu -- ia.
 
-  Go -- za y~a -- lé -- gra -- te Vir -- gen Ma -- rí -- a, a -- le -- lu -- ya. A -- le -- lu -- ya. A -- le -- lu -- ya.
+  Gau -- de et lae -- ta -- re Vir -- go Ma -- rí -- a, a -- lle -- lu -- ia. A -- lle -- lu -- ia. A -- lle -- lu -- ia.
 }
 
 mezzo = \relative do'' {
@@ -185,12 +183,10 @@ mezzo = \relative do'' {
   si8( la sol) la~
   la4 r \fermata \break
 
-  mi4. fa16 sol
-  la4. la8
-  la8 la la la
-  si8 sol la4~
-  la4 la4~
-  la4 r
+  mi4. fa16( sol)
+  la4. la16 la
+  la8 la( si) sol
+  la2 r
 
   la4. do8
   si8( la sol) la~
@@ -206,9 +202,8 @@ mezzo = \relative do'' {
   la4 r \fermata \break
 
   mi4. fa16 sol
-  la4. la8( 
-  si) sol la4~
-  la4 la4~ 
+  la4. la8 
+  sol( si sol) la8~
   la4 r
 
   la4. do8
@@ -226,9 +221,8 @@ mezzo = \relative do'' {
 
   mi4. fa16 sol
   la4. la8 
-  la8 la la la
-  si8 sol la4~
-  la4 r
+  la8 la si8 sol 
+  la2 r
 
   la4. do8
   si8( la sol) la~
@@ -239,13 +233,14 @@ mezzo = \relative do'' {
   R2
 }
 
-letra_mezzo = \lyricmode {
-  A -- le -- lu -- ya. Por -- que~el Se -- ñor, a quien has lle -- va -- do~en tu vien -- tre, a -- le -- lu -- ya. A -- le -- lu -- ya.
+letra_mozzo = \lyricmode {
+  A -- lle -- lu -- ia. Qui -- a quem me -- ruis -- ti por -- ta -- re, a -- lle -- lu -- ia. A -- lle -- lu -- ia.
 
-  A -- le -- lu -- ya. Rue -- ga~al Se -- ñor por no -- so -- tros, a -- le -- lu -- ya. A -- le -- lu -- ya.
+  A -- lle -- lu -- ia. O -- ra pro no -- bis De -- um, a -- lle -- lu -- ia. A -- lle -- lu -- ia.
 
-  A -- le -- lu -- ya. Por -- que~en ver -- dad ha~re -- su -- ci -- ta -- do, el Se -- ñor, a -- le -- lu -- ya. A -- le -- lu -- ya.
+  A -- lle -- lu -- ia. Qui -- a su -- rre -- xit Do -- mi -- nus ve -- re, a -- lle -- lu -- ia. A -- lle -- lu -- ia.
 }
+
 
 alto = \relative do'' {
   \dynamicUp
@@ -255,12 +250,10 @@ alto = \relative do'' {
   re8( do re) do~
   do4 r \fermata \break
 
-  la4. la16 si
-  do4. do8
-  do8 do do do
-  re8 si do4~
-  do4 do4~
-  do4 r
+  la4. la16( si)
+  do4. do16 do
+  do8 do( re) si 
+  do2 r
 
   do4. mi8
   re8( do re) do~
@@ -276,9 +269,8 @@ alto = \relative do'' {
   do4 r \fermata \break
 
   la4. la16 si
-  do4. do8( 
-  re) si do4~
-  do4 do4~ 
+  do4. do8 
+  si8( re si) do~
   do4 r
 
   do4. mi8
@@ -296,9 +288,8 @@ alto = \relative do'' {
 
   la4. la16 si
   do4. do8 
-  do8 do do do
-  re8 si do4~
-  do4 r
+  do8 do re8 si 
+  do2 r
 
   do4. mi8
   re8( do re) do~
@@ -310,12 +301,13 @@ alto = \relative do'' {
 }
 
 letra_alto = \lyricmode {
-  A -- le -- lu -- ya. Por -- que~el Se -- ñor, a quien has lle -- va -- do~en tu vien -- tre, a -- le -- lu -- ya. A -- le -- lu -- ya.
+  A -- lle -- lu -- ia. Qui -- a quem me -- ruis -- ti por -- ta -- re, a -- lle -- lu -- ia. A -- lle -- lu -- ia.
 
-  A -- le -- lu -- ya. Rue -- ga~al Se -- ñor por no -- so -- tros, a -- le -- lu -- ya. A -- le -- lu -- ya.
+  A -- lle -- lu -- ia. O -- ra pro no -- bis De -- um, a -- lle -- lu -- ia. A -- lle -- lu -- ia.
 
-  A -- le -- lu -- ya. Por -- que~en ver -- dad ha~re -- su -- ci -- ta -- do, el Se -- ñor, a -- le -- lu -- ya. A -- le -- lu -- ya.
+  A -- lle -- lu -- ia. Qui -- a su -- rre -- xit Do -- mi -- nus ve -- re, a -- lle -- lu -- ia. A -- lle -- lu -- ia.
 }
+
 
 pandereta = \drummode {
   \dynamicUp
@@ -340,8 +332,6 @@ pandereta = \drummode {
   tamb2
   tamb4 tamb4
   tamb2tamb4 tamb4
-  tamb2
-  tamb4 tamb4
   tamb2
   tamb4 tamb4
   tamb2
@@ -472,8 +462,6 @@ bajo = \drummode {
   toml2
   toml4. toml8
   toml2
-  toml4. toml8
-  toml2
 }
 
 % --- Acordes
@@ -517,18 +505,18 @@ armonia = \new ChordNames {
 
 \score {
   <<
-    \armonia
+    %\armonia
     \new Staff <<
         \set Staff.instrumentName = \markup { \tiny "Soprano" }
         \set Staff.midiInstrument = #"violin"
         \new Voice = "soprano" << \global \soprano >>
-        \new Lyrics \lyricsto "soprano" \letra_soprano
+        \new Lyrics \lyricsto "soprano" \letra_sop
     >>
     \new Staff <<
         \set Staff.instrumentName = \markup { \tiny "Mezzo" }
         \set Staff.midiInstrument = #"violin"
         \new Voice = "mezzo" << \global \mezzo >>
-        \new Lyrics \lyricsto "mezzo" \letra_mezzo
+        \new Lyrics \lyricsto "mezzo" \letra_mozzo
     >>
     \new Staff <<
         \set Staff.instrumentName = \markup { \tiny "Alto" }
@@ -537,16 +525,16 @@ armonia = \new ChordNames {
         \new Lyrics \lyricsto "alto" \letra_alto
     >>
     \new Staff <<
-      \set Staff.instrumentName = \markup { \tiny "Guitarra" }
+      \set Staff.instrumentName = \markup { \smallCaps "Guitarra" }
       \set Staff.midiInstrument = #"acoustic guitar (nylon)"
       \new Voice = "instrumento" << \global \guitarra >>
     >>
     \new DrumStaff <<
-      \set DrumStaff.instrumentName = \markup { \tiny "Pandereta" }
+      \set DrumStaff.instrumentName = \markup { \smallCaps "Pandereta" }
       << \global \pandereta >>
     >>
     \new DrumStaff <<
-      \set DrumStaff.instrumentName = \markup { \tiny "Timbales" }
+      \set DrumStaff.instrumentName = \markup { \smallCaps "Timbales" }
       << \global \bajo >>
     >>
   >>

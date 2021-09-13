@@ -1,7 +1,7 @@
 % Created on Mon Aug 29 16:03:40 CST 2011
 % by serach.sam@
 
-\version "2.12.3"
+\version "2.23.2"
 
 #( set-default-paper-size "letter" )
 %#(set-global-staff-size 14)
@@ -19,14 +19,14 @@
 
 \header {
  	copyright = "Creative Commons Attribution 3.0" 
- 	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+ 	tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  	breakbefore = ##t
 }
 
 global = { \key d \major \time 2/4 \tempo "Allegretto" 4 = 110 s2*1 \set Score.repeatCommands = #'(start-repeat) \repeat volta 4 { s2*21 } \alternative { { \bar "||" s2*1 } { s2*1 } } s2*8 \bar "|." }
 
 tenor = \relative c' { 	
-	\compressFullBarRests
+	\compressEmptyMeasures
  % Type notes here 
  	d8->\f d8 d8 d8 | %1
  	d8 d8 d8\> d8 | %2

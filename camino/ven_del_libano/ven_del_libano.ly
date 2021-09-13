@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.83"
+\version "2.23.2"
 
 % --- Includes
 %\include "texto.ily"
@@ -20,13 +20,13 @@ global = {  \tempo "Moderatto" 4 = 120 \clef treble \key mi \minor \time 4/4 s1*
 \markup { \fill-line { "" \center-column { \fontsize #2 "Adaptación: Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
 % --- Musica
 instrumento = \relative do' {
-  %\compressFullBarRests
+  %\compressEmptyMeasures
   %Escribir la musica aqui...
   mi1 sol
   mi8 sol do2 si4~

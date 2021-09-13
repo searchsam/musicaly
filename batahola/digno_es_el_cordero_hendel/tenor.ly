@@ -3,7 +3,7 @@
 % by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.49"
+\version "2.23.2"
 
 \include "tenor.ily"
 
@@ -15,7 +15,7 @@
 
 \header {
  copyright = "Santuario Santa María del Camino - Granada, España." 
- tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+ tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  breakbefore = ##t
 }
 

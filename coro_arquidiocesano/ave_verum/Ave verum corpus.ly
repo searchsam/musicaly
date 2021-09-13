@@ -1,7 +1,7 @@
 % Created on Mon Aug 29 16:03:40 CST 2011
 % by serach.sam@
 
-\version "2.19.49"
+\version "2.23.2"
 
 #(set-global-staff-size 14)
 
@@ -12,12 +12,12 @@ global = { \key d \major \time 4/4 \tempo "Adagio" 4 = 85 s1*46 \bar "|." }
 	instrument = \markup { \smallCaps "CORO" }
 	composer =  \markup { \center-column { "W. A. Mozart" } }
 	copyright = "Creative Commons Attribution 3.0" 
- 	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+ 	tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  	breakbefore = ##t
 }
 
 soprano = \relative c' { 	
-	\compressFullBarRests
+	\compressEmptyMeasures
  % Type notes here 
  	R1*2 |%2
  	a'2^\markup { \italic "sotto voce"} d4( fis,4) | %3
@@ -70,7 +70,7 @@ sopranoletra = \lyricmode {
 }
 
 contralto = \relative c' { 	
-	\compressFullBarRests
+	\compressEmptyMeasures
  % Type notes here 
  	R1*2 |%2
  	fis2 fis2 | %3
@@ -116,7 +116,7 @@ contralto = \relative c' {
 }
 
 tenor = \relative c' { 	
-	\compressFullBarRests
+	\compressEmptyMeasures
  % Type notes here 
  	R1*2 |%2
  	a2 a2 | %3
@@ -162,7 +162,7 @@ tenor = \relative c' {
 }
 
 bajo = \relative c' { 	
-	\compressFullBarRests
+	\compressEmptyMeasures
  % Type notes here 
  	R1*2 |%2
  	d,2 d2 | %3

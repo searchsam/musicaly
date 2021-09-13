@@ -1,12 +1,12 @@
 % Created on Mon Aug 29 16:03:40 CST 2011
 % by serach.sam@
 
-\version "2.12.3"
+\version "2.23.2"
 
 #( set-default-paper-size "letter" )
 #(set-global-staff-size 14)
 
-global = { \key aes \major \time 3/4 \tempo "Vivo" 4 = 140 \mark \markup { \musicglyph #"f" "1"\super"a " \musicglyph #"p" "2"\super"a" } s1*3/4*8 \bar ":|:" \mark \markup { \musicglyph #"f" "1"\super"a " \musicglyph #"p" "2"\super"a" } s1*3/4*8 \bar ":|" \mark \markup { \musicglyph #"scripts.segno" } \key d \minor s1*3/4*21 \bar "||" \set Score.repeatCommands = #'((volta "1. 2.")) s1*3/4*2 \bar "||" \set Score.repeatCommands = #'((volta "Fine")) s1*3/4*2 \set Score.repeatCommands = #'((volta #f)) \bar "||" s1*3/4*15 \mark \markup { "Da " \musicglyph #"scripts.segno" " al Fine"}\bar "|." }
+global = { \key aes \major \time 3/4 \tempo "Vivo" 4 = 140 \mark \markup { \musicglyph "f" "1"\super"a " \musicglyph "p" "2"\super"a" } s1*3/4*8 \bar ":..:" \mark \markup { \musicglyph "f" "1"\super"a " \musicglyph "p" "2"\super"a" } s1*3/4*8 \bar ":|." \mark \markup { \musicglyph "scripts.segno" } \key d \minor s1*3/4*21 \bar "||" \set Score.repeatCommands = #'((volta "1. 2.")) s1*3/4*2 \bar "||" \set Score.repeatCommands = #'((volta "Fine")) s1*3/4*2 \set Score.repeatCommands = #'((volta #f)) \bar "||" s1*3/4*15 \mark \markup { "Da " \musicglyph "scripts.segno" " al Fine"}\bar "|." }
 
 \markup {
 	\fill-line {
@@ -21,12 +21,12 @@ global = { \key aes \major \time 3/4 \tempo "Vivo" 4 = 140 \mark \markup { \musi
 
 \header {
  	copyright = "Creative Commons Attribution 3.0" 
- 	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+ 	tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  	breakbefore = ##t
 }
 
 soprano = \relative c'' { 	
-	\compressFullBarRests
+	\compressEmptyMeasures
  % Type notes here 
  	r4 c4 c4 | %1
  	c2-> c4 | %2
@@ -97,7 +97,7 @@ sopranoletra = \lyricmode {
 }
 
 contralto = \relative c' { 	
-	\compressFullBarRests
+	\compressEmptyMeasures
  % Type notes here 
  	R1*3/4 | %1
  	c4 d4 e4 | %2
@@ -168,7 +168,7 @@ contraltoletra = \lyricmode {
 }
 
 tenor = \relative c' { 	
-	\compressFullBarRests
+	\compressEmptyMeasures
  % Type notes here 
  	R1*3/4 | %1
  	R1*3/4 | %2
@@ -239,7 +239,7 @@ tenorletra = \lyricmode {
 }
 
 bajo = \relative c { 	
-	\compressFullBarRests
+	\compressEmptyMeasures
  % Type notes here 
  	R1*3/4 | %1
  	R1*3/4 | %2

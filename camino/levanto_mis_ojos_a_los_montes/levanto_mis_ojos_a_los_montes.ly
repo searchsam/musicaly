@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.80"
+\version "2.23.2"
 
 % --- Includes
 %\include "texto.ily"
@@ -27,7 +27,7 @@ global = {  \tempo "Moderatto" 4 = 100 \clef treble \key sol \major \time 4/4 s2
 
 % --- Musica
 instrumento = \relative do'' {
-  %\compressFullBarRests
+  %\compressEmptyMeasures
   %Escribir la musica aqui...
   si8 si4. si8 si do si	| %1
   re2. r8 si		| %2

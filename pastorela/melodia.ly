@@ -1,6 +1,6 @@
 
 \language "espanol"
-\version "2.19.32"
+\version "2.23.2"
 
 global = {
   \tempo "Allegro Moderatto" 4=100

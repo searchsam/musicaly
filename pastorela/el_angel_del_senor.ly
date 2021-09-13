@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.32"
+\version "2.23.2"
 
 %#(set-global-staff-size 20)
 
@@ -15,7 +15,7 @@ global = {  \tempo "Adagio" 4 = 80 \clef treble \key do \major \time 4/4 s1*10 \
 \markup { \fill-line { " " \center-column { \fontsize #2 "Anonimo" \small "Arreglo Samuel J. Aviles" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 

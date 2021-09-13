@@ -1,5 +1,5 @@
 \language "espanol"
-\version "2.19.28"
+\version "2.23.2"
 
 #(set-global-staff-size 17)
 

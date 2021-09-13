@@ -7,7 +7,7 @@
 % 					  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\version "2.12.2"
+\version "2.23.2"
 
 \header {
 	title = "EL REY DE LA GLORIA"
@@ -18,17 +18,17 @@
 	copyright = "@Centro Cultural de Batahola"
 	}
 	
-letra =  #(define-music-function (parser location markp) (string?)
+letra =  #(define-music-function (markp) (string?)
 		#{
-			\once \override Score . RehearsalMark #'self-alignment-X = #left
-			\once \override Score . RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
+			\once \override Score.RehearsalMark.self-alignment-X = #left
+			\once \override Score.RehearsalMark.extra-spacing-width = #'(+inf.0 . -inf.0)
 			\mark \markup { \bold $markp }
 		#})
 
 	
 oboe = \new Staff {
 	\relative c' {
-		%\override Staff.BarLine #'stencil = ##f
+		%\override Staff.BarLine.stencil = ##f
 		\set Score.skipBars = ##t
 		\key f \major
 		

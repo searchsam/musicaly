@@ -1,7 +1,7 @@
 % Created on Fri Mar 25 16:06:45 CST 2011
 % by search.sam@
 
-\version "2.19.80"
+\version "2.23.2"
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 "No hay en él parecer" \fontsize #3 "Cuarto canto del Siervo de Yahveh - Isaias 53, 2ss" } } }

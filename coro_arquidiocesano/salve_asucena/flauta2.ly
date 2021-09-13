@@ -1,5 +1,5 @@
 \language "espanol"
-\version "2.18.0"
+\version "2.23.2"
 
 \include "oboe.ily"
 
@@ -7,7 +7,7 @@
 \markup { \fill-line { " " \center-column { \fontsize #2 "Alejandro Vega Matus" \small "Arreglo Edwin Torres" } } }
 \header {
 	copyright = "Creative Commons Attribution 3.0" 
-	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+	tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
 	breakbefore = ##t
 }
 

@@ -7,14 +7,14 @@
 %                                         %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\version "2.12.3"
+\version "2.23.2"
 
 #(set-default-paper-size "letter" )
 #(set-global-staff-size 11)
 #(ly:set-option 'point-and-click #f)
 
-italicas=\override LyricText #'font-shape = #'italic
-rectas=\override LyricText #'font-shape = #'upright
+italicas=\override LyricText.font-shape = #'italic
+rectas=\override LyricText.font-shape = #'upright
 ss=\once \set suggestAccidentals = ##t
 htitle="O vos omnes"
 hcomposer="T. L. de Victoria"
@@ -94,9 +94,9 @@ incipitcantus=\markup{
         \score {
                 { 
                 \set Staff.instrumentName=\markup { \column { "Violin" \small "[Viola]" } }
-                \override NoteHead   #'style = #'neomensural
-                \override Rest #'style = #'neomensural
-                \override Staff.TimeSignature #'style = #'neomensural
+                \override NoteHead.style = #'neomensural
+                \override Rest.style = #'neomensural
+                \override Staff.TimeSignature.style = #'neomensural
                 \cadenzaOn 
                 \clef "petrucci-c1"
                 \key c \major
@@ -118,9 +118,9 @@ incipitaltus=\markup{
         \score{
                 { 
                 \set Staff.instrumentName=\markup { \column { "Viola" \small "[Cello I]" } }
-                \override NoteHead   #'style = #'neomensural 
-                \override Rest #'style = #'neomensural
-                \override Staff.TimeSignature #'style = #'neomensural
+                \override NoteHead.style = #'neomensural 
+                \override Rest.style = #'neomensural
+                \override Staff.TimeSignature.style = #'neomensural
                 \cadenzaOn 
                 \clef "petrucci-c3"
                 \key c \major
@@ -142,9 +142,9 @@ incipittenor=\markup {
         \score {
                 { 
                 \set Staff.instrumentName=\markup { \column {"Cello" \small "[Cello II]"} }
-                \override NoteHead   #'style = #'neomensural 
-                \override Rest #'style = #'neomensural
-                \override Staff.TimeSignature #'style = #'neomensural
+                \override NoteHead.style = #'neomensural 
+                \override Rest.style = #'neomensural
+                \override Staff.TimeSignature.style = #'neomensural
                 \cadenzaOn 
                 \clef "petrucci-c3"
                 \key c \major
@@ -166,9 +166,9 @@ incipitbassus=\markup {
         \score {
                 { 
                 \set Staff.instrumentName=\markup{ \column { "Bass" } }
-                \override NoteHead   #'style = #'neomensural 
-                \override Rest #'style = #'neomensural
-                \override Staff.TimeSignature #'style = #'neomensural
+                \override NoteHead.style = #'neomensural 
+                \override Rest.style = #'neomensural
+                \override Staff.TimeSignature.style = #'neomensural
                 \cadenzaOn 
                 \clef "petrucci-c4"
                 \key c \major
@@ -230,19 +230,19 @@ incipitbassus=\markup {
 
 \layout{ 
         \context { \Lyrics 
-                \override VerticalAxisGroup #'minimum-Y-extent = #'(-0.0 . 0.0) 
-                \override LyricHyphen #'minimum-distance = #0.33
+                \override VerticalAxisGroup.minimum-Y-extent = #'(-0.0 . 0.0) 
+                \override LyricHyphen.minimum-distance = #0.33
         }
         \context { \Score 
-                \override BarNumber #'padding = #2 
+                \override BarNumber.padding = #2 
         }
         \context { \Voice 
                 melismaBusyProperties = #'() 
         }
         \context { \Staff 
-                \override VerticalAxisGroup #'minimum-Y-extent = #'(-4 . 5.7)
+                \override VerticalAxisGroup.minimum-Y-extent = #'(-4 . 5.7)
                 \consists Ambitus_engraver 
-                \override LigatureBracket #'padding = #1
+                \override LigatureBracket.padding = #1
         }
     }
   }
@@ -256,7 +256,7 @@ incipitbassus=\markup {
         %line-width=19.0\cm
         ragged-last-bottom = ##f
         indent=3.4\cm
-        between-system-padding = 0
+        obsolete-between-system-padding = 0  system-system-spacing.padding = #(/ obsolete-between-system-padding staff-space)  score-system-spacing.padding = #(/ obsolete-between-system-padding staff-space)
         foot-separation=6\mm
         head-separation=4\mm
 }

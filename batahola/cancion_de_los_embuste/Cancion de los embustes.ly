@@ -1,7 +1,7 @@
 % Created on Mon Aug 29 16:03:40 CST 2011
 % by serach.sam@
 
-\version "2.19.49"
+\version "2.23.2"
 
 #( set-default-paper-size "letter" )
 #(set-global-staff-size 14)
@@ -21,12 +21,12 @@ global = { \key d \major \time 2/4 \tempo "Allegretto" 4 = 110 s2*1 \set Score.r
 
 \header {
  	copyright = "Creative Commons Attribution 3.0" 
- 	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+ 	tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  	breakbefore = ##t
 }
 
 soprano = \relative c'' { 	
-	\compressFullBarRests
+	\compressEmptyMeasures
  % Type notes here 
  	a8->\f a8 a8 a8 | %1
  	a8 a8 a8\> a8 | %2
@@ -70,7 +70,7 @@ sopranoletra = \lyricmode {
 }
 
 contralto = \relative c' { 	
-	\compressFullBarRests
+	\compressEmptyMeasures
  % Type notes here 
  	fis8->\f fis8 fis8 fis8 | %1
  	fis8 fis8 fis8\> fis8 | %2
@@ -114,7 +114,7 @@ contraltoletra = \lyricmode {
 }
 
 tenor = \relative c' { 	
-	\compressFullBarRests
+	\compressEmptyMeasures
  % Type notes here 
  	d8->\f d8 d8 d8 | %1
  	d8 d8 d8\> d8 | %2
@@ -158,7 +158,7 @@ tenorletra = \lyricmode {
 }
 
 bajo = \relative c { 	
-	\compressFullBarRests
+	\compressEmptyMeasures
  % Type notes here 
  	d8->\f d8 d8 d8 | %1
  	d8 d8 d8\> d8 | %2

@@ -7,7 +7,7 @@
 % Start cut-&-pastable-section
 % ****************************************************************
 
-\version "2.12.3"
+\version "2.23.2"
 
 \paper {
   #(define dump-extents #t)

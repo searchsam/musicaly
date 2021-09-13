@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.18.0"
+\version "2.23.2"
 
 % --- Tamaño del pentagrama
 #(set-global-staff-size 25)
@@ -16,13 +16,13 @@ global = {  \tempo "Moderatto" 4 = 120 \clef treble \key do \major \time 3/4 \re
 \markup { \fill-line { " " \center-column { \fontsize #2 "Koji Kondo" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
 % --- Musica
 instrumento = \relative do'' {
-  %\compressFullBarRests
+  %\compressEmptyMeasures
   %Escribir la musica aqui...
   si2 re4 		| %1
   la2 sol8 la	| %2

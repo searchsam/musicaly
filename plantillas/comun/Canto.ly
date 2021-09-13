@@ -3,7 +3,7 @@
 %%% Autor: Nicolas Sceaux <nicolas.sceaux@free.fr>
 %%%
 
-\version "2.12.3"
+\version "2.23.2"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Utilidad de marcado
@@ -118,20 +118,20 @@
 %%%
 \paper {
   bookTitleMarkup = \markup \when-property #'header:title \column {
-    \vspace #6
+    \combine \null \vspace #6
     \fill-line { \fontsize #8 \italic \fromproperty #'header:composer }
-    \vspace #1
+    \combine \null \vspace #1
     \fill-line { \fontsize #8 \italic \fromproperty #'header:poet }
-    \vspace #6
+    \combine \null \vspace #6
     \fill-line { \fontsize #10 \fromproperty #'header:title }
-    \vspace #6
-    \fill-line { \postscript #"-20 0 moveto 40 0 rlineto stroke" }
-    \vspace #6
+    \combine \null \vspace #6
+    \fill-line { \postscript "-20 0 moveto 40 0 rlineto stroke" }
+    \combine \null \vspace #6
     \fill-line { \fontsize #5 \fromproperty #'header:date }
-    \vspace #1 
+    \combine \null \vspace #1 
     \fill-line {
       \when-property #'header:arrangement \column {
-        \vspace #5
+        \combine \null \vspace #5
         \fill-line { \fontsize #3 \fromproperty #'header:arrangement }
       }
     }
@@ -202,7 +202,7 @@
        (set! odd-label-header-table
              (cons (list label text display-1st)
                    odd-label-header-table))
-       (collect-music-for-book parser
+       (collect-music-for-book
          (make-music 'Music
           'page-marker #t
           'page-label label)))))
@@ -212,7 +212,7 @@
        (set! even-label-header-table
              (cons (list label text display-1st)
                    even-label-header-table))
-       (collect-music-for-book parser
+       (collect-music-for-book
          (make-music 'Music
           'page-marker #t
           'page-label label))))))
@@ -232,23 +232,23 @@
 %%% Utilidades para aÃƒÂ±adir (no-), los saltos de pÃƒÂ¡gina, marcas de nivel superior
 %%%
 #(define (add-page-break parser)
-  (collect-music-for-book parser 
+  (collect-music-for-book 
    (make-music 'Music
 	       'page-marker #t
 	       'line-break-permission 'force
 	       'page-break-permission 'force)))
 
 #(define (add-no-page-break parser)
-  (collect-music-for-book parser 
+  (collect-music-for-book 
    (make-music 'Music
 	       'page-marker #t
 	       'page-break-permission 'forbid)))
 
 #(define (add-toplevel-markup parser text)
-  (collect-scores-for-book parser (list text)))
+  (collect-scores-for-book (list text)))
 
 #(define (add-toc-item parser markup-symbol text)
-  (collect-music-for-book parser
+  (collect-music-for-book
    (add-toc-item! markup-symbol text)))
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -268,7 +268,7 @@
           (format #f "~a-~a" major-number minor-number))))
 
 #(define-public (add-rehearsal-number parser)
-   (collect-scores-for-book parser
+   (collect-scores-for-book
     (list (markup #:huge #:bold (rehearsal-number)))))
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -280,50 +280,50 @@
 #(define *use-rehearsal-numbers* (make-parameter #f))
 
 useRehearsalNumbers =
-#(define-music-function (parser location use-numbers) (boolean?)
+#(define-music-function (use-numbers) (boolean?)
   (*use-rehearsal-numbers* use-numbers)
    (make-music 'Music 'void #t))
 
 bookTitle =
-#(define-music-function (parser location title) (string?)
+#(define-music-function (title) (string?)
    (*book-title* title)
    (make-music 'Music 'void #t))
 
 chapter =
-#(define-music-function (parser location title) (string?)
+#(define-music-function (title) (string?)
   (increase-rehearsal-major-number)
-  (add-page-break parser)
-  (add-toc-item parser 'tocChapterMarkup title)
-  (add-even-page-header-text parser (string-upper-case (*book-title*)) #f)
-  (add-odd-page-header-text parser (string-upper-case title) #f)
-  (add-toplevel-markup parser (markup #:chapter-title (string-upper-case title)))
-  (add-no-page-break parser)
+  (add-page-break (*parser*))
+  (add-toc-item (*parser*) 'tocChapterMarkup title)
+  (add-even-page-header-text (*parser*) (string-upper-case (*book-title*)) #f)
+  (add-odd-page-header-text (*parser*) (string-upper-case title) #f)
+  (add-toplevel-markup (*parser*) (markup #:chapter-title (string-upper-case title)))
+  (add-no-page-break (*parser*))
   (make-music 'Music 'void #t))
 
 section =
-#(define-music-function (parser location title) (string?)
-  (add-toc-item parser 'tocSectionMarkup title)
-  (add-toplevel-markup parser (markup #:section-title (string-upper-case title)))
-  (add-no-page-break parser)
+#(define-music-function (title) (string?)
+  (add-toc-item (*parser*) 'tocSectionMarkup title)
+  (add-toplevel-markup (*parser*) (markup #:section-title (string-upper-case title)))
+  (add-no-page-break (*parser*))
   (make-music 'Music 'void #t))
                         
 piece =
-#(define-music-function (parser location title) (markup?)
-  (add-toc-item parser 'tocPieceMarkup title)
-  (add-no-page-break parser)
+#(define-music-function (title) (markup?)
+  (add-toc-item (*parser*) 'tocPieceMarkup title)
+  (add-no-page-break (*parser*))
   (if (*use-rehearsal-numbers*)
-      (add-toplevel-markup parser (markup #:rehearsal-number (rehearsal-number))))
-  (add-no-page-break parser)
+      (add-toplevel-markup (*parser*) (markup #:rehearsal-number (rehearsal-number))))
+  (add-no-page-break (*parser*))
   (make-music 'Music 'void #t))
                         
 titledPiece =
-#(define-music-function (parser location title) (markup?)
-  (add-toc-item parser 'tocPieceMarkup title)
+#(define-music-function (title) (markup?)
+  (add-toc-item (*parser*) 'tocPieceMarkup title)
   (if (*use-rehearsal-numbers*)
-      (add-toplevel-markup parser
+      (add-toplevel-markup (*parser*)
         (markup #:piece-title-with-number (rehearsal-number) (string-upper-case title)))
-      (add-toplevel-markup parser (markup #:piece-title (string-upper-case title))))
-  (add-no-page-break parser)
+      (add-toplevel-markup (*parser*) (markup #:piece-title (string-upper-case title))))
+  (add-no-page-break (*parser*))
   (make-music 'Music 'void #t))
 
 #(define-markup-command (chapter-title layout props title) (markup?)
@@ -366,7 +366,7 @@ titledPiece =
   	  date = "MULTIMEDIA"
   	  arrangement = "..."
   	  copyright = "Mystical Aword - Copyright 2001"
-  	  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  	  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   }
   \paper {
   	   #(set-paper-size "letter")

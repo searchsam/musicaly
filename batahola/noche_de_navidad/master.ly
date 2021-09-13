@@ -2,7 +2,7 @@
 
 \include "funciones.ily"
 
-\version "2.16.0"
+\version "2.23.2"
 
 %#(set-global-staff-size 25)
 
@@ -13,12 +13,12 @@ global = { \key sol \minor \time 3/4 \tempo "Moderato" 4 = 110 s2.*16 \segno s2.
   instrument = \markup { \smallCaps "CORO" }
   %composer = \markup { \center-column { "Francisco Guerrero" \small "(Siglo XVI)" } }
   copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
 soprano = \relative do'' {
-  \compressFullBarRests
+  \compressEmptyMeasures
   % Type notes here
   sol2 sol4 | %1
   sol2 sol4 | %2
@@ -42,13 +42,13 @@ soprano = \relative do'' {
   re2 re4 | %20
   re4. re8 re4 | %21
   re2 re4 | %22
-  \bar "|:"
+  \bar ".|:"
   do4. sib8 la4 | %23
   sib4. la8 sol4 | %24
   la4. sol8 fas4 | %25
   sol2.( | %26
   sol2) r4 | %27
-  \bar ":|"
+  \bar ":|."
   
 }
 sopranoletra = \lyricmode {
@@ -56,7 +56,7 @@ sopranoletra = \lyricmode {
 }
 
 alto = \relative do' {
-  \compressFullBarRests
+  \compressEmptyMeasures
   % Type notes here 
   
 }
@@ -65,7 +65,7 @@ altoletra = \lyricmode {
 }
 
 tenor = \relative do' { 	
-  \compressFullBarRests
+  \compressEmptyMeasures
   % Type notes here 
   
 }
@@ -77,7 +77,7 @@ tenorletra = \lyricmode {
 }
 
 bajo = \relative do' {
-  \compressFullBarRests
+  \compressEmptyMeasures
   % Type notes here 
   
 }

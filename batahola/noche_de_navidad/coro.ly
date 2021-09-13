@@ -1,4 +1,4 @@
-\version "2.19.28"
+\version "2.23.2"
 \language "espanol"
 
 #(set-global-staff-size 14)
@@ -7,7 +7,7 @@
 \markup { \fill-line { " " \center-column { \fontsize #2 "Coral Frances" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 

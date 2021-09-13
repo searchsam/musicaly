@@ -5,24 +5,24 @@
 %                                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\version "2.8.1"
+\version "2.23.2"
 
 #(set-global-staff-size 20)
 
-bcr = { \override Voice.NoteHead #'style = #'cross
+bcr = { \override Voice.NoteHead.style = #'cross
 }
-bdf = { \override Voice.NoteHead #'style = #'default
+bdf = { \override Voice.NoteHead.style = #'default
 }
-bcc = { \override Voice.NoteHead #'style = #'xcircle
+bcc = { \override Voice.NoteHead.style = #'xcircle
 }
-bdi = { \override Voice.NoteHead #'style = #'diamond
+bdi = { \override Voice.NoteHead.style = #'diamond
 }
-btr = { \override Voice.NoteHead #'style = #'triangle
+btr = { \override Voice.NoteHead.style = #'triangle
 }
 
-flat = \markup { \raise #0.4 \smaller \musicglyph #"accidentals--2" }
-sharp = \markup { \raise #0.6 \smaller \musicglyph #"accidentals-2" }
-textcodaysym = \markup { \hspace #1 \raise #1.1 \musicglyph #"scripts-coda"}
+flat = \markup { \raise #0.4 \smaller \musicglyph "accidentals--2" }
+sharp = \markup { \raise #0.6 \smaller \musicglyph "accidentals-2" }
+textcodaysym = \markup { \hspace #1 \raise #1.1 \musicglyph "scripts-coda"}
 
 
 \header {
@@ -33,7 +33,7 @@ textcodaysym = \markup { \hspace #1 \raise #1.1 \musicglyph #"scripts-coda"}
 }
 
 ViolinA = \relative c' {
-	\set Staff.instrument = #"Violin "
+	\set Staff.instrumentName = #"Violin "
 	\clef G
 	\time 4/4 
 	                   
@@ -45,18 +45,18 @@ ViolinA = \relative c' {
 	d ) r8 a' a a | a4 c b2 |   % 13
 	b1 | r8 f f4 f c |   % 15
 	e2 e  ( | e ) r8 c c c |   % 17
-	g2 g | r4 \times 2/3 { c8 d c  } e8. d16 c4  ( |   % 19
-	c2. ) r4 | r8 e16 e \times 2/3 { e8 d c  } c c4.  ( |   % 21
+	g2 g | r4 \tuplet 3/2 { c8 d c  } e8. d16 c4  ( |   % 19
+	c2. ) r4 | r8 e16 e \tuplet 3/2 { e8 d c  } c c4.  ( |   % 21
 	c4 ) r c c8 c | c4 d8 c e e  ( e4  ( ) |   % 23
 	e2 ) r4 a8 a | a4 a8 a4. c8 a |   % 25
 	e'4  ( e2.  ( ) | e4 ) r r8 f,4. |   % 27
 	f4 f c d | e8 e  ( e2. ) |   % 29
 	r4 r8 c c c c4 | g1 |   % 31
-	r4 \times 2/3 { c8 d c  } e8. d16 c4  ( | c2. ) r4 
+	r4 \tuplet 3/2 { c8 d c  } e8. d16 c4  ( | c2. ) r4 
 	\bar "|."
 }
 FlautaBVoiceA = \relative c' {
-	\set Staff.instrument = #"Flauta "
+	\set Staff.instrumentName = #"Flauta "
 	\voiceOne 
 	\clef G
 	\time 4/4 
@@ -104,7 +104,7 @@ FlautaB = \simultaneous {
 	\context Voice="FlautaBVoiceB" \FlautaBVoiceB
 }
 ClarineteXinXSibCVoiceA = \relative c' {
-	\set Staff.instrument = #"Clarinete in Sib "
+	\set Staff.instrumentName = #"Clarinete in Sib "
 	\voiceOne 
 	\clef G
 	\key d \major
@@ -117,7 +117,7 @@ ClarineteXinXSibCVoiceA = \relative c' {
 	e2.  ( fis8 ) e | fis2 d4 b |   % 11
 	fis' e8 d cis d s4 | |   % 13
 	| fis2.  ( fis8 ) e |   % 15
-	| a,2  ( a8 ) d \times 2/3 { g fis e  } |   % 17
+	| a,2  ( a8 ) d \tuplet 3/2 { g fis e  } |   % 17
 	a,1 | d2 fis8 e d fis |   % 19
 	fis2.  ( fis8 ) e | a2.  ( a8 ) g |   % 21
 	fis g fis e d2 | a'4 g8 a a2 |   % 23
@@ -153,7 +153,7 @@ ClarineteXinXSibC = \simultaneous {
 	\context Voice="ClarineteXinXSibCVoiceB" \ClarineteXinXSibCVoiceB
 }
 CelloDVoiceA = \relative c {
-	\set Staff.instrument = #"Cello "
+	\set Staff.instrumentName = #"Cello "
 	\voiceOne 
 	\clef bass
 	\time 4/4 
@@ -170,7 +170,7 @@ CelloDVoiceA = \relative c {
 	e1 | c4 d8 e4. f8 |   % 21
 	g4. f8 e f e d | c4. d8 e f g a |   % 23
 	a1  ( | a ) |   % 25
-	a4. f8 e2 | a4 f8 g \times 2/3 { a4 g f  } |   % 27
+	a4. f8 e2 | a4 f8 g \tuplet 3/2 { a4 g f  } |   % 27
 	f g8 f f4 c | g'4. f8 e4. e8 |   % 29
 	d4. c8 b4. c8 | d c  ( c ) d16 c d2 |   % 31
 	e8 d c2 e8 g | c1 
@@ -201,7 +201,7 @@ CelloD = \simultaneous {
 	\context Voice="CelloDVoiceB" \CelloDVoiceB
 }
 \score {
-	\relative <<
+	\relative c' <<
 		\context Staff = cViolinAA <<
 			\context Voice = cViolinAA \ViolinA
 		>>

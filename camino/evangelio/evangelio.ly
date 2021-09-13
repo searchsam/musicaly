@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.61"
+\version "2.23.2"
 \include "gregorian.ly"
 
 %#(set-global-staff-size 22)
@@ -14,7 +14,7 @@
 
 \header {
     copyright = "Creative Commons Attribution 3.0"
-    tagline = \markup { \with-url #"http://lilypond.org/" { LilyPond ... \italic { music notation for everyone } } }
+    tagline = \markup { \with-url "http://lilypond.org/" { LilyPond ... \italic { music notation for everyone } } }
 
     breakbefore = ##t 
 }
@@ -25,7 +25,7 @@
 antifona = \relative do' {
     \tempo 4 = 80
     \key sol \minor
-    \compressFullBarRests
+    \compressEmptyMeasures
     \dynamicUp
     \clef "G_8"
     

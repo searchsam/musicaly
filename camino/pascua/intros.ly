@@ -1,7 +1,7 @@
 %% Castos pascuales
 
 \language "espanol"
-\version "2.19.32"
+\version "2.23.2"
 
 %% Incluciones de contexto
 \include "gregorian.ly"
@@ -32,7 +32,7 @@
   \markup { \fill-line { \center-column { \fontsize #2 "Arreglo Hrns. Gutierrez" \small "(2007 - 2016)" } \center-column { \fontsize #2 "Kiko Argüello" } } }
   \header {
     copyright = "Creative Commons Attribution 3.0" 
-    tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+    tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
     breakbefore = ##t
   }
   

@@ -1,5 +1,5 @@
 \language "espanol"
-\version "2.19.80"
+\version "2.23.2"
 
 % --- Tamaño del pentagrama
 #(set-global-staff-size 30)
@@ -18,7 +18,7 @@ global = { \tempo "Andante" 4=90 \clef treble \key fa \major \time 3/8 s4.*4 \te
 
 % --- Musica
 instrumento = \relative do' {
-  %\compressFullBarRests
+  %\compressEmptyMeasures
   %Escribir la musica aqui...
   fa4. |
   sol4. |

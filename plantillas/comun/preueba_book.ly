@@ -1,5 +1,5 @@
 \include "comun/book-titling.ily"
-\version "2.12.3"
+\version "2.23.2"
 
 \header {
     title = "The Title"
@@ -21,7 +21,7 @@
   
   %% Table of contents
   \pageBreak
-  \markuplines \table-of-contents
+  \markuplist \table-of-contents
   
   %% 1st Chapter
   \chapter "Act I"

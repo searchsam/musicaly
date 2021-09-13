@@ -1,4 +1,4 @@
-\version "2.16.2"
+\version "2.23.2"
 \language "espanol"
 
 #(set-default-paper-size "letter" 'landscape)
@@ -9,7 +9,7 @@
   	composer = ""
   	arranger = "Arrg. Daniel Gutiérrez"
   	copyright = "Creative Commons Attribution 3.0" 
-  	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  	tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   	breakbefore = ##t
 }
 

@@ -1,6 +1,6 @@
 % by search.sam@
 
-\version "2.18.0"
+\version "2.23.2"
 
 #(set-global-staff-size 30)
 
@@ -10,7 +10,7 @@
 
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  agline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  agline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 

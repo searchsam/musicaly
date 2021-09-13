@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.18.0"
+\version "2.23.2"
 
 % --- Inclucines
 \include "violin.ily"
@@ -20,7 +20,7 @@
 \markup { \fill-line { \center-column { \fontsize #2 "Partitura Maestra" } \center-column { \fontsize #2 "Kiko Argüello" } } }
 \header {
   copyright = \markup { \char ##x00A9 " Camino Neocatecumenal" } 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 

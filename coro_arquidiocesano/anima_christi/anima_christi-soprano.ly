@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.49"
+\version "2.23.2"
 
 #(set-global-staff-size 24)
 
@@ -13,7 +13,7 @@ global = {
   \key re \major
   \time 4/4
   s1
-  \mark \markup { \musicglyph #"scripts.segno" }
+  \mark \markup { \musicglyph "scripts.segno" }
   s1*8
   s2.
   \mark \markup { \bold "Fine" }
@@ -22,13 +22,13 @@ global = {
   \bar "||"
   s1*7
   s2
-  \mark \markup { \italic "D.S. " \tiny \raise #1 \musicglyph #"scripts.segno" }
+  \mark \markup { \italic "D.S. " \tiny \raise #1 \musicglyph "scripts.segno" }
   s2
   \mark \markup { \bold "3." }
   \bar "||"
   s1*7
   s2.
-  \mark \markup { \italic "D.S. " \tiny \raise #1 \musicglyph #"scripts.segno" }
+  \mark \markup { \italic "D.S. " \tiny \raise #1 \musicglyph "scripts.segno" }
   s4
   \bar "|."
 }
@@ -38,13 +38,13 @@ global = {
 \markup { \fill-line { " " \right-column { \fontsize #2 "Versión Sinfonica Coral: Francisco Jarquín Vega" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
 % --- Musica
 soprano = \relative do' {
-  \compressFullBarRests
+  \compressEmptyMeasures
   \dynamicUp
   R1				| % 01
   fas4\mf fas8 fas si4 si8 si	| % 02

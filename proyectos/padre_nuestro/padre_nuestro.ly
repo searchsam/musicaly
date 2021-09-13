@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.19.80"
+\version "2.23.2"
 
 % --- Includes
 %\include "texto.ily"
@@ -25,7 +25,7 @@ global = {  \tempo "Adagio" 4 = 70 \clef treble \key la \minor \time 4/4 s1*9 \b
 
 % --- Musica
 canto = \relative do'' {
-  %\compressFullBarRests
+  %\compressEmptyMeasures
   %Escribir la musica aqui...
   sol4 la si si si la do si la sol r
   la4 sol la si la( sol) sol la si la( si) la r

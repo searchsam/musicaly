@@ -4,7 +4,7 @@
 % "Canta Aleluya" - "Arreglo Hugo Sandino" - "Adaptacion Bayardo Ruben Mojica"
 % ****************************************************************************
 \language "espanol"
-\version "2.16.2"
+\version "2.23.2"
 
 #(set-global-staff-size 32)
 \markup { \fill-line { \center-column { \fontsize #5 "Cantemos gloria al Señor" \fontsize #3 \caps "flauta" } } }
@@ -12,7 +12,7 @@
 
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 

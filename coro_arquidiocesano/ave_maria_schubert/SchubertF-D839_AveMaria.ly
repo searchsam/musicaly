@@ -9,7 +9,7 @@
 %                                                  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\version "2.18.0"
+\version "2.23.2"
 \include "italiano.ly"
 #(set-global-staff-size 18)
 
@@ -25,7 +25,7 @@
  composer = \markup \center-column { \fontsize #3 \bold "Franz Schubert" "" "D 839 (Op. 52, No 6, 1825)" }
 % MUTOPIA
  copyright = "Public Domain"
- tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+ tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  breakbefore = ##t 
 }
 
@@ -62,10 +62,10 @@ TUPNUMTRNO = \override TupletNumber.transparent = ##f
 TUPBRATRNO = \override TupletBracket.transparent = ##f
 TUPTRNO    = { \TUPNUMTRNO \TUPBRATRNO }
 %----- VARIER LA HAUTEUR D'UN NOLET
-TUPBRAPOS = #(define-music-function (parser location beg-end) (pair?)
+TUPBRAPOS = #(define-music-function (beg-end) (pair?)
              #{ \override TupletBracket.positions = #beg-end #})
 %----- VARIER LA HAUTEUR D'UNE BARRE DE LIGATURE
-BEAMPOS = #(define-music-function (parser location beg-end) (pair?)
+BEAMPOS = #(define-music-function (beg-end) (pair?)
             #{ \once \override Beam.positions = #beg-end #})
 %----- VARIER LA HAUTEUR D'UNE LIAISON
 SLURINSIDE = \override Script.avoid-slur = #'inside

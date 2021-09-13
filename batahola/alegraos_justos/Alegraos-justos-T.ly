@@ -4,7 +4,7 @@
 % Alegraos justos - Tenor
 % ****************************************************************
 \language "espanol"
-\version "2.16.0"
+\version "2.23.2"
 
 #(set-global-staff-size 20)
 \markup { \fill-line { \center-column { \fontsize #5 "Alegraos justos" \fontsize #3 \caps "tenor" } } }
@@ -12,7 +12,7 @@
 
 \header {
   copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 

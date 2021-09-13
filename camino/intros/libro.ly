@@ -8,7 +8,7 @@
 \include "shema.ly"
 \include "cierva.ly"
 
-\version "2.12.3"
+\version "2.23.2"
 
 \book {
   \header {
@@ -32,7 +32,7 @@
       \Score
 
       % no bars in staves
-      \override BarLine #'transparent = ##t
+      \override BarLine.transparent = ##t
 
       % incipit should not start with a start delimiter
       \remove "System_start_delimiter_engraver"

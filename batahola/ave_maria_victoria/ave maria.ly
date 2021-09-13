@@ -1,7 +1,7 @@
 %% Ave Maria - Tomas Luis de Victoria
 
 \language "espanol"
-\version "2.19.49"
+\version "2.23.2"
 
 #(set-global-staff-size 18)
 
@@ -9,7 +9,7 @@
 \markup { \fill-line { \center-column { \fontsize #2 "Arreglo Pbro Angel Torrellas" } \center-column { \fontsize #2 "Tomás Luis de Victoria" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0" 
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 

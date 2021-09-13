@@ -1,23 +1,23 @@
 % Created on Mon Aug 29 16:03:40 CST 2011
 % by serach.sam@
 
-\version "2.19.49"
+\version "2.23.2"
 
 #(set-global-staff-size 14)
 
-global = { \key d \minor \time 6/8 \tempo "Tranquillo" 4 = 100 s4*57 \bar "||" s4*15 \mark \markup { \musicglyph #"scripts.segno" } \bar ".|:"  s4*18 \bar ":|." s4*21 \mark "Fine" \bar "||" s4*27 \bar "|." }
+global = { \key d \minor \time 6/8 \tempo "Tranquillo" 4 = 100 s4*57 \bar "||" s4*15 \mark \markup { \musicglyph "scripts.segno" } \bar ".|:"  s4*18 \bar ":|." s4*21 \mark "Fine" \bar "||" s4*27 \bar "|." }
 
 \header {
 	title = \markup { \caps "Arada y Charada" }
 	instrument = \markup { \smallCaps "CORO" }
 	composer = \markup { \center-column { "Bernal" } }
  	copyright = "Creative Commons Attribution 3.0" 
- 	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+ 	tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  	breakbefore = ##t
 }
 
 soprano = \relative c'' { 	
-	\compressFullBarRests
+	\compressEmptyMeasures
  % Type notes here 
  	a8.\mf b16 cis8\< d8 d8 d8\! | %1
  	d4\> cis16( b16 cis4.\! ~ | %2
@@ -80,7 +80,7 @@ sopranoletra = \lyricmode {
 }
 
 contralto = \relative c'' { 	
-	\compressFullBarRests
+	\compressEmptyMeasures
  % Type notes here 
  	a8.\mf a16 a8\< a8 a8 a8\! | %1
  	g4\> g2\!( | %2
@@ -141,7 +141,7 @@ contraltoletra = \lyricmode {
 }
 
 tenor = \relative c' { 	
-	\compressFullBarRests
+	\compressEmptyMeasures
  % Type notes here 
  	a8.\mf a16 g8\< f8 f8 f8\! | %1
  	e4\> e2\!( | %2
@@ -201,7 +201,7 @@ tenorletra = \lyricmode {
 }
 
 bajo = \relative c' { 	
-	\compressFullBarRests
+	\compressEmptyMeasures
  % Type notes here 
  	a8.\mf a16 g8\< f8 f8 f8\! | %1
  	e4\> e2\!( | %2

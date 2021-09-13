@@ -1,7 +1,7 @@
 % Created on Mon Aug 29 16:03:40 CST 2011
 % by serach.sam@
 
-\version "2.14.2"
+\version "2.23.2"
 
 #(set-global-staff-size 25)
 
@@ -13,12 +13,12 @@ global = { \key e \major \time 2/2 \tempo "Moderato" 4 = 90 s1*39 \bar "|." }
 
 \header {
  	copyright = "Creative Commons Attribution 3.0" 
- 	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+ 	tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
  	breakbefore = ##t
 }
 
 tenor = \relative c' { 	
-	\compressFullBarRests
+	\compressEmptyMeasures
  % Type notes here 
  	e2.\p\< e4 | %1
 	e2\! a,4 b4\> | %2

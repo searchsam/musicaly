@@ -1,7 +1,7 @@
 % Created on Wed Mar 02 14:26:21 CST 2011
 % by search.sam@
 
-\version "2.19.80"
+\version "2.23.2"
 
 #(set-global-staff-size 23)
 
@@ -10,7 +10,7 @@
 \markup { \fill-line { " " \center-column { \fontsize #2 "Adaptación: Samuel Gutiérrez" } } }
 \header {
   copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 

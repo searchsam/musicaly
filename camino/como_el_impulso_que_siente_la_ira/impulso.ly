@@ -1,14 +1,14 @@
 % Created on Sun Mar 20 22:48:31 CST 2011
 % by search.sam@
 
-\version "2.12.3"
+\version "2.23.2"
 
 \header {
 	title = \markup { \caps "Como el impulso que siente la ira" }
 	subtitle = "Osa 7ª de Salomon " 
  	opus = "(Marzo 1, 2011)"
  	copyright = \markup { "Camino Neocatecumenal" \char ##x00A9 }
-	tagline = \markup { \with-url #"http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+	tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
 }
 
 impulso = \new Staff {
