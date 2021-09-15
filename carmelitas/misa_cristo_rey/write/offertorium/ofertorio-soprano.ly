@@ -36,7 +36,6 @@ jump = \break
     \new Staff <<
       \set Staff.midiInstrument = #"choir aahs"
       \set Staff.midiMaximumVolume = #1.5
-
       \new Voice = "soprano" <<
         \global \soprano_music
       >>\new Lyrics = "soprano"
@@ -50,6 +49,5 @@ jump = \break
 % --- Paper
 \paper{
   #(set-default-paper-size "letter")
-  indent=3.5\cm
   page-breaking = #ly:page-turn-breaking
 }

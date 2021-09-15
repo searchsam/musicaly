@@ -12,8 +12,7 @@
 % --- Global size
 % #(set-global-staff-size 19)
 
-
-% --- Cabecera
+% --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Comunión" \fontsize #2 "Misa de Cristo Rey" "Cristo forma un todo - Himno a María Madre de la Iglesia"} } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }

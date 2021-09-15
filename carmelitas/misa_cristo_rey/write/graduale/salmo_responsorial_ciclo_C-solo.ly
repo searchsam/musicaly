@@ -48,6 +48,5 @@ jump = \break
 % --- Paper
 \paper{
   #(set-default-paper-size "letter")
-  indent=3.5\cm
   page-breaking = #ly:page-turn-breaking
 }
