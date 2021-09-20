@@ -1,7 +1,8 @@
-% **********************************************************************************
-% Psalm 136, in honor of the election of Lorena del Amor de Dios as Mother Prioress
-% of the Maria Madre de Misericordia and San Jose Monastery, Managua.
-% **********************************************************************************
+% *****************************************************************************
+% Psalm 136, in honor of the election of Hrna Lorena del Amor de Dios as Mother
+% Prioress of the Maria Madre de Misericordia and San Jose Monastery, Managua.
+% Music by serachsam
+% *****************************************************************************
 \language "espanol"
 \version "2.23.2"
 

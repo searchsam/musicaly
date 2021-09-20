@@ -1,175 +1,74 @@
-% ****************************************************************
-%	Reina del Cielo - Cantiga
-%	by serach.sam@
-% ****************************************************************
+% *****************************************************************************
+%	Reina del cielo - Cantiga and Opera - Dedicated to Hrna Carmen Teresa de Cristo Rey
+%	Music by serachsam
+% *****************************************************************************
 \language "espanol"
 \version "2.23.2"
 
+% --- Global parameters
+particle = 1
+jump = \break
+
+% --- Includes
+\include "global.ily"
+\include "soprano.ily"
+\include "alto.ily"
+\include "harmony.ily"
+
+% --- Global size
 %#(set-global-staff-size 19)
 
-% --- Parametro globales
-global = {
-  \tempo "Moderatto" 4=90
-  \key la \minor
-  \time 2/4
-  s2*71
-  \bar "|."
-}
-
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Reina del Cielo" \fontsize #3 "Antífona Mariana" } } }
-\markup { \fill-line { \fontsize #2 " " \fontsize #2 "Música: Samuel Gutiérrez"  } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" \small "(Diciembre, 2017)" } } }
+% --- Header
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Reina del Cielo" \fontsize #3 "Antífona Mariana para el Tiempo Pascual" } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
-  dedication = "Dedicado a la Hna. Carmen Teresa de Cristo Rey - Carmelitas Descalzas Managua"
+  dedication = "Dedicado a la Hna. Carmen Teresa de Cristo Rey - Carmelitas Descalzas Managua - Diciembre, 2017"
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
-% --- Musica
-musica = \relative do'' {
-  mi4. re16 do		|
-  si4. la8		|
-  sol8( si8) sol la~	|
-  la2			|
+% --- Music
 
-  la4. do8		|
-  si8( la sol) la~	|
-  la2			|
-  la4. do8		|
-  si8( la sol) la~	|
-  la2 \bar "||"		| \break
-
-  mi4. fa16 sol		|
-  la4. la8		|
-  la8 la la la		|
-  si8 sol la4~		|
-  la4 la4~		|
-  la4 r			|
-
-  la4. do8		|
-  si8( la sol) la~	|
-  la2			|
-  la4. do8		|
-  si8( la sol) la~	|
-  la2 \bar "||"		| \break
-
-  mi'4. \tuplet 3/2 {re16 re do} |
-  si4. si8 		|
-  la8 sol8 si8 sol 	|
-  la4. la8~		|
-  la2			|
-
-  la4. do8		|
-  si8( la sol) la~	|
-  la2			|
-  la4. do8		|
-  si8( la sol) la~	|
-  la2 \bar "||" 		| \break
-
-  mi4. fa16 sol		|
-  la4. la8( 		|
-  si) sol la4~		|
-  la4 la4~ 		|
-  la4 r			|
-
-  la4. do8		|
-  si8( la sol) la~	|
-  la2			|
-  la4. do8		|
-  si8( la sol) la~	|
-  la2 \bar "||" 		| \break
-
-  mi'4. re16 do		|
-  si4. si8 		|
-  la8 sol si8 sol 	|
-  la4. la8~		|
-  la2			|
-
-  la4. do8		|
-  si8( la sol) la~	|
-  la2			|
-  la4. do8		|
-  si8( la sol) la~	|
-  la2 \bar "||" 		| \break
-
-  mi4. fa16 sol		|
-  la4. la8		|
-  la8 la la la		|
-  si8 sol la4~		|
-  la4 r			|
-
-  la4. do8		|
-  si8( la sol) la~	|
-  la2			|
-  la4. do8		|
-  si8( la sol) la~	|
-  la2 \bar "||" 		| \break
-
-  mi4 la~		|
-  la2			|
-  si2			|
-  dos2~			|
-  dos2 			|
-}
-
-% --- Letra
-letra = \lyricmode {
-  Rei -- na del cie -- lo,~a -- lé -- gra -- te, a -- le -- lu -- ya; a -- le -- lu -- ya.
-  Por -- que~el Se -- ñor, a quien has lle -- va -- do~en tu vien -- tre, a -- le -- lu -- ya; a -- le -- lu -- ya.
-
-  Ha re -- su -- ci -- ta -- do se -- gún su pa -- la -- bra, a -- le -- lu -- ya; a -- le -- lu -- ya.
-  Rue -- ga~al Se -- ñor por no -- so -- tros, a -- le -- lu -- ya; a -- le -- lu -- ya.
-
-  Go -- za y~a -- lé -- gra -- te Vir -- gen Ma -- rí -- a, a -- le -- lu -- ya; a -- le -- lu -- ya.
-  Por -- que~en ver -- dad ha re -- su -- ci -- ta -- do~el Se -- ñor, a -- le -- lu -- ya; a -- le -- lu -- ya.
-
-  ¡A -- le -- lu -- ya!
-}
-
-% --- Acordes
-armonia = \new ChordNames {
-  \set chordChanges = ##t
-  \italianChords
-  \chordmode {
-    la2:m sol2 R2 la2:m R2 sol2 la2:m R2 sol2 la2:m
-
-    R2*3 sol4 la4:m R2*3 sol2 la2:m R2 sol2 la2:m
-
-    R2 sol2 R2 la2:m R2*2 sol2 la2:m R2 sol2 la2:m
-
-    R2*2 sol4 la4:m R2*3 sol2 la2:m R2 sol2 la2:m
-
-    R2 sol2 R2 la2:m R2*2 sol2 la2:m R2 sol2 la2:m
-
-    R2*3 sol4 la4:m R2*2 sol2 la2:m R2 sol2 la2:m
-
-    R2*2 sol2 la2
-  }
-}
+% --- Harmony
 
 \score {
   <<
-    \armonia
-    \new Staff <<
-      %\set Staff.instrumentName = \markup { \smallCaps "Melodia" }
-      \set Staff.midiInstrument = #"oboe"
-      \new Voice = "voz" <<
-        \global
-        \musica
+    \harmonies
+    \new ChoirStaff <<
+      \new Staff <<
+        \new Voice = "soprano" <<
+          \set Staff.instrumentName = #"Soprano"
+          \set Staff.midiInstrument = #"choir aahs"
+          \set Staff.midiMaximumVolume = #1.5
+          \global \soprano_music
+        >>\new Lyrics = "soprano"
+        \context Lyrics = "soprano" \lyricsto "soprano" \soprano_lyrics
       >>
-      \new Lyrics \lyricsto "voz" \letra
+      \new Staff <<
+        \new Voice = "alto" <<
+          \set Staff.instrumentName = #"Contralto"
+          \set Staff.midiInstrument = #"choir aahs"
+          \set Staff.midiMaximumVolume = #1.5
+          \global \alto_music
+        >>
+        \new Lyrics = "alto"
+        \context Lyrics = "alto" \lyricsto "alto" \alto_lyrics
+      >>
     >>
   >>
-  \midi {}
-  \layout {}
+  \midi { }
+  \layout {
+    \context {
+      \Staff \RemoveEmptyStaves
+    }
+  }
 }
 
-\paper {
-  #(set-paper-size "letter")
+% --- Paper
+\paper{
+  #(set-default-paper-size "letter")
+  indent=3.5\cm
+  page-breaking = #ly:page-turn-breaking
 }
-
-%{
-convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
-Aplicando la conversión: 2.19.80
-%}

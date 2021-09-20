@@ -150,11 +150,9 @@ harmonies = \new ChordNames {
     sol2 |
     la2:m |
     la2:m |
-    sol4 |
-    la4:m |
+    sol4 la4:m |
     sol2 |
-    la4:m |
-    sol4 |
+    la4:m sol4 |
     la2 |
   }
 }

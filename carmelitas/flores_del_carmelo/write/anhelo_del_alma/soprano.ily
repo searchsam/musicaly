@@ -127,39 +127,39 @@ soprano_music = \relative do'' {
 }
 
 soprano_lyrics = \lyricmode {
-    Si -- len -- cio te~o -- frez -- co.
-    Se -- a~el mo -- nas -- te -- rio mi~es -- con -- dri -- jo.
-    To -- do por Ti lo di.
-    Mi vo -- lun -- tad es tu -- ya.
-    ¿Qué que -- réis Se -- ñor, de mi?
+  Si -- len -- cio te~o -- frez -- co.
+  Se -- a~el mo -- nas -- te -- rio mi~es -- con -- dri -- jo.
+  To -- do por Ti lo di.
+  Mi vo -- lun -- tad es tu -- ya.
+  ¿Qué que -- réis Se -- ñor, de mi?
 
-    ¡A -- mor! ¡A -- mor! ¡A -- mor!
-    U -- nir -- me ab -- so -- lu -- ta -- men -- te
-    y en -- te -- ra -- men -- te a Je -- sús.
-    A no vi -- vir más que pa -- ra~a -- mar y pa -- de -- cer.
-    A ser el úl -- ti -- mo, me -- nos pa -- ra~o -- be -- de -- cer.
+  ¡A -- mor! ¡A -- mor! ¡A -- mor!
+  U -- nir -- me ab -- so -- lu -- ta -- men -- te
+  y en -- te -- ra -- men -- te a Je -- sús.
+  A no vi -- vir más que pa -- ra~a -- mar y pa -- de -- cer.
+  A ser el úl -- ti -- mo, me -- nos pa -- ra~o -- be -- de -- cer.
 
-    Fue -- ra mi~ú -- ni -- ca re -- gla.
-    Mi ú -- ni -- co~a -- li -- men -- to.
-    Mi~ú -- ni -- co es -- tu -- di -- o.
-    Mi~ú -- ni -- ca ra -- zón pa -- ra vi -- vir.
-    ¿Qué que -- réis Se -- ñor, de mi?
+  Fue -- ra mi~ú -- ni -- ca re -- gla.
+  Mi ú -- ni -- co~a -- li -- men -- to.
+  Mi~ú -- ni -- co es -- tu -- di -- o.
+  Mi~ú -- ni -- ca ra -- zón pa -- ra vi -- vir.
+  ¿Qué que -- réis Se -- ñor, de mi?
 
-    ¡A -- mor! ¡A -- mor! ¡A -- mor!
-    U -- nir -- me ab -- so -- lu -- ta -- men -- te
-    y en -- te -- ra -- men -- te a Je -- sús.
-    A no vi -- vir más que pa -- ra~a -- mar y pa -- de -- cer.
-    A ser el úl -- ti -- mo, me -- nos pa -- ra~o -- be -- de -- cer.
+  ¡A -- mor! ¡A -- mor! ¡A -- mor!
+  U -- nir -- me ab -- so -- lu -- ta -- men -- te
+  y en -- te -- ra -- men -- te a Je -- sús.
+  A no vi -- vir más que pa -- ra~a -- mar y pa -- de -- cer.
+  A ser el úl -- ti -- mo, me -- nos pa -- ra~o -- be -- de -- cer.
 
-    ¡De -- jar de vi -- vir!
-    ¡Pu -- di~e -- ra sin a -- mar -- te!
-    Mo -- rir de a -- mor.
-    Vi -- vir no pue -- do.
-    ¿Qué que -- réis Se -- ñor, de mi?
+  ¡De -- jar de vi -- vir!
+  ¡Pu -- di~e -- ra sin a -- mar -- te!
+  Mo -- rir de a -- mor.
+  Vi -- vir no pue -- do.
+  ¿Qué que -- réis Se -- ñor, de mi?
 
-    ¡A -- mor! ¡A -- mor! ¡A -- mor!
-    U -- nir -- me ab -- so -- lu -- ta -- men -- te
-    y en -- te -- ra -- men -- te a Je -- sús.
-    A no vi -- vir más que pa -- ra~a -- mar y pa -- de -- cer.
-    A ser el úl -- ti -- mo, me -- nos pa -- ra~o -- be -- de -- cer.
+  ¡A -- mor! ¡A -- mor! ¡A -- mor!
+  U -- nir -- me ab -- so -- lu -- ta -- men -- te
+  y en -- te -- ra -- men -- te a Je -- sús.
+  A no vi -- vir más que pa -- ra~a -- mar y pa -- de -- cer.
+  A ser el úl -- ti -- mo, me -- nos pa -- ra~o -- be -- de -- cer.
 }

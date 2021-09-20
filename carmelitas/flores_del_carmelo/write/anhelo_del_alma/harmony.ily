@@ -122,7 +122,7 @@ harmonies = \new ChordNames {
     re2 |
     mi2:m
     re2:7 |
-    re2:7 
+    re2:7
     mi2 |
     mi2 |
     mi2 |

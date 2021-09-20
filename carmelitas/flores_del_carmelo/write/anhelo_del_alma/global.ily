@@ -7,7 +7,7 @@ global = {
   \key mi \major
   \skip 2*6
   \bar "||" % 48
-  \key fa \major 
+  \key fa \major
   \skip 2*16
   \bar "||" % 48
   \key mi \minor

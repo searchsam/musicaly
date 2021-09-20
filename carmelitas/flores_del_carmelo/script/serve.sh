@@ -61,6 +61,8 @@ if [ ${#files[@]} -gt 0 ]; then
         file_name="${strarr[-1]}"
 
         compile_pdf $file_name
-        compile_audio $dir
+        for dir in write/*/; do
+            compile_audio $dir
+        done
     done
 fi

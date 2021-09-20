@@ -1,7 +1,8 @@
-% ****************************************************************
-%	Ahnelo del alma - San Rafael Arnaiz Baron
-%   	Music by serachsam
-% ****************************************************************
+% *****************************************************************************
+% Ahnelo del alma - San Rafael Arnaiz Baron - On the occasion
+% of the perpetual vows of Hrna Itzia Novanela of the Child Jesus
+% Music by serachsam
+% *****************************************************************************
 \language "espanol"
 \version "2.23.2"
 

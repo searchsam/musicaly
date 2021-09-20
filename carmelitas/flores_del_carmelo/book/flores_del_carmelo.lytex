@@ -1,8 +1,7 @@
-% ********************************************************
+% *****************************************************************************
 %   FLORES DEL CARMELO DEL MONASTERIO MARIA MADRE DE MISERICORDIA Y SAN JOSE
-%   Texto y musica con acompañamiento
-%   by serachsam
-% ********************************************************
+%   Music by serachsam
+% *****************************************************************************
 
 \documentclass[letterpaper]{report}
 
@@ -21,7 +20,7 @@
 }
 %% Portada del Libro
 \title{ \textbf{ \Huge Flores del Carmelo  } \\
-{ \LARGE Motetes dedicados a las Hermanas del Monasterio María Madre de Misericordia y San José } }
+{ \LARGE Motetes dedicados a las Hermanas del Monasterio Mar\'ia Madre de Misericordia y San Jos\'e } }
 \author{ \textit{ \large Carmelitas Descalzas, Managua, Nicaragua } }
 \date{ \LARGE Linda Isabel Martínez Castro \\ Samuel José Gutiérrez Avilés \\ \small \textit{2017 - 2020} }
 
@@ -32,32 +31,27 @@
     %% - Portada
     \maketitle
 
+    %% - Alabado sea
     \begin{lilypond}%[staffsize=20]
-        \include "../alabado_sea/alabado_sea.ly"
+        \include "../write/alabado_sea/alabado_sea.ly"
     \end{lilypond}
     \clearpage
-    
-    %% - Anhelo de un alma
+
+    %% - Anhelo del alma
     \begin{lilypond}%[staffsize=20]
-        \include "../anhelo_del_alma/anhelo_del_alma.ly"
+        \include "../write/anhelo_del_alma/anhelo_del_alma.ly"
     \end{lilypond}
     \clearpage
 
     %% - El pastorea entre los lirios
     \begin{lilypond}%[staffsize=20]
-        \include "../el_pastorea_entre_los_lirios/el_pastorea_entre_los_lirios.ly"
-    \end{lilypond}
-    \clearpage
-    
-    %% - Salmo responsorial
-    \begin{lilypond}%[staffsize=20]
-        \include "../salmo_responsorial_fiesta/salmo_responsorial.ly"
+        \include "../write/el_pastorea_entre_los_lirios/el_pastorea_entre_los_lirios.ly"
     \end{lilypond}
     \clearpage
 
     %% - Reina del cielo
     \begin{lilypond}%[staffsize=20]
-        \include "../reina_del_cielo/reina_del_cielo.ly"
+        \include "../write/reina_del_cielo/reina_del_cielo.ly"
     \end{lilypond}
     \clearpage
 

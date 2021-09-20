@@ -105,29 +105,29 @@ alto_music = \relative do' {
 }
 
 alto_lyrics = \lyricmode {
-    ¡Por -- que es~e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
-    ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que es~e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
+  ¡Por -- que~es e -- ter -- no su~a -- mor!
 }
