@@ -35,11 +35,11 @@
   <<
     \acordes
     \new Staff {
+      %\set Staff.midiInstrument = #"choir aahs"
+      %\set Staff.midiMaximumVolume = #1.5
       <<
         \new Voice = "voice" {
           <<
-            %\set Staff.midiInstrument = #"choir aahs"
-            %\set Staff.midiMaximumVolume = #1.5
             \global
             \voice
           >>

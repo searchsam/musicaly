@@ -238,8 +238,8 @@ soprano_letra = \lyricmode {
   ¡El es el Cris -- to,~el Se -- ñor! Cris -- to,~el Se -- ñor!
 
   En -- con -- tra -- ron a Ma -- rí -- a, y~en -- con -- tra -- ron a Jo -- sé,
-  al buey, a el bu -- rro, y~a el ni -- ño, el En -- ma -- nuel.
-  Al buey, a el bu -- rro, y~a el ni -- ño, el En -- ma -- nuel.
+  al buey, a el bu -- rro, y al ni -- ño, el En -- ma -- nuel.
+  Al buey, a el bu -- rro, y al ni -- ño, el En -- ma -- nuel.
 
   ¡A -- le -- grí -- a,~a -- le -- grí -- a,~a -- le -- grí -- a,
   ha na -- ci -- do~el sal -- va -- dor
