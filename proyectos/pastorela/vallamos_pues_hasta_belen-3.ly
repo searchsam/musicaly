@@ -70,8 +70,8 @@ voice = \relative do' {
   re4. do8 
   si( la sols fa
   mi fa sol la 
-  sol) fa mi4~
-  mi2 \break
+  sol) fa sols4~
+  sols2 \break
   
   r4 mi4
   si'4. la8 
@@ -106,8 +106,8 @@ voice = \relative do' {
   re4. do8 
   si( la sols fa
   mi fa sol) la
-  sol fa mi4~
-  mi2 \break
+  sol fa sols4~
+  sols2 \break
   
   r4 mi4
   si'4. la8 
@@ -129,8 +129,8 @@ voice = \relative do' {
   mi2 \break
   
   si'4. la8 
-  sols4. si8
-  do4. si8 
+  sols4. si16 si
+  do4.( si8)
   la4 r8 do
   do16 do la8 sols la
   si4 si4~
@@ -236,7 +236,7 @@ harmonies = \new ChordNames {
 % --- Sheet
 \score {
   <<
-    %\harmonies
+    \harmonies
     \new Staff {
       \set Staff.midiInstrument = #"english horn"
       %\set Staff.midiMaximumVolume = #1.5

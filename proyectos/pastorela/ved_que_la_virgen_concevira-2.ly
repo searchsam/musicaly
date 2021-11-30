@@ -123,6 +123,7 @@ acordes = \new ChordNames {
     \acordes
     \new ChoirStaff <<
       \new Staff <<
+        \set Staff.midiInstrument = #"oboe"
         \set Staff.instrumentName = \markup { \smallCaps "Soprano" }
         \new Voice = "soprano" <<
           \global
@@ -131,6 +132,7 @@ acordes = \new ChordNames {
         \new Lyrics \lyricsto "soprano" \soprano_letra
       >>
       \new Staff <<
+        \set Staff.midiInstrument = #"clarinet"
         \set Staff.instrumentName = \markup { \smallCaps "Contralto" }
         \new Voice = "alto" <<
           \global
@@ -139,6 +141,7 @@ acordes = \new ChordNames {
         \new Lyrics \lyricsto "alto" \contralto_letra
       >>
       \new Staff <<
+        \set Staff.midiInstrument = #"english horn"
         \set Staff.instrumentName = \markup { \smallCaps "Tenor" }
         \new Voice = "tenor" <<
           \global
@@ -147,6 +150,7 @@ acordes = \new ChordNames {
         \new Lyrics \lyricsto "tenor" \tenor_letra
       >>
       \new Staff <<
+        \set Staff.midiInstrument = #"bassoon"
         \set Staff.instrumentName = \markup { \smallCaps "Bajo" }
         \new Voice = "bass" <<
           \global

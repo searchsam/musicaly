@@ -176,7 +176,7 @@ harmonies = \new ChordNames {
 % --- Sheet
 \score {
   <<
-    %\harmonies
+    \harmonies
     \new Staff {
       \set Staff.midiInstrument = #"english horn"
       %\set Staff.midiMaximumVolume = #1.5
