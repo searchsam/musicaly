@@ -32,7 +32,7 @@ global = {
   \clef "G_8"
   \key la \minor
   \time 2/4
-  \skip 2*120
+  \skip 2*118
   \bar "|."
 }
 
@@ -68,9 +68,8 @@ voice = \relative do' {
   la2) 
   r4 la
   re4. do8 
-  si( la sols fa
-  mi fa sol la 
-  sol) fa sols4~
+  si( la sols la
+  si do si) la 
   sols2 \break
   
   r4 mi4
@@ -104,9 +103,8 @@ voice = \relative do' {
   la2) 
   r4 la
   re4. do8 
-  si( la sols fa
-  mi fa sol) la
-  sol fa sols4~
+  si( la sols la
+  si) do si la 
   sols2 \break
   
   r4 mi4
@@ -140,10 +138,10 @@ voice = \relative do' {
   la2) 
   r4 la
   re4. do8 
-  si( la sols fa
-  mi fa sol) la 
-  sol( fa) mi4
-  mi2 \break
+  si( la sols la
+  si do) si la 
+  sols2 
+  sols2 \break
   
   r4 mi4
   si'4. la8 
@@ -214,19 +212,19 @@ harmonies = \new ChordNames {
     mi2 re2:m re2:m la2:m la2:m re2:m re4:m mi4 mi4 fa4 fa4 mi4 mi2
     
     mi2 mi2 la2:m la2:m fa2 mi2 mi2 
-    re2:m re4:m la4:m la2:m la2:m re2:m re4:m mi4 mi4 fa4 fa4 mi4 mi2
+    re2:m re4:m la4:m la2:m la2:m re2:m mi2 fa2 mi2
     
     mi2 mi2 mi2 la2:m la2:m re2:m re2:m mi2 
     mi2 re2:m re2:m la2:m la2:m re2:m re4:m mi4 mi4 fa4 fa4 mi4 mi2
     
     mi2 mi2 la2:m la2:m fa2 mi2 mi2 
-    re2:m re4:m la4:m la2:m la2:m re2:m re4:m mi4 mi4 fa4 fa4 mi4 mi2
+    re2:m re4:m la4:m la2:m la2:m re2:m mi2 fa2 mi2
     
     mi2 mi2 mi2 la2:m la2:m re2:m re2:m mi2 
     mi2 re2:m re2:m la2:m la2:m re2:m re4:m mi4 mi4 fa4 fa4 mi4 mi2
     
     mi2 mi2 la2:m la2:m fa2 mi2 mi2 
-    re2:m re4:m la4:m la2:m la2:m re2:m re4:m mi4 mi4 fa4 fa4 mi4 mi2
+    re2:m re4:m la4:m la2:m la2:m re2:m mi2 fa2 mi2 mi2
     
     mi2 mi2 mi2 la2:m la2:m re2:m re2:m mi2 
     mi2 re2:m re2:m la2:m la2:m re2:m re4:m mi4 mi4 fa4 fa4 mi4 mi2
