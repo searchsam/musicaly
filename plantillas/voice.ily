@@ -3,6 +3,6 @@ voice = \relative do' {
   do1
 }
 
-lyrics = \lyricmode {
+voice-lyrics = \lyricmode {
   Lorem ipsum
 }

@@ -4,6 +4,10 @@
 \language "espanol"
 \version "2.23.2"
 
+tittle = "Titulo"
+subtittle = "SubTitutlo"
+autor = "Autor"
+
 \markup {
   \fill-line {
     \line { }
@@ -12,14 +16,14 @@
       \null
       \null
       \null
-      \fontsize #10 \smallCaps "Titulo"
+      \fontsize #10 \smallCaps \tittle
     }
     \line { }
   }
 }
 
 \markup {
-  \fill-line { \fontsize #5 "SubTitulo" }
+  \fill-line { \fontsize #5 \subtittle }
 }
 
 \markup {
@@ -27,7 +31,7 @@
     \line { }
     \center-column {
       \null
-      \fontsize #7 \caps "Author"
+      \fontsize #7 \caps \autor
     }
     \line { }
   }
