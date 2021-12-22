@@ -369,6 +369,10 @@ harmonies = \new ChordNames {
   }
 }
 
+% --- Metronome
+time = 4
+%\include "metronome.ily"
+
 % --- Sheet
 \score {
   <<

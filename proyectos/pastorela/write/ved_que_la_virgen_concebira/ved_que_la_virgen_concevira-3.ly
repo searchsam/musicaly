@@ -4,6 +4,9 @@
 \language "espanol"
 \version "2.23.2"
 
+% --- Global size
+#(set-global-staff-size 18.5)
+
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 "Ved que la virgen concebira" \fontsize #3 "Mateo 1, 20-25" } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "José Luis Marin" } } }
@@ -17,10 +20,10 @@
 
 % --- Music
 global = {
-  \tempo "Andagio" 4=70
+  \tempo "Andagio" 4=60
   \key re \minor
   \time 4/4
-  s1*52
+  s1*53
   \bar "|."
 }
 
@@ -35,12 +38,12 @@ voice = \relative do' {
   la4 la2 r8 la 
   re4. do16( si) do4. re8 
   si( sol) si do la2 \break
-  re,8( mi) fa( sol) la8( sol la8 sib 
-  do re do sib la2)
-  \tuplet 3/2 {la8( sol fa} mi2) do8 mi
-  re2 re2 \break
+  r2 re,8( mi) fa( sol) 
+  la8( sol la8 sib do re do sib 
+  la2) \tuplet 3/2 {la8( sol fa} mi4~ 
+  mi4) do8 mi re2 
+  re2 r2 \break
   
-  r1
   re8( mi) fa sol la8( sol la8 sib 
   do re do sib) la2
   la8( sol) fa( mi) mi2
@@ -49,12 +52,12 @@ voice = \relative do' {
   la2. r8 la
   re4. do16( si) do4. re8 
   si sol si do la2 \break
-  re,8( mi) fa( sol) la8( sol la8 sib 
-  do re do sib la2)
-  \tuplet 3/2 {la8( sol fa} mi2) do8 mi
-  re2 re2 \break
+  r2 re,8( mi) fa( sol) 
+  la8( sol la8 sib do re do sib 
+  la2) \tuplet 3/2 {la8( sol fa} mi4~ 
+  mi4) do8 mi re2 
+  re2 r2 \break
   
-  r1
   re8( mi) fa sol la8( sol la8 sib 
   do re do sib la2)
   la8( sol) fa( mi) mi2
@@ -63,12 +66,12 @@ voice = \relative do' {
   la4 la2 r8 la 
   re4. do16 si do4. re8 
   si( sol) si do la2 \break
-  re,8( mi) fa( sol) la8( sol la8 sib 
-  do re do sib la2)
-  \tuplet 3/2 {la8( sol fa} mi2) do8 mi
-  re2 re2 \break
+  r2 re,8( mi) fa( sol) 
+  la8( sol la8 sib do re do sib 
+  la2) \tuplet 3/2 {la8( sol fa} mi4~ 
+  mi4) do8 mi re2 
+  re2 r2 \break
   
-  r1
   re8( mi) fa( sol) la8( sol la8 sib 
   do re do sib) la2
   la8( sol) fa mi mi2
@@ -77,12 +80,14 @@ voice = \relative do' {
   la8) la la la( la4) r8 la8
   re4.( do16 si) do4. re8 
   si8( sol) si do la2 \break
-  re,8( mi) fa( sol) la8( sol la8 sib 
-  do re do sib la2)
-  \tuplet 3/2 {la8( sol fa} mi2) do8 mi
-  re2 re2 \break
+  r2 re,8( mi) fa( sol) 
+  la8( sol la8 sib do re do sib 
+  la2) \tuplet 3/2 {la8( sol fa} mi4~ 
+  mi4) do8 mi re2 
+  re2 r2 \break
 }
 
+% --- Lyrics
 voice-lyrics = \lyricmode {
   Ved que la vir -- gen con -- ce -- vi -- rá y da -- rá a luz un hi -- jo,
   a quien pon -- dra por nom -- bre~En -- ma -- nuel.
@@ -113,14 +118,14 @@ harmonies = \new ChordNames {
     re1:m 
     re2:m do2 
     do4 re2.:m 
-    do1 
+    do1
     re1:m 
-    re1:m 
+    re1:m
     do2 re2:m 
     re1:m 
     re1:m 
-    re4:m do2. 
-    re1:m
+    re2.:m do4
+    do2 re2:m
     
     re1:m 
     re1:m 
@@ -133,8 +138,8 @@ harmonies = \new ChordNames {
     do2 re2:m 
     re1:m 
     re1:m 
-    re4:m do2. 
-    re1:m
+    re2.:m do4
+    do2 re2:m
     
     re1:m 
     re1:m 
@@ -147,8 +152,8 @@ harmonies = \new ChordNames {
     do2 re2:m 
     re1:m 
     re1:m 
-    re4:m do2. 
-    re1:m
+    re2.:m do4
+    do2 re2:m
     
     re1:m 
     re1:m 
@@ -161,10 +166,15 @@ harmonies = \new ChordNames {
     do2 re2:m 
     re1:m 
     re1:m 
-    re4:m do2. 
+    re2.:m do4
+    do2 re2:m
     re1:m
   }
 }
+
+% --- Metronome
+time = 4
+\include "metronome.ily"
 
 % --- Sheet
 \score {
@@ -178,7 +188,8 @@ harmonies = \new ChordNames {
         \new Lyrics \lyricsto "voice" { \voice-lyrics }
       >>
     }
-  >>
+    %\metronome
+    >>
   \midi {}
   \layout {}
 }

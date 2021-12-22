@@ -9,7 +9,7 @@
 
 % --- Parametro globales
 global = {
-  \tempo "Andante" 4 = 60 
+  \tempo "Andante" 4 = 60
   \key la \minor
   \time 6/8
   \dynamicUp
@@ -65,7 +65,7 @@ flauta = \relative do' {
   si4. re8. do16 si8)			| % 15
   do4( re8 mi4 re8			| % 16
   \partial 8*5 do4 si8 la4)		| % 17
-  
+
 }
 
 guitar = \relative do {
@@ -84,17 +84,19 @@ guitar = \relative do {
   la8. si16 do4. re8			| % 12
   mi4. do4.				| % 13
   re8. mi16 fa2				| % 14
-  sol,4. sol4 sol,8			| % 15
+  sol,4.~ sol4 sol,8			| % 15
   la4 do8 mi4 re8			| % 16
   \partial 8*5 mi4 mi,8 la4		| % 17
 }
 
 % --- Acordes
 acordes = \new ChordNames {
-  %\set chordChanges = ##t
-  \italianChords
+  \set ChordNames.midiInstrument = "string ensemble 2"
+  \set ChordNames.midiMaximumVolume = #0.6
+  \set chordChanges = ##t
   \chordmode {
-    R8 
+    \italianChords
+    R8
     la2.:m sol2. la2.:m mi2.
     la2.:m sol2. fa4. mi4.:7 la2.:m
     do2. sol2. la2.:m mi2.
@@ -105,21 +107,27 @@ acordes = \new ChordNames {
 \score {
   \new ChoirStaff <<
     \acordes
-    \new Staff <<
+    \new Staff {
       \set Staff.instrumentName = #"Mandolina"
       \set Staff.midiInstrument = #"acoustic guitar (steel)"
-      \new Voice = "mandolina" << \global \mandolina >>
-    >>
-    \new Staff <<
+      <<
+        \new Voice = "mandolina" << \global \mandolina >>
+      >>
+    }
+    \new Staff {
       \set Staff.instrumentName = #"Flauta"
       \set Staff.midiInstrument = #"flute"
-      \new Voice = "oboe" << \global \flauta >>
-    >>
-    \new Staff <<
+      <<
+        \new Voice = "oboe" << \global \flauta >>
+      >>
+    }
+    \new Staff {
       \set Staff.instrumentName = #"Guitarra"
       \set Staff.midiInstrument = #"acoustic guitar (nylon)"
-      \new Voice = "guitarra" << \global \guitar >>
-    >>
+      <<
+        \new Voice = "guitarra" << \global \guitar >>
+      >>
+    }
   >>
   \layout {}
   \midi {}
