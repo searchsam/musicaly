@@ -5,7 +5,7 @@
 \version "2.23.2"
 
 % --- Global size
-#(set-global-staff-size 18.5)
+%#(set-global-staff-size 18.5)
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 "Ved que la virgen concebira" \fontsize #3 "Mateo 1, 20-25" } } }
@@ -47,7 +47,7 @@ voice = \relative do' {
   re8( mi) fa sol la8( sol la8 sib 
   do re do sib) la2
   la8( sol) fa( mi) mi2
-  do8 mi re2 re4
+  do8 mi re2 re4 \break
   do'4. si16( la) si4. do8 
   la2. r8 la
   re4. do16( si) do4. re8 
@@ -76,8 +76,8 @@ voice = \relative do' {
   do re do sib) la2
   la8( sol) fa mi mi2
   do8( mi) re2 r4 
-  do'4. si16 la si4. do8(
-  la8) la la la( la4) r8 la8
+  do'4. si16 la si4. do8
+  la4 la2 r8 la8
   re4.( do16 si) do4. re8 
   si8( sol) si do la2 \break
   r2 re,8( mi) fa( sol) 
@@ -89,19 +89,23 @@ voice = \relative do' {
 
 % --- Lyrics
 voice-lyrics = \lyricmode {
-  Ved que la vir -- gen con -- ce -- vi -- rá y da -- rá a luz un hi -- jo,
+  Ved que la vir -- gen con -- ce -- vi -- rá 
+  y da -- rá a luz un hi -- jo,
   a quien pon -- dra por nom -- bre~En -- ma -- nuel.
   En -- ma -- nuel Dios con no -- so -- tros.
   
-  Jo -- sé, no te -- mas en to -- mar a Ma -- rí -- a co -- mo tu mu -- jer 
+  Jo -- sé, no te -- mas en to -- mar 
+  a Ma -- rí -- a co -- mo tu mu -- jer 
   por que su hi -- jo es el En -- ma -- nuel. 
   En -- ma -- nuel Dios con no -- so -- tros.
   
-  Da -- rá a luz un hi -- jo, él sal -- va -- rá a su pue -- blo, 
+  Da -- rá a luz un hi -- jo, 
+  él sal -- va -- rá a su pue -- blo, 
   y tú le pon -- drás por nom -- bre~En -- ma -- nuel.
   En -- ma -- nuel Dios con no -- so -- tros.
   
-  Des -- per -- ta -- do del su -- e -- ño hi -- zo co -- mo el án -- gel le man -- do,
+  Des -- per -- ta -- do del su -- e -- ño 
+  hi -- zo co -- mo man -- do el án -- gel,
   y fue pa -- dre del En -- ma -- nuel.
   En -- ma -- nuel Dios con no -- so -- tros.
 }
@@ -126,8 +130,8 @@ harmonies = \new ChordNames {
     re1:m 
     re2.:m do4
     do2 re2:m
-    
     re1:m 
+    
     re1:m 
     re1:m 
     re2:m do2 
@@ -174,7 +178,7 @@ harmonies = \new ChordNames {
 
 % --- Metronome
 time = 4
-\include "metronome.ily"
+\include "../metronome.ily"
 
 % --- Sheet
 \score {
@@ -184,7 +188,7 @@ time = 4
       \set Staff.midiInstrument = #"oboe"
       %\set Staff.midiMaximumVolume = #1.5
       <<
-        \new Voice = "voice" { <<\global \voice >> }
+        \new Voice = "voice" { <<\global \transpose re mi { \voice } >> }
         \new Lyrics \lyricsto "voice" { \voice-lyrics }
       >>
     }

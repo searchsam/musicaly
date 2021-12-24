@@ -24,8 +24,8 @@ alto_music = \relative do' {
   R1 |
   sol4 la sib la |
   sol la sol fa |
-  sol4 la( sib) la( |
-  sol2) r | #(if (= particle 1) jump "") % 28
+  sol4 la sib la |
+  sol2 r | #(if (= particle 1) jump "") % 28
   sol4( fa) mi2( |
   re4) mi2 r4 |
   sol4( fa) mi2( |
@@ -36,10 +36,10 @@ alto_music = \relative do' {
 
 alto_lyrics = \lyricmode {
     San -- to, san -- to, san -- to.
-    Los cie -- los y la tie -- rra es -- tan lle -- nos de ti.
+    Los cie -- los y la tie -- rra es -- tan lle -- nos glo -- ria.
     Ho -- sa -- na, ho -- sa -- na, en el cie -- e -- lo.
 
     San -- to, san -- to, san -- to.
-    Ben -- di -- to el que vie -- ne en el nom -- bre.
+    Ben -- di -- to el que vie -- ne en el nom -- bre Se -- ñor.
     Ho -- sa -- na, ho -- sa -- na, en el cie -- e -- lo.
 }
