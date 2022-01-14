@@ -32,7 +32,7 @@ global = {
   \clef "G_8"
   \key la \minor
   \time 2/4
-  \skip 2*118
+  \skip 2*192
   \bar "|."
 }
 
@@ -55,7 +55,26 @@ voice = \relative do' {
   mi fa sol la 
   sol fa) mi4~
   mi2 \break
+  r4 mi4
+  si'4. la8 
+  sols4 mi4
+  do'4. si8 
+  la4 la8 la
+  re4. do8 
+  si la sols la
+  si4 si4~ \break
+  si4 mi,4
+  fa2 
+  fa8 la la la
+  do4 la4~ 
+  la4 la4
+  re4. do8 
+  si la sols( fa
+  mi fa sol la 
+  sol fa) mi4~
+  mi2 \break
   
+  r2
   si'4. la8 
   sols4. si8
   do4. si8 
@@ -90,7 +109,26 @@ voice = \relative do' {
   mi fa sol la 
   sol fa) mi4~
   mi2 \break
+  r4 mi4
+  si'4. la8 
+  sols4 mi4
+  do'4. si8 
+  la4 la8 la
+  re4. do8 
+  si la sols la
+  si4 si4~ \break
+  si4 mi,4
+  fa2 
+  fa8 la la la
+  do4 la4~ 
+  la4 la4
+  re4. do8 
+  si la sols( fa
+  mi fa sol la 
+  sol fa) mi4~
+  mi2 \break
   
+  r2
   si'4. la8 
   sols4. si8
   do4.( si8)
@@ -125,7 +163,26 @@ voice = \relative do' {
   mi fa sol la 
   sol fa) mi4~
   mi2 \break
+  r4 mi4
+  si'4. la8 
+  sols4 mi4
+  do'4. si8 
+  la4 la8 la
+  re4. do8 
+  si la sols la
+  si4 si4~ \break
+  si4 mi,4
+  fa2 
+  fa8 la la la
+  do4 la4~ 
+  la4 la4
+  re4. do8 
+  si la sols( fa
+  mi fa sol la 
+  sol fa) mi4~
+  mi2 \break
   
+  r2
   si'4. la8 
   sols4. si16 si
   do4.( si8)
@@ -140,9 +197,26 @@ voice = \relative do' {
   re4. do8 
   si( la sols la
   si do) si la 
-  sols2 
-  sols2 \break
+  sols8 sols4. \break
   
+  r4 mi4
+  si'4. la8 
+  sols4 mi4
+  do'4. si8 
+  la4 la8 la
+  re4. do8 
+  si la sols la
+  si4 si4~ \break
+  si4 mi,4
+  fa2 
+  fa8 la la la
+  do4 la4~ 
+  la4 la4
+  re4. do8 
+  si la sols( fa
+  mi fa sol la 
+  sol fa) mi4~
+  mi2 \break
   r4 mi4
   si'4. la8 
   sols4 mi4
@@ -169,12 +243,20 @@ voice-lyrics = \lyricmode {
   y ve -- a -- mos lo que~ha su -- ce -- di -- do.
   Y~el San -- to, ben -- di -- to se -- a,
   nos ha ma -- ni -- fes -- ta -- do.
+  Va -- lla -- mos pues, has -- ta Be -- len
+  y ve -- a -- mos lo que~ha su -- ce -- di -- do.
+  Y~el San -- to, ben -- di -- to se -- a,
+  nos ha ma -- ni -- fes -- ta -- do.
   
   Ya na -- ció el sal -- va -- dor
   en -- vuel -- to en pa -- ña -- les.
   Va -- mos a Be -- lén
   que quie -- ro ver al Rey
   
+  Va -- lla -- mos pues, has -- ta Be -- len
+  y ve -- a -- mos lo que~ha su -- ce -- di -- do.
+  Y~el San -- to, ben -- di -- to se -- a,
+  nos ha ma -- ni -- fes -- ta -- do.
   Va -- lla -- mos pues, has -- ta Be -- len
   y ve -- a -- mos lo que~ha su -- ce -- di -- do.
   Y~el San -- to, ben -- di -- to se -- a,
@@ -189,12 +271,20 @@ voice-lyrics = \lyricmode {
   y ve -- a -- mos lo que~ha su -- ce -- di -- do.
   Y~el San -- to, ben -- di -- to se -- a,
   nos ha ma -- ni -- fes -- ta -- do.
+  Va -- lla -- mos pues, has -- ta Be -- len
+  y ve -- a -- mos lo que~ha su -- ce -- di -- do.
+  Y~el San -- to, ben -- di -- to se -- a,
+  nos ha ma -- ni -- fes -- ta -- do.
   
   Ya na -- ció el Me -- sí -- as
   el hi -- jo del car -- pin -- te -- ro.
   Va -- mos a Be -- lén
   que quie -- ro ver al pro -- fe -- ta.
   
+  Va -- lla -- mos pues, has -- ta Be -- len
+  y ve -- a -- mos lo que~ha su -- ce -- di -- do.
+  Y~el San -- to, ben -- di -- to se -- a,
+  nos ha ma -- ni -- fes -- ta -- do.
   Va -- lla -- mos pues, has -- ta Be -- len
   y ve -- a -- mos lo que~ha su -- ce -- di -- do.
   Y~el San -- to, ben -- di -- to se -- a,
@@ -210,26 +300,37 @@ harmonies = \new ChordNames {
     \italianChords
     mi2 mi2 mi2 la2:m la2:m re2:m re2:m mi2 
     mi2 re2:m re2:m la2:m la2:m re2:m re4:m mi4 mi4 fa4 fa4 mi4 mi2
+    mi2 mi2 mi2 la2:m la2:m re2:m re2:m mi2 
+    mi2 re2:m re2:m la2:m la2:m re2:m re4:m mi4 mi4 fa4 fa4 mi4 mi2
     
-    mi2 mi2 la2:m la2:m fa2 mi2 mi2 
+    mi2 mi2 mi2 la2:m la2:m fa2 mi2 mi2 
     re2:m re4:m la4:m la2:m la2:m re2:m mi2 fa2 mi2
     
     mi2 mi2 mi2 la2:m la2:m re2:m re2:m mi2 
     mi2 re2:m re2:m la2:m la2:m re2:m re4:m mi4 mi4 fa4 fa4 mi4 mi2
+    mi2 mi2 mi2 la2:m la2:m re2:m re2:m mi2 
+    mi2 re2:m re2:m la2:m la2:m re2:m re4:m mi4 mi4 fa4 fa4 mi4 mi2
     
-    mi2 mi2 la2:m la2:m fa2 mi2 mi2 
+    mi2 mi2 mi2 la2:m la2:m fa2 mi2 mi2 
     re2:m re4:m la4:m la2:m la2:m re2:m mi2 fa2 mi2
     
     mi2 mi2 mi2 la2:m la2:m re2:m re2:m mi2 
     mi2 re2:m re2:m la2:m la2:m re2:m re4:m mi4 mi4 fa4 fa4 mi4 mi2
+    mi2 mi2 mi2 la2:m la2:m re2:m re2:m mi2 
+    mi2 re2:m re2:m la2:m la2:m re2:m re4:m mi4 mi4 fa4 fa4 mi4 mi2
     
-    mi2 mi2 la2:m la2:m fa2 mi2 mi2 
-    re2:m re4:m la4:m la2:m la2:m re2:m mi2 fa2 mi2 mi2
+    mi2 mi2 mi2 la2:m la2:m fa2 mi2 mi2 
+    re2:m re4:m la4:m la2:m la2:m re2:m mi2 fa2 mi2
     
+    mi2 mi2 mi2 la2:m la2:m re2:m re2:m mi2 
+    mi2 re2:m re2:m la2:m la2:m re2:m re4:m mi4 mi4 fa4 fa4 mi4 mi2
     mi2 mi2 mi2 la2:m la2:m re2:m re2:m mi2 
     mi2 re2:m re2:m la2:m la2:m re2:m re4:m mi4 mi4 fa4 fa4 mi4 mi2
   }
 }
+
+time=2
+\include "../metronome.ily"
 
 % --- Sheet
 \score {
@@ -243,6 +344,7 @@ harmonies = \new ChordNames {
         \new Lyrics \lyricsto "voice" { \voice-lyrics }
       >>
     }
+    %\metronome
   >>
   \midi {}
   \layout {}

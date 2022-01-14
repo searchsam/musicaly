@@ -1,4 +1,4 @@
-% Hatikva - Instrumento
+% Titulo de la pieza - Guitarra
 % by serachsam
 
 \language "espanol"
@@ -11,21 +11,19 @@
 
 % --- Includes
 \include "global.ily"
-\include "violin.ily"
-\include "oboe.ily"
-\include "arpa.ily"
-\include "harmony.ily"
+\include "guitarra.ily"
 % \include "metronome.ily"
 
 % --- Global size
 %#(set-global-staff-size \size)
 
 % --- Header
+\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #3 \subtitle \fontsize #2 \nota } } }
+\markup { \fill-line { \fontsize #2 "Guitarra" \right-column { \fontsize #2 \autor } } }
+\markup { \fill-line { "" \right-column { \fontsize #2 \arranger } } }
+\markup { \fill-line { "" \right-column { \fontsize #2 \other } } }
 \header {
-  title = \title
-  subtitle = \subtitle
-  composer = \arranger
-  arranger = \other
+  %dedication = "Dedication (dedicatoria)"
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
@@ -37,26 +35,15 @@
 
 % --- Sheet
 \score {
-  \new StaffGroup <<
-    \harmonies
+  <<
     \new Staff {
-      \set Staff.instrumentName = #"Violin"
-      \set Staff.midiInstrument = #"violin"
-      << \global \violin >>
-    }
-    \new Staff {
-      \set Staff.instrumentName = #"Oboe"
-      \set Staff.midiInstrument = #"oboe"
-      << \global \oboe >>
-    }
-    \new Staff {
-      \set Staff.instrumentName = #"Arpa"
-      \set Staff.midiInstrument = #"orchestral harp"
-      << \global \arpa >>
+      \set Staff.midiInstrument = #"acoustic guitar (nylon)"
+      %\set Staff.midiMaximumVolume = #1.5
+      << \global \guitarra >>
     }
   >>
-  \layout {}
   \midi {}
+  \layout {}
 }
 
 % --- Paper

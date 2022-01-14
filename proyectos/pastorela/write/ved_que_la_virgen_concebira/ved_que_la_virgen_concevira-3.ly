@@ -188,7 +188,7 @@ time = 4
       \set Staff.midiInstrument = #"oboe"
       %\set Staff.midiMaximumVolume = #1.5
       <<
-        \new Voice = "voice" { <<\global \transpose re mi { \voice } >> }
+        \new Voice = "voice" { <<\global \voice>> }
         \new Lyrics \lyricsto "voice" { \voice-lyrics }
       >>
     }

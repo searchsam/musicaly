@@ -15,7 +15,7 @@
 
 % --- Music
 global = {
-  \tempo "Andagio" 4=70
+  \tempo "Andagio" 4=60
   \key la \minor
   \time 4/4
   s1*13
@@ -25,15 +25,15 @@ global = {
 voice = \relative do' {
   \compressEmptyMeasures
   r1
-  la8( si) do re mi8( re mi8 fa 
+  la8( si) do re mi8( \tuplet 3/2 {fa16 mi re} mi8 fa
   sol la sol fa) mi2
   mi8( re) do si si2
   sol8 si la2 r8 mi'8 
   sol4.( fas16 mi fas4.) sol8 
   mi4 mi2 r8 mi 
   la4. sol16( fas) sol4. la8 
-  fas( re) fas sol mi2 \break
-  la,8( si) do re mi8( re mi8 fa 
+  sol16( fas mi re) fas8 sol mi2 \break
+  la,8( si) do( re) mi8( \tuplet 3/2 {fa16 mi re} mi8 fa 
   sol la sol fa mi2)
   \tuplet 3/2 {mi8( re do} si2) sol8 si
   la2 la2
@@ -42,13 +42,13 @@ voice = \relative do' {
 voice-lyrics = \lyricmode {
   Ved que la vir -- gen con -- ce -- vi -- ra y da -- ra a luz un hi -- jo,
   a quien pon -- dra por nom -- bre~En -- ma -- nuel.
-  En -- ma -- nu -- el Dios con no -- so -- tros.
+  En -- ma -- nuel Dios con no -- so -- tros.
 }
  
 % --- Harmony
 harmonies = \new ChordNames {
   \set ChordNames.midiInstrument = "string ensemble 2"
-  %\set ChordNames.midiMaximumVolume = #0
+  \set ChordNames.midiMaximumVolume = #0.5
   \set chordChanges = ##t
   \chordmode {
     \italianChords
@@ -73,7 +73,7 @@ harmonies = \new ChordNames {
   <<
     \harmonies
     \new Staff {
-      \set Staff.midiInstrument = #"oboe"
+      \set Staff.midiInstrument = #"clarinet"
       %\set Staff.midiMaximumVolume = #1.5
       <<
         \new Voice = "voice" { <<\global \voice >> }

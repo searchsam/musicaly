@@ -93,8 +93,8 @@ alto = \relative do' {
   mi4 do4~ 
   do4 do4
   fa4. mi8
-  re do si( la
-  sols la si do~
+  re do si4(~
+  si4 do4~
   do4) si4~
   si2  
 }
@@ -127,6 +127,9 @@ harmonies = \new ChordNames {
   }
 }
 
+time=2
+\include "../metronome.ily"
+
 % --- Sheet
 \score {
   <<
@@ -142,10 +145,11 @@ harmonies = \new ChordNames {
       \set Staff.midiInstrument = #"english horn"
       %\set Staff.midiMaximumVolume = #1.5
       <<
-        \new Voice = "voice" { <<\global \voice>> }
+        \new Voice = "voice" { <<\global \transpose mi fa {\voice}>> }
         \new Lyrics \lyricsto "voice" { \voice-lyrics }
       >>
     }
+    %\metronome
   >>
   \midi {}
   \layout {}
