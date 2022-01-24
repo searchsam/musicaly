@@ -17,13 +17,10 @@ jump = \break
 % #(set-global-staff-size 20)
 
 % --- Header
-%\markup { \fill-line { \center-column { \fontsize #5 "Alegría, ha nacido el Salvador" \fontsize #3 "Tradicional Italiano - Lucas 2, 10-16 / Isaías 1, 3" } } }
-%\markup { \fill-line { " " \right-column { \fontsize #2 "Arreglo y Adaptación: Linda Martínez" } } }
-%\markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
+\markup { \fill-line { \center-column { \fontsize #5 "Alegría, ha nacido el Salvador" \fontsize #3 "Villancico Italiano - Lucas 2, 10-16 / Isaías 1, 3" } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Arreglo y Adaptación: Linda Martínez" } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
-  title = "Alegría, ha nacido el Salvador"
-  subtitle = "Villancico Tradicional Italiano"
-  subsubtitle = "Lucas 2, 10-16 / Isaías 1, 3"
   copyright = "Creative Commons Attribution 3.0"
   tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
