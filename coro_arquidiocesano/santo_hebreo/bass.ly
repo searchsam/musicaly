@@ -1,4 +1,4 @@
-% Alegría, ha nacido el salvador - Soprano
+% Alegría, ha nacido el salvador - Bajo
 % by serachsam
 
 \language "espanol"
@@ -11,7 +11,7 @@
 
 % --- Includes
 \include "global.ily"
-\include "soprano.ily"
+\include "bass.ily"
 % \include "metronome.ily"
 
 % --- Global size
@@ -19,7 +19,7 @@
 
 % --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #3 \subtitle } } }
-\markup { \fill-line { \fontsize #2 "Soprano" \right-column { \fontsize #2 \arranger } } }
+\markup { \fill-line { \fontsize #2 "Bajo" \right-column { \fontsize #2 \arranger } } }
 \markup { \fill-line { "" \right-column { \fontsize #2 \other } } }
 \header {
   %dedication = "Dedication (dedicatoria)"
@@ -39,13 +39,13 @@
       \set Staff.midiInstrument = #"choir aahs"
       %\set Staff.midiMaximumVolume = #1.5
       <<
-        \new Voice = "soprano" {
+        \new Voice = "bass" {
           <<
             \global
-            \soprano
+            \bass
           >>
         }
-        \new Lyrics \lyricsto "soprano" { \soprano-lyrics }
+        \new Lyrics \lyricsto "bass" { \bass-lyrics }
       >>
     }
   >>

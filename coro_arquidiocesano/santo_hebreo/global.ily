@@ -1,14 +1,17 @@
-% --- Parametro globales
+
+title = "Santo Hebreo"
+subtitle = "Himno Liturgico"
+subsubtitle = ""
+autor = \markup { \right-column { "Giuseppe Gennarini" "Kiko Argüello"} }
+arranger = \markup { \right-column { "Arreglo y Adaptacion: Linda Martínez" "Samuel Gutiérrez"} }
+other = ""
+papper = "letter"
+size = 20
+
 global = {
-  \tempo "Andante" 4 = 80
-  \clef treble
+    \tempo "Andante" 4 = 80
   \key mi \minor
   \time 2/4
-  \repeat volta 2 { s2*46 }
-  \alternative {
-    { s2 }
-    { s2 }
-  }
-  s2*14
+  s2*108
   \bar "|."
 }
