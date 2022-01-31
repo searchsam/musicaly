@@ -27,7 +27,7 @@
   %dedication = "Dedication (dedicatoria)"
   title = \title
   subtitle = \subtitle
-  subsubtitle = \nota
+  %subsubtitle = \nota
   composer = \arranger
   arranger = \other
   copyright = "Creative Commons Attribution 3.0"

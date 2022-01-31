@@ -3,34 +3,34 @@
 %   Music and accompaniment by serachsam
 % ***************************************************************
 
-\documentclass[letterpaper]{report}
+\documentclass[12pt, letterpaper]{report}
 
-\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{xcolor}
 \usepackage{pifont}
-\usepackage{pdflscape}
-% \usepackage{lscape}
-\usepackage{geometry}
-\geometry{
-    letterpaper,
-    left=1.5cm,
-    right=1.5cm,
-    bottom=1.5cm,
-    top=1.5cm
-}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{lettrine}
+\usepackage{enumitem}
+\usepackage{lmodern}
+
+\oddsidemargin -1.0cm
+\headsep -1.0cm
+\textwidth=18.5cm
+\textheight=23cm
 
 \setlength{\parskip}{\baselineskip}
 
 %% Portada del Libro
-\title{ \textbf{ \Huge Misa Cristo Rey  } \\
-{ \LARGE Solemnidad Cristo Rey del Universo } }
+\title{ \textbf{ \Huge Misa Cristo Rey  } \\ { \LARGE Solemnidad Cristo Rey del Universo } }
+
 \author{ \textit{ \large Carmelitas Descalzas, Managua, Nicaragua } }
+
 \date{ \LARGE Linda Isabel Mart\'inez Castro \\ Samuel Jos\'e Guti\'errez Avil\'es \\ \small \textit{2018 - 2020} }
 
+%Empieza el documento %%%%%%%%%%%%%%%%%%%% P R I N C I P I O %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-    %%\pagenumbering{gobble}
-    %%\pagestyle{plain}
-
     %% - Portada
     \maketitle
 
@@ -40,35 +40,14 @@
         { \Huge Introducci\'on \par}
     \end{center}
     \clearpage
-
+    
     \LARGE HISTORIA
 
-    \Large La composici\'on de la ``Misa Cristo Rey'' para la solemnidad del mismo nombre fue realizada en varias etapas,
-    empezando en el 2018. La realizaci\'on de la obra empez\'o luego de varias platicas con las hermanas Carmelitas
-    descalzas del Crucero, Managua, quienes nos hab\'ian hecho ya algunas solicitudes de piezas para diversas ocasiones.
-    Acerc\'andose la solemnidad de Cristo Rey del Universo de ese a\~no, una de las hermana nos menciono la posibilidad
-    de componer una pieza dedicada a la Madre del monasterio, la cual en esa \'epoca era la hermana Carmen Teresa de Cristo Rey,
-    en honor a su nombre espiritual y de la solemnidad. Esa pieza nunca se concluyo, pero en cambio nos animo a
-    investigar sobre la existencia de m\'usica dedicada a esa solemnidad; durante la investigaci\'on nos dimos cuanta
-    que exist\'ian algunas piezas sueltas dedicadas a Cristo Rey pero nada completo, y decidimos realizar una obra
-    completa para Cristo Rey del Universo la cual nos llevo tres a\~nos para poderla finalizar.
+    \Large La composici\'on de la ``Misa Cristo Rey'' para la solemnidad del mismo nombre fue realizada en varias etapas, empezando en el a\~no 2018. La realizaci\'on de la obra empez\'o luego de varias platicas con las hermanas Carmelitas Descalzas del Crucero, Managua, quienes nos hab\'ian hecho ya algunas solicitudes de piezas para diversas ocasiones. Acerc\'andose la solemnidad de Cristo Rey del Universo de ese a\~no, una de las hermana nos menciono la posibilidad de componer una pieza dedicada a la Madre del monasterio, la cual en esa \'epoca era la hermana Carmen Teresa de Cristo Rey, en honor a su nombre espiritual y de la solemnidad. Esa pieza nunca se concluyo, pero en cambio nos animo a investigar sobre la existencia de m\'usica dedicada a esa solemnidad; durante la investigaci\'on nos dimos cuanta que exist\'ian algunas piezas sueltas dedicadas a Cristo Rey pero nada completo, y decidimos realizar una obra completa para Cristo Rey del Universo la cual nos llevo tres a\~nos para poderla finalizar.
 
-    A finales del 2019, luego de pasar por diversos estilos musicales y varios intentos, solo ten\'iamos terminado el
-    ordinario de la misa, acerc\'andose la solemnidad de Cristo Rey de Universo de ese a\~no se imprimi\'o y entrego a las
-    hermanas Carmelitas Descalzas con una dedicatoria a la Hna. Carmen Teresa de Cristo Rey, quien ya hab\'ia dejado
-    de ser la Madre del monasterio. Finalizada y entregada la misa con solo el ordinario, nos dimos cuenta que la misa
-    como forma musical propone m\'as que solo el ``Kyrie eleison'', ``Gloria in excelsis Deo'', ``Credo'', ``Sanctus y Benedictus''
-    y ``Angnus Dei''; por eso nos decidimos a hacerle un Propio, lo que nos supuso un mayor desaf\'io pues no quer\'iamos que
-    fuera exactamente iguales a las del Ordinario, pero si que siguieran una linea musicalmente coherente con lo ya existente.
+    A finales del 2019, luego de pasar por diversos estilos musicales y varios intentos, solo ten\'iamos terminado el ordinario de la misa, acerc\'andose la solemnidad de Cristo Rey de Universo de ese a\~no se imprimi\'o y entrego a las hermanas Carmelitas Descalzas con una dedicatoria a la Hna. Carmen Teresa de Cristo Rey, quien ya hab\'ia dejado de ser la Madre del monasterio. Finalizada y entregada la misa con solo el ordinario, nos dimos cuenta que la misa como forma musical propone m\'as que solo el ``Kyrie eleison'', ``Gloria in excelsis Deo'', ``Credo'', ``Sanctus y Benedictus'' y ``Angnus Dei''; por eso nos decidimos a hacerle un Propio, lo que nos supuso un mayor desaf\'io pues no quer\'iamos que fuera exactamente iguales a las del Ordinario, pero si que siguieran una linea musicalmente coherente con lo ya existente.
 
-    A mediados del 2020, solo se hab\'ia terminado el canto de entrada, y en un momento de mayor posibilidades para
-    componer gracias al Covid-19 se continuo con la linea que se utilizo para el canto de entrada para componer el
-    canto de comuni\'on, ofertorio y el canto final.  Terminado el ``Introito'', ``Offertorium'', ``Communio'' y ``Finalis''
-    pensamos en realizar una melod\'ia para el aleluya y el salmo responsorial, normalmente se usa un tono gregoriano
-    o alguna melod\'ia m\'as parecida a un recitativo que a una canci\'on, se opto por usar una mezcla entre un modo de
-    gregoriano y armon\'ia de compositores modernos, pero fue m\'as reto tratar de hacer una linea mel\'odica simple que
-    todo el resto de cantos, terminando en octubre de este a\~no y se entrego ya completa a las hermanas Carmelitas
-    descalzas para el d\'ia de Santa Teresa de Jesus.
+    A mediados del 2020, solo se hab\'ia terminado el canto de entrada, y en un momento de mayor posibilidades para componer gracias al Covid-19 se continuo con la linea que se utilizo para el canto de entrada para componer el canto de comuni\'on, ofertorio y el canto final.  Terminado el ``Introito'', ``Offertorium'', ``Communio'' y ``Finalis'' pensamos en realizar una melod\'ia para el aleluya y el salmo responsorial, normalmente se usa un tono gregoriano o alguna melod\'ia m\'as parecida a un recitativo que a una canci\'on, se opto por usar una mezcla entre un modo de gregoriano y armon\'ia de compositores modernos, pero fue m\'as reto tratar de hacer una linea mel\'odica simple que todo el resto de cantos, terminando en octubre de este a\~no y se entrego ya completa a las hermanas Carmelitas descalzas para el d\'ia de Santa Teresa de Jesus.
 
     \LARGE ESTRUCTURA DE LA MISA
 
@@ -105,8 +84,7 @@
         \end{enumerate}
     \end{enumerate}
 
-    Tratamos de mantener la estructura lo m\'as fiel a las misas del siglo XIV pero acercando cada parte a como se usan
-    actualmente o a como a evolucionado a su uso moderno quedando de la siguiente manera:
+    Tratamos de mantener la estructura lo m\'as fiel a las misas del siglo XIV pero acercando cada parte a como se usan actualmente o a como a evolucionado a su uso moderno quedando de la siguiente manera:
 
     \renewcommand{\theenumi}{\arabic{enumi}}
     \begin{enumerate}
@@ -130,61 +108,43 @@
         \end{enumerate}
     \end{enumerate}
 
-    En esta misa no se abordara los cantos o posibles melodias contempladas en por el Cantillatio que eran textos que se
-    cantan como recitativos con algunas inflexiones porque altualmente han caido en desuso por no se interpretadas por el coro,
-    a excepcion del Padre Nuestro aunque igual es cantado con menor frecuencia que el resto de partes del Ordinario o el Propio.
+    En esta misa no se abordara los cantos o posibles melodias contempladas en por el Cantillatio que eran textos que se cantan como recitativos con algunas inflexiones porque altualmente han caido en desuso por y no se interpretadas por el coro, a excepcion del Padre Nuestro aunque igual es cantado con menor frecuencia que el resto de partes del Ordinario o el Propio.
 
     \LARGE ORDINARIO
 
-    \Large Son las piezas m\'as solemnes y complejas de toda la misa, todas est\'an basadas en m\'usica del renacimiento espec\'ificamente
-    en la misa ``O Mangum Mysterium'' del Pbro. Tom\'as Luis de Victoria conocido como ``El compositor de Dios'' (siglo XVI),
-    nos decidimos por este estilo musical debido a que la misa fue hecha para ser cantada por las hermanas Carmelitas y nos
-    pareci\'o id\'oneo escoger el estilo de un compositor de la misma \'epoca de la fundadora Santa Teresa de Jesus y adem\'as
-    relacionado con San Juan de la Cruz.
-
-    Aunque usamos un estilo musical que de por si se lleva muy bien con los textos liturgicos fue dicifil idear melodias con
-    las que no se tubiera que alterar la letra de los himnos u oraciones. Sin embargo no hay alteraciones significativas.
+    \Large Son las piezas m\'as solemnes y complejas de toda la misa, estan compuestas a inspiraci\'on de m\'usica del renacimiento espec\'ificamente la del Pbro. Tom\'as Luis de Victoria conocido como ``El compositor de Dios'' (siglo XVI). Nos decidimos por este estilo musical debido a que la misa fue hecha para ser cantada por las hermanas Carmelitas y nos pareci\'o id\'oneo escoger el estilo de un compositor de la misma \'epoca de la fundadora Santa Teresa de Jesus y adem\'as relacionado con San Juan de la Cruz.
 
     \LARGE PROPIO
 
-    \Large Todos los cantos del propio (excepto el Salmo Sesponsorial y Aleluya) siguen una linea mel\'odica inspirada en las composiciones
-    de Mons. Marco Frisina, actual maestro de capilla de la bas\'ilica de San Pedro.
+    \Large Todos los cantos del propio (excepto el Salmo Sesponsorial y Aleluya) siguen una linea mel\'odica inspirada en las composiciones de Mons. Marco Frisina.
 
-    Para el canto de entrada escogimos el himno propio de la solemnidad del brevario Romano pensando que no pod\'ia ser otro texto
-    m\'as apropiado para canto de entrada de esta misa.
-
-    Para el canto de presentaci\'on de ofrendas investigamos acerca de los textos m\'as famosos dedicados al sant\'isimo sacramento,
-    entre los que figuran el ``Adoro te devote'' y ``Tantum Ergum'' de Santo Tom\'as de Aquino, la ``Oraci\'on al Sant\'isimo Sacramento''
-    de San Buenaventura, el ``Anima Christi'' de San Ignacio de Loyola y la ``Oraci\'on al Sant\'isimo Sacramento'' de San Alfonso Mar\'ia Ligorio.
-    Junto con las anteriores aparece tambi\'en ``Al amor de los amores Jes\'us Sacramentado'' oraci\'on de Santa Teresa del Ni\~no Jes\'us,
-    la cual escogimos para aportar m\'as a la afinidad de esta misa con las hermanas Carmelitas.
-
-    Para el canto de comuni\'on quer\'iamos usar alg\'un himno Mariano, la primera opci\'on que nos vino a la mente fue usar el Magnificat,
-    idea que pronto descartamos por usar un himno del salterio que reflejara mejor la tem\'atica de Cristo Rey del Universo, otra propuesta
-    fue el himno a la Sant\'isima Virgen Mar\'ia Reina, del cual no pudimos ubicar referencias a su autor\'ia o procedencia, por lo cual no se uso,
-    para terminar usando el himno a ``Maria, Madre de la Iglesia'' del breviario romano, tanto por la representaci\'on de Mar\'ia como Iglesia
-    (el reba\~no que el gui\'a, el pueblo que gobierna) como Mar\'ia la Reina Madre (como suele llamarse a la madre del rey regente), es decir
-    Madre de la Iglesia. Luego nos dimos cuenta que ambas son fiestas instituidas en estos tiempos (Cristo Rey del Universo intuida por
-    el Papa P\'io XII el d\'ia 11 de diciembre de 1925 y Mar\'ia, Madre de la Iglesia instituida por el Papa Francisco el d\'ia 11 de febrero de 2018).
-
-    Para el canto final utilizamos el Salmo 45 (44), se escogi\'o porque describe la realeza y predilecci\'on de Dios por una figura
-    m\'asculina, figura de Cristo, se\~nalando su realeza espiritual.
-
-    Para el salmo responsorial no quer\'iamos componer un canto como tal, una canci\'on con una letra fija, por lo que tratamos de
-    componer la pieza lo m\'as parecido posible a un tono gregoriano para que se pudiera ajustar a la letra del salmo de
-    los tres ciclos lit\'urgicos, esto resulto en una melod\'ia relativamente lineal para poder adaptarse a diferentes letras.
-    Los tonos gregorianos normalmente no son para coro a voces por lo que se armonizo la linea mel\'odica resultante con una armon\'ia
-    moderna al estilo del Pbro. Lucien Deiss CSSp. y Francisco Palaz\'on principalmente en la ant\'ifona para que el coro pueda intervenir.
-
-    Con el Aleluya sucede algo parecido al salmo responsorial, no quer\'iamos fijar una letra a una determinada melod\'ia, aunque para los tres
-    ciclos lit\'urgicos la ant\'ifona del aleluya del domingo de la solemnidad de Cristo Rey de Universo es invariable, igualmente se puede
-    sustituir por las ant\'ifonas complementarias del aleluya para respetar el texto lit\'urgico y no usar la letra de cualquier canto solo por
-    dice la palabra Aleluya. Se compuso una linea mel\'odica similar a tono gregoriano para la ant\'ifona a la que f\'acilmente puede adaptarse otra letra,
-    pero el trisagio del Aleluya es un caso diferente, se compusieron dos lineas mel\'odicas claras con una melod\'ia moderna y en tono mayor,
-    con una voz en contrapunto con la otra, esto con la idea de que sea el coro el que sobresalga en esa parte para luego modular a la relativa
-    menor para mantener la armon\'ia y dar una sensaci\'on de tono gregoriano en la ant\'ifona.
+    Los textos para los cantos de propio (excepto el Salmo Sesponsorial y Aleluya) supusieron una exaustiva investicacion para encontrar textos adecuados para usarse en la liturgia eucaristica y continuaran con el tema de Cristo Rey del Universo.
     \clearpage
+    
+    Entre los texto se encuentran: 
 
+    \begin{itemize}
+     \item El himno propio de la solemnidad del brevario Romano.
+     \item ``Adoro te devote'' y ``Tantum Ergum'' de Santo Tom\'as de Aquino.
+     \item ``Oraci\'on al Sant\'isimo Sacramento'' de San Buenaventura.
+     \item ``Anima Christi'' de San Ignacio de Loyola.
+     \item ``Oraci\'on al Sant\'isimo Sacramento'' de San Alfonso Mar\'ia Ligorio. 
+     \item ``Al amor de los amores Jes\'us Sacramentado'' oraci\'on de Santa Teresa del Ni\~no Jes\'us-
+     \item Magnificat.
+     \item El himno a la Sant\'isima Virgen Mar\'ia Reina.
+     \item ``Maria, Madre de la Iglesia'' del breviario romano.
+     \item Salmo 45 (44).
+    \end{itemize}
+
+    Entre muchos otros que se conciderando adecuados.
+
+    Para el salmo responsorial no quer\'iamos componer un canto como tal, una canci\'on con una letra fija, por lo que tratamos de componer la pieza lo m\'as parecido posible a un tono gregoriano para que se pudiera ajustar a la letra del salmo de
+    los tres ciclos lit\'urgicos, esto resulto en una melod\'ia relativamente lineal para poder adaptarse a diferentes letras. Los tonos gregorianos normalmente no son para coro a voces por lo que se armonizo la linea mel\'odica resultante con una armon\'ia moderna muy inspirado en las composiciones del Pbro. Lucien Deiss CSSp. y Francisco Palaz\'on principalmente en la ant\'ifona para que el coro pueda intervenir.
+
+    Con el Aleluya sucede algo parecido al salmo responsorial, no quer\'iamos fijar una letra a una determinada melod\'ia, aunque para los tres ciclos lit\'urgicos la ant\'ifona del aleluya del domingo de la solemnidad de Cristo Rey de Universo es invariable, igualmente se puede sustituir por las ant\'ifonas complementarias del aleluya para respetar el texto lit\'urgico y no usar la letra de cualquier canto solo por dice la palabra Aleluya. Se compuso una linea mel\'odica similar a tono gregoriano para la ant\'ifona a la que f\'acilmente puede adaptarse otra letra,
+    pero el trisagio del Aleluya es un caso diferente, se compusieron algo mas elaborado con la idea de que sea el coro el que sobresalga en esa parte para luego dar paso un solo con una melodia mas sencilla dando la sensaci\'on de tono gregoriano en la ant\'ifona y finalmente vualva la coro.
+    \clearpage
+    
     %% - Ordinario
     \begin{center}
         \vspace*{8cm}
@@ -196,30 +156,19 @@
 
     %% - Kyrie eleison - Melodia a modo del renacimiento
     \begin{center}
-        {\scshape \Huge {\bfseries Se\~nor ten piedad}}
+        \Huge {\bfseries Se\~nor ten piedad}
     \end{center}
 
-    \Large El canto ``Se\~nor ten piedad'' contiene tres invocaciones a modo de melod\'ia gregoriana,
-    tomadas de las invocaciones complementarias, como solo son cantadas por el celebrante o por
-    un miembro del coro. Estas invocaciones pueden se sustituidas por otras seg\'un sea id\'oneo para
-    la liturgia. Las respuestas propias ``Se\~nor ten piedad'' y ``Cristo ten piedad'' mantiene la
-    velocidad de las invocaciones con melod\'ia gregoriana para mantener la coherencia y solemnidad.
-    Las respuestas a pesar de ser cantadas por todo el coro poseen una melod\'ia simple para que la
-    asamblea pueda responder junto al coro.
+    \Large El canto ``Se\~nor ten piedad'' contiene tres invocaciones a modo de melod\'ia gregoriana, tomadas de las invocaciones complementarias, para que el celebrante pueda intervenir como solista, tambien pueden ser cantadas por un miembro del coro. Estas invocaciones pueden se sustituidas por otras seg\'un sea id\'oneo para la liturgia u omitas.\\ Las respuestas a pesar de ser cantadas por todo el coro poseen una melod\'ia simple para que la asamblea pueda responder junto al coro.
+    
+    \noindent
+    \LARGE T\'u que nos libraste del pecado y de la muerte.\\ Se\~nor ten piedad, piedad. Se\~nor ten piedad.
 
     \noindent
-    \LARGE {T\'u que nos libraste del pecado y de la muerte.}\\
-    \LARGE \begin{tabular}{ll}
-        Se\~nor ten piedad, piedad.& Se\~nor ten piedad.
-    \end{tabular}\\
-    \LARGE {T\'u que nos reconciliaste con el Padre y nuestros hermanos.}\\
-    \LARGE \begin{tabular}{ll}
-        Cristo ten piedad, piedad.& Cristo ten piedad.
-    \end{tabular}\\
-    \LARGE {T\'u que nos resucitar\'as y glorificar\'as contigo.}\\
-    \LARGE \begin{tabular}{ll}
-        Se\~nor ten piedad, piedad.& Se\~nor ten piedad.
-    \end{tabular}\\
+    \LARGE T\'u que nos reconciliaste con el Padre y nuestros hermanos.\\ Cristo ten piedad, piedad. Cristo ten piedad.
+
+    \noindent
+    \LARGE T\'u que nos resucitar\'as y glorificar\'as contigo.\\ Se\~nor ten piedad, piedad. Se\~nor ten piedad.
     \clearpage
 
     \begin{lilypond}[staffsize=19]
@@ -227,31 +176,22 @@
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/kyrie/señor_ten_piedad-soprano.ly"
-    \end{lilypond}
-    \clearpage
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/kyrie/señor_ten_piedad-soprano.ly"
+    %\end{lilypond}
+    %\clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/kyrie/señor_ten_piedad-alto.ly"
-    \end{lilypond}
-    \clearpage
-
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/kyrie/señor_ten_piedad-alto.ly"
+    %\end{lilypond}
+    %\clearpage
+    
     %% - Gloria in excelsis Deo - Melodia a modo del renacimiento
     \begin{center}
-        {\scshape \Huge {\bfseries Gloria a Dios en lo alto del cielo}}
+        \Huge {\bfseries Gloria a Dios en lo alto del cielo}
     \end{center}
 
-    \Large El canto ``Gloria a Dios en lo alto del cielo'' es de melod\'ia alegre y r\'apida,
-    tratando de mantener la forma sil\'abica de la versi\'on gregoriana. Contiene tambi\'en tres
-    solos a forma de tono gregoriano; aparte de la invocaci\'on inicial y el ``Am\'en'' final,
-    para descanso del coro y acompa\~nar la din\'amica del texto en las suplicas al cordero.
-    Estos descansos tambi\'en sirven para que el canto en general no se sienta con prisa por
-    terminarse, luego de los solos que son m\'as lentos vuelva a una melod\'ia alegr\'ia por el cambio de
-    tiempo y a la inclusi\'on de m\'as voces por parte del coro dando un efecto de pregunta
-    respuesta entre el solista y el coro. Se opto a que el solo sea realizado por una
-    mezzosoprano para a\~nadir claridad y firmeza a la parte del solo y no sienta fuera de
-    lugar al resto de canto.
+    \Large El canto ``Gloria a Dios en lo alto del cielo'' es de melod\'ia alegre y r\'apida, tratando de mantener la forma sil\'abica de la versi\'on gregoriana. Contiene tambi\'en tres solos a forma de tono gregoriano para descanso del coro y acompa\~nar la din\'amica del texto en las suplicas al cordero. La invocaci\'on inicial tambien esta pensada para ser cantada por el celebrante o un miembro del coro.  Estos descansos tambi\'en sirven para que el canto en general no se sienta con prisa por terminarse.
 
     \noindent
     \LARGE Gloria a Dios en lo alto del cielo.\\
@@ -268,13 +208,9 @@
 
     \noindent
     T\'u que quitas el pecado del mundo, atiende a nuestra s\'uplica. \\
-    T\'u, que est\'as sentado a la derecha del Padre, ten piedad de nosotros.
-
-    \noindent
+    T\'u, que est\'as sentado a la derecha del Padre, ten piedad de nosotros.\\
     Porque s\'olo T\'u eres Santo, Se\~nor alt\'isimo Jesucristo. \\
-    Con el Esp\'iritu Santo en la gloria.
-
-    \noindent
+    Con el Esp\'iritu Santo en la gloria.\\
     Am\'en.
     \clearpage
 
@@ -283,50 +219,37 @@
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/gloria/gloria_a_dios-soprano.ly"
-    \end{lilypond}
-    \clearpage
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/gloria/gloria_a_dios-soprano.ly"
+    %\end{lilypond}
+    %\clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/gloria/gloria_a_dios-alto.ly"
-    \end{lilypond}
-    \clearpage
-
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/gloria/gloria_a_dios-alto.ly"
+    %\end{lilypond}
+    %\clearpage
+    
     %% - Credo in unum Deum - Melodia a modo del renacimiento
     \begin{center}
-        {\scshape \Huge {\bfseries Creo en Dios}}
+        \Huge {\bfseries Creo en Dios}
     \end{center}
 
-    \Large El texto del canto “Creo en Dios” es tomado del Credo Apost\'olico,
-    en las misas musicalizadas los m\'as usual es usar el texto del Credo Constantinopolitano
-    pero debido a su extensi\'on nos pareci\'o no tan apropiado. Esta pieza esta dividida en dos partes,
-    las invocaciones  “Creo en” que son tres, Creo en Dios Padre, Creo en Jesucristo y Creo en el Esp\'iritu Santo;
-    las tres a modo de tono gregoriano seguida de una respuesta del coro con una melod\'ia muy solemne y majestuosa,
-    con adornos y melism\'as al final de las lineas remarcando el sentido de grandiosidad de la oraci\'on,
-    con notas constantemente agudas y casi marcial denotando la firmeza de la profesi\'on de lo dicho en el texto.
-    La secci\'on central del Credo desde <<Padeci\'o bajo el poder...>> hasta <<...a vivos y a muertos.>> son dos solos,
-    un solo de contralto cambiando a una melod\'ia y tiempo m\'as lento y triste pero a medida que llega la parte del
-    texto que habla de la resurrecci\'on cambia al segundo solo, un solo de soprano con melod\'ia m\'as alegre y tiempo
-    m\'as r\'apido desembocando en en d\'uo de contralto y soprano asemej\'andose a la melod\'ia majestuosa y casi marcial
-    de las repuestas del coro a las invocaciones.
-
+    \Large El texto del canto ``Creo en Dios'' es tomado del Credo Apost\'olico, en las misas musicalizadas los m\'as usual es usar el texto del Credo Constantinopolitano pero debido a su extensi\'on nos pareci\'o no tan apropiado.\\
+    Esta pieza tiene dos motivos, las invocaciones ``Creo en'' que son tres, \textit{Creo en Dios Padre}, \textit{Creo en Jesucristo} y \textit{Creo en el Esp\'iritu Santo}; las tres a modo de tono gregoriano seguida de una respuesta del coro con una melod\'ia muy solemne y majestuosa, con notas constantemente agudas y casi marcial, de nuevo estas partes fueron pensadas para que el celebrante las interprete y participe del canto, pero tambien pueden ser interpretadas por un miembro del coro.\\ La secci\'on central del Credo desde \textit{<<Padeci\'o bajo el poder...>>} hasta \textit{<<...a vivos y a muertos.>>} son dos solos, un solo de contralto cambiando a una melod\'ia y tiempo m\'as lento y triste pero a medida que llega la parte del texto que habla de la resurrecci\'on cambia al segundo solo, un solo de soprano con melod\'ia m\'as alegre y tiempo m\'as r\'apido desembocando en un d\'uo de contralto.
+    
     \noindent
-    \LARGE Creo en Dios. \\
+    \LARGE Creo en Dios.\\
     Padre todopoderoso creador del cielo y de la tierra.
 
     \noindent
     Creo en Jesucristo. \\
-    Hijo \'unico, nuestro Se\~nor, que fue concebido por obra y gracia del Esp\'iritu Santo, nacio de Santa Mar\'ia Virgen.
+    Hijo \'unico, nuestro Se\~nor. Fue concebido por obra y gracia del Esp\'iritu Santo, nacio de Santa Mar\'ia Virgen.
 
     \noindent
-    Padeci\'o bajo el poder de Poncio Pilato, fue crucificado, muerto y sepultado. Descendi\'o a los infiernos, al tercer d\'ia resucit\'o de entre los muertos, resucit\'o de entre los muertos.
+    Padeci\'o bajo el poder de Poncio Pilato, fue crucificado, muerto y sepultado. Descendi\'o a los infiernos, al tercer d\'ia resucit\'o de entre los muertos, resucit\'o de entre los muertos. Subi\'o al cielo y est\'a sentado a la derecha de Dios Padre todopoderoso. Desde all\'i ha de venir a juzgar a vivos y a muertos.
 
     \noindent
-    Subi\'o al cielo y est\'a sentado a la derecha de Dios Padre todopoderoso. Desde all\'i ha de venir a juzgar a vivos y a muertos.
-
-    \noindent
-    Creo en el Esp\'iritu Santo. \\
+    Creo en el Esp\'iritu Santo.\\
     La santa Iglesia cat\'olica, la comuni\'on de los santos, el perd\'on de los pecados, la resurrecci\'on de la carne y en la vida eterna.
 
     \noindent
@@ -338,28 +261,23 @@
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/credo/creo_en_dios-soprano.ly"
-    \end{lilypond}
-    \clearpage
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/credo/creo_en_dios-soprano.ly"
+    %\end{lilypond}
+    %\clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/credo/creo_en_dios-alto.ly"
-    \end{lilypond}
-
-    \newpage
-
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/credo/creo_en_dios-alto.ly"
+    %\end{lilypond}
+    %\clearpage
+    %\newpage
+    
     %% - Sanctus - Melodia a modo del renacimiento
     \begin{center}
-        {\scshape \Huge {\bfseries Santo}}
+        \Huge {\bfseries Santo}
     \end{center}
 
-    \Large El canto ``Santo'' sigue la misma linea del canto “Gloria a Dios en lo alto del cielo”
-    en lo alegre y en la velocidad de la melod\'ia, sin embargo este canto no tiene reposo excepto
-    por la invocaci\'on inicial. Su melod\'ia cantada por todo el coro sin solos, esta dispuesta en
-    dos parte, la primera parte desde el trisagio <<Santo, santo, santo...>> hasta
-    <<...llenos de tu gloria>> y <<...nombre del Se\~nor>> y la segunda el Hossana que es al doble
-    de la velocidad del resto del canto.
+    \Large El canto ``Santo'' sigue la misma linea del canto ``Gloria a Dios en lo alto del cielo'' en lo alegre y en la velocidad, sin embargo este canto no tiene reposo excepto por la invocaci\'on inicial; tambien pensada para ser interpreta por el celebrante o un miembro del coro. Su melod\'ia cantada por todo el coro sin solos, esta dispuesta en dos parte, la primera parte desde el trisagio \textit{<<Santo, santo, santo...>>} hasta \textit{<<...llenos de tu gloria>>} y \textit{<<...nombre del Se\~nor>>} y la segunda el Hossana que es al doble de la velocidad del resto del canto asemejando a las piezas separadas que era antiguamente por la diferencia de tiempo.
 
     \noindent
     \LARGE Santo.
@@ -380,45 +298,34 @@
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/sanctus/santo-soprano.ly"
-    \end{lilypond}
-    \clearpage
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/sanctus/santo-soprano.ly"
+    %\end{lilypond}
+    %\clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/sanctus/santo-alto.ly"
-    \end{lilypond}
-    \clearpage
-
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/sanctus/santo-alto.ly"
+    %\end{lilypond}
+    %\clearpage
+    
     %% - Agnus Dei - Melodia a modo del renacimiento
     \begin{center}
-        {\scshape \Huge {\bfseries Cordero de Dios}}
+        \Huge {\bfseries Cordero de Dios}
     \end{center}
 
-    \Large El canto ``Cordero de Dios'' tiene una melod\'ia m\'as solemne e invita a la adoraci\'on y
-    reflexi\'on. El canto posee tres invocaciones a semejanza de una forma de letan\'ia a la que
-    responde el coro. Estas invocaciones son a modo de tono gregoriano, luego de la invocaci\'on,
-    que solo contiene el texto ``Cordero de Dios'', se le une el coro y continua hasta las respuestas
-    <<Ten piedad de nosotros>> y <<Danos la paz>>, estas respuestas tienen una melod\'ia un poco
-    m\'as simple para que la asamblea pueda responder junto con el coro.
+    \Large El canto ``Cordero de Dios'' tiene una melod\'ia m\'as solemne e invita a la adoraci\'on y reflexi\'on. El canto posee tres invocaciones a modo de tono gregoriano, tambien par ser interpretadas por el celebrante, al inicio de la letan\'ia a la que se suma el coro. Las respuestas \textit{<<Ten piedad de nosotros>>} y \textit{<<Danos la paz>>}, tienen una melod\'ia un poco m\'as simple para que la asamblea pueda responder junto con el coro.
 
     \noindent
     \LARGE Cordero de Dios.\\
-    \LARGE \begin{tabular}{ll}
-        Que quitas el pecado del mundo.& Ten piedad de nosotros.
-    \end{tabular}
+    Que quitas el pecado del mundo. Ten piedad de nosotros.
 
     \noindent
     \LARGE Cordero de Dios.\\
-    \LARGE \begin{tabular}{ll}
-        Que quitas el pecado del mundo.& Ten piedad de nosotros.
-    \end{tabular}
+    Que quitas el pecado del mundo. Ten piedad de nosotros.
 
     \noindent
     \LARGE Cordero de Dios.\\
-    \LARGE \begin{tabular}{ll}
-        Que quitas el pecado del mundo.& Danos la paz.
-    \end{tabular}
+    Que quitas el pecado del mundo. Danos la paz.
     \clearpage
 
     \begin{lilypond}[staffsize=19]
@@ -426,16 +333,16 @@
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/agnus/cordero_de_dios-soprano.ly"
-    \end{lilypond}
-    \clearpage
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/agnus/cordero_de_dios-soprano.ly"
+    %\end{lilypond}
+    %\clearpage
 
-    \begin{lilypond}[staffsize=18]
-        \include "../write/agnus/cordero_de_dios-alto.ly"
-    \end{lilypond}
-    \clearpage
-
+    %\begin{lilypond}[staffsize=18]
+    %    \include "../write/agnus/cordero_de_dios-alto.ly"
+    %\end{lilypond}
+    %\clearpage
+    
     %% - Propio
     \begin{center}
         \vspace*{8cm}
@@ -447,17 +354,10 @@
 
     %% - Introito - Melodia a inspiracion de Mnsr. Marco Frisina
     \begin{center}
-        {\scshape \Huge {\bfseries Canto de Entrada}}
+        \Huge {\bfseries Canto de Entrada}
     \end{center}
 
-    \Large El texto del canto ``Principe de los siglos'' es tomado del himno, del mismo nombre,
-    de las segundas v\'isperas la solemnidad del Cristo Rey del Universo del breviario romano,
-    compuesto por el presb\'itero jesuita Vittorio Genovesi. Siendo un himno del breviario y siguiendo
-    la forma interpretativa de los monasterios de cantarlo a coro con intervenciones intercaladas,
-    a modo Cantor 1 y Cantor 2, la forma de este canto intercala cada estrofa, un tipo de vos
-    diferente alternando entre voces agudas y voces graves. La melod\'ia del canto es muy ligera
-    sin mucha floritura para no extender m\'as de lo necesario el canto y tratando de seguir de linea
-    arm\'onica parecida al modo frigio del gregoriano.
+    \Large El texto del canto ``Principe de los siglos'' es tomado del himno, del mismo nombre, de las segundas v\'isperas la solemnidad del Cristo Rey del Universo del breviario romano, compuesto por el presb\'itero jesuita Vittorio Genovesi. Siendo un himno del breviario y siguiendo la forma interpretativa de los monasterios de cantarlo a coro con intervenciones intercaladas, a modo Cantor 1 y Cantor 2, la forma de este canto intercala cada estrofa, un tipo de vos diferente alternando entre voces agudas y voces graves. La melod\'ia del canto es muy ligera sin mucha floritura para no extender m\'as de lo necesario el canto.
 
     \noindent
     \LARGE Pr\'incipe absoluto de los siglos,\\
@@ -516,25 +416,22 @@
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/introito/entrada-soprano.ly"
-    \end{lilypond}
-    \clearpage
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/introito/entrada-soprano.ly"
+    %\end{lilypond}
+    %\clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/introito/entrada-alto.ly"
-    \end{lilypond}
-    \clearpage
-
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/introito/entrada-alto.ly"
+    %\end{lilypond}
+    %\clearpage
+    
     %% - Graduale - Melodia a inspiracion del Pbro. Lucien Deiss y Francisco Palazon
     \begin{center}
-        {\scshape \Huge {\bfseries Salmo Responsorial}}
+        \Huge {\bfseries Salmo Responsorial}
     \end{center}
 
-    \Large En la ``Melod\'ia Responsorial'' se trato de hacer lo m\'as semejante posible a un tono gregoriano
-    para posibilitar al m\'aximo ajustarse a la letra del leccionario y no alterarla, por lo tanto la
-    linea mel\'odica es simple y recta con algunas notas de paso y alguna floritura simple, sin embargo
-    la armon\'ia es moderna para conferirle mayor musicalidad.
+    \Large En la ``Melod\'ia Responsorial'' se trato de hacer lo m\'as semejante posible a un tono gregoriano para posibilitar al m\'aximo ajustarse a la letra del leccionario y no alterarla, por lo tanto la linea mel\'odica es simple y recta, sin embargo la armon\'ia es moderna para conferirle mayor musicalidad y la antifona se facil de recordar por la asamblea.
 
     \begin{center}
         \LARGE Ciclo A
@@ -584,10 +481,10 @@
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/graduale/salmo_responsorial_ciclo_A-solo.ly"
-    \end{lilypond}
-    \clearpage
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/graduale/salmo_responsorial_ciclo_A-solo.ly"
+    %\end{lilypond}
+    %\clearpage
 
     \begin{center}
         \LARGE Ciclo B
@@ -628,10 +525,10 @@
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/graduale/salmo_responsorial_ciclo_B-solo.ly"
-    \end{lilypond}
-    \clearpage
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/graduale/salmo_responsorial_ciclo_B-solo.ly"
+    %\end{lilypond}
+    %\clearpage
 
     \begin{center}
         \LARGE Ciclo C
@@ -669,23 +566,19 @@
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/graduale/salmo_responsorial_ciclo_C-solo.ly"
-    \end{lilypond}
-    \clearpage
-
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/graduale/salmo_responsorial_ciclo_C-solo.ly"
+    %\end{lilypond}
+    %\clearpage
+    
     %% - Aleluya - Melodia a inspiracion del Pbro. Lucien Deiss y Francisco Palazon
     \begin{center}
-        {\scshape \Huge {\bfseries Aleluya}}\\
+        \Huge {\bfseries Aleluya}\\
         \LARGE Ant\'ifona Aleluya XXXIV Domingo del Tiempo Ordinario
     \end{center}
 
-    \Large El canto de la ``Aclamaci\'on al Evangelio'' en la parte de la ant\'ifona al igual que la ``Melod\'ia Responsorial''
-    trata de mantener una linea mel\'odica simple, lo m\'as semejante posible a un tono gregoriano, aunque para todos los ciclos,
-    A, B y C el XXXIV Domindo del Tiempo Ordinario el Aleluya tiene la misma ant\'ifona, es posible con la melod\'ia de este
-    canto usar cualquiera de las ant\'ifonas complementarias. La parte del trisagio esta compuesta a dos voces en contrapunto,
-    cualquiera de las dos podr\'ia usarse por separado, su armon\'ia es notablemente moderna y en tono mayor para conferirle
-    un efecto vibrante.
+    \Large El canto de la ``Aclamaci\'on al Evangelio'' en la parte de la ant\'ifona al igual que la ``Melod\'ia Responsorial'' trata de mantener una linea mel\'odica simple, lo m\'as semejante posible a un tono gregoriano, aunque para todos los ciclos liturgicos (A, B y C) el Aleluya del XXXIV Domindo del Tiempo Ordinario tiene la misma ant\'ifona, es posible con la melod\'ia de este canto usar cualquiera de las ant\'ifonas complementarias.\\
+    La parte del trisagio esta compuesta a dos voces, cualquiera de las dos podr\'ia usarse por separado.
 
     \noindent
     \LARGE Aleluya, aleluya, aleluya.
@@ -703,28 +596,23 @@
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/aleluya/aclamacion_al_evangelio-soprano.ly"
-    \end{lilypond}
-    \clearpage
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/aleluya/aclamacion_al_evangelio-soprano.ly"
+    %\end{lilypond}
+    %\clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/aleluya/aclamacion_al_evangelio-alto.ly"
-    \end{lilypond}
-    \clearpage
-
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/aleluya/aclamacion_al_evangelio-alto.ly"
+    %\end{lilypond}
+    %\clearpage
+    
     %% - Offertorium - Melodia a inspiracion de Mnsr. Marco Frisina
     \begin{center}
-        {\scshape \Huge {\bfseries Presentaci\'on de Ofrendas}}
+        \Huge {\bfseries Presentaci\'on de Ofrendas}
     \end{center}
 
-    \Large El texto del canto ``Sagrario del Altar'' es tomado de un escrito de la monja carmelita y
-    doctora de la Iglesia Santa Teresa del Ni\~no Jes\'us y la Santa Faz, este texto ahora constituye una
-    oraci\'on al sant\'isimo sacramento. El canto es totalmente interpretado a coro a excepci\'on de la
-    primera vez que se canta el estribillo que se interpreta por un solista. La forma del canto A-B
-    es decir, se canta el estribillo (A) seguido de la estrofa (B) y as\'i sucesivamente. La melod\'ia es
-    muy simple para enfatizas la letra, sin embargo, la armon\'ia es muy rica para dar profundidad y no
-    sentir vac\'ios en la estructura musical.
+    \Large El texto del canto ``Sagrario del Altar'' es tomado de un escrito de la monja carmelita y doctora de la Iglesia Santa Teresa del Ni\~no Jes\'us y la Santa Faz, este texto ahora constituye una oraci\'on al sant\'isimo sacramento. Escoger el texto para este canto fue talves la eleccion m\'as dificil de todos los cantos. Existen tantos santos y salmos que habla, alaben y ensalzan al santisimo sacramento que fue una dura elecci\'on.\\
+    El canto es totalmente interpretado a coro a excepci\'on de la primera vez que se canta el estribillo que se interpreta por un solista. La melod\'ia es muy simple para enfatizas la letra.
 
     \noindent
     \LARGE Sagrario del Altar, Sagrario del Altar, nido de tu tierno amor.
@@ -766,7 +654,7 @@
     Deseo vivir contigo.
 
     \noindent
-    Sagrario del Altar, Sagrario del Altar, nido de tu tierno amor.\\
+    Sagrario del Altar, Sagrario del Altar, nido de tu tierno amor.
 
     \noindent
     S\'olo tu amor, mi amado,\\
@@ -783,29 +671,25 @@
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/offertorium/ofertorio-soprano.ly"
-    \end{lilypond}
-    \clearpage
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/offertorium/ofertorio-soprano.ly"
+    %\end{lilypond}
+    %\clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/offertorium/ofertorio-alto.ly"
-    \end{lilypond}
-    \clearpage
-
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/offertorium/ofertorio-alto.ly"
+    %\end{lilypond}
+    %\clearpage
+    
     %% - Communio - Melodia a inspiracion de Mnsr. Marco Frisina
     \begin{center}
-        {\scshape \Huge {\bfseries Canto de Comuni\'on}}
+        \Huge {\bfseries Canto de Comuni\'on}
     \end{center}
 
-    \Large El texto del canto ``Madre de la Iglesia'' es tomado del himno de las v\'isperas de la memoria de la
-    Santisima Virgen Mar\'ia, Madre de la Iglesia del breviario romano. En nuestra investigaci\'on no logramos
-    encontrar al autor de este himno. Este canto al igual que el canto ``Principe de los siglos'', al ser
-    tambi\'en un himno, tiene la forma interpretativa intercalando las intervenciones por estrofa, siguiendo la
-    forma A-B, pero aqu\'i se intercala entre solista y coro; y en la linea mel\'odica simple con una linea arm\'onica
-    parecida al modo frigio del gregoriano. Las partes del solista son para una mezzosoprano para no marcar mucha
-    diferencia entre las estrofas interpretadas por el solista y las interpretadas por el coro y as\'i no cambiar la
-    linea mel\'odica manteniendo una coherencia a lo largo del canto.
+    \Large El texto del canto ``Madre de la Iglesia'' es tomado del himno de las v\'isperas de la memoria de la Santisima Virgen Mar\'ia, Madre de la Iglesia del breviario romano.\\
+    Se decicio por este himno tanto por la representaci\'on de Mar\'ia como Iglesia
+    (el reba\~no que el gui\'a, el pueblo que gobierna) como Mar\'ia la Reina Madre (como suele llamarse a la madre del rey regente), es decir Madre de la Iglesia. Luego nos dimos cuenta que ambas son fiestas instituidas en estos tiempos (Cristo Rey del Universo intuida por el Papa P\'io XII el d\'ia 11 de diciembre de 1925 y Mar\'ia, Madre de la Iglesia instituida por el Papa Francisco el d\'ia 11 de febrero de 2018). En nuestra investigaci\'on no logramos encontrar al autor de este himno.\\
+    Este canto al igual que el canto ``Principe de los siglos'', al ser tambi\'en un himno, tiene la forma interpretativa intercalando las intervenciones por estrofa, pero aqu\'i se intercala entre solista y coro.
 
     \noindent
     \LARGE Cabeza y cuerpo, Cristo forma un todo,\\
@@ -834,33 +718,28 @@
     \noindent
     Am\'en.
     \clearpage
-
+    
     \begin{lilypond}[staffsize=19]
         \include "../write/communio/comunion.ly"
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/communio/comunion-soprano.ly"
-    \end{lilypond}
-    \clearpage
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/communio/comunion-soprano.ly"
+    %\end{lilypond}
+    %\clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/communio/comunion-alto.ly"
-    \end{lilypond}
-    \clearpage
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/communio/comunion-alto.ly"
+    %\end{lilypond}
+    %\clearpage
 
     %% - Finalis - Melodia a inspiracion de Mnsr. Marco Frisina
     \begin{center}
-        {\scshape \Huge {\bfseries Canto Final}}
+        \Huge {\bfseries Canto Final}
     \end{center}
 
-    \Large Este ``Canto de Amor'' es tomado del texto del Salmo 45 (44). A pesar de no se un himno se us\'o
-    el mismo recurso en el canto ``Principe de los siglos'' y se interpreta a intervenciones intercaladas
-    por estrofas, forma A-B, solo para mantener el mismo tipo de interpretaci\'on tanto en canto de entrada
-    como en el final. Tambi\'en usa la misma linea arm\'onica parecida al modo frigio del gregoriano pero la
-    linea mel\'odica es mucho m\'as simple parecida a la del canto ``Sagrario del Altar'' para que sea un poco
-    m\'as \'agil.
+    \Large Este ``Canto de Amor'' es tomado del texto del Salmo 45 (44). A pesar de no se un himno se us\'o el mismo recurso en el canto ``Principe de los siglos'' y se interpreta a intervenciones intercaladas por estrofas para mantener el mismo tipo de interpretaci\'on tanto en canto de entrada como en el final pero mucho m\'as simple parecida a la del canto ``Sagrario del Altar'' para que sea un poco m\'as \'agil.
 
     \noindent
     \LARGE Eres el m\'as hermoso\\
@@ -922,13 +801,16 @@
     \end{lilypond}
     \clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/finalis/final-soprano.ly"
-    \end{lilypond}
-    \clearpage
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/finalis/final-soprano.ly"
+    %\end{lilypond}
+    %\clearpage
 
-    \begin{lilypond}[staffsize=19]
-        \include "../write/finalis/final-alto.ly"
-    \end{lilypond}
-    \clearpage
+    %\begin{lilypond}[staffsize=19]
+    %    \include "../write/finalis/final-alto.ly"
+    %\end{lilypond}
+    %\clearpage
+
+    % Termina el documento
 \end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% F I N %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

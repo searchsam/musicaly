@@ -8,10 +8,10 @@ makeUnfold =
      r))
 
 ticktock =
-#(cond ((= time 8) #{ \drummode {\makeUnfold \unfoldRepeats \harmonies {hiwoodblock 8 lowoodblock lowoodblock hiwoodblock lowoodblock lowoodblock}} #})
-       ((= time 4) #{ \drummode {\makeUnfold \unfoldRepeats \harmonies {hiwoodblock 4 lowoodblock lowoodblock lowoodblock}} #})
-       ((= time 3) #{ \drummode {\makeUnfold \unfoldRepeats \harmonies {hiwoodblock 4 lowoodblock lowoodblock}} #})
-       ((= time 2) #{ \drummode {\makeUnfold \unfoldRepeats \harmonies {hiwoodblock 4 lowoodblock}} #}))
+#(cond ((= time 8) #{ \drummode {\makeUnfold \unfoldRepeats \global {hiwoodblock 8 lowoodblock lowoodblock hiwoodblock lowoodblock lowoodblock}} #})
+       ((= time 4) #{ \drummode {\makeUnfold \unfoldRepeats \global {hiwoodblock 4 lowoodblock lowoodblock lowoodblock}} #})
+       ((= time 3) #{ \drummode {\makeUnfold \unfoldRepeats \global {hiwoodblock 4 lowoodblock lowoodblock}} #})
+       ((= time 2) #{ \drummode {\makeUnfold \unfoldRepeats \global {hiwoodblock 4 lowoodblock}} #}))
 
 
 metronome = \new DrumStaff {
