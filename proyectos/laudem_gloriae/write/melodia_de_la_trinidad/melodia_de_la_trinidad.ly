@@ -1,8 +1,8 @@
-%	Aqui estoy Señor - Melodia vaticana
+%   Melodia de la Trinidad - Contratenor
 %	by serach.sam@
 
 \language "espanol"
-\version "2.23.3"
+\version "2.23.2"
 
 % --- Global parameters
 %particle = 0
