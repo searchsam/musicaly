@@ -4,6 +4,6 @@ harmonies = \new ChordNames {
   \set chordChanges = ##t
   \chordmode {
     \italianChords
-    s1*85
+
   }
 }
