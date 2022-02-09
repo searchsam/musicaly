@@ -41,10 +41,8 @@
         %\set Staff.instrumentName = "Voz"
         \set Staff.midiInstrument = #"choir aahs"
         %\set Staff.midiMaximumVolume = #1.5
-        <<
-            \new Voice = "voice" { << \global \voice >> }
-            \new Lyrics \lyricsto "voice" { \voice-lyrics }
-        >>
+        \new Voice = "voice" { << \global \voice >> }
+        \new Lyrics \lyricsto "voice" { \voice-lyrics }
     >> }
   >>
   \midi {}
