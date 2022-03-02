@@ -1,13 +1,11 @@
 alto_music = \relative do' {
   \compressEmptyMeasures
+  \dynamicUp
 
   R1*4 |
   R1*3 |
-  fa2^\markup{ \italic "Solo Contralto" }( re4 sib4 |
-  mib2) re2 |
-  do2.( sib4~ |
-  sib2.) r4 | #(if (= particle 1) jump "") % 11
-  r4 la'2^\markup{ \italic "Todos" } la4 |
+  R1*4 | #(if (= particle 1) jump "") % 11
+  r4 la'2 la4 |
   sib4 sib sib sib |
   la2( sol2) |
   sol2 r4 la8 la |
@@ -15,11 +13,8 @@ alto_music = \relative do' {
   sib4 sib sib8 sib sib4( |
   la2 sol~ sol4) la2. | #(if (= particle 1) jump "") % 18
   R1*3 |
-  fa2^\markup{ \italic "Solo Contralto" } re4 sib4 |
-  mib2 re2 |
-  do2. sib4~ |
-  sib2. r4 | #(if (= particle 1) jump "") % 15
-  r4 la'2^\markup{ \italic "Todos" } la4 |
+  R1*4 | #(if (= particle 1) jump "") % 15
+  r4 la2 la4 |
   sib4 sib sib sib |
   la2 sol2 |
   sol2 r4 la8 la |
@@ -32,7 +27,7 @@ alto_music = \relative do' {
   sib4 sib4( la2) |
   sol2. sol4 la1 |
   r1 | #(if (= particle 1) jump "") % 28
-  mib2^\markup{ \italic "Solo Contralto"}( re4) sib |
+  mib2^\markup{ \bold "Solo" \italic "Contralto"}( re4) sib |
   do2 sib4 sib |
   do4 re( do4) do4~ |
   do4 mib2 do4 |
@@ -68,11 +63,8 @@ alto_music = \relative do' {
   fa2) |
   fa2 | #(if (= particle 1) jump "") % 75
   R1*3 |
-  fa2^\markup{ \italic "Solo Contralto"} re4 sib |
-  mib4 mib re re |
-  do2. sib4~ |
-  sib2. r4 | #(if (= particle 1) jump "") % 82
-  r4 la'2^\markup{ \italic "Todos"} la4 |
+  R1*4 | #(if (= particle 1) jump "") % 82
+  r4 la2^\markup{ \italic "Todos"} la4 |
   sib4 sib sib sib |
   la2 sol2 |
   sol2 r4 sol |
@@ -93,11 +85,9 @@ alto_music = \relative do' {
 }
 
 alto_lyrics = \lyricmode {
-  Cre -- o~en Dios.
   Pa -- dre to -- do -- po -- de -- ro -- so.
   cre -- a -- dor del cie -- lo y de la tie -- rra.
 
-  Cre -- o en Je -- su -- cris -- to.
   Hi -- jo ú -- ni -- co, nues -- tro Se -- ñor,
   que fue con -- ce -- bi -- do por o -- bra y gra -- cia del Es -- pí -- ri -- tu San -- to,
   na -- cio de San -- ta Ma -- rí -- a Vir -- gen.
@@ -109,7 +99,6 @@ alto_lyrics = \lyricmode {
   re -- su -- ci -- tó de~en -- tre los muer -- tos.
   Des -- de allí ha de ve -- nir a juz -- gar a vi -- vos y a muer -- tos.
 
-  Cre -- o~en el Es -- pí -- ri -- tu San -- to.
   La san -- ta~I -- gle -- sia ca -- tó -- li -- ca,
   la co -- mu -- nión de los san -- tos,
   el per -- dón de los pe -- ca -- dos,

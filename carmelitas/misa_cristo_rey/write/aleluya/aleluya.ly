@@ -1,7 +1,6 @@
-% ****************************************************************************
-%	Aleluya - Melody inspired by the compositions of Mons Marco Frisina
-%   	Music and accompaniment by serachsam
-% ****************************************************************************
+%  Aleluya - Melody inspired by the compositions of Mons Marco Frisina
+%  Music and accompaniment by serachsam
+
 \language "espanol"
 \version "2.23.2"
 

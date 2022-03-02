@@ -1,3 +1,14 @@
+
+title = "Creo en Dios"
+subtitle = "Misa Cristo Rey"
+subsubtitle = "Credo"
+autor = "Linda Martínez"
+arranger = "Samuel Gutiérrez"
+other = ""
+dedication = \markup { \small "" }
+papper = "letter"
+size = 20
+
 global = {
   \tempo "Moderatto" 4 = 120
   \key sib \major

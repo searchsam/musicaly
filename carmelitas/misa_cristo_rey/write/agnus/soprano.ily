@@ -1,5 +1,6 @@
 soprano_music = \relative do' {
   \compressEmptyMeasures
+  \dynamicUp
 
   R1*2 | % 02
   R1*3 | % 05
@@ -47,6 +48,7 @@ soprano_music = \relative do' {
   la2 fa |
   si1 |
   do1 | % 54
+  R1*2 |
 }
 
 soprano_lyrics = \lyricmode {

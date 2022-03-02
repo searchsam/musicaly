@@ -1,7 +1,6 @@
-% **************************************************************************
-%	Aleluya - Melody inspired by the compositions of Mons Marco Frisina
-%   	Music and accompaniment by serachsam
-% **************************************************************************
+% Aleluya - Melody inspired by the compositions of Mons Marco Frisina
+% Music and accompaniment by serachsam
+
 \language "espanol"
 \version "2.23.2"
 
@@ -20,12 +19,13 @@ jump = \break
 % #(set-global-staff-size 20)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Aclamación al Evangelio" \fontsize #2 "Misa de Cristo Rey" "Aleluya - Solemnidad Cristo Rey del Universo" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \smallCaps \title \fontsize #2 \smallCaps \subtitle \fontsize #1 \subsubtitle } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 \autor } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 \arranger } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 \other } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  dedication = \dedication
+  tagline = ##f
   breakbefore = ##t
 }
 
@@ -33,51 +33,40 @@ jump = \break
 
 % --- Harmony
 
+% --- Sheet
 \score {
   <<
-    \new ChoirStaff <<
-      \new Staff <<
-        \new Voice = "soprano" <<
-          \set Staff.instrumentName = #"Sopranos"
-          \set Staff.midiInstrument = #"choir aahs"
-          \set Staff.midiMaximumVolume = #1.5
-          \global \soprano_music
-        >>
-        \new Lyrics = "soprano"
-        \context Lyrics = "soprano" \lyricsto "soprano" \soprano_lyrics
-      >>
-      \new Staff <<
-        \new Voice = "contralto" <<
-          \set Staff.instrumentName = #"Contralto"
-          \set Staff.midiInstrument = #"choir aahs"
-          \set Staff.midiMaximumVolume = #1.5
-          \global \alto_music
-        >>
-        \new Lyrics = "contralto"
-        \context Lyrics = "contralto" \lyricsto "contralto" \alto_lyrics
-      >>
-    >>
+    \new ChoirStaff { <<
+      \new Staff { <<
+        \set Staff.instrumentName = #"Soprano"
+        \set Staff.midiInstrument = #"choir aahs"
+        \new Voice = "soprano" { << \global \soprano_music >> }
+        \new Lyrics \lyricsto "soprano" { \soprano_lyrics }
+      >> }
+      \new Staff { <<
+        \set Staff.instrumentName = #"Contralto"
+        \set Staff.midiInstrument = #"choir aahs"
+        \new Voice = "contralto" { <<\global \alto_music>> }
+        \new Lyrics = "contralto" \lyricsto "contralto" { \alto_lyrics }
+      >> }
+    >> }
     \harmonies
-    \new PianoStaff <<
-      \new Staff <<
-        \set Staff.instrumentName = #"Organo"
+    \new PianoStaff { <<
+      \set PianoStaff.instrumentName = #"Organo"
+      \new Staff { <<
         \set Staff.midiInstrument = #"church organ"
-        \set Staff.midiMaximumVolume = #0.6
-        \set Staff.printPartCombineTexts = ##f
         \partCombine
         << \global \notes_soproano >>
         << \global \notes_alto >>
-      >>
-      \new Staff <<
+      >> }
+      \new Staff { <<
         \set Staff.midiInstrument = #"church organ"
-        \set Staff.midiMaximumVolume = #0.6
         \clef bass
-        \set Staff.printPartCombineTexts = ##f
         \partCombine
         << \global \notes_tenor >>
         << \global \notes_bass >>
-      >>
-    >>
+      >> }
+    >> }
   >>
   \midi { }
   \layout {
@@ -91,5 +80,4 @@ jump = \break
 \paper{
   #(set-default-paper-size "letter")
   indent=3.5\cm
-  page-breaking = #ly:page-turn-breaking
 }

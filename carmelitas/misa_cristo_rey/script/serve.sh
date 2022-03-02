@@ -10,9 +10,9 @@ cd "$(dirname "$0")/.."
 # sh script/update.sh
 
 # boot the app and any other necessary processes.
-echo "==> Compiling PDF book..."
 
 compile_pdf() {
+    echo "==> Compiling PDF book..."
     cd book
     readarray -d . -t strarr <<<"$1"
     name="${strarr[0]}"
@@ -26,9 +26,8 @@ compile_pdf() {
     cd ..
 }
 
-echo "==> Compiling audio book..."
-
 compile_audio() {
+    echo "==> Compiling audio book..."
     names=(agnus_dei aleluya communio credo finalis gloria_in_excelsis_deo graduale introito kyrie_eleison offertorium sanctus)
     compile_dir=$1/*.ly
     for file in $compile_dir; do
@@ -63,7 +62,7 @@ if [ ${#files[@]} -gt 1 ]; then
         compile_pdf $file_name
 
         if [[ $file_name == *"moderna"* ]]; then
-            for dir in write/*/; do
+            for dir in write/*; do
                 compile_audio $dir
             done
         fi

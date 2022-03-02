@@ -1,3 +1,13 @@
+title = "Aclamación al Evangelio"
+subtitle = "Misa Cristo Rey"
+subsubtitle = "Tracto - Aleluya - Solemnidad Cristo Rey del Universo"
+autor = "Linda Martínez"
+arranger = "Samuel Gutiérrez"
+other = ""
+dedication = \markup { \small "" }
+papper = "letter"
+size = 20
+
 global = {
   \tempo "Adagio" 4 = 70
   \key la \major

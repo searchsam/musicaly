@@ -1,3 +1,14 @@
+
+title = "Gloria a Dios en lo alto del cielo"
+subtitle = "Misa Cristo Rey"
+subsubtitle = "Gloria in excelsis Deo"
+autor = "Linda Martínez"
+arranger = "Samuel Gutiérrez"
+other = ""
+dedication = \markup { \small "" }
+papper = "letter"
+size = 20
+
 global = {
   \tempo "Moderatto" 4 = 100
   \key re \minor

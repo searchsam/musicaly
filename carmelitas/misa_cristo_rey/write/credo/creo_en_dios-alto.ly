@@ -1,7 +1,6 @@
-% ****************************************************************
-%   Creo en Dios - Renaissance way melody
-%	Music and accompaniment by serachsam
-% ****************************************************************
+%  Creo en Dios - Renaissance way melody
+%  Music and accompaniment by serachsam
+
 \language "espanol"
 \version "2.23.2"
 
@@ -17,12 +16,13 @@ jump = \break
 % #(set-global-staff-size 20)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Creo en Dios" \fontsize #2 "Misa Cristo Rey" "Credo" } } }
-\markup { \fill-line { \fontsize #2 "Contralto" \right-column { \fontsize #2 "Linda Martínez" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
+\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #2 \smallCaps \subtitle \fontsize #1 \subsubtitle } } }
+\markup { \fill-line { \fontsize #2 "CONTRALTO" \right-column { \fontsize #2 \autor } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 \arranger } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 \other } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  dedication = \dedication
+  tagline = ##f
   breakbefore = ##t
 }
 
@@ -30,15 +30,14 @@ jump = \break
 
 % --- Harmonie
 
+% --- Sheet
 \score {
   <<
-    \new Voice = "alto" <<
+    \new Staff { <<
       \set Staff.midiInstrument = #"choir aahs"
-      \set Staff.midiMaximumVolume = #1.5
-      \global \alto_music
-    >>
-    \new Lyrics = "alto"
-    \context Lyrics = "alto" \lyricsto "alto" \alto_lyrics
+      \new Voice = "alto" { << \global \alto_music >> }
+      \new Lyrics \lyricsto "alto" { \alto_lyrics }
+    >> }
   >>
   \midi { }
   \layout { }
@@ -47,5 +46,4 @@ jump = \break
 % --- Paper
 \paper{
   #(set-default-paper-size "letter")
-  page-breaking = #ly:page-turn-breaking
 }

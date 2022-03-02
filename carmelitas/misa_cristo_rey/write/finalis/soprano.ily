@@ -1,5 +1,6 @@
 soprano_music = \relative do' {
   \compressEmptyMeasures
+  \dynamicUp
 
   R2*4 | #(if (= particle 1) jump "") % 4
   fa4 sol8 la |
@@ -55,13 +56,13 @@ soprano_music = \relative do' {
   la4 la |
   do4 sib8 la |
   sol4 fa8 mi |
-  fa8 fa sol8 la |
+  fa4 sol8 la |
   sol2  \breathe | #(if (= particle 1) jump "") % 101
   la4 sib8( do) |
   sib4 la8 sol |
   la4 la |
   do4 sib8( la) |
-  sib4 do8( sib) |
+  sib4 do8 sib |
   la4 sol8( fa) |
   sol2( |
   fa2) | #(if (= particle 1) jump "") % 109
@@ -70,8 +71,8 @@ soprano_music = \relative do' {
   sol8 sol fa8 sol |
   la4 la |
   do4 sib8 la |
-  sol4 fa8 mi |
-  fa4 sol8( la) |
+  sol4 fa8( mi) |
+  fa4 sol8 la |
   sol4 sol \breathe | #(if (= particle 1) jump "") % 131
   la4 sib8 do |
   sib8 sib la8 sol |
@@ -100,9 +101,9 @@ soprano_lyrics = \lyricmode {
   a tu dies -- tra es -- tá la rei -- na.
 
   La hi -- ja de Ti -- ro con pre -- sen -- tes,
-  to -- da es -- plén -- di -- da, la hi -- ja del rey,
+  to -- da es -- plén -- di -- da, la~hi -- ja del rey,
   con ves -- ti -- dos en o -- ro;
-  es lle -- va -- da~an -- te el rey.
+  es lle -- va -- da an -- te el rey.
 
   En lu -- gar de pa -- dres ten -- drás hi -- jos;
   prín -- ci -- pes los ha -- rás de la tie -- rra.

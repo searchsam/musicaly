@@ -4,6 +4,7 @@ harmonies = \new ChordNames {
   \set chordChanges = ##t
   \chordmode {
     \italianChords
+
     s1*2 |
     la1 |
     re1:7 |
@@ -57,5 +58,7 @@ harmonies = \new ChordNames {
     re1:m |
     mi1:m7 |
     la1:m |
+    re1:m |
+    sol1:m |
   }
 }

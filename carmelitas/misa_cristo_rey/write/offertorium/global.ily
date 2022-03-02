@@ -1,3 +1,14 @@
+
+title = "Sagrario del Altar"
+subtitle = "Misa Cristo Rey"
+subsubtitle = "Ofertorium - Oración de Teresa del Niño Jesús al Santisimo Sacramento"
+autor = "Linda Martínez"
+arranger = "Samuel Gutiérrez"
+other = ""
+dedication = \markup { \small "" }
+papper = "letter"
+size = 20
+
 global = {
   \tempo "Adagio" 4 = 70
   \key re \minor
@@ -26,6 +37,6 @@ global = {
   \bar "||" % 81
   \skip 1*9
   \bar "||" % 90
-  \skip 1*7
+  \skip 1*9
   \bar "|." % 97
 }

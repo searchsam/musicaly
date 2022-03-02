@@ -1,10 +1,11 @@
-soprano_music = \relative do'' {
+soprano_music = \relative do' {
   \compressEmptyMeasures
+  \dynamicUp
 
   R1*4 |
   R1*3 |
   R1*4 | #(if (= particle 1) jump "") % 11
-  r4 do2 do4 |
+  r4 do'2 do4 |
   re4 re re re |
   re( do2 si4) |
   do2 r4 do8 do |
@@ -29,7 +30,7 @@ soprano_music = \relative do'' {
   dos1 | #(if (= particle 1) jump "") % 40
   R1 |
   R1*16 | #(if (= particle 1) jump "") % 56
-  re,4^\markup{ \italic "Solo Soprano"} sol fa sib |
+  re,4^\markup{ \bold "Solo" \italic "Soprano"} sol fa sib |
   la2 |
   la8 sib r sib |
   la4 r4 |
@@ -39,7 +40,7 @@ soprano_music = \relative do'' {
   r4 la8 sib |
   sib8 sib( la4 |
   sol8) la4. | #(if (= particle 1) jump "") % 66
-  fa8^\markup{ \italic "Solo Soprano"} sib4 la8 |
+  fa8 sib4 la8 |
   re4 do4~ |
   do8 la4 sol8 |
   la4 do8 do( |

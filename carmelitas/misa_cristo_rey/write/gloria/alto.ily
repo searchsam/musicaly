@@ -1,9 +1,10 @@
 alto_music = \relative do' {
   \compressEmptyMeasures
+  \dynamicUp
 
   R1*5 |
   R1*3 | #(if (= particle 1) jump "") % 8
-  re8^\markup{ \italic "Contralto"} re re4 re fa |
+  re8 re re4 re fa |
   fa8 fa mi4 mi sol |
   sol8 sol fa4 fa fa~ |
   fa4 r fa8 fa fa4 | #(if (= particle 1) jump "") % 12
@@ -14,21 +15,21 @@ alto_music = \relative do' {
   fas1 |
   R1 | #(if (= particle 1) jump "") % 18
   R1*4 | #(if (= particle 1) jump "") % 22
-  \time 2/4 re4^\markup{\italic "Contralto"} re |
+  \time 2/4 re4 re |
   \time 4/4 mi4 mi fa2 |
   fa fa2 |
   la4 sol fa( mi4) |
   fas1 |
   R1 | #(if (= particle 1) jump "") % 28
   R1*4 | #(if (= particle 1) jump "") % 32
-  re8^\markup{ \italic "Contralto"} re re re mi4 mi |
+  re8 re re re mi4 mi |
   fa4 fa fa4 fa |
   fa2 la4 sol |
   fa mi4 re4 mi |
   fas1 |
   R1 | #(if (= particle 1) jump "") % 38
   R1*4 | #(if (= particle 1) jump "") % 42
-  re8^\markup{ \italic "Contralto"} re re re mi4 mi |
+  re8 re re re mi4 mi |
   fa fa8 fa fa4 fa |
   fa fa la4 sol |
   fa mi4 re4 mi |

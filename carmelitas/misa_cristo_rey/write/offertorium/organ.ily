@@ -95,6 +95,8 @@ notes_soproano = \relative do' {
     fa2 si, |
     re2 dos~ |
     dos1 |
+    re1 |
+    dos1 |
 }
 
 notes_alto = \relative do' {
@@ -194,6 +196,8 @@ notes_alto = \relative do' {
     do1 |
     re2 sol, |
     sib2 la~ |
+    la1 | #(if (= particle 1) "" jump)
+    sib1 |
     la1 |
 }
 
@@ -295,6 +299,8 @@ notes_tenor = \relative do {
     la2 re, |
     fa2 mi~ |
     mi1 |
+    re1 |
+    mi1 |
 }
 
 notes_bass = \relative do {
@@ -393,6 +399,8 @@ notes_bass = \relative do {
     fa'2 la,4 sib |
     do1 |
     re2 sol, |
-    sib2 la	|
-    sol2 la |
+    sib2 la~ |
+    la1 |
+    sol1 |
+    la1 |
 }

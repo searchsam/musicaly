@@ -12,6 +12,7 @@ notes_soproano_a = \relative do' {
   la4 dos,2. |
   dos4 re2.~ |
   re2 fa~ |
+  fa1~ |
   fa4 mi fa2 |
   mi2 fa |
   re2 mi4 fa~ |
@@ -24,6 +25,7 @@ notes_soproano_a = \relative do' {
   mi4 re2.~ |
   re4 la'2. |
   re,4 mi fa2~ |
+  fa1~ |
   fa4 mi fa2 |
   mi2 fa |
   re2 mi4 fa~ |
@@ -36,6 +38,7 @@ notes_soproano_a = \relative do' {
   mi4 re2.~ |
   re4 la'2. |
   re,4 mi fa2~ |
+  fa1~ |
   fa4 mi fa2 |
   mi2 fa |
   re2 mi4 fa~ |
@@ -48,6 +51,7 @@ notes_soproano_a = \relative do' {
   mi4 re2.~ |
   re4 la'2. |
   re,4 mi fa2~ |
+  fa1~ |
   fa4 mi fa2 |
   mi2 fa |
   re2 mi4 fa~ |
@@ -70,7 +74,8 @@ notes_alto_a = \relative do' {
   re4 fa2.~ |
   fa4 la,2. |
   la4 sib2.~ |
-  sib2 re~ | #(if (= particle 1) "" jump) % 14
+  sib2 re~ | 
+  re1~ | #(if (= particle 1) "" jump) % 14
   re4 do re2 |
   do2 re |
   sib2 do4 re~ |
@@ -82,7 +87,8 @@ notes_alto_a = \relative do' {
   la4 do2.~ |
   do4 sib2.~ |
   sib4 fa'2. |
-  sib,4 do re2~ | #(if (= particle 1) "" jump) % 28
+  sib,4 do re2~ | 
+  re1~ | #(if (= particle 1) "" jump) % 28
   re4 do re2 |
   do2 re |
   sib2 do4 re~ |
@@ -94,7 +100,8 @@ notes_alto_a = \relative do' {
   la4 do2.~ |
   do4 sib2.~ |
   sib4 fa'2. |
-  sib,4 do re2~ | #(if (= particle 1) "" jump) % 40
+  sib,4 do re2~ | 
+  re1~ | #(if (= particle 1) "" jump) % 40
   re4 do re2 |
   do2 re |
   sib2 do4 re~ |
@@ -106,7 +113,8 @@ notes_alto_a = \relative do' {
   la4 do2.~ |
   do4 sib2.~ |
   sib4 fa'2. |
-  sib,4 do re2~ | #(if (= particle 1) "" jump) % 52
+  sib,4 do re2~ | 
+  re1~ | #(if (= particle 1) "" jump) % 52
   re4 do re2 |
   do2 re |
   sib2 do4 re~ |
@@ -127,6 +135,7 @@ notes_tenor_a = \relative do' {
   do4 mi,2. |
   mi4 fa2.~ |
   fa2 la~ |
+  la1~ |
   la4 sol la2 |
   sol2 la |
   fa2 sol4 la~ |
@@ -139,6 +148,7 @@ notes_tenor_a = \relative do' {
   sol4 fa2.~ |
   fa4 do'2. |
   fa,4 sol la2~ |
+  la1~ |
   la4 sol la2 |
   sol2 la |
   fa2 sol4 la~ |
@@ -151,6 +161,7 @@ notes_tenor_a = \relative do' {
   sol4 fa2.~ |
   fa4 do'2. |
   fa,4 sol la2~ |
+  la1~ |
   la4 sol la2 |
   sol2 la |
   fa2 sol4 la~ |
@@ -163,6 +174,7 @@ notes_tenor_a = \relative do' {
   sol4 fa2.~ |
   fa4 do'2. |
   fa,4 sol la2~ |
+  la1~ |
   la4 sol la2 |
   sol2 la |
   fa2 sol4 la~ |
@@ -183,6 +195,7 @@ notes_bass_a = \relative do {
   fa4 la,2. |
   sol4 sib2.~ |
   sib2 re~  |
+  re1~ |
   re4 do re2 |
   do2 re |
   sib2 do4 re~ |
@@ -195,6 +208,7 @@ notes_bass_a = \relative do {
   do4 sib2.~ |
   sib4 fa'2. |
   sib,4 do re2~ |
+  re1~ |
   re4 do re2 |
   do2 re |
   sib2 do4 re~ |
@@ -207,6 +221,7 @@ notes_bass_a = \relative do {
   do4 sib2.~ |
   sib4 fa'2. |
   sib,4 do re2~ |
+  re1~ |
   re4 do re2 |
   do2 re |
   sib2 do4 re~ |
@@ -219,6 +234,7 @@ notes_bass_a = \relative do {
   do4 sib2.~ |
   sib4 fa'2. |
   sib,4 do re2~ |
+  re1~ |
   re4 do re2 |
   do2 re |
   sib2 do4 re~ |
@@ -240,6 +256,7 @@ notes_soproano_b = \relative do' {
   la4 dos,2. |
   dos4 re2.~ |
   re2 fa~ |
+  fa1~ |
   fa4 mi fa2 |
   mi2 fa |
   re2 mi4 fa~ |
@@ -250,6 +267,7 @@ notes_soproano_b = \relative do' {
   re4 fa2. |
   re4 la'2. |
   re,4 mi fa2~ |
+  fa1~ |
   fa4 mi fa2 |
   mi2 fa |
   re2 mi4 fa~ |
@@ -260,6 +278,7 @@ notes_soproano_b = \relative do' {
   re4 fa2. |
   re4 la'2. |
   re,4 mi fa2~ |
+  fa1~ |
   fa4 mi fa2 |
   mi2 fa |
   re2 mi4 fa~ |
@@ -282,7 +301,8 @@ notes_alto_b = \relative do' {
   re4 fa2.~ |
   fa4 la,2. |
   la4 sib2.~ |
-  sib2 re~ | #(if (= particle 1) "" jump) % 16
+  sib2 re~ | 
+  re1~ | #(if (= particle 1) "" jump) % 16
   re4 do re2 |
   do2 re |
   sib2 do4 re~ |
@@ -292,7 +312,8 @@ notes_alto_b = \relative do' {
   la4 sib2.~ |
   sib4 re2. | #(if (= particle 1) "" jump) % 24
   sib4 fa'2. |
-  sib,4 do re2~ | #(if (= particle 1) "" jump) % 26
+  sib,4 do re2~ | 
+  re1~ | #(if (= particle 1) "" jump) % 26
   re4 do re2 |
   do2 re |
   sib2 do4 re~ |
@@ -302,7 +323,8 @@ notes_alto_b = \relative do' {
   la4 sib2.~ |
   sib4 re2. | #(if (= particle 1) "" jump) % 34
   sib4 fa'2. |
-  sib,4 do re2~ | #(if (= particle 1) "" jump) % 36
+  sib,4 do re2~ | 
+  re1~ | #(if (= particle 1) "" jump) % 36
   re4 do re2 |
   do2 re |
   sib2 do4 re~ |
@@ -324,6 +346,7 @@ notes_tenor_b = \relative do' {
   do4 mi,2. |
   mi4 fa2.~ |
   fa2 la~ |
+  la1~ |
   la4 sol la2 |
   sol2 la |
   fa2 sol4 la~ |
@@ -334,6 +357,7 @@ notes_tenor_b = \relative do' {
   fa4 la2. |
   fa4 do'2. |
   fa,4 sol la2~ |
+  la1~ |
   la4 sol la2 |
   sol2 la |
   fa2 sol4 la~ |
@@ -344,6 +368,7 @@ notes_tenor_b = \relative do' {
   fa4 la2. |
   fa4 do'2. |
   fa,4 sol la2~ |
+  la1~ |
   la4 sol la2 |
   sol2 la |
   fa2 sol4 la~ |
@@ -365,6 +390,7 @@ notes_bass_b = \relative do {
   fa4 la,2. |
   sol4 sib2.~ |
   sib2 re~ |
+  re1~ |
   re4 do re2 |
   do2 re |
   sib2 do4 re~ |
@@ -375,6 +401,7 @@ notes_bass_b = \relative do {
   sib4 re2. |
   sib4 fa'2. |
   sib,4 do re2~ |
+  re1~ |
   re4 do re2 |
   do2 re |
   sib2 do4 re~ |
@@ -385,6 +412,7 @@ notes_bass_b = \relative do {
   sib4 re2. |
   sib4 fa'2. |
   sib,4 do re2~ |
+  re1~ |
   re4 do re2 |
   do2 re |
   sib2 do4 re~ |
@@ -410,6 +438,7 @@ notes_soproano_c = \relative do' {
   mi4 re2.~ |
   re4 la'2. |
   re,4 mi fa2~ |
+  fa1~ |
   fa4 mi fa2 |
   mi2 fa |
   re2 mi4 fa~ |
@@ -426,6 +455,7 @@ notes_soproano_c = \relative do' {
   re4 fa2. |
   re4 la'2. |
   re,4 mi fa2~ |
+  fa1~ |
   fa4 mi fa2 |
   mi2 fa |
   re2 mi4 fa~ |
@@ -452,7 +482,8 @@ notes_alto_c = \relative do' {
   la4 do2.~ |
   do4 sib2.~ |
   sib4 fa'2. |
-  sib,4 do re2~ | #(if (= particle 1) "" jump) % 20
+  sib,4 do re2~ | 
+  re1~ | #(if (= particle 1) "" jump) % 20
   re4 do re2 |
   do2 re |
   sib2 do4 re~ |
@@ -468,7 +499,8 @@ notes_alto_c = \relative do' {
   la4 sib2.~ |
   sib4 re2. |
   sib4 fa'2. |
-  sib,4 do re2~ | #(if (= particle 1) "" jump) % 36
+  sib,4 do re2~ | 
+  re1~ | #(if (= particle 1) "" jump) % 36
   re4 do re2 |
   do2 re |
   sib2 do4 re~ |
@@ -494,6 +526,7 @@ notes_tenor_c = \relative do' {
   sol4 fa2.~ |
   fa4 do'2. |
   fa,4 sol la2~ |
+  la1~ |
   la4 sol la2 |
   sol2 la |
   fa2 sol4 la~ |
@@ -510,6 +543,7 @@ notes_tenor_c = \relative do' {
   fa4 la2. |
   fa4 do'2. |
   fa,4 sol la2~ |
+  la1~ |
   la4 sol la2 |
   sol2 la |
   fa2 sol4 la~ |
@@ -535,6 +569,7 @@ notes_bass_c = \relative do {
   do4 sib2.~ |
   sib4 fa'2. |
   sib,4 do re2~ |
+  re1~ |
   re4 do re2 |
   do2 re |
   sib2 do4 re~ |
@@ -551,6 +586,7 @@ notes_bass_c = \relative do {
   sib4 re2. |
   sib4 fa'2. |
   sib,4 do re2~ |
+  re1~ |
   re4 do re2 |
   do2 re |
   sib2 do4 re~ |

@@ -1,4 +1,4 @@
-% Himno a la Sangre de Cristo - Tenor
+% Oh cruz fiel - Tenor
 % by serachsam
 
 \language "espanol"
@@ -41,7 +41,7 @@ pulse = 4
       \new Voice = "tenor" { << \global \tenor >> }
       \new Lyrics \lyricsto "tenor" { \tenor-lyrics }
     >> }
-    \metronome
+    %\metronome
   >>
   \midi {}
   \layout {}

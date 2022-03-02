@@ -1,3 +1,14 @@
+
+title = "Madre de la Iglasia"
+subtitle = "Misa Cristo Rey"
+subsubtitle = "Communio - Himno Memoria María, Madre de la Iglasia"
+autor = "Linda Martínez"
+arranger = "Samuel Gutiérrez"
+other = ""
+dedication = \markup { \small "" }
+papper = "letter"
+size = 20
+
 global = {
   \tempo "Adagio" 4 = 70
   \key re \minor

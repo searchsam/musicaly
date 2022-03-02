@@ -4,6 +4,7 @@ harmonies = \new ChordNames {
   \set chordChanges = ##t
   \chordmode {
     \italianChords
+
     re1:m |
     sib2 do |
     re1:m |

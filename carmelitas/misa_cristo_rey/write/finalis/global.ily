@@ -1,3 +1,14 @@
+
+title = "Canto de Amor"
+subtitle = "Misa Cristo Rey"
+subsubtitle = "Finalis - Salmo 45 (44)"
+autor = "Linda Martínez"
+arranger = "Samuel Gutiérrez"
+other = ""
+dedication = \markup { \small "" }
+papper = "letter"
+size = 20
+
 global = {
   \tempo "Adagio" 4 = 70
   \key re \minor

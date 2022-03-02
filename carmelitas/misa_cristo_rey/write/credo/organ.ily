@@ -111,11 +111,11 @@ notes_soproano = \relative do' {
 }
 
 notes_alto = \relative do' {
-  fa2\p re4 sib4 |
+  fa2 re4 sib4 |
   mib2 re |
   do1 |
   sib1 |
-  sib |
+  sib\p |
   do |
   sib1~ | #(if (= particle 1) "" jump) % 07
   sib1 |

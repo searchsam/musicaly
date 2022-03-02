@@ -19,7 +19,7 @@
 % --- Parametro globales
 global = {
   \tempo "Allegro" 4 = 140
-  \key mi \minor
+  \key sol \minor
   \time 2/4
   s2*16
   \bar "|."
@@ -27,20 +27,20 @@ global = {
 
 melodia = \relative do'' {
   % Type notes here
-  si4 si8 si 			| % 01
-  si8 la sol la 			| % 02
-  si4 si8 si 			| % 03
-  si la8 sol la 			| % 04
-  si4 la8 sol			| % 05
-  fas4 fas8 mi 			| % 06
+  sib4 sib8 sib 			| % 01
+  sib8 la sol la 			| % 02
+  sib4 sib8 sib 			| % 03
+  sib la8 sol la 			| % 04
+  sib4 la8 sol			| % 05
+  fas4 fas8 mib 			| % 06
   re4 r				| % 07
   r2				| % 08
-  si'4 si8 si 			| % 09
-  si8 la sol la 			| % 10
-  si4 si8 si 			| % 11
-  si la8 sol la 			| % 12
-  si4 la8 sol			| % 13
-  fas4 fas8 mi 			| % 14
+  sib'4 sib8 sib 			| % 09
+  sib8 la sol la 			| % 10
+  sib4 sib8 sib 			| % 11
+  sib la8 sol la 			| % 12
+  sib4 la8 sol			| % 13
+  fas4 fas8 mib 			| % 14
   re4 r				| % 15
   \textLengthOn
   s2_\markup { \small "Sube Dios..." }	| % 16
@@ -51,7 +51,7 @@ armonia = \new ChordNames {
   \set chordChanges = ##t
   \italianChords
   \chordmode {
-    mi2:m
+    sol2:m
   }
 }
 

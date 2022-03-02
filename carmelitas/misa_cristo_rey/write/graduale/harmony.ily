@@ -18,6 +18,7 @@ harmonies_a = \new ChordNames {
     s4 la2. |
     la4:7 sib2. |
     s2 re2:m |
+    re1:m |
     s4 do4 re2:m |
     do2 re2:m |
     sib,2 do4 re4:m |
@@ -30,6 +31,7 @@ harmonies_a = \new ChordNames {
     s4 sib2. |
     s4 fa2. |
     sib4:m do4 re2:m |
+    re1:m |
     s4 do4 re2:m |
     do2 re2:m |
     sib,2 do4 re4:m |
@@ -42,6 +44,7 @@ harmonies_a = \new ChordNames {
     s4 sib2. |
     s4 fa2. |
     sib4:m do4 re2:m |
+    re1:m |
     s4 do4 re2:m |
     do2 re2:m |
     sib,2 do4 re4:m |
@@ -54,6 +57,7 @@ harmonies_a = \new ChordNames {
     s4 sib2. |
     s4 fa2. |
     sib4:m do4 re2:m |
+    re1:m |
     s4 do4 re2:m |
     do2 re2:m |
     sib,2 do4 re4:m |
@@ -81,6 +85,7 @@ harmonies_b = \new ChordNames {
     s4 la2. |
     la4:7 sib2. |
     s2 re2:m |
+    re1:m |
     s4 do4 re2:m |
     do2 re2:m |
     sib,2 do4 re4:m |
@@ -91,6 +96,7 @@ harmonies_b = \new ChordNames {
     s4 re2.:m |
     sib4 fa2. |
     sib4:m do4 re2:m |
+    re1:m |
     s4 do4 re2:m |
     do2 re2:m |
     sib,2 do4 re4:m |
@@ -101,6 +107,7 @@ harmonies_b = \new ChordNames {
     s4 re2.:m |
     sib4 fa2. |
     sib4:m do4 re2:m |
+    re1:m |
     s4 do4 re2:m |
     do2 re2:m |
     sib,2 do4 re4:m |
@@ -132,6 +139,7 @@ harmonies_c = \new ChordNames {
     s4 sib2. |
     s4 fa2. |
     sib4:m do4 re2:m |
+    re1:m |
     s4 do4 re2:m |
     do2 re2:m |
     sib,2 do4 re4:m |
@@ -148,6 +156,7 @@ harmonies_c = \new ChordNames {
     s4 re2.:m |
     sib4 fa2. |
     sib4:m do4 re2:m |
+    re1:m |
     s4 do4 re2:m |
     do2 re2:m |
     sib,2 do4 re4:m |

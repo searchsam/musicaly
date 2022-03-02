@@ -384,7 +384,7 @@ armonias = \new ChordNames {
     la4.:m mi4.
     la4.:m mi4.
     la4.:m mi4.
-    la2.:m s2. s4. sol4. s2. s4. fa4.
+    la2.:m s2. s4. sol4. s2. s4. fa4. s2. s4. mi4.
   }
 }
 

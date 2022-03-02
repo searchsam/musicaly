@@ -1,5 +1,6 @@
 soprano_music = \relative do' {
   \compressEmptyMeasures
+  \dynamicUp
 
   R1*10 | #(if (= particle 1) jump "") % 10
   la'4 fa2 fa4 |

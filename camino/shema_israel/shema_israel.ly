@@ -22,7 +22,7 @@ global = {
   s2*24
   \bar "||" \break
   \tempo 4 = 100 
-  s2*40
+  s2*37
   \bar "|." }
 
 
@@ -67,16 +67,16 @@ oboe = \relative do' {
   la2		| %59 
   sols2		| %60
   R2*4		| %64
-  dos4. si8 	| %65
+  dos4. res16 mi	| %65
   dos2 		| %66
   R2*2		| %67
-  si4. la8 	| %68
+  si4. dos16 res	| %68
   si2		| %69
   R2*2		| %70
-  la4. sols8 	| %71
+  la4. si16 dos 	| %71
   la2		| %72
   r2		| %73
-  la2		| %74 
+  la4. mi8	| %74 
   sols2~		| %75
   sols2		| %76
 }

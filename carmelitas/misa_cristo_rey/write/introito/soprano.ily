@@ -1,12 +1,13 @@
 soprano_music = \relative do' {
   \compressEmptyMeasures
+  \dynamicUp
 
   R1*4 | #(if (= particle 1) jump "") % 4
   R1*9 | #(if (= particle 1) jump "") % 13
   la'4 sol8( fa) sib( la) sol fa |
   sol8 fa mi sol la4 la |
   do4 sol8( do) re4 re8 re |
-  do8 sib do re la4 la \breathe | #(if (= particle 1) jump "") % 17
+  do8 sib do re la4 la | #(if (= particle 1) jump "") % 17
   la4 sol8 fa sib do re do |
   do8 sib la( sol) la2 |
   do4 sol8( do) sib4 sib8 sib |
@@ -15,28 +16,28 @@ soprano_music = \relative do' {
   R1*9 | #(if (= particle 1) jump "") % 31
   la4 sol8 fa sib la sol fa |
   sol8( fa) mi( sol) la4 la |
-  do4 sol8 do re4 re8 re |
-  do8( sib) do re la4 la \breathe | #(if (= particle 1) jump "") % 35
+  do4 sol8 do re4 re |
+  do8 sib do re la4 la | #(if (= particle 1) jump "") % 35
   la4 sol8 fa sib do re do |
   do8( sib) la sol la4 la |
   do4 sol8( do) sib sib sib8 sib |
   do8 re mi fa mi2 |
   re1 | #(if (= particle 1) jump "") % 40
   R1*9 | #(if (= particle 1) jump "") % 49
-  la4 sol8( fa) sib( la) sol fa |
-  sol8 fa mi sol la4 la |
+  la4 sol8( fa) sib la sol fa |
+  sol8( fa) mi sol la4 la |
   do4 sol8( do) re4 re8 re |
-  do8 sib do re la4 la \breathe | #(if (= particle 1) jump "") % 53
+  do8 sib do re la4 la | #(if (= particle 1) jump "") % 53
   la4 sol8 fa sib do re do |
   do8( sib) la( sol) la4 la |
   do4 sol8( do) sib4 sib8 sib |
   do8 re mi fa mi2 |
   re1 | #(if (= particle 1) jump "") % 58
   R1*9 | #(if (= particle 1) jump "") % 67
-  la4 sol8( fa) sib( la) sol fa |
-  sol8 fa mi sol la4 la |
+  la4 sol8 fa sib la sol( fa) |
+  sol8( fa) mi sol la4 la |
   do4 sol8 do re4 re |
-  do8 sib do re la4 la \breathe | #(if (= particle 1) jump "") % 80
+  do8 sib do re la4 la | #(if (= particle 1) jump "") % 80
   la4 sol8 fa sib do re do |
   do8( sib) la( sol) la4 la |
   do4 sol8 do sib4 sib |
@@ -58,13 +59,13 @@ soprano_lyrics = \lyricmode {
   tu ar -- dien -- te co -- ra -- zón a -- tra -- ve -- sa -- do.
   Con ho -- no -- res pú -- bli -- cos te en -- sal -- cen
   los que tie -- nen po -- der so -- bre la tie -- rra;
-  El ma -- es -- tro~y el juez te rin -- dan  cul -- to,
+  El ma -- es -- tro y~el juez te rin -- dan  cul -- to,
   el ar -- te y la ley no te des -- mien -- tan.
 
   Go -- bier -- nas con a -- mor el u -- ni -- ver -- so,
   glo -- ri -- fi -- ca -- do se -- as, Je -- su -- cris -- to,
   y que con -- ti -- go~y con tu~e -- ter -- no Pa -- dre
-  re -- ci -- ba glo -- ria~el San -- to Es -- pí -- ri -- tu.
+  re -- ci -- ba glo -- ria~el Es -- pí -- ri -- tu San -- to.
 
   A -- mén.
 }
