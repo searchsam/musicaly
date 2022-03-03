@@ -47,7 +47,7 @@ alto_music = \relative do' {
   mi2 la |
   re,2 fa |
   mi1 |
-  la1 | % 54
+  la1 | #(if (= particle 1) jump "") % 54
   R1*2 |
 }
 

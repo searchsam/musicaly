@@ -1,7 +1,7 @@
 
 title = "Santo"
 subtitle = "Misa Cristo Rey"
-subsubtitle = "Sactus"
+subsubtitle = "Sanctus & Benedictus"
 autor = "Linda Martínez"
 arranger = "Samuel Gutiérrez"
 other = ""

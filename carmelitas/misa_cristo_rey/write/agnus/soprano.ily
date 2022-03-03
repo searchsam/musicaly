@@ -47,7 +47,7 @@ soprano_music = \relative do' {
   sib2 la |
   la2 fa |
   si1 |
-  do1 | % 54
+  do1 | #(if (= particle 1) jump "") % 54
   R1*2 |
 }
 

@@ -28,7 +28,7 @@ compile_pdf() {
 
 compile_audio() {
     echo "==> Compiling audio book..."
-    names=(agnus_dei aleluya communio credo finalis gloria_in_excelsis_deo graduale introito kyrie_eleison offertorium sanctus)
+    names=(agnus_dei alleluia communio credo finalis gloria_in_excelsis_deo graduale introito kyrie_eleison offertorium sanctus)
     compile_dir=$1/*.ly
     for file in $compile_dir; do
         readarray -d / -t temp <<<"${file}"
@@ -42,7 +42,7 @@ compile_audio() {
                 rm "audio/${name}.mp3"
             fi
 
-            lilypond -dbackend=null $file
+            lilypond -dno-print-pages $file
 
             if [ -f "${name}.midi" ]; then
                 timidity "${name}.midi" -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k "audio/${name}.mp3"

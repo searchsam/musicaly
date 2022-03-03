@@ -1,7 +1,7 @@
 
 title = "Melodia Responsorial"
 subtitle = "Misa Cristo Rey"
-subsubtitle_a = "Graduale - Salmo Responsorial Ciclo A - Solemnidad Cristo Rey del Universo"
+subsubtitle_a = "Graduale - Salmo Responsorial Ciclo A Solemnidad Cristo Rey del Universo"
 autor = "Linda Martínez"
 arranger = "Samuel Gutiérrez"
 other = ""
@@ -37,7 +37,7 @@ global_a = {
   \bar "|." % 60
 }
 
-subsubtitle_b = "Graduale - Salmo Responsorial Ciclo B - Solemnidad Cristo Rey del Universo"
+subsubtitle_b = "Graduale - Salmo Responsorial Ciclo B Solemnidad Cristo Rey del Universo"
 
 global_b = {
   \tempo "Adagio" 4 = 70
@@ -63,7 +63,7 @@ global_b = {
   \bar "|." % 40
 }
 
-subsubtitle_c = "Graduale - Salmo Responsorial Ciclo C - Solemnidad Cristo Rey del Universo"
+subsubtitle_c = "Graduale - Salmo Responsorial Ciclo C Solemnidad Cristo Rey del Universo"
 
 global_c = {
   \tempo "Adagio" 4 = 70

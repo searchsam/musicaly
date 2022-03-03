@@ -2,7 +2,7 @@ alto_music = \relative do' {
   \compressEmptyMeasures
   \dynamicUp
 
-  R2*4 | #(if (= particle 1) jump "") % 4
+  R2*4 | % 4
   R2*15 | #(if (= particle 1) jump "") % 19
   fa4 sol8 fa |
   mi4 re8 do |

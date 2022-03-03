@@ -619,7 +619,7 @@
     \clearpage
 
     \begin{lilypond}%[staffsize=20]
-        \include "../write/aleluya/aleluya.ly"
+        \include "../write/alleluia/alleluia.ly"
     \end{lilypond}
     \clearpage
 

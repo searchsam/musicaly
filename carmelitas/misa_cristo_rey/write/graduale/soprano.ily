@@ -33,7 +33,7 @@ soprano_music_a = \relative do' {
   sol4 fa8 mi re2 |
   fa4 mi8 re do4 re4~ |
   re2 r | #(if (= particle 1) jump "") % 32
-  fa8(^\markup{ \bold "Estrofa III Solo" \italic "Mezzosoprano" } sol) la la4. la16 la la8 |
+  fa8^\markup{ \bold "Estrofa III Solo" \italic "Mezzosoprano" }( sol) la la4. la16 la la8 |
   \tuplet 3/2 {la8 fa sol} la2 r4 |
   la8( sol) fa4 fa4 fa8 fa |
   fa8 mi re4 re2 | #(if (= particle 1) jump "") % 36
@@ -46,8 +46,8 @@ soprano_music_a = \relative do' {
   sol4 fa8 mi re2 |
   fa4 mi8 re do4 re4~ |
   re2 r | #(if (= particle 1) jump "") % 44
-  fa8^\markup{\bold "Estrofa IV Solo" \italic "Mezzosoprano" } sol la4 la8 la16 la la la |
-  la8 \tuplet 3/2 {la8 fa sol} la4 la2 |
+  fa8^\markup{\bold "Estrofa IV Solo" \italic "Mezzosoprano" } sol la4 la8 la16 la la la la8 |
+  \tuplet 3/2 {la8 fa sol} la4 la2 |
   la8( sol) fa4 fa fa8 fa |
   fa8 mi re4 re2 | #(if (= particle 1) jump "") % 48
   do8 re mi mi mi mi mi mi |

@@ -2,8 +2,7 @@ alto_music = \relative do' {
   \compressEmptyMeasures
   \dynamicUp
 
-  R1*5 |
-  R1*3 | #(if (= particle 1) jump "") % 8
+  R1*8 | #(if (= particle 1) jump "") % 8
   re8 re re4 re fa |
   fa8 fa mi4 mi sol |
   sol8 sol fa4 fa fa~ |
@@ -12,23 +11,20 @@ alto_music = \relative do' {
   sol4 sib4 sib8 sib la4 |
   la4 fa2 r4 |
   re4 re mi2
-  fas1 |
-  R1 | #(if (= particle 1) jump "") % 18
-  R1*4 | #(if (= particle 1) jump "") % 22
+  fas1 |#(if (= particle 1) jump "") % 17
+  R1*5 | #(if (= particle 1) jump "") % 22
   \time 2/4 re4 re |
   \time 4/4 mi4 mi fa2 |
   fa fa2 |
   la4 sol fa( mi4) |
-  fas1 |
-  R1 | #(if (= particle 1) jump "") % 28
-  R1*4 | #(if (= particle 1) jump "") % 32
+  fas1 | #(if (= particle 1) jump "") % 27
+  R1*5 | #(if (= particle 1) jump "") % 32
   re8 re re re mi4 mi |
   fa4 fa fa4 fa |
   fa2 la4 sol |
   fa mi4 re4 mi |
-  fas1 |
-  R1 | #(if (= particle 1) jump "") % 38
-  R1*4 | #(if (= particle 1) jump "") % 42
+  fas1 | #(if (= particle 1) jump "") % 37
+  R1*5 | #(if (= particle 1) jump "") % 42
   re8 re re re mi4 mi |
   fa fa8 fa fa4 fa |
   fa fa la4 sol |
@@ -43,7 +39,7 @@ alto_music = \relative do' {
   la4 sol fa mi |
   re4 re mi2
   fas1 | #(if (= particle 1) jump "") % 56
-  R1*2 |
+  R1*2 | #(if (= particle 1) jump "")
   re2( do) |
   re1 |
 }

@@ -1,6 +1,6 @@
 title = "Aclamación al Evangelio"
 subtitle = "Misa Cristo Rey"
-subsubtitle = "Tracto - Aleluya - Solemnidad Cristo Rey del Universo"
+subsubtitle = "Alleluia/Tracto - Aclamación al Evangelio Solemnidad Cristo Rey del Universo"
 autor = "Linda Martínez"
 arranger = "Samuel Gutiérrez"
 other = ""

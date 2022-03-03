@@ -2,7 +2,7 @@ soprano_music = \relative do' {
   \compressEmptyMeasures
   \dynamicUp
 
-  R1*4 | #(if (= particle 1) jump "") % 4
+  R1*4 | % 4
   R1*9 | #(if (= particle 1) jump "") % 13
   la'4 sol8( fa) sib( la) sol fa |
   sol8 fa mi sol la4 la |
