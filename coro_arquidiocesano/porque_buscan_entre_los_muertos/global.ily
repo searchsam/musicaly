@@ -1,18 +1,28 @@
 
-title = "Levanto mis ojos a los montes"
-subtitle = "A nuestro Rey de Reyes"
-subsubtitle = ""
-autor = "Miguel Manzano"
-arranger = "Versión de la cinta magnetrofonica:"
-other = "Francisco Jarquin Vega"
+title = "¿Porqué buscan entre los muertos?"
+subtitle = ""
+subsubtitle = "A nuestro Rey de Reyes"
+autor = "Lic. Luz Marina Zepeda Wilson"
+arranger = "Versión Coral: Miguel Garcia Soza"
+other = "Versión Orquestal: Francisco Jarquin Vega"
 papper = "letter"
 size = 20
 
 global = {
-    \tempo "Andante Religioso" 4 = 87
-    \key si \minor
-    \time 4/4
+    \tempo "Marcha Solemne" 4 = 85
+    \key sol \minor
+    \time 2/4
 
-    s1*66
+    s2*15
+    \bar "||"
+    s2*41
+    \repeat volta 2 { s2*20 }
+    s2*20
+    \bar "||"
+    s2*2
+%    \bar "||"
+    \key la \minor
+    \repeat volta 2 { s2*16 }
+    s2*14
     \bar "|."
 }

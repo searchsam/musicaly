@@ -1,4 +1,4 @@
-% Levanto mis ojos a los montes - Tenor
+% ¿Porqué buscan entre los muertos? - Tenor
 % by serachsam
 
 \language "espanol"
@@ -24,8 +24,7 @@ pulse = 4
 \markup { \fill-line { "" \right-column { \fontsize #2 \other } } }
 \header {
   %dedication = "Dedication (dedicatoria)"
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = ##f
   breakbefore = ##t
 }
 
@@ -44,12 +43,10 @@ pulse = 4
     >> }
     %\metronome
   >>
-  \midi {}
   \layout {}
 }
 
 % --- Paper
 \paper {
   #(set-default-paper-size "letter")
-  page-breaking = #ly:page-turn-breaking
 }
