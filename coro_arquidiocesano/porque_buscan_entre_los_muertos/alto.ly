@@ -1,26 +1,25 @@
-% Levanto mis ojos a los montes - Tenor
+% Alegría, ha nacido el salvador - Contalto
 % by serachsam
 
 \language "espanol"
 \version "2.23.2"
 
 % --- Global parameters
-particle = 1
-jump = \break
-pulse = 4
+%particle = 0
+%jump = \break
+%time = 4
 
 % --- Includes
 \include "global.ily"
-\include "tenor.ily"
-\include "metronome.ily"
+\include "alto.ily"
+% \include "metronome.ily"
 
 % --- Global size
 %#(set-global-staff-size \size)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #3 \subtitle \fontsize #1 \subsubtitle } } }
-\markup { \fill-line { \fontsize #2 "TENOR" \right-column { \fontsize #2 \autor } } }
-\markup { \fill-line { "" \right-column { \fontsize #2 \arranger } } }
+\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #3 \subtitle } } }
+\markup { \fill-line { \fontsize #2 "Contralto" \right-column { \fontsize #2 \arranger } } }
 \markup { \fill-line { "" \right-column { \fontsize #2 \other } } }
 \header {
   %dedication = "Dedication (dedicatoria)"
@@ -36,13 +35,19 @@ pulse = 4
 % --- Sheet
 \score {
   <<
-    \new Staff { <<
+    \new Staff {
       \set Staff.midiInstrument = #"choir aahs"
       %\set Staff.midiMaximumVolume = #1.5
-      \new Voice = "tenor" { << \global \tenor >> }
-      \new Lyrics \lyricsto "tenor" { \tenor-lyrics }
-    >> }
-    %\metronome
+      <<
+        \new Voice = "alto" {
+          <<
+            \global
+            \alto
+          >>
+        }
+        \new Lyrics \lyricsto "alto" { \alto-lyrics }
+      >>
+    }
   >>
   \midi {}
   \layout {}

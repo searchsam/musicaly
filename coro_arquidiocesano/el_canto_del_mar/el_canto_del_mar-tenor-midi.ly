@@ -22,33 +22,7 @@ global = {
   \key re \minor
   \time 4/4
 
-  s1*3
-  \bar "||"
-  s1*7
-  \bar "||"
-  s1
-  \bar "||"
-  s1*5
-  \bar "||"
-  s1*2
-  \bar "||"
-  s1
-  \repeat volta 2 { s1*3 }
-  \alternative { { s1 } { s1 } }
-  \bar "||"
-  s1*14
-  \repeat volta 2 { s1*3 }
-  \alternative { { s1 } { s1 } }
-  \bar "||"
-  s1*14
-  \repeat volta 2 { s1*3 }
-  \alternative { { s1 } { s1 } }
-  \bar "||"
-  s1*14
-  \repeat volta 2 { s1*3 }
-  \alternative { { s1 } { s1 } }
-  \bar "||"
-  s1*1
+  s1*94
   \bar "|."
 }
 
@@ -71,21 +45,30 @@ tenor = \relative do {
   do16 do8 do16 re8 mi mi mi4 mi8 |
   fa4 fa8 mi re re4 re8	|
   re4 do re4. re,8 | %23
-  re'4 do re2 | %24
+  re4 fa8 sol la4. la16 la |
+  do16 do8 do16 re8 mi mi mi4 mi8 |
+  fa4 fa8 mi re re4 re8	|
+  re4 do re2 | %24
   R1*13 | %37
   r2 r4 r8 re,8 | %38
-  re4 fa8 sol la4. la16 la | %39
+  re4 fa8 sol la4. la16 la |
   do16 do8 do16 re8 mi mi mi4 mi8 |
   fa4 fa8 mi re re4 re8	|
-  re4 do re4. re,8 | %42
-  re'4 do re2 | %43
+  re4 do re4. re,8 | %23
+  re4 fa8 sol la4. la16 la |
+  do16 do8 do16 re8 mi mi mi4 mi8 |
+  fa4 fa8 mi re re4 re8	|
+  re4 do re2 | %24
   R1*13          		| %56
   r2 r4 r8 re,			| %57
-  re4 fa8 sol la4. la16 la | %58
+  re4 fa8 sol la4. la16 la |
   do16 do8 do16 re8 mi mi mi4 mi8 |
   fa4 fa8 mi re re4 re8	|
-  re4 do re4. re,8 | %61
-  re'4 do re4. re8 | %62
+  re4 do re4. re,8 | %23
+  re4 fa8 sol la4. la16 la |
+  do16 do8 do16 re8 mi mi mi4 mi8 |
+  fa4 fa8 mi re re4 re8	|
+  re4 do re4. re8 | %24
   re8 re re mi fa4. fa8 | %63
   sol8 fa re do re16( do) la4 la8 |
   sib8 sib sib la sib sib4 la8 |
@@ -103,8 +86,11 @@ tenor = \relative do {
   re4 fa8 sol la4. la16 la |
   do16 do8 do16 re8 mi mi mi4 mi8 |
   fa4 fa8 mi re re4 re8	|
-  re4 do re4. re,8 | %80
-  re'4 do re2~ | %81
+  re4 do re4. re,8 | %23
+  re4 fa8 sol la4. la16 la |
+  do16 do8 do16 re8 mi mi mi4 mi8 |
+  fa4 fa8 mi re re4 re8	|
+  re4 do re2~ | %24
   re2~ re8 r8 r4 | %82
 }
 
@@ -112,9 +98,14 @@ tenor = \relative do {
 letra = \lyricmode {
   Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya.
 
-  Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya.  Can le -- lu -- ya.
-  Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya. Can le -- lu -- ya.
-  Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya. Can le -- lu -- ya.
+  Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya.
+  Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya.
+
+  Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya.
+  Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya.
+  
+  Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya.
+  Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya.
 
   El mar ca -- yo~y cu -- brio las a -- guas los ta -- pa -- ron,
   su -- bli -- me~es su vic -- to -- ria.
@@ -125,7 +116,8 @@ letra = \lyricmode {
   lo lle -- vas y lo plan -- tas
   has -- ta tu mon -- te san -- to tu mo -- ra -- da.
 
-  Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya. Can le -- lu -- ya.
+  Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya.
+  Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya.
 }
 
 \score {
@@ -136,7 +128,7 @@ letra = \lyricmode {
       \new Lyrics \lyricsto "tenor" { \letra }
     >> }
   >>
-  \layout {}
+  \midi {}
 }
 
 \paper {

@@ -1,4 +1,4 @@
-% Levanto mis ojos a los montes - Tenor
+% Himno a la sangre de cristo - Soprano
 % by serachsam
 
 \language "espanol"
@@ -11,7 +11,7 @@ pulse = 4
 
 % --- Includes
 \include "global.ily"
-\include "tenor.ily"
+\include "soprano.ily"
 \include "metronome.ily"
 
 % --- Global size
@@ -19,8 +19,7 @@ pulse = 4
 
 % --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #3 \subtitle \fontsize #1 \subsubtitle } } }
-\markup { \fill-line { \fontsize #2 "TENOR" \right-column { \fontsize #2 \autor } } }
-\markup { \fill-line { "" \right-column { \fontsize #2 \arranger } } }
+\markup { \fill-line { \fontsize #2 "Soprano" \right-column { \fontsize #2 \arranger } } }
 \markup { \fill-line { "" \right-column { \fontsize #2 \other } } }
 \header {
   %dedication = "Dedication (dedicatoria)"
@@ -39,10 +38,10 @@ pulse = 4
     \new Staff { <<
       \set Staff.midiInstrument = #"choir aahs"
       %\set Staff.midiMaximumVolume = #1.5
-      \new Voice = "tenor" { << \global \tenor >> }
-      \new Lyrics \lyricsto "tenor" { \tenor-lyrics }
+      \new Voice = "soprano" { << \global \soprano >> }
+      \new Lyrics \lyricsto "soprano" { \soprano-lyrics }
     >> }
-    %\metronome
+    \metronome
   >>
   \midi {}
   \layout {}

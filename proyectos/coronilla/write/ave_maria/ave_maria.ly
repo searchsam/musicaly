@@ -1,18 +1,16 @@
-% Señor ten piedad - Renaissance way melody
+%  Ave María - A modo de tono gregoriano
 % Music and accompaniment by serachsam
 
 \language "espanol"
 \version "2.23.2"
 
 % --- Global parameters
-particle = 0
-jump = \break
+%particle = 0
+%jump = \break
 
 % --- Includes
 \include "global.ily"
-\include "solo.ily"
-\include "alto.ily"
-\include "soprano.ily"
+\include "voice.ily"
 \include "harmony.ily"
 \include "organ.ily"
 
@@ -29,37 +27,16 @@ jump = \break
   tagline = ##f
   breakbefore = ##t
 }
-
-% --- Music
-
-% --- Harmony
-
 % --- Sheet
 \score {
   <<
-    \new ChoirStaff { <<
-      \new Staff { <<
-        \set Staff.instrumentName = #"Sacerdote"
-        \set Staff.midiInstrument = #"choir aahs"
-        \new Voice = "solo" { <<\global \solo_music>> }
-        \new Lyrics \lyricsto "solo" {\solo_lyrics}
-      >> }
-      \new Staff { <<
-        \set Staff.instrumentName = #"Soprano"
-        \set Staff.midiInstrument = #"choir aahs"
-        \new Voice = "soprano" { <<\global \soprano_music>> }
-        \new Lyrics \lyricsto "soprano" {\soprano_lyrics}
-      >> }
-      \new Staff { <<
-        \set Staff.instrumentName = #"Contralto"
-        \set Staff.midiInstrument = #"choir aahs"
-        \new Voice = "alto" {<<\global \alto_music>>}
-        \new Lyrics \lyricsto "alto" {\alto_lyrics}
-      >> }
+    \new Staff { <<
+      \set Staff.midiInstrument = #"choir aahs"
+      \new Voice = "voice" {<<\global \voice_music>>}
+      \new Lyrics \lyricsto "voice" {\voice_lyrics}
     >> }
     \harmonies
     \new PianoStaff { <<
-      \set PianoStaff.instrumentName = #"Organo"
       \new Staff = "sopranoStaff" { <<
         \set Staff.midiInstrument = #"church organ"
         \partCombine
@@ -75,20 +52,20 @@ jump = \break
       >> }
     >> }
   >>
-  \midi { }
   \layout {
+    indent = #0
+    ragged-right = ##f
     \context {
-      \Staff \RemoveEmptyStaves
+      \Staff
+      \remove "Time_signature_engraver"
+      \remove "Bar_engraver"
+      \hide Stem
     }
   }
-}
-
-\markup {
-  \bold "*" "Si el" \italic "Sacerdote" "no realiza el" \bold "Solo" "lo realizaria una" \italic "Mezzosoprano" "una octava más alta."
+  \midi {}
 }
 
 % --- Paper
 \paper{
   #(set-default-paper-size "letter")
-  indent=3.5\cm
 }

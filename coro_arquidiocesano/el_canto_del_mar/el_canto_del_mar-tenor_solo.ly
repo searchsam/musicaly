@@ -1,4 +1,4 @@
-%  El canto del mar - Tenor
+%  El canto del mar - Tenor Solo
 %  by serach.sam@
 
 \language "espanol"
@@ -7,7 +7,7 @@
 %#(set-global-staff-size 21)
 
 \markup { \fill-line { \center-column { \fontsize #5 "El canto del mar" \fontsize #3 "Exodo 15" \fontsize #2 "Para la Gloria del Señor" } } }
-\markup { \fill-line { \fontsize #2 "TENOR" \fontsize #2 "Mons. Marco Frisina"  } }
+\markup { \fill-line { \fontsize #2 "TENOR SOLO" \fontsize #2 "Mons. Marco Frisina"  } }
 \markup { \fill-line { "" \right-column { \fontsize #2 "Versión de la Banda Sonora: Francisco Jarquín Vega" } } }
 \markup { \fill-line { "" \right-column { \fontsize #2 "Traducción: Lic. Luz Marina Zepeda Wilson" } } }
 \header {
@@ -72,8 +72,20 @@ tenor = \relative do {
   fa4 fa8 mi re re4 re8	|
   re4 do re4. re,8 | %23
   re'4 do re2 | %24
-  R1*13 | %37
-  r2 r4 r8 re,8 | %38
+  re4\f re8 re do4. la16 la |
+  do8( sib) la sol fa16( sol la4) la8 |
+  re,4 re8 re sol sol4 la8 |
+  fa8( mi) re( do) re2 |
+  re'8 re re re do4. la8 |
+  do8 sib la sol fa16( sol) la4 la8 |
+  re,4 re8 re sol sol sol la |
+  fa8( mi re do) re4. re'8 |
+  re8 re re re do( si la) sol |
+  la8( si) do si la la4 re8 |
+  re4 re8 re do si do re |
+  do16( re mi4 re16 mi fa sol fa mi re do re8 |
+  do16 si la4 sol16 la sib do sib la sol fa) sol8 |
+  re2.~ re8 re8 | %38
   re4 fa8 sol la4. la16 la | %39
   do16 do8 do16 re8 mi mi mi4 mi8 |
   fa4 fa8 mi re re4 re8	|
@@ -113,7 +125,17 @@ letra = \lyricmode {
   Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya.
 
   Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya.  Can le -- lu -- ya.
+  
+  \markup{\fontsize #2 \bold "1." "Quie"} -- ro can -- tar en ho -- nor del Se -- ñor por -- que ha triun -- fa -- do a -- le -- lu -- ya.
+  Ha he -- cha -- do~al mar ca ba cho~y ca -- ba -- lle -- ro, mi fuer -- za~y mi can -- to el Se -- ñor es.
+  El es mi sal -- va -- dor, el Dios de mis pa -- dres a el yo le can -- to y lo~ex -- al -- ta -- re.
+  
   Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya. Can le -- lu -- ya.
+  
+  %Dios es un gue -- rre -- ro su nom -- bre~es el Se -- ñor. Hu -- dio en el mar al e -- jer -- ci -- to,
+  %los ca -- ros de~E -- gip -- to su -- mer -- ge~en el mar ro -- jo; A -- lla~en lo pro -- fun -- do los se -- pul -- to.
+  %La dies -- tra de Dios se~e -- le -- va has -- ta~el cie -- lo, la dies -- tra de Dios es te -- rri -- ble.
+  
   Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya. Can le -- lu -- ya.
 
   El mar ca -- yo~y cu -- brio las a -- guas los ta -- pa -- ron,
