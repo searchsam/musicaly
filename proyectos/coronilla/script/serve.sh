@@ -42,10 +42,10 @@ compile_audio() {
                 rm "audio/${name}.mp3"
             fi
 
-            lilypond -dbackend=null $file
+            lilypond -dno-print-pages $file
 
             if [ -f "${name}.midi" ]; then
-                timidity "${name}.midi" -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k "audio/${name}.mp3"
+                timidity "${name}.midi" -Ow -o - | lame - -b 64 "audio/${name}.mp3"
                 rm "${name}.midi"
             fi
         fi
@@ -55,7 +55,6 @@ compile_audio() {
 compile_dir=book/*.lytex
 files=($compile_dir)
 if [ ${#files[@]} -gt 0 ]; then
-    echo "Hola"
     for file in $compile_dir; do
         readarray -d / -t strarr <<<"$file"
         file_name="${strarr[-1]}"

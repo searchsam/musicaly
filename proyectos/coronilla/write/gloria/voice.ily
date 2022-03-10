@@ -8,19 +8,21 @@ voice_music = \relative do' {
   mi1 fas2 sol2 \breathe \break
   sol1 \breathe
   re1 \breathe
-  mi4 mi mi fas fas fas sol2 sol \breathe \break
-  fas2.( sol4) sol1
+  mi1 fas4 fas sol2 sol \breathe \break
+  fas1 sol1
 }
 
 voice_lyrics = \lyricmode {
     \once \override LyricText.self-alignment-X = #-1
-    "Por la señal de la Santa Cruz,"
+    "Gloria al Padre"
     \once \override LyricText.self-alignment-X = #-1
-    "de nuestros enemigos"
+    "y al Hijo"
     \once \override LyricText.self-alignment-X = #-1
-    "libranos Señor, Dios" nues -- tro.
+    "y al Espíritu" San -- to.
     \once \override LyricText.self-alignment-X = #-1
-    "En el nombre del Padre,"
+    "Como era en el principio,"
     \once \override LyricText.self-alignment-X = #-1
-    "y del Hijo," y del Es -- pí -- ri -- tu San -- to. A -- mén.
+    "ahora y siempre," 
+    \once \override LyricText.self-alignment-X = #-1
+    "por los siglos" de los si -- glos. A -- mén.
 }

@@ -4,22 +4,27 @@ voice_music = \relative do' {
   \clef "G_8"
 
   sol1 la4 fas sol2 \breathe \break
-  fas1 sol2 sol \breathe \break
-  sol1 mi4 mi2 re mi \breathe \break
-  sol2 si1 sol4 sol2 \breathe \break
+  fas1 sol4 sol2 \breathe \break
+  sol1 mi2 mi4 re2 mi \breathe \break
+  sol2 si1 sol2 sol \breathe \break
   la1 fas4 mi re mi2 sol \breathe \break
+  mi1 fas2 sol2 \breathe \break
   fas2.( sol4) sol1
 }
 
 voice_lyrics = \lyricmode {
     \once \override LyricText.self-alignment-X = #-1
-    "Te pedimos, Señor, que nosotros," tus sier -- vos,
+    "Te rogamos nos concedas, Señor" Dios nues -- tro,
     \once \override LyricText.self-alignment-X = #-1
-    "gocemos siempre de salud de alma y" cuer -- po;
+    "gozar de continua salud de alma y" cuer -- po,
     \once \override LyricText.self-alignment-X = #-1
-    "y por la intercesión de Santa Ma" -- rí -- a Vir -- gen, lí --
+    "y por la gloriosa intercesión de la bienaventurada siempre Vir" -- gen Ma -- rí -- a,
     \once \override LyricText.self-alignment-X = #-1
-    "branos de las tristezas de este" mun -- do
+    "vernos"
     \once \override LyricText.self-alignment-X = #-1
-    "y concédenos las ale" -- grí -- as del cie -- lo. A -- mén.
+    "libres de las tristezas de la vida pre" -- sen -- te
+    \once \override LyricText.self-alignment-X = #-1
+    "y disfrutar de las ale" -- grí -- as e -- ter -- nas. 
+    \once \override LyricText.self-alignment-X = #-1
+    "Por Cristo nuestro" Se -- ñor. A -- mén.
 }

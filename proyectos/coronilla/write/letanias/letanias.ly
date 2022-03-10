@@ -66,18 +66,18 @@
   \midi {}
 }
 
-\markup { 
+\markup {
   \fontsize #2
   \fill-line {
-    \left-column { 
+    \left-column {
       \line { Cristo \bold "ten" piedad. }
       \line { Señor \bold "ten" piedad. }
       \line { Cristo \bold "ó"yenos. }
       \line { Cristo, es \bold "cu"chanos. }
       \null
     }
-    \left-column { 
-      \line { Cristo \bold "ten" piedad. } 
+    \left-column {
+      \line { Cristo \bold "ten" piedad. }
       \line { Señor \bold "ten" piedad. }
       \line { Cristo, \bold "ó"yenos. }
       \line { Cristo, es \bold "cu"chanos. }
@@ -124,16 +124,16 @@
   \midi {}
 }
 
-\markup { 
+\markup {
   \fontsize #2
   \fill-line {
-    \left-column { 
+    \left-column {
       \line { Dios Hijo \bold "Re"dentor del mundo. }
       \line { Dios Es \bold "pí"ritu Santo. }
       \line { Santísima Trinidad, \bold "un" solo Dios. }
       \null
     }
-    \left-column { 
+    \left-column {
       \line { Ten pie \bold "dad" de nosotros. }
       \line { Ten pie \bold "dad" de nosotros. }
       \line { Ten pie \bold "dad" de nosotros. }
@@ -180,60 +180,38 @@
   \midi {}
 }
 
-\markup { 
+\markup {
   \fontsize #2
   \fill-line {
-    \left-column { 
+    \left-column {
       % Santa
       \line { Santa Madre de \bold "Dios". }
       \line { Santa Virgen de las \bold "vir"genes. }
       % Madre
       \line { Madre de \bold "Cris"to. }
       \line { Madre de la I \bold "gle"sia. }
-      \line { Madre de la Divina \bold "Gra"cia. }
-      \line { Madre Pu \bold "rí"sima. }
-      \line { Madre Cas \bold"tí" sima. }
-      \line { Madre \bold "Vir"gen. }
-      \line { Madre Inmacu\bold"la"da. }
-      \line { Madre A\bold"ma"ble. }
-      \line { Madre Admi\bold"ra"ble. }
-      \line { Madre del Buen Con\bold"se"jo. }
+      \line { Madre de miseri\bold "cor"dia. }
+      \line { Madre de la divina \bold "gra"cia. }
+      \line { Madre de la espe\bold "ran"za. }
+      \line { Madre pu \bold "rí"sima. }
+      \line { Madre cas \bold"tí" sima. }
+      \line { Madre siempre \bold"vir"gen. }
+      \line { Madre inmacu \bold"la"da. }
+      \line { Madre a\bold"ma"ble. }
+      \line { Madre admi\bold"ra"ble. }
+      \line { Madre del buen con\bold"se"jo. }
       \line { Madre del Crea\bold"dor". }
       \line { Madre del Salva\bold"dor". }
       % Virgen
-      \line { Virgen Pruden\bold"tí"sima. }
-      \line { Virgen Vene\bold"ra"ble. }
-      \line { Virgen Lau\bold"da"ble. }
-      \line { Virgen Pode\bold"ro"sa. }
-      \line { Virgen Cle\bold"men"te. }
-      \line { Virgen \bold"Fiel". }
-      % Varios
-      \line { Espejo de Jus\bold"ti"cia. }
-      \line { Trono de Sabidu\bold"rí"a. }
-      \line { Causa de Nuestra Ale\bold"grí"a. }
-      \line { Vaso Espiri\bold"tual". }
-      \line { Vaso Insigne de Devo\bold"ción". }
-      \line { Rosa \bold"Mís"tica. }
-      \line { Torre de Da\bold"vid". }
-      \line { Torre de Mar\bold"fil". }
-      \line { Casa de \bold"O"ro. }
-      \line { Arca de la Nueva A\bold"lian"za. }
-      \line { Puerta del \bold"Cie"lo. }
-      \line { Estrella de la Ma\bold"ña"na. }
-      \line { Salud de los En\bold"fer"mos. }
-      \line { Refugio de los Peca\bold"do"res. }
-      \line { Consoladora de los Afli\bold"gi"dos. }
-      \line { Auxilio de los Cris\bold"tia"nos. }
-      % Reina
-      \line { Reina de los \bold"Á"ngeles. }
-      \line { Reina de los Pro\bold"fe"tas. }
-      \line { Reina de los \bold"Már"tires. }
-      \line { Reina de los Pa\bold"triar"cas. }
-      \line { Reina de los A\bold"pós"toles. }
-      \line { Reina de los Confe\bold"so"res. }
+      \line { Virgen pruden\bold"tí"sima. }
+      \line { Virgen digna de venera\bold"ción". }
+      \line { Virgen digna de ala\bold"ban"za. }
+      \line { Virgen pode\bold"ro"sa. }
+      \line { Virgen cle\bold"men"te. }
+      \line { Virgen \bold"fiel". }
       \null
     }
-    \left-column { 
+    \left-column {
       % Santa
       \line { Ruega \bold "por" nosotros. }
       \line { Ruega \bold "por" nosotros. }
@@ -250,31 +228,10 @@
       \line { Ruega \bold "por" nosotros. }
       \line { Ruega \bold "por" nosotros. }
       \line { Ruega \bold "por" nosotros. }
+      \line { Ruega \bold "por" nosotros. }
+      \line { Ruega \bold "por" nosotros. }
       % Virgen
       \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      % Varios
-      \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      \line { Ruega \bold "por" nosotros. }
-      % Reina
       \line { Ruega \bold "por" nosotros. }
       \line { Ruega \bold "por" nosotros. }
       \line { Ruega \bold "por" nosotros. }
@@ -286,20 +243,74 @@
   }
 }
 
-\markup { 
+\markup {
   \fontsize #2
   \fill-line {
-    \left-column { 
+    \left-column {
+        % Varios
+        \line { Espejo de jus\bold"ti"cia. }
+        \line { Trono de la sabidu\bold"rí"a. }
+        \line { Causa de nuestra ale\bold"grí"a. }
+        \line { Vaso espiri\bold"tual". }
+        \line { Vaso digno de ho\bold"nor". }
+        \line { Vaso insigne de devo\bold"ción". }
+        \line { Rosa \bold"mís"tica. }
+        \line { Torre de Da\bold"vid". }
+        \line { Torre de mar\bold"fil". }
+        \line { Casa de \bold"o"ro. }
+        \line { Arca de la nueva a\bold"lian"za. }
+        \line { Puerta del \bold"cie"lo. }
+        \line { Estrella de la ma\bold"ña"na. }
+        \line { Salud de los en\bold"fer"mos. }
+      \line { Refugio de los peca\bold"do"res. }
+      \line { Consuelo de los mi\bold"gran"tes. }
+      \line { Consoladora de los afli\bold"gi"dos. }
+      \line { Auxilio de los cris\bold"tia"nos. }
+      % Reina
+      \line { Reina de los \bold"Á"ngeles. }
+      \line { Reina de los Pa\bold"triar"cas. }
+      \line { Reina de los Pro\bold"fe"tas. }
+      \line { Reina de los A\bold"pós"toles. }
+      \line { Reina de los \bold"Már"tires. }
+      \line { Reina de los Confe\bold"so"res. }
       \line { Reina de las \bold"Vír"genes. }
       \line { Reina de todos los \bold"San"tos. }
       \line { Reina de la Fa\bold"mi"lia. }
-      \line { Reina concebida sin Pecado Origi\bold"nal". }
+      \line { Reina concebida sin pecado origi\bold"nal". }
       \line { Reina Asunta al \bold"Cie"lo. }
       \line { Reina del Santísimo Ro\bold"sa"rio. }
+      \line { Reina de la fa\bold"mi"lia. }
       \line { Reina de la \bold"Paz". }
       \null
     }
-    \left-column { 
+    \left-column {
+        % Varios
+        \line { Ruega \bold "por" nosotros. }
+        \line { Ruega \bold "por" nosotros. }
+        \line { Ruega \bold "por" nosotros. }
+        \line { Ruega \bold "por" nosotros. }
+        \line { Ruega \bold "por" nosotros. }
+        \line { Ruega \bold "por" nosotros. }
+        \line { Ruega \bold "por" nosotros. }
+        \line { Ruega \bold "por" nosotros. }
+        \line { Ruega \bold "por" nosotros. }
+        \line { Ruega \bold "por" nosotros. }
+        \line { Ruega \bold "por" nosotros. }
+        \line { Ruega \bold "por" nosotros. }
+        \line { Ruega \bold "por" nosotros. }
+        \line { Ruega \bold "por" nosotros. }
+        \line { Ruega \bold "por" nosotros. }
+        \line { Ruega \bold "por" nosotros. }
+        \line { Ruega \bold "por" nosotros. }
+        % Reina
+        \line { Ruega \bold "por" nosotros. }
+        \line { Ruega \bold "por" nosotros. }
+      \line { Ruega \bold "por" nosotros. }
+      \line { Ruega \bold "por" nosotros. }
+      \line { Ruega \bold "por" nosotros. }
+      \line { Ruega \bold "por" nosotros. }
+      \line { Ruega \bold "por" nosotros. }
+      \line { Ruega \bold "por" nosotros. }
       \line { Ruega \bold "por" nosotros. }
       \line { Ruega \bold "por" nosotros. }
       \line { Ruega \bold "por" nosotros. }
@@ -350,15 +361,15 @@
   \midi {}
 }
 
-\markup { 
+\markup {
   \fontsize #2
   \fill-line {
-    \left-column { 
+    \left-column {
       \line { Cordero de Dios que quitas el pe\bold"ca"do del mundo. }
       \line { Cordero de Dios que quitas el pe\bold"ca"do del mundo. }
       \null
     }
-    \left-column { 
+    \left-column {
       \line { Per\bold"dó"nanos Señor. }
       \line { Ten \bold"pie"dad de nosotros. }
       \null
@@ -367,7 +378,7 @@
 }
 
 % --- Sheet
-\score {
+%{\score {
   <<
     \new Staff { <<
       \set Staff.midiInstrument = #"choir aahs"
@@ -402,7 +413,7 @@
     }
   }
   \midi {}
-}
+}%}
 
 % --- Paper
 \paper{

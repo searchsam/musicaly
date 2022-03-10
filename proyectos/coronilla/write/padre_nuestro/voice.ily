@@ -13,9 +13,9 @@ voice_music = \relative do' {
 
 voice_lyrics = \lyricmode {
     \once \override LyricText.self-alignment-X = #-1
-    "Padre nuestro, que estás en el cielo, santificado sea tu Nombre;"
+    "Padre nuestro, que estás en el cielo, santificado sea tu nombre;"
     \once \override LyricText.self-alignment-X = #-1
-    "venga a nosotros tu reino; hágase tu voluntad en la tierra como en el"  cie -- lo.
+    "venga a nosotros tu reino; hágase tu voluntad, en la tierra como en el"  cie -- lo.
     \once \override LyricText.self-alignment-X = #-1
     "Danos hoy nuestro pan de cada día; perdona nuestras ofensas,"
     \once \override LyricText.self-alignment-X = #-1

@@ -30,11 +30,11 @@ voice_music = \relative do' {
 
 voice_lyrics = \lyricmode {
     \once \override LyricText.self-alignment-X = #-1
-    "Creo en Dios, Padre Todopoderoso,"
+    "Creo en Dios, Padre todopoderoso,"
     \once \override LyricText.self-alignment-X = #-1
-    "Creador del cielo y de la" tie -- rra.
+    "creador del cielo y de la" tie -- rra.
     \once \override LyricText.self-alignment-X = #-1
-    "Creo en Jesucristo, su único Hi" -- jo, Nues -- tro Se -- ñor,
+    "Creo en Jesucristo, su único Hi" -- jo, nues -- tro Se -- ñor,
     \once \override LyricText.self-alignment-X = #-1
     "que fue concebido"
     \once \override LyricText.self-alignment-X = #-1
@@ -46,7 +46,7 @@ voice_lyrics = \lyricmode {
     \once \override LyricText.self-alignment-X = #-1
     "padeció bajo el po" --
     \once \override LyricText.self-alignment-X = #-1
-    "der de Poncio Pi" -- la -- to
+    "der de Poncio Pi" -- la -- to,
     \once \override LyricText.self-alignment-X = #-1
     "fue crucificado, muerto y sepultado,"
     \once \override LyricText.self-alignment-X = #-1
@@ -68,7 +68,7 @@ voice_lyrics = \lyricmode {
     \once \override LyricText.self-alignment-X = #-1
     "Creo en el Espíritu Santo,"
     \once \override LyricText.self-alignment-X = #-1
-    "la santa Iglesia cató" -- li -- ca
+    "la santa Iglesia cató" -- li -- ca,
     \once \override LyricText.self-alignment-X = #-1
     "la comu" -- nión de los san -- tos,
     \once \override LyricText.self-alignment-X = #-1

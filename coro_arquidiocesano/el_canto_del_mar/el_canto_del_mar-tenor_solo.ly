@@ -59,14 +59,14 @@ tenor = \relative do {
   \clef	"G_8"
 
   R1*10 | %10
-  r2 r4 r8 re8 | %11
+  r2 r4 r8 re8\mp | %11
   re4 fa8 sol la4. la16 la |
   do16 do8 do16 si8 sol la la4 la8 |
   re,4 re8 re sol sol4 la8 |
   fa8( mi) re( do) re2~ |
   re1 \fermata | %16
   R1*2 | %18
-  r2 r4 r8 re | %19
+  r2 r4 r8 re\mf | %19
   re4 fa8 sol la4. la16 la |
   do16 do8 do16 re8 mi mi mi4 mi8 |
   fa4 fa8 mi re re4 re8	|
@@ -85,19 +85,19 @@ tenor = \relative do {
   re4 re8 re do si do re |
   do16( re mi4 re16 mi fa sol fa mi re do re8 |
   do16 si la4 sol16 la sib do sib la sol fa) sol8 |
-  re2.~ re8 re8 | %38
+  re2.~ re8 re8\mf | %38
   re4 fa8 sol la4. la16 la | %39
   do16 do8 do16 re8 mi mi mi4 mi8 |
   fa4 fa8 mi re re4 re8	|
   re4 do re4. re,8 | %42
   re'4 do re2 | %43
-  R1*13          		| %56
-  r2 r4 r8 re,			| %57
+  R1*13 | %56
+  r2 r4 r8 re,\mf | %57
   re4 fa8 sol la4. la16 la | %58
   do16 do8 do16 re8 mi mi mi4 mi8 |
   fa4 fa8 mi re re4 re8	|
   re4 do re4. re,8 | %61
-  re'4 do re4. re8 | %62
+  re'4 do re4. re8\f | %62
   re8 re re mi fa4. fa8 | %63
   sol8 fa re do re16( do) la4 la8 |
   sib8 sib sib la sib sib4 la8 |
@@ -111,7 +111,7 @@ tenor = \relative do {
   fa8 fa fa fa fa do do si |
   la16( si do4 mi8 re2 |
   fa4. do16 re mib2) |
-  re2.~ re8 re, | %76
+  re2.~ re8 re,\mf | %76
   re4 fa8 sol la4. la16 la |
   do16 do8 do16 re8 mi mi mi4 mi8 |
   fa4 fa8 mi re re4 re8	|
@@ -138,7 +138,7 @@ letra = \lyricmode {
   
   Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya. Can le -- lu -- ya.
 
-  El mar ca -- yo~y cu -- brio las a -- guas los ta -- pa -- ron,
+  \markup{\fontsize #2 \bold "3." "El"} mar ca -- yo~y cu -- brio las a -- guas los ta -- pa -- ron,
   su -- bli -- me~es su vic -- to -- ria.
   Quien co -- mo tu Se -- ñor,
   con -- du -- ces con fuer -- za al pue -- blo re -- di -- mi -- do,

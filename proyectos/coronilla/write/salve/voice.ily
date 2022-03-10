@@ -25,17 +25,17 @@ voice_lyrics = \lyricmode {
     \once \override LyricText.self-alignment-X = #-1
     "Dios te salve, Reina y Madre de misericordia,"
     \once \override LyricText.self-alignment-X = #-1
-    "vida, dulrura" y~es -- pe -- ran -- za nues -- tra.
+    "vida, dulrura" y~es -- pe -- ran -- za nues -- tra;
     \once \override LyricText.self-alignment-X = #-1
     "Dios te salve."
     \once \override LyricText.self-alignment-X = #-1
-    "A Ti clamamos los desterrados hi" -- jos de E -- va,
+    "A Ti clamamos los desterrados hi" -- jos de E -- va;
     \once \override LyricText.self-alignment-X = #-1
-    "a Ti suspiramos," 
+    "a Ti suspiramos"
     \once \override LyricText.self-alignment-X = #-1
-    "gimiendo y" llo -- ran -- do
+    "gimiendo y" llo -- ran -- do,
     \once \override LyricText.self-alignment-X = #-1
-    "en este" 
+    "en este"
     \once \override LyricText.self-alignment-X = #-1
     "valle de" lá -- gri -- mas.
     \once \override LyricText.self-alignment-X = #-1
@@ -43,7 +43,7 @@ voice_lyrics = \lyricmode {
     \once \override LyricText.self-alignment-X = #-1
     "vuelve a no" -- so -- tros
     \once \override LyricText.self-alignment-X = #-1
-    "tus ojos mi" -- se -- ri -- cor -- dio -- sos,
+    "esos tus ojos mi" -- se -- ri -- cor -- dio -- sos;
     \once \override LyricText.self-alignment-X = #-1
     "y después de este" des -- tie -- rro,
     \once \override LyricText.self-alignment-X = #-1
@@ -53,12 +53,12 @@ voice_lyrics = \lyricmode {
     \once \override LyricText.self-alignment-X = #-1
     "dito de tu" vien -- tre.
     \once \override LyricText.self-alignment-X = #-1
-    "Oh, clemente, oh piadosa, oh dulce Virgen María."
+    "¡Oh, clemente, oh piadosa, oh dulce siempre Virgen María!"
     \once \override LyricText.self-alignment-X = #-1
     "Ruega por no" -- so -- tros, San -- ta Ma -- dre de Dios,
     \once \override LyricText.self-alignment-X = #-1
     "para que seamos dignos" de al -- can -- zar
-    las pro -- me -- sas 
+    las pro -- me -- sas
     \once \override LyricText.self-alignment-X = #-1
     "de Nuestro Se"
     \once \override LyricText.self-alignment-X = #-1

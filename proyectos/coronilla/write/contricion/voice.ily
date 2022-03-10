@@ -20,7 +20,7 @@ voice_lyrics = \lyricmode {
     \once \override LyricText.self-alignment-X = #-1
     "me pesa de todo corazón haberos ofen" -- di -- do;
     \once \override LyricText.self-alignment-X = #-1
-    "también me pesa porque podéis castigarme con las penas del" in -- fier -- no.
+    "también me pesa porque podéis castigarme con la pena del" in -- fier -- no.
     \once \override LyricText.self-alignment-X = #-1
     "Ayudado de vuestra divina gracia propongo firmemente nunca más pecar,"
     \once \override LyricText.self-alignment-X = #-1

@@ -13,9 +13,9 @@ voice_music = \relative do' {
 
 voice_lyrics = \lyricmode {
     \once \override LyricText.self-alignment-X = #-1
-    "Dios te salve María llena eres de gracia el Señor es contigo;"
+    "Dios te salve María, llena eres de gracia; el Señor es contigo."
     \once \override LyricText.self-alignment-X = #-1
-    "bendita tú eres entre todas las mujeres,"
+    "Bendita tú eres entre todas las mujeres,"
     \once \override LyricText.self-alignment-X = #-1
     "y bendito es el fruto de tu vientre,"  Je -- sús.
     \once \override LyricText.self-alignment-X = #-1

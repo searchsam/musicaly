@@ -6,7 +6,7 @@ harmonies = \new ChordNames {
     \italianChords
 
     sol1 re1 do1 re2:7 sol2
-    sol1 re1 do2. re2.:7 sol1
-    re2.:7 sol4
+    sol1 re1 do1 re2:7 sol1
+    re1:7 sol1
   }
 }
