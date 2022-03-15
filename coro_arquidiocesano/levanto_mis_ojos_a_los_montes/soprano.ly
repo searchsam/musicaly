@@ -1,4 +1,4 @@
-% Himno a la sangre de cristo - Soprano
+% Levanto mis ojos a los montes - Soprano
 % by serachsam
 
 \language "espanol"
@@ -18,13 +18,12 @@ pulse = 4
 %#(set-global-staff-size \size)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #3 \subtitle \fontsize #1 \subsubtitle } } }
-\markup { \fill-line { \fontsize #2 "Soprano" \right-column { \fontsize #2 \arranger } } }
-\markup { \fill-line { "" \right-column { \fontsize #2 \other } } }
+\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #2 \smallCaps \subtitle \fontsize #1 \subsubtitle } } }
+\markup { \fill-line { "SOPRANO" \right-column { \fontsize #2 \autor } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 \arranger } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 \other } } }
 \header {
-  %dedication = "Dedication (dedicatoria)"
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = ##f
   breakbefore = ##t
 }
 
@@ -41,7 +40,7 @@ pulse = 4
       \new Voice = "soprano" { << \global \soprano >> }
       \new Lyrics \lyricsto "soprano" { \soprano-lyrics }
     >> }
-    \metronome
+    %\metronome
   >>
   \midi {}
   \layout {}

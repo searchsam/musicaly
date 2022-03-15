@@ -4,12 +4,14 @@
 \language "espanol"
 \version "2.23.2"
 
-%#(set-global-staff-size 21)
+% --- Global size
+#(set-global-staff-size 19)
 
-\markup { \fill-line { \center-column { \fontsize #5 "El canto del Mar" \fontsize #3 "Exodo 15" \fontsize #2 "Para la Gloria del Señor" } } }
-\markup { \fill-line { \fontsize #2 "SOPRANO SOLO" \fontsize #2 "Mons. Marco Frisina"  } }
-\markup { \fill-line { "" \right-column { \fontsize #2 "Versión de la Banda Sonora: Francisco Jarquín Vega" } } }
-\markup { \fill-line { "" \right-column { \fontsize #2 "Traducción: Lic. Luz Marina Zepeda Wilson" } } }
+% --- Header
+\markup { \fill-line { \center-column { \fontsize #5 "El canto del mar" \fontsize #2 \smallCaps "Exodo 15" \fontsize #1 "Para la Gloria del Señor" } } }
+\markup { \fill-line { "SOPRANO SOLO" \right-column { \fontsize #2 "Mons. Marco Frisina" } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Versión de la Banda Sonora: Francisco Jarquín Vega" } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Traducción: Lic. Luz Marina Zepeda Wilson" } } }
 \header {
   tagline = ##f
   breakbefore = ##t

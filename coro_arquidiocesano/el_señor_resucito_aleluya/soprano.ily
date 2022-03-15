@@ -1,182 +1,73 @@
+voice = "soprano"
+
 soprano = \relative do' {
   \compressEmptyMeasures
   \dynamicUp
-  R1 | %1
-  r2 r4 r8 re8\mp | %2
-  re4 do8( re) fa( sol) sol4 |
-  fa8 sol fa do mib4 re |
-  do4 re8 mib sib4 re |
-  re8 do re mib re4 re |
-  re4 do8 re fa( sol) sol4 |
-  fa8 sol la sib la4 sol |
-  do4 sib8 la sib( la) sol( fa) |
-  sol2 sol | %10
-  R1*7 | %17
-  r2 r4 r8 re8\mp | %18
-  re4 do8( re) fa( sol) sol4 |
-  fa8 sol fa do mib4 re |
-  do4 re8 mib sib4 re |
-  re8 do re mib re4 re |
-  re4 do8 re fa( sol) sol4 |
-  fa8 sol la sib la4 sol |
-  do4 sib8 la sib( la) sol( fa) |
-  sol2 sol | %26
-  R1*7 | %33
-  r2 r4 r8 re8\mp | %34
-  re4 do8( re) fa( sol) sol4 |
-  fa8 sol fa do mib4 re |
-  do4 re8 mib sib4 re |
-  re8 do re mib re4 re |
-  re4 do8 re fa( sol) sol4 |
-  fa8 sol la sib la4 sol |
-  do4 sib8 la sib( la) sol( fa) |
-  sol2 sol | %42
-  fa1\p( | %43
-  re2 mib |
-  re2 sol~ |
-  sol2 fa) | %46
-  sib4\mf do8 re re4 la | %47
-  la4( sol) fa2 |
-  mib4 fa8 sol sol4 re8 re |
-  sol8 fa sol la la4 la8 re,\mp | %50
-  re4 do8( re) fa( sol) sol4 | %51
-  fa8 sol fa do mib4 re |
-  do4 re8 mib sib4 re |
-  re8 do re mib re4 re |
-  re4 do8 re fa( sol) sol4 |
-  fa8 sol la sib la4 sol |
-  do4 sib8 la sib( la) sol( fa) |
-  sol2 sol | %58
-  fa1\p( | %59
-  re2 mib |
-  re2 sol~ |
-  sol2 fa) | %62
-  sib4\mf do8( re) re4 la8 la | %63
-  la4( sol) fa2 |
-  mib4 fa8 sol sol8 re re re |
-  sol8( fa) sol( la) la4 la8 re,\mp | %66
-  re4 do8( re) fa( sol) sol4 | %67
-  fa8 sol fa do mib4 re |
-  do4 re8 mib sib4 re |
-  re8 do re mib re4 re |
-  re4 do8 re fa( sol) sol4 |
-  fa8 sol la sib la4 sol |
-  do4 sib8 la sib( la) sol( fa) |
-  sol2 sol | %74
-  R1*7 | %81
-  r2 r4 r8 re8\mp | %82
-  re4 do8( re) fa( sol) sol4 |
-  fa8 sol fa do mib4 re |
-  do4 re8 mib sib4 re |
-  re8 do re mib re4 re |
-  re4 do8 re fa( sol) sol4 |
-  fa8 sol la sib la4 sol |
-  do4 sib8 la sib( la) sol( fa) |
-  sol2 sol | %90
-  R1*2 | %92
-  sol4\mf la8 sib sib sol la sib | %93
-  do8 re do sib do4 do |
-  r1 |
-  sib4 do8 re re4 sib8 sib |
-  mib2 re8 sib do re |
-  re4( do re4.) re,8\mp | %98
-  re4 do8( re) fa( sol) sol4 | %99
-  fa8 sol fa do mib4 re |
-  do4 re8 mib sib4 re |
-  re8 do re mib re4 re |
-  re4 do8 re fa( sol) sol4 |
-  fa8 sol la sib la4 sol |
-  do4 sib8 la sib( la) sol( fa) |
-  sol2 sol | %106
-  R1*7 | %113
-  r2 r4 r8 re8\mp | %114
-  re4 do8( re) fa( sol) sol4 |
-  fa8 sol fa do mib4 re |
-  do4 re8 mib sib4 re |
-  re8 do re mib re4 re |
-  re4 do8 re fa( sol) sol4 |
-  fa8 sol la sib la4 sol |
-  do4 sib8 la sib( la) sol( fa) |
-  sol2 sol | %122
-  R1*2 | %124
-  sol4\mf la8 sib sib sol la sib | %93
-  do8 re do sib do4 do |
-  r1 |
-  sib4 do8( re) re4 sib8 sib |
-  mib2 re8 sib do( re) |
-  re4( do) re4 re,8\mp re | %130
-  re4 do8 re fa( sol) sol4 | %131
-  fa8( sol) fa do mib4 re |
-  do4 re8 mib sib4 re8 re |
-  re8( do re mib) re4. re8 |
-  re4 do8 re fa( sol) sol4 |
-  fa8 sol la sib la4 sol |
-  do4 sib8 la sib la sol( fa) |
-  sol4 sol sol2 | %138
-  sol2( fa) |
-  sol1 | %140
+  
+  R1*5 | %5
+  do4 mi sol do, |
+  fa4 la la( sol) |
+  do2(~ do8 si) do4 |
+  do4( si) do2 | \break
+  fa,4 sol la sol |
+  fa4 mi mi( re) |
+  do'2(~ do8 si) do4 |
+  do4( si) do2 | \break
+  si4 do re sol, |
+  do4 re mi2 |
+  si8( do re sol, do4) si8( do) |
+  si4( la) sol2 | \break
+  sol8( la) si( sol) do4 mi, |
+  fa4 la la( sol) |
+  do8( si do sol la si) do( re) |
+  do4( si) do2 | \break
+  R1*6 | %27
+  mi,4 sols si mi, |
+  la4 dos dos( si) |
+  mi2(~ mi8 res) mi4 |
+  mi4( res) mi2 | \break
+  la,4 si dos si |
+  la4 sols sols( fas) |
+  mi'2(~ mi8 res) mi4 |
+  sols,4( si) mi2 | \break
+  res4 mi fas si, |
+  mi4 fas sols2 |
+  res8( mi fas si, mi4) res8( mi) |
+  res4( dos) si2 | \break
+  si8( dos) res si mi4( sols,) |
+  la4 dos dos( si) |
+  mi8( res mi si dos res) mi( fas) |
+  mi4( res) mi2 | \break
+  mi8( res mi si dos res) mi( fas) |
+  sols1( |
+  fas1) |
+  sols2. fas4 |
+  mi4 sols, si fas' |
+  mi4 sols, si fas' |
+  sols1 \fermata |
 }
 
 soprano-lyrics = \lyricmode {
-  Oh Cruz triu -- fan -- te ar -- bol tan glo -- rio -- so,
-  ú -- ni -- co~en flor en ho -- jas y~en el fru -- to.
-  Oh dul -- ce le -- ño que con dul -- ces cla -- vos
-  sos -- tie -- ne~el dul -- ce pe -- so.
+  <<
+    {
+      El Se -- ñor re -- su -- ci -- to. A -- le -- lu -- ya.
+      Muer -- te~y tum -- ba ya ven -- cio. A -- le -- lu -- ya.
+      Su po -- der y su vir -- tud. A -- le -- lu -- ya.
+      Cau -- ti -- vo, la~es -- cla -- vi -- tud. A -- le -- lu -- ya.
+    }
+    \new Lyrics {
+      \set associatedVoice = \voice
+      El que~al pol -- vo se~hu -- mi -- llo. A -- le -- lu -- ya.
+      Ven -- ce -- dor se le -- van -- to. A -- le -- lu -- ya.
+      Y can -- ta -- mos en ver -- dad. A -- le -- lu -- ya.
+      Su glo -- rio -- sa me -- jes -- tad. A -- le -- lu -- ya.
+    }
+  >>
 
-  Oh Cruz triu -- fan -- te ar -- bol tan glo -- rio -- so,
-  ú -- ni -- co~en flor en ho -- jas y~en el fru -- to.
-  Oh dul -- ce le -- ño que con dul -- ces cla -- vos
-  sos -- tie -- ne~el dul -- ce pe -- so.
+  El que~a muer -- te se~en -- tre -- go. A -- le -- lu -- ya.
+  El que~a si nos re -- di -- mio. A -- le -- lu -- ya.
+  Hoy en glo -- ria ce -- les -- tial. A -- le -- lu -- ya.
+  Rei -- na en vi -- da triun -- fal. A -- le -- lu -- ya.
 
-  Oh Cruz triu -- fan -- te ar -- bol tan glo -- rio -- so,
-  ú -- ni -- co~en flor en ho -- jas y~en el fru -- to.
-  Oh dul -- ce le -- ño que con dul -- ces cla -- vos
-  sos -- tie -- ne~el dul -- ce pe -- so.
-
-  (BC) __
-
-  Del se -- no de~u -- na Vir -- gen vi -- no~a no -- so -- tros,
-  el Ver -- bo se~hi -- zo car -- ne.
-
-  Oh Cruz triu -- fan -- te ar -- bol tan glo -- rio -- so,
-  ú -- ni -- co~en flor en ho -- jas y~en el fru -- to.
-  Oh dul -- ce le -- ño que con dul -- ces cla -- vos
-  sos -- tie -- ne~el dul -- ce pe -- so.
-
-  (BC) __
-
-  Po -- bres te -- las en -- vuel -- ven
-  los pies, las pier -- nas y sus san -- tas ma -- nos.
-
-  Oh Cruz triu -- fan -- te ar -- bol tan glo -- rio -- so,
-  ú -- ni -- co~en flor en ho -- jas y~en el fru -- to.
-  Oh dul -- ce le -- ño que con dul -- ces cla -- vos
-  sos -- tie -- ne~el dul -- ce pe -- so.
-
-  Oh Cruz triu -- fan -- te ar -- bol tan glo -- rio -- so,
-  ú -- ni -- co~en flor en ho -- jas y~en el fru -- to.
-  Oh dul -- ce le -- ño que con dul -- ces cla -- vos
-  sos -- tie -- ne~el dul -- ce pe -- so.
-
-  A -- qui la lan -- za que per -- fo -- ra~el sua -- ve cuer -- po.
-  San -- gra y a -- gua ri -- o que la -- va~el mun -- do.
-
-  Oh Cruz triu -- fan -- te ar -- bol tan glo -- rio -- so,
-  ú -- ni -- co~en flor en ho -- jas y~en el fru -- to.
-  Oh dul -- ce le -- ño que con dul -- ces cla -- vos
-  sos -- tie -- ne~el dul -- ce pe -- so.
-
-  Oh Cruz triu -- fan -- te ar -- bol tan glo -- rio -- so,
-  ú -- ni -- co~en flor en ho -- jas y~en el fru -- to.
-  Oh dul -- ce le -- ño que con dul -- ces cla -- vos
-  sos -- tie -- ne~el dul -- ce pe -- so.
-
-  Al mun -- do nau -- fra -- ga -- do lle -- vas a buen puer -- to.
-  Ro -- ci -- a -- dos con san -- gre del cor -- de -- ro.
-  Sea la Glo -- ria al Pa -- dre, la Glo -- ria~al Hi -- jo,
-  y al Es -- pi -- ri -- tu San -- to.
-  A Ti sea la Glo -- ria Tri -- ni -- dad e -- ter -- na
-  de Ti la Vi -- da y Sal -- va -- cion.
-
-  A -- men.
+  A -- le -- lu -- ya. A -- le -- lu -- ya. A -- le, a -- le -- lu -- ya.
 }

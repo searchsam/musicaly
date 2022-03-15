@@ -54,7 +54,7 @@ tenor-lyrics = \lyricmode {
       El Se -- ñor re -- su -- ci -- to. A -- le -- lu -- ya.
       Muer -- te~y tum -- ba ya ven -- cio. A -- le -- lu -- ya.
       Su po -- der y su vir -- tud. A -- le -- lu -- ya.
-      Cau -- ti -- vo, es -- cla -- vi -- tud. A -- le -- lu -- ya.
+      Cau -- ti -- vo, la~es -- cla -- vi -- tud. A -- le -- lu -- ya.
     }
     \new Lyrics {
       \set associatedVoice = \voice

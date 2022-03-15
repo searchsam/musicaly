@@ -1,4 +1,4 @@
-% Oh cruz fiel - Tenor
+% Himno a la Sangre de Cristo - Tenor
 % by serachsam
 
 \language "espanol"
@@ -23,6 +23,7 @@ pulse = 4
 \markup { \fill-line { " " \right-column { \fontsize #2 \arranger } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 \other } } }
 \header {
+  dedication = \dedication
   tagline = ##f
   breakbefore = ##t
 }
@@ -49,5 +50,4 @@ pulse = 4
 % --- Paper
 \paper {
   #(set-default-paper-size "letter")
-  page-breaking = #ly:page-turn-breaking
 }

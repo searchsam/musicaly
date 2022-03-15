@@ -1,4 +1,4 @@
-% Oh cruz fiel - Tenor
+% Porque eterna es su misericordia - Tenor
 % by serachsam
 
 \language "espanol"
@@ -15,7 +15,7 @@ pulse = 4
 \include "metronome.ily"
 
 % --- Global size
-%#(set-global-staff-size \size)
+#(set-global-staff-size 17)
 
 % --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #2 \smallCaps \subtitle \fontsize #1 \subsubtitle } } }
@@ -23,6 +23,7 @@ pulse = 4
 \markup { \fill-line { " " \right-column { \fontsize #2 \arranger } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 \other } } }
 \header {
+  dedication = \dedication
   tagline = ##f
   breakbefore = ##t
 }
@@ -42,12 +43,10 @@ pulse = 4
     >> }
     %\metronome
   >>
-  \midi {}
   \layout {}
 }
 
 % --- Paper
 \paper {
   #(set-default-paper-size "letter")
-  page-breaking = #ly:page-turn-breaking
 }

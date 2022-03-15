@@ -9,7 +9,7 @@ papper = "letter"
 size = 20
 
 global = {
-  \tempo "Moderato espressivo" 4 = 90
+  \tempo "Moderato espressivo" 4 = 110
   \key la \minor
   \time 4/4
 

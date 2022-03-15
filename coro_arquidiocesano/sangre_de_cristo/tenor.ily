@@ -39,11 +39,11 @@ tenor = \relative do' {
   fas2 r | %52
   
   la2\mp( mi' | %53
-  re1 |
-  mi1 |
+  re1) |
+  mi1( |
   re1~ |
-  re1 |
-  mi1 |
+  re1) |
+  mi1( |
   re2 mi |
   fas2) r8 dos8\mf dos8. si16 | %60
   la4 dos8. si16 la4 sol8. la16 |
@@ -91,7 +91,7 @@ tenor-lyrics = \lyricmode {
     Hoy te pi -- do con san -- to fer -- vor,
     nos ben -- di -- gas con to -- do tu~a -- mor.
     
-    Uh. __
+    Uh, __ uh, __ uh. __
     
     San -- gre de Cris -- to cla -- va -- do~en la Cruz,
     re -- fle -- jan -- do~en su ros -- tro la luz.

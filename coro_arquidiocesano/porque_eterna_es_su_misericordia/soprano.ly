@@ -1,4 +1,4 @@
-% Oh cruz fiel - Tenor
+% Porque eterna es su misericordia - Soprano
 % by serachsam
 
 \language "espanol"
@@ -11,18 +11,19 @@ pulse = 4
 
 % --- Includes
 \include "global.ily"
-\include "tenor.ily"
+\include "soprano.ily"
 \include "metronome.ily"
 
 % --- Global size
-%#(set-global-staff-size \size)
+#(set-global-staff-size 17.5)
 
 % --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #2 \smallCaps \subtitle \fontsize #1 \subsubtitle } } }
-\markup { \fill-line { "TENOR" \right-column { \fontsize #2 \autor } } }
+\markup { \fill-line { "SOPRANO" \right-column { \fontsize #2 \autor } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 \arranger } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 \other } } }
 \header {
+  dedication = \dedication
   tagline = ##f
   breakbefore = ##t
 }
@@ -37,17 +38,14 @@ pulse = 4
     \new Staff { <<
       \set Staff.midiInstrument = #"choir aahs"
       %\set Staff.midiMaximumVolume = #1.5
-      \new Voice = "tenor" { << \global \tenor >> }
-      \new Lyrics \lyricsto "tenor" { \tenor-lyrics }
+      \new Voice = "soprano" { << \global \soprano >> }
+      \new Lyrics \lyricsto "soprano" { \soprano-lyrics }
     >> }
-    %\metronome
   >>
-  \midi {}
   \layout {}
 }
 
 % --- Paper
 \paper {
   #(set-default-paper-size "letter")
-  page-breaking = #ly:page-turn-breaking
 }

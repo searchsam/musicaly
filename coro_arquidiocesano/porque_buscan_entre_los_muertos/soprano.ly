@@ -18,12 +18,12 @@ pulse = 4
 %#(set-global-staff-size \size)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #3 \subtitle \fontsize #1 \subsubtitle } } }
-\markup { \fill-line { \fontsize #2 "SOPRANO" \right-column { \fontsize #2 \autor } } }
-\markup { \fill-line { "" \right-column { \fontsize #2 \arranger } } }
-\markup { \fill-line { "" \right-column { \fontsize #2 \other } } }
+% --- Header
+\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #2 \smallCaps \subtitle \fontsize #1 \subsubtitle } } }
+\markup { \fill-line { "SOPRANO" \right-column { \fontsize #2 \autor } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 \arranger } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 \other } } }
 \header {
-  %dedication = "Dedication (dedicatoria)"
   tagline = ##f
   breakbefore = ##t
 }

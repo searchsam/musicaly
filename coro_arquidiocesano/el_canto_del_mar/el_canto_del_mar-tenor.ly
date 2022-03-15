@@ -6,13 +6,12 @@
 
 %#(set-global-staff-size 21)
 
-\markup { \fill-line { \center-column { \fontsize #5 "El canto del mar" \fontsize #3 "Exodo 15" \fontsize #2 "Para la Gloria del Señor" } } }
-\markup { \fill-line { \fontsize #2 "TENOR" \fontsize #2 "Mons. Marco Frisina"  } }
-\markup { \fill-line { "" \right-column { \fontsize #2 "Versión de la Banda Sonora: Francisco Jarquín Vega" } } }
-\markup { \fill-line { "" \right-column { \fontsize #2 "Traducción: Lic. Luz Marina Zepeda Wilson" } } }
+\markup { \fill-line { \center-column { \fontsize #5 "El canto del mar" \fontsize #2 \smallCaps "Exodo 15" \fontsize #1 "Para la Gloria del Señor" } } }
+\markup { \fill-line { "TENOR" \right-column { \fontsize #2 "Mons. Marco Frisina" } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Versión de la Banda Sonora: Francisco Jarquín Vega" } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Traducción: Lic. Luz Marina Zepeda Wilson" } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = ##f
   breakbefore = ##t
 }
 
