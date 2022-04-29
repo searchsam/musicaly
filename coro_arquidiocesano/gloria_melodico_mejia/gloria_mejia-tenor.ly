@@ -9,7 +9,7 @@
 
 % --- Parametro globales
 global = {
-  \tempo "" 4=100
+  \tempo "Vivo" 4=100
   \key sol \major
   \time 4/4
   \repeat volta 2 { s1*7 }
@@ -24,14 +24,13 @@ global = {
   \bar "|."
 }
 
-\markup { \fill-line { \center-column { \fontsize #5 "Gloria" \fontsize #2 "Himno Liturgico - Misa Melodica" \small "Para la Gloria del Señor" } } }
-\markup { \fill-line { \fontsize #2 \smallCaps "Tenor" \fontsize #2 "Musica: Alejandro Mejia"  } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Armonización de la partitura original: Francisco Jarquín Vega" \small "(30 Junio, 2012)" } } }
-
+\markup { \fill-line { \center-column { \fontsize #5 "Gloria" \fontsize #2 \smallCaps "Himno Liturgico - Misa Melodica" \fontsize #1 "Para la mayor gloria de Dios" } } }
+\markup { \fill-line { "TENOR" \right-column { \fontsize #2 "Alejandro Mejia Pareda" } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Armonización de la partitura original" } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Francisco Jarquín Vega" } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
-  breakbefore = ##t 
+  tagline = ##f
+  breakbefore = ##t
 }
 
 % --- Musica
@@ -121,10 +120,12 @@ letra = \lyricmode {
 
 \score {
   <<
-    \new Staff <<
-        \new Voice = "voz" << \global \tenor >>
-        \new Lyrics \lyricsto "voz" \letra
-    >>
+    \new Staff { <<
+      %\set Staff.midiInstrument = #"choir aahs"
+      %\set Staff.midiMaximumVolume = #1.5
+      \new Voice = "tenor" { << \global \tenor >> }
+      \new Lyrics \lyricsto "tenor" { \letra }
+    >> }
   >>
   \midi {}
   \layout {}

@@ -96,7 +96,7 @@ tenor = \relative do' {
   re4 re8 re mi fas mi si |
   dos4 dos2 r4 |
   R1 |
-  r2 r4 si8^\markup{\smal \italic "molto rall."} dos |
+  r2 r4 si8^\markup{\small \italic "molto rall."} dos |
   re4 re8 re mi mi mi mi |
   mi1 |
   re1~\< |

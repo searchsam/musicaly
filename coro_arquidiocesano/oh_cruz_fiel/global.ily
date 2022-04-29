@@ -1,4 +1,3 @@
-
 title = "Oh Cruz fiel"
 subtitle = "Del himno Crux fidelis"
 subsubtitle = "A la gloria del Redentor del mundo"

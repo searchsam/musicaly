@@ -1,40 +1,53 @@
-% ****************************************************************
-%	Señor ten piedad - Tenor
-%	by serach.sam@
-% ****************************************************************
+% Señor ten piedad - Tenor
+% by serachsam
 \language "espanol"
 \version "2.23.2"
 
-\include "melodia.ily"
+% --- Global parameters
+particle = 1
+jump = \break
+pulse = 4
 
-#(set-global-staff-size 24)
+% --- Includes
+\include "global.ily"
+\include "tenor.ily"
+
+% --- Global size
+%#(set-global-staff-size 27)
 
 % --- Parametro globales
 
-\markup { \fill-line { \center-column { \fontsize #5 \titulo \fontsize #2 \subtitulo } } }
-\markup { \fill-line { \fontsize #2 \smallCaps "Tenor" \fontsize #2 \autor  } }
-
+% --- Header
+\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #2 \smallCaps \subtitle \fontsize #1 \subsubtitle } } }
+\markup { \fill-line { "TENOR" \right-column { \fontsize #2 \autor } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 \arranger } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 \other } } }
 \header {
-  copyright = \derechos
-  tagline = \etiqueta
+  tagline = ##f
   breakbefore = ##t
 }
 
-% --- Musica
+% --- Music
 
-% --- Letra
+% --- Harmony
 
+% --- Sheet
 \score {
   <<
-    \new Staff <<
-      \new Voice = "voz" << \global \tenor >>
-      \new Lyrics \lyricsto "voz" \letra
-    >>
+    \new Staff { <<
+      \set Staff.midiInstrument = #"choir aahs"
+      %\set Staff.midiMaximumVolume = #1.5
+      \new Voice = "tenor" { << \global \tenor >> }
+      \new Lyrics \lyricsto "tenor" { \tenor-lyrics }
+    >> }
+    %\metronome
   >>
   \midi {}
   \layout {}
 }
 
+% --- Paper
 \paper {
-  #(set-paper-size "letter")
+  #(set-default-paper-size "letter")
+  page-breaking = #ly:page-turn-breaking
 }

@@ -1,215 +1,193 @@
+% Himno de Pascua
+% searchsam
 \language "espanol"
-% Created on Wed Mar 02 13:55:24 CST 2011
-% search.sam@
-
 \version "2.23.2"
 
-#(set-global-staff-size 22)
+% --- Global parameters
+%particle = 0
+%jump = \break
+%time = 4
 
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Himno de Pascua" \fontsize #3 "Himno" } } }
-\markup { \fill-line { " " \fontsize #2 "Kiko Argüello" } }
-\markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
+% --- Includes
+\include "global.ily"
+\include "harmony.ily"
+\include "instrument.ily"
+% \include "metronome.ily"
+
+% --- Global size
+%#(set-global-staff-size \size)
 
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  title = \markup{\fontsize #2 \medium \smallCaps \title}
+  subtitle = \markup{\medium \subtitle}
+  subsubtitle = \markup{\medium \subsubtitle}
+  composer = \autor
+  arranger = \markup {\right-column { \arranger \other}}
+  tagline = ##f
   breakbefore = ##t
 }
 
-piano = \new Staff {
+% --- Music
 
-  \set Staff.midiInstrument = #"church organ"
-  \tempo "Presto" 4 = 150
-  \clef treble
+music = \relative do' {
+  \compressEmptyMeasures
+  \dynamicUp
+
+  \tempo "Vivo" 4 = 140
+  \key la \minor
   \time 2/2
-  \key mi \minor
 
-  \relative do'' {
-    % Type notes here
-
-    sol2^\markup { \small Introducción } si4 sol4 | %1
-    fas2 la2 | %2
-    mi2 sol4 mi4 | %3
-    res4 fas4 si2^\markup { \small Acompañamiento } | %4
-    \bar "||"
-    \textLengthOn
-    s1_\markup
+  R1 |
+  mi'2^\markup { \small Introducción } la4( mi4) | %1
+  re2 sol4( re) | %2
+  do2 fa4( do4) | %3
+  si4 mi4 sols2 | %4
+  <<
+    {
+      mi2 la4( mi4) | %5
+      re2 sol4( re) | %6
+      do2 fa4( do4) | %7
+      si4 mi4 sols2 | %8
+      la1 | %9
+    }
+    \new Staff \with {
+      \remove "Time_signature_engraver"
+      alignAboveContext = "main"
+      \magnifyStaff #2/3
+    }
+    {
+      \set Staff.midiInstrument = #"flute"
+      la1 | %5
+      sol1 | %6
+      fa1 | %7
+      mi1 | %8
+      do | %9
+    }
+  >>
+  \break
+  \bar "||"
+  \textLengthOn
+  s1_\markup
+  \center-column {
+    \small "La aurora tiñe de púrpura el cielo,..."
+  }^\markup { \small Acompañamiento } | %10
+  \textLengthOff
+  mi,4 la4 si4 do4 | %11
+  re4 si4 do4 <la do>4~ | %12
+  \textLengthOn
+  <la do>2 r2_\markup {
     \center-column {
-      \small "La aurora tiñe de púrpura el cielo,..."
-    } |
-    \textLengthOff
-    si4 mi4 fas4 sol4 | %5
-    la4 fas4 sol4 mi4 | %6
-    \textLengthOn
-    s1_\markup {
-      \center-column {
-        \small "...resuena en los aires el eco de las alabanzas;..."
-      }
-    } |
-    \textLengthOff
-    res4 fas4 sols4 la4 | %7
-    si4 sols4 la4 fas4 | %8
-    \textLengthOn
-    s1_\markup {
-      \center-column {
-        \small "...el mundo triunfante se alegra, tenebroso el infierno brama."
-      }
-    } |
-    s1_\markup { \center-column { \small "Mien..." } } |
-    s1_\markup { \center-column { \small "...tras..." } } |
-    s1_\markup { \center-column { \small "...el..." } } |
-    \textLengthOff
-    \time 6/8
-    \repeat volta 2 {
-      \textLengthOn
-      do2._\markup { \center-column { \small "...Rey, Cristo, libra a todos de la..." } } |
-      si2._\markup { \center-column { \small "...cárcel tenebrosa que es..." } } |
-      la2._\markup { \center-column { \small "...muerte y nos conduce a la..." } } |
-      \textLengthOff
+      \small "...resuena en los aires el eco de las alabanzas;..."
     }
-    \alternative {
-      {
-        \textLengthOn
-        sol2._\markup { \center-column { \small "...vida." } } |
-        r4 r8
-        sol8_\markup { \center-column { \small "Mien" } }
-        la8_\markup { \center-column { \small "tras" } }
-        si8_\markup { \center-column { \small "el" } } |
-        \textLengthOff
-      }
-      {
-        \textLengthOn
-        sol2._\markup { \center-column { \small "...vida." } } |
-        s2._\markup { \center-column { \small "Una..." } } |
-        \textLengthOff
-      }
-    }
-
-    \time 2/2
-    \textLengthOn
-    s1_\markup
+  } | %13
+  \textLengthOff
+  mi4 si'4 do4 re4 | %14
+  mi4 do4 re4 si4~ | \break %15
+  \textLengthOn
+  si2 la4 <sols si>4~_\markup {
     \center-column {
-      \small "...piedra sellaba su sepulcro;..."
-    } |
-    \textLengthOff
-    si4 mi4 fas4 sol4 | %5
-    la4 fas4 sol4 mi4 | %6
-    \textLengthOn
-    s1_\markup {
-      \center-column {
-        \small "...muchos guardias le custodiaban..."
-      }
-    } |
-    \textLengthOff
-    res4 fas4 sols4 la4 | %7
-    si4 sols4 la4 fas4 | %8
-    \textLengthOn
-    s1_\markup {
-      \center-column {
-        \small "...Pero él triunfa glorioso y de la muerte se levanta."
-      }
-    } |
-    s1_\markup {
-      \center-column {
-        \small "No mas..."
-      }
-    } |
-    \textLengthOff
-
-    \time 6/8
-    \repeat volta 2 {
-      \textLengthOn
-      s2._\markup { \small "No mas lutos ni llantos ni pesares:..." } |
-      \textLengthOff
-      \textLengthOn
-      s2._\markup {
-        \center-column { \small "...¡Resucito!" }
-      } |
-      \textLengthOff
-      r4 r8 si,8[ si8 si8] | %9
+      \small "...el mundo..."
     }
+  } | %16
+  <sols si>1_\markup {
+    \center-column {
+      \small "...triunfante se alegra, tenebroso el infierno..."
+    }
+  } | %17
+  <la do>1_\markup {
+    \center-column {
+      \small "...brama."
+    }
+  } | \break %18
+  <<
+    {
+      <mi la>1_\markup { \center-column { \small "Mien..." } } | %19
+      <mi si'>1_\markup { \center-column { \small "...tras..." } } | %20
+      <mi dos'>_\markup { \center-column { \small "...el..." } } | %21
+      \textLengthOff
+      \tempo "Allegro" 4 = 100
+  \time 6/8
+  \repeat volta 2 {
+      re'4_\markup{\small "...Rey..."} mi8 <re fa>4.~ | %22
+      <re fa>2. | %23
+      sol4_\markup { \center-column { \small "...Cristo, libra a..." } } fa8~ fa sol fa | %24
+      sol4_\markup { \center-column { \small "...todos de la..." } } fa8~ fa sol la | %25
+      fa4_\markup { \center-column { \small "...carcel tene..." } } mi8~ mi fa mi | %26
+      fa4_\markup { \center-column { \small "...brosa que es la..."}} mi8~ mi re do | %27
+      <si re>2._\markup { \center-column { \small "...muerte y nos conduce a la..." } } | %28
+      mi8 re do fa mi re | %29
+      <do mi>2._\markup { \center-column { \small "...vida." } } | %30
+      r4 r8 la8_\markup {\small "Mientras el..." } si8 dos8 | %31
+      <mi, la>2._\markup {\small "...vida." } | \break %32
+    }
+    \new Staff \with {
+      \remove "Time_signature_engraver"
+      alignAboveContext = "main"
+      \magnifyStaff #2/3
+    } {
+      \set Staff.midiInstrument = #"flute"
+      la'1 | %19
+      sols1 | %20
+      sol1 | %21
+      la4 sol8 fa4.~ | %22
+      fa2.~ | %23
+      fa2.~ | %24
+      fa2. | %25
+      mi2.~ | %26
+      mi2. | %27
+      re2.~ | %28
+      re2. | %29
+      do2. | %30
+      r4 r8 la'8 sols sol | %31
+      do,2. | %32
+    }
+  >>
+  
+    s2.*8
     \alternative {
-      {
-        res2._\markup { \small "...¡Resucito!" }( | %10
-        res8) r4 si8[ si8 si8] | %11
-        mi2.( | %12
-        mi8) r8 r4
-        \textLengthOn
-        s4_\markup { \small "No mas..." }| %13
-        \textLengthOff
-      }
-      {
-        res2.( | %15
-        res8) r4\fermata
-        \textLengthOn
-        si8_\markup { \small "¡Re" }
-        [
-        si8_\markup { \small "su" }
-        si8_\markup { \small "ci" }
-        ] | %16
-        \textLengthOn
-        mi2._\markup { \small "to!" }( | %17
-        mi2. |
-        mi8)\fermata r8 r4 r4 | %18
-      }
+      {s2.*2}
+      {s2.}
     }
-    \bar "|."
   }
+  \bar "||"
+  \tempo "Vivo" 4 = 140
+  \time 2/2
+  s1*20
+  \tempo "Allegro" 4 = 100
+  \time 6/8
+  \repeat volta 2 {
+    s2.*4
+    \alternative {
+      {s2.*4}
+      {s2.*5}
+    }
+  }
+  \bar "|."
+}
 }
 
-armonia = \new ChordNames {
+% --- Harmony
 
-  \set chordChanges = ##t
-  \italianChords
-
-  \chordmode {
-    mi1:m si1:7 la1:m si1:7
-    mi1:m mi1:m mi1:m mi2:m
-    si2:7 si1:7 si1:7 si2:7
-    mi2:m mi1:7 mi1:7 mi1:7
-    la2.:m mi2.:m si2.:7
-    mi2.:m mi2.:7 mi2.:m mi2.:m
-    mi1:m mi1:m mi1:m mi2:m
-    si2:7 si1:7 si1:7 si2:7
-    mi2:m mi1:7 la2.:m
-    mi2.:m si2.:7 si2.
-    mi2.:m mi2.:m mi2.:7
-    si2. mi2.:m mi2.:m
-  }
-}
-
+% --- Sheet
 \score {
   <<
-    \armonia
-    \piano
+    \harmonies
+    \new Staff = "main" {
+      <<
+        \set Staff.midiInstrument = #"violin"
+        %\set Staff.midiMaximumVolume = #1.5
+        <<
+          \new Voice = "instrument" { << \global \instrument >> }
+        >>
+      >>
+    }
   >>
-
-  \midi {}
   \layout {}
+  \midi {}
 }
 
+% --- Paper
 \paper {
-  #(set-paper-size "letter")
+  #(set-default-paper-size "letter")
+  %page-breaking = #ly:page-turn-breaking
 }
-
-%{
-convert-ly (GNU LilyPond) 2.16.2  convert-ly: Procesando «»...
-Aplicando la conversión: 2.15.7, 2.15.9, 2.15.10, 2.15.16, 2.15.17,
-2.15.18, 2.15.19, 2.15.20, 2.15.25, 2.15.32, 2.15.39, 2.15.40,
-2.15.42, 2.15.43, 2.16.0
-%}
-
-
-%{
-convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
-Aplicando la conversión: 2.17.0, 2.17.4, 2.17.5, 2.17.6, 2.17.11,
-2.17.14, 2.17.15, 2.17.18, 2.17.19, 2.17.20, 2.17.25, 2.17.27,
-2.17.29, 2.17.97, 2.18.0, 2.19.2, 2.19.7, 2.19.11, 2.19.16, 2.19.22,
-2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40, 2.19.46, 2.19.49, 2.19.80
-%}
-
-
-%{
-convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
-Aplicando la conversión:     El documento no ha cambiado.
-%}

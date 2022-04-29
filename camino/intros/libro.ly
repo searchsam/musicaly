@@ -1,12 +1,12 @@
 
 \include "pregon.ly"
 \include "ohseñor.ly"
-\include "aquedah.ly"
+\include "aquedah.ily"
 \include "moises.ly"
 \include "sionmadre.ly"
-\include "gritad.ly"
-\include "shema.ly"
-\include "cierva.ly"
+\include "gritad.ily"
+\include "shema.ily"
+\include "cierva.ily"
 
 \version "2.23.2"
 

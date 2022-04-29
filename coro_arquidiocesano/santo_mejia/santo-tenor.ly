@@ -16,14 +16,13 @@ global = {
   \bar "|."
 }
 
-\markup { \fill-line { \center-column { \fontsize #5 "Santo" \fontsize #2 "Himno Liturgico" \small "Para la Gloria del Señor" } } }
-\markup { \fill-line { \fontsize #2 \smallCaps "Tenor" \fontsize #2 "Musica: Alejandro Mejia Pareda"  } }
+\markup { \fill-line { \center-column { \fontsize #5 "Santo" \fontsize #2 \smallCaps "Himno Liturgico" \fontsize #1 "Para la Gloria del Señor" } } }
+\markup { \fill-line { "TENOR" \right-column { \fontsize #2 "Alejandro Mejia Pareda" } } }
 \markup { \fill-line { " " \right-column { \fontsize #2 "Versión Orquestal: Francisco Jarquín Vega" } } }
-
+\markup { \fill-line { " " \right-column { \fontsize #2 "" } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
-  breakbefore = ##t 
+  tagline = ##f
+  breakbefore = ##t
 }
 
 % --- Musica

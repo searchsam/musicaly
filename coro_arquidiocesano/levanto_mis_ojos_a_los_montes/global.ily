@@ -9,10 +9,29 @@ papper = "letter"
 size = 20
 
 global = {
-    \tempo "Andante Religioso" 4 = 87
-    \key si \minor
-    \time 4/4
+  \tempo "Andante Religioso" 4 = 87
+  \key si \minor
+  \time 4/4
 
-    s1*66
-    \bar "|."
+  s1*10
+  \bar "||"
+  s1*8
+  \bar "||"
+  s1*8
+  \bar "||"
+  s1*8
+  \bar "||"
+  s1*8
+  \bar "||"
+  s1*8
+  \bar "||"
+  s1*8
+  \bar "||"
+  s1*6
+  \repeat volta 3 { s1 }
+  \alternative {
+    { s1 }
+    { s1 }
+  }
+  \bar "|."
 }

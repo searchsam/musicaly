@@ -16,13 +16,12 @@ global = {
   \bar "|."
 }
 
-\markup { \fill-line { \center-column { \fontsize #5 "Aleluya del Cordero" \fontsize #2 "Salmo 118 (117)" \small "Para la Gloria del Señor" } } }
-\markup { \fill-line { \fontsize #2 \smallCaps "Tenor" \fontsize #2 "Musica: Mons. Marco Frisina"  } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Versión Orquestal: Francisco Jarquín Vega" \small "(19 Junio, 2016)" } } }
-
+\markup { \fill-line { \center-column { \fontsize #5 "Aleluya del Cordero" \fontsize #2 \smallCaps "Salmo 118 (117)" \fontsize #1 "Para la Gloria del Señor" } } }
+\markup { \fill-line { "TENOR" \right-column { \fontsize #2 "Mons. Marco Frisina" } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 "Versión Orquestal: Francisco Jarquín Vega" } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 \small "(19 Junio, 2016)" } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = ##f
   breakbefore = ##t
 }
 

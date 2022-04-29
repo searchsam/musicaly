@@ -43,6 +43,7 @@ pulse = 4
     >> }
   >>
   \layout {}
+  \midi {}
 }
 
 % --- Paper

@@ -98,7 +98,7 @@ tenor-lyrics = \lyricmode {
     Hoy te pi -- do con san -- to fer -- vor,
     nos ben -- di -- gas con to -- do tu~a -- mor.
     
-    Ol -- vi -- da quien fui yo quien te ven -- die -- ra,
+    Ol -- vi -- da que fui yo quien te ven -- die -- ra,
     quien con i -- ni -- cua sa -- ña te~a -- zo -- ta -- ra.
     Quien es -- cu -- pie -- ra tu di -- vi -- na ca -- ra,
     co -- ro -- na vil por mo -- fa te ci -- ñe -- ra.

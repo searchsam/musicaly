@@ -15,15 +15,14 @@ pulse = 4
 \include "metronome.ily"
 
 % --- Global size
-%#(set-global-staff-size \size)
+#(set-global-staff-size 19.9)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #3 \subtitle \fontsize #1 \subsubtitle } } }
-\markup { \fill-line { \fontsize #2 "TENOR" \right-column { \fontsize #2 \autor } } }
-\markup { \fill-line { "" \right-column { \fontsize #2 \arranger } } }
-\markup { \fill-line { "" \right-column { \fontsize #2 \other } } }
+\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #2 \smallCaps \subtitle \fontsize #1 \subsubtitle } } }
+\markup { \fill-line { "TENOR" \right-column { \fontsize #2 \autor } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 \arranger } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 \other } } }
 \header {
-  %dedication = "Dedication (dedicatoria)"
   tagline = ##f
   breakbefore = ##t
 }
@@ -44,6 +43,7 @@ pulse = 4
     %\metronome
   >>
   \layout {}
+  \midi {}
 }
 
 % --- Paper

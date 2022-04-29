@@ -128,7 +128,7 @@ letra = \lyricmode {
   Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya.  Can le -- lu -- ya.
   
   \markup{\fontsize #2 \bold "1." "Quie"} -- ro can -- tar en ho -- nor del Se -- ñor por -- que ha triun -- fa -- do a -- le -- lu -- ya.
-  Ha he -- cha -- do~al mar ca ba cho~y ca -- ba -- lle -- ro, mi fuer -- za~y mi can -- to el Se -- ñor es.
+  Ha he -- cha -- do~al mar ca ba llo~y ca -- ba -- lle -- ro, mi fuer -- za~y mi can -- to el Se -- ñor es.
   El es mi sal -- va -- dor, el Dios de mis pa -- dres a el yo le can -- to y lo~ex -- al -- ta -- re.
   
   Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya. Can le -- lu -- ya.

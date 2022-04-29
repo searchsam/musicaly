@@ -34,12 +34,14 @@ pulse = 4
 % --- Sheet
 \score {
   <<
-    \new Staff { <<
-      \set Staff.midiInstrument = #"choir aahs"
-      %\set Staff.midiMaximumVolume = #1.5
-      \new Voice = "tenor" { << \global \tenor >> }
-      \new Lyrics \lyricsto "tenor" { \tenor-lyrics }
-    >> }
+    \new Staff {
+      <<
+        \set Staff.midiInstrument = #"choir aahs"
+        %\set Staff.midiMaximumVolume = #1.5
+        \new Voice = "tenor" { << \global \tenor >> }
+        \new Lyrics \lyricsto "tenor" { \tenor-lyrics }
+      >>
+    }
     %\metronome
   >>
   \midi {}

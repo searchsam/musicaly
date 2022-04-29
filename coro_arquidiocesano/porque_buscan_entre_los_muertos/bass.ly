@@ -1,4 +1,4 @@
-% Alegría, ha nacido el salvador - Bajo
+% Porque buscan entre los muertos - Bajo
 % by serachsam
 
 \language "espanol"
@@ -15,16 +15,15 @@
 % \include "metronome.ily"
 
 % --- Global size
-%#(set-global-staff-size \size)
+#(set-global-staff-size 19.9)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #3 \subtitle } } }
-\markup { \fill-line { \fontsize #2 "Bajo" \right-column { \fontsize #2 \arranger } } }
-\markup { \fill-line { "" \right-column { \fontsize #2 \other } } }
+\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #2 \smallCaps \subtitle \fontsize #1 \subsubtitle } } }
+\markup { \fill-line { "BAJO" \right-column { \fontsize #2 \autor } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 \arranger } } }
+\markup { \fill-line { " " \right-column { \fontsize #2 \other } } }
 \header {
-  %dedication = "Dedication (dedicatoria)"
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  tagline = ##f
   breakbefore = ##t
 }
 
@@ -56,5 +55,4 @@
 % --- Paper
 \paper {
   #(set-default-paper-size "letter")
-  page-breaking = #ly:page-turn-breaking
 }

@@ -110,7 +110,7 @@ tenor = \relative do {
   do16 do8 do16 si8 sol la la4 la8 |
   re,4 re8 re sol sol4 la8	|
   fa8( mi) re( do) re4. re8 | %23
-  fa8( mi) re( do) re2~ | %24
+  fa'8( mi) re( do) re2~ | %24
   re2~ re8 r8 r4 | %82
 }
 

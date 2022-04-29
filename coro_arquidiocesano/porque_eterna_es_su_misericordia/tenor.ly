@@ -44,6 +44,7 @@ pulse = 4
     %\metronome
   >>
   \layout {}
+  \midi {}
 }
 
 % --- Paper

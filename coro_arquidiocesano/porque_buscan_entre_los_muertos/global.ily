@@ -1,6 +1,6 @@
 
 title = "¿Porqué buscan entre los muertos?"
-subtitle = ""
+subtitle = "De la Resurrección del Evangelio de San Lucas"
 subsubtitle = "A nuestro Rey de Reyes"
 autor = "Lic. Luz Marina Zepeda Wilson"
 arranger = "Versión Coral: Miguel Garcia Soza"
@@ -13,15 +13,14 @@ global = {
     \key sol \minor
     \time 2/4
 
-    s2*15
+    s2*14
     \bar "||"
     s2*41
     \repeat volta 2 { s2*20 }
-    s2*20
-    \bar "||"
     s2*2
 %    \bar "||"
-    \key la \minor
+    \key la \minor    
+    s2*44
     \repeat volta 2 { s2*16 }
     s2*14
     \bar "|."

@@ -15,7 +15,7 @@ pulse = 4
 \include "metronome.ily"
 
 % --- Global size
-%#(set-global-staff-size \size)
+%#(set-global-staff-size 26)
 
 % --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #2 \smallCaps \subtitle \fontsize #1 \subsubtitle } } }
