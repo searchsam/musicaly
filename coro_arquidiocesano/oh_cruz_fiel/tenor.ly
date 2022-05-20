@@ -18,11 +18,12 @@ pulse = 4
 %#(set-global-staff-size 27)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #2 \smallCaps \subtitle \fontsize #1 \subsubtitle } } }
-\markup { \fill-line { "TENOR" \right-column { \fontsize #2 \autor } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 \arranger } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 \other } } }
 \header {
+  title = \markup{\fontsize #2 \medium \smallCaps \title}
+  subtitle = \markup{\medium \subtitle}
+  subsubtitle = \markup{\medium \subsubtitle}
+  composer = \autor
+  arranger = \markup {\right-column { \arranger \other}}
   tagline = ##f
   breakbefore = ##t
 }
