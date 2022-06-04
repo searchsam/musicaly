@@ -1,63 +1,7 @@
-%  El canto del mar - Tenor Solo
-%  by serach.sam@
-
-\language "espanol"
-\version "2.23.2"
-
-% --- Global size
-#(set-global-staff-size 18.7)
-
-% --- Header
-\markup { \fill-line { \center-column { \fontsize #5 "El canto del mar" \fontsize #2 \smallCaps "Exodo 15" \fontsize #1 "Para la Gloria del Señor" } } }
-\markup { \fill-line { "TENOR SOLO" \right-column { \fontsize #2 "Mons. Marco Frisina" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Versión de la Banda Sonora: Francisco Jarquín Vega" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Traducción: Lic. Luz Marina Zepeda Wilson" } } }
-\header {
-  tagline = ##f
-  breakbefore = ##t
-}
-
-% --- Global
-global = {
-  \tempo "Andante festivo" 4=80
-  \key re \minor
-  \time 4/4
-
-  s1*3
-  \bar "||"
-  s1*7
-  \bar "||"
-  s1
-  \bar "||"
-  s1*5
-  \bar "||"
-  s1*2
-  \bar "||"
-  s1
-  \repeat volta 2 { s1*3 }
-  \alternative { { s1 } { s1 } }
-  \bar "||"
-  s1*14
-  \repeat volta 2 { s1*3 }
-  \alternative { { s1 } { s1 } }
-  \bar "||"
-  s1*14
-  \repeat volta 2 { s1*3 }
-  \alternative { { s1 } { s1 } }
-  \bar "||"
-  s1*14
-  \repeat volta 2 { s1*3 }
-  \alternative { { s1 } { s1 } }
-  \bar "||"
-  s1*1
-  \bar "|."
-}
-
-% --- Musica
-tenor = \relative do {
+tenor-solo = \relative do {
   \compressEmptyMeasures
   \dynamicUp
-  \clef	"G_8"
+  \clef "G_8"
 
   R1*10 | %10
   r2 r4 r8 re8\mp | %11
@@ -92,8 +36,20 @@ tenor = \relative do {
   fa4 fa8 mi re re4 re8	|
   re4 do re4. re,8 | %42
   re'4 do re2 | %43
-  R1*13 | %56
-  r2 r4 r8 re,\mf | %57
+  re8\f re re mi fa4 fa8. fa16 | %44
+  sol8 fa re do re16( dos la4) la8 | %45
+  sib4 sib8 la sib4 sib8 la | %46
+  re4 re8( do) re4. re8 | %47
+  re4 re8 mi fa4 fa8. fa16 | %48
+  sol8 	fa re16 re do8 re16( do) la4 la8 | %49
+  sib4 sib8 la sol sol4 la8 | %50
+  re4 mi fa4. re8 | %51
+  fa4 fa8 fa fa4( do8.) do16 | %52
+  la8 do mi re do do4 mi8 | %53
+  fa4 fa8 fa fa( do) do si | %54
+  la16( si) do4( mi8 re2 | %55
+  fa4. do16 re mib2 | %56
+  re2.~ re8) re,\mf | %57
   re4 fa8 sol la4. la16 la | %58
   do16 do8 do16 re8 mi mi mi4 mi8 |
   fa4 fa8 mi re re4 re8	|
@@ -121,22 +77,21 @@ tenor = \relative do {
   re2~ re8 r8 r4 | %82
 }
 
-% --- Letra
-letra = \lyricmode {
+tenor-solo-lyrics = \lyricmode {
   Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya.
 
   Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya.  Can le -- lu -- ya.
-  
+
   \markup{\fontsize #2 \bold "1." "Quie"} -- ro can -- tar en ho -- nor del Se -- ñor por -- que ha triun -- fa -- do a -- le -- lu -- ya.
   Ha he -- cha -- do~al mar ca ba llo~y ca -- ba -- lle -- ro, mi fuer -- za~y mi can -- to el Se -- ñor es.
   El es mi sal -- va -- dor, el Dios de mis pa -- dres a el yo le can -- to y lo~ex -- al -- ta -- re.
-  
+
   Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya. Can le -- lu -- ya.
-  
-  %Dios es un gue -- rre -- ro su nom -- bre~es el Se -- ñor. Hu -- dio en el mar al e -- jer -- ci -- to,
-  %los ca -- ros de~E -- gip -- to su -- mer -- ge~en el mar ro -- jo; A -- lla~en lo pro -- fun -- do los se -- pul -- to.
-  %La dies -- tra de Dios se~e -- le -- va has -- ta~el cie -- lo, la dies -- tra de Dios es te -- rri -- ble.
-  
+
+  \markup{\fontsize #2 \bold "2." "Dios"} es un gue -- rre -- ro su nom -- bre~es el Se -- ñor. Hu -- dio en el mar al e -- jer -- ci -- to,
+  los ca -- ros de~E -- gip -- to su -- mer -- ge en el mar ro -- jo; A -- lla~en lo pro -- fun -- do los se -- pul -- to.
+  La dies -- tra de Dios se~e -- le -- va has -- ta~el cie -- lo, la dies -- tra de Dios es te -- rri -- ble.
+
   Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya. Can le -- lu -- ya.
 
   \markup{\fontsize #2 \bold "3." "El"} mar ca -- yo~y cu -- brio las a -- guas los ta -- pa -- ron,
@@ -149,19 +104,4 @@ letra = \lyricmode {
   has -- ta tu mon -- te san -- to tu mo -- ra -- da.
 
   Can -- tad al Se -- ñor, es -- tu -- pen -- da es su vic -- to -- ria, Se -- ñor es su nom -- bre, a -- le -- lu -- ya. Can le -- lu -- ya.
-}
-
-\score {
-  <<
-    \new Staff { <<
-      \set Staff.midiInstrument = #"choir aahs"
-      \new Voice = "tenor" { << \global \tenor >> }
-      \new Lyrics \lyricsto "tenor" { \letra }
-    >> }
-  >>
-  \layout {}
-}
-
-\paper {
-  #(set-paper-size "letter")
 }

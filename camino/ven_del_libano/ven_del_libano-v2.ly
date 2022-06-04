@@ -12,7 +12,13 @@
 %#(set-global-staff-size 15)
 
 % --- Parametro globales
-global = {  \tempo "Moderatto" 4 = 120 \clef treble \key mi \minor \time 4/4 s1*8 \bar "|." }
+global = {  
+  \tempo "Moderatto" 4 = 90 
+  \key mi \minor 
+  \time 2/4
+  s2*14 
+  \bar "|." 
+}
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 "Ven del líbano" \fontsize #3 "Cantar de los Cantares 4, 8ss" } } }
@@ -28,21 +34,43 @@ global = {  \tempo "Moderatto" 4 = 120 \clef treble \key mi \minor \time 4/4 s1*
 instrumento = \relative do' {
   %\compressEmptyMeasures
   %Escribir la musica aqui...
-  mi1 sol
-  mi8 sol do2 si4~
-  si2 sol2 
-  fas8 sol la2.
-  re,2 mi8 fas sol4~
-  sol2 fas2 
-  mi8 re mi2. \fermata
+  mi2~ |
+  mi2 |
+  sol2~ |
+  sol4 mi8 sol |
+  do4 si4~ |
+  si4 sol4~ |
+  sol4 fas8 sol |
+  la2 |
+  re,2 |
+  mi8 fas sol4~ |
+  sol4 fas4~ | 
+  fas4 mi8 re |
+  mi2~ |
+  mi2 |
 }
 
 % --- Acordes
 acordes = \new ChordNames {
+  \set ChordNames.midiInstrument = "church organ"
+  \set ChordNames.midiMaximumVolume = #0.5
   \set chordChanges = ##t
-  \italianChords
-  \chordmode { 
-    mi1:m R1*3 re1 R2 do2 R2 re2 mi1:m
+  \chordmode {
+    \italianChords
+    mi2:m
+    mi2:m 
+    mi2:m 
+    mi2:m 
+    mi2:m 
+    mi2:m
+    mi2:m
+    re2 
+    re2
+    re4 do4
+    do4 re4
+    re2
+    mi2:m
+    mi2:m
   }
 }
 
