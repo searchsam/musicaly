@@ -1,19 +1,19 @@
-male = \relative do {
+male = \relative do' {
   \compressEmptyMeasures
   \dynamicUp
   \clef bass
-  mi4 re8 mi | %1
+  si4 la8 si | %1
   sol4 sol |
-  la4 si8( la) |
+  la4 si8 dos |
   la4 la |
-  si4 do8 si |
-  si4( la8 sol) |
+  si4 si8 do |
+  si4 si8 la |
   sol4 la8( si) |
   sol4 sol4 |
-  sol4 sol8 la |
-  si4 si8 la |
-  sol4 sol8 fas |
-  mi4 re |
+  la4 la8 si |
+  la4 la8 sol |
+  fas4 fas8 mi |
+  fas4 re |
   mi4 re8 mi |
   sol4 sol8 fas |
   mi8 fas re4 |

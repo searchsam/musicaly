@@ -111,7 +111,7 @@ notes_soproano = \relative do' {
 }
 
 notes_alto = \relative do' {
-  fa2 re4 sib4 |
+  fa2\mf re4 sib4 |
   mib2 re |
   do1 |
   sib1 |

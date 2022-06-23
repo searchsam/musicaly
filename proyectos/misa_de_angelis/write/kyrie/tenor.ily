@@ -42,7 +42,7 @@ tenor-e = \relative do {
   \dynamicUp
   \clef "G_8"
 
-  mi1^\markup{\italic "Todos"}\p~ | %1
+  mi1^\markup{\italic "Todos"}\pp~ | %1
   mi4 fa4.( sol) |
   fa2 fa4( mi) |
   mi2 re |
@@ -53,18 +53,18 @@ tenor-e = \relative do {
   mi2 re |
   mi1 | %10
 
-  r2^\markup{\italic "Solo"} mi8\mf mi( re do | %11
+  r2^\markup{\italic "Solo"} mi8\f mi( re do | %11
   si do2 mi8[ fa sol8~] |
   sol4 la8[ sol fa] sol4.) \breathe |
   sol8( mi re do fa mi) re4 |
   do1 | %15
-  r2^\markup{\italic "Todos"} mi8\mp mi( re mi | %16
+  r2^\markup{\italic "Todos"} mi8\mf mi( re mi | %16
   fa8 mi4. sol4 fa8 sol~ |
   sol4 la8[ sol la] sol4.) \breathe |
   sol2( fa8 mi) re4 |
   do1 | %20
 
-  re1\p~ | %21
+  re1\pp~ | %21
   re2. fa4~ |
   fa4 mi2. |
   mi2 re4 re |

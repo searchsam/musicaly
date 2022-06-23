@@ -30,6 +30,7 @@
   tagline = ##f
   breakbefore = ##t
 }
+
 % --- Music
 
 % --- Harmony
@@ -51,7 +52,7 @@
         \new Staff {
           <<
             \set Staff.instrumentName = "Soprano"
-            \set Staff.midiInstrument = #"choir aahs"
+            \set Staff.midiInstrument = #"oboe"
             %\set Staff.midiMaximumVolume = #1.5
             <<
               \new Voice = "soprano" { << \global \soprano >> }
@@ -62,7 +63,7 @@
         \new Staff {
           <<
             \set Staff.instrumentName = "Contralto"
-            \set Staff.midiInstrument = #"choir aahs"
+            \set Staff.midiInstrument = #"clarinet"
             %\set Staff.midiMaximumVolume = #1.5
             <<
               \new Voice = "alto" { << \global \alto >> }

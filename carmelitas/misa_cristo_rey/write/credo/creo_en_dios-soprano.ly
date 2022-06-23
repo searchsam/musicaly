@@ -34,7 +34,7 @@ jump = \break
 \score {
   <<
     \new Staff { <<
-      \set Staff.midiInstrument = #"choir aahs"
+      \set Staff.midiInstrument = #"oboe"
       \new Voice = "soprano" { << \global \soprano_music >> }
       \new Lyrics \lyricsto "soprano" { \soprano_lyrics }
     >> }

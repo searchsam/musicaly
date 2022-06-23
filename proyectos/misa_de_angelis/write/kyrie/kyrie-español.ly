@@ -1,7 +1,6 @@
-% ****************************************************************
-%	Cantemos al niño - Coro mixto
-%	by serach.sam@
-% ****************************************************************
+% Kyrie Eleison - Coro mixto
+% by serach.sam@
+
 \language "espanol"
 \version "2.23.2"
 

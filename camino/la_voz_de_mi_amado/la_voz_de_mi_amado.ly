@@ -1,7 +1,6 @@
-% ****************************************************************
-%	La voz de mi amado - Flauta
-%	by serach.sam@
-% ****************************************************************
+% La voz de mi amado - Flauta
+% by serachsam
+
 \language "espanol"
 \version "2.23.2"
 

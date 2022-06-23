@@ -7,7 +7,6 @@
 \documentclass[12pt, letterpaper]{report}
 
 %%% - Paquetes
-\usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{xcolor}

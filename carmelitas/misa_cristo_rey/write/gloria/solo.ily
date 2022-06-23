@@ -1,5 +1,5 @@
 solo_music = \relative do' {
-  \clef "G_8"
+  \clef bass
   
   R1*5 | %5
   re,4^\markup{ \bold "Solo" \italic "Sacerdote" \bold "*"} fa sol sol |

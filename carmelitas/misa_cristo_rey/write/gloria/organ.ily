@@ -1,5 +1,5 @@
 notes_soproano = \relative do'' {
-    re,4 fa sol sol |
+    re,4\mf fa sol sol |
     sol4 sol fa sol |
     fa4 re2. |
     fa1\p |

@@ -38,7 +38,7 @@ bass-e = \relative do {
   \dynamicUp
   \clef bass
 
-  do1^\markup{\italic "Todos"}\p~ | %1
+  do1^\markup{\italic "Todos"}\pp~ | %1
   do4 do2. |
   do2 do |
   do2 la4( si) |
@@ -50,13 +50,13 @@ bass-e = \relative do {
   do1 | %10
 
   R1*5 | %15
-  r2^\markup{\italic "Todos"} mi8\mp mi( re do | %16
+  r2^\markup{\italic "Todos"} mi8\mf mi( re do | %16
   si8 do2 mi8 fa sol8~ |
   sol4 la8[ sol fa] mi4.) \breathe |
   sol8( mi re do fa mi) re4 |
   do1 | %20
 
-  si1\p~ | %21
+  si1\pp~ | %21
   si2. do4~ |
   do4 do2. |
   do2 la4 si |

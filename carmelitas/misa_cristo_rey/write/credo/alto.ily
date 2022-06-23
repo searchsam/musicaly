@@ -32,17 +32,17 @@ alto_music = \relative do' {
   do4 re( do4) do4~ |
   do4 mib2 do4 |
   re mib4 fa( mib4~ |
-  mib4) sib2. \breathe | #(if (= particle 1) jump "") % 34
+  mib4) sib2. | #(if (= particle 1) jump "") % 34
   mib2( re4) sib |
   do2 sib4 sib |
   do4 re4( do4) do4~ |
   do4 mib2 do4 |
   re( mib4) fa( mib4~ |
-  mib4) sib2. \breathe | #(if (= particle 1) jump "") % 41
+  mib4) sib2. | #(if (= particle 1) jump "") % 41
   do2 fa2 |
   do2 re4 mib |
   fa re( mib2) |
-  sib1 \breathe |
+  sib1 |
   re4 re re sol |
   fa2 | #(if (= particle 1) jump "") % 47
   fa8 sol r sol |
