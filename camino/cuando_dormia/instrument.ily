@@ -77,7 +77,7 @@ instrument = \relative do'' {
     }
   >> |
   <<
-    { sol2. }
+    { sols2. }
     \\
     {
       \textLengthOn
@@ -115,7 +115,7 @@ instrument = \relative do'' {
     }
   >> |
   <<
-    { mi2 <re sol>4 }
+    { mi2 <re sols>4 }
     \\
     {
       \textLengthOn
@@ -123,9 +123,9 @@ instrument = \relative do'' {
       \textLengthOff
     }
   >> |
-  sol4 fa8 mi4. |
+  sols4 fa8 mi4. |
   <<
-    { mi2 <re sol>4 }
+    { mi2 <re sols>4 }
     \\
     {
       \textLengthOn
@@ -152,7 +152,7 @@ instrument = \relative do'' {
     }
   >> |
   <<
-    { mi2 <sol re>4 }
+    { mi2 <sols re>4 }
     \\
     {
       \textLengthOn
@@ -160,9 +160,9 @@ instrument = \relative do'' {
       \textLengthOff
     }
   >> |
-  sol4 fa8 mi4. |
+  sols4 fa8 mi4. |
   <<
-    { sol2. }
+    { sols2. }
     \\
     {
       \textLengthOn
@@ -224,7 +224,7 @@ instrument = \relative do'' {
     }
   >> |
   <<
-    { mi2 <re sol>4 }
+    { mi2 <re sols>4 }
     \\
     {
       \textLengthOn
@@ -260,7 +260,7 @@ instrument = \relative do'' {
     }
   >> |
   <<
-    { sol2. }
+    { sols2. }
     \\
     {
       \textLengthOn

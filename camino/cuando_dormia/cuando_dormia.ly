@@ -40,7 +40,7 @@
     \new Staff = "main" {
       <<
         %\set Staff.instrumentName = "Instrument"
-        \set Staff.midiInstrument = #"oboe"
+        \set Staff.midiInstrument = #"violin"
         %\set Staff.midiMaximumVolume = #1.5
         << \global \instrument >>
       >>
