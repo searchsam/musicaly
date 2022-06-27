@@ -1,0 +1,40 @@
+harmonies = \new ChordNames {
+  \set ChordNames.midiInstrument = "church organ"
+  \set ChordNames.midiMaximumVolume = #0.5
+  \set chordChanges = ##t
+  \chordmode {
+    \italianChords
+    R1*2 |
+    re1:m |
+    re1:m |
+    re1:m |
+    re1:m |
+    re1:m |
+    re1:m |
+    re1:m |
+    re1:m |
+    sib4 la2. |
+    la1 |
+    la1 |
+    la1 |
+    la1 |
+    la1 |
+    la2 re2:m |
+    re1:m |
+    re1:m |
+    re1:m |
+    re1:m |
+    sib2 la2 |
+    la1 |
+    la1 |
+    la1 |
+    la2. re4:m |
+    re1:m |
+    re1:m |
+    re1:m |
+    re1:m |
+    re1:m |
+    re1:m |
+    re1:m |
+  }
+}
