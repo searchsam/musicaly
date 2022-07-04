@@ -1,41 +1,7 @@
-% ****************************************************************
-%	Ave Maria - Soprano
-%	by serach.sam@
-% ****************************************************************
-\language "espanol"
-\version "2.23.2"
-
-#(set-global-staff-size 22)
-
-% --- Parametro globales
-global = {
-  \tempo "Andante Spiritual" 4=70
-  \key mi \minor
-  \time 4/4
-  s1*40
-  \bar "||"
-  \tempo "Allegro non troppo" 4=100
-  \time 6/8
-  s2.*23
-  \bar "||"
-  \key la \minor
-  s2.*8
-  \bar "|."
-}
-
-\markup { \fill-line { \center-column { \fontsize #5 "Ave María" \fontsize #2 "Texto Liturgico original" \small "Para la Gloria de nuestra Santísima Madre" } } }
-\markup { \fill-line { \fontsize #2 \smallCaps "Soprano" \fontsize #2 "Música: Luz Marina Zepeda Wilson"  } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Versión Sinfonica Coral: Francisco Jarquín Vega" \small "(05 Mayo, 2011)"  } } }
-\header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
-  breakbefore = ##t
-}
-
-% --- Musica
 soprano = \relative do'' {
   \compressEmptyMeasures
   \dynamicUp
+  
   R1*10				| %10
   si4. si8 la4 sol8 fas		| %11
   mi2 mi				| %12
@@ -66,7 +32,7 @@ soprano = \relative do'' {
   r8 do,( la' sol) fas2		| %37
   r8 si, sol'( fas) mi2~		| %38
   mi1				| %39
-  r1				| %40
+  R1				| %40
   R2.*4				| %44
   si'4. la8( sol) fas		| %45
   mi4. mi			| %46
@@ -95,40 +61,24 @@ soprano = \relative do'' {
   mi4. r				| %71
 }
 
-% --- Letra
-letra = \lyricmode {
+soprano-lyrics = \lyricmode {
   Dios te sal -- ve Ma -- rí -- a
   lle -- na e -- res de gra -- cia
   el Se -- ñor es con -- ti -- go;
   y ben -- di -- ta tú e -- res
   y ben -- di -- ta~y ben -- di -- ta e -- res
   en -- tre to -- das las mu -- je -- res.
-  (BC) __ _ _ _ _
+  (BC) _ _ _ _
   Y ben -- di -- to es el fru -- to
-  de tu vien -- tre, Je -- sús. __
-  A __ ve __ Ma __ rí __ a.
+  de tu vien -- tre, Je -- sús.
+  A ve Ma rí a.
   A -- ve Ma -- rí -- a.
-  A -- ve Ma -- rí -- a. __
+  A -- ve Ma -- rí -- a.
   San -- ta Ma -- rí -- a, Ma -- dre de Dios,
   rue -- ga por no -- so -- tros, los pe -- ca -- do -- res,
   rue -- ga~ah -- o -- ra y~en la ho -- ra
   de nues -- tra muer -- te.~A -- mén.
   Rue -- ga~ah -- o -- ra y~en la ho -- ra
   de nues -- tra muer -- te, de nues -- tra muer -- te,
-  de nues -- tra muer -- te. __ A -- mén, __ a -- mén. __
-}
-
-\score {
-  <<
-    \new Staff <<
-      \new Voice = "voz" << \global \soprano >>
-      \new Lyrics \lyricsto "voz" \letra
-    >>
-  >>
-  \midi {}
-  \layout {}
-}
-
-\paper {
-  #(set-paper-size "letter")
+  de nues -- tra muer -- te. A -- mén, a -- mén.
 }
