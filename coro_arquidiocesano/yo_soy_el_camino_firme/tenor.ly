@@ -1,4 +1,4 @@
-% Oh cruz fiel - Tenor
+% Yo soy el camino firme - Tenor
 % by serachsam
 
 \language "espanol"
@@ -22,6 +22,7 @@ pulse = 4
   title = \markup{\fontsize #2 \medium \smallCaps \title}
   subtitle = \markup{\medium \subtitle}
   subsubtitle = \markup{\medium \subsubtitle}
+  poet = \markup{\caps "tenor"}
   composer = \autor
   arranger = \markup {\right-column { \arranger \other}}
   tagline = ##f
@@ -36,7 +37,7 @@ pulse = 4
 \score {
   <<
     \new Staff { <<
-      \set Staff.midiInstrument = #"choir aahs"
+      \set Staff.midiInstrument = #"english horn"
       %\set Staff.midiMaximumVolume = #1.5
       \new Voice = "tenor" { << \global \tenor >> }
       \new Lyrics \lyricsto "tenor" { \tenor-lyrics }

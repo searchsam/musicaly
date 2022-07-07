@@ -37,7 +37,7 @@ pulse = 4
 \score {
   <<
     \new Staff { <<
-      \set Staff.midiInstrument = #"choir aahs"
+      \set Staff.midiInstrument = #"oboe"
       %\set Staff.midiMaximumVolume = #1.5
       \new Voice = "soprano" { << \global \soprano >> }
       \new Lyrics \lyricsto "soprano" { \soprano-lyrics }

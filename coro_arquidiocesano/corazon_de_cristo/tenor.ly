@@ -1,49 +1,54 @@
-% ****************************************************************
-%	Corazon de Cristo - Tenor
-%	by serach.sam@
-% ****************************************************************
+% Virgen y Madre - Tenor
+% by serachsam
+
 \language "espanol"
 \version "2.23.2"
+
+% --- Global parameters
+particle = 1
+jump = \break
+pulse = 4
 
 % --- Includes
 \include "global.ily"
 \include "tenor.ily"
 
-% --- Tamaño del pentagrama
-#(set-global-staff-size 18)
+% --- Global size
+%#(set-global-staff-size 27)
 
-
-% --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #3 \caps \subtitle } } }
-\markup { \fill-line { \fontsize #2 \caps "Tenor" \center-column { \fontsize #2 \composer } } }
-\markup { \fill-line { "" \center-column { \fontsize #2 \arranger } } }
-
+% --- Header
 \header {
-  copyright = \copyright
-  tagline = \tagline
-  breakbefore = \breakbefore
+  title = \markup{\fontsize #2 \medium \smallCaps \title}
+  subtitle = \markup{\medium \subtitle}
+  subsubtitle = \markup{\medium \subsubtitle}
+  poet = \markup {\caps "tenor"}
+  composer = \autor
+  arranger = \markup {\right-column { \arranger }}
+  tagline = ##f
+  breakbefore = ##t
 }
 
-% --- Partitura
+% --- Music
+
+% --- Harmony
+
+% --- Sheet
 \score {
   <<
-    \new Staff {
-      \new Voice = "tenor" {
-        <<
-          %\set Staff.midiInstrument = #"piano"
-          \global
-          \tenor
-        >>
-      }
-    }
-    \new Lyrics{ \lyricsto "tenor" { \letraTenor } }
+    \new Staff { <<
+      \set Staff.midiInstrument = #"choir aahs"
+      %\set Staff.midiMaximumVolume = #1.5
+      \new Voice = "tenor" { << \global \tenor >> }
+      \new Lyrics \lyricsto "tenor" { \tenor-lyrics }
+    >> }
+    %\metronome
   >>
   \midi {}
   \layout {}
 }
 
-% --- Pagina
+% --- Paper
 \paper {
   #(set-default-paper-size "letter")
-  #(include-special-characters)
+  page-breaking = #ly:page-turn-breaking
 }

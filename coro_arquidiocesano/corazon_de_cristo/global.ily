@@ -1,9 +1,19 @@
 % --- Parametro globales
+title = "Corazón de Cristo"
+subtitle = "De las Letanías al Sagrado Corazón de Jesús"
+subsubtitle = "Para mayor gloria de Dios"
+autor = "Mons. Marco Frisina"
+arranger = ""
+other = "Traducción: Luz Marina Zepeda Wilson"
+papper = "letter"
+size = 20
+
 global = {
     \tempo "Andante" 4 = 75 
     \clef treble 
     \key sol \minor
     \time 4/4
+
     s1*9
     \bar "||"
     s1*8
@@ -23,14 +33,3 @@ global = {
     s1*2
     \bar "|." 
 }
-
-title = "Corazón de Cristo"
-subtitle = "De las Letanías al Sagrado Corazón de Jesús"
-subsubtitle = ""
-instrument = "Coro Mixto"
-poet = ""
-composer = "Música: Mons. Marco Frisina"
-arranger = "Traducción: Luz Marina Zepeda Wilson"
-copyright = "Creative Commons Attribution 3.0"
-tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
-breakbefore = ##t

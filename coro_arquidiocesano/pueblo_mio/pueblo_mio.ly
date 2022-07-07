@@ -18,7 +18,7 @@
 % \include "metronome.ily"
 
 % --- Global size
-%#(set-global-staff-size \size)
+#(set-global-staff-size 18)
 
 % --- Header
 \header {
@@ -41,7 +41,7 @@
     \new ChoirStaff { <<
         \new Staff { <<
             \set Staff.instrumentName = "Soprano"
-            \set Staff.midiInstrument = #"choir aahs"
+            \set Staff.midiInstrument = #"oboe"
             %\set Staff.midiMaximumVolume = #1.5
             <<
               \new Voice = "soprano" { << \global \soprano >> }
@@ -50,7 +50,7 @@
         >> }
         \new Staff { <<
             \set Staff.instrumentName = "Contralto"
-            \set Staff.midiInstrument = #"choir aahs"
+            \set Staff.midiInstrument = #"clarinet"
             %\set Staff.midiMaximumVolume = #1.5
             <<
               \new Voice = "alto" { << \global \alto >> }
@@ -59,7 +59,7 @@
         >> }
         \new Staff { <<
             \set Staff.instrumentName = "Tenor"
-            \set Staff.midiInstrument = #"choir aahs"
+            \set Staff.midiInstrument = #"english horn"
             %\set Staff.midiMaximumVolume = #1.5
             <<
               \new Voice = "tenor" { << \global \tenor >> }
@@ -68,7 +68,7 @@
         >> }
         \new Staff { <<
             \set Staff.instrumentName = "Bajo"
-            \set Staff.midiInstrument = #"choir aahs"
+            \set Staff.midiInstrument = #"bassoon"
             %\set Staff.midiMaximumVolume = #1.5
             <<
               \new Voice = "bass" { << \global \bass >> }
@@ -84,5 +84,5 @@
 % --- Paper
 \paper {
   #(set-default-paper-size "letter")
-  page-breaking = #ly:page-turn-breaking
+  %page-breaking = #ly:page-turn-breaking
 }

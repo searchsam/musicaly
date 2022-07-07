@@ -3,122 +3,61 @@ tenor = \relative do' {
   \dynamicUp
   \clef "G_8"
 
-  R1 | %1
-  r2 r4 r8 re,\mp | %2
-  sib'4 sib8 la sol4 sib |
-  sib8 sib la la sol4 sol |
-  sol4 fa8 mib re4 la' |
-  sol8 sol sol2 fas4 |
-  sol4 sol8 sol sib4 sib |
-  la8 sib do la sib4 sib |
-  sol4 sol8 sol sol4 sol |
-  sol4( la) sib2 | %10
-  R1*7 | %17
-  r2 r4 r8 re,\mp | %18
-  sib'4 sib8 la sol4 sib |
-  sib8 sib la la sol4 sol |
-  sol4 fa8 mib re4 la' |
-  sol8 sol sol2 fas4 |
-  sol4 sol8 sol sib4 sib |
-  la8 sib do la sib4 sib |
-  sol4 sol8 sol sol4 sol |
-  sol4( la) sib2 | %26
-  R1*7 | %33
-  r2 r4 r8 re,\mp | %34
-  sib'4 sib8 la sol4 sib |
-  sib8 sib la la sol4 sol |
-  sol4 fa8 mib re4 la' |
-  sol8 sol sol2 fas4 |
-  sol4 sol8 sol sib4 sib |
-  la8 sib do la sib4 sib |
-  sol4 sol8 sol sol4 sol |
-  sol4( la) sib2 | %42
-  sib2\p( fa | %43
-  sol1~ |
-  sol1 |
-  do2 sib4 la) |
-  R1 |
-  sib4\mf do8 re re4 sib |
-  sib4( la) sol2 |
-  sol8 sol la la la4 la8 re,\mp | %50
-  sib'4 sib8 la sol4 sib |
-  sib8 sib la la sol4 sol |
-  sol4 fa8 mib re4 la' |
-  sol8 sol sol2 fas4 |
-  sol4 sol8 sol sib4 sib |
-  la8 sib do la sib4 sib |
-  sol4 sol8 sol sol4 sol |
-  sol4( la) sib2 | %58
-  sib2\p( fa | %59
-  sol1~ |
-  sol1 |
-  do2 sib4 la) |
-  R1 |
-  sib4\mf do8( re) re4 sib8 sib |
-  sib4( la) sol2 |
-  sol4 la la la8 re,\mp | %66
-  sib'4 sib8 la sol4 sib |
-  sib8 sib la la sol4 sol |
-  sol4 fa8 mib re4 la' |
-  sol8 sol sol2 fas4 |
-  sol4 sol8 sol sib4 sib |
-  la8 sib do la sib4 sib |
-  sol4 sol8 sol sol4 sol |
-  sol4( la) sib2 | %74
-  R1*7 | %81
-  r2 r4 r8 re,\mp | %82
-  sib'4 sib8 la sol4 sib |
-  sib8 sib la la sol4 sol |
-  sol4 fa8 mib re4 la' |
-  sol8 sol sol2 fas4 |
-  sol4 sol8 sol sib4 sib |
-  la8 sib do la sib4 sib |
-  sol4 sol8 sol sol4 sol |
-  sol4( la) sib2 | %90
-  fa4\mf re8 mib fa fa sol la |
-  sib8 la sol fa mib4 sib'8( la) |
-  sib4 do8 sib sol sol fa sol |
-  mib8 fa sol sib sib4 la |
-  sib4 do8 re re4 la |
-  la4( sol) fa2 |
-  mib4 fa8 sol sol4 re8 re |
-  sol8 fa sol la la4  la8 re,\mp | %98
-  sib'4 sib8 la sol4 sib |
-  sib8 sib la la sol4 sol |
-  sol4 fa8 mib re4 la' |
-  sol8 sol sol2 fas4 |
-  sol4 sol8 sol sib4 sib |
-  la8 sib do la sib4 sib |
-  sol4 sol8 sol sol4 sol |
-  sol4( la) sib2 | %106
-  R1*7 | %113
-  r2 r4 r8 re,\mp | %114
-  sib'4 sib8 la sol4 sib |
-  sib8 sib la la sol4 sol |
-  sol4 fa8 mib re4 la' |
-  sol8 sol sol2 fas4 |
-  sol4 sol8 sol sib4 sib |
-  la8 sib do la sib4 sib |
-  sol4 sol8 sol sol4 sol |
-  sol4( la) sib2 | %122
-  fa4 re8 mib fa fa sol la |
-  sib8( la) sol fa mib4 sib'8 la |
-  sib4 do8 sib sol sol fa sol |
-  mib8 fa sol sib sib4 la |
-  sib4 do8( re) re4 la |
-  la4( sol) fa2 |
-  mib4 fa8 sol sol4 re |
-  sol8 fa sol la la4 la8 re,\mp |
-  sib'4 sib8 la sol4 sib |
-  sib4 la8 la sol4 sol |
-  sol4 fa8 mib re4 la'8 la |
-  sol2. fas8 fas |
-  sol4 sol8 sol sib4 sib |
-  la8 sib do la sib4 sib |
-  sol4 sol8 sol sol4 sol |
-  sol4 la sib2 |
-  sib2( la) |
-  sib1 |
+  \partial 8 r8
+  R2.*64 | %65
+  r4. r4 la8\mf |
+  re4 re8 re re re |
+  re4 la8 la la la |
+  sib4 sib8 la4 la8 |
+  fa4. r4 do'8 |
+  do4 do8 sib do re |
+  do4 do8 sib sib sib |
+  la4 la8 la4 sol8 |
+  mi4.~ mi8 r la\f |
+  la4 re8 re re re |
+  re4 re8 sib do re |
+  do4 do8 do4 do8 |
+  do4. r4 la8 |
+  re4 sib8 sib sib sib |
+  sib4 sib8 sol la sib |
+  la4 la8 la4 la8 |
+  re,4.~ re8 r4 |
+  R2.*3 |
+  r4. r4 do'8\mf |
+  do4 do8 sib do re 	
+  do4 so8 sib sib sib |
+  la4 la8 la4 sol8 |
+  mi4.~ mi8 r la\f |
+  la4 re8 re re re |
+  re4 re8 sib do re |
+  do4 do8 do4 do8 |
+  do4. r4 la8 |
+  re4 sib8 sib sib sib 	
+  sib4 sib8 sol la sib |
+  la4 la8 la4 la8 |
+  la2.\mp( |
+  sib4.) sib8\f do re |
+  re4 re8 re re4 |
+  re4.~ re4 r8 |
+  do2.\mp |
+  do4. \breathe do8\f do do |
+  do4 do8 do re4 |
+  re4.( dos8) r4 |
+  la4.\mp\< sib8 la sol 	
+  do4 la8 sols4. |
+  la8\ff mi' mi mi4.~ |
+  mi4. r4 la,8\mp |
+  la4 re8 re re re |
+  re4 re8 sib do re |
+  do4 do8 do4 do8 |
+  do4. r4 la8 |
+  re4 sib8 sib sib sib |
+  sib4 sib8~ sib4.~ |
+  sib4 r8 sol la sib |
+  la4 la8 la4 la8 |
+  re,2.~ |
+  re2.^\markup{\italic \bold "rit."} |
+  R2.*3 |
 }
 
 tenor-lyrics = \lyricmode {

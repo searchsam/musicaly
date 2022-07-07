@@ -1,4 +1,4 @@
-% Levanto mis ojos a los montes - Soprano
+% Yo soy el camino firme - Soprano
 % by serachsam
 
 \language "espanol"
@@ -15,7 +15,7 @@ pulse = 4
 \include "metronome.ily"
 
 % --- Global size
-#(set-global-staff-size 18.6)
+%#(set-global-staff-size 18.6)
 
 % --- Header
 \header {
@@ -23,6 +23,8 @@ pulse = 4
   subtitle = \markup{\medium \subtitle}
   subsubtitle = \markup{\medium \subsubtitle}
   composer = \autor
+  poet = \markup{\caps "soprano"}
+  meter = "Solista"
   arranger = \markup {\right-column { \arranger \other}}
   tagline = ##f
   breakbefore = ##t

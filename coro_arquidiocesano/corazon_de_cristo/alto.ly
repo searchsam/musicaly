@@ -1,49 +1,61 @@
-% ****************************************************************
-%	Corazon de Cristo - Contralto
-%	by serach.sam@
-% ****************************************************************
+% Corazon de Cristo - Alto
+% by serachsam
+
 \language "espanol"
 \version "2.23.2"
+
+% --- Global parameters
+%particle = 0
+%jump = \break
+%time = 4
 
 % --- Includes
 \include "global.ily"
 \include "alto.ily"
+% \include "metronome.ily"
 
-% --- Tamaño del pentagrama
-#(set-global-staff-size 18)
+% --- Global size
+%#(set-global-staff-size \size)
 
-
-% --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #3 \caps \subtitle } } }
-\markup { \fill-line { \fontsize #2 \caps "Contralto" \center-column { \fontsize #2 \composer } } }
-\markup { \fill-line { "" \center-column { \fontsize #2 \arranger } } }
-
+% --- Header
 \header {
-  copyright = \copyright
-  tagline = \tagline
-  breakbefore = \breakbefore
+  title = \markup{\fontsize #2 \medium \smallCaps \title}
+  subtitle = \markup{\medium \subtitle}
+  subsubtitle = \markup{\medium \subsubtitle}
+  poet = \markup {\caps "Contralto"}
+  composer = \autor
+  arranger = \markup {\right-column { \arranger }}
+  tagline = ##f
+  breakbefore = ##t
 }
 
-% --- Partitura
+% --- Music
+
+% --- Harmony
+
+% --- Sheet
 \score {
   <<
     \new Staff {
-      \new Voice = "alto" {
-        <<
-          %\set Staff.midiInstrument = #"piano"
-          \global
-          \alto
-        >>
-      }
+      \set Staff.midiInstrument = #"choir aahs"
+      %\set Staff.midiMaximumVolume = #1.5
+      <<
+        \new Voice = "alto" {
+          <<
+            \global
+            \alto
+          >>
+        }
+        \new Lyrics \lyricsto "alto" { \alto-lyrics }
+      >>
     }
-    \new Lyrics{ \lyricsto "alto" { \letraAlto } }
   >>
   \midi {}
   \layout {}
 }
 
-% --- Pagina
+% --- Paper
 \paper {
   #(set-default-paper-size "letter")
-  #(include-special-characters)
+  page-breaking = #ly:page-turn-breaking
 }

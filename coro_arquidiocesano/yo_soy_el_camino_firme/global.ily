@@ -1,5 +1,5 @@
-title = "Yo soy el pan de vida"
-subtitle = "AMDG"
+title = "Yo soy el camino firme"
+subtitle = "Ad maiorem Dei gloriam"
 subsubtitle = ""
 autor = "Betty Aguilera y P. Lorenzo González"
 arranger = "Arreglo: J. P. Rojas"
@@ -8,7 +8,7 @@ papper = "letter"
 size = 20
 
 global = {
-    \tempo "Andante Religioso" 4. = 55
+    \tempo "Lento" 4 = 55
     \key si \minor
     \time 6/8
 
