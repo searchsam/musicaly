@@ -11,7 +11,7 @@ tenor = \relative do {
   sib8 lab sol fa |
   mib4 mib |
   r8 do'-- do-- do-- |
-  si2-> |
+  si2-> | #(if (= particle 1) jump "")
   R2*6 |
   R2. |
   R2*3 |
@@ -25,7 +25,7 @@ tenor = \relative do {
   <si re>2\> |
   R2*3\! |
   <sol re'>2\mf\> |
-  <sol mib'>2 \fermata |
+  <sol mib'>2 \fermata | #(if (= particle 1) jump "")
   do,4\mp re |
   mib8( re) do4 |
   mib4 fa |
@@ -33,7 +33,7 @@ tenor = \relative do {
   sib8 lab sol fa |
   mib4 mib |
   r8 do'-- do-- do-- |
-  si2-> |
+  si2-> | #(if (= particle 1) jump "")
   R2 |
   R2. |
   R2*8 |
@@ -45,11 +45,11 @@ tenor = \relative do {
   sib4\f-- lab-- |
   <sol do>4-- <sol do>2-- |
   R2*3 |
-  r4 <do mib>\mf\> |
+  r4 <do mib>\mf |
   <si re>2\> |
   R2*3\! |
   <sol re'>2\f |
-  <sol mib'>2 \fermata |
+  <sol mib'>2 \fermata | #(if (= particle 1) jump "")
   do,4\mp re |
   mib8( re) do4 |
   mib4 fa |
@@ -57,7 +57,7 @@ tenor = \relative do {
   sib8 lab sol fa |
   mib4 mib |
   r8 do'-- do-- do-- |
-  si2-> |
+  si2-> | #(if (= particle 1) jump "")
   R2*4 	
   R2.*2 |
   R2*7 |
@@ -73,7 +73,7 @@ tenor = \relative do {
   <si re>2\> |
   R2*3\! |
   <sol re'>2\mf\> |
-  <sol mib'>2 \fermata |
+  <sol mib'>2 \fermata | #(if (= particle 1) jump "")
   do,4\mp re |
   mib8( re) do4 |
   mib4 fa |

@@ -32,7 +32,7 @@ bass = \relative do {
   re8 re re re la2		| %45
   re4 re8 re sol4 sol		| %46
   fa8 mi re re la4 la		| %47
-  sib4 sib8 do re4 re4		| %48
+  sib4 sib8( do) re re re4		| %48
   sol,8 sol sol8 sol la2		| %49
   re1				| %50
   la1				| %51

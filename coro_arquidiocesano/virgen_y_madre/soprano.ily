@@ -31,7 +31,7 @@ soprano = \relative do' {
   fa8 mi re fa mi2		| %45
   fa4 sol8 la do4 sib		| %46
   la8 sol fa sol la4 la		| %47
-  re,4 la'8 sol sol( fa) mi( re)	| %48
+  re,4 la'8( sol) sol fa mi( re)	| %48
   mi8 fa sol fa mi2		| %49
   re1				| %50
   do1				| %51

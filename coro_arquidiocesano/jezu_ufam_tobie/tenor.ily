@@ -11,7 +11,7 @@ tenor = \relative do' {
   sol4 sol sib sib |
   la4 la fa fa |
   la2 sol |
-  fa1 | \break
+  fa1 |
   
   fa2\mf sol |
   la2 sol |
@@ -28,7 +28,7 @@ tenor = \relative do' {
   sol4 sol sib sib |
   la4 la fa fa |
   la2 sol |
-  fa1 | \break
+  fa1 |
   
   fa2\p sol |
   la2 sol |
@@ -45,7 +45,7 @@ tenor = \relative do' {
   sol4 sol sib sib |
   la4 la fa fa |
   la2 sol |
-  fa1 | \break
+  fa1 |
   
   fa2 sol |
   la2 sol |
@@ -62,7 +62,7 @@ tenor = \relative do' {
   sol4 sol sib sib |
   la4 la fa fa |
   la2 sol |
-  fa1 | \break
+  fa1 |
   
   fa2 sol |
   la2 sol |
@@ -79,7 +79,7 @@ tenor = \relative do' {
   sol4 sol sib sib |
   la4 la fa fa |
   la2 sol |
-  fa1 | \break
+  fa1 |
   
   fa2 sol |
   la2 sol |
@@ -96,7 +96,7 @@ tenor = \relative do' {
   sol4 sol sib sib |
   la4 la fa fa |
   la2 sol |
-  fa1 | \break
+  fa1 |
   
   fa2 sol |
   la2 sol |
@@ -113,7 +113,7 @@ tenor = \relative do' {
   sol4 sol sib sib |
   la4 la fa fa |
   la2 sol |
-  fa1 | \break
+  fa1 |
   
   solb2 lab |
   sib2 lab |
@@ -130,7 +130,7 @@ tenor = \relative do' {
   lab4 lab dob dob |
   sib4 sib sol sol |
   sib2 lab |
-  solb1 | \break
+  solb1 |
   
   R1*3 |
   r4 dos\f dos dos |
@@ -147,13 +147,7 @@ tenor = \relative do' {
   dos2. dos4 |
   la1 |
   
-  re,1^\markup{\italic "molto rall."}\( |
-  dos1 |
-  re1~ |
-  re1~ |
-  re1~ |
-  re1~ |
-  re1\) |
+  R1*6^\markup{\italic "molto rall."} |
 }
 
 tenor-lyrics = \lyricmode {

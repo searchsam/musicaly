@@ -225,7 +225,7 @@ bajo_dos = \relative do {
 }
 
 letra_uno = \lyricmode {
-  To -- da~her -- mo --za~e -- res Ma -- ri -- a des -- de tu~ins -- tan -- te pri -- me -- ro,
+  To -- da~her -- mo -- za~e -- res Ma -- ri -- a des -- de tu~ins -- tan -- te pri -- me -- ro,
   pues la man -- cha~o -- ri -- gi -- nal no tu -- vo~en tu ser de -- re -- cho.
 }
 

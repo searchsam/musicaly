@@ -20,7 +20,7 @@ tenor = \relative do' {
   mib4 mib8 mib |
   fas4 fas |
   sol2 |
-  R2 | \break
+  R2 | #(if (= particle 1) jump "")
   sib4 sib |
   sol4 sol8 sol |
   la4 la |
@@ -37,7 +37,7 @@ tenor = \relative do' {
   sol4 sol8 sol |
   la4 la |
   sib2 | %48
-  R2*8 | \break %56
+  R2*8 | #(if (= particle 1) jump "") %56
   
   R2*8 | %64
   sol4 sol8 sol |
@@ -51,7 +51,7 @@ tenor = \relative do' {
   sol4 sol8 sol |
   la4 la |
   sib2 | %72
-  R2*4 | \break %76
+  R2*4 | #(if (= particle 1) jump "") %76
   
   R2*2 | %99
   do4 do |
@@ -70,7 +70,7 @@ tenor = \relative do' {
   la4 la8 la |
   si4 si |
   do2 | %115
-  R2*16 | \break %64
+  R2*16 | #(if (= particle 1) jump "") %64
   la4 la8 la |
   re4 re8 re |
   do4 si |
@@ -79,7 +79,7 @@ tenor = \relative do' {
   la4 la8 la |
   si4 si |
   do2 | %72
-  R2*4 | \break %76
+  R2*4 | #(if (= particle 1) jump "") %76
   
   do4 do |
   la4 la8 la |
@@ -96,7 +96,7 @@ tenor = \relative do' {
   la4 la |
   la4 la8 la |
   si4 si |
-  do2 | \break %115
+  do2 | #(if (= particle 1) jump "") %115
   
   la4 la |
   la4 la8 la |

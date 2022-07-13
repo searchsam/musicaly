@@ -18,7 +18,7 @@ pulse = 4
 #(set-global-staff-size 18.4)
 
 \header {
-  title = \markup{\fontsize #2 \medium \smallCaps \title}
+  title = \markup{\medium \smallCaps \title}
   subtitle = \markup{\medium \subtitle}
   subsubtitle = \markup{\medium \subsubtitle}
   composer = \autor
@@ -35,7 +35,7 @@ pulse = 4
 \score {
   <<
     \new Staff { <<
-      \set Staff.midiInstrument = #"choir aahs"
+      \set Staff.midiInstrument = #"english horn"
       %\set Staff.midiMaximumVolume = #1.5
       \new Voice = "tenor" { << \global \tenor >> }
       \new Lyrics \lyricsto "tenor" { \tenor-lyrics }

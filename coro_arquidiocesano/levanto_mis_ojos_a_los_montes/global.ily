@@ -1,7 +1,7 @@
 
 title = "Levanto mis ojos a los montes"
-subtitle = "A nuestro Rey de Reyes"
-subsubtitle = ""
+subtitle = "Salmo 120 (121)"
+subsubtitle = "A nuestro Rey de Reyes"
 autor = "Miguel Manzano"
 arranger = "Versión de la cinta magnetrofonica:"
 other = "Francisco Jarquin Vega"

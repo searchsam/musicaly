@@ -36,6 +36,6 @@ global = {
     \key fas \minor
     s1*16
     \bar "||"
-    s1*7
+    s1*6
     \bar "|."
 }

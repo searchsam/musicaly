@@ -15,15 +15,16 @@ pulse = 4
 \include "metronome.ily"
 
 % --- Global size
-#(set-global-staff-size 17)
+%#(set-global-staff-size 17)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #2 \smallCaps \subtitle \fontsize #1 \subsubtitle } } }
-\markup { \fill-line { "TENOR" \right-column { \fontsize #2 \autor } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 \arranger } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 \other } } }
 \header {
-  dedication = \dedication
+  title = \markup{\medium \smallCaps \title}
+  subtitle = \markup{\medium \subtitle}
+  subsubtitle = \markup{\medium \subsubtitle}
+  poet = \markup {\caps "tenor"}
+  composer = \autor
+  arranger = \markup {\right-column { \arranger \other}}
   tagline = ##f
   breakbefore = ##t
 }

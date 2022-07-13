@@ -19,7 +19,7 @@ pulse = 4
 
 % --- Header
 \header {
-  title = \markup{\fontsize #2 \medium \smallCaps \title}
+  title = \markup{\medium \smallCaps \title}
   subtitle = \markup{\medium \subtitle}
   subsubtitle = \markup{\medium \subsubtitle}
   poet = \markup {\caps "tenor"}
@@ -51,5 +51,5 @@ pulse = 4
 % --- Paper
 \paper {
   #(set-default-paper-size "letter")
-  page-breaking = #ly:page-turn-breaking
+  %page-breaking = #ly:page-turn-breaking
 }

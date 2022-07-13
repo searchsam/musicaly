@@ -22,7 +22,7 @@
   title = \markup{\medium \smallCaps \title}
   subtitle = \markup{\medium \subtitle}
   subsubtitle = \markup{\medium \subsubtitle}
-  poet = "TENOR"
+  poet = \markup{\caps "tenor"}
   composer = \autor
   arranger = \markup {\right-column { \arranger \other}}
   tagline = ##f
@@ -37,7 +37,7 @@
 \score {
   <<
     \new Staff { <<
-      \set Staff.midiInstrument = #"choir aahs"
+      \set Staff.midiInstrument = #"english horn"
       %\set Staff.midiMaximumVolume = #1.5
       \new Voice = "tenor" { << \global \tenor >> }
       \new Lyrics \lyricsto "tenor" { \tenor-lyrics }

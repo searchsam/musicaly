@@ -32,7 +32,7 @@ tenor = \relative do {
   la8 la la sol la2		| %45
   la4 sib8 do sol4 sol		| %46
   la8 la si si re4 dos		| %47
-  re4 re8 sib la4 la8( fa)	| %48
+  re4 re8( sib) la8 la la8( fa)	| %48
   sol8 sol sol8 sol sol2		| %49
   fa1				| %50
   sol1				| %51

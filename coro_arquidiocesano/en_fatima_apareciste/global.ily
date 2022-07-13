@@ -17,47 +17,47 @@ global = {
     s4. | %8
     \time 6/8
     s2.*3 | %11
-    \mark A
+    \mark \markup{\box A}
     \bar "||"
     s2.*8 | %19
-    \mark B
+    \mark \markup{\box B}
     \bar "||"
     s2.*9 | %28
-    \mark C
+    \mark \markup{\box C}
     \bar "||"
     s2.*8 | %36
-    \mark D
+    \mark \markup{\box D}
     \bar "||"
     s2.*9 | %43
-    \mark E
+    \mark \markup{\box E}
     \bar "||"
     s2.*8 | %51
-    \mark F
+    \mark \markup{\box F}
     \bar "||"
     s2.*9 % 60
-    \mark G
+    \mark \markup{\box G}
     \bar "||"
     s2.*8
-    \mark H
+    \mark \markup{\box H}
     \bar "||"
     s2.*8
-    \mark I
+    \mark \markup{\box I}
     \bar "||"
     s2.*5
-    \mark J
+    \mark \markup{\box J}
     \bar "||"
     s2.*8
-    \mark K
+    \mark \markup{\box K}
     \bar "||"
     s2.*8
-    \mark L
+    \mark \markup{\box L}
     s2.*7
-    \mark M
+    \mark \markup{\box M}
     s2.*2
-    \mark N
+    \mark \markup{\box N}
     \bar "||"
     s2.*8
-    \mark O
+    \mark \markup{\box O}
     \bar "||"
     s2.*6
     \time 3/8

@@ -50,5 +50,5 @@ pulse = 4
 % --- Paper
 \paper {
   #(set-default-paper-size "letter")
-  page-breaking = #ly:page-turn-breaking
+  %page-breaking = #ly:page-turn-breaking
 }

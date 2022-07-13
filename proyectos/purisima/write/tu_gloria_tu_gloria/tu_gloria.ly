@@ -118,12 +118,14 @@ acordes = \new ChordNames {
   \new ChoirStaff <<
     \acordes
     \new Staff <<
+      \set Staff.midiInstrument = "oboe"
       \new Voice = "soprano" << \global \soprano >>
       \\
       \new Voice = "alto" << \global \contralto >>
     >>
     \new Lyrics \lyricsto "soprano" \letra_uno
     \new Staff <<
+      \set Staff.midiInstrument = "english horn"
       \new Voice = "tenor" << \global \tenor >>
       \\
       \new Voice = "bajo" << \global \bajo >>

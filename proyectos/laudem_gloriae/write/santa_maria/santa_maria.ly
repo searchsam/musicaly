@@ -88,25 +88,3 @@
   #(set-default-paper-size "letter")
   page-breaking = #ly:page-turn-breaking
 }
-
-%{
-Santa María, Madre de Dios
-
-Benedicto XVI
-Oración final de la encíclica de Benedicto XVI "Dios es Amor"
-
-Santa María, Madre de Dios,
-tú has dado al mundo la verdadera luz,
-Jesús, tu Hijo, el Hijo de Dios.
-Te has entregado por completo
-a la llamada de Dios
-y te has convertido así en fuente
-de la bondad que mana de Él.
-Muéstranos a Jesús. Guíanos hacia Él.
-Enséñanos a conocerlo y amarlo,
-para que también nosotros
-podamos llegar a ser capaces
-de un verdadero amor
-y ser fuentes de agua viva
-en medio de un mundo sediento.
-%}

@@ -1,53 +1,62 @@
-title = "Oh Cruz fiel"
-subtitle = "Del himno Crux fidelis"
-subsubtitle = "A la gloria del Redentor del mundo"
-autor = "Mons. Marco Frisina"
+title = "Padre Nuestro"
+subtitle = ""
+subsubtitle = "A la gloria de nuestro Señor"
+autor = "Mons. Albert Malotte"
 arranger = "Versión Coral y Orquestal: Francisco Jarquin Vega"
-other = "Tradución: Lic. Luz Marina Zepeda Wilson"
+other = ""
 papper = "letter"
 size = 20
 
 global = {
-    \tempo "Andante Religioso" 4 = 63
-    \key sol \minor
+    \tempo "Lento religioso" 4 = 64
+    \key do \minor
     \time 4/4
 
     s1*2
     \bar "||"
-    s1*8
+    s1*4
     \bar "||"
-    s1*8
+    \time 2/4
+    s2
     \bar "||"
-    s1*8
+    \time 4/4
+    s1*3
     \bar "||"
-    s1*8
+    s1*4
     \bar "||"
-    s1*8
+    s1*4
     \bar "||"
-    s1*8
+    \time 2/4
+    s2
     \bar "||"
-    s1*8
+    \time 4/4
+    s1*14
     \bar "||"
-    s1*8
+    \time 9/8
+    R1*9/8*12 |
     \bar "||"
-    s1*8
+    \time 6/8
+    s2.
     \bar "||"
-    s1*8
+    \time 9/8
+    s1*9/8*7 |
     \bar "||"
-    s1*8
+    \time 12/8
+    s1.*10
     \bar "||"
-    s1*8
+    s1.
     \bar "||"
-    s1*8
-    \bar "||"
-    s1*8
-    \bar "||"
-    s1*8
-    \bar "||"
-    s1*8
-    \bar "||"
-    s1*8
-    \bar "||"
-    s1*2
+    \time 6/8
+    s2.
+    \time 12/8
+    s1.
+    \time 6/8
+    s2.
+    \time 12/8
+    s1.
+    \time 6/8
+    s2.
+    \time 12/8
+    s1.*4
     \bar "|."
 }

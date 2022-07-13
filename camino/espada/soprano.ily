@@ -35,7 +35,7 @@ soprano = \relative do' {
   fas1 |
   r2 sol( |
   sol2.) fas8 sol |
-  sol1 r2 |
+  fas1 r2 |
   R1*15 |
   r2 r4 r8 la\f |
   <<

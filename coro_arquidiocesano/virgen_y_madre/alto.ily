@@ -31,7 +31,7 @@ alto = \relative do' {
   re8 do si si re4( dos)		| %45
   re4 re8 re re4 re		| %46
   re8 re re re mi4 mi		| %47
-  re4 fa8 mi re4 re8( la)	| %48
+  re4 fa8( mi) re re re8( la)	| %48
   sib8 sib sib8 re do2		| %49
   la1				| %50
   la1				| %51
