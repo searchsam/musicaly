@@ -1,4 +1,4 @@
-% Virgen y Madre - Soprano
+% Escuchad oh tierna madre - Soprano
 % by serachsam
 
 \language "espanol"

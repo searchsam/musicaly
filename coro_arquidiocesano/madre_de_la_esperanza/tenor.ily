@@ -10,7 +10,7 @@ tenor = \relative do' {
   sol2 sol |
   \tuplet 3/2 {do4 do re} si la |
   sol4 sol2 sol4 |
-  la4. sol8 \tuplet 3/2 {do4 si la} |
+  la4. la8 \tuplet 3/2 {do4 si la} |
   sol4  sol2. |
   \tuplet 3/2 {do4 do do} si la |
   sol4 sol2 sol4 |

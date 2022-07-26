@@ -37,7 +37,7 @@ pulse = 4
 \score {
   <<
     \new Staff { <<
-      \set Staff.midiInstrument = #"choir aahs"
+      \set Staff.midiInstrument = #"english horn"
       %\set Staff.midiMaximumVolume = #1.5
       \new Voice = "tenor" { << \global \tenor >> }
       \new Lyrics \lyricsto "tenor" { \tenor-lyrics }
