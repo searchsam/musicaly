@@ -14,13 +14,14 @@
 
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Entrada" \fontsize #2 "Misa de Cristo Rey" "Principe de los siglos - Himno Solemnidad Cristo Rey"} } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Letra: Pbro. Vittorio Genovesi S.J." } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Música: Linda Martínez" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  title = \markup{\smallCaps "Entrada"}
+  subtitle = \markup{\medium "Misa de Cristo Rey"}
+  subsubtitle = \markup{\medium "Principe de los siglos"}
+  instrument = \markup{\caps "coro femenino"}
+  poet = \markup{\left-column{"Pbro. Vittorio Genovesi S.J." "Himno Solemnidad Cristo Rey"}}
+  composer = \markup{\right-column {"Linda Martínez" "Samuel Gutiérrez"}}
+  tagline = ##f
   breakbefore = ##t
 }
 
@@ -64,7 +65,6 @@ harmony_stanza = \new ChordNames {
       de las men -- tes y los co -- ra -- zo -- nes.
     }
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -72,7 +72,7 @@ harmony_stanza = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Altus" }
+    piece = \markup { \bold "Altus" }
   }
 }
 
@@ -99,7 +99,6 @@ harmony_stanza = \new ChordNames {
       pro -- cla -- mán -- do -- te rey del u -- ni -- ver -- so.
     }
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -107,7 +106,7 @@ harmony_stanza = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Sopra" }
+    piece = \markup { \bold "Sopra" }
   }
 }
 
@@ -134,7 +133,6 @@ harmony_stanza = \new ChordNames {
       en un so -- lo a -- pris -- co se con -- gre -- guen.
     }
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -142,7 +140,7 @@ harmony_stanza = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Altus" }
+    piece = \markup { \bold "Altus" }
   }
 }
 
@@ -169,7 +167,6 @@ harmony_stanza = \new ChordNames {
       tu ar -- dien -- te co -- ra -- zón a -- tra -- ve -- sa -- do.
     }
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -177,7 +174,7 @@ harmony_stanza = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Sopra" }
+    piece = \markup { \bold "Sopra" }
   }
 }
 
@@ -204,7 +201,6 @@ harmony_stanza = \new ChordNames {
       san -- gre de sal -- va -- ción pa -- ra tus hi -- jos.
     }
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -212,7 +208,7 @@ harmony_stanza = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Altus" }
+    piece = \markup { \bold "Altus" }
   }
 }
 
@@ -239,7 +235,6 @@ harmony_stanza = \new ChordNames {
       el ar -- te y la ley no te des -- mien -- tan.
     }
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -247,7 +242,7 @@ harmony_stanza = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Sopra" }
+    piece = \markup { \bold "Sopra" }
   }
 }
 
@@ -274,7 +269,6 @@ harmony_stanza = \new ChordNames {
       los ciu -- da -- da -- nos de las na -- cio -- nes.
     }
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -282,7 +276,7 @@ harmony_stanza = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Altus" }
+    piece = \markup { \bold "Altus" }
   }
 }
 
@@ -309,7 +303,6 @@ harmony_stanza = \new ChordNames {
       re -- ci -- ba glo -- ria~el San -- to Es -- pí -- ri -- tu.
     }
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -317,7 +310,7 @@ harmony_stanza = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Sopra" }
+    piece = \markup { \bold "Sopra" }
   }
 }
 
@@ -336,7 +329,6 @@ harmony_stanza = \new ChordNames {
       A -- mén.
     }
   >>
-  \midi {}
   \layout {
     \context {
       \Staff
@@ -348,7 +340,7 @@ harmony_stanza = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Tutti" }
+    piece = \markup { \bold "Tutti" }
   }
 }
 

@@ -9,14 +9,14 @@ harmonies = \new ChordNames {
     la1 |
     re1:7 |
     sol1:m |
-    s1 |
+    sol1:m |
     la1 |
     re1:m |
-    s1 |
+    re1:m |
     do1 |
     fa1 |
     sib1 |
-    s1 |
+    sib1 |
     sol1:m |
     la1 |
     re1:m |
@@ -26,14 +26,14 @@ harmonies = \new ChordNames {
     re1 |
     re1:7 |
     sol1:m |
-    s1 |
+    sol1:m |
     la1 |
     re1:m |
-    s1 |
+    re1:m |
     do1 |
     fa1 |
     sib1 |
-    s1 |
+    sib1 |
     sol1:m |
     la1 |
     re1:m |
@@ -43,14 +43,14 @@ harmonies = \new ChordNames {
     re1 |
     re1:7 |
     sol1:m |
-    R1 |
+    sol1:m |
     la1 |
     re1:m |
-    s1 |
+    re1:m |
     do1 |
     fa1 |
     sib1 |
-    s1 |
+    sib1 |
     sol1:m |
     la1 |
     re1:m |

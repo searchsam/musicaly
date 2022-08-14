@@ -1,7 +1,8 @@
 
-title = "Canto de Amor"
+title = "Canto de amor"
 subtitle = "Misa Cristo Rey"
-subsubtitle = "Finalis - Salmo 45 (44)"
+subsubtitle = "Finalis"
+poet = "Salmo 45 (44)"
 autor = "Linda Martínez"
 arranger = "Samuel Gutiérrez"
 other = ""

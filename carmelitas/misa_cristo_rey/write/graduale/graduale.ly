@@ -15,12 +15,13 @@
 
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Melodia Responsorial" \fontsize #2 "Misa de Cristo Rey" "Salmo Responsorial de la Solemnidad Cristo Rey"} } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  title = \markup{\smallCaps "Melodia Responsorial"}
+  subtitle = \markup{\medium "Misa de Cristo Rey"}
+  subsubtitle = \markup{\medium "Salmo Responsorial Domingo XXXIV del Tiempo Ordinario"}
+  instrument = \markup{\caps "coro femenino"}
+  composer = \markup{\right-column {"Linda Martínez" "Samuel Gutiérrez"}}
+  tagline = ##f
   breakbefore = ##t
 }
 
@@ -38,7 +39,6 @@ harmony_stanza = \new ChordNames {
   <<
     %\harmony_stanza
     \new Staff <<
-      %\set Staff.midiInstrument = "clarinet"
       \new Voice = "melody" \relative do' {
         \set Score.timing = ##f
         %\tempo "Adagio" 4 = 70
@@ -57,7 +57,6 @@ harmony_stanza = \new ChordNames {
   \header {
     piece = \markup { \smallCaps "Ciclo A" \italic \small "Salmo 22, 1-2a. 2b-3. 5-6 (R.: cf. 1)"}
   }
-  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -78,7 +77,6 @@ harmony_stanza = \new ChordNames {
   \new StaffGroup = "Antifona" <<
     %\harmony_stanza
     \new Staff <<
-      %\set Staff.midiInstrument = "clarinet"
       \new Voice = "melody" \relative do' {
         \set Score.timing = ##f
         %\tempo "Adagio" 4 = 70
@@ -94,7 +92,6 @@ harmony_stanza = \new ChordNames {
       }
     >>
     \new Staff <<
-      %\set Staff.midiInstrument = "oboe"
       \new Voice = "contramelody" \relative do' {
         \set Score.timing = ##f
         %\tempo "Adagio" 4 = 70
@@ -110,7 +107,6 @@ harmony_stanza = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -139,7 +135,6 @@ harmony_stanza_antifona = \new ChordNames {
   <<
     %\harmony_stanza_antifona
     \new Staff <<
-      %\set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \set Score.timing = ##f
         %\tempo "Adagio" 4 = 70
@@ -159,7 +154,6 @@ harmony_stanza_antifona = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -190,7 +184,6 @@ harmony_stanza_estrofa = \new ChordNames {
   <<
     %\harmony_stanza_estrofa
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \set Score.timing = ##f
         %\tempo "Adagio" 4 = 70
@@ -218,7 +211,6 @@ harmony_stanza_estrofa = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -239,7 +231,6 @@ harmony_stanza_estrofa = \new ChordNames {
   <<
     %\harmony_stanza_estrofa
     \new Staff <<
-      %\set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \set Score.timing = ##f
         %\tempo "Adagio" 4 = 70
@@ -267,7 +258,6 @@ harmony_stanza_estrofa = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -288,7 +278,6 @@ harmony_stanza_estrofa = \new ChordNames {
   <<
     %\harmony_stanza_estrofa
     \new Staff <<
-      %\set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \set Score.timing = ##f
         %\tempo "Adagio" 4 = 70
@@ -316,7 +305,6 @@ harmony_stanza_estrofa = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -332,7 +320,7 @@ harmony_stanza_estrofa = \new ChordNames {
   }
 }
 
-% --- Ciclo B
+% --- Ciclo C
 % --- Harmony
 harmony_stanza_b = \new ChordNames {
   \chordmode {
@@ -344,9 +332,8 @@ harmony_stanza_b = \new ChordNames {
 % --- Antiphon
 \score {
   <<
-    %\harmony_stanza_b
+    %\harmony_stanza_c
     \new Staff <<
-      %\set Staff.midiInstrument = "clarinet"
       \new Voice = "melody" \relative do' {
         \set Score.timing = ##f
         %\tempo "Adagio" 4 = 70
@@ -364,9 +351,8 @@ harmony_stanza_b = \new ChordNames {
     >>
   >>
   \header {
-    piece = \markup { \smallCaps "Ciclo B" - \italic \small "Salmo 92, 1ab. 1c-2. 5 (R.: cf. 1a)" }
+    piece = \markup { \smallCaps "Ciclo C" - \italic \small "Salmo 121, 1-2. 4-5 (R.: cf. 1)" }
   }
-  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -387,7 +373,6 @@ harmony_stanza_b = \new ChordNames {
   \new StaffGroup = "Antifona" <<
     %\harmony_stanza
     \new Staff <<
-      %\set Staff.midiInstrument = "clarinet"
       \new Voice = "melody" \relative do' {
         \set Score.timing = ##f
         %\tempo "Adagio" 4 = 70
@@ -403,7 +388,6 @@ harmony_stanza_b = \new ChordNames {
       }
     >>
     \new Staff <<
-      %\set Staff.midiInstrument = "oboe"
       \new Voice = "contramelody" \relative do' {
         \set Score.timing = ##f
         %\tempo "Adagio" 4 = 70
@@ -419,7 +403,6 @@ harmony_stanza_b = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -439,7 +422,6 @@ harmony_stanza_b = \new ChordNames {
   <<
     %\harmony_stanza_antifona
     \new Staff <<
-      %\set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \set Score.timing = ##f
         %\tempo "Adagio" 4 = 70
@@ -459,7 +441,6 @@ harmony_stanza_b = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -479,7 +460,6 @@ harmony_stanza_b = \new ChordNames {
   <<
     %\harmony_stanza_estrofa
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \set Score.timing = ##f
         %\tempo "Adagio" 4 = 70
@@ -504,7 +484,6 @@ harmony_stanza_b = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -524,7 +503,6 @@ harmony_stanza_b = \new ChordNames {
   <<
     %\harmony_stanza_estrofa
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \set Score.timing = ##f
         %\tempo "Adagio" 4 = 70
@@ -548,7 +526,6 @@ harmony_stanza_b = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -569,7 +546,6 @@ harmony_stanza_b = \new ChordNames {
   <<
     %\harmony_stanza_b
     \new Staff <<
-      %\set Staff.midiInstrument = "clarinet"
       \new Voice = "melody" \relative do' {
         \set Score.timing = ##f
         %\tempo "Adagio" 4 = 70
@@ -588,7 +564,6 @@ harmony_stanza_b = \new ChordNames {
   \header {
     piece = \markup { \smallCaps "Ciclo C" - \italic \small "Salmo 121, 1-2. 4-5 (R.: cf. 1)" }
   }
-  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -609,7 +584,6 @@ harmony_stanza_b = \new ChordNames {
   \new StaffGroup = "Antifona" <<
     %\harmony_stanza
     \new Staff <<
-      %\set Staff.midiInstrument = "clarinet"
       \new Voice = "melody" \relative do' {
         \set Score.timing = ##f
         %\tempo "Adagio" 4 = 70
@@ -625,7 +599,6 @@ harmony_stanza_b = \new ChordNames {
       }
     >>
     \new Staff <<
-      %\set Staff.midiInstrument = "oboe"
       \new Voice = "contramelody" \relative do' {
         \set Score.timing = ##f
         %\tempo "Adagio" 4 = 70
@@ -641,7 +614,6 @@ harmony_stanza_b = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -661,7 +633,6 @@ harmony_stanza_b = \new ChordNames {
   <<
     %\harmony_stanza_estrofa
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \set Score.timing = ##f
         %\tempo "Adagio" 4 = 70
@@ -689,7 +660,6 @@ harmony_stanza_b = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     ragged-right = ##f
     \context {
@@ -709,7 +679,6 @@ harmony_stanza_b = \new ChordNames {
   <<
     %\harmony_stanza_estrofa
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \set Score.timing = ##f
         %\tempo "Adagio" 4 = 70
@@ -745,7 +714,6 @@ harmony_stanza_b = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     ragged-right = ##f
     \context {

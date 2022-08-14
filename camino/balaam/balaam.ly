@@ -1,83 +1,57 @@
-% ****************************************************************
-%	Balaam - Flauta
-%	by serach.sam@
-% ****************************************************************
+% Balaam - Flauta
+% by serachsam
 \language "espanol"
-\version "2.23.2"
+\version "2.23.10"
 
-%#(set-global-staff-size 17)
+% --- Global parameters
+%particle = 0
+%jump = \break
+%time = 4
 
-\markup { \fill-line { \center-column { \fontsize #5 "Balaam" \fontsize #3 "Números 23, 7 - 24" } } }
-\markup { \fill-line { \fontsize #2 \smallCaps " " \fontsize #2 "Kiko Argüello"  } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
+% --- Includes
+\include "global.ily"
+\include "harmony.ily"
+\include "instrument.ily"
+% \include "metronome.ily"
+
+% --- Global size
+%#(set-global-staff-size \size)
+
+% --- Header
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  title = \markup{\fontsize #2 \medium \smallCaps \title}
+  subtitle = \markup{\medium \subtitle}
+  subsubtitle = \markup{\medium \subsubtitle}
+  composer = \autor
+  arranger = \markup {\right-column { \arranger \other}}
+  tagline = ##f
   breakbefore = ##t
 }
 
-% --- Parametro globales
-global = {
-  \tempo "Andante" 4 = 60
-  \key mi \minor
-  \time 4/4
-  s1*10
-  \bar "|."
-}
+% --- Music
 
-melodia = \relative do' {
-  % Type notes here
-  mi16 re mi8 sol16 fas sol8 si16 la si8~ si4 	| % 1
-  re,16 do re8 fas16 mi fas8 la16 sol la8~ la4	| % 2
-  si16^\markup{ \bold \italic "rit." } la sol fas mi2 r4 | % 3
-  \textLengthOn
-  s1_\markup { \small "De Aram me ha hecho venir..." }	| %4
-  \textLengthOff
-  re'4 do si la 					| % 5
-  sol4 fas2.					| % 6
-  \textLengthOn
-  s4_\markup { \small "...Balaq,..." } mi2 s4_\markup { \small "...el rey de Moab,..." } | %7
-  \textLengthOff
-  re2
-  \textLengthOn
-  s2_\markup { \small "...desde los montes de Oriente..." } | %8
-  \textLengthOff
-  si'4 la16 si la8 sol4 fas16 sol fas8		| % 9
-  \textLengthOn
-  mi4 s8_\markup { \small "...“Ven y maldice a Jacob;..." } mi2 s8_\markup { \small "...el rey de Moab,..." } | %7
-  \textLengthOff
-}
+% --- Harmony
 
-armonia = \new ChordNames {
-  \set chordChanges = ##t
-  \italianChords
-  \chordmode {
-    mi1:m re1
-    re2 mi2:m
-
-  }
-}
-
+% --- Sheet
 \score {
   <<
-    \armonia
-    \new Staff {
+    \harmonies
+    \new Staff = "main" {
       <<
-        %\set Staff.midiInstrument = "recorder"
-        \global
-        \melodia
+        \set Staff.midiInstrument = #"oboe"
+        %\set Staff.midiMaximumVolume = #1.5
+        <<
+          \new Voice = "instrument" { << \global \instrument >> }
+        >>
       >>
     }
   >>
-  \midi {}
   \layout {}
+  \midi {}
 }
 
+% --- Paper
 \paper {
-  #(set-paper-size "letter")
+  #(set-default-paper-size "letter")
+  %page-breaking = #ly:page-turn-breaking
 }
-
-%{
-convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
-Aplicando la conversión: 2.19.80
-%}

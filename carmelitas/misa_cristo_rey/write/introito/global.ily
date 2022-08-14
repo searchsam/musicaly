@@ -1,7 +1,9 @@
 
 title = "Principe de los Siglos"
 subtitle = "Misa Cristo Rey"
-subsubtitle = "Introito - Himno de Visperas Solemnidad Cristo Rey del Universo"
+subsubtitle = "Introito"
+poet =  "Himno del Brevario Romano a la"
+plus = "Solemnidad Cristo Rey del Universo"
 autor = "Linda Martínez"
 arranger = "Samuel Gutiérrez"
 other = ""

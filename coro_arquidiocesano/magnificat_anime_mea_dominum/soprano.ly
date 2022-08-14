@@ -19,12 +19,12 @@ pulse = 4
 
 % --- Header
 \header {
-  title = \markup{\fontsize #2 \medium \smallCaps \title}
+  title = \markup{\medium \smallCaps \title}
   subtitle = \markup{\medium \subtitle}
   subsubtitle = \markup{\medium \subsubtitle}
-  poet = \markup {\caps "soprano"}
   composer = \autor
-  arranger = \markup {\right-column { \arranger }}
+  poet = \markup{\caps "soprano i"}
+  arranger = \markup {\right-column { \arranger \other}}
   tagline = ##f
   breakbefore = ##t
 }

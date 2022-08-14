@@ -15,11 +15,11 @@ pulse = 4
 \include "metronome.ily"
 
 % --- Global size
-%#(set-global-staff-size 27)
+#(set-global-staff-size 27)
 
 % --- Header
 \header {
-  title = \markup{\fontsize #2 \medium \smallCaps \title}
+  title = \markup{\medium \smallCaps \title}
   subtitle = \markup{\medium \subtitle}
   subsubtitle = \markup{\medium \subsubtitle}
   poet = \markup {\caps "soprano"}

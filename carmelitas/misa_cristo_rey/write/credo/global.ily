@@ -1,7 +1,7 @@
 
 title = "Creo en Dios"
 subtitle = "Misa Cristo Rey"
-subsubtitle = "Credo"
+subsubtitle = "Credo Apostolico"
 autor = "Linda Martínez"
 arranger = "Samuel Gutiérrez"
 other = ""

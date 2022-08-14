@@ -16,12 +16,13 @@ jump = \break
 % #(set-global-staff-size 20)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #2 \smallCaps \subtitle \fontsize #1 \subsubtitle } } }
-\markup { \fill-line { \fontsize #2 "SOPRANO" \right-column { \fontsize #2 \autor } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 \arranger } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 \other } } }
 \header {
-  dedication = \dedication
+  title = \markup{\smallCaps \title}
+  subtitle = \markup{\medium \subtitle}
+  subsubtitle = \markup{\medium \subsubtitle}
+  instrument = \markup{\caps "soprano"}
+  poet = \markup {\left-column {\poet \plus}}
+  composer = \markup {\right-column {\autor \arranger}}
   tagline = ##f
   breakbefore = ##t
 }
@@ -34,7 +35,7 @@ jump = \break
 \score {
   <<
     \new Staff { <<
-      \set Staff.midiInstrument = #"choir aahs"
+      \set Staff.midiInstrument = #"oboe"
       \new Voice = "soprano" { << \global \soprano_music >> }
       \new Lyrics \lyricsto "soprano" { \soprano_lyrics }
     >> }

@@ -20,12 +20,12 @@ jump = \break
 % #(set-global-staff-size 17.5)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps \title \fontsize #2 \smallCaps \subtitle \fontsize #1 \subsubtitle } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 \autor } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 \arranger } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 \other } } }
 \header {
-  dedication = \dedication
+  title = \markup{\smallCaps \title}
+  subtitle = \markup{\medium \subtitle}
+  subsubtitle = \markup{\medium \subsubtitle}
+  instrument = \markup{\caps "coro femenino"}
+  composer = \markup {\right-column {\autor \arranger}}
   tagline = ##f
   breakbefore = ##t
 }
@@ -40,19 +40,19 @@ jump = \break
     \new ChoirStaff { <<
       \new Staff { <<
         \set Staff.instrumentName = #"Sacerdote"
-        \set Staff.midiInstrument = #"choir aahs"
+        \set Staff.midiInstrument = #"bassoon"
         \new Voice = "solo" { <<\global \solo_music>> }
         \new Lyrics \lyricsto "solo" {\solo_lyrics}
       >> }
       \new Staff { <<
         \set Staff.instrumentName = #"Soprano"
-        \set Staff.midiInstrument = #"choir aahs"
+        \set Staff.midiInstrument = #"oboe"
         \new Voice = "soprano" { <<\global \soprano_music>> }
         \new Lyrics \lyricsto "soprano" {\soprano_lyrics}
       >> }
       \new Staff { <<
         \set Staff.instrumentName = #"Contralto"
-        \set Staff.midiInstrument = #"choir aahs"
+        \set Staff.midiInstrument = #"clarinet"
         \new Voice = "alto" {<<\global \alto_music>>}
         \new Lyrics \lyricsto "alto" {\alto_lyrics}
       >> }

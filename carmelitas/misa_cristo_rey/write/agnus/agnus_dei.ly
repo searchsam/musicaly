@@ -14,12 +14,13 @@
 % #(set-global-staff-size 20)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Cordero de Dios" \fontsize #2 "Misa Cristo Rey" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  title = \markup{\smallCaps "Cordero de Dios"}
+  subtitle = \markup{\medium "Misa Cristo Rey"}
+  subsubtitle = \markup{\medium "Agnus Dei"}
+  instrument = \markup{\caps "coro femenino"}
+  composer = \markup {\right-column {"Linda Martínez" "Samuel Gutiérrez"}}
+  tagline = ##f
   breakbefore = ##t
 }
 
@@ -42,7 +43,6 @@
       }
     }
   >>
-  \midi {}
   \layout {
     indent = 4.5 \cm
     line-width = 13\cm
@@ -142,7 +142,6 @@ altusLyricsPiedad = \lyricmode {
       \new Lyrics \lyricsto altusNotes { \altusLyricsPiedad }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -182,7 +181,6 @@ altusLyricsPiedad = \lyricmode {
       }
     }
   >>
-  \midi {}
   \layout {
     indent = 4.5 \cm
     line-width = 13\cm
@@ -209,7 +207,6 @@ altusLyricsPiedad = \lyricmode {
       \new Lyrics \lyricsto altusNotes { \altusLyricsPiedad }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -249,7 +246,6 @@ altusLyricsPiedad = \lyricmode {
       }
     }
   >>
-  \midi {}
   \layout {
     indent = 4.5 \cm
     line-width = 13\cm
@@ -349,7 +345,6 @@ altusLyricsPaz = \lyricmode {
       \new Lyrics \lyricsto altusNotes { \altusLyricsPaz }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Score

@@ -7,14 +7,7 @@ harmonies = \new ChordNames {
     re2:m |
     sol2:m |
     re2:m |
-    s2 |
-    s2 |
-    sol2:m |
     re2:m |
-    la2:m |
-    sol2:m |
-    re2:m |
-    la2:7 |
     re2:m |
     sol2:m |
     re2:m |
@@ -23,7 +16,14 @@ harmonies = \new ChordNames {
     re2:m |
     la2:7 |
     re2:m |
-    s2 |
+    sol2:m |
+    re2:m |
+    la2:m |
+    sol2:m |
+    re2:m |
+    la2:7 |
+    re2:m |
+    re2:m |
     la2:m |
     sib2 |
     re2:m |
@@ -38,13 +38,6 @@ harmonies = \new ChordNames {
     re2:m |
     la2:7 |
     re2:m |
-    s2 |
-    sol2:m |
-    re2:m |
-    la2:m |
-    sol2:m |
-    re2:m |
-    la2:7 |
     re2:m |
     sol2:m |
     re2:m |
@@ -53,7 +46,14 @@ harmonies = \new ChordNames {
     re2:m |
     la2:7 |
     re2:m |
-    s2 |
+    sol2:m |
+    re2:m |
+    la2:m |
+    sol2:m |
+    re2:m |
+    la2:7 |
+    re2:m |
+    re2:m |
     la2:m |
     sib2 |
     re2:m |
@@ -68,13 +68,6 @@ harmonies = \new ChordNames {
     re2:m |
     la2:7 |
     re2:m |
-    s2 |
-    sol2:m |
-    re2:m |
-    la2:m |
-    sol2:m |
-    re2:m |
-    la2:7 |
     re2:m |
     sol2:m |
     re2:m |
@@ -83,7 +76,14 @@ harmonies = \new ChordNames {
     re2:m |
     la2:7 |
     re2:m |
-    s2 |
+    sol2:m |
+    re2:m |
+    la2:m |
+    sol2:m |
+    re2:m |
+    la2:7 |
+    re2:m |
+    re2:m |
     la2:m |
     sib2 |
     re2:m |
@@ -98,13 +98,6 @@ harmonies = \new ChordNames {
     re2:m |
     la2:7 |
     re2:m |
-    s2 |
-    sol2:m |
-    re2:m |
-    la2:m |
-    sol2:m |
-    re2:m |
-    la2:7 |
     re2:m |
     sol2:m |
     re2:m |
@@ -113,7 +106,14 @@ harmonies = \new ChordNames {
     re2:m |
     la2:7 |
     re2:m |
-    s2 |
+    sol2:m |
+    re2:m |
+    la2:m |
+    sol2:m |
+    re2:m |
+    la2:7 |
+    re2:m |
+    re2:m |
     la2:m |
     sib2 |
     re2:m |
@@ -128,7 +128,7 @@ harmonies = \new ChordNames {
     re2:m |
     la2:7 |
     re2:m |
-    s2 |
+    re2:m |
     sol2:m |
     re2:m |
     la2:m |

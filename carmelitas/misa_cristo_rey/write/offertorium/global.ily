@@ -1,7 +1,9 @@
 
 title = "Sagrario del Altar"
 subtitle = "Misa Cristo Rey"
-subsubtitle = "Ofertorium - Oración de Teresa del Niño Jesús al Santisimo Sacramento"
+subsubtitle = "Ofertorium"
+poet = "Oración al Santisimo Sacramento"
+plus = "de Santa Teresa del Niño Jesús"
 autor = "Linda Martínez"
 arranger = "Samuel Gutiérrez"
 other = ""

@@ -19,12 +19,13 @@ jump = \break
 % #(set-global-staff-size 19.8)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps \title \fontsize #2 \smallCaps \subtitle \fontsize #1 \subsubtitle_b } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 \autor } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 \arranger } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 \other } } }
 \header {
-  dedication = \dedication
+  title = \markup{\smallCaps \title_b}
+  subtitle = \markup{\medium \subtitle}
+  subsubtitle = \markup{\medium \subsubtitle}
+  instrument = \markup{\caps "coro femenino"}
+  poet = \markup{\left-column{\poet_b \plus}}
+  composer = \markup{\right-column {\autor \arranger}}
   tagline = ##f
   breakbefore = ##t
 }
@@ -39,13 +40,13 @@ jump = \break
     \new ChoirStaff { <<
       \new Staff { <<
         \set Staff.instrumentName = #"Soprano"
-        \set Staff.midiInstrument = #"choir aahs"
+        \set Staff.midiInstrument = #"oboe"
         \new Voice = "soprano" { <<\global_b \soprano_music_b>> }
         \new Lyrics \lyricsto "soprano" {\soprano_lyrics_b}
       >> }
       \new Staff { <<
         \set Staff.instrumentName = #"Contralto"
-        \set Staff.midiInstrument = #"choir aahs"
+        \set Staff.midiInstrument = #"clarinet"
         \new Voice = "alto" {<<\global_b \alto_music_b>>}
         \new Lyrics \lyricsto "alto" {\alto_lyrics_b}
       >> }

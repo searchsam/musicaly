@@ -11,12 +11,13 @@
 %#(set-global-staff-size 16.4)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Señor ten piedad" \fontsize #2 "Misa Cristo Rey" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  title = \markup{\smallCaps "Señor ten piedad"}
+  subtitle = \markup{\medium "Misa Cristo Rey"}
+  subsubtitle = \markup{\medium "Kyrie Eleison"}
+  instrument = \markup{\caps "coro femenino"}
+  composer = \markup{\right-column {"Linda Martínez" "Samuel Gutiérrez"}}
+  tagline = ##f
   breakbefore = ##t
 }
 

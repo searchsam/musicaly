@@ -13,17 +13,18 @@
 % #(set-global-staff-size 19)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Comunión" \fontsize #2 "Misa de Cristo Rey" "Cristo forma un todo - Himno a María Madre de la Iglesia"} } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  title = \markup{\smallCaps "Comunión"}
+  subtitle = \markup{\medium "Misa de Cristo Rey"}
+  subsubtitle = \markup{\medium "Cristo forma un todo"}
+  instrument = \markup{\caps "coro femenino"}
+  poet = \markup {\left-column {"Himno del Brevario Romano a la" "Memoria María, Madre de la Iglasia"}}
+  composer = \markup {\right-column {"Linda Martínez" "Samuel Gutiérrez"}}
+  tagline = ##f
   breakbefore = ##t
 }
 
 % --- Music
-
 
 % --- Harmony
 harmony = \new ChordNames {
@@ -45,7 +46,6 @@ harmony = \new ChordNames {
   \new StaffGroup = "Estrofa" <<
     %\harmony
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \tempo 4 = 70
         \key re \minor
@@ -69,7 +69,6 @@ harmony = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Staff
@@ -81,7 +80,7 @@ harmony = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Mezzosoprano" }
+    piece = \markup { \bold "Mezzosoprano" }
   }
 }
 
@@ -105,7 +104,6 @@ harmony_stanza = \new ChordNames {
   \new StaffGroup = "Antifona" <<
     %\harmony_stanza
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do'' {
         \tempo 4 = 70
         \key re \minor
@@ -127,7 +125,6 @@ harmony_stanza = \new ChordNames {
       }
     >>
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "contramelody" \relative do' {
         \tempo 4 = 70
         \key re \minor
@@ -149,7 +146,6 @@ harmony_stanza = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Staff
@@ -161,7 +157,7 @@ harmony_stanza = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Tutti" }
+    piece = \markup { \bold "Tutti" }
   }
 }
 
@@ -169,7 +165,6 @@ harmony_stanza = \new ChordNames {
   \new StaffGroup = "Estrofa" <<
     %\harmony
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \tempo 4 = 70
         \key re \minor
@@ -191,7 +186,6 @@ harmony_stanza = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Staff
@@ -203,7 +197,7 @@ harmony_stanza = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Mezzosoprano" }
+    piece = \markup { \bold "Mezzosoprano" }
   }
 }
 
@@ -211,7 +205,6 @@ harmony_stanza = \new ChordNames {
   \new StaffGroup = "Antifona" <<
     %\harmony_stanza
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do'' {
         \tempo 4 = 70
         \key re \minor
@@ -233,7 +226,6 @@ harmony_stanza = \new ChordNames {
       }
     >>
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "contramelody" \relative do' {
         \tempo 4 = 70
         \key re \minor
@@ -255,7 +247,6 @@ harmony_stanza = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Staff
@@ -267,7 +258,7 @@ harmony_stanza = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Tutti" }
+    piece = \markup { \bold "Tutti" }
   }
 }
 
@@ -285,7 +276,6 @@ harmony_stanza = \new ChordNames {
       A -- mén.
     }
   >>
-  \midi {}
   \layout {
     \context {
       \Staff
@@ -297,7 +287,7 @@ harmony_stanza = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Tutti" }
+    piece = \markup { \bold "Tutti" }
   }
 }
 

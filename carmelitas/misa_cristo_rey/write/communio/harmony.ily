@@ -9,7 +9,7 @@ harmonies = \new ChordNames {
     do2 sib |
     la1:7 |
     re1:m |
-    s2 do2 |
+    re2:m do2 |
     sib2 la2:m |
     sol2:m fa2 |
     sib2 la2 |
@@ -17,7 +17,7 @@ harmonies = \new ChordNames {
     fa2 sol2:m |
     re2:m sol2:m |
     la2:7 re2:m |
-    s2 do2 |
+    re2:m do2 |
     sib2 la2:m |
     sol2:m fa2 |
     sib2 la2 |
@@ -25,7 +25,7 @@ harmonies = \new ChordNames {
     fa2 sol2:m |
     re2:m sol2:m |
     la2:7 re2:m |
-    s2 do2 |
+    re2:m do2 |
     sib2 la2:m |
     sol2:m fa2 |
     sib2 la2 |
@@ -33,7 +33,7 @@ harmonies = \new ChordNames {
     fa2 sol2:m |
     re2:m sol2:m |
     la2:7 re2:m |
-    s2 do2 |
+    re2:m do2 |
     sib2 la2:m |
     sol2:m fa2 |
     sib2 la2 |

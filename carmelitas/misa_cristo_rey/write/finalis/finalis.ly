@@ -14,12 +14,14 @@
 
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Final" \fontsize #2 "Misa de Cristo Rey" "Canto de Amor - Salmo 45 (44)"} } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" \small "(Septiembre 2020)" } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  title = \markup{\smallCaps "Final"}
+  subtitle = \markup{\medium "Misa de Cristo Rey"}
+  subsubtitle = \markup{\medium "Canto de Amor"}
+  instrument = \markup{\caps "coro femenino"}
+  poet = \markup{\left-column{"Salmo 45 (44)"}}
+  composer = \markup{\right-column {"Linda Martínez" "Samuel Gutiérrez"}}
+  tagline = ##f
   breakbefore = ##t
 }
 
@@ -69,7 +71,6 @@ harmony_stanza = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -77,7 +78,7 @@ harmony_stanza = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Sopra" }
+    piece = \markup { \bold "Sopra" }
   }
 }
 
@@ -125,7 +126,6 @@ harmony = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -133,7 +133,7 @@ harmony = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Altus" }
+    piece = \markup { \bold "Altus" }
   }
 }
 
@@ -169,7 +169,6 @@ harmony = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -177,7 +176,7 @@ harmony = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Sopra" }
+    piece = \markup { \bold "Sopra" }
   }
 }
 
@@ -213,7 +212,6 @@ harmony = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -221,7 +219,7 @@ harmony = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Altus" }
+    piece = \markup { \bold "Altus" }
   }
 }
 
@@ -257,7 +255,6 @@ harmony = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -265,7 +262,7 @@ harmony = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Sopra" }
+    piece = \markup { \bold "Sopra" }
   }
 }
 
@@ -301,7 +298,6 @@ harmony = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -309,7 +305,7 @@ harmony = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Altus" }
+    piece = \markup { \bold "Altus" }
   }
 }
 
@@ -345,7 +341,6 @@ harmony = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -353,7 +348,7 @@ harmony = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Sopra" }
+    piece = \markup { \bold "Sopra" }
   }
 }
 
@@ -389,7 +384,6 @@ harmony = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -397,7 +391,7 @@ harmony = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Altus" }
+    piece = \markup { \bold "Altus" }
   }
 }
 
@@ -433,7 +427,6 @@ harmony = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -441,7 +434,7 @@ harmony = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Sopra" }
+    piece = \markup { \bold "Sopra" }
   }
 }
 

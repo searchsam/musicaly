@@ -1,7 +1,9 @@
 
-title = "Melodia Responsorial"
+title_a = "El Señor en mi pastor"
 subtitle = "Misa Cristo Rey"
-subsubtitle_a = "Graduale - Salmo Responsorial Ciclo A Solemnidad Cristo Rey del Universo"
+subsubtitle = "Graduale - Salmo Responsorial"
+poet_a = "Ciclo A Salmo 22, 1-2a. 2b-3. 5-6 (R.: cf. 1)"
+plus = "Domingo XXXIV del Tiempo Ordinario"
 autor = "Linda Martínez"
 arranger = "Samuel Gutiérrez"
 other = ""
@@ -37,7 +39,8 @@ global_a = {
   \bar "|." % 60
 }
 
-subsubtitle_b = "Graduale - Salmo Responsorial Ciclo B Solemnidad Cristo Rey del Universo"
+title_b = "El Señor reina"
+poet_b = "Ciclo B Salmo 92, 1ab. 1c-2. 5 (R.: cf. 1a)"
 
 global_b = {
   \tempo "Adagio" 4 = 70
@@ -63,7 +66,8 @@ global_b = {
   \bar "|." % 40
 }
 
-subsubtitle_c = "Graduale - Salmo Responsorial Ciclo C Solemnidad Cristo Rey del Universo"
+title_c = "Vamos alegres"
+poet_c = "Ciclo C Salmo 121, 1-2. 4-5 (R.: cf. 1)"
 
 global_c = {
   \tempo "Adagio" 4 = 70

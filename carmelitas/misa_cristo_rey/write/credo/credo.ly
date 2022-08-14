@@ -13,12 +13,13 @@
 %#(set-global-staff-size 19)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Credo" \fontsize #2 "Misa Cristo Rey" "Simbolo Apostolico"} } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Linda Martínez" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  title = \markup{\smallCaps "Credo"}
+  subtitle = \markup{\medium "Misa Cristo Rey"}
+  subsubtitle = \markup{\medium "Simbolo Apostolico"}
+  instrument = \markup{\caps "coro femenino"}
+  composer = \markup {\right-column {"Linda Martínez" "Samuel Gutiérrez"}}
+  tagline = ##f
   breakbefore = ##t
 }
 
@@ -46,7 +47,6 @@
     line-width = 17\cm
     ragged-right = ##f
   }
-  \midi {}
 }
 
 globalPadre = {
@@ -174,7 +174,6 @@ altusLyricsPadre = \lyricmode {
     line-width = 17\cm
     ragged-right = ##f
   }
-  \midi {}
 }
 
 globalHijo = {
@@ -292,7 +291,6 @@ altusLyricsHijo = \lyricmode {
 \score{
   <<
     \new Voice = "invocacion" {
-      %\set Staff.midiInstrument = #"choir aahs"
       \override Staff.TimeSignature.stencil = #'()
       \override Stem.transparent = ##t
       \set Score.timing = ##f
@@ -333,7 +331,6 @@ altusLyricsHijo = \lyricmode {
     %line-width = 17\cm
     ragged-right = ##f
   }
-  \midi {}
 }
 
 % --- Invocation #3
@@ -360,7 +357,6 @@ altusLyricsHijo = \lyricmode {
     line-width = 17\cm
     ragged-right = ##f
   }
-  \midi {}
 }
 
 globalEspiritu = {

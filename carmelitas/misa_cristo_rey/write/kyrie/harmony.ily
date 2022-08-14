@@ -5,41 +5,41 @@ harmonies = \new ChordNames {
   \chordmode {
     \italianChords
 
-    R1*4 |
+    s1*4 |
     re1:m |
     do2 fa2 |
-    s1 |
+    fa1 |
     re1:m |
-    s2. do4 |
-    s2 re2:m |
-    s1 |
-    s2 do2 |
+    re2.:m do4 |
+    do2 re2:m |
     re1:m |
-    s1 |
+    re2:m do2 |
+    re1:m |
+    re1:m |
     do4 re2.:m |
     re1:m |
     do2 fa2 |
-    s1 |
+    fa1 |
     re1:m |
-    s1 |
-    s2 do2 |
-    s4 re2.:m |
-    s1 |
-    s2 do2 |
     re1:m |
-    s1 |
+    re2:m do2 |
+    do4 re2.:m |
+    re1:m |
+    re2:m do2 |
+    re1:m |
+    re1:m |
     do4 re2.:m |
     re1:m |
     do2 fa2 |
-    s1 |
+    fa1 |
     re1:m |
-    s1 |
-    s4 do2. |
     re1:m |
-    s1 |
-    s2 do2 |
+    re4:m do2. |
     re1:m |
-    s1 |
+    re1:m |
+    re2:m do2 |
+    re1:m |
+    re1:m |
     do4 re2.:m |
     do1 |
     re1:m |

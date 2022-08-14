@@ -13,13 +13,14 @@
 %#(set-global-staff-size 19)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Ofertorio" \fontsize #2 "Misa de Cristo Rey" "Sagrario del Altar"} } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Letra: Teresa del Niño Jesús O.C.D." } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Música: Linda Martínez" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Samuel Gutiérrez" } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  title = \markup{\smallCaps "Ofertorio"}
+  subtitle = \markup{\medium "Misa de Cristo Rey"}
+  subsubtitle = \markup{\medium "Sagrario del Altar"}
+  instrument = \markup{\caps "coro femenino"}
+  poet = \markup{\left-column{"Al amor de los amores, oracion" "de Santa Teresa del Niño Jesús O.C.D."}}
+  composer = \markup{\right-column {"Samuel Gutiérrez" "Linda Martínez"}}
+  tagline = ##f
   breakbefore = ##t
 }
 
@@ -29,7 +30,7 @@
 harmony_stanza = \new ChordNames {
   \chordmode {
     \italianChords
-    R4
+    re4:m
     re2:m sib4 sol la1
     fa2 la4 sib4 do1
     re2:m sol2 sib2 la2
@@ -41,7 +42,6 @@ harmony_stanza = \new ChordNames {
   <<
     \harmony_stanza
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \tempo 4 = 60
         \key re \minor
@@ -61,7 +61,6 @@ harmony_stanza = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -69,7 +68,7 @@ harmony_stanza = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Estribillo" }
+    piece = \markup { \bold "Estribillo" }
   }
 }
 
@@ -78,7 +77,6 @@ harmony_stanza = \new ChordNames {
   \new PianoStaff = "Antifona" <<
     %\harmony_stanza
     \new Staff <<
-      %\set Staff.midiInstrument = "violin"
       \new Voice = "melody" \relative do' {
         \tempo 4 = 60
         \key re \minor
@@ -98,7 +96,6 @@ harmony_stanza = \new ChordNames {
       }
     >>
     \new Staff <<
-      %\set Staff.midiInstrument = "oboe"
       \new Voice = "contramelody" \relative do' {
         \tempo 4 = 60
         \key re \minor
@@ -118,7 +115,6 @@ harmony_stanza = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -126,7 +122,7 @@ harmony_stanza = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Estribillo" }
+    piece = \markup { \bold "Estribillo" }
   }
 }
 
@@ -146,7 +142,6 @@ harmony = \new ChordNames {
   \new PianoStaff = "Estrofa" <<
     %\harmony
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \tempo 4 = 60
         \key re \minor
@@ -168,7 +163,6 @@ harmony = \new ChordNames {
       }
     >>
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "contramelody" \relative do' {
         \tempo 4 = 60
         \key re \minor
@@ -190,7 +184,6 @@ harmony = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -198,7 +191,7 @@ harmony = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Estrofa I" }
+    piece = \markup { \bold "Estrofa I" }
   }
 }
 
@@ -207,7 +200,6 @@ harmony = \new ChordNames {
   \new PianoStaff = "Estrofa" <<
     %\harmony
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \tempo 4 = 60
         \key re \minor
@@ -229,7 +221,6 @@ harmony = \new ChordNames {
       }
     >>
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "contramelody" \relative do' {
         \tempo 4 = 60
         \key re \minor
@@ -251,7 +242,6 @@ harmony = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -259,7 +249,7 @@ harmony = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Estrofa II" }
+    piece = \markup { \bold "Estrofa II" }
   }
 }
 
@@ -268,7 +258,6 @@ harmony = \new ChordNames {
   \new PianoStaff = "Estrofa" <<
     %\harmony
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \tempo 4 = 60
         \key re \minor
@@ -290,7 +279,6 @@ harmony = \new ChordNames {
       }
     >>
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "contramelody" \relative do' {
         \tempo 4 = 60
         \key re \minor
@@ -312,7 +300,6 @@ harmony = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -320,7 +307,7 @@ harmony = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Estrofa III" }
+    piece = \markup { \bold "Estrofa III" }
   }
 }
 
@@ -329,7 +316,6 @@ harmony = \new ChordNames {
   \new PianoStaff = "Estrofa" <<
     %\harmony
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \tempo 4 = 60
         \key re \minor
@@ -351,7 +337,6 @@ harmony = \new ChordNames {
       }
     >>
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "contramelody" \relative do' {
         \tempo 4 = 60
         \key re \minor
@@ -373,7 +358,6 @@ harmony = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -381,7 +365,7 @@ harmony = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Estrofa IV" }
+    piece = \markup { \bold "Estrofa IV" }
   }
 }
 
@@ -390,7 +374,6 @@ harmony = \new ChordNames {
   \new PianoStaff = "Estrofa" <<
     %\harmony
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "melody" \relative do' {
         \tempo 4 = 60
         \key re \minor
@@ -412,7 +395,6 @@ harmony = \new ChordNames {
       }
     >>
     \new Staff <<
-      \set Staff.midiInstrument = "oboe"
       \new Voice = "contramelody" \relative do' {
         \tempo 4 = 60
         \key re \minor
@@ -434,7 +416,6 @@ harmony = \new ChordNames {
       }
     >>
   >>
-  \midi {}
   \layout {
     \context {
       \Score
@@ -442,7 +423,7 @@ harmony = \new ChordNames {
     }
   }
   \header {
-    piece = \markup { \smallCaps "Estrofa V" }
+    piece = \markup { \bold "Estrofa V" }
   }
 }
 

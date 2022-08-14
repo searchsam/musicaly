@@ -72,7 +72,7 @@ harmonies = \new ChordNames {
       sol2.:m |
       sib2. |
       sol2.:m |
-      sol4. fa4. |
+      sol4.:m fa4. |
       fa4. re4.:m |
       re2.:m |
       sib2. |

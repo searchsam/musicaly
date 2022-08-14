@@ -1,10 +1,12 @@
 
-title = "Madre de la Iglasia"
+title = "Cristo forma un todo"
 subtitle = "Misa Cristo Rey"
-subsubtitle = "Communio - Himno Memoria María, Madre de la Iglasia"
+subsubtitle = "Communio"
 autor = "Linda Martínez"
 arranger = "Samuel Gutiérrez"
 other = ""
+poet = "Himno del Brevario Romano a la"
+poet_plus = "Memoria María, Madre de la Iglasia"
 dedication = \markup { \small "" }
 papper = "letter"
 size = 20

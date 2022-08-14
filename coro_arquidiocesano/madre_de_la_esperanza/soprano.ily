@@ -1,59 +1,46 @@
-soprano = \relative do' {
+soprano = \relative do'' {
   \compressEmptyMeasures
   \dynamicUp
   
-  R1				| %1
-  re4 mi8 fa la4 sol		| %2
-  fa8 mi re fa mi4 mi		| %3
-  fa4 sol8 la do4 sib		| %4
-  la8 sol fa sol la4 la		| %5
-  re,4 la'8 sol sol fa mi re	| %6
-  mi8( fa) sol fa mi2		| %7
-  re1				| %8
-  R1*7 | %15
-  re4 mi8( fa) la4 sol		| %16
-  fa8 mi re fa mi2		| %17
-  fa4 sol8 la do4( sib)		| %18
-  la8 sol fa sol la2		| %19
-  re,4 la'8 sol sol( fa) mi( re)	| %20
-  mi8 fa sol fa mi2		| %21
-  re1				| %22
-  R1*7 | %29
-  re4 mi8( fa) la4 sol		| %30
-  fa8 mi re fa mi4 mi		| %31
-  fa4 sol8 la do4 sib		| %32
-  la8 sol fa sol la4 la		| %33
-  re,4 la'8 sol sol( fa) mi( re)	| %34
-  mi8 fa sol fa mi2		| %35
-  re1				| %36
-  R1*7 | %43
-  re4 mi8 fa la4 sol		| %44
-  fa8 mi re fa mi2		| %45
-  fa4 sol8 la do4 sib		| %46
-  la8 sol fa sol la4 la		| %47
-  re,4 la'8( sol) sol fa mi( re)	| %48
-  mi8 fa sol fa mi2		| %49
-  re1				| %50
-  do1				| %51
-  re1 \fermata			| %52
+  R1*12 |
+  mi2 res |
+  re2 dos |
+  do2 do |
+  si2 si |
+  la2 sol4( fas) |
+  mi2 sol( |
+  si2) \tuplet 3/2 {si4 si si} |
+  si4 si2. |
+  \tuplet 3/2 {mi4 mi mi} re4 do |
+  si4 si2 mi,4 |
+  fas8 fas4 la8 sols4 fas |
+  sols4 sols2~ |
+  sols2 r4 |
+  R2.*45 |
+  mi'8 mi mi4 mi8 mi |
+  sols4 res2 |
+  dos8 dos dos4 res8 mi |
+  si4 si2 |
+  mi,8 sols la si dos res |
+  mi4( si2) |
+  la8 la la si sols fas |
+  mi4 mi2 |
+  res'8 res res res mi fas |
+  mi4 mi2~ |
+  mi2.~ |
+  mi2.~ |
+  mi4. r |
 }
 
 soprano-lyrics = \lyricmode {
-  Ver -- gen y Ma -- dre, hi -- ja de tu hi -- jo,
-  hu -- mil -- de~y gran -- de co mo no~hay crea -- tu -- ra, 
-  tér -- mi -- no "fi" -- jo del e -- ter -- no con -- ci -- lio.
-
-  En tu vien -- tre se~en -- car -- no~el a -- mor,
-  por su ca -- lor hay e -- ter -- na paz,
-  por lo que es -- ta "flor" ha ger -- mi -- na -- do.
+  Rei -- na, pa -- tria, ma -- dre,~i -- gle -- sia,
+  que -- da -- te, tu pue -- blo te~im -- plo -- ra,
+  que -- da -- te con no -- so -- tros,
+  tu~hu -- mil -- de pue -- blo te~im -- plo -- ra.
   
-  Da -- ma, e -- res tan gran -- de~y tan dig -- na,
-  quien pi -- de gra -- cia y a ti no~a -- cu -- de,
-  va -- no an -- he -- lo, cual vo -- lar sin a -- las.
-  
-  En ti mi -- se -- ri -- cor -- dia,~en ti pie -- dad,
-  en ti mag -- ni -- fi -- cen -- cia,~en ti se u -- ne
-  cuan -- to de bon -- dad hay en las crea -- tu -- ras.
-  
-  A -- men.
+  De -- mos glo -- ria al Pa -- dre,
+  de -- mos glo -- ria al Hi -- jo
+  y~al Es -- pí -- ri -- tu de Dios,
+  que~es san -- to u -- no y tri -- no.
+  que~es san -- to u -- no y tri -- no.
 }
