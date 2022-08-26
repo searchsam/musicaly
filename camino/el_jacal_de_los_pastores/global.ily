@@ -10,8 +10,22 @@ size = 20
 
 global = {
   \tempo "Allegro" 4 = 120
-  \time 4/4
+  \time 2/2
   \key re \minor
-  s1*30
+  
+  s1*7 |
+  \bar "||"
+  s1*11 |
+  \repeat volta 2 {
+    s1*7
+    \alternative{
+      {s1} {s1}
+    }
+  }
+  s1*11
+  \repeat volta 2 {
+    s1*8
+  }
+  s1*5
   \bar "|."
 }

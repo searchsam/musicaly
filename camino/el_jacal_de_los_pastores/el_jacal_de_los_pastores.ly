@@ -20,7 +20,7 @@
 
 % --- Header
 \header {
-  title = \markup{\fontsize #2 \medium \smallCaps \title}
+  title = \markup{\medium \smallCaps \title}
   subtitle = \markup{\medium \subtitle}
   subsubtitle = \markup{\medium \subsubtitle}
   composer = \autor
@@ -37,14 +37,12 @@
 \score {
   <<
     \harmonies
-    \new Staff = "main" {
-      <<
+    \new Staff = "main" {<<
         %\set Staff.instrumentName = "Instrument"
         \set Staff.midiInstrument = #"oboe"
         %\set Staff.midiMaximumVolume = #1.5
         << \global \instrument >>
-      >>
-    }
+    >>}
   >>
   \layout {}
   \midi {}

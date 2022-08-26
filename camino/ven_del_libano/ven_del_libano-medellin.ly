@@ -36,15 +36,13 @@
 \score {
   <<
     \harmonies
-    \new Staff = "main" {
-      <<
-        \set Staff.midiInstrument = #"flute"
-        \set Staff.midiMaximumVolume = #1.2
+    \new Staff = "main" { <<
+        \set Staff.midiInstrument = #"oboe"
+        \set Staff.midiMaximumVolume = #1
         <<
           \new Voice = "instrument" { << \global \instrument >> }
         >>
-      >>
-    }
+    >> }
   >>
   \layout {}
   \midi {}

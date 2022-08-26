@@ -36,5 +36,180 @@ harmonies = \new ChordNames {
     fa2 sol2:m |
     sol1:m |
     fa2 sol2:m |
+    
+    sol2:m |
+    sol2:m |
+    sol2:m |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    
+    sib1 |
+    sib1 |
+    fa1 |
+    fa1 |
+    sib4 re2:m sol4:m |
+    fa2 sol2:m |
+    
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    
+    sib1 |
+    sib1 |
+    fa1 |
+    fa1 |
+    sib4 re2:m sol4:m |
+    fa2 sol2:m |
+    
+    fa4 sol4:m |
+    sol2:m |
+    sol2:m |
+    sol2:m |
+    fa4 sol4:m |
+    sol2:m |
+    sol2:m |
+    sol2:m |
+    
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    
+    sol2:m fa2 |
+    fa1 |
+    fa2 sol2:m |
+    sol1:m |
+    fa2 sol2:m |
+    sol1:m |
+    
+    sib1 |
+    sib1 |
+    fa1 |
+    fa1 |
+    sib4 re2:m sol4:m |
+    sol1:m |
+    
+    sol2:m fa2 |
+    fa1 |
+    fa2 sol2:m |
+    sol1:m |
+    sol1:m |
+    fa2 sol2:m |
+    sol1:m |
+    fa2 sol2:m |
+    sol1:m |
+    fa2 sol2:m |
+    sol1:m |
+    
+    fa4 sol4:m |
+    sol2:m |
+    fa4 sol4:m |
+    sol2:m |
+    fa4 sol4:m |
+    
+    sol2:m |
+    sol2:m |
+    sol2:m |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
+    sol2:m |
+    fa2 |
+    fa2 |
+    sol2:m |
   }
 }

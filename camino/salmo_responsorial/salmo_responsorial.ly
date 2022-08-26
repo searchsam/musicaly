@@ -15,12 +15,11 @@
 global = {  \tempo "Moderatto" 4 = 110 \clef treble \key fas \minor \time 4/4 s1*33 \bar "|." }
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Salmodia para el salmo responsorial" \fontsize #3 "XXII Domingo del Tiempo ordinario - Año A" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Arguello" } } }
-\markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  title = \markup{\medium \smallCaps "Salmodia para el salmo responsorial"}
+  composer = "Kiko Arguello"
+  arranger = \markup {\right-column { "Adaptación: Samuel Gutiérrez" }}
+  tagline = ##f
   breakbefore = ##t
 }
 
@@ -94,14 +93,13 @@ acordes = \new ChordNames {
 % --- Partitura
 \score {
   <<
-    \acordes
-    \new Staff {
+    \transpose fas re {\acordes}
+    \new Staff {<<
+      \set Staff.midiInstrument = #"violin"
       <<
-        \set Staff.midiInstrument = #"violin"
-        \global
-        \instrumento
+        \new Voice = "instrument" { \transpose fas re {<< \global \instrumento >>} }
       >>
-    }
+    >>}
   >>
   \midi {}
   \layout {}

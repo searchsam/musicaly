@@ -39,7 +39,7 @@
     \new Staff = "main" {
       <<
         \set Staff.midiInstrument = #"flute"
-        %\set Staff.midiMaximumVolume = #1.5
+        \set Staff.midiMaximumVolume = #1.5
         <<
           \new Voice = "instrument" { << \global \instrument >> }
         >>
