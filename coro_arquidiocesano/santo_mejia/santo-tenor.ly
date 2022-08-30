@@ -5,7 +5,7 @@
 \language "espanol"
 \version "2.23.2"
 
-#(set-global-staff-size 24)
+%#(set-global-staff-size 24)
 
 % --- Parametro globales
 global = {
@@ -16,11 +16,13 @@ global = {
   \bar "|."
 }
 
-\markup { \fill-line { \center-column { \fontsize #5 "Santo" \fontsize #2 \smallCaps "Himno Liturgico" \fontsize #1 "Para la Gloria del Señor" } } }
-\markup { \fill-line { "TENOR" \right-column { \fontsize #2 "Alejandro Mejia Pareda" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Versión Orquestal: Francisco Jarquín Vega" } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "" } } }
 \header {
+  title = \markup{\medium \smallCaps "Santo"}
+  subtitle = \markup{\medium "Himno Liturgico"}
+  subsubtitle = \markup{\medium "Misa Melodica"}
+  poet = \markup{\caps "tenor"}
+  composer = "Alejandro Mejia Pareda"
+  arranger = \markup {\right-column { "Versión Orquestal: Francisco Jarquín Vega"}}
   tagline = ##f
   breakbefore = ##t
 }
@@ -35,42 +37,54 @@ tenor = \relative do' {
   si4 si do do		| % 02
   re4 si r8 sol sol sol	| % 03
   sol4 sol8 sol la4 la	| % 04
-  la2 re,		| % 05
-  R1*4			| % 09
-  r4 re' re re		| % 10
+  la2 re		| \bar "||" \break
+  re4 re8 re re4 re |
+  re4 re r sol,8 sol |
+  sol4 la la do |
+  do2 si4 r | \break
+  \bar "||"
+  r4 re re re		| % 10
   r4 mi mi re8 re	| % 11
   re4 do do la		| % 12
-  re4( reb) do r		| % 13
+  re4( reb) do r		| \break
   r4 re re re		| % 14
   r4 mi mi re8 re	| % 15
-  re4 do do la		| % 16
-  re4( reb) do r		| % 17
-  R1*4			| % 18
+  sol,4 sol sol fas	| % 16
+  sol4 re'2 r4		| \break
+  \bar "||"
+  R1 | % 18
+  r2 r4 la8 sols |
+  la4. sol8 la4 sib |
+  la2. r4 | \break
+  \bar "||"
   r4 re re re		| % 19
   r4 mi mi re8 re	| % 20
   re4 do do la		| % 21
-  re4( reb) do r		| % 22
+  re4( reb) do r		| \break
   r4 re re re		| % 23
   r4 mi mi re8 re	| % 24
-  re4 do do la		| % 25
-  re4( reb) do r		| % 26
+  sol,4 sol sol fas	| % 16
+  sol4 re'2 r4		| % 17
 }
 
 % --- Letra
 letra = \lyricmode {
   San -- to, san -- to, san -- to, es el Se -- ñor Dios del u -- ni -- ver -- so.
+  Lle -- nos es -- tan el cie -- lo y la tie -- rra de su glo -- ria.
   Ho -- sa -- na, ho -- sa -- na, ha -- sa -- na en el cie -- lo.
   Ho -- sa -- na, ho -- sa -- na, ha -- sa -- na en el cie -- lo.
+  En el nom -- bre del Se -- ñor.
   Ho -- sa -- na, ho -- sa -- na, ha -- sa -- na en el cie -- lo.
   Ho -- sa -- na, ho -- sa -- na, ha -- sa -- na en el cie -- lo.
 }
 
 \score {
   <<
-    \new Staff <<
+    \new Staff {<<
+       \set Staff.midiInstrument = #"english horn"
         \new Voice = "voz" << \global \tenor >>
         \new Lyrics \lyricsto "voz" \letra
-    >>
+    >>}
   >>
   \midi {}
   \layout {}
