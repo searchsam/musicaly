@@ -3,7 +3,24 @@ instrument = \relative do'' {
   \dynamicUp
   
   <<
-    { r2 | r2 | }
+    { 
+      R2*2 | 
+      fas,2~ | %63
+      fas2 |
+      si2~ |
+      si2 |
+      si4 si |
+      la4 la |
+      sol4 fas4~ |
+      fas4 mi8 re |
+      mi2~ | %67
+      mi2~ | 
+      mi4 r | 
+      la2 | 
+      si2~ | 
+      si2~ | 
+      si2 |
+    }
     \new Staff \with {
       \remove "Time_signature_engraver"
       alignAboveContext = "main"
@@ -11,36 +28,30 @@ instrument = \relative do'' {
       \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 6) (padding . -10))
     }
     {
-      \set Staff.midiInstrument = #"cello"
+      \set Staff.midiInstrument = #"violin"
       \clef bass
+      \key si \minor
       si,,2~ |
+      si2~ |
+      si2~ |
+      si2~ |
+      si2~ |
+      si2~ |
+      si2~ |
+      si2~ |
+      si2~ |
+      si2 |
+      la2 |
+      la'8 mi la4~ |
+      la2 |
+      la,2 |
+      si2 |
+      re'8 dos si4~ |
       si2 |
     }
   >> %2
-  si'4\p dos | %3
-  re4 mi| %4
-  fas2 | %5 
-  fas4 sol | %6
-  fas4 mi~ | %7
-  mi4 si8 si |
-  dos2 | %9
-  fas4 mi4 | %11
-  re2 | %12
-  la'4 sol8 fas8 |
-  re2~ | %14
-  re4 mi4 |
-  re4 dos~ | %16
-  dos4 dos |
-  re4 mi~ | %19
-  mi4 re4 |
-  dos2~ | %20
-  dos2 | %23
-  si2~ | %22
-  si2 | %24
-  r2 | %27
-  r2 | %28
-  r2 | %28
-  r2 | %28
+
+  R2*4 | %27
   mi2 | %29
   r2 | %30
   r2 | %30
@@ -83,7 +94,7 @@ instrument = \relative do'' {
   fas2 | %62
   r2 | %63
   r4 \tuplet 3/2 {fas,8 sol las} | %63
-   si2 | %64
+  si2 | %64
   r2 | %65
   r2 | %66
   r4 la8. si16 | %67
@@ -125,4 +136,23 @@ instrument = \relative do'' {
   r2 |
   r4 fas8 sol |
   fas8 mi fas4 |
+  
+  r2 | %63
+  r4 \tuplet 3/2 {fas,8 sol las} | %63
+  si2 | %64
+  r2 | %65
+  r2 | %66
+  r4 la8. si16 | %67
+  dos8. re16 mi4~ | %69
+  mi4 r | %70
+  r2 |
+  r4 \tuplet 3/2 { fas8 mi re } | %71
+  fas2 | %73
+  
+  mi,4^\markup{\italic \bold "rit."} re |
+  mi2~ |
+  mi2 |
+  re4 dos |
+  si2~ |
+  si2 |
 }

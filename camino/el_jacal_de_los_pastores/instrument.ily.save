@@ -1,0 +1,93 @@
+instrument = \relative do'' {
+  \compressEmptyMeasures
+  \dynamicUp
+
+  R1^\markup { \small \italic Introducción } | %1
+    <<
+      { R1 }
+      \new Staff \with {
+      \remove "Time_signature_engraver"
+      alignAboveContext = "main"
+      \magnifyStaff #2/3
+      \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 6) (padding . -10))
+      } 	{
+        \key re \minor
+        \set Staff.midiInstrument = "acoustic guitar (steel)"
+        re4 dos sib la
+      }
+    >> | %2
+    fa'2. sol4 | %3
+    la2. sol4 | %4
+    fa2. mi4 | %5
+    re1 | %6
+    \bar "||"
+    \textLengthOn
+    s2_\markup {
+      \center-column {
+        \small "¡Que me bese con los besos de su boca!..."
+        \small "Si no lo sabes, ¡oh bella entre las bellas!,..."
+      }
+    } fa,2 | %8
+    \textLengthOff
+    mi4 re2. | %10
+    \textLengthOn
+    s2_\markup {
+      \center-column {
+        \small "...Mejores son que el vino tus amores;..."
+        \small "...sigue la senda de mis ovejas,..."
+      }
+    } la'2| %11
+    \textLengthOff
+    sols4 fa4 mi2 |%13
+    \textLengthOn
+    s2_\markup {
+      \center-column {
+        \small "...tu nombre es ungüento que se vierte,..."
+        \small "...y lleva por allí tus cabras..."
+      }
+    } la2 | %14
+    \textLengthOff
+    sols4 fa4 mi2 |%16
+    \textLengthOn
+    s2_\markup \center-column {
+      \small "por eso te aman las doncellas..."
+      \small "hasta el jacal de los pastores..."
+    } fa2(| %17
+    \textLengthOff
+    fa4) sols4 la2 | %18
+    \bar ".|:"
+    \textLengthOn
+    s1_\markup \center-column {
+      \small "Llevame en por de mi, salgamos,..."
+      \small "Hazme saber, amado de mi alma,..."
+    } |
+    \textLengthOff
+    re1 |%19
+    sib4 la2. | %20
+    \textLengthOn
+    s1_\markup \center-column {
+      \small "...llevame tras de ti, corramos,..."
+      \small "...donde apacientas el rebaño,..."
+    } |
+    \textLengthOff
+    dos1 |%21
+    sib4 la2. | %22
+    \textLengthOn
+    s4_\markup \center-column {
+      \small "...celebraremos tus amores mas que el vino,..."
+      \small "...para que yo no ande vagabunda..."
+    } la2 sols4 | | %23
+    \textLengthOff
+    \textLengthOn
+    la2 sols4_\markup \center-column {
+      \small "...con cuanta razon eres amado."
+      \small "detras de otros compañeros."
+    } s4 | %24
+    \textLengthOff
+    la2. sib4 | %25
+    dos4 re2. | %26
+    \bar ":|."
+    la'2. sol4 | %4
+    fa2. mi4 | %5
+    re1 | %6
+}

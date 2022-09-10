@@ -2,7 +2,7 @@ alto = \relative do' {
   \compressEmptyMeasures
   \dynamicUp
 
-  R2*39 | %39
+  R2*34 | %39
   si2~ | %40
   si2~ | %41
   si2 | %42
@@ -53,11 +53,11 @@ alto = \relative do' {
   fas2 | %79
   r4 r8 fas | %80
   sol8 sol4.~ | %81
-  sol4. si16 si | %82
-  si4 si~ | %83
-  si4. si8 | %84
-  las4 las~ | %85
-  las2 | %86
+  sol4. sol16 sol | %82
+  fas4 mi~ | %83
+  mi4. mi8 | %84
+  mi4 dos~ | %85
+  dos2 | %86
   r2 |
   r4 r8 fas | %87
   fas8 fas4.~ | %88
@@ -74,6 +74,18 @@ alto = \relative do' {
   fas2~ |
   fas4 r |
   r2 |
+  
+  r4 \tuplet 3/2 {fas8 fas fas} | %63
+  fas4. si16 si | %64
+  si8 si la la | %65
+  sol8( fas4.) | %66
+  mi16 re mi4.~ | %67
+  mi4. r8 | %68
+  r2 |
+  r4 la8 la | %69
+  si2~ | %70
+  si2 | %71
+  R2*7 |
 }
 
 
@@ -82,7 +94,8 @@ alto-lyrics = \lyricmode {
   Uh, uh, uh.
   ¡Ma -- rí -- a, tú has cre -- í -- do!
   
-  Y có -- mo es que la ma -- dre del Se -- ñor vie -- ne~a mí, vie -- ne~a mí
+  Y có -- mo es que la ma -- dre del Se -- ñor vie -- ne~a mí, 
+  vie -- ne~a mí
   
   Por -- que,~a -- pe -- nas he sen -- ti -- do tu voz,
   al -- go se~ha mo -- vi -- do den -- tro de mí,
@@ -90,4 +103,7 @@ alto-lyrics = \lyricmode {
   
   Ma -- rí -- a, ben -- di -- ta Ma -- rí -- a,
   tú~has creí -- o a la pa -- la -- bra del Se -- ñor.
+  
+  Y có -- mo es que la ma -- dre del Se -- ñor vie -- ne~a mí, 
+  vie -- ne~a mí
 }

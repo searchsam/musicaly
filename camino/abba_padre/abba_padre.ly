@@ -9,7 +9,7 @@
 
 \version "2.23.2"
 
-#(set-global-staff-size 23)
+%#(set-global-staff-size 23)
 
 \markup { \fill-line { \center-column { \fontsize #5 \smallCaps "Abbá Padre" \fontsize #2 "Romanos 8, 15-17"} } }
 \markup { \fill-line { \fontsize #2 "" \center-column { \fontsize #2 "Kiko Argüello" } } }
@@ -21,12 +21,12 @@
 }
 
 derecha = \relative c' {
-  \time 2/4 \tempo "Adagio" 4 = 80 <c e>2\mf | %1
+  \time 2/4 \tempo "Adagio" 4 = 50 <c e>2\mf | %1
   <e g>4_"Abba..." <e g> \fermata | %2
   <g b> <g b>\p\< \fermata | %3
   <c f> <c e>( | %4
   <c e>2)\f \fermata \bar "||" %5
-  \time 3/4 \tempo "Andante" 4 = 100 a4_"No hemos..." a8 b c d \bar "||" %6
+  \time 3/4 \tempo "Andante" 4 = 70 a4_"No hemos..." a8 b c d \bar "||" %6
   \time 4/4 e4 e2 b16 c d e | %7
   f4. d8 b4 f' | %8
   e e2. | %9
@@ -34,7 +34,7 @@ derecha = \relative c' {
   <e gis>1\f | %11
   <f a>8\p\< <f a> <f a> <f a> <f a> <f a> <g a> <f a> | %12
   <e gis>1\f \bar "||" | %13
-  \clef bass \time 2/4 \tempo "Allegretto" 4 = 120 r8 <a, c e>8[ r <a c e>] | %14
+  \clef bass \time 2/4 \tempo "Allegretto" 4 = 100 r8 <a, c e>8[ r <a c e>] | %14
   r8 <a c e>8[ r <a c e>] | %15
   r8_"Este mismo..." <a c e>8\mf[ r <a c e>] | %16
   r8 <a c e>8[ r <a c e>] | %17

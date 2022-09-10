@@ -2,7 +2,7 @@ soprano = \relative do' {
   \compressEmptyMeasures
   \dynamicUp
 
-  R2*22 | %24
+  R2*17 | %24
   r4 fas8 fas | %25
   fas2 | %26
   r4 r8 fas16 fas | %27
@@ -68,9 +68,9 @@ soprano = \relative do' {
   r2 | %78
   r2 | %79
   r2 | %79
-  r4 r8 si | %80
-  si8 si4.~ | %81
-  si4. si16 si | %82
+  r4 r8 fas | %80
+  sol8 sol4.~ | %81
+  sol4. si16 si | %82
   si4 si~ | %83
   si4. si8 | %84
   dos4 dos~ | %85
@@ -91,6 +91,18 @@ soprano = \relative do' {
   dos2~ |
   dos4 r |
   r2 |
+  
+  re2~ | %63
+  re2~ | %64
+  re2~ | %65
+  re2 | %66
+  r2 | %67
+  r4 la8. mi16 | %68
+  la2 | %69
+  r2 |
+  r4 re8 dos | %70
+  si4 r | %71
+  R2*7 | %72
 }
 
 soprano-lyrics = \lyricmode {
@@ -106,4 +118,6 @@ soprano-lyrics = \lyricmode {
   
   Ma -- rí -- a, ben -- di -- ta Ma -- rí -- a,
   tú~has creí -- o a la pa -- la -- bra del Se -- ñor.
+  
+  Uh. Vie -- ne~a mí. Vie -- ne~a mí.
 }

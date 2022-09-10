@@ -12,7 +12,7 @@ global = {
   \key si \minor
   \time 2/4
   \tempo "Andagio" 4 = 75
-  s2*22 | %22
+  s2*17 | %22
   \bar "||"
   s2*44
   \tempo "Andante" 4 = 85
@@ -23,5 +23,9 @@ global = {
   \repeat volta 2 {
     s2*15
   }
+  \repeat volta 2 {
+    s2*11
+  }
+  s2*6
   \bar "|."
 }

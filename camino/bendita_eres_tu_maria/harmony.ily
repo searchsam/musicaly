@@ -10,23 +10,20 @@ harmonies = \new ChordNames {
     si2:m |
     si2:m |
     si2:m |
-    si4:m la4 | 
+    si2:m |
+    si2:m |
+    si2:m |
+    si2:m |
+    la2 | 
     la2 |
     la2 |
     la2 |
-    re2 |
-    re2 |s
-    re2 |
-    re4 dos4 |
-    dos2 |
-    dos2 |
-    dos2 |
-    dos2 |
-    dos2 |
     si2:m |
     si2:m |
     si2:m |
     si2:m |
+    si2:m |
+
     si2:m |
     la2 |
     la2 |
@@ -93,8 +90,8 @@ harmonies = \new ChordNames {
     fas2 |
     mi2:m |
     mi2:m |
-    sol2 |
-    sol2 |
+    mi2:m |
+    mi2:m |
     fas2 |
     fas2 |
     fas2 |
@@ -112,5 +109,25 @@ harmonies = \new ChordNames {
     sol2 |
     fas2 |
     fas2 |
+    
+    si2:m |
+    si2:m |
+    si2:m |
+    si2:m |
+    la2 |
+    la2 |
+    la2 |
+    la2 |
+    si2:m |
+    si2:m |
+    si2:m |
+    si2:m |
+    
+    si2:m |
+    la2 |
+    la2 |
+    la2 |
+    si2:m |
+    si2:m |
   }
 }

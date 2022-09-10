@@ -4,66 +4,55 @@
 \language "espanol"
 \version "2.23.2"
 
-#(set-global-staff-size 22)
+% --- Global parameters
+%particle = 0
+%jump = \break
+%time = 4
 
-\markup { \fill-line { \center-column { \fontsize #5 \smallCaps "La voz de mi amado" \fontsize #3 "Cantar de los cantares 2, 8-17" } } }
-\markup { \fill-line { \fontsize #2 "" \fontsize #2 "Kiko Argüello"  } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
+% --- Includes
+\include "global.ily"
+\include "harmony.ily"
+\include "instrument.ily"
+% \include "metronome.ily"
+
+% --- Global size
+%#(set-global-staff-size \size)
+
+% --- Header
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  title = \markup{\medium \smallCaps \title}
+  subtitle = \markup{\medium \subtitle}
+  subsubtitle = \markup{\medium \subsubtitle}
+  composer = \autor
+  arranger = \markup {\right-column { \arranger \other}}
+  tagline = ##f
   breakbefore = ##t
 }
 
-global = {
-  \tempo "Allegro" 4 = 110
-  \time 4/4
-  \key do \major
-  s1*16
-  \bar "|."
-}
+% --- Music
 
-melodia = \relative do' {
-  mi1
-  re4 do mi2
-  do1
-  do4 si do2
-  la1
-  fa'1 
-  mi4 re do2 
-  si1
-  do1 
-  re4 do re do 
-  mi1 \bar "||" \break
-  
-  r2 la4 si4 
-  do2. do4 
-  si2. sol4
-  si2. si4
-  do1
-}
+% --- Harmony
 
-armonias = \new ChordNames {
-  \set chordChanges = ##t
-  \italianChords
-  \chordmode {
-    do1 s1*2 la1:m s1 fa1 s1 mi1 fa1 s1 la1:m
-    la1:m s1 sol1 s1 la1:m
-  }
-}
-
+% --- Sheet
 \score {
   <<
-    \armonias
-    \new Staff <<
-      \set Staff.midiInstrument = #"oboe"
-      << \melodia \global >>
-    >>
+    \harmonies
+    \new Staff = "main" {
+      <<
+        \set Staff.midiInstrument = #"oboe"
+        %\set Staff.midiMaximumVolume = #1.5
+        <<
+          \new Voice = "instrument" { << \global \instrument >> }
+        >>
+      >>
+    }
   >>
-  \midi {}
   \layout {}
+  \midi {}
 }
 
+% --- Paper
 \paper {
-  #(set-paper-size "letter")
+  #(set-default-paper-size "letter")
+  %page-breaking = #ly:page-turn-breaking
 }

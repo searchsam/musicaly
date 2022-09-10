@@ -3,7 +3,7 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.23.2"
+\version "2.23.11"
 
 \include "melodia.ily"
 
@@ -55,3 +55,9 @@
 \paper {
   #(set-paper-size "letter")
 }
+
+%{
+convert-ly (GNU LilyPond) 2.23.11  convert-ly: Procesando «»...
+Aplicando la conversión: 2.23.3, 2.23.4, 2.23.5, 2.23.6, 2.23.7,
+2.23.8, 2.23.9, 2.23.10, 2.23.11
+%}
