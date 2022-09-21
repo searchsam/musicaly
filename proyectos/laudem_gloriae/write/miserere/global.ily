@@ -12,6 +12,8 @@ global = {
   \tempo "Adagio" 4 = 60
   \time 4/4
   \key mib \major
-  s1*16
+  s1*15
+  \bar "||"
+  s1*15
   \bar "|."
 }

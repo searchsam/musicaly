@@ -451,17 +451,14 @@ Mi-Sol-Fa#-Sol-Fa#-Re-Mi
 Huye amado mio
 Notas 1:  ♭♪♬♭♩♪♬♩
 (Melodía)
-Do# Do# Do# Do# Do#
-La Do# Do# La
-Do# Mi Mi La
-
-La La La La
-Fa# Fa# Fa Mi
+Do# Do# Do# Do# Do# La
+Do# Do# La Do# Mi Mi
+La La La La La Fa# Fa# Fa Mi
 Sol# Sol# Sol# Sol#
 Sol# Fa# Mi La La
 -------------------------------
 Notas 2: ♩♪♬♭♩♪♬♭
-Do# Si Do#Re Mi Mi Mi Mi
+Do# Si Do# Re Mi Mi Mi Mi
 Mi Do# Mi Fa# Sol# Sol# SOl# SOl#
 La Sol# La Si La Sol#
 Fa# Fa Mi

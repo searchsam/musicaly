@@ -6,7 +6,7 @@ soprano = \relative do'' {
   sol8\mf fas sol la si si4. |
   si8\pp la si do si la4. |
   dos8 si dos re mi mi4. |
-  do4 la si2 |
+  do4 la si2 | \break
 }
 
 soprano-lyrics = \lyricmode {

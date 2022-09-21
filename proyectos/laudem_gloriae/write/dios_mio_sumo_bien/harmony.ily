@@ -10,6 +10,13 @@ harmonies = \new ChordNames {
       si2:m fas2:m |
       fas2:m do2 |
       la2:m mi2:m |
-      sol
+      sol2 re2 |
+      do2 la2 |
+      re2 la2:m |
+      sol2 la2 |
+      re2 do2 |
+      sol2 re2 |
+      si2:m mi2:m |
+      la2 re2 |
   }
 }

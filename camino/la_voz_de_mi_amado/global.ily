@@ -17,8 +17,21 @@ global = {
   s1*17
   \tempo "Moderatto" 4 = 80
   \repeat volta 2 {
-    s1*10
+    s1*7
   }
-  s1*30
-  \bar "|."
+  s1*12
+  \repeat volta 2 {
+    s1*7
+  }
+  s1*13
+  \repeat volta 2 {
+    s1*6
+  }
+  s1*8
+  \repeat volta 2 {
+    s1*6
+  }
+  \repeat volta 2 {
+    s1*7
+  }
 }

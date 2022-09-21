@@ -11,7 +11,8 @@
 % --- Includes
 \include "global.ily"
 \include "harmony.ily"
-\include "solo.ily"
+\include "solo-soprano.ily"
+\include "solo-alto.ily"
 \include "soprano.ily"
 \include "alto.ily"
 \include "tenor.ily"
@@ -41,12 +42,21 @@
   <<
     \harmonies
     \new Staff { <<
-      \set Staff.instrumentName = "Solo"
+      \set Staff.instrumentName = "Solo 1"
       \set Staff.midiInstrument = #"choir aahs"
       %\set Staff.midiMaximumVolume = #1.5
       <<
-        \new Voice = "solo" { << \global \solo-music >> }
-        \new Lyrics \lyricsto "solo" { \solo-lyrics }
+        \new Voice = "solo-soprano" { << \global \solo-soprano-music >> }
+        \new Lyrics \lyricsto "solo-soprano" { \solo-soprano-lyrics }
+      >>
+    >> }
+    \new Staff { <<
+      \set Staff.instrumentName = "Solo 2"
+      \set Staff.midiInstrument = #"choir aahs"
+      %\set Staff.midiMaximumVolume = #1.5
+      <<
+        \new Voice = "solo-alto" { << \global \solo-alto-music >> }
+        \new Lyrics \lyricsto "solo-alto" { \solo-alto-lyrics }
       >>
     >> }
     \new ChoirStaff { <<
