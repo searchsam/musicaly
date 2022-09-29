@@ -8,7 +8,7 @@ papper = "letter"
 size = 20
 
 global = {
-    \tempo "Andante" 4=60
+  \tempo "Andante" 4=60
   \key re \minor
   \time 4/4
 

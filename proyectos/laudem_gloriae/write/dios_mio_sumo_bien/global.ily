@@ -12,7 +12,13 @@ global = {
     \key mi \minor
     \time 4/4
 
-    s1*20
+    s1*5
+    \bar "||"
+    s1*8
+    \bar "||"
+    s1*9
+    \bar "||"
+    s1*8
     
     \bar "|."
 }

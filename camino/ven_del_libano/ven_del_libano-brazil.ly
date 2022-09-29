@@ -19,11 +19,8 @@ global = {
   s1*9
   \bar "||"
   \time 2/4
-  s2
-  \bar "||"
   \key mi \minor
   s2*14
-  \bar "|."
 }
 
 % --- Cabecera
@@ -52,7 +49,6 @@ instrumento = \relative do' {
       dos4( si) la-. fas-. |
       mi4.\trill res16 mi sols4 fas8. sols16 |
       fas2( mi4) mi |
-      mi2 |
       mi2~ |
       mi2 |
       sol2~ |
@@ -61,9 +57,8 @@ instrumento = \relative do' {
       si4 sol4~ |
       sol4 fas8 sol |
       la2 |
-      re,2 |
-      mi8 fas sol4~ |
-      sol4 fas4~ |
+      re,4 mi8 fas 
+      sol2 |
       fas4 mi8 re |
       mi2~ |
       mi2 | \break
@@ -87,9 +82,8 @@ instrumento = \relative do' {
       si1 |
       si2 mi,2 |
       \time 2/4
-      mi'2 |
       \key mi \minor
-      si2~ |
+      si'2~ |
       si2~ |
       si2~ |
       si2~ |
@@ -97,9 +91,8 @@ instrumento = \relative do' {
       si2~ |
       si2 |
       la2~ |
-      la2~ |
-      la4 sol~ |
-      sol4 la~ |
+      la2 |
+      sol2 |
       la2 |
       si2~ |
       si2 |
@@ -186,17 +179,17 @@ instrumento = \relative do' {
       \key mi \minor
       \set Staff.midiInstrument = #"flute"
       r8 sol sol la |
-      si4 si8 la |
+      si4~ si8 la |
       sol8 la si4 |
-      dos4 dos8 si |
+      dos4~ dos8 si |
       la8 si dos4 |
       do4 re8 mi~ |
       mi8 fas mi re |
       mi2 |
       r8 sol, sol la |
-      si4 si8 la |
+      si4~ si8 la |
       sol8 la si4 |
-      dos4 dos8 si |
+      dos4~ dos8 si |
       la8 si la4 |
       sol4 mi |
       la4 sol8 la |
@@ -243,7 +236,6 @@ acordes = \new ChordNames {
     sols2:m la2 |
     mi2 si2:7 |
     si2:7 mi2 |
-    mi2 |
     mi2:m
     mi2:m
     mi2:m
@@ -253,8 +245,7 @@ acordes = \new ChordNames {
     mi2:m
     re2
     re2
-    re4 do4
-    do4 re4
+    do2
     re2
     mi2:m
     mi2:m
@@ -328,14 +319,11 @@ acordes = \new ChordNames {
 % --- Partitura
 \score {
   <<
-    \acordes
-    \new Staff {
-      <<
-        \set Staff.midiInstrument = #"oboe"
-        \global
-        \instrumento
-      >>
-    }
+    \transpose mi sol {\acordes}
+    \new Staff { <<
+      \set Staff.midiInstrument = #"oboe"
+        \transpose mi sol {<< \global \instrumento >>}
+    >>}
   >>
   \midi {}
   \layout {}

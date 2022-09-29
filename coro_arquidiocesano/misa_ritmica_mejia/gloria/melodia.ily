@@ -9,11 +9,14 @@ global = {
   \key mi \minor
   \time 2/4
   s2
-  \bar ".|:"
-  s2*8
-  \bar ":|."
+  \repeat volta 2 {
+    s2*8
+  }
   s2*17
-  \bar "||"
+  \repeat volta 2 {
+    s2*8
+  }
+  \tempo "Andante" 4=72
   s2
   \bar "||"
   %\tempo "Andante" 4=72
@@ -34,7 +37,7 @@ etiqueta = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic
 
 % --- Musica
 soprano = \relative do'' {
-  \compressFullBarRests
+  \compressEmptyMeasures
   \dynamicUp
   
   R2			| % 01
@@ -99,7 +102,7 @@ soprano = \relative do'' {
 }
 
 alto = \relative do' {
-  \compressFullBarRests
+  \compressEmptyMeasures
   \dynamicUp
   
   R2			| % 01
@@ -133,15 +136,16 @@ alto = \relative do' {
 }
 
 tenor = \relative do' {
-  \compressFullBarRests
+  \compressEmptyMeasures
   \dynamicUp
   \clef "G_8"
+
   R2*5			| % 01
   si4 si			|
   la8 la4.		|
   sol8. si16 la8 fas	|
   sol2			|
-  R2*4			|
+  R2*4			| %\break
   r4 si8 si		|
   do4 do			|
   do8. do16 re8 do	|
@@ -152,8 +156,13 @@ tenor = \relative do' {
   do4 do			|
   do8. do16 re8 do	|
   si8 si4.~		|
-  si4^\markup { \small "Da Segno" } r |
-  R2			|
+  si4 r 			| %\break
+  R2*4			| % 01
+  si4 si			|
+  la8 la4.		|
+  sol8. si16 la8 fas	|
+  sol2			|
+  R2			| %\break
   R1			|
   si8 sol4.~ sol4 r	|
   si8 sol4.~ sol4 r	|
@@ -169,7 +178,7 @@ tenor = \relative do' {
   re8 re re re mi re mi si~ |
   si8 si2. si8		|
   si8 la4 si2 si8	|
-  si8 la4 si8~ si2 	|
+  si8 la4 si8~ si2 	| %\break
   R2*4			|
   si8. si16 si8 si	|
   la8 la la4		|
@@ -183,7 +192,7 @@ tenor = \relative do' {
 }
 
 bajo = \relative do {
-  \compressFullBarRests
+  \compressEmptyMeasures
   \dynamicUp
   \clef bass
   la'4        | % 01
@@ -224,6 +233,8 @@ letra_tenor = \lyricmode {
   
   Te~a -- do -- ra -- mos y glo -- ri -- fi -- ca -- mos
   por tu gran -- de y e -- ter -- na glo -- ria.
+  
+  Y~en la tie -- rra a los hom -- bres paz.
   
   Pa -- dre, Pa -- dre, Pa -- dre;
   Hi -- jo, pie -- dad, pie -- dad, pie -- dad Se -- ñor.

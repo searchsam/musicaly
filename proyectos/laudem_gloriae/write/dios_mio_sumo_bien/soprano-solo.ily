@@ -7,10 +7,11 @@ soprano-solo = \relative do'' {
   do4 si8( sol) la4 la |
   fas4 sol8 la do4 si8 la |
   si4 la8 sol la2 | \break
-  la4 si8( dos) mi4 re8 do |
+  la4 si8( do) mi4 re8 do |
   re4 do8 si la4 la |
   si4 do8 re mi4 re8 si |
-  dos4 re8( mi) re2 |
+  dos4 re8( mi) re2 | \break
+  
 }
 
 soprano-solo-lyrics = \lyricmode {

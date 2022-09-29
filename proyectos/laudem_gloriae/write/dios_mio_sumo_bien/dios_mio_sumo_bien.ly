@@ -41,7 +41,8 @@
 \score {
   <<
     \harmonies
-    \new Staff { <<
+    \new Staff {
+      <<
         \set Staff.instrumentName = "Solo 1"
         \set Staff.midiInstrument = #"oboe"
         %\set Staff.midiMaximumVolume = #1.5
@@ -49,9 +50,12 @@
           \new Voice = "soprano-solo" { << \global \soprano-solo >> }
           \new Lyrics \lyricsto "soprano-solo" { \soprano-solo-lyrics }
         >>
-    >> }
-    \new ChoirStaff { <<
-        \new Staff { <<
+      >>
+    }
+    \new ChoirStaff {
+      <<
+        \new Staff {
+          <<
             \set Staff.instrumentName = "Soprano"
             \set Staff.midiInstrument = #"oboe"
             %\set Staff.midiMaximumVolume = #1.5
@@ -59,8 +63,10 @@
               \new Voice = "soprano" { << \global \soprano >> }
               \new Lyrics \lyricsto "soprano" { \soprano-lyrics }
             >>
-        >> }
-        \new Staff { <<
+          >>
+        }
+        \new Staff {
+          <<
             \set Staff.instrumentName = "Contralto"
             \set Staff.midiInstrument = #"clarinet"
             %\set Staff.midiMaximumVolume = #1.5
@@ -68,8 +74,10 @@
               \new Voice = "alto" { << \global \alto >> }
               \new Lyrics \lyricsto "alto" { \alto-lyrics }
             >>
-        >> }
-        \new Staff { <<
+          >>
+        }
+        \new Staff {
+          <<
             \set Staff.instrumentName = "Tenor"
             \set Staff.midiInstrument = #"english horn"
             %\set Staff.midiMaximumVolume = #1.5
@@ -77,8 +85,10 @@
               \new Voice = "tenor" { << \global \tenor >> }
               \new Lyrics \lyricsto "tenor" { \tenor-lyrics }
             >>
-        >> }
-        \new Staff { <<
+          >>
+        }
+        \new Staff {
+          <<
             \set Staff.instrumentName = "Bajo"
             \set Staff.midiInstrument = #"bassoon"
             %\set Staff.midiMaximumVolume = #1.5
@@ -86,10 +96,17 @@
               \new Voice = "bass" { << \global \bass >> }
               \new Lyrics \lyricsto "bass" { \bass-lyrics }
             >>
-        >> }
-    >> }
+          >>
+        }
+      >>
+    }
   >>
-  \layout {}
+  \layout {
+    \context {
+      \Staff
+      \RemoveEmptyStaves
+    }
+  }
   \midi {}
 }
 

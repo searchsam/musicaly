@@ -1,7 +1,8 @@
-% Aleluya ya llego el reino
-% searchsam
+% La voz de mi amado - Flauta
+% by serachsam
+
 \language "espanol"
-\version "2.23.10"
+\version "2.23.2"
 
 % --- Global parameters
 %particle = 0
@@ -38,8 +39,8 @@
     \harmonies
     \new Staff = "main" {
       <<
-        \set Staff.midiInstrument = #"flute"
-        \set Staff.midiMaximumVolume = #1.5
+        \set Staff.midiInstrument = #"oboe"
+        %\set Staff.midiMaximumVolume = #1.5
         <<
           \new Voice = "instrument" { << \global \instrument >> }
         >>

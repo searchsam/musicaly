@@ -3,20 +3,17 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.23.2"
+\version "2.23.11"
 
 \include "melodia.ily"
 
-#(set-global-staff-size 24)
-
-% --- Parametro globales
-
-\markup { \fill-line { \center-column { \fontsize #5 \titulo \fontsize #2 \subtitulo } } }
-\markup { \fill-line { \fontsize #2 \smallCaps "Tenor" \fontsize #2 \autor  } }
-
+%#(set-global-staff-size 24)
 \header {
-  copyright = \derechos
-  tagline = \etiqueta
+  title = \markup{\medium \smallCaps \titulo}
+  subtitle = \markup{\medium \subtitulo}
+  poet = \markup{\caps "tenor"}
+  composer = \autor
+  tagline = ##f
   breakbefore = ##t
 }
 
@@ -27,6 +24,7 @@
 \score {
   <<
     \new Staff <<
+      \set Staff.midiInstrument = #"english horn"
       \new Voice = "voz" << \global \tenor >>
       \new Lyrics \lyricsto "voz" \letra_tenor
     >>
@@ -38,3 +36,9 @@
 \paper {
   #(set-paper-size "letter")
 }
+
+%{
+convert-ly (GNU LilyPond) 2.23.11  convert-ly: Procesando «»...
+Aplicando la conversión: 2.23.3, 2.23.4, 2.23.5, 2.23.6, 2.23.7,
+2.23.8, 2.23.9, 2.23.10, 2.23.11
+%}
