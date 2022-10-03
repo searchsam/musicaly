@@ -21,12 +21,12 @@ instrument = \relative do'' {
     la4 sols4 fa4 sols4 | %4
     la4 r4 re,8 dos8 dos8 re8 | %5
     re8 mi8 fa8 sols8 la8 sols8 la8 sols8 | %6
-    fa8 mi8 fa8 mi8 re2 | %7
+    fa8 mi8 fa8 mi8 re2 | %\break
     \textLengthOn
     s2_\markup {\small "¡Que me bese con los besos de su boca!..."} fa2~ | %8
     \textLengthOff
     fa2. mi4~ | %9
-    mi4 re2. | %10
+    mi4 re2. | %\break
     \textLengthOn
     s8_\markup {\small "...Mejores son que el vino tus "} s8_\markup {\small "amores;..."} mi2. | %11
     \textLengthOff
@@ -36,7 +36,7 @@ instrument = \relative do'' {
     s4_\markup {\center-column {\small "...tu nombre es ungüento que se vierte,..."}} mi2.| %14
     \textLengthOff
     fa4 sols4 la2 |
-    sols4 fa4 mi2 |%13
+    sols4 fa4 mi2 | %\break
     \textLengthOn
     s4_\markup{\small "por eso te aman las "} s4_\markup{\small "doncellas."} fa2~| %17
     \textLengthOff
@@ -69,22 +69,26 @@ instrument = \relative do'' {
     } la2 | %24
     \textLengthOff
     sib4 dos4 re2 | %26
-    sols,4 fa2. | %\break
+    la4 sols4 fa4 sols4 | %3
+    la4 sols4 fa4 sols4 | %4
+    la4 r4 re,8 dos8 dos8 re8 | %5
+    re8 mi8 fa8 sols8 la8 sols8 la8 sols8 | %6
+    fa8 mi8 fa8 mi8 re2 | %\break
     \textLengthOn
     s2_\markup {\small "Si no lo sabes, ¡oh bella entre las bellas!,..."} fa2( | %8
     \textLengthOff
     fa2.) mi4( | %9
-    mi4) re2. | %10
+    mi4) re2. | %\break
     \textLengthOn
     s4_\markup {\small "...sigue la senda de mis ovejas,..."} mi2.| %11
     \textLengthOff
     fa4 sols4 la2 |
-    sols4 fa4 mi2 |%13
+    sols4 fa4 mi2 | %\break
     \textLengthOn
     s4_\markup {\small "...y lleva por allí tus cabras..."} mi2.| %14
     \textLengthOff
     fa4 sols4 la2 |
-    sols4 fa4 mi2 |%13
+    sols4 fa4 mi2 | %\break
     \textLengthOn
     s2_\markup{\small "hasta el jacal de los pastores..."} fa2~| %17
     \textLengthOff
@@ -116,10 +120,7 @@ instrument = \relative do'' {
       \small "detras de otros compañeros."
     } la2 | %24
     \textLengthOff
-    sib4 dos4 re2 | \break
-    la4 sols4 fa4 sols4 | %3
-    la4 sols4 fa4 sols4 | %4
-    la4 r4 re,8 dos8 dos8 re8 | %5
-    re8 mi8 fa8 sols8 la8 sols8 la8 sols8 | %6
-    fa8 mi8 fa8 mi8 re2 | %7
+    sib4 dos4 re2 | %26
+    sols,4 fa2 mi4 | 
+    re1 |
 }

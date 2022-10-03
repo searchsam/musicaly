@@ -34,6 +34,10 @@ harmonies = \new ChordNames {
     re1:m |
     re1:m |
     re1:m |
+    re1:m |
+    re1:m |
+    re1:m |
+    re1:m |
     sib4  la2. |
     la1 |
     la1 |
@@ -49,9 +53,6 @@ harmonies = \new ChordNames {
     la1 |
     la1 |
     la2 re2:m |
-    re1:m |
-    re1:m |
-    re1:m |
     re1:m |
     re1:m |
     re1:m |

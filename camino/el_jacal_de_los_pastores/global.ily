@@ -22,10 +22,14 @@ global = {
       {s1} {s1}
     }
   }
+  s1*4 |
+  \bar "||"
   s1*11
   \repeat volta 2 {
-    s1*8
+    s1*7
+    \alternative{
+      {s1} {s1*2}
+    }
   }
-  s1*5
   \bar "|."
 }

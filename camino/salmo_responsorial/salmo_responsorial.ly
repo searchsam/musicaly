@@ -1,7 +1,6 @@
-% ****************************************************************
-%	Salmo responsorial - Violin
-%	by serach.sam@
-% ****************************************************************
+% Salmo responsorial - Violin
+% by serachsam
+
 \language "espanol"
 \version "2.23.2"
 
@@ -12,11 +11,28 @@
 %#(set-global-staff-size 25)
 
 % --- Parametro globales
-global = {  \tempo "Moderatto" 4 = 110 \clef treble \key fas \minor \time 4/4 s1*33 \bar "|." }
+global = { 
+  \tempo "Moderatto" 4 = 110 
+  \clef treble 
+  \key fas \minor 
+  \time 4/4 
+  
+  s1*7
+  \bar "||"
+  s1*6
+  \repeat volta 2 {
+    s1*6
+    \bar "||"
+    s1*10
+  }
+  s1
+  \bar "|." 
+}
 
 % --- Cabecera
 \header {
   title = \markup{\medium \smallCaps "Salmodia para el salmo responsorial"}
+  subtitle = \markup{\medium "Melodia cualquier tiempo liturgico"}
   composer = "Kiko Arguello"
   arranger = \markup {\right-column { "Adaptación: Samuel Gutiérrez" }}
   tagline = ##f
@@ -26,6 +42,8 @@ global = {  \tempo "Moderatto" 4 = 110 \clef treble \key fas \minor \time 4/4 s1
 % --- Musica
 instrumento = \relative do'' {
   \compressEmptyMeasures
+  \dynamicUp
+
   %Escribir la musica aqui...
   r1 				| %1
   fas2. mis4 			| %2
@@ -33,10 +51,21 @@ instrumento = \relative do'' {
   si8 la sols2.			| %4
   fas2. mis4 			| %5
   re4 dos2. 			| %6
-  r4 fas8 la dos4 mis4		| %7
-  fas2. r4 \bar ".|:"		| %8
+  r4 fas8 la dos4 mis4		| \break %7
   \textLengthOn
-  s2._\markup \center-column { \small "Mi alma esta sedienta de ti,..." }^\markup { \small Acompañamiento } fas4( | %9
+  s2._\markup \center-column { \small "Mi alma esta sedienta de ti,..." } si4 | %9
+  \textLengthOff
+  dos4 si2 r4 | %10
+  \textLengthOn
+  s2._\markup \center-column { \small "...Señor, Dios mio;..." } si4( | %11
+  \textLengthOff
+  si4) dos2 r4 | %12
+  \textLengthOn
+  s2._\markup \center-column { \small "...mi alma esta sedienta de ti." } dos4 | %13
+  \textLengthOff
+  si4 sols2 sol4 | \break
+  \textLengthOn
+  s2._\markup \center-column { \small "Mi alma esta sedienta de ti,..." } fas'4( | %9
   \textLengthOff
   fas4) re dos si		| %10
   \textLengthOn
@@ -44,13 +73,11 @@ instrumento = \relative do'' {
   \textLengthOff
   dos4) si la sols		| %12
   \textLengthOn
-  s2._\markup \center-column { \small "...mi alma esta sedienta de ti." } fas4( | %13
+  s2._\markup \center-column { \small "...mi alma esta sedienta de ti." } fas4^\markup { "Final al" \musicglyph "scripts.coda" }( | %13
   \textLengthOff
-  fas4) mis re dos		| %14
-  r4 fas8 la dos4 mis4 	| %15
-  fas2. r4 \bar "||"		| %16
+  fas4) mis re dos		| \break %14
   \textLengthOn
-  s2._\markup \center-column { \small "Oh Dios, tu eres mi Dios, por ti madrugo,..." } sols,8 la | %17
+  s2._\markup \center-column { \small "Oh Dios, tu eres mi Dios, por ti madrugo,..." } sols'8 la | %17
   \textLengthOff
   si4 dos si8 dos4.		| %18
   \textLengthOn
@@ -66,27 +93,48 @@ instrumento = \relative do'' {
   \textLengthOff
   si la sols2	| %24
   r4 fas8 la dos4 mis4	| %25
-  fas2. r4 \bar ":|."		| %26
-  fas2.^\markup { \small "Luego de terminadas todas las estrofas." } mis4 | %27
-  re4 dos2.   			| %28
-  si8 la sols2.			| %29
-  fas2. mis4 			| %30
-  re4 dos2. 			| %31
-  r4 fas8 la dos4 mis4		| %32
-  fas2. r4 \bar "|."		| %33
+  fas2. r4 | %26
+  \mark \markup { \musicglyph "scripts.coda" }
+  dos4 la fas2 |
 }
 
 % --- Acordes
 acordes = \new ChordNames {
+  \set ChordNames.midiInstrument = "church organ"
+  \set ChordNames.midiMaximumVolume = #0.5
   \set chordChanges = ##t
-  \italianChords
   \chordmode {
-    fas1:m  fas1:m fas1:m fas1:m fas1:m fas1:m fas1:m fas1:m
-    fas2:m si2:m si1:m si2:m dos2:7 dos1:7 re2 dos2:7 dos1:7 dos1:7 dos1:7
-    si2:m dos2:7 dos1:7
-    si2:m dos2:7 dos1:7
-    re2 dos2:7 dos1:7
-    re2 dos2:7 dos1:7 dos1:7
+    \italianChords
+    fas1:m  |
+    fas1:m |
+    fas1:m |
+    fas1:m |
+    fas1:m |
+    fas1:m |
+    fas1:m |
+    fas2:m si2:m |
+    si1:m |
+    si2:m dos2:7 |
+    dos1:7 |
+    re2 dos2:7 |
+    dos1:7 |
+    fas2:m si2:m |
+    si1:m |
+    si2:m dos2:7 |
+    dos1:7 |
+    re2 dos2:7 |
+    dos1:7 |
+    si2:m dos2:7 |
+    dos1:7 |
+    si2:m dos2:7 |
+    dos1:7 |
+    re2 dos2:7 |
+    dos1:7 |
+    re2 dos2:7 |
+    dos1:7 |
+    dos1:7 |
+    dos1:7 |
+    dos2:7 fas2:m |
   }
 }
 

@@ -25,6 +25,6 @@ global = {
   s2
   \bar "||"
   \key la \minor
-  s2*19
+  s2*20
   \bar "|."
 }

@@ -29,7 +29,7 @@ instrument = \relative do'' {
   re8 do re do |
   si8 la si4 | \break
   \mark \markup { \musicglyph "scripts.segno" }
-  s2_\markup { \small "Huye amado mío,..." } |
+  dos2_\markup { \small "Huye amado mío,..." } |
   << {
     mi16 mi mi la mi mi dos mi |
     dos16 dos la dos la la mi8 |
@@ -82,6 +82,7 @@ instrument = \relative do'' {
   s4_\markup { \small "...mi viña está " } s4_\markup{\small "aquí,..."} |
   mi8 sols fas mi |
   sols fas mi4 |
-  s4_\markup { \small "...está ante " } s4_\markup{\small "mí."}^\markup { \bold "Da " \small \musicglyph "scripts.segno" \bold "al Fine" } |
+  s4_\markup { \small "...está ante " } s4_\markup{\small "mí."} |
   \textLengthOff
+  la4^\markup { \bold "Da " \small \musicglyph "scripts.segno" \bold "al Fine" }( si) |
 }
