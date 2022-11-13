@@ -3,7 +3,7 @@ alto = \relative do' {
   \dynamicUp
 
   R2*34 | %39
-  si2~ | %40
+  si'2~ | %40
   si2~ | %41
   si2 | %42
   fas'8( mi4.~ | %43

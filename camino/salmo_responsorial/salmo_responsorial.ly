@@ -17,7 +17,7 @@ global = {
   \key fas \minor 
   \time 4/4 
   
-  s1*7
+  s1*8
   \bar "||"
   s1*6
   \repeat volta 2 {
@@ -51,7 +51,8 @@ instrumento = \relative do'' {
   si8 la sols2.			| %4
   fas2. mis4 			| %5
   re4 dos2. 			| %6
-  r4 fas8 la dos4 mis4		| \break %7
+  r4 fas8 la dos4 mis4		| 
+  re2. r4 | \break %7
   \textLengthOn
   s2._\markup \center-column { \small "Mi alma esta sedienta de ti,..." } si4 | %9
   \textLengthOff
@@ -106,6 +107,7 @@ acordes = \new ChordNames {
   \chordmode {
     \italianChords
     fas1:m  |
+    fas1:m |
     fas1:m |
     fas1:m |
     fas1:m |

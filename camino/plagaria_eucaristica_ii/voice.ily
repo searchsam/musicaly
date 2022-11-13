@@ -326,7 +326,7 @@ amen = \relative do' {
 }
 
 saludo_i-lyrics = \lyricmode {
-  El Se -- ñor es -- te con vo so tros.
+  El Se -- ñor es -- té con vo so tros.
 }
 
 saludo_ii-lyrics = \lyricmode {

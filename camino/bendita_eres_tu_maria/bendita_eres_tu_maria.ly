@@ -38,13 +38,13 @@
 % --- Sheet
 \score {
   <<
-    \harmonies
+    \transpose si mi {\harmonies}
     \new Staff = "main" {
       <<
         \set Staff.instrumentName = "Instrument"
         \set Staff.midiInstrument = #"violin"
         %\set Staff.midiMaximumVolume = #1.5
-        << \global \instrument >>
+        \transpose si mi {<< \global \instrument >>}
       >>
     }
     \new ChoirStaff {
@@ -55,7 +55,7 @@
             \set Staff.midiInstrument = #"oboe"
             %\set Staff.midiMaximumVolume = #1.5
             <<
-              \new Voice = "soprano" { << \global \soprano >> }
+              \new Voice = "soprano" { \transpose si mi {<< \global \soprano >>} }
               \new Lyrics \lyricsto "soprano" { \soprano-lyrics }
             >>
           >>
@@ -66,7 +66,7 @@
             \set Staff.midiInstrument = #"clarinet"
             %\set Staff.midiMaximumVolume = #1.5
             <<
-              \new Voice = "alto" { << \global \alto >> }
+              \new Voice = "alto" { \transpose si mi {<< \global \alto >>} }
               \new Lyrics \lyricsto "alto" { \alto-lyrics }
             >>
           >>

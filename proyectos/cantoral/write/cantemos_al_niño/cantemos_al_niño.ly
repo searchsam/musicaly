@@ -5,7 +5,7 @@
 \version "2.23.2"
 
 % --- Global size
-#(set-global-staff-size 18.8)
+%#(set-global-staff-size 18.8)
 
 % --- Cabecera
 \markup { \fill-line { \center-column { \fontsize #5 "Cantemos al niño" \fontsize #3 "Villancico Español" } } }
@@ -28,6 +28,7 @@ global = {
   \time 6/8
   s2.*9
   \key mi \major
+  \time 2/4
   s2*12
   \key mi \minor
   \time 6/8

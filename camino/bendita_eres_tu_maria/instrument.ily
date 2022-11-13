@@ -29,9 +29,9 @@ instrument = \relative do'' {
     }
     {
       \set Staff.midiInstrument = #"violin"
-      \clef bass
+      \clef "G_8"
       \key si \minor
-      si,,2~ |
+      si,2~ |
       si2~ |
       si2~ |
       si2~ |

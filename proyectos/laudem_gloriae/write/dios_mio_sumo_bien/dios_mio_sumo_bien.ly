@@ -12,6 +12,9 @@
 % --- Includes
 \include "global.ily"
 \include "soprano-solo.ily"
+\include "alto-solo.ily"
+\include "tenor-solo.ily"
+\include "bass-solo.ily"
 \include "soprano.ily"
 \include "alto.ily"
 \include "tenor.ily"
@@ -49,6 +52,39 @@
         <<
           \new Voice = "soprano-solo" { << \global \soprano-solo >> }
           \new Lyrics \lyricsto "soprano-solo" { \soprano-solo-lyrics }
+        >>
+      >>
+    }
+    \new Staff {
+      <<
+        \set Staff.instrumentName = "Solo 2"
+        \set Staff.midiInstrument = #"clarinet"
+        %\set Staff.midiMaximumVolume = #1.5
+        <<
+          \new Voice = "alto-solo" { << \global \alto-solo >> }
+          \new Lyrics \lyricsto "alto-solo" { \alto-solo-lyrics }
+        >>
+      >>
+    }
+    \new Staff {
+      <<
+        \set Staff.instrumentName = "Solo 3"
+        \set Staff.midiInstrument = #"english horn"
+        %\set Staff.midiMaximumVolume = #1.5
+        <<
+          \new Voice = "tenor-solo" { << \global \tenor-solo >> }
+          \new Lyrics \lyricsto "tenor-solo" { \tenor-solo-lyrics }
+        >>
+      >>
+    }
+    \new Staff {
+      <<
+        \set Staff.instrumentName = "Solo 4"
+        \set Staff.midiInstrument = #"bassoon"
+        %\set Staff.midiMaximumVolume = #1.5
+        <<
+          \new Voice = "bass-solo" { << \global \bass-solo >> }
+          \new Lyrics \lyricsto "bass-solo" { \bass-solo-lyrics }
         >>
       >>
     }

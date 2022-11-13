@@ -1,5 +1,5 @@
-% Se;or, Dios mio - Coro mixto
-% by serachsam
+% Quien es el rey de la gloria - Coro mixto
+% by serach.sam@
 
 \language "espanol"
 \version "2.23.2"
@@ -7,7 +7,7 @@
 % --- Global parameters
 %particle = 0
 %jump = \break
-pulse = 2
+%time = 4
 
 % --- Includes
 \include "global.ily"
@@ -15,18 +15,20 @@ pulse = 2
 \include "alto.ily"
 \include "tenor.ily"
 \include "bass.ily"
-\include "metronome.ily"
+% \include "metronome.ily"
 
 % --- Global size
 %#(set-global-staff-size \size)
 
 % --- Header
 \header {
-  dedication = \dedication
   title = \title
   subtitle = \subtitle
   composer = \autor
-  tagline = ##f
+  arranger = \arranger
+  opus = \other
+  copyright = "Creative Commons Attribution 3.0"
+  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
   breakbefore = ##t
 }
 
@@ -40,7 +42,7 @@ pulse = 2
     \new ChoirStaff { <<
         \new Staff { <<
             \set Staff.instrumentName = "Soprano"
-            %\set Staff.midiInstrument = #"oboe"
+            \set Staff.midiInstrument = #"choir aahs"
             %\set Staff.midiMaximumVolume = #1.5
             <<
               \new Voice = "soprano" { << \global \soprano >> }
@@ -49,7 +51,7 @@ pulse = 2
         >> }
         \new Staff { <<
             \set Staff.instrumentName = "Contralto"
-            %\set Staff.midiInstrument = #"clarinet"
+            \set Staff.midiInstrument = #"choir aahs"
             %\set Staff.midiMaximumVolume = #1.5
             <<
               \new Voice = "alto" { << \global \alto >> }
@@ -58,7 +60,7 @@ pulse = 2
         >> }
         \new Staff { <<
             \set Staff.instrumentName = "Tenor"
-            %\set Staff.midiInstrument = #"english horn"
+            \set Staff.midiInstrument = #"choir aahs"
             %\set Staff.midiMaximumVolume = #1.5
             <<
               \new Voice = "tenor" { << \global \tenor >> }
@@ -67,27 +69,21 @@ pulse = 2
         >> }
         \new Staff { <<
             \set Staff.instrumentName = "Bajo"
-            %\set Staff.midiInstrument = #"bassoon"
+            \set Staff.midiInstrument = #"choir aahs"
             %\set Staff.midiMaximumVolume = #1.5
             <<
               \new Voice = "bass" { << \global \bass >> }
               \new Lyrics \lyricsto "bass" { \bass-lyrics }
             >>
         >> }
-        %\metronome
     >> }
   >>
-  \layout {
-    \context {
-      \Staff \RemoveEmptyStaves
-    }
-  }
+  \layout {}
   \midi {}
 }
 
 % --- Paper
 \paper {
   #(set-default-paper-size "letter")
-  %page-breaking = #ly:page-turn-breaking
+  page-breaking = #ly:page-turn-breaking
 }
-
