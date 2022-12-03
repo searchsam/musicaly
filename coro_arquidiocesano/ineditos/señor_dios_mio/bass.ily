@@ -6,38 +6,38 @@ bass = \relative do {
   la'8 sol fa mi |
   re4 re8 re |
   mi8 fa( sol) la~ |
-  la4.  r8 |
+  la2 |
   la8 sol fa mi |
   re4 re8 re |
   mi8 fa( sol) la~ |
   la4.  r8 |
-  R2*17 |
+  R2*14 |
+  la8 sol fa mi |
+  re4 re8 re |
+  mi8 fa( sol) la~ |
+  la2 |
   la8 sol fa mi |
   re4 re8 re |
   mi8 fa( sol) la~ |
   la4.  r8 |
+  R2*28
+  la8 sol fa mi |
+  re4 re8 re |
+  mi8 fa( sol) la~ |
+  la2 |
   la8 sol fa mi |
   re4 re8 re |
   mi8 fa( sol) la~ |
   la4.  r8 |
-  R2*33
+  R2*14 |
   la8 sol fa mi |
   re4 re8 re |
   mi8 fa( sol) la~ |
-  la4.  r8 |
+  la2 |
   la8 sol fa mi |
   re4 re8 re |
   mi8 fa( sol) la~ |
-  la4.  r8 |
-  R2*17 |
-  la8 sol fa mi |
-  re4 re8 re |
-  mi8 fa( sol) la~ |
-  la4.  r8 |
-  la8 sol fa mi |
-  re4 re8 re |
-  mi8 fa( sol) la~ |
-  la4.  r8 |
+  la2 |
 }
 
 bass-lyrics = \lyricmode {

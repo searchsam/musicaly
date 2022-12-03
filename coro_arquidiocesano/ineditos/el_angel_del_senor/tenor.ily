@@ -1,46 +1,10 @@
-% ****************************************************************
-%	El angel de Señor - Tenor
-%	by serach.sam@
-% ****************************************************************
-\language "espanol"
-\version "2.23.2"
-
-%#(set-global-staff-size 22)
-
-% --- Parametro globales
-global = {
-  \tempo "Recitativo como meditado" 4=60
-  \key do \minor
-  \time 6/8
-  s2.*12
-  \bar "||"
-  \tempo "Allegro non troppo" 4=100
-  s2.*56
-  \bar "||"
-  \key re \minor
-  s2.*30
-  \bar "||"
-  \tempo "Grandioso" 4=80
-  s2.*9
-  \bar "|."
-}
-
-\markup { \fill-line { \center-column { \fontsize #5 "" \fontsize #2 "" \small "" } } }
-\markup { \fill-line { \fontsize #2 \smallCaps "Tenor" \fontsize #2 "Música: Luz Marina Zepeda Wilson"  } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Versión Sinfonica Coral: Francisco Jarquín Vega" \small "()" } } }
-\header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
-  breakbefore = ##t 
-}
-
-% --- Musica
 tenor = \relative do' {
   \compressEmptyMeasures
   \dynamicUp
-  \clef	"G_8"
+  \clef "G_8"
+
   R2.*13				| %13
-  r4. r4 sol8			| %14
+  r4. r4 sol8\mp			| %14
   do4 do8 re4 re8		| %15
   mib4.~ mib8 do do		| %16
   mib8 mib mib re do sib		| %17
@@ -50,7 +14,7 @@ tenor = \relative do' {
   mib8 mib mib re do sib		| %21
   do2.				| %22
   R2.*16				| %23
-  r4. r4 sol8			| %24
+  r4. r4 sol8\mp			| %24
   do4 do8 re4 re8		| %25
   mib4.~ mib8 do do		| %26
   mib8 mib mib re do sib		| %27
@@ -59,7 +23,7 @@ tenor = \relative do' {
   mib4.~ mib8 do do		| %30
   mib8 mib mib re do sib		| %31
   do2.				| %32
-  r4. r8 fa, fa			| %33
+  r4. r8 fa,\mf fa			| %33
   sol8 sol4~ sol sol8		| %34
   sib4. sib8 do sib		| %35
   sol8 sol4~ sol4.~		| %36
@@ -75,18 +39,18 @@ tenor = \relative do' {
   <do mib>8 <do mib>4~ <do mib>8 <do mib> <do mib> | %46
   <sib re>8 <sib re>4 <sib re>8 <lab do> <sol sib> | %47
   <sol do>8 <sol do>4~ <sol do>4.~ | %48
-  <sol do>4.~ <sol do>4 sol8 	| %49
+  <sol do>4.~ <sol do>4 sol8\mp 	| %49
   do4 do8 re4 re8		| %50
   mib4.~ mib8 do do		| %51
   mib8 mib mib re do sib		| %52
   do4.~ do4 r8			| %53
-  r4. r4 la8			| %54
+  r4. r4 la8\mp			| %54
   re4 re8 mi4 mi8		| %55
   fa4.~ fa8 re re		| %56
   fa8 fa fa mi re do		| %57
   re2.				| %58
   R2.*4				| %62
-  r4. r4 la8			| %63
+  r4. r4 la8\mf			| %63
   sib8 sib4~ sib8 sib sib	| %64
   do8 do4 do8 re do		| %65
   la8 la4~ la4.~			| %66
@@ -98,7 +62,7 @@ tenor = \relative do' {
   fa8 fa4~ fa4.			| %72
   mi4. mi8 re do			| %73
   re2.~				| %74
-  re4.~ re4 la8			| %75
+  re4.~ re4 la8\mp			| %75
   re4 re8 mi4 mi8		| %76
   fa4.~ fa8 re re		| %77
   fa8 fa fa mi re do		| %78
@@ -108,18 +72,17 @@ tenor = \relative do' {
   fa8 fa fa mi re do		| %82
   re2.				| %83
   R2.				| %84
-  r4. r4 la8			| %85
+  r4. r4 la8\f			| %85
   re4 re8 mi4 mi8		| %86
   fa4.~ fa8 re re		| %87
   fa8 fa fa mi re do		| %88
   re2.~				| %89
   re2.~				| %90
-  re4 r8 r4 r8			| %91
+  re4 r8 r4.			| %91
   R2.				| %92
 }
 
-% --- Letra
-letra = \lyricmode {
+tenor-lyrics = \lyricmode {
   El an -- gel del Se -- ñor li -- bra -- rá~a los que te -- men a Dios.
   El an -- gel del Se -- ñor li -- bra -- rá~a los que te -- men a Dios.
   El an -- gel del Se -- ñor li -- bra -- rá~a los que te -- men a Dios.
@@ -136,19 +99,4 @@ letra = \lyricmode {
   El an -- gel del Se -- ñor li -- bra -- rá~a los que te -- men a Dios.
   El an -- gel del Se -- ñor li -- bra -- rá~a los que te -- men a Dios.
   El an -- gel del Se -- ñor li -- bra -- rá~a los que te -- men a Dios.
-}
-
-\score {
-  <<
-    \new Staff <<
-        \new Voice = "voz" << \global \tenor >>
-        \new Lyrics \lyricsto "voz" \letra
-    >>
-  >>
-  \midi {}
-  \layout {}
-}
-
-\paper {
-  #(set-paper-size "letter")
 }

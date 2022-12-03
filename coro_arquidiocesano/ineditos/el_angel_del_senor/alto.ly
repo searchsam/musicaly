@@ -1,31 +1,31 @@
-% Himno a la Sangre de Cristo - Tenor
+% Pueblo mio - Contalto
 % by serachsam
 
 \language "espanol"
 \version "2.23.2"
 
 % --- Global parameters
-particle = 1
-jump = \break
-pulse = 4
+%particle = 0
+%jump = \break
+%time = 4
 
 % --- Includes
 \include "global.ily"
-\include "tenor.ily"
-\include "metronome.ily"
+\include "alto.ily"
+% \include "metronome.ily"
 
 % --- Global size
-%#(set-global-staff-size 27)
+%#(set-global-staff-size \size)
 
 % --- Header
 \header {
-  title = \markup{\medium \smallCaps \title}
+  title = \markup{\fontsize #2 \medium \smallCaps \title}
   subtitle = \markup{\medium \subtitle}
   subsubtitle = \markup{\medium \subsubtitle}
-  poet = \markup {\caps "tenor"}
+  poet = \markup {\caps "contralto"}
   composer = \autor
   arranger = \markup {\right-column { \arranger \other}}
-  tagline = \dedication
+  tagline = ##f
   breakbefore = ##t
 }
 
@@ -36,13 +36,19 @@ pulse = 4
 % --- Sheet
 \score {
   <<
-    \new Staff { <<
+    \new Staff {
       \set Staff.midiInstrument = #"choir aahs"
       %\set Staff.midiMaximumVolume = #1.5
-      \new Voice = "tenor" { << \global \tenor >> }
-      \new Lyrics \lyricsto "tenor" { \tenor-lyrics }
-    >> }
-    %\metronome
+      <<
+        \new Voice = "alto" {
+          <<
+            \global
+            \alto
+          >>
+        }
+        \new Lyrics \lyricsto "alto" { \alto-lyrics }
+      >>
+    }
   >>
   \midi {}
   \layout {}
@@ -51,4 +57,5 @@ pulse = 4
 % --- Paper
 \paper {
   #(set-default-paper-size "letter")
+  page-breaking = #ly:page-turn-breaking
 }

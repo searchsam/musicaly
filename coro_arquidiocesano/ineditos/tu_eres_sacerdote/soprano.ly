@@ -1,4 +1,4 @@
-% Himno a la Sangre de Cristo - Tenor
+% Ave Maria - Soprano
 % by serachsam
 
 \language "espanol"
@@ -11,7 +11,7 @@ pulse = 4
 
 % --- Includes
 \include "global.ily"
-\include "tenor.ily"
+\include "soprano.ily"
 \include "metronome.ily"
 
 % --- Global size
@@ -20,11 +20,12 @@ pulse = 4
 % --- Header
 \header {
   title = \markup{\medium \smallCaps \title}
-  subtitle = \markup{\medium \subtitle}
-  subsubtitle = \markup{\medium \subsubtitle}
-  poet = \markup {\caps "tenor"}
+  subtitle = \markup{\small \medium \subtitle}
+  subsubtitle = \markup{\fontsize #3 \medium \subsubtitle}
+  instrument = \markup{\small \medium \other}
+  poet = \markup {\caps "soprano"}
   composer = \autor
-  arranger = \markup {\right-column { \arranger \other}}
+  arranger = \markup {\right-column { \arranger }}
   tagline = \dedication
   breakbefore = ##t
 }
@@ -37,10 +38,10 @@ pulse = 4
 \score {
   <<
     \new Staff { <<
-      \set Staff.midiInstrument = #"choir aahs"
+      \set Staff.midiInstrument = #"oboe"
       %\set Staff.midiMaximumVolume = #1.5
-      \new Voice = "tenor" { << \global \tenor >> }
-      \new Lyrics \lyricsto "tenor" { \tenor-lyrics }
+      \new Voice = "soprano" { << \global \soprano >> }
+      \new Lyrics \lyricsto "soprano" { \soprano-lyrics }
     >> }
     %\metronome
   >>
@@ -51,4 +52,5 @@ pulse = 4
 % --- Paper
 \paper {
   #(set-default-paper-size "letter")
+  page-breaking = #ly:page-turn-breaking
 }

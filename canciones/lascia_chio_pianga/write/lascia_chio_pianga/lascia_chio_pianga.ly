@@ -16,7 +16,7 @@
 % \include "metronome.ily"
 
 % --- Global size
-#(set-global-staff-size 16)
+#(set-global-staff-size 27)
 
 % --- Header
 \markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #2 \smallCaps \subtitle \fontsize #1 \subsubtitle } } }

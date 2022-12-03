@@ -16,7 +16,7 @@ tenor = \relative do' {
   \tuplet 3/2 {fa4 fa fa} |
   \tuplet 3/2 {mib4 fa mib} |
   \tuplet 3/2 {lab,4 lab do} |
-  \tuplet 3/2 {lab4 do mib} |
+  \tuplet 3/2 {lab4 do fa} |
   \tuplet 3/2 {fa,4 sib reb} |
   \tuplet 3/2 {sol,4 do mi} |
   \tuplet 3/2 {lab,4 do fa} |
@@ -46,7 +46,7 @@ tenor = \relative do' {
   \tuplet 3/2 {fa4 fa fa} |
   \tuplet 3/2 {mib4 fa mib} |
   \tuplet 3/2 {lab,4 lab do} |
-  \tuplet 3/2 {lab4 do mib} |
+  \tuplet 3/2 {lab4 do fa} |
   \tuplet 3/2 {fa,4 sib reb} |
   \tuplet 3/2 {sol,4 do mi} |
   \tuplet 3/2 {lab,4 do fa} |
@@ -64,7 +64,7 @@ tenor = \relative do' {
   \tuplet 3/2 {fa4 fa fa} |
   \tuplet 3/2 {mib4 fa mib} |
   \tuplet 3/2 {lab,4 lab do} |
-  \tuplet 3/2 {lab4 do mib} |
+  \tuplet 3/2 {lab4 do fa} |
   \tuplet 3/2 {fa,4 sib reb} |
   \tuplet 3/2 {sol,4 do mi} |
   \tuplet 3/2 {lab,4 do fa} |
@@ -87,7 +87,7 @@ tenor = \relative do' {
   \tuplet 3/2 {fa4 fa fa} |
   \tuplet 3/2 {mib4 fa mib} |
   \tuplet 3/2 {lab,4 lab do} |
-  \tuplet 3/2 {lab4 do mib} |
+  \tuplet 3/2 {lab4 do fa} |
   \tuplet 3/2 {fa,4 sib reb} |
   \tuplet 3/2 {sol,4 do mi} |
   \tuplet 3/2 {lab,4 do fa} |

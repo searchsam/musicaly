@@ -1,4 +1,4 @@
-% Himno a la Sangre de Cristo - Tenor
+% Ave Maria - Soprano
 % by serachsam
 
 \language "espanol"
@@ -11,18 +11,18 @@ pulse = 4
 
 % --- Includes
 \include "global.ily"
-\include "tenor.ily"
+\include "soprano.ily"
 \include "metronome.ily"
 
 % --- Global size
-%#(set-global-staff-size 27)
+#(set-global-staff-size 27)
 
 % --- Header
 \header {
   title = \markup{\medium \smallCaps \title}
   subtitle = \markup{\medium \subtitle}
   subsubtitle = \markup{\medium \subsubtitle}
-  poet = \markup {\caps "tenor"}
+  poet = \markup {\caps "soprano"}
   composer = \autor
   arranger = \markup {\right-column { \arranger \other}}
   tagline = \dedication
@@ -39,8 +39,8 @@ pulse = 4
     \new Staff { <<
       \set Staff.midiInstrument = #"choir aahs"
       %\set Staff.midiMaximumVolume = #1.5
-      \new Voice = "tenor" { << \global \tenor >> }
-      \new Lyrics \lyricsto "tenor" { \tenor-lyrics }
+      \new Voice = "soprano" { << \global \soprano >> }
+      \new Lyrics \lyricsto "soprano" { \soprano-lyrics }
     >> }
     %\metronome
   >>
@@ -51,4 +51,5 @@ pulse = 4
 % --- Paper
 \paper {
   #(set-default-paper-size "letter")
+  page-breaking = #ly:page-turn-breaking
 }
