@@ -7,15 +7,15 @@ bass-solo = \relative do {
   mi4 fas8 sol la4 mi |
   fas4 mi8( re) mi4 do |
   re8 do si re dos4 dos | \break
-  la4 si8( do) mi4 re8 do |
-  re4 do8 si la4 la |
-  si4 do8 re mi4 re8 si |
-  dos4 re8( mi) re2 | \break
+  fas4 sol8 la sol4 mi |
+  sol4 la8( si) la4 mi |
+  fas8 re mi fas mi4 sol |
+  la8 si dos( re) re2 | \break
 }
 
 bass-solo-lyrics = \lyricmode {
   De -- se -- o ver que to -- dos te a -- mem.
   El que no te a -- ma es un cie -- go.
   Quien no te a -- ma es -- ta cie -- go.
-  Es una ver -- da -- de -- ra des -- gra -- cia no a -- mar -- te.
+  Es u -- na des -- gra -- cia no a -- mar -- te.
 }
