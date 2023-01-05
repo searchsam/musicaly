@@ -14,9 +14,9 @@ harmonies = \new ChordNames {
     fa2 sol2 sol2 do2
 
     do2 do2 do2 do2 do2
-    la2:m la2:m la2:m re2:m re2:m re2:m
+    la2:m la2:m re2:m re2:m re2:m
     do2 do2 do2 fa2 fa2 fa2
-    fa2 fa4 sol4 sol2 sol2 sol2 do2
+    fa2 sol2 sol2 sol2 do2
 
     do2 do2 do2 fa2
     fa2 sol2 sol2 do2

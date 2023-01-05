@@ -24,7 +24,7 @@ global = {
   subsubtitle = \markup{\medium "Misa Popular Nicaragüense"}
   poet = \markup{\caps "tenor"}
   composer = "José De la Jara"
-  arranger = \markup {\right-column { "Manuel Dávila"}}
+  arranger = \markup {\right-column { "Manuel Dávila" }}
   tagline = ##f
   breakbefore = ##t
 }

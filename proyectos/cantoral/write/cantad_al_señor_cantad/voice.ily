@@ -33,7 +33,6 @@ voice = \relative do'' {
   do8 si4.
   do2 \break
 
-  r2
   r8 sol sol sol
   sol4 sol8 sol
   sol8 fa mi fa
@@ -46,15 +45,14 @@ voice = \relative do'' {
   re2 \break
   r4 mi8 mi
   mi4. fa8
-  sol8 sol4.
-  sol8 la8 la4(~
-  la4. sol8
-  fa2)
-  r8 fa8 fa fa
-  la8 la sol sol~
-  sol4. sol8
-  sol8 la8 sol4(~
-  sol4. si8
+  sol8 sol4 sol8 
+  la8 la4.( 
+  sol8 fa4.)
+  r4 r8 fa
+  fa8 fa la la 
+  sol8 sol4.~
+  sol8 sol sol la
+  sol4.( si8
   do2) \break
 
   r4 sol
@@ -90,14 +88,13 @@ voice = \relative do'' {
   do8 si4.
   do2 \break
 
-  r2
   r8 sol sol sol
   sol4 sol8 fa
   mi8 fa sol4
   sol2
   r4 mi8 mi
-  mi4 mi8 mi
-  mi8 mi mi4~
+  mi4. mi8 mi mi
+  mi4 mi mi4~
   mi4 r8 mi
   re4. re8
   re2
@@ -288,7 +285,7 @@ voice-lyrics = \lyricmode {
   un nue -- vo can -- tar.
 
   Por -- que~el Se -- ñor a -- ma a su pue -- blo
-  a -- dor -- na con la vic -- to -- ria a los hu -- mil -- des.
+  a -- dor -- na con la vic -- to -- ria~a los hu -- mil -- des.
   Los fie -- les fes -- te -- jen su glo -- ria
   can -- ta -- dle ju -- bi -- lo -- sos en fi -- las.
 

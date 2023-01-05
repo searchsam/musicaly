@@ -46,7 +46,7 @@
     \harmonies
     \new Staff {
       <<
-        \set Staff.instrumentName = "Solo 1"
+        \set Staff.instrumentName = "Solista 1"
         \set Staff.midiInstrument = #"oboe"
         %\set Staff.midiMaximumVolume = #1.5
         <<
@@ -57,7 +57,7 @@
     }
     \new Staff {
       <<
-        \set Staff.instrumentName = "Solo 2"
+        \set Staff.instrumentName = "Solista 2"
         \set Staff.midiInstrument = #"clarinet"
         %\set Staff.midiMaximumVolume = #1.5
         <<
@@ -68,7 +68,7 @@
     }
     \new Staff {
       <<
-        \set Staff.instrumentName = "Solo 3"
+        \set Staff.instrumentName = "Solista 3"
         \set Staff.midiInstrument = #"english horn"
         %\set Staff.midiMaximumVolume = #1.5
         <<
@@ -79,7 +79,7 @@
     }
     \new Staff {
       <<
-        \set Staff.instrumentName = "Solo 4"
+        \set Staff.instrumentName = "Solista 4"
         \set Staff.midiInstrument = #"bassoon"
         %\set Staff.midiMaximumVolume = #1.5
         <<

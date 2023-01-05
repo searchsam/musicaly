@@ -19,14 +19,15 @@
 %#(set-global-staff-size \size)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #2 \subtitle \fontsize #1 \subsubtitle } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 \autor } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 \arranger } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 \other } } }
 \header {
   dedication = \dedication
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  title = \markup{\smallCaps \title}
+  subtitle = \markup{\medium \subtitle}
+  subsubtitle = \markup{\medium \subsubtitle}
+  composer = \autor
+  arranger = \arranger
+  
+  tagline = ##f
   breakbefore = ##t
 }
 
@@ -40,7 +41,7 @@
     \harmonies
     \new Staff { <<
         %\set Staff.instrumentName = "Voz"
-        \set Staff.midiInstrument = #"choir aahs"
+        \set Staff.midiInstrument = #"oboe"
         %\set Staff.midiMaximumVolume = #1.5
         \new Voice = "voice" { << \global \voice >> }
         \new Lyrics \lyricsto "voice" { \voice-lyrics }

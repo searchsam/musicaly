@@ -7,7 +7,7 @@
 
 \include "melodia.ily"
 
-#(set-global-staff-size 24)
+%#(set-global-staff-size 24)
 
 % --- Parametro globales
 

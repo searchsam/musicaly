@@ -71,11 +71,11 @@ tenor = \relative do' {
 letra = \lyricmode {
   San -- to, san -- to, san -- to, es el Se -- ñor Dios del u -- ni -- ver -- so.
   Lle -- nos es -- tan el cie -- lo y la tie -- rra de su glo -- ria.
-  Ho -- sa -- na, ho -- sa -- na, ha -- sa -- na en el cie -- lo.
-  Ho -- sa -- na, ho -- sa -- na, ha -- sa -- na en el cie -- lo.
+  Ho -- sa -- na, ho -- sa -- na, ho -- sa -- na en el cie -- lo.
+  Ho -- sa -- na, ho -- sa -- na, ho -- sa -- na en el cie -- lo.
   En el nom -- bre del Se -- ñor.
-  Ho -- sa -- na, ho -- sa -- na, ha -- sa -- na en el cie -- lo.
-  Ho -- sa -- na, ho -- sa -- na, ha -- sa -- na en el cie -- lo.
+  Ho -- sa -- na, ho -- sa -- na, ho -- sa -- na en el cie -- lo.
+  Ho -- sa -- na, ho -- sa -- na, ho -- sa -- na en el cie -- lo.
 }
 
 \score {
