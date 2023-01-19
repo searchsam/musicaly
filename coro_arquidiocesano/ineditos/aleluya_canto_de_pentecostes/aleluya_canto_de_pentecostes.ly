@@ -22,13 +22,13 @@
 
 % --- Header
 \header {
-  title = \title
-  subtitle = \subtitle
+  title = \markup{\medium \fontsize #2 \title}
+  subtitle = \markup{\medium \subtitle}
+  subsubtitle = \markup{\medium \subsubtitle}
+  poet = \markup {\caps "tenor"}
   composer = \autor
-  arranger = \arranger
-  opus = \other
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  arranger = \markup {\right-column { \arranger \other}}
+  tagline = \dedication
   breakbefore = ##t
 }
 
@@ -42,48 +42,75 @@
     \new ChoirStaff { <<
         \new Staff { <<
             \set Staff.instrumentName = "Soprano"
-            \set Staff.midiInstrument = #"choir aahs"
             %\set Staff.midiMaximumVolume = #1.5
             <<
               \new Voice = "soprano" { << \global \soprano >> }
               \new Lyrics \lyricsto "soprano" { \soprano-lyrics }
             >>
         >> }
-        \new Staff { <<
+        %{\new Staff { <<
             \set Staff.instrumentName = "Contralto"
-            \set Staff.midiInstrument = #"choir aahs"
             %\set Staff.midiMaximumVolume = #1.5
             <<
               \new Voice = "alto" { << \global \alto >> }
               \new Lyrics \lyricsto "alto" { \alto-lyrics }
             >>
-        >> }
+        >> }%}
         \new Staff { <<
             \set Staff.instrumentName = "Tenor"
-            \set Staff.midiInstrument = #"choir aahs"
             %\set Staff.midiMaximumVolume = #1.5
             <<
               \new Voice = "tenor" { << \global \tenor >> }
               \new Lyrics \lyricsto "tenor" { \tenor-lyrics }
             >>
         >> }
-        \new Staff { <<
-            \set Staff.instrumentName = "Bajo"
+        %{\new Staff { <<
             \set Staff.midiInstrument = #"choir aahs"
             %\set Staff.midiMaximumVolume = #1.5
             <<
               \new Voice = "bass" { << \global \bass >> }
               \new Lyrics \lyricsto "bass" { \bass-lyrics }
             >>
-        >> }
+        >> }%}
     >> }
   >>
   \layout {}
+}
+
+\score {
+  <<
+    \new Staff { <<
+        \set Staff.midiInstrument = #"oboe"
+        %\set Staff.midiMaximumVolume = #1.5
+        <<
+          << \global \soprano-unfold >>
+        >>
+    >> }
+    %{\new Staff { <<
+        \set Staff.midiInstrument = #"choir aahs"
+        %\set Staff.midiMaximumVolume = #1.5
+        <<
+          << \global \alto >>
+        >>
+    >> }%}
+    \new Staff { <<
+        \set Staff.midiInstrument = #"english horn"
+        %\set Staff.midiMaximumVolume = #1.5
+        << \global \tenor-unfold >>
+    >> }
+    %{\new Staff { <<
+        \set Staff.midiInstrument = #"choir aahs"
+        %\set Staff.midiMaximumVolume = #1.5
+        <<
+          << \global \bass >>
+        >>
+    >> }%}
+  >>
   \midi {}
 }
 
 % --- Paper
 \paper {
-  #(set-default-paper-size "letter")
+  #(set-paper-size "letter")
   page-breaking = #ly:page-turn-breaking
 }

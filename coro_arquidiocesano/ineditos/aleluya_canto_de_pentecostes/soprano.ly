@@ -1,4 +1,4 @@
-% Ave Maria - Soprano
+% Aleluya Canto de Pentecostes - Soprano
 % by serachsam
 
 \language "espanol"
@@ -12,10 +12,9 @@ pulse = 4
 % --- Includes
 \include "global.ily"
 \include "soprano.ily"
-\include "metronome.ily"
 
 % --- Global size
-#(set-global-staff-size 27)
+%#(set-global-staff-size 27)
 
 % --- Header
 \header {
@@ -36,20 +35,32 @@ pulse = 4
 % --- Sheet
 \score {
   <<
-    \new Staff { <<
-      \set Staff.midiInstrument = #"choir aahs"
-      %\set Staff.midiMaximumVolume = #1.5
-      \new Voice = "soprano" { << \global \soprano >> }
-      \new Lyrics \lyricsto "soprano" { \soprano-lyrics }
-    >> }
+    \new Staff {
+      <<
+        \new Voice = "tenor" { << \global \soprano >> }
+        \new Lyrics \lyricsto "tenor" { \soprano-lyrics }
+      >>
+    }
+  >>
+  \layout {}
+}
+
+\score {
+  <<
+    \new Staff {
+      <<
+        \set Staff.midiInstrument = #"oboe"
+        %\set Staff.midiMaximumVolume = #1.5
+        << \global-unfold \soprano-unfold >>
+      >>
+    }
     %\metronome
   >>
   \midi {}
-  \layout {}
 }
 
 % --- Paper
 \paper {
-  #(set-default-paper-size "letter")
+  #(set-paper-size "letter")
   page-breaking = #ly:page-turn-breaking
 }

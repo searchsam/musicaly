@@ -35,12 +35,12 @@
 % --- Sheet
 \score {
   <<
-    \transpose sol mi {\harmonies}
+    \transpose sol re {\harmonies}
     \new Staff = "main" { <<
         \set Staff.midiInstrument = #"oboe"
         \set Staff.midiMaximumVolume = #1
         <<
-          \new Voice = "instrument" { \transpose sol mi {<< \global \instrument >>} }
+          \new Voice = "instrument" { \transpose sol re {<< \global \instrument >>} }
         >>
     >> }
   >>

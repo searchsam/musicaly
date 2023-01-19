@@ -4,7 +4,7 @@ tenor = \relative do' {
   \clef "G_8"
 
   R2.*16 |
-  mi4\mf mi8 dos4 dos8 |
+  mi4\mf mi8^\markup{\small \italic "Solo"} dos4 dos8 |
   res4 res8 si4 si8 |
   dos4 dos8 dos( si dos) |
   res4. sols,8( sis res) |
@@ -22,7 +22,7 @@ tenor = \relative do' {
   dos4 dos8 dos( si las) |
   sols2. |
 
-  mi'4\mf mi8 dos4 dos8 |
+  mi'4\mf mi8^\markup{\small \italic "Todos"} dos4 dos8 |
   res4 res8 si4 si8 |
   dos4 dos8 dos( si dos) |
   res4. sols,8( sis res) |
@@ -32,7 +32,7 @@ tenor = \relative do' {
   sols4.~ sols4 r8 |
 
   R2.*3 |
-  r4. r4 sols8\f |
+  r4. r4 sols8\p |
   dos4( si8) las4 dos 8 |
   si4( las8) sols4 si8 |
   las4 sols8 fass4 las8 |
@@ -46,18 +46,18 @@ tenor = \relative do' {
   fa4 fa8 re4 re8 |
   mi4 mi8 do4 do8 |
   re4 re8 re( do si) |
-  la4.~ la4 mi'8\f |
-  fa4^\markup{\small \italic "Solo Tenor"} fa8 re4. |
+  la4.~ la4 mi'8\mf |
+  fa4^\markup{\small \italic "Solo"} fa8 re4. |
   mi4. do |
   re8 re re re( do) re |
-  mi4.~ mi4 la,8\mf |
+  mi4.~ mi4 la,8\p |
   re4( do8) si4 re8 |
   do4( si8) la4 do8 |
   si4 la8 sols4 si8 |
-  la4.~ la4 mi'8\f |
+  la4.~ la4 mi'8\mf |
   la,2. |
   R2. |
-  solb'4^\markup{\small \italic "Todos"} solb8 mib4 mib8 |
+  solb'4\mf solb8^\markup{\small \italic "Todos"} mib4 mib8 |
   fa4 fa8 reb4 reb8 |
   mib4 mib8 mib( reb mib) |
   fa4. sib,8( re fa) |
@@ -66,14 +66,14 @@ tenor = \relative do' {
   mib4. mib8( reb) do |
   sib4.~ sib4 r8 |
   R2.*2 |
-  r4. r4 fa8~\<^\markup{\small \italic "Tenor I"} |
+  r4. r4 fa8~\<^\markup{\small "Tenor 1"} |
   fa8 fa fa sib sib4~ |
   sib2.~ |
   sib4.~ sib4 sib8 |
-  sib8 sib sib <sib fa'>4.^\markup{\small \italic "Todos"} |
+  sib8 sib sib <sib fa'>4. |
   R2. |
-  r4. <sib fa'>8-> <sib fa'>8-> <sib fa'>8-> |
-  sib4->\! r8 r4. |
+  r4. <sib fa'>8->^\markup{\small "Todos"} <sib fa'>8-> <sib fa'>8-> |
+  <sib sib'>4->\! r8 r4. |
   R2. |
 }
 
