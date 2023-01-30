@@ -36,13 +36,13 @@
 % --- Sheet 
 \score {
   <<
-    \harmonies
+    \transpose do re {\harmonies}
     \new Staff = "main" {
+      %\set Staff.instrumentName = "Instrument"
+      \set Staff.midiInstrument = #"violin"
+      %\set Staff.midiMaximumVolume = #1.5
       <<
-        %\set Staff.instrumentName = "Instrument"
-        \set Staff.midiInstrument = #"violin"
-        %\set Staff.midiMaximumVolume = #1.5
-        << \global \instrument >>
+        \transpose do re {<< \global \instrument >>}
       >>
     }
   >>
