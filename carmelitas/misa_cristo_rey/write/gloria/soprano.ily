@@ -59,7 +59,7 @@ soprano_music = \relative do' {
 }
 
 soprano_lyrics = \lyricmode {
-    Y~en la tie -- rra paz a los hom -- bres que a -- ma el Se -- ñor.
+    Y~en la tie -- rra paz a los hom -- bres de bue -- na vo -- lun -- tad.
     Te~a -- la -- ba -- mos, te glo -- ri -- fi -- ca -- mos, te da -- mos gra -- cias por tu glo -- ria.
 
     Se -- ñor Dios, Rey ce -- les -- tial, Dios Pa -- dre to -- do -- po -- de -- ro -- so.

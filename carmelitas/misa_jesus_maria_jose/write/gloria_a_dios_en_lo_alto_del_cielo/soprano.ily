@@ -107,7 +107,7 @@ soprano-music = \relative do' {
 
 soprano-lyrics = \lyricmode {
   Glo -- ria, glo -- ria a Dios en el cie -- lo,
-  y en la tie -- rra paz a los hom -- bres que a -- ma el Se -- ñor.
+  y en la tie -- rra paz a los hom -- bres de bue -- na vo -- lun -- tad.
 
   Por tu~in -- men -- sa glo -- ria te~a -- la -- ba -- mos,
   te ben -- de -- ci -- mos, te~a -- do -- ra -- mos,
@@ -118,7 +118,7 @@ soprano-lyrics = \lyricmode {
   Se -- ñor, Hi -- jo ú -- ni -- co, Je -- su -- cris -- to.
 
   Glo -- ria, glo -- ria a Dios en el cie -- lo,
-  y en la tie -- rra paz a los hom -- bres que a -- ma el Se -- ñor.
+  y en la tie -- rra paz a los hom -- bres de bue -- na vo -- lun -- tad.
   
   Se -- ñor Dios, Cor -- de -- ro de Dios, 
   tú que qui -- tas el pe -- ca -- do, 

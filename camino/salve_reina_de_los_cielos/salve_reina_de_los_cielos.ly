@@ -20,16 +20,12 @@ global = {
   \tempo "Allegro" 4 = 110
   \time 4/4
   \key la \minor
-  s1*11
+  s1*12
   \bar "|."
 }
 
 melodia = \relative do'' {
-  \textLengthOn
-  s1_\markup \center-column { \small "Salve reina de los cielos... ...ruega al Señor por nosotros" }
-  \textLengthOff
-  \break
-  r2 la4 si 
+  r2 la'4 si 
   do1~
   do4 re4 do2 
   si8 la do2. 
@@ -39,24 +35,28 @@ melodia = \relative do'' {
   sol2. si4
   re2 mi4 re
   do1
+  \bar "||"
+  si2 la~ |
+  la1 |
 }
 
 armonias = \new ChordNames {
   \set chordChanges = ##t
   \italianChords
   \chordmode {
-   la1:m s1
-   la1:m s1*4 sol1 s1*2 fa1
+   la1:m la1:m la1:m la1:m la1:m la1:m sol1 sol1 sol1 fa1 mi2:7 la2:m 
   }
 }
 
 \score {
   <<
-    \armonias
-    \new Staff <<
+    \transpose la mi {\armonias}
+    \new Staff {
       \set Staff.midiInstrument = #"oboe"
-      << \melodia \global >>
+      <<
+      \transpose la mi {<< \melodia \global >>}
     >>
+    }
   >>
   \midi {}
   \layout {}

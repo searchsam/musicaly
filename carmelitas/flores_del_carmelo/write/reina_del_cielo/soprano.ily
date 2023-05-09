@@ -31,7 +31,7 @@ soprano_music = \relative do'' {
   mi4 sol8 fas( mi re) |
   mi2 r4 | #(if (= particle 1) jump "")
   mi4 sol2 |
-  \tuplet 3/2 {fas4.( mi fas)} |
+  fas4( mi fas) |
   sols2. |
 }
 

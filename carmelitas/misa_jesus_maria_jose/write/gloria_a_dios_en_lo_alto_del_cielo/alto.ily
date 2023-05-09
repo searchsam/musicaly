@@ -107,7 +107,7 @@ alto-music = \relative do' {
 
 alto-lyrics = \lyricmode {
   Glo -- ria, glo -- ria a Dios en el cie -- lo,
-  y en la tie -- rra paz a los hom -- bres que a -- ma el Se -- ñor.
+  y en la tie -- rra paz a los hom -- bres de bue -- na vo -- lun -- tad.
 
   Te a -- la -- ba -- mos,
   te a -- do -- ra -- mos,
@@ -118,7 +118,7 @@ alto-lyrics = \lyricmode {
   Je -- su -- cris -- to.
  
   Glo -- ria, glo -- ria a Dios en el cie -- lo,
-  y en la tie -- rra paz a los hom -- bres que a -- ma el Se -- ñor.
+  y en la tie -- rra paz a los hom -- bres de bue -- na vo -- lun -- tad.
   
   Cor -- de -- ro de Dios,
   el pe -- ca -- do, 

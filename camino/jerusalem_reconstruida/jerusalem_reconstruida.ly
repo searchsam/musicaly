@@ -17,7 +17,7 @@
 
 oboe = \new Staff {
   \set Staff.midiInstrument = "oboe"
-  \tempo "Moderato" 4 = 100
+  \tempo "Moderato" 4 = 80
   \time 4/4
   \key e \minor
 
