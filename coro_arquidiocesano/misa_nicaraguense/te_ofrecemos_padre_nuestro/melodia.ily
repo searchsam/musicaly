@@ -24,7 +24,7 @@ etiqueta = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic
 
 % --- Musica
 soprano = \relative do' {
-  \compressEmptyMeasures
+  \compressFullBarRests
   \dynamicUp
   
   R2.*11				|
@@ -46,13 +46,13 @@ soprano = \relative do' {
 }
 
 alto = \relative do' {
-  \compressEmptyMeasures
+  \compressFullBarRests
   \dynamicUp
   
 }
 
 tenor = \relative do' {
-  \compressEmptyMeasures
+  \compressFullBarRests
   \dynamicUp
   \clef "G_8"
   R2.*11				|
@@ -76,7 +76,7 @@ tenor = \relative do' {
 }
 
 bajo = \relative do {
-  \compressEmptyMeasures
+  \compressFullBarRests
   \dynamicUp
   \clef bass
   

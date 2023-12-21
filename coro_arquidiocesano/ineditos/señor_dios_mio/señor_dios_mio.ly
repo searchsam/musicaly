@@ -39,7 +39,6 @@ pulse = 2
   <<
     \new ChoirStaff { <<
         \new Staff { <<
-          \set Staff.midiInstrument = #"oboe"
             \set Staff.instrumentName = "Soprano"
             %\set Staff.midiInstrument = #"oboe"
             %\set Staff.midiMaximumVolume = #1.5
@@ -49,7 +48,6 @@ pulse = 2
             >>
         >> }
         \new Staff { <<
-          \set Staff.midiInstrument = #"clarinet"
             \set Staff.instrumentName = "Contralto"
             %\set Staff.midiInstrument = #"clarinet"
             %\set Staff.midiMaximumVolume = #1.5
@@ -59,7 +57,6 @@ pulse = 2
             >>
         >> }
         \new Staff { <<
-          \set Staff.midiInstrument = #"english horn"
             \set Staff.instrumentName = "Tenor"
             %\set Staff.midiInstrument = #"english horn"
             %\set Staff.midiMaximumVolume = #1.5
@@ -69,7 +66,6 @@ pulse = 2
             >>
         >> }
         \new Staff { <<
-          \set Staff.midiInstrument = #"bassoon"
             \set Staff.instrumentName = "Bajo"
             %\set Staff.midiInstrument = #"bassoon"
             %\set Staff.midiMaximumVolume = #1.5

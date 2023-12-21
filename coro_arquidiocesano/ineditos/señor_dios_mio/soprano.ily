@@ -5,97 +5,108 @@ soprano = \relative do'' {
   la8 do re mi |
   re4 re8 do |
   si8 la( sol) la~ |
-  la2 |
+  la4. r8 |
   la8 do re mi |
   re4 re8 do |
   si8 la( sol) la~ |
-  la4. la8 | \break
+  la4. r8 | \break
   
+  r4 r8 la8 |
   do4 do |
   la4 la	 |
   la8 la la( sol) |
   la2 |
   do8 do do do |
   la8 la la sol |
-  la4 la |
+  la4 la~ |
+  la4 r |
   do4 do8 do |
   la4 la |
   la4 la8 sol |
   la4 la	 |
   do4. do8 |
   la8 la la sol |
-  la4 la | \break
+  la4 la~ |
+  la4 r | \break
   
   la8 do re mi |
   re4 re8 do |
   si8 la( sol) la~ |
-  la2 |
+  la4. r8 |
   la8 do re mi |
   re4 re8 do |
   si8 la( sol) la~ |
   la4. r8 | \break
   
+  r2 |
   do8 do do do |
   la2 |
   la8 la la sol |
   la4 la |
   do8 do do do |
   la8 la la sol |
-  la2 | \break
+  la2~ |
+  la4 r | \break
   do8 do do do |
   la2 |
   la4 la8 sol |
   la4 la	 |
   do8 do do do |
   la8 la la sol |
-  la4 la | \break
+  la4 la~ |
+  la4 r | \break
   do4 do8 do |
   la4 la |
   la4 la8 sol |
   la4 la	 |
   do8 do do do |
   la8 la la sol |
-  la2 | 
+  la2~ |
+  la4 r |
   do4 do8 do |
   la2 |
   la4 la8 sol |
   la4 la	 |
   do4 do8 do |
   la8 la la sol |
-  la4 la | \break
+  la4 la~ |
+  la4 r | \break
   
   la8 do re mi |
   re4 re8 do |
   si8 la( sol) la~ |
-  la2 |
+  la4. r8 |
   la8 do re mi |
   re4 re8 do |
   si8 la( sol) la~ |
-  la4. la8 | \break
-
+  la4. r8 | \break
+  
+  r4 r8 la8 |
   do4 do |
   la2 |
   la4 la8 sol |
   la4 la8 la |
   la8 do do do |
   la8 la la sol |
-  la2 |
+  la2~ |
+  la4 r |
   do4 do8 do |
   la2 |
   la4 la8 sol |
   la4 la	 |
   do4 do8 do |
   la8 la la sol	|
-  la4 la | \break
+  la4 la~ |
+  la4 r | \break
   
   la8 do re mi |
   re4 re8 do |
   si8 la( sol) la~ |
-  la2 |
+  la4. r8 |
   la8 do re mi |
   re4 re8 do |
   si8 la( sol) la~ |
-  la2 | \break
+  la4. r8 | \break
 }
 
 soprano-lyrics = \lyricmode {

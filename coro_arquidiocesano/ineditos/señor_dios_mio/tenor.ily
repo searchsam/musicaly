@@ -6,38 +6,38 @@ tenor = \relative do' {
   do8 la si do |
   si4 si8 do |
   re do( si) do~ |
-  do2 |
+  do4. r8 |
   do8 la si do |
   si4 si8 do |
   re do( si) do~ |
   do4. r8 |
-  R2*14 |
-  do8 la si do |
-  si4 si8 do |
-  re do( si) do~ |
-  do2 |
+  R2*17 |
   do8 la si do |
   si4 si8 do |
   re do( si) do~ |
   do4. r8 |
-  R2*28 |
-  do8 la si do |
-  si4 si8 do |
-  re do( si) do~ |
-  do2 |
   do8 la si do |
   si4 si8 do |
   re do( si) do~ |
   do4. r8 |
-  R2*14 |
+  R2*33 |
   do8 la si do |
   si4 si8 do |
   re do( si) do~ |
-  do2 |
+  do4. r8 |
   do8 la si do |
   si4 si8 do |
   re do( si) do~ |
-  do2 |
+  do4. r8 |
+  R2*17 |
+  do8 la si do |
+  si4 si8 do |
+  re do( si) do~ |
+  do4. r8 |
+  do8 la si do |
+  si4 si8 do |
+  re do( si) do~ |
+  do4. r8 |
 }
 
 tenor-lyrics = \lyricmode {
