@@ -54,7 +54,7 @@ tenor-lyrics = \lyricmode {
     {
       \set stanza = "1. "
       Vie -- nen tra -- yen -- do la~es -- pe -- ran -- za
-      a~un mun -- do car -- ga -- do de~an -- die -- da,
+      a~un mun -- do car -- ga -- do de~an -- cie -- da,
       a~un mun -- do que bus -- ca~y que no~al -- can -- za
       ca -- mi -- nos de~a -- mor y de~a -- mis -- tad.
     }
