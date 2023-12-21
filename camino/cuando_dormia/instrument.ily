@@ -1,6 +1,7 @@
-instrument = \relative do'' {
+instrument = \relative do' {
   \compressEmptyMeasures
   \dynamicUp
+  \clef C
 
   do4. si8 la si16 la | %1
   sol4.~ sol4 r8 | %2

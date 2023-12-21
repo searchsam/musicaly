@@ -22,9 +22,9 @@
 
 % --- Header
 \header {
-  title = \markup{\fontsize #2 \medium \smallCaps \title}
-  subtitle = \markup{\medium \subtitle}
-  subsubtitle = \markup{\medium \subsubtitle}
+  title = \markup{\fontsize #2 \normal-text \title}
+  subtitle = \markup{\normal-text \subtitle}
+  subsubtitle = \markup{\normal-text \subsubtitle}
   composer = \autor
   arranger = \markup {\right-column { \arranger \other}}
   tagline = ##f
@@ -38,13 +38,13 @@
 % --- Sheet
 \score {
   <<
-    \transpose si mi {\harmonies}
+    \transpose si sol {\harmonies}
     \new Staff = "main" {
       <<
         \set Staff.instrumentName = "Instrument"
         \set Staff.midiInstrument = #"violin"
         %\set Staff.midiMaximumVolume = #1.5
-        \transpose si mi {<< \global \instrument >>}
+        \transpose si sol {<< \global \instrument >>}
       >>
     }
     \new ChoirStaff {
@@ -55,7 +55,7 @@
             \set Staff.midiInstrument = #"oboe"
             %\set Staff.midiMaximumVolume = #1.5
             <<
-              \new Voice = "soprano" { \transpose si mi {<< \global \soprano >>} }
+              \new Voice = "soprano" { \transpose si sol {<< \global \soprano >>} }
               \new Lyrics \lyricsto "soprano" { \soprano-lyrics }
             >>
           >>
@@ -66,7 +66,7 @@
             \set Staff.midiInstrument = #"clarinet"
             %\set Staff.midiMaximumVolume = #1.5
             <<
-              \new Voice = "alto" { \transpose si mi {<< \global \alto >>} }
+              \new Voice = "alto" { \transpose si sol {<< \global \alto >>} }
               \new Lyrics \lyricsto "alto" { \alto-lyrics }
             >>
           >>

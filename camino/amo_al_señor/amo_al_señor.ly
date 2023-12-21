@@ -19,9 +19,9 @@
 
 % --- Header
 \header {
-  title = \markup{\medium \smallCaps \title}
-  subtitle = \markup{\medium \subtitle}
-  subsubtitle = \markup{\medium \subsubtitle}
+  title = \markup{\normal-text \title}
+  subtitle = \markup{\normal-text \subtitle}
+  subsubtitle = \markup{\normal-text \subsubtitle}
   composer = \autor
   arranger = \markup {\right-column { \arranger \other}}
   tagline = ##f
@@ -35,13 +35,30 @@
 % --- Sheet
 \score {
   <<
-    \transpose re la {\harmonies}
+    \transpose re fa {\harmonies}
     \new Staff = "main" {
       <<
         \set Staff.midiInstrument = #"viola"
         %\set Staff.midiMaximumVolume = #1.5
         <<
-          \new Voice = "instrument" { \transpose re la {<< \global \instrument >>} }
+          \new Voice = "instrument" { \transpose re fa {<< \global \instrument >>} }
+        >>
+      >>
+    }
+  >>
+  \layout {}
+  \midi {}
+}
+
+\score {
+  <<
+    \transpose re mi {\harmonies}
+    \new Staff = "main" {
+      <<
+        \set Staff.midiInstrument = #"viola"
+        %\set Staff.midiMaximumVolume = #1.5
+        <<
+          \new Voice = "instrument" { \transpose re mi {<< \global \instrument >>} }
         >>
       >>
     }

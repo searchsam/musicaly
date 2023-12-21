@@ -3,39 +3,48 @@
 %	by serach.sam@
 % ****************************************************************
 \language "espanol"
-\version "2.23.2"
+\version "2.25.4"
 
 %#(set-global-staff-size 17)
 
-\markup { \fill-line { \center-column { \fontsize #5 "Escuchad islas lejanas" \fontsize #3 "Isaias 49, 1 - 16" } } }
-\markup { \fill-line { \fontsize #2 \smallCaps " " \fontsize #2 "Kiko Argüello"  } }
-\markup { \fill-line { " " \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  title = \markup{\normal-text "Escuchad islas lejanas" }
+  subtitle = \markup{\normal-text "Isaias 49, 1 - 16"}
+  composer = "Kiko Argüello"
+  arranger = \markup {\right-column { "Adaptación: Samuel Gutiérrez"}}
+  tagline = ##f
   breakbefore = ##t
 }
 
 % --- Parametro globales
 global = {
-  \tempo "Andante" 4 = 100 
-  \key re \major
-  \time 4/4
-  s1*8
+  \tempo "Lento" 4 = 60
+  \key do \major
+  \time 2/4
+  s2*18
   \bar "|."
 }
 
 melodia = \relative do' { 	
   % Type notes here
-  re1(~
-  re4 mi8 re mi re fas4~
-  fas2.) fas4 
-  dos2.( si8 dos si dos fas2)
-  fas8(\( mi 
-  re1) mi8 re mi re
-  dos2 \fermata \)
+  R2*2 |
+  mi4. fa8 |
+  sol2~ |
+  sol4 la8 sol |
+  fa2~ |
+  fa4 r |
+  la2 |
+  si8 la4 si16 la |
+  sols2~ |
+  sols4 la8 si |
+  do2 |
+  fa2 |
+  mi2~ |
+  mi2 |
+  re2~ |
+  re2 |
   \textLengthOn
-  s1_\markup { \small "Escuchad islas lejanas..." }
+  s2_\markup { \small "Escuchad islas lejanas..." }
   \textLengthOff
 }
 
@@ -43,8 +52,23 @@ armonia = \new ChordNames {
   \set chordChanges = ##t
   \italianChords
   \chordmode { 
-    re1 re1 fas1:m fas1:m fas1:m sol1 sol2 fas2 
-    
+    do2
+    do2
+    do2
+    mi2:m
+    mi2:m
+    fa2
+    fa2
+    fa2
+    fa2
+    mi2
+    mi2
+    fa2
+    fa2
+    mi2
+    mi2
+    sol2:7
+    sol2:7
   }
 }
 

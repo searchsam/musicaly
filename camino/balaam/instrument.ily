@@ -1,6 +1,7 @@
 instrument = \relative do'' {
   \compressEmptyMeasures
   \dynamicUp
+  %\clef C
   
   R1 |
   sol8( la sib <la do>) <sib re>2 | %1
@@ -24,7 +25,7 @@ instrument = \relative do'' {
   la8. sib16 <la do>8( <sol sib>) la8. sol16 <la fa>4 |
   s4_\markup { \small "...si Dios..." } 
   \textLengthOff
-  re4 <re sol>4_\markup { \small "...no quiere?" } <sib re>8( <la do>) |
+  re4 <re fa>4_\markup { \small "...no quiere?" } <sib re>8( <la do>) |
   sib8. la16 <sol sib>2 r4 |
   \textLengthOn
   s2._\markup { \small "¿Cómo..." } sib8. do16 |
@@ -33,7 +34,7 @@ instrument = \relative do'' {
   la8. sib16 <la do>8( <sol sib>) la8. sol16 <la fa>4 |
   s4_\markup { \small "...si Dios..." } 
   \textLengthOff
-  re4 <re sol>4_\markup { \small "...no me deja?" } <sib re>8( <la do>) |
+  re4 <re fa>4_\markup { \small "...no me deja?" } <sib re>8( <la do>) |
   sib8. la16 <sol sib>2 r4 | \break
   \textLengthOn
   s2_\markup { \small "De lo alto de esta cima yo " } s4_\markup { \small "diviso,..." } sol8. la16 |
@@ -98,7 +99,7 @@ instrument = \relative do'' {
   la8. sib16 <la do>8( <sol sib>) la8. sol16 <la fa>4 |
   s4_\markup { \small "...contará..." } 
   \textLengthOff
-  re4 <re sol>4_\markup { \small "...tu multitud?" } <sib re>8( <la do>) |
+  re4 <re fa>4_\markup { \small "...tu multitud?" } <sib re>8( <la do>) |
   sib8. la16 <sol sib>2 r4 | \break
   \textLengthOn
   s2_\markup { \small "Jacob,..." } |
@@ -115,7 +116,7 @@ instrument = \relative do'' {
   la8. sib16 <la do>8( <sol sib>) la8. sol16 <la fa>4 |
   s4_\markup { \small "...como la muerte..." } 
   \textLengthOff
-  re4 <re sol>4_\markup { \small "...de tu justo." } <sib re>8( <la do>) |
+  re4 <re fa>4_\markup { \small "...de tu justo." } <sib re>8( <la do>) |
   sib8. la16 <sol sib>2 r4 | \break
   \textLengthOn
   s4_\markup { \small "Vaya mi vida donde " } s4_\markup { \small "Él." } |
@@ -186,7 +187,7 @@ instrument = \relative do'' {
   la8. sib16 <la do>8( <sol sib>) la8. sol16 <la fa>4 |
   s4_\markup { \small "...pon el oído..." } 
   \textLengthOff
-  re4 <re sol>4_\markup { \small "...rey Balaq;..." } <sib re>8( <la do>) |
+  re4 <re fa>4_\markup { \small "...rey Balaq;..." } <sib re>8( <la do>) |
   sib8. la16 <sol sib>2 r4 | \break
   \textLengthOn
   s2_\markup { \small "...que Dios no es un " } s2_\markup { \small "hombre..." } |

@@ -28,7 +28,7 @@ instrument = \relative do'' {
       \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 6) (padding . -10))
     }
     {
-      \set Staff.midiInstrument = #"violin"
+      \set Staff.midiInstrument = #"cello"
       \clef "G_8"
       \key si \minor
       si,2~ |

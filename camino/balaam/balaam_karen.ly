@@ -1,7 +1,7 @@
 % Balaam - Flauta
 % by serachsam
 \language "espanol"
-\version "2.23.10"
+\version "2.25.4"
 
 % --- Global parameters
 %particle = 0
@@ -19,9 +19,9 @@
 
 % --- Header
 \header {
-  title = \markup{\medium \smallCaps \title}
-  subtitle = \markup{\medium \subtitle}
-  subsubtitle = \markup{\medium \subsubtitle}
+  title = \markup{\normal-text \title }
+  subtitle = \markup{\normal-text \subtitle}
+  subsubtitle = \markup{\normal-text \subsubtitle}
   composer = \autor
   arranger = \markup {\right-column { \arranger \other}}
   tagline = ##f
@@ -35,12 +35,12 @@
 % --- Sheet
 \score {
   <<
-    \transpose sol fas {\harmonies}
+    \transpose sol mi {\harmonies}
     \new Staff = "main" {<<
       \set Staff.midiInstrument = #"oboe"
       %\set Staff.midiMaximumVolume = #1.5
       <<
-        \new Voice = "instrument" { \transpose sol fas {<< \global \instrument >>} }
+        \new Voice = "instrument" { \transpose sol mi {<< \global \instrument >>} }
       >>
     >>}
   >>

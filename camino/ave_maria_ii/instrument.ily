@@ -1,7 +1,7 @@
 instrument = \relative do {
   \compressEmptyMeasures
   \dynamicUp
-  \clef C
+  %\clef C
   
   mi'2.~ |
   mi2~ mi8 re |
