@@ -98,14 +98,32 @@ prefacio_i = \relative do' {
   \key la \minor
   \time 2/4
 
-  la,8^\markup{\sans "Lam"} la la( mi'2) mi8 re^\markup{\sans "Rem"} re2 re8 do re mi2^\markup{\sans "Lam"} mi2 \divisioMinima
-  mi8^\markup{\sans "Mi"} mi mi mi mi2 mi8 mi re do4^\markup{\sans "Lam"}( la2) \divisioMaior
-  la8 la la la4 mi'2 re8^\markup{\sans "Rem"} re2 re8 mi2^\markup{\sans "Lam"} \divisioMaior
-  fa8^\markup{\sans "Fa"} fa fa fa fa fa fa fa mi^\markup{\sans "Lam"} la,2 \divisioMinima
+  la,8^\markup{\sans "Lam"} la la( mi'2) \divisioMinima
+  mi8 re^\markup{\sans "Rem"} re2 \divisioMinima
+  re8 re re re re re do re mi4^\markup{\sans "Lam"} mi2 \divisioMinima \break
+  mi8^\markup{\sans "Mi"} mi mi mi mi mi mi mi mi mi2 \divisioMinima
+  mi8 mi mi mi mi mi mi mi mi mi re do4^\markup{\sans "Lam"} la2 \divisioMaior \break
+
+  la8 la la4 mi'2 \divisioMinima
+  re8^\markup{\sans "Rem"} re re re re re re re do re mi4^\markup{\sans "Lam"} mi2 \divisioMinima \break
+  mi8^\markup{\sans "Mi"} mi mi mi mi mi mi mi mi mi re do4^\markup{\sans "Lam"} la2 \divisioMaxima \break
+
+  fa'8^\markup{\sans "Fa"} fa fa fa fa fa fa fa fa fa fa8 fa2 fa8 fa mi^\markup{\sans "Lam"} la,2 \divisioMaior \break
   fa'8^\markup{\sans "Fa"} fa fa fa fa fa fa fa2 \divisioMinima
-  fa4 fa sol fa sols2^\markup{\sans "Mi"} sols \divisioMaxima %\break
-  la2^\markup{\sans "Lam"} la8 la la8 la si la4 la8 sol4^\markup{\sans "Sol"} sol \divisioMinima
-  sol8 sol sol sol sol fa4 mi8 la4^\markup{\sans "Lam"} la2 \divisioMaior
+  fa4 fa fa fa sol fa sols2^\markup{\sans "Mi"} sols \divisioMaxima \break
+  
+  la8^\markup{\sans "Lam"} la la la2 la la8 si4 la8 sol2^\markup{\sans "Sol"} sol \divisioMinima
+  sol8 sol2 sol8 sol sol fa4 mi8 la2^\markup{\sans "Lam"} \divisioMinima \break
+  la8^\markup{\sans "Lam"} la la2 la8 la la si4 la8 sol2^\markup{\sans "Sol"} sol \divisioMinima
+  sol8 sol2 sol8 sol sol sol fa4 mi8 la2^\markup{\sans "Lam"} la \divisioMaior \break
+  
+  la8^\markup{\sans "Lam"} la la2 la8 si4 la8 sol2^\markup{\sans "Sol"} sol8 sol2 \divisioMinima
+  sol8 sol sol2 sol8 sol sol sol2 fa4 mi8 la2^\markup{\sans "Lam"} la \divisioMinima \break
+  la8^\markup{\sans "Lam"} si4 la8 sol2^\markup{\sans "Sol"} sol \divisioMinima
+  sol8 sol sol2 sol8 sol sol sol fa4 mi8 la2^\markup{\sans "Lam"} la \divisioMaior \break
+  
+  la8^\markup{\sans "Lam"} la la2 la la8 la la la si4 la8 sol2^\markup{\sans "Sol"} sol \divisioMinima
+  sol8 sol sol sol2 sol8 sol sol sol fa4 mi8 la2^\markup{\sans "Lam"} \divisioMaxima \break
 
   si8 do2 do2 \divisioMinima
   do8 do do si la re2^\markup{\sans "Sol"} re2 \divisioMinima
@@ -133,13 +151,10 @@ prefacio_iii = \relative do' {
   \key la \minor
   \time 2/4
 
-  si8 do^\markup{\sans "Lam"} do2 \divisioMinima
-  do8 do do do do do do si la re2^\markup{\sans "Sol"} \divisioMinima
-  si8 si si si si2 \divisioMinima
-  si8 si si si4 do8 si la2^\markup{\sans "Lam"} do2 \divisioMaxima %\break
-  do8 do do do do do2 \divisioMinima
-  do8 do do do do2 \divisioMinima
-  do8 si la re2^\markup{\sans "Sol"} re \divisioMaxima %\break
+  si8 do^\markup{\sans "Lam"} do do2 do8 do2 do8 si la re2^\markup{\sans "Sol"} re \divisioMinima
+  si8 si si si2 do8 si la2^\markup{\sans "Lam"} do2 \divisioMaior \break
+  do8 do do2 \divisioMinima
+  do8 do do do do2 si8 la re2^\markup{\sans "Sol"} re \divisioMaior \break
   la4^\markup{\sans "Lam"} la2 la \divisioMinima
   do4^\markup{\sans "Fa"} do2 do \divisioMinima
   do8 do si2^\markup{\sans "Mi"}
@@ -355,19 +370,31 @@ saludo_vi-lyrics = \lyricmode {
 }
 
 prefacio_i-lyrics = \lyricmode {
-  En ver -- dad es jus -- to y ne -- ce -- sa -- rio,
-  es nues -- tro de -- ber y sal -- va -- ción __
-  glo -- ri -- fi -- car -- te siem -- pre, Se -- ñor,
-  pe -- ro más que nun -- ca en~es -- te dí -- a
-  en que Cris -- to, nues -- tra Pas -- cua, ha si -- do~in -- mo -- la -- do.
+  En ver -- dad
+  es jus -- to
+  dar -- te gra -- cias y~e -- xal -- tar tu nom -- bre,
+  Pa -- dre san -- to~y mi -- se -- ri -- cor -- dio -- so,
+  por Je -- su -- cris -- to, Se -- ñor y Re -- den -- tor nues -- tro.
+  Te~a -- la -- ba -- mos,
+  te ben -- de -- ci -- mos y te glo -- ri -- fi -- ca -- mos
+  por el sa -- cra -- men -- to del nue -- vo na -- ci -- mien -- to.
   
-  Él es el ver -- da -- de -- ro cor -- de -- ro
-  que qui -- tó~el pe -- ca -- do del mun -- do.
+  Tú~has que -- ri -- do que del co -- ra -- zón a -- bier -- to de tu Hi -- jo
+  ma -- na -- ra pa -- ra no -- so -- tros
+  el don nup -- cial del Bau -- tis -- mo,
   
-  Mu -- rien -- do, 
-  des -- tru -- yó nues -- tra muer -- te,
-  re -- su -- ci -- tan -- do,
-  res -- tau -- ro nues -- tra vi -- da.
+  pri -- me -- ra pas -- cua de los cre -- yen -- tes,
+  puer -- ta de nues -- tra sal -- va -- ción,
+  i -- ni -- cio de la vi -- da en Cris -- to,
+  fuen -- te de la hu -- ma -- ni -- dad nue -- va.
+  
+  Del a -- gua y del Es -- pí -- ri -- tu
+  en -- gen -- dras en el se -- no de la~I -- gle -- sia,
+  vir -- gen y ma -- dre
+  un pue -- blo de sa -- cer -- do -- tes y re -- yes,
+  con -- gre -- gan -- do de~en -- tre to -- das las na -- cio -- nes
+  en la~u -- ni -- dad y san -- ti -- dad de tu~a -- mor.
+
   Mu -- rien -- do, 
   des -- tru -- yó nues -- tra muer -- te,
   re -- su -- ci -- tan -- do,
@@ -382,12 +409,11 @@ prefacio_ii-lyrics = \lyricmode {
 }
 
 prefacio_iii-lyrics = \lyricmode {
-  Por e -- so,
-  con es -- ta~e -- fu -- sión de go -- zo pas -- cual,
-  el mun -- do~en -- te -- ro
-  se des -- bor -- da de~a -- le -- grí -- a,
-  y con la~a -- sam -- ble -- a
-  de los án -- ge -- les y de los san -- tos,
+  Por es -- te don
+  de tu be -- ne -- vo -- len -- cia
+  tu fa -- mi -- lia
+  te a -- do -- ra
+  y,~u -- ni -- da a los án -- ge -- les y~a los san -- tos,
   can -- ta -- mos,
   can -- ta -- mos el him -- no de tu glo -- ria:
 }
