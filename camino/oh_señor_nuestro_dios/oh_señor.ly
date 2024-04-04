@@ -1,62 +1,63 @@
-% ****************************************************************
-%	Oh Señor nuestro Dios - Flauta
-%	by serach.sam@
-% ****************************************************************
+% Oh Señor nuestro Dios - Flauta
+% by serach.sam@
+
 \language "espanol"
 \version "2.23.2"
 
 % --- Tamaño del pentagrama
-#(set-global-staff-size 25)
-
-% --- Parametro globales
-global = {  \tempo "Moderato" 4 = 90 \key mi \minor \time 2/4 s4 s2*12 \bar "|." }
+%#(set-global-staff-size 25)
 
 % --- Cabecera
-\markup { \fill-line { \center-column { \fontsize #5 "Oh Señor nuestro Dios" \fontsize #3 \caps "Salmo 8" } } }
-\markup { \fill-line { " " \center-column { \fontsize #2 "Kiko Argüello" \small "" } } }
-\markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  title = \markup {\normal-text \fontsize #5 "Oh Señor nuestro Dios"}
+  subtitle = \markup {\normal-text \fontsize #2 "Salmo 8"}
+  composer = "Kiko Argüello"
+  arranger = "Adaptación: Samuel Gutiérrez"
+  tagline = ##f
   breakbefore = ##t
+}
+
+% --- Parametro globales
+global = {
+  \tempo "Moderato" 4 = 90
+  \key mi \minor
+  \time 4/4
+  \skip 1*9
+  \bar "|." 
 }
 
 % --- Musica
 instrumento = \relative do'' {
   %\compressEmptyMeasures
   %Escribir la musica aqui...
-  \partial 4 sol8. fas16	| %1
-  mi2				| %2
-  si8. res16 mi4~		| %4
-  mi4 sol8. fas16		| %4
-  \appoggiatura re8 si2		| %5
-  re8. sol16 si4~		| %7
-  si4 do8 si 			|
-  do si la sol			|
-  la2			| %11
-  fas2 				| %12
-  mi4 la4			| %13
-  do2				| %14
-  si2				| %15
+  r4 sol8. fas16	 mi2 |
+  si8. res16 mi2 sol8. fas16 | %4
+  \appoggiatura re8 si2 re8. sol16 si4~ | %7
+  si2. r4 | %8
+  si4 do16 si do8 si2 | %9
+  la2. r4 | %11
+  mi1 | %12
+  fas1 | %14
+  sol1 |
 }
 
 % --- Acordes
-acordes = \new ChordNames {
-  \set chordChanges = ##t
-  \italianChords
-  \chordmode {
-    R4
-    mi2*3:m sol2*3 si2*3:7 la2*2:m si2:7
-  }
+acordes = \chordmode {
+  mi1:m si4:7 mi2.:m sol1 sol1 sol2 si2:7 si1:7 la1:m si1:7 mi1:m
 }
 
 % --- Partitura
 \score {
   <<
-    \acordes
+    \new ChordNames {
+      \set Staff.midiInstrument = #"church organ"
+      \set chordChanges = ##t
+      \italianChords
+      \acordes
+    }
     \new Staff {
+      \set Staff.midiInstrument = #"oboe"
       <<
-        \set Staff.midiInstrument = #"oboe"
         \global
         \instrumento
       >>
@@ -68,10 +69,5 @@ acordes = \new ChordNames {
 
 % --- Pagina
 \paper {
-  #( set-default-paper-size "letter" )
+  #( set-paper-size "letter" )
 }
-
-%{
-convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
-Aplicando la conversión: 2.19.40, 2.19.46, 2.19.49, 2.19.80
-%}

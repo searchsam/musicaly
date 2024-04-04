@@ -1,53 +1,59 @@
 % Created on Wed Mar 02 13:55:24 CST 2011
 % search.sam@
 
-\version "2.23.2"
+\version "2.25.12"
 
 %#(set-global-staff-size 25)
 
-\markup { \fill-line { \center-column { \fontsize #5 "Jerusalén reconstruida" \fontsize #3 "Tobías 13, 11-17" } } }
-\markup { \fill-line { " " \fontsize #2 "Kiko Argüello" } }
-\markup { \fill-line { "" \right-column { \fontsize #2 "Adaptación: Samuel Gutiérrez"  } } }
-
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
+  title = \markup {\normal-text \fontsize #5 "Jerusalén reconstruida"}
+  subtitle = \markup {\normal-text \fontsize #2 "Tobías 13, 11-17"}
+  composer = "Kiko Argüello"
+  arranger = "Adaptación: Samuel Gutiérrez"
+  tagline = ##f
   breakbefore = ##t
 }
 
-oboe = \new Staff {
-  \set Staff.midiInstrument = "oboe"
+global = {
   \tempo "Moderato" 4 = 80
   \time 4/4
   \key e \minor
-
-  \relative c'' {
-    % Type notes here
-    \partial 4 r8^\markup { \small "Introducción" } g16( a16 | %1
-    b2~ b8) b8 a8( g8) | %2
-    a2. r8 fis16( g16 | %3
-    a2~ a8) a8 g8( fis8) | %4
-    b2. r8 g16( a16 | %5
-    b2~ b8) \appoggiatura c8 \tuplet 3/2 { b8 a8( g8 } a8) | %6
-    fis2. r8 d16 ( e16 | %7
-    fis2~ fis8) fis8 e8( d8) | %8
-    \partial 2. e2. | %9
-    \bar "|."
-  }
+  \skip 1 * 8
+  \bar "|."
 }
 
-armonia = \new ChordNames {
-  \set chordChanges = ##t
-  \italianChords
-  \chordmode {
-    R4 e1:m d1 d1 e1:m e1:m d1 d1 e1:m
-  }
+oboe = \relative c'' {
+  % Type notes here
+  \partial 4 r8 g16( a16) | %1
+  b2~ b8 \breathe b8( a8 g8) | %2
+  a2. r8 fis16( g16) | %3
+  a2~ a8 \breathe a8( g8 fis8) | %4
+  b2. r8 g16( a16) | %5
+  b2~ b8 \breathe \appoggiatura c8 \tuplet 3/2 { b8( a8 g8 } a8) | %6
+  fis2. r8 d16 ( e16) | %7
+  fis2~ fis8 \breathe fis8( e8 d8) | %8
+  \partial 2. e2. | %9
+}
+
+armonia = \chordmode {
+  e4:m e1:m d1 d1 e1:m e1:m d1 d1 e1:m
 }
 
 \score {
   <<
-    \armonia
-    \oboe
+    \new ChordNames {
+      \set chordChanges = ##t
+      \set Staff.midiInstrument = "church organ"
+      \italianChords
+      \armonia
+    }
+    \new Staff {
+      \set Staff.midiInstrument = "oboe"
+      <<
+        \global
+        \oboe
+      >>
+    }
   >>
   \midi {}
   \layout {}
@@ -56,8 +62,3 @@ armonia = \new ChordNames {
 \paper {
   #(set-paper-size "letter")
 }
-
-%{
-convert-ly (GNU LilyPond) 2.19.83  convert-ly: Procesando «»...
-Aplicando la conversión: 2.19.40, 2.19.46, 2.19.49, 2.19.80
-%}
