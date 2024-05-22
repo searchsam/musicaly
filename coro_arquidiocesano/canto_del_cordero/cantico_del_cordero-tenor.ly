@@ -36,14 +36,15 @@ global = {
   \bar "|."
 }
 
-\markup { \fill-line { \center-column { \fontsize #5 "Canto del Cordero" \fontsize #2 "Salmo 118 (117)" \small "Para la Gloria del Señor" } } }
-\markup { \fill-line { \fontsize #2 \smallCaps "Tenor" \fontsize #2 "Musica: Mons. Marco Frisina"  } }
-\markup { \fill-line { \fontsize #2 "Solista" \right-column { \fontsize #2 "Versión Orquestal: Francisco Jarquín Vega" \small "(19 Junio, 2016)" } } }
 
 \header {
-  copyright = "Creative Commons Attribution 3.0"
-  tagline = \markup { \with-url "http://lilypond.org/web/" { LilyPond ... \italic { music notation for everyone } } }
-  breakbefore = ##t 
+  title = \markup {\normal-text \fontsize #7 "Canto del Cordero"}
+  subtitle = \markup {\normal-text "Apocolipsis"}
+  composer = "Marco Frisina"
+  arranger = "Versión Orquestal: Francisco Jarquín Vega"
+  poet = \markup {\fontsize #2 "Tenor"}
+  tagline = ##t 
+  breakbefore = ##t
 }
 
 % --- Musica

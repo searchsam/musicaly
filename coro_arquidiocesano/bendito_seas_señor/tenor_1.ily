@@ -1,4 +1,4 @@
-tenor = \relative do' {
+tenorI = \relative do' {
   \compressEmptyMeasures
   \dynamicUp
   \clef "G_8"

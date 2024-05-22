@@ -18,11 +18,12 @@ pulse = 4
 %#(set-global-staff-size 27)
 
 % --- Header
-\markup { \fill-line { \center-column { \fontsize #5 \title \fontsize #2 \smallCaps \subtitle \fontsize #1 \subsubtitle } } }
-\markup { \fill-line { "TENOR 1" \right-column { \fontsize #2 \autor } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 \arranger } } }
-\markup { \fill-line { " " \right-column { \fontsize #2 \other } } }
 \header {
+  title = \markup{\normal-text \fontsize #7 \title}
+  subtitle = \subtitle
+  composer = \autor
+  arranger = \markup{\arranger \other}
+  poet = \markup{\fontsize #2 "Tenor 1"}
   tagline = ##f
   breakbefore = ##t
 }
@@ -37,7 +38,7 @@ pulse = 4
     \new Staff { <<
       \set Staff.midiInstrument = #"choir aahs"
       %\set Staff.midiMaximumVolume = #1.5
-      \new Voice = "tenor" { << \global \tenor >> }
+      \new Voice = "tenor" { << \global \tenorI>> }
       \new Lyrics \lyricsto "tenor" { \tenor-lyrics }
     >> }
     %\metronome
