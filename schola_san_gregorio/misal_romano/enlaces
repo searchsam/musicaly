@@ -1,0 +1,17 @@
+#!/bin/bash
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/e02020/e02020001.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/e02020/e02020002.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/e02020/e02020003.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/e02020/e02020004.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/e02020/e02020005.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/e02020/e02020006.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/e02020/e02020007.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/e02020/e02020008.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/e02020/e02020009.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/e02020/e02020010.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/e02020/e02020011.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/e02020/e02020012.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/e02020/e02020013.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/e02020/e02020014.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/e02020/e02020015.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/e02020/e02020016.png

@@ -1,0 +1,27 @@
+#!/bin/bash
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb001.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb002.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb003.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb004.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb005.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb006.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb007.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb008.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb009.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb010.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb011.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb012.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb013.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb014.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb015.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb016.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb017.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb018.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb019.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb020.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb021.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb022.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb023.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb024.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb025.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/De18116_sample.pdf/e18116%20completeweb026.png

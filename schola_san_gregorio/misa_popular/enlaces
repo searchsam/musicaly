@@ -1,0 +1,15 @@
+#!/bin/bash
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/eg75041/eg75041001.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/eg75041/eg75041002.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/eg75039/eg75039001.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/eg75039/eg75039002.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/eg75040/eg75040001.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/eg75040/eg75040002.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/ek75041/ek75041001.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/ek75041/ek75041002.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/ek75041/ek75041003.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/ek75040/ek75040001.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/ek75040/ek75040002.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/ek75040/ek75040003.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/ek75039/ek75039001.png
+axel -a https://s3.amazonaws.com/cdn.giamusic.com/pdf_previews/pdfdocument_previewimages/ek75039/ek75039002.png
