@@ -2,7 +2,7 @@
 % by serachsam
 
 \language "espanol"
-\version "2.23.2"
+\version "2.25.13"
 
 % --- Global parameters
 %particle = 0
@@ -20,11 +20,11 @@
 
 % --- Header
 \header {
-  title = \markup{\medium \smallCaps \title}
-  subtitle = \markup{\medium \subtitle}
-  subsubtitle = \markup{\medium \subsubtitle}
+  title = \markup{\normal-text \fontsize #5 \title}
+  subtitle = \markup{\normal-text \fontsize #2 \subtitle}
+  subsubtitle = \markup{\normal-text \subsubtitle}
   composer = \autor
-  arranger = \markup {\right-column { \arranger \other}}
+  arranger = \arranger
   tagline = ##f
   breakbefore = ##t
 }
@@ -36,15 +36,16 @@
 % --- Sheet
 \score {
   <<
-    \harmonies
+    \new ChordNames {
+      \set ChordNames.midiInstrument = "church organ"
+      \set ChordNames.midiMaximumVolume = #0.5
+      \set chordChanges = ##t
+      \transpose sol do { \harmonies }
+    }
     \new Staff = "main" {
-      <<
-        \set Staff.midiInstrument = #"oboe"
-        %\set Staff.midiMaximumVolume = #1.5
-        <<
-          \new Voice = "instrument" { << \global \instrument >> }
-        >>
-      >>
+      \set Staff.midiInstrument = #"oboe"
+      %\set Staff.midiMaximumVolume = #1.5
+      \transpose sol do { << \global \instrument >> }
     }
   >>
   \layout {}
@@ -53,6 +54,6 @@
 
 % --- Paper
 \paper {
-  #(set-default-paper-size "letter")
+  #(set-paper-size "letter")
   %page-breaking = #ly:page-turn-breaking
 }

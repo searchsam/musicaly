@@ -22,16 +22,16 @@ global = {
   \bar "|."
 }
 
-oboe = \relative c'' {
+oboe = \relative c' {
   % Type notes here
   \partial 4 r8 g16( a16) | %1
-  b2~ b8 \breathe b8( a8 g8) | %2
+  b2~ b8 \breathe b8 a8 g8 | %2
   a2. r8 fis16( g16) | %3
-  a2~ a8 \breathe a8( g8 fis8) | %4
+  a2~ a8 \breathe a8 g8 fis8 | %4
   b2. r8 g16( a16) | %5
-  b2~ b8 \breathe \appoggiatura c8 \tuplet 3/2 { b8( a8 g8 } a8) | %6
+  b2~ b8 \breathe \appoggiatura c8 \tuplet 3/2 { b8 a8 g8 } a8 | %6
   fis2. r8 d16 ( e16) | %7
-  fis2~ fis8 \breathe fis8( e8 d8) | %8
+  fis2~ fis8 \breathe fis8 e8 d8 | %8
   \partial 2. e2. | %9
 }
 
@@ -45,14 +45,11 @@ armonia = \chordmode {
       \set chordChanges = ##t
       \set Staff.midiInstrument = "church organ"
       \italianChords
-      \armonia
+      \transpose e b {\armonia}
     }
     \new Staff {
       \set Staff.midiInstrument = "oboe"
-      <<
-        \global
-        \oboe
-      >>
+      \transpose e b {<<\global \oboe>>}
     }
   >>
   \midi {}
