@@ -1,4 +1,4 @@
-\version "2.23.2"
+\version "2.25.18"
 \language "espanol"
 
 %#(set-global-staff-size 14)
@@ -30,7 +30,13 @@
       >>
     >>
     \new Lyrics \lyricsto "sopranos" {
-      \letraSoprano
+      \letraSopranouno
+    }
+    \new Lyrics \lyricsto "sopranos" {
+      \letraSopranodos
+    }
+    \new Lyrics \lyricsto "sopranos" {
+      \letraSopranotres
     }
     %% Contralto
     \new Staff = "altos" <<
@@ -43,7 +49,7 @@
       >>
     >>
     \new Lyrics \lyricsto "altos" {
-      \letraAlto
+      \letraAltouno
     }
     %% Tenor
     \new Staff = "tenors" <<
@@ -56,7 +62,7 @@
       >>
     >>
     \new Lyrics \lyricsto "tenors" {
-      \letraTenor_uno
+      \letraTenoruno
     }
     %% Bajo
     \new Staff = "bajos" <<
@@ -69,7 +75,7 @@
       >>
     >>
     \new Lyrics \lyricsto "bajos" {
-      \letraBajo_uno
+      \letraBajouno
     }
     
   >>  % fin del ChoirStaff
@@ -86,4 +92,13 @@
 convert-ly (GNU LilyPond) 2.19.28  convert-ly: Procesando «»...
 Aplicando la conversión: 2.19.2, 2.19.7, 2.19.11, 2.19.16, 2.19.22,
 2.19.24, 2.19.28
+%}
+
+
+%{
+convert-ly (GNU LilyPond) 2.25.20  convert-ly: Procesando «»...
+Aplicando la conversión: 2.23.3, 2.23.4, 2.23.5, 2.23.6, 2.23.7,
+2.23.8, 2.23.9, 2.23.10, 2.23.11, 2.23.12, 2.23.13, 2.23.14, 2.24.0,
+2.25.0, 2.25.1, 2.25.2, 2.25.3, 2.25.4, 2.25.5, 2.25.6, 2.25.8,
+2.25.9, 2.25.11, 2.25.12, 2.25.13, 2.25.18
 %}
