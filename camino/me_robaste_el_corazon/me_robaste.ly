@@ -195,11 +195,11 @@ armonia =
     \new ChordNames {
       \set chordChanges = ##t
       \italianChords
-      \transpose re la { \armonia }
+      \transpose re mi { \armonia }
     }
     \new Staff = "main" {
       \set Staff.midiInstrument = "oboe"
-      \transpose re la {<< \global \melodia >>}
+      \transpose re mi {<< \global \melodia >>}
     }
   >>
   \midi {}

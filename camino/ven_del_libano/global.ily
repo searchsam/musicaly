@@ -21,6 +21,22 @@ global = {
     \bar "||"
     s1*9 |
   }
-  s1*4 |
+  s1*5 |
+  \bar "|."
+}
+
+second_global = {
+  \tempo "Andantino" 4 = 80
+  \key sol \minor
+  \time 4/4
+
+  \repeat volta 4 {
+    s1*16 | %28
+    \bar "||"
+    s1*9 | %36
+    \bar "||"
+    s1*9 |
+  }
+  s1*5 |
   \bar "|."
 }

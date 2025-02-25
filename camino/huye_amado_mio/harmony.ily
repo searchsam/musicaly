@@ -11,7 +11,7 @@ harmonies = \new ChordNames {
     la2:m |
     la2:m |
     la2:m |
-    la2:m |
+    re2:m |
     re2:m |
     mi2 |
     mi2 |

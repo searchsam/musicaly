@@ -19,9 +19,9 @@
 
 % --- Header
 \header {
-  title = \markup{\medium \smallCaps \title}
-  subtitle = \markup{\medium \subtitle}
-  subsubtitle = \markup{\medium \subsubtitle}
+  title = \markup{\normal-text \fontsize #5 \title}
+  subtitle = \markup{\normal-text \fontsize #2 \subtitle}
+  subsubtitle = \markup{\normal-text \subsubtitle}
   composer = \autor
   arranger = \markup {\right-column { \arranger \other}}
   tagline = ##f
