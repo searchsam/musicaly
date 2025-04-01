@@ -802,6 +802,6 @@
 
 % --- Paper
 \paper {
-  #(set-default-paper-size "letter")
+  #(set-paper-size "letter")
   %page-breaking = #ly:page-turn-breaking
 }
